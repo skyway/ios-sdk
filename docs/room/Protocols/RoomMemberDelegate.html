@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RoomMemberDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/RoomMemberDelegate" class="dashAnchor"></a>
+    <a title="RoomMemberDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SkyWayRoom Docs</a> (95% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SkyWayRoom Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        RoomMemberDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@SkyWayRoom@objc(cs)LocalP2PRoomMember">LocalP2PRoomMember</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LocalRoomMember.html">LocalRoomMember</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LocalSFURoomMember.html">LocalSFURoomMember</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/P2PRoom.html">P2PRoom</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RemoteRoomMember.html">RemoteRoomMember</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Room.html">Room</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Room/InitOptions.html">– InitOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Room/Query.html">– Query</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Room/MemberInitOptions.html">– MemberInitOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RoomMember.html">RoomMember</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RoomPublication.html">RoomPublication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RoomPublicationOptions.html">RoomPublicationOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RoomSubscription.html">RoomSubscription</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFURoom.html">SFURoom</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/RoomState.html">RoomState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/LocalRoomMemberDelegate.html">LocalRoomMemberDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RemoteRoomMemberDelegate.html">RemoteRoomMemberDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RoomDelegate.html">RoomDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RoomMemberDelegate.html">RoomMemberDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RoomPublicationDelegate.html">RoomPublicationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RoomSubscriptionDelegate.html">RoomSubscriptionDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RoomMemberDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">RoomMemberDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>RoomMemberイベントデリゲート</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SkyWayRoom@objc(pl)RoomMemberDelegate(im)memberDidLeave:"></a>
+                    <a name="//apple_ref/swift/Method/memberDidLeave(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SkyWayRoom@objc(pl)RoomMemberDelegate(im)memberDidLeave:">memberDidLeave(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>RoomMemberがRoomから退出した後にコールされます。</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">memberDidLeave</span><span class="p">(</span><span class="n">_</span> <span class="nv">member</span><span class="p">:</span> <span class="kt"><a href="../Classes/RoomMember.html">RoomMember</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>member</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Member</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SkyWayRoom@objc(pl)RoomMemberDelegate(im)member:didUpdateMetadata:"></a>
+                    <a name="//apple_ref/swift/Method/member(_:didUpdateMetadata:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SkyWayRoom@objc(pl)RoomMemberDelegate(im)member:didUpdateMetadata:">member(_:<wbr>didUpdateMetadata:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Memberのメタデータが更新された後にコールされます。</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">member</span><span class="p">(</span><span class="n">_</span> <span class="nv">member</span><span class="p">:</span> <span class="kt"><a href="../Classes/RoomMember.html">RoomMember</a></span><span class="p">,</span> <span class="n">didUpdateMetadata</span> <span class="nv">metadata</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>member</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Member</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>metatada</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>更新後のMetada</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SkyWayRoom@objc(pl)RoomMemberDelegate(im)memberPublicationListDidChange:"></a>
+                    <a name="//apple_ref/swift/Method/memberPublicationListDidChange(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SkyWayRoom@objc(pl)RoomMemberDelegate(im)memberPublicationListDidChange:">memberPublicationListDidChange(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>RoomMemberがPublishしているStreamの数が変化した後にコールされます。</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">memberPublicationListDidChange</span><span class="p">(</span><span class="n">_</span> <span class="nv">member</span><span class="p">:</span> <span class="kt"><a href="../Classes/RoomMember.html">RoomMember</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>member</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Member</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SkyWayRoom@objc(pl)RoomMemberDelegate(im)memberSubscriptionListDidChange:"></a>
+                    <a name="//apple_ref/swift/Method/memberSubscriptionListDidChange(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SkyWayRoom@objc(pl)RoomMemberDelegate(im)memberSubscriptionListDidChange:">memberSubscriptionListDidChange(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>RoomMemberがSubscribeしているStreamの数が変化した後にコールされます。</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">memberSubscriptionListDidChange</span><span class="p">(</span><span class="n">_</span> <span class="nv">member</span><span class="p">:</span> <span class="kt"><a href="../Classes/RoomMember.html">RoomMember</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>member</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Member</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2023-01-28)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

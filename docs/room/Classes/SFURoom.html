@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SFURoom Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/SFURoom" class="dashAnchor"></a>
+    <a title="SFURoom Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SkyWayRoom Docs</a> (95% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SkyWayRoom Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        SFURoom Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@SkyWayRoom@objc(cs)LocalP2PRoomMember">LocalP2PRoomMember</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LocalRoomMember.html">LocalRoomMember</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LocalSFURoomMember.html">LocalSFURoomMember</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/P2PRoom.html">P2PRoom</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RemoteRoomMember.html">RemoteRoomMember</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Room.html">Room</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Room/InitOptions.html">– InitOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Room/Query.html">– Query</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Room/MemberInitOptions.html">– MemberInitOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RoomMember.html">RoomMember</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RoomPublication.html">RoomPublication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RoomPublicationOptions.html">RoomPublicationOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RoomSubscription.html">RoomSubscription</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFURoom.html">SFURoom</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/RoomState.html">RoomState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/LocalRoomMemberDelegate.html">LocalRoomMemberDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RemoteRoomMemberDelegate.html">RemoteRoomMemberDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RoomDelegate.html">RoomDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RoomMemberDelegate.html">RoomMemberDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RoomPublicationDelegate.html">RoomPublicationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RoomSubscriptionDelegate.html">RoomSubscriptionDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SFURoom</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">open</span> <span class="kd">class</span> <span class="kt">SFURoom</span> <span class="p">:</span> <span class="kt"><a href="../Classes/Room.html">Room</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>SFUサーバを介して通信を行うRoom</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)createWith:completionHandler:"></a>
+                    <a name="//apple_ref/swift/Method/create(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)createWith:completionHandler:">create(with:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Roomを作成します。</p>
+
+<p><code>options</code>でRoomの名前を指定して作成できますが、同じ名前のRoomは作成することができません。</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="n">iOS</span> <span class="mf">13.0</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">create</span><span class="p">(</span><span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">InitOptions</span><span class="p">?)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">SFURoom</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>初期化オプション</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Room</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)createWith:completion:"></a>
+                    <a name="//apple_ref/swift/Method/create(with:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)createWith:completion:">create(with:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Roomを作成します。</p>
+
+<p><code>options</code>でRoomの名前を指定して作成できますが、同じ名前のRoomは作成することができません。</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">create</span><span class="p">(</span><span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">InitOptions</span><span class="p">?,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">SFURoom</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>初期化オプション</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>完了コールバック</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)findBy:completionHandler:"></a>
+                    <a name="//apple_ref/swift/Method/find(by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)findBy:completionHandler:">find(by:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Roomクエリを元にRoomを検索します。</p>
+
+<p>クエリはRoomのIDまたはNameを入力します。両方とも入力される場合はIDが優先されます。</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="n">iOS</span> <span class="mf">13.0</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">find</span><span class="p">(</span><span class="n">by</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">Query</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">SFURoom</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>query</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>検索クエリ</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Room</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)findBy:completion:"></a>
+                    <a name="//apple_ref/swift/Method/find(by:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)findBy:completion:">find(by:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Roomクエリを元にRoomを検索します。</p>
+
+<p>クエリはRoomのIDまたはNameを入力します。両方とも入力される場合はIDが優先されます。</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">find</span><span class="p">(</span><span class="n">by</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">Query</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">SFURoom</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>query</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>検索クエリ</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>完了コールバック</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)findOrCreateWith:completionHandler:"></a>
+                    <a name="//apple_ref/swift/Method/findOrCreate(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)findOrCreateWith:completionHandler:">findOrCreate(with:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Roomを名前から検索し、存在しない場合は作成します。</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="n">iOS</span> <span class="mf">13.0</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">findOrCreate</span><span class="p">(</span><span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">InitOptions</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">SFURoom</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>検索・初期化オプション</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Room</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)findOrCreateWith:completion:"></a>
+                    <a name="//apple_ref/swift/Method/findOrCreate(with:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)findOrCreateWith:completion:">findOrCreate(with:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Roomを名前から検索し、存在しない場合は作成します。</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">findOrCreate</span><span class="p">(</span><span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">InitOptions</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">SFURoom</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>検索・初期化オプション</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>完了コールバック</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SkyWayRoom@objc(cs)SFURoom(im)joinWith:completionHandler:"></a>
+                    <a name="//apple_ref/swift/Method/join(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SkyWayRoom@objc(cs)SFURoom(im)joinWith:completionHandler:">join(with:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>RoomにLocalRoomMemberを作成し、入室させます。</p>
+
+<p>1RoomインスタンスにJoinできるLocalRoomMemberは1人だけです。</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="n">iOS</span> <span class="mf">13.0</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span>
+<span class="k">override</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">join</span><span class="p">(</span><span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Classes/Room.html">Room</a></span><span class="o">.</span><span class="kt">MemberInitOptions</span><span class="p">?)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/LocalSFURoomMember.html">LocalSFURoomMember</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Member初期化オプション</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Member</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SkyWayRoom@objc(cs)SFURoom(im)joinWith:completion:"></a>
+                    <a name="//apple_ref/swift/Method/join(with:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SkyWayRoom@objc(cs)SFURoom(im)joinWith:completion:">join(with:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>RoomにLocalRoomMemberを作成し、入室させます。</p>
+
+<p>1RoomインスタンスにJoinできるLocalRoomMemberは1人だけです。</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">join</span><span class="p">(</span><span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Classes/Room.html">Room</a></span><span class="o">.</span><span class="kt">MemberInitOptions</span><span class="p">?,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt"><a href="../Classes/LocalSFURoomMember.html">LocalSFURoomMember</a></span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Member初期化オプション</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>完了コールバック</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SkyWayRoom@objc(cs)SFURoom(py)members"></a>
+                    <a name="//apple_ref/swift/Property/members" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SkyWayRoom@objc(cs)SFURoom(py)members">members</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>入室しているメンバーの一覧</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">members</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/RoomMember.html">RoomMember</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SkyWayRoom@objc(cs)SFURoom(py)publications"></a>
+                    <a name="//apple_ref/swift/Property/publications" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SkyWayRoom@objc(cs)SFURoom(py)publications">publications</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>このRoomでPublishされているStreamのPublication一覧</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">publications</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/RoomPublication.html">RoomPublication</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SkyWayRoom@objc(cs)SFURoom(py)subscriptions"></a>
+                    <a name="//apple_ref/swift/Property/subscriptions" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SkyWayRoom@objc(cs)SFURoom(py)subscriptions">subscriptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>このRoomでSubscribeされているSubscription一覧</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">subscriptions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/RoomSubscription.html">RoomSubscription</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2023-01-28)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
