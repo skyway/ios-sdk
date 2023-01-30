@@ -1,0 +1,870 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78A3206050F733BC9A1838A9 /* Pods_P2PRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79F55872D83DD0B91C11146 /* Pods_P2PRoom.framework */; };
+		9838D086DA554D60E5C31E78 /* Pods_AutoSubscribingRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DA03349465DFE95198F8D2 /* Pods_AutoSubscribingRoom.framework */; };
+		A01D1D4A2983E5B9005D1449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A01D1D2F2983E57E005D1449 /* Assets.xcassets */; };
+		A01D1D4B2983E5BD005D1449 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A01D1D312983E57E005D1449 /* Preview Assets.xcassets */; };
+		A01D1D4C2983E5C0005D1449 /* P2PRoomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D322983E57E005D1449 /* P2PRoomApp.swift */; };
+		A01D1D4D2983E5C0005D1449 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D332983E57E005D1449 /* ContentView.swift */; };
+		A01D1D4E2983E5D2005D1449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A01D1D3A2983E57E005D1449 /* Assets.xcassets */; };
+		A01D1D4F2983E5D6005D1449 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A01D1D3C2983E57E005D1449 /* Preview Assets.xcassets */; };
+		A01D1D502983E5D9005D1449 /* AutoSubscribingRoomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D3D2983E57E005D1449 /* AutoSubscribingRoomApp.swift */; };
+		A01D1D512983E5D9005D1449 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D3E2983E57E005D1449 /* ContentView.swift */; };
+		A01D1D522983E5DC005D1449 /* RepresentableCameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D372983E57E005D1449 /* RepresentableCameraPreviewView.swift */; };
+		A01D1D532983E5DC005D1449 /* RepresentableVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D362983E57E005D1449 /* RepresentableVideoView.swift */; };
+		A01D1D542983E5DC005D1449 /* RemotePublicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D382983E57E005D1449 /* RemotePublicationView.swift */; };
+		A01D1D552983E5DC005D1449 /* SkyWayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D352983E57E005D1449 /* SkyWayViewModel.swift */; };
+		A01D1D562983E5DC005D1449 /* RepresentableCameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D372983E57E005D1449 /* RepresentableCameraPreviewView.swift */; };
+		A01D1D572983E5DC005D1449 /* RepresentableVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D362983E57E005D1449 /* RepresentableVideoView.swift */; };
+		A01D1D582983E5DC005D1449 /* RemotePublicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D382983E57E005D1449 /* RemotePublicationView.swift */; };
+		A01D1D592983E5DC005D1449 /* SkyWayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D352983E57E005D1449 /* SkyWayViewModel.swift */; };
+		A01D1D5A2983E5DC005D1449 /* RepresentableCameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D372983E57E005D1449 /* RepresentableCameraPreviewView.swift */; };
+		A01D1D5B2983E5DC005D1449 /* RepresentableVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D362983E57E005D1449 /* RepresentableVideoView.swift */; };
+		A01D1D5C2983E5DC005D1449 /* RemotePublicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D382983E57E005D1449 /* RemotePublicationView.swift */; };
+		A01D1D5D2983E5DC005D1449 /* SkyWayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D352983E57E005D1449 /* SkyWayViewModel.swift */; };
+		A01D1D7C2983EDBB005D1449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A01D1D772983EDBB005D1449 /* Assets.xcassets */; };
+		A01D1D7D2983EDBB005D1449 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A01D1D792983EDBB005D1449 /* Preview Assets.xcassets */; };
+		A01D1D7E2983EDBB005D1449 /* SFURoomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D7A2983EDBB005D1449 /* SFURoomApp.swift */; };
+		A01D1D7F2983EDBB005D1449 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D7B2983EDBB005D1449 /* ContentView.swift */; };
+		A6719F3009189F638AD22B7B /* Pods_SFURoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAFA4B0CFF94060E6C59B2B /* Pods_SFURoom.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03459EEDDB23D1AA2E0F8B6D /* Pods-AutoSubscribingRoom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoSubscribingRoom.debug.xcconfig"; path = "Target Support Files/Pods-AutoSubscribingRoom/Pods-AutoSubscribingRoom.debug.xcconfig"; sourceTree = "<group>"; };
+		1EAFA4B0CFF94060E6C59B2B /* Pods_SFURoom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFURoom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		390E181AB35CFBF81853508F /* Pods-SFURoom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFURoom.debug.xcconfig"; path = "Target Support Files/Pods-SFURoom/Pods-SFURoom.debug.xcconfig"; sourceTree = "<group>"; };
+		42237F9D497E05D20DA7C8AB /* Pods-SFURoom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFURoom.release.xcconfig"; path = "Target Support Files/Pods-SFURoom/Pods-SFURoom.release.xcconfig"; sourceTree = "<group>"; };
+		439C28B2A68D10C183FD060C /* Pods-P2PRoom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P2PRoom.debug.xcconfig"; path = "Target Support Files/Pods-P2PRoom/Pods-P2PRoom.debug.xcconfig"; sourceTree = "<group>"; };
+		59DA03349465DFE95198F8D2 /* Pods_AutoSubscribingRoom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoSubscribingRoom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		898D53AD1D44C3E54FBB7FA5 /* Pods-P2PRoom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P2PRoom.release.xcconfig"; path = "Target Support Files/Pods-P2PRoom/Pods-P2PRoom.release.xcconfig"; sourceTree = "<group>"; };
+		A01D1D2F2983E57E005D1449 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A01D1D312983E57E005D1449 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A01D1D322983E57E005D1449 /* P2PRoomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2PRoomApp.swift; sourceTree = "<group>"; };
+		A01D1D332983E57E005D1449 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A01D1D352983E57E005D1449 /* SkyWayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyWayViewModel.swift; sourceTree = "<group>"; };
+		A01D1D362983E57E005D1449 /* RepresentableVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentableVideoView.swift; sourceTree = "<group>"; };
+		A01D1D372983E57E005D1449 /* RepresentableCameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentableCameraPreviewView.swift; sourceTree = "<group>"; };
+		A01D1D382983E57E005D1449 /* RemotePublicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePublicationView.swift; sourceTree = "<group>"; };
+		A01D1D3A2983E57E005D1449 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A01D1D3C2983E57E005D1449 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A01D1D3D2983E57E005D1449 /* AutoSubscribingRoomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSubscribingRoomApp.swift; sourceTree = "<group>"; };
+		A01D1D3E2983E57E005D1449 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A01D1D772983EDBB005D1449 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A01D1D792983EDBB005D1449 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A01D1D7A2983EDBB005D1449 /* SFURoomApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFURoomApp.swift; sourceTree = "<group>"; };
+		A01D1D7B2983EDBB005D1449 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A02326682955CD460015BF5C /* P2PRoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P2PRoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A038916A297647ED00477E88 /* AutoSubscribingRoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoSubscribingRoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A083F3C7296675B100AEF5E8 /* SFURoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFURoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF88786B7D0772261F5AB825 /* Pods-AutoSubscribingRoom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoSubscribingRoom.release.xcconfig"; path = "Target Support Files/Pods-AutoSubscribingRoom/Pods-AutoSubscribingRoom.release.xcconfig"; sourceTree = "<group>"; };
+		E79F55872D83DD0B91C11146 /* Pods_P2PRoom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_P2PRoom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A02326652955CD460015BF5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78A3206050F733BC9A1838A9 /* Pods_P2PRoom.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0389167297647ED00477E88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9838D086DA554D60E5C31E78 /* Pods_AutoSubscribingRoom.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A083F3C4296675B100AEF5E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6719F3009189F638AD22B7B /* Pods_SFURoom.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A01D1D2E2983E57E005D1449 /* P2PRoom */ = {
+			isa = PBXGroup;
+			children = (
+				A01D1D2F2983E57E005D1449 /* Assets.xcassets */,
+				A01D1D302983E57E005D1449 /* Preview Content */,
+				A01D1D322983E57E005D1449 /* P2PRoomApp.swift */,
+				A01D1D332983E57E005D1449 /* ContentView.swift */,
+			);
+			name = P2PRoom;
+			path = Sources/P2PRoom;
+			sourceTree = "<group>";
+		};
+		A01D1D302983E57E005D1449 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A01D1D312983E57E005D1449 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A01D1D342983E57E005D1449 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A01D1D352983E57E005D1449 /* SkyWayViewModel.swift */,
+				A01D1D362983E57E005D1449 /* RepresentableVideoView.swift */,
+				A01D1D372983E57E005D1449 /* RepresentableCameraPreviewView.swift */,
+				A01D1D382983E57E005D1449 /* RemotePublicationView.swift */,
+			);
+			name = Common;
+			path = Sources/Common;
+			sourceTree = "<group>";
+		};
+		A01D1D392983E57E005D1449 /* AutoSubscribingRoom */ = {
+			isa = PBXGroup;
+			children = (
+				A01D1D3A2983E57E005D1449 /* Assets.xcassets */,
+				A01D1D3B2983E57E005D1449 /* Preview Content */,
+				A01D1D3D2983E57E005D1449 /* AutoSubscribingRoomApp.swift */,
+				A01D1D3E2983E57E005D1449 /* ContentView.swift */,
+			);
+			name = AutoSubscribingRoom;
+			path = Sources/AutoSubscribingRoom;
+			sourceTree = "<group>";
+		};
+		A01D1D3B2983E57E005D1449 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A01D1D3C2983E57E005D1449 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A01D1D762983EDBB005D1449 /* SFURoom */ = {
+			isa = PBXGroup;
+			children = (
+				A01D1D772983EDBB005D1449 /* Assets.xcassets */,
+				A01D1D782983EDBB005D1449 /* Preview Content */,
+				A01D1D7A2983EDBB005D1449 /* SFURoomApp.swift */,
+				A01D1D7B2983EDBB005D1449 /* ContentView.swift */,
+			);
+			name = SFURoom;
+			path = Sources/SFURoom;
+			sourceTree = "<group>";
+		};
+		A01D1D782983EDBB005D1449 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A01D1D792983EDBB005D1449 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A023265F2955CD460015BF5C = {
+			isa = PBXGroup;
+			children = (
+				A01D1D2E2983E57E005D1449 /* P2PRoom */,
+				A01D1D762983EDBB005D1449 /* SFURoom */,
+				A01D1D392983E57E005D1449 /* AutoSubscribingRoom */,
+				A01D1D342983E57E005D1449 /* Common */,
+				A02326692955CD460015BF5C /* Products */,
+				A0DC8D372959A2300095A5CC /* Frameworks */,
+				E207F2B8F0DD3C3D8C25CA3E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		A02326692955CD460015BF5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A02326682955CD460015BF5C /* P2PRoom.app */,
+				A083F3C7296675B100AEF5E8 /* SFURoom.app */,
+				A038916A297647ED00477E88 /* AutoSubscribingRoom.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0DC8D372959A2300095A5CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA03349465DFE95198F8D2 /* Pods_AutoSubscribingRoom.framework */,
+				E79F55872D83DD0B91C11146 /* Pods_P2PRoom.framework */,
+				1EAFA4B0CFF94060E6C59B2B /* Pods_SFURoom.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E207F2B8F0DD3C3D8C25CA3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03459EEDDB23D1AA2E0F8B6D /* Pods-AutoSubscribingRoom.debug.xcconfig */,
+				DF88786B7D0772261F5AB825 /* Pods-AutoSubscribingRoom.release.xcconfig */,
+				439C28B2A68D10C183FD060C /* Pods-P2PRoom.debug.xcconfig */,
+				898D53AD1D44C3E54FBB7FA5 /* Pods-P2PRoom.release.xcconfig */,
+				390E181AB35CFBF81853508F /* Pods-SFURoom.debug.xcconfig */,
+				42237F9D497E05D20DA7C8AB /* Pods-SFURoom.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A02326672955CD460015BF5C /* P2PRoom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A02326762955CD470015BF5C /* Build configuration list for PBXNativeTarget "P2PRoom" */;
+			buildPhases = (
+				AA1FF1B64DE7EEA786505CA8 /* [CP] Check Pods Manifest.lock */,
+				A02326642955CD460015BF5C /* Sources */,
+				A02326652955CD460015BF5C /* Frameworks */,
+				A02326662955CD460015BF5C /* Resources */,
+				F190414D9810388142655108 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = P2PRoom;
+			productName = P2PRoom;
+			productReference = A02326682955CD460015BF5C /* P2PRoom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0389169297647ED00477E88 /* AutoSubscribingRoom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0389175297647EF00477E88 /* Build configuration list for PBXNativeTarget "AutoSubscribingRoom" */;
+			buildPhases = (
+				5F8EF95368B3A085658F5C4E /* [CP] Check Pods Manifest.lock */,
+				A0389166297647ED00477E88 /* Sources */,
+				A0389167297647ED00477E88 /* Frameworks */,
+				A0389168297647ED00477E88 /* Resources */,
+				D18D2CA9826544FA1E7917C8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoSubscribingRoom;
+			productName = AutoSubscribingRoom;
+			productReference = A038916A297647ED00477E88 /* AutoSubscribingRoom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A083F3C6296675B100AEF5E8 /* SFURoom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A083F3D2296675B300AEF5E8 /* Build configuration list for PBXNativeTarget "SFURoom" */;
+			buildPhases = (
+				F7ADAF20048C48DE9AF5AFE6 /* [CP] Check Pods Manifest.lock */,
+				A083F3C3296675B100AEF5E8 /* Sources */,
+				A083F3C4296675B100AEF5E8 /* Frameworks */,
+				A083F3C5296675B100AEF5E8 /* Resources */,
+				1BD63863C61038EF69C98FAA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SFURoom;
+			productName = SFURoom;
+			productReference = A083F3C7296675B100AEF5E8 /* SFURoom.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A02326602955CD460015BF5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					A02326672955CD460015BF5C = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+					};
+					A0389169297647ED00477E88 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					A083F3C6296675B100AEF5E8 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = A02326632955CD460015BF5C /* Build configuration list for PBXProject "SkyWayExample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A023265F2955CD460015BF5C;
+			packageReferences = (
+			);
+			productRefGroup = A02326692955CD460015BF5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A02326672955CD460015BF5C /* P2PRoom */,
+				A083F3C6296675B100AEF5E8 /* SFURoom */,
+				A0389169297647ED00477E88 /* AutoSubscribingRoom */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A02326662955CD460015BF5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01D1D4B2983E5BD005D1449 /* Preview Assets.xcassets in Resources */,
+				A01D1D4A2983E5B9005D1449 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0389168297647ED00477E88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01D1D4F2983E5D6005D1449 /* Preview Assets.xcassets in Resources */,
+				A01D1D4E2983E5D2005D1449 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A083F3C5296675B100AEF5E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01D1D7D2983EDBB005D1449 /* Preview Assets.xcassets in Resources */,
+				A01D1D7C2983EDBB005D1449 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BD63863C61038EF69C98FAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SFURoom/Pods-SFURoom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SFURoom/Pods-SFURoom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SFURoom/Pods-SFURoom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F8EF95368B3A085658F5C4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AutoSubscribingRoom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA1FF1B64DE7EEA786505CA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-P2PRoom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D18D2CA9826544FA1E7917C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutoSubscribingRoom/Pods-AutoSubscribingRoom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutoSubscribingRoom/Pods-AutoSubscribingRoom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AutoSubscribingRoom/Pods-AutoSubscribingRoom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F190414D9810388142655108 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-P2PRoom/Pods-P2PRoom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-P2PRoom/Pods-P2PRoom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-P2PRoom/Pods-P2PRoom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7ADAF20048C48DE9AF5AFE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SFURoom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A02326642955CD460015BF5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01D1D5D2983E5DC005D1449 /* SkyWayViewModel.swift in Sources */,
+				A01D1D4D2983E5C0005D1449 /* ContentView.swift in Sources */,
+				A01D1D5C2983E5DC005D1449 /* RemotePublicationView.swift in Sources */,
+				A01D1D5B2983E5DC005D1449 /* RepresentableVideoView.swift in Sources */,
+				A01D1D4C2983E5C0005D1449 /* P2PRoomApp.swift in Sources */,
+				A01D1D5A2983E5DC005D1449 /* RepresentableCameraPreviewView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0389166297647ED00477E88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01D1D552983E5DC005D1449 /* SkyWayViewModel.swift in Sources */,
+				A01D1D512983E5D9005D1449 /* ContentView.swift in Sources */,
+				A01D1D542983E5DC005D1449 /* RemotePublicationView.swift in Sources */,
+				A01D1D532983E5DC005D1449 /* RepresentableVideoView.swift in Sources */,
+				A01D1D502983E5D9005D1449 /* AutoSubscribingRoomApp.swift in Sources */,
+				A01D1D522983E5DC005D1449 /* RepresentableCameraPreviewView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A083F3C3296675B100AEF5E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01D1D592983E5DC005D1449 /* SkyWayViewModel.swift in Sources */,
+				A01D1D582983E5DC005D1449 /* RemotePublicationView.swift in Sources */,
+				A01D1D7F2983EDBB005D1449 /* ContentView.swift in Sources */,
+				A01D1D572983E5DC005D1449 /* RepresentableVideoView.swift in Sources */,
+				A01D1D562983E5DC005D1449 /* RepresentableCameraPreviewView.swift in Sources */,
+				A01D1D7E2983EDBB005D1449 /* SFURoomApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A02326742955CD470015BF5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A02326752955CD470015BF5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A02326772955CD470015BF5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 439C28B2A68D10C183FD060C /* Pods-P2PRoom.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sources/P2PRoom/Preview Content\"";
+				DEVELOPMENT_TEAM = M29R4N83HB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラを利用します";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "マイクを利用します";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ntt.skyway.exmple.P2PRoom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A02326782955CD470015BF5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 898D53AD1D44C3E54FBB7FA5 /* Pods-P2PRoom.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sources/P2PRoom/Preview Content\"";
+				DEVELOPMENT_TEAM = M29R4N83HB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラを利用します";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "マイクを利用します";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ntt.skyway.exmple.P2PRoom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A0389176297647EF00477E88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03459EEDDB23D1AA2E0F8B6D /* Pods-AutoSubscribingRoom.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sources/AutoSubscribingRoom/Preview Content\"";
+				DEVELOPMENT_TEAM = M29R4N83HB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラを利用します";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "マイクを利用します";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ntt.skyway.example.AutoSubscribingRoom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0389177297647EF00477E88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF88786B7D0772261F5AB825 /* Pods-AutoSubscribingRoom.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sources/AutoSubscribingRoom/Preview Content\"";
+				DEVELOPMENT_TEAM = M29R4N83HB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラを利用します";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "マイクを利用します";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ntt.skyway.example.AutoSubscribingRoom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A083F3D3296675B300AEF5E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 390E181AB35CFBF81853508F /* Pods-SFURoom.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sources/SFURoom/Preview Content\"";
+				DEVELOPMENT_TEAM = M29R4N83HB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラを利用します";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "マイクを利用します";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ntt.skyway.exmple.SFURoom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A083F3D4296675B300AEF5E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42237F9D497E05D20DA7C8AB /* Pods-SFURoom.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sources/SFURoom/Preview Content\"";
+				DEVELOPMENT_TEAM = M29R4N83HB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラを利用します";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "マイクを利用します";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ntt.skyway.exmple.SFURoom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A02326632955CD460015BF5C /* Build configuration list for PBXProject "SkyWayExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A02326742955CD470015BF5C /* Debug */,
+				A02326752955CD470015BF5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A02326762955CD470015BF5C /* Build configuration list for PBXNativeTarget "P2PRoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A02326772955CD470015BF5C /* Debug */,
+				A02326782955CD470015BF5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0389175297647EF00477E88 /* Build configuration list for PBXNativeTarget "AutoSubscribingRoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0389176297647EF00477E88 /* Debug */,
+				A0389177297647EF00477E88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A083F3D2296675B300AEF5E8 /* Build configuration list for PBXNativeTarget "SFURoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A083F3D3296675B300AEF5E8 /* Debug */,
+				A083F3D4296675B300AEF5E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A02326602955CD460015BF5C /* Project object */;
+}

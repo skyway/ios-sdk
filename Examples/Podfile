@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+source 'git@github.com:skyway/skyway-ios-sdk-specs.git'
+source 'git@github.com:skyway/skyway-ios-webrtc-specs.git'
+
+target 'AutoSubscribingRoom' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for AutoSubscribingRoom
+  pod 'SkyWayRoom', '~> 1.0'
+end
+
+target 'P2PRoom' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for P2PRoom
+  pod 'SkyWayRoom', '~> 1.0'
+end
+
+target 'SFURoom' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for SFURoom
+  pod 'SkyWayRoom', '~> 1.0'
+end
