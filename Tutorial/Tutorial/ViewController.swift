@@ -1,0 +1,75 @@
+//
+//  ViewController.swift
+//  Tutorial
+//
+//  Created by Naoto Takahashi on 2022/09/16.
+//
+
+import UIKit
+import SkyWayRoom
+
+class ViewController: UIViewController {
+    @IBOutlet weak var localView: CameraPreviewView!
+    @IBOutlet weak var remoteView: VideoView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        Task {
+            let token = "トークンを入力"
+            // SkyWayのセットアップ
+            let contextOpt: ContextOptions = .init()
+            contextOpt.logLevel = .trace
+            try? await Context.setup(withToken: token, options: nil)
+            let roomInit: Room.InitOptions = .init()
+            guard let room: SFURoom = try? await .create(with: roomInit) else {
+                 print("[Tutorial] Creating room failed.")
+                 return
+            }
+            let memberInit: Room.MemberInitOptions = .init()
+            memberInit.name = "Alice" // Memberに名前を付けることができます
+            guard let member = try? await room.join(with: memberInit) else {
+                 print("[Tutorial] Join failed.")
+                 return
+            }
+            // AudioStreamの作成
+            let auidoSource: MicrophoneAudioSource = .init()
+            let audioStream = auidoSource.createStream()
+            guard let audioPublication = try? await member.publish(audioStream, options: nil) else {
+                 print("[Tutorial] Publishing failed.")
+                 return
+            }
+            // Audioの場合、subscribeした時から音声が流れます
+            guard let _ = try? await member.subscribe(publicationId: audioPublication.id, options: nil) else {
+                 print("[Tutorial] Subscribing failed.")
+                 return
+            }
+            print("🎉Subscribing audio stream successfully.")
+//
+            // Cameraの設定
+            guard let camera = CameraVideoSource.supportedCameras().first(where: { $0.position == .front }) else {
+                print("Supported cameras is not found.");
+                return
+            }
+            // キャプチャーの開始
+            try! await CameraVideoSource.shared().startCapturing(with: camera, options: nil)
+            // Previewの描画
+            CameraVideoSource.shared().attach(localView)
+
+            // VideoStreamの作成
+            let localVideoStream = CameraVideoSource.shared().createStream()
+            guard let videoPublication = try? await member.publish(localVideoStream, options: nil) else {
+                 print("[Tutorial] Publishing failed.")
+                 return
+            }
+            guard let videoSubscription = try? await member.subscribe(publicationId: videoPublication.id, options: nil) else {
+                 print("[Tutorial] Subscribing failed.")
+                 return
+            }
+            print("🎉Subscribing video stream successfully.")
+
+            let remoteVideoStream = videoSubscription.stream as! RemoteVideoStream
+            remoteVideoStream.attach(remoteView)
+        }
+    }
+}
+
