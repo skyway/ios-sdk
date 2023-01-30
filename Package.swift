@@ -12,12 +12,11 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "SkyWayRoom",
-            targets: ["SkyWayRoom", "SkyWayCore", "SkyWaySFUBot"]),
+            targets: ["SkyWayRoom", "SkyWayCore", "SkyWaySFUBot", "WebRTC"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(url: "https://github.com/skyway/skyway-ios-webrtc", from: "104.0.1")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -34,6 +33,11 @@ let package = Package(
             name: "SkyWaySFUBot",
             url: "https://github.com/skyway/ios-sdk/releases/download/1.0.0/SkyWaySFUBot.xcframework.zip",
             checksum: "72b1fec6ac742c571ad36575b5b54009b25e3db1d8c911b6a50e3b2a509f8607"),
+        .binaryTarget(
+            name: "WebRTC",
+            url: "https://github.com/skyway/skyway-ios-webrtc/releases/download/104.0.1/WebRTC.xcframework.zip",
+            checksum: "84722bec35c919945164edfa3f0577fc1c29bf2a14033d635bbe0b86ed0ef088"),
+
     ],
     swiftLanguageVersions: [.v5]
 )
