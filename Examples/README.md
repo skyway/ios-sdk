@@ -2,9 +2,9 @@
 
 サンプルアプリを公開しています。
 
-Room ライブラリの P2PRoom による 映像・音声・データの PubSub(P2PRoom)
-Room ライブラリの SFURoom による 映像・音声の PubSub(SFURoom)
-Room ライブラリ による Web 会議のサンプル(AutoSubscribingRoom)
+- Room ライブラリの P2PRoom による 映像・音声・データの PubSub(P2PRoom)
+- Room ライブラリの SFURoom による 映像・音声の PubSub(SFURoom)
+- Room ライブラリ による Web 会議のサンプル(AutoSubscribingRoom)
 
 それぞれProjectのtargetsで管理しています。
 
