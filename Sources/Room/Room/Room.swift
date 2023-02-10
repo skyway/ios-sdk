@@ -8,7 +8,6 @@
 
 import SkyWayCore
 
-
 /// ルームの状態
 @objc public enum RoomState: Int{
     /// オープン状態

@@ -15,6 +15,7 @@
 #import "SKWRemoteDataStream.h"
 #import "SKWPublication+Internal.h"
 #import "SKWStream+Internal.h"
+#import "SKWRemoteDataStream+Internal.h"
 #import "SKWErrorFactory.h"
 #import "Type+Internal.h"
 
@@ -24,14 +25,17 @@
 class SubscriptionEventListener: public NativeSubscription::EventListener{
 public:
     SubscriptionEventListener(SKWSubscription* subscription)
-        : subscription_(subscription) {}
+        : subscription_(subscription), group_(subscription.repository.eventGroup) {}
     void OnCanceled() override {
         if([subscription_.delegate respondsToSelector:@selector(subscriptionCanceled:)]) {
-            [subscription_.delegate subscriptionCanceled:subscription_];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [subscription_.delegate subscriptionCanceled:subscription_];
+            });
         }
     }
 private:
     SKWSubscription* subscription_;
+    dispatch_group_t group_;
 };
 
 
@@ -131,7 +135,7 @@ private:
             _stream =[[SKWRemoteVideoStream alloc] initWithSharedNative:nativeStream];
             break;
         case skyway::model::ContentType::kData:
-            _stream =[[SKWRemoteDataStream alloc] initWithSharedNative:nativeStream];
+            _stream =[[SKWRemoteDataStream alloc] initWithSharedNative:nativeStream eventGroup:_repository.eventGroup];
             break;
     }
 }

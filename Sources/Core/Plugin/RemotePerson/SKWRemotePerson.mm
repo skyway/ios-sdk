@@ -18,45 +18,58 @@ class RemotePersonEventListener: public NativeRemotePerson::EventListener {
 public:
     // MARK: - Member::EventListener
     RemotePersonEventListener(SKWRemotePerson* person)
-        : person_(person) {}
+        : person_(person), group_(person.repository.eventGroup) {}
     void OnLeft() override {
         if([person_.delegate respondsToSelector:@selector(memberDidLeave:)]) {
-            [person_.delegate memberDidLeave:person_];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [person_.delegate memberDidLeave:person_];
+            });
         }
     }
     void OnMetadataUpdated(const std::string& nativeMetadata) override {
         NSString* metadata = [NSString stringForStdString:nativeMetadata];
         if([person_.delegate respondsToSelector:@selector(member:didUpdateMetadata:)]) {
-            [person_.delegate member:person_ didUpdateMetadata:metadata];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [person_.delegate member:person_ didUpdateMetadata:metadata];
+            });
         }
     }
     void OnPublicationListChanged() override{
         if([person_.delegate respondsToSelector:@selector(memberPublicationListDidChange:)]) {
-            [person_.delegate memberPublicationListDidChange:person_];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [person_.delegate memberPublicationListDidChange:person_];
+            });
         }
     }
     
     void OnSubscriptionListChanged() override{
         if([person_.delegate respondsToSelector:@selector(memberSubscriptionListDidChange:)]) {
-            [person_.delegate memberSubscriptionListDidChange:person_];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [person_.delegate memberSubscriptionListDidChange:person_];
+            });
         }
     }
     // MARK: - RemotePerson::EventListener
     void OnPublicationSubscribed(NativeSubscription* nativeSubscription) override{
         if([person_.delegate respondsToSelector:@selector(remotePerson:didSubscribePublicationOfSubscription:)]) {
             id subscription = [person_.repository findSubscriptionBySubscriptionID:nativeSubscription->Id()];
-            [person_.delegate remotePerson:person_ didSubscribePublicationOfSubscription:subscription];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [person_.delegate remotePerson:person_ didSubscribePublicationOfSubscription:subscription];
+            });
         }
     }
     
     void OnPublicationUnsubscribed(NativeSubscription* nativeSubscription) override{
         if([person_.delegate respondsToSelector:@selector(remotePerson:didUnsubscribePublicationOfSubscription:)]) {
             id subscription = [person_.repository findSubscriptionBySubscriptionID:nativeSubscription->Id()];
-            [person_.delegate remotePerson:person_ didUnsubscribePublicationOfSubscription:subscription];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [person_.delegate remotePerson:person_ didUnsubscribePublicationOfSubscription:subscription];
+            });
         }
     }
 private:
     SKWRemotePerson* person_;
+    dispatch_group_t group_;
 };
 
 @interface SKWRemotePerson(){

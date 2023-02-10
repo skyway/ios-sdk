@@ -18,15 +18,17 @@ using NativeForwardingListener = skyway::plugin::sfu_bot::Forwarding::EventListe
 class ForwardingListener: public NativeForwardingListener {
 public:
     ForwardingListener(SKWForwarding* forwarding)
-        : forwarding_(forwarding) {}
+        : forwarding_(forwarding), group_(forwarding.repository.eventGroup) {}
     void OnStopped() override {
         if([forwarding_.delegate respondsToSelector:@selector(forwardingDidStop:)]) {
-            [forwarding_.delegate forwardingDidStop:forwarding_];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [forwarding_.delegate forwardingDidStop:forwarding_];
+            });
         }
-        
     }
 private:
     SKWForwarding* forwarding_;
+    dispatch_group_t group_;
 };
 
 @interface SKWForwarding(){

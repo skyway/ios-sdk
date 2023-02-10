@@ -22,58 +22,75 @@
 class PublicationEventListener: public NativePublication::EventListener{
 public:
     PublicationEventListener(SKWPublication* publication)
-        : publication_(publication) {}
+        : publication_(publication), group_(publication.repository.eventGroup) {}
     void OnUnpublished() override {
         if([publication_.delegate respondsToSelector:@selector(publicationUnpublished:)]) {
-            [publication_.delegate publicationUnpublished:publication_];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [publication_.delegate publicationUnpublished:publication_];
+            });
         }
     }
     
     void OnSubscribed() override {
         if([publication_.delegate respondsToSelector:@selector(publicationSubscribed:)]) {
-            [publication_.delegate publicationSubscribed:publication_];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [publication_.delegate publicationSubscribed:publication_];
+            });
         }
     }
     
     void OnUnsubscribed() override {
         if([publication_.delegate respondsToSelector:@selector(publicationUnsubscribed:)]) {
-            [publication_.delegate publicationUnsubscribed:publication_];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [publication_.delegate publicationUnsubscribed:publication_];
+            });
         }
     }
     
     void OnSubscriptionListChanged() override {
         if([publication_.delegate respondsToSelector:@selector(publicationSubscriptionListDidChange:)]) {
-            [publication_.delegate publicationSubscriptionListDidChange:publication_];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [publication_.delegate publicationSubscriptionListDidChange:publication_];
+            });
         }
     }
     
     void OnMetadataUpdated(const std::string& nativeMetadata) override {
         if([publication_.delegate respondsToSelector:@selector(publication:didUpdateMetadata:)]) {
             NSString* metadata = [NSString stringForStdString:nativeMetadata];
-            [publication_.delegate publication:publication_ didUpdateMetadata:metadata];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [publication_.delegate publication:publication_ didUpdateMetadata:metadata];
+            });
         }
     }
     
     void OnEnabled() override {
         if([publication_.delegate respondsToSelector:@selector(publicationEnabled:)]) {
-            [publication_.delegate publicationEnabled:publication_];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [publication_.delegate publicationEnabled:publication_];
+            });
         }
     }
     
     void OnDisabled() override {
         if([publication_.delegate respondsToSelector:@selector(publicationDisabled:)]) {
-            [publication_.delegate publicationDisabled:publication_];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [publication_.delegate publicationDisabled:publication_];
+            });
         }
     }
     
     void OnStateChanged() override {
         if([publication_.delegate respondsToSelector:@selector(publicationStateDidChange:)]) {
-            [publication_.delegate publicationStateDidChange:publication_];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [publication_.delegate publicationStateDidChange:publication_];
+            });
         }
     }
     
 private:
     SKWPublication* publication_;
+    dispatch_group_t group_;
 };
 
 @interface SKWPublication(){

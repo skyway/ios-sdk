@@ -29,8 +29,9 @@ using NativeSubscriptionInterface = skyway::core::interface::Subscription;
 @property(nonatomic, readonly) NSArray<SKWMember*>* _Nonnull members;
 @property(nonatomic, readonly) NSArray<SKWPublication*>* _Nonnull publications;
 @property(nonatomic, readonly) NSArray<SKWSubscription*>* _Nonnull subscriptions;
+@property(nonatomic, readonly) dispatch_group_t _Nonnull eventGroup;
 
--(id _Nonnull)initWithNative:(NativeChannelInterface* _Nonnull)native;
+-(id _Nonnull)initWithNative:(NativeChannelInterface* _Nonnull)native eventGroup:(dispatch_group_t _Nonnull)eventGroup;
 
 -(SKWMember* _Nullable)findMemberByMemberID:(const std::string&)memberID;
 -(SKWPublication* _Nullable)findPublicationByPublicationID:(const std::string&)publicationID;

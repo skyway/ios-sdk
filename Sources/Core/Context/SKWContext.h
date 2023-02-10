@@ -11,51 +11,8 @@
 
 #import <Foundation/Foundation.h>
 #import "SKWPlugin.h"
+#import "SKWContextOptions.h"
 #import "Type.h"
-
-NS_SWIFT_NAME(ContextOptionsRTCAPI)
-@interface SKWContextOptionsRTCAPI: NSObject
-
-@property(nonatomic) NSString* _Nullable domain;
-@property(nonatomic) BOOL secure;
-
-@end
-
-NS_SWIFT_NAME(ContextOptionsICEParams)
-@interface SKWContextOptionsICEParams: NSObject
-
-@property(nonatomic) NSString* _Nullable domain;
-@property(nonatomic) int version;
-@property(nonatomic) BOOL secure;
-
-@end
-
-NS_SWIFT_NAME(ContextOptionsSignaling)
-@interface SKWContextOptionsSignaling: NSObject
-
-@property(nonatomic) NSString* _Nullable domain;
-@property(nonatomic) BOOL secure;
-
-@end
-
-/// WebRTCに関するオプション
-NS_SWIFT_NAME(ContextOptionsRTCConfig)
-@interface SKWContextOptionsRTCConfig: NSObject
-
-@property(nonatomic) SKWTurnPolicy policy;
-
-@end
-
-NS_SWIFT_NAME(ContextOptions)
-@interface SKWContextOptions: NSObject
-
-@property(nonatomic) SKWLogLevel logLevel;
-@property(nonatomic) SKWContextOptionsRTCAPI* _Nonnull rtcApi;
-@property(nonatomic) SKWContextOptionsICEParams* _Nonnull iceParams;
-@property(nonatomic) SKWContextOptionsSignaling* _Nonnull signaling;
-@property(nonatomic) SKWContextOptionsRTCConfig* _Nonnull rtcConfig;
-
-@end
 
 
 /// SkyWay全体の設定、取得を行うStaticなコンテキスト
@@ -67,22 +24,29 @@ typedef void (^SKWChannelDisposeCompletion)(NSError* _Nullable);
 
 @property(class, nonatomic, readonly) NSArray<SKWPlugin*>* _Nonnull plugins;
 
+-(id _Nonnull)init NS_UNAVAILABLE;
+
 /// SkyWayの初期化をします。
 ///
 /// SkyWayを利用するためには必ずこのAPIをコールする必要があります。
 ///
-/// @param token JWT形式のAuthトークン 
+/// @param token JWT形式のSkyWayAuthToken
 /// @param options 初期化 オプション
 /// @param completion 完了コールバック
 +(void)setupWithToken:(NSString* _Nonnull)token options:(SKWContextOptions* _Nullable)options completion:(SKWContextSetupCompletion _Nullable)completion;
 
 
-/// Authトークンを更新します。
+
+/// SkyWayAuthTokenを更新します。
 ///
-/// @param token 新しいAuthトークン
+/// @param token 新しいSkyWayAuthToken
 /// @return 更新成功かどうか
 +(bool)updateToken:(NSString* _Nonnull)token;
 
+
+/// プラグインを登録します。
+///
+/// @param plugin プラグイン
 +(void)registerPlugin:(SKWPlugin* _Nonnull)plugin;
 
 /// コンテキストを破棄し、全ての接続を切断します。
@@ -95,5 +59,42 @@ typedef void (^SKWChannelDisposeCompletion)(NSError* _Nullable);
 +(void)disposeWithCompletion:(SKWChannelDisposeCompletion _Nullable)completion;
 
 @end
+
+// Channelイベントデリゲート
+NS_SWIFT_NAME(ContextDelegate)
+@protocol SKWContextDelegate <NSObject>
+@optional
+
+/// SkyWayサーバと再接続開始後にコールされるイベント
+-(void)startReconnecting;
+
+/// SkyWayサーバと再接続成功後にコールされるイベント
+-(void)reconnectingSucceeded;
+
+/// トークンが期限切れにより失効した後にコールされるイベント
+- (void)tokenExpired;
+
+/// トークンの失効が切れる前にコールされるイベント
+///
+/// このイベントがどの程度前にコールされるかの時間は`ContextOptions`の`token`から設定できます。
+- (void)shouldUpdateToken;
+
+/// SkyWay内部で回復不能なエラーが発生した後にコールされるイベント
+///
+/// 再度ご利用いただくためには、インターネット接続状況を確認した上で`dispose(completion:)`をコールして完了コールバックを待った後、再度`setup(withToken:options:completion:)`をコールし直してください。
+///
+/// また、`dispose(completion:)`をコール後はそれまでSDKで生成されたリソースにアクセスしないでください。クラッシュする可能性があります。
+///
+- (void)fatalErrorOccurred:(NSError* _Nonnull)error;
+
+@end
+
+@interface SKWContext()
+
+/// イベントデリゲート
+@property (class, weak, nonatomic) id<SKWContextDelegate> _Nullable delegate;
+
+@end
+
 
 #endif /* SKWContext_h */

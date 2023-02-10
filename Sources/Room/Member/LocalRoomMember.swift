@@ -13,6 +13,10 @@ import SkyWayCore
     /// Subscribeできる最大人数
     ///
     /// SFURoomのみ有効のオプションで、デフォルトは10人です。
+    ///
+    /// 最大値は99です。詳しくはこちらをご覧ください。
+    ///
+    /// https://skyway.ntt.com/ja/docs/user-guide/sfu/
     public var maxSubscribers: Int32?
 }
 

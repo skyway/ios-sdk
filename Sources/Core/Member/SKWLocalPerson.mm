@@ -34,60 +34,77 @@ using NativeSubscriptionInterface = skyway::core::interface::Subscription;
 class LocalPersonEventListener: public NativeLocalPerson::EventListener {
 public:
     LocalPersonEventListener(SKWLocalPerson* person)
-        : person_(person) {}
+        : person_(person), group_(person.repository.eventGroup) {}
     // MARK: - Member::EventListener
     void OnLeft() override {
         if([person_.delegate respondsToSelector:@selector(memberDidLeave:)]) {
-            [person_.delegate memberDidLeave:person_];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [person_.delegate memberDidLeave:person_];
+            });
         }
     }
     void OnMetadataUpdated(const std::string& nativeMetadata) override {
         NSString* metadata = [NSString stringForStdString:nativeMetadata];
         if([person_.delegate respondsToSelector:@selector(member:didUpdateMetadata:)]) {
-            [person_.delegate member:person_ didUpdateMetadata:metadata];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [person_.delegate member:person_ didUpdateMetadata:metadata];
+            });
         }
     }
     void OnPublicationListChanged() override{
         if([person_.delegate respondsToSelector:@selector(memberPublicationListDidChange:)]) {
-            [person_.delegate memberPublicationListDidChange:person_];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [person_.delegate memberPublicationListDidChange:person_];
+            });
         }
     }
     
     void OnSubscriptionListChanged() override{
         if([person_.delegate respondsToSelector:@selector(memberSubscriptionListDidChange:)]) {
-            [person_.delegate memberSubscriptionListDidChange:person_];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [person_.delegate memberSubscriptionListDidChange:person_];
+            });
         }
     }
     // MARK: - LocalPerson::EventListener
     void OnStreamPublished(NativePublication* nativePublication) override{
         if([person_.delegate respondsToSelector:@selector(localPerson:didPublishStreamOfPublication:)]) {
             id publication = [person_.repository findPublicationByPublicationID:nativePublication->Id()];
-            [person_.delegate localPerson:person_ didPublishStreamOfPublication:publication];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [person_.delegate localPerson:person_ didPublishStreamOfPublication:publication];
+            });
         }
     }
     
     void OnStreamUnpublished(NativePublication* nativePublication) override{
         if([person_.delegate respondsToSelector:@selector(localPerson:didUnpublishStreamOfPublication:)]) {
             id publication = [person_.repository findPublicationByPublicationID:nativePublication->Id()];
-            [person_.delegate localPerson:person_ didUnpublishStreamOfPublication:publication];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [person_.delegate localPerson:person_ didUnpublishStreamOfPublication:publication];
+            });
         }
     }
     
     void OnPublicationSubscribed(NativeSubscription* nativeSubscription) override{
         if([person_.delegate respondsToSelector:@selector(localPerson:didSubscribePublicationOfSubscription:)]) {
             id subscription = [person_.repository findSubscriptionBySubscriptionID:nativeSubscription->Id()];
-            [person_.delegate localPerson:person_ didSubscribePublicationOfSubscription:subscription];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [person_.delegate localPerson:person_ didSubscribePublicationOfSubscription:subscription];
+            });
         }
     }
     
     void OnPublicationUnsubscribed(NativeSubscription* nativeSubscription) override{
         if([person_.delegate respondsToSelector:@selector(localPerson:didUnsubscribePublicationOfSubscription:)]) {
             id subscription = [person_.repository findSubscriptionBySubscriptionID:nativeSubscription->Id()];
-            [person_.delegate localPerson:person_ didUnsubscribePublicationOfSubscription:subscription];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [person_.delegate localPerson:person_ didUnsubscribePublicationOfSubscription:subscription];
+            });
         }
     }
 private:
     SKWLocalPerson* person_;
+    dispatch_group_t group_;
 };
 
 @interface SKWLocalPerson(){

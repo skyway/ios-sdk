@@ -11,8 +11,10 @@
 #import "SKWContext+Internal.h"
 #import "SKWPlugin+Internal.h"
 #import "SKWRemotePersonPlugin+Internal.h"
+#import "SKWContextOptions+Internal.h"
 #import "SKWErrorFactory.h"
 #import "Type+Internal.h"
+
 #import "Logger.hpp"
 #import "HttpClient.hpp"
 #import "WebSocketClient.hpp"
@@ -24,127 +26,55 @@
 #import <skyway/core/context.hpp>
 
 using NativeContextOptions = skyway::core::ContextOptions;
+using NativeContextEventListener = skyway::core::Context::EventListener;
+using NativeAuthtokenManagerListener = skyway::token::interface::AuthTokenManager::Listener;
 
-@interface SKWContextOptionsRTCAPI()
--(skyway::core::ContextOptions::RtcApi)native;
-@end
-
-@implementation SKWContextOptionsRTCAPI
-
--(id)init {
-    if(self = [super init]) {
-        _secure = true;
+class ContextEventListener: public NativeContextEventListener {
+public:
+    ContextEventListener(dispatch_group_t group) : group_(group) {}
+    void OnReconnectStart() override {
+        if([SKWContext.delegate respondsToSelector:@selector(startReconnecting)]) {
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [SKWContext.delegate startReconnecting];
+            });
+        }
     }
-    return self;
-}
-
--(NativeContextOptions::RtcApi)native {
-    NativeContextOptions::RtcApi native;
-    if(_domain) {
-        native.domain = [NSString stdStringForString:_domain];
+    void OnReconnectSuccess() override {
+        if([SKWContext.delegate respondsToSelector:@selector(reconnectingSucceeded)]) {
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [SKWContext.delegate reconnectingSucceeded];
+            });
+        }
     }
-    native.secure = _secure;
-    return native;
-}
-
-@end
-
-@interface SKWContextOptionsICEParams()
--(skyway::core::ContextOptions::IceParams)native;
-@end
-
-@implementation SKWContextOptionsICEParams
-
--(id)init {
-    if(self = [super init]) {
-        _version = 0;
-        _secure = true;
+    void OnFatalError(const skyway::global::Error& error) override {
+        if([SKWContext.delegate respondsToSelector:@selector(fatalErrorOccurred:)]) {
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [SKWContext.delegate fatalErrorOccurred:[SKWErrorFactory fatalErrorRAPIReconnectFailedError]];
+            });
+        }
     }
-    return self;
-}
+    dispatch_group_t group_;
+};
 
--(NativeContextOptions::IceParams)native {
-    NativeContextOptions::IceParams native;
-    if(_domain) {
-        native.domain = [NSString stdStringForString:_domain];
+class AuthTokenManagerListener: public NativeAuthtokenManagerListener {
+public:
+    AuthTokenManagerListener(dispatch_group_t group) : group_(group) {}
+    virtual void OnTokenRefreshingNeeded() override {
+        if([SKWContext.delegate respondsToSelector:@selector(shouldUpdateToken)]) {
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [SKWContext.delegate shouldUpdateToken];
+            });
+        }
     }
-    if(_version) {
-        native.version = _version;
+    virtual void OnTokenExpired() override {
+        if([SKWContext.delegate respondsToSelector:@selector(tokenExpired)]) {
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [SKWContext.delegate tokenExpired];
+            });
+        }
     }
-    native.secure = _secure;
-    return native;
-}
-
-@end
-
-@interface SKWContextOptionsSignaling()
--(skyway::core::ContextOptions::Signaling)native;
-@end
-
-@implementation SKWContextOptionsSignaling
-
--(id)init {
-    if(self = [super init]) {
-        _secure = true;
-    }
-    return self;
-}
-
--(NativeContextOptions::Signaling)native {
-    NativeContextOptions::Signaling native;
-    if(_domain) {
-        native.domain = [NSString stdStringForString:_domain];
-    }
-    native.secure = _secure;
-    return native;
-}
-
-@end
-
-@interface SKWContextOptionsRTCConfig()
--(skyway::core::ContextOptions::RtcConfig)native;
-@end
-
-@implementation SKWContextOptionsRTCConfig
-
--(id)init {
-    if(self = [super init]) {
-        _policy = SKWTurnPolicyEnable;
-    }
-    return self;
-}
-
--(NativeContextOptions::RtcConfig)native {
-    NativeContextOptions::RtcConfig native;
-    native.policy = nativeTurnPolicyForTurnPolicy(_policy);
-    return native;
-}
-
-@end
-
-@implementation SKWContextOptions
-
--(id)init {
-    if(self = [super init]) {
-        _logLevel = SKWLogLevelError;
-        _rtcApi =    [[SKWContextOptionsRTCAPI alloc] init];
-        _iceParams = [[SKWContextOptionsICEParams alloc] init];
-        _signaling = [[SKWContextOptionsSignaling alloc] init];
-        _rtcConfig = [[SKWContextOptionsRTCConfig alloc] init];
-    }
-    return self;
-}
-
--(NativeContextOptions)nativeOptions{
-    skyway::core::ContextOptions nativeOptions;
-    nativeOptions.rtc_api    = _rtcApi.native;
-    nativeOptions.ice_params = _iceParams.native;
-    nativeOptions.signaling  = _signaling.native;
-    nativeOptions.rtc_config = _rtcConfig.native;
-    return nativeOptions;
-}
-@end
-
+    dispatch_group_t group_;
+};
 
 @implementation SKWContext
 
@@ -152,6 +82,10 @@ using Context = skyway::core::Context;
 
 static RTCPeerConnectionFactory* _Nullable _pcFactory;
 static NSMutableArray<SKWPlugin*>* _plugins = [[NSMutableArray alloc] init];
+static id<SKWContextDelegate> _Nullable _delegate;
+static std::unique_ptr<NativeContextEventListener> _contextListener;
+static std::unique_ptr<NativeAuthtokenManagerListener> _authTokenListener;
+static dispatch_group_t eventGroup = dispatch_group_create();
 
 +(RTCPeerConnectionFactory* _Nullable)pcFactory{
     return _pcFactory;
@@ -167,6 +101,8 @@ static NSMutableArray<SKWPlugin*>* _plugins = [[NSMutableArray alloc] init];
         if(options) {
             nativeOptions = options.nativeOptions;
         }
+        _authTokenListener = std::make_unique<AuthTokenManagerListener>(eventGroup);
+        nativeOptions.token.listener = _authTokenListener.get();
         auto nativeFactory = _pcFactory.nativeFactory;
         // Setting for logger
         auto nativeLogLevel = nativeLogLevelForLogLevel(options.logLevel);
@@ -178,10 +114,10 @@ static NSMutableArray<SKWPlugin*>* _plugins = [[NSMutableArray alloc] init];
         [SKWContext registerPlugin:remotePersonPlugin];
         
         auto http = std::make_unique<skyway::network::HttpClient>();
-        
         std::string nativeToken = [NSString stdStringForString:token];
         auto ws_factory = std::make_unique<skyway::network::WebSocketClientFactory>();
-        auto result = Context::Setup(nativeToken, std::move(http), std::move(ws_factory), std::move(logger), nullptr, nativeOptions);
+        _contextListener = std::make_unique<ContextEventListener>(eventGroup);
+        auto result = Context::Setup(nativeToken, std::move(http), std::move(ws_factory), std::move(logger), _contextListener.get(), nativeOptions);
         if(completion) {
             if(result) {
                 completion(nil);
@@ -206,10 +142,20 @@ static NSMutableArray<SKWPlugin*>* _plugins = [[NSMutableArray alloc] init];
     return [_plugins copy];
 }
 
++(id<SKWContextDelegate>)delegate {
+    return _delegate;
+}
+
++(void)setDelegate:(id<SKWContextDelegate>)delegate {
+    _delegate = delegate;
+}
+
 +(void)disposeWithCompletion:(SKWChannelDisposeCompletion _Nullable)completion {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_group_notify(eventGroup, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         Context::Dispose();
         _pcFactory = nil;
+        _contextListener.reset();
+        _authTokenListener.reset();
         [_plugins removeAllObjects];
         auto result = RTCCleanupSSL();
         if(completion) {

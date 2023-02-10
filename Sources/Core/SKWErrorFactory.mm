@@ -99,5 +99,9 @@
     return [[NSError alloc] initWithDomain:[[NSBundle mainBundle] bundleIdentifier] code:SKWContextDisposeError userInfo:nil];
 }
 
++(NSError* _Nonnull)fatalErrorRAPIReconnectFailedError {
+    return [[NSError alloc] initWithDomain:[[NSBundle mainBundle] bundleIdentifier] code:SKWFatalErrorRAPIReconnectFailed userInfo:nil];
+}
+
 
 @end

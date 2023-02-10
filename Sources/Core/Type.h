@@ -46,8 +46,27 @@ typedef NS_ENUM(NSUInteger, SKWRoomState) {
 } NS_SWIFT_NAME(RoomState);
 
 typedef NS_ENUM(NSUInteger, SKWTurnPolicy) {
+    /// TURNが有効なモード
+    ///
+    /// SkyWay Auth Tokenのturnが有効のとき、TURNサーバが利用されることがあります。
+    ///
+    /// TURNについてはこちらをご覧ください。
+    ///
+    /// https://skyway.ntt.com/ja/docs/user-guide/turn/
     SKWTurnPolicyEnable,
+    /// TURNが無効なモード
+    ///
+    /// SkyWay Auth Tokenのturnが有効であっても、TURNサーバ経由で通信されません。
+    ///
+    /// TURNについてはこちらをご覧ください。
+    ///
+    /// https://skyway.ntt.com/ja/docs/user-guide/turn/
     SKWTurnPolicyDisable,
+    /// TURNサーバ経由を強制するモード
+    ///
+    /// TURNについてはこちらをご覧ください。
+    ///
+    /// https://skyway.ntt.com/ja/docs/user-guide/turn/
     SKWTurnPolicyTurnOnly,
 } NS_SWIFT_NAME(TurnPolicy);
 

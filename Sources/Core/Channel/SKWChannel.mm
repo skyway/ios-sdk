@@ -29,75 +29,97 @@ using NativeSubscriptionInterface = skyway::core::interface::Subscription;
 
 class ChannelEventListener: public NativeChannelEventListener {
 public:
-    ChannelEventListener(SKWChannel* channel)
-        : channel_(channel) {}
+    ChannelEventListener(SKWChannel* channel, dispatch_group_t group)
+        : channel_(channel), group_(group) {}
     void OnClosed() override {
         if([channel_.delegate respondsToSelector:@selector(channelDidClose:)]) {
-            [channel_.delegate channelDidClose:channel_];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [channel_.delegate channelDidClose:channel_];
+            });
         }
     }
     void OnMetadataUpdated(const std::string& nativeMetadata) override {
         if([channel_.delegate respondsToSelector:@selector(channel:didUpdateMetadata:)]) {
             NSString* metadata = [NSString stringForStdString:nativeMetadata];
-            [channel_.delegate channel:channel_ didUpdateMetadata:metadata];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [channel_.delegate channel:channel_ didUpdateMetadata:metadata];
+            });
         }
     }
     void OnMemberListChanged() override {
         if([channel_.delegate respondsToSelector:@selector(channelMemberListDidChange:)]) {
-            [channel_.delegate channelMemberListDidChange:channel_];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [channel_.delegate channelMemberListDidChange:channel_];
+            });
         }
     }
 
     void OnMemberJoined(NativeMemberInterface* nativeMember) override {
         id member = [channel_.repository registerMemberIfNeeded:nativeMember];
         if([channel_.delegate respondsToSelector:@selector(channel:memberDidJoin:)]) {
-            [channel_.delegate channel:channel_ memberDidJoin:member];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [channel_.delegate channel:channel_ memberDidJoin:member];
+            });
         }
     }
     void OnMemberLeft(NativeMemberInterface* nativeMember) override {
         id member = [channel_.repository findMemberByMemberID:nativeMember->Id()];
         if([channel_.delegate respondsToSelector:@selector(channel:memberDidLeave:)]) {
-            [channel_.delegate channel:channel_ memberDidLeave:member];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [channel_.delegate channel:channel_ memberDidLeave:member];
+            });
         }
     }
     void OnMemberMetadataUpdated(NativeMemberInterface* nativeMember, const std::string& nativeMetadata) override {
         if([channel_.delegate respondsToSelector:@selector(channel:member:metadataDidUpdate:)]) {
             NSString* metadata = [NSString stringForStdString:nativeMetadata];
             id member = [channel_.repository findMemberByMemberID:nativeMember->Id()];
-            [channel_.delegate channel:channel_ member:member metadataDidUpdate:metadata];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [channel_.delegate channel:channel_ member:member metadataDidUpdate:metadata];
+            });
         }
     }
     
     void OnPublicationListChanged() override {
         if([channel_.delegate respondsToSelector:@selector(channelPublicationListDidChange:)]) {
-            [channel_.delegate channelPublicationListDidChange:channel_];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [channel_.delegate channelPublicationListDidChange:channel_];
+            });
         }
     }
 
     void OnStreamPublished(NativePublicationInterface* nativePublication) override {
         id publication = [channel_.repository registerPublicationIfNeeded:nativePublication];
         if([channel_.delegate respondsToSelector:@selector(channel:didPublishStreamOfPublication:)]) {
-            [channel_.delegate channel:channel_ didPublishStreamOfPublication:publication];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [channel_.delegate channel:channel_ didPublishStreamOfPublication:publication];
+            });
         }
     }
     void OnStreamUnpublished(NativePublicationInterface* nativePublication) override {
         id publication = [channel_.repository findPublicationByPublicationID:nativePublication->Id()];
         if([channel_.delegate respondsToSelector:@selector(channel:didUnpublishStreamOfPublication:)]) {
-            [channel_.delegate channel:channel_ didUnpublishStreamOfPublication:publication];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [channel_.delegate channel:channel_ didUnpublishStreamOfPublication:publication];
+            });
         }
     }
     
     void OnPublicationEnabled(NativePublicationInterface* nativePublication) override {
         if([channel_.delegate respondsToSelector:@selector(channel:publicationDidChangeToEnabled:)]) {
             id publication = [channel_.repository findPublicationByPublicationID:nativePublication->Id()];
-            [channel_.delegate channel:channel_ publicationDidChangeToEnabled:publication];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [channel_.delegate channel:channel_ publicationDidChangeToEnabled:publication];
+            });
         }
     }
     
     void OnPublicationDisabled(NativePublicationInterface* nativePublication) override {
         if([channel_.delegate respondsToSelector:@selector(channel:publicationDidChangeToDisabled:)]) {
             id publication = [channel_.repository findPublicationByPublicationID:nativePublication->Id()];
-            [channel_.delegate channel:channel_ publicationDidChangeToDisabled:publication];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [channel_.delegate channel:channel_ publicationDidChangeToDisabled:publication];
+            });
         }
     }
     
@@ -105,30 +127,39 @@ public:
         if([channel_.delegate respondsToSelector:@selector(channel:publication:metadataDidUpdate:)]) {
             NSString* metadata = [NSString stringForStdString:nativeMetadata];
             id publication = [channel_.repository findPublicationByPublicationID:nativePublication->Id()];
-            [channel_.delegate channel:channel_ publication:publication metadataDidUpdate:metadata];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [channel_.delegate channel:channel_ publication:publication metadataDidUpdate:metadata];
+            });
         }
     }
     
     void OnSubscriptionListChanged() override {
         if([channel_.delegate respondsToSelector:@selector(channelSubscriptionListDidChange:)]) {
-            [channel_.delegate channelSubscriptionListDidChange:channel_];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [channel_.delegate channelSubscriptionListDidChange:channel_];
+            });
         }
     }
     
     void OnPublicationSubscribed(NativeSubscriptionInterface* nativeSubscription) override {
         id subscription = [channel_.repository registerSubscriptionIfNeeded:nativeSubscription];
         if([channel_.delegate respondsToSelector:@selector(channel:didSubscribePublicationOfSubscription:)]) {
-            [channel_.delegate channel:channel_ didSubscribePublicationOfSubscription:subscription];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [channel_.delegate channel:channel_ didSubscribePublicationOfSubscription:subscription];
+            });
         }
     }
     void OnPublicationUnsubscribed(NativeSubscriptionInterface* nativeSubscription) override {
         id subscription = [channel_.repository findSubscriptionBySubscriptionID:nativeSubscription->Id()];
         if([channel_.delegate respondsToSelector:@selector(channel:didUnsubscribePublicationOfSubscription:)]) {
-            [channel_.delegate channel:channel_ didUnsubscribePublicationOfSubscription:subscription];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [channel_.delegate channel:channel_ didUnsubscribePublicationOfSubscription:subscription];
+            });
         }
     }
 private:
     SKWChannel* channel_;
+    dispatch_group_t group_;
 };
 
 
@@ -143,6 +174,7 @@ private:
 
 
 @interface SKWChannel() {
+    dispatch_group_t eventGroup;
     std::unique_ptr<ChannelEventListener> listener;
 }
 @end
@@ -152,10 +184,11 @@ private:
 -(id _Nonnull)initWithSharedNative:(std::shared_ptr<NativeChannel>)native {
     if(self = [super init]) {
         _native = native;
-        _repository = [[ChannelStateRepository alloc] initWithNative:native.get()];
-        self->listener = std::make_unique<ChannelEventListener>(self);
-        _native->AddEventListener(self->listener.get());
+        eventGroup = dispatch_group_create();
+        _repository = [[ChannelStateRepository alloc] initWithNative:native.get() eventGroup:eventGroup];
         
+        listener = std::make_unique<ChannelEventListener>(self, eventGroup);
+        _native->AddEventListener(listener.get());
     }
     return self;
 }
@@ -345,7 +378,7 @@ private:
 }
 
 -(void)disposeWithCompletion:(SKWChannelDisposeCompletion _Nullable)completion {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_group_notify(eventGroup, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         self.native->Dispose();
         [self.repository clear];
         if(completion) {

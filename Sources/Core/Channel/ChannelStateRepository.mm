@@ -30,11 +30,12 @@
 
 @implementation ChannelStateRepository
 
--(id _Nonnull)initWithNative:(NativeChannelInterface* _Nonnull)native {
+-(id _Nonnull)initWithNative:(NativeChannelInterface* _Nonnull)native eventGroup:(dispatch_group_t)eventGroup{
     if(self = [super init]) {
         mutableMembers = [[NSMutableArray alloc] init];
         mutablePublications = [[NSMutableArray alloc] init];
         mutableSubscriptions = [[NSMutableArray alloc] init];
+        _eventGroup = eventGroup;
         [self syncNativeChannel:native];
     }
     return self;

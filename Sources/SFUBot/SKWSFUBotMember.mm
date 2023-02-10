@@ -22,32 +22,41 @@ using NativeForwardingConfigure = skyway::plugin::sfu_bot::ForwardingConfigure;
 class SFUBotEventListener: public NativeSFUBot::EventListener {
 public:
     SFUBotEventListener(SKWSFUBotMember* bot)
-        : bot_(bot) {}
+        : bot_(bot), group_(bot.repository.eventGroup) {}
     // MARK: - Member::EventListener
     void OnLeft() override {
         if([bot_.delegate respondsToSelector:@selector(memberDidLeave:)]) {
-            [bot_.delegate memberDidLeave:bot_];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [bot_.delegate memberDidLeave:bot_];
+            });
         }
     }
     void OnMetadataUpdated(const std::string& nativeMetadata) override {
         NSString* metadata = [NSString stringForStdString:nativeMetadata];
         if([bot_.delegate respondsToSelector:@selector(member:didUpdateMetadata:)]) {
-            [bot_.delegate member:bot_ didUpdateMetadata:metadata];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [bot_.delegate member:bot_ didUpdateMetadata:metadata];
+            });
         }
     }
     void OnPublicationListChanged() override {
         if([bot_.delegate respondsToSelector:@selector(memberPublicationListDidChange:)]) {
-            [bot_.delegate memberPublicationListDidChange:bot_];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [bot_.delegate memberPublicationListDidChange:bot_];
+            });
         }
     }
     
     void OnSubscriptionListChanged() override {
         if([bot_.delegate respondsToSelector:@selector(memberSubscriptionListDidChange:)]) {
-            [bot_.delegate memberSubscriptionListDidChange:bot_];
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [bot_.delegate memberSubscriptionListDidChange:bot_];
+            });
         }
     }
 private:
     SKWSFUBotMember* bot_;
+    dispatch_group_t group_;
 };
 
 @interface SKWSFUBotMember(){

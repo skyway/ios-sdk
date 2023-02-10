@@ -19,7 +19,7 @@ using NativeStream = skyway::core::interface::Stream;
 
 @interface SKWRemoteDataStream()
 
--(id _Nonnull)initWithSharedNative:(std::shared_ptr<NativeStream>)native;
+-(id _Nonnull)initWithSharedNative:(std::shared_ptr<NativeStream>)native eventGroup:(dispatch_group_t _Nonnull)eventGroup;
 
 @end
 
