@@ -17,7 +17,7 @@
     <a title="Protocols  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">SkyWayCore Docs</a> (35% documented)</p>
+        <p><a href="index.html">SkyWayCore Docs</a> (38% documented)</p>
         <div class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -79,6 +79,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Classes/SKWContextOptionsSignaling.html">SKWContextOptionsSignaling</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SKWContextOptionsToken.html">SKWContextOptionsToken</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/SKWCustomFrameVideoSource.html">SKWCustomFrameVideoSource</a>
@@ -231,6 +234,9 @@
                 <a href="Protocols/SKWChannelDelegate.html">SKWChannelDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="Protocols/SKWContextDelegate.html">SKWContextDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/SKWLocalPersonDelegate.html">SKWLocalPersonDelegate</a>
               </li>
               <li class="nav-group-task">
@@ -375,6 +381,64 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">ChannelDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SKWContextDelegate"></a>
+                    <a name="//apple_ref/objc/Protocol/SKWContextDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SKWContextDelegate">SKWContextDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Protocols/SKWContextDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">SKWContextDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span>
+<span class="k">@optional</span>
+
+<span class="c1">/// SkyWayサーバと再接続開始後にコールされるイベント</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">startReconnecting</span><span class="p">;</span>
+
+<span class="c1">/// SkyWayサーバと再接続成功後にコールされるイベント</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">reconnectingSucceeded</span><span class="p">;</span>
+
+<span class="c1">/// トークンが期限切れにより失効した後にコールされるイベント</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">tokenExpired</span><span class="p">;</span>
+
+<span class="c1">/// トークンの失効が切れる前にコールされるイベント</span>
+<span class="c1">///</span>
+<span class="c1">/// このイベントがどの程度前にコールされるかの時間は`ContextOptions`の`token`から設定できます。</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">shouldUpdateToken</span><span class="p">;</span>
+
+<span class="c1">/// SkyWay内部で回復不能なエラーが発生した後にコールされるイベント</span>
+<span class="c1">///</span>
+<span class="c1">/// 再度ご利用いただくためには、インターネット接続状況を確認した上で`dispose(completion:)`をコールして完了コールバックを待った後、再度`setup(withToken:options:completion:)`をコールし直してください。</span>
+<span class="c1">///</span>
+<span class="c1">/// また、`dispose(completion:)`をコール後はそれまでSDKで生成されたリソースにアクセスしないでください。クラッシュする可能性があります。</span>
+<span class="c1">///</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">fatalErrorOccurred</span><span class="p">:(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span>
+
+<span class="k">@end</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">ContextDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -643,7 +707,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2023-01-28)</p>
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2023-02-10)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
