@@ -43,9 +43,10 @@ struct ContentView: View {
                             }
                             Task {
                                 joinButtonTitle = "Joining..."
-                                guard let _ = try? await skyway.joinRoom(roomName: roomNameText, roomType: .P2P) else {
-                                    return
+                                if let _memberId = try? await skyway.joinRoom(roomName: roomNameText, roomType: .P2P) {
+                                    memberId = _memberId
                                 }
+                                
                                 joinButtonTitle = "Leave"
                                 try await skyway.publishStreams(includeDataStream: false)
                             }
