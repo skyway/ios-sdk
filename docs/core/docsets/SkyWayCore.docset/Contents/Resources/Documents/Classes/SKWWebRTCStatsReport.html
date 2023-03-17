@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SKWStatsReportInboundRTP Class Reference</title>
+    <title>SKWWebRTCStatsReport Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,11 +13,11 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/objc/Class/SKWStatsReportInboundRTP" class="dashAnchor"></a>
-    <a title="SKWStatsReportInboundRTP Class Reference"></a>
+    <a name="//apple_ref/objc/Class/SKWWebRTCStatsReport" class="dashAnchor"></a>
+    <a title="SKWWebRTCStatsReport Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">SkyWayCore Docs</a> (38% documented)</p>
+        <p><a href="../index.html">SkyWayCore Docs</a> (47% documented)</p>
         <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">SkyWayCore Reference</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        SKWStatsReportInboundRTP Class Reference
+        SKWWebRTCStatsReport Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -150,15 +150,6 @@
                 <a href="../Classes/SKWRemoteVideoStream.html">SKWRemoteVideoStream</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/SKWStatsReport.html">SKWStatsReport</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/SKWStatsReportInboundRTP.html">SKWStatsReportInboundRTP</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/SKWStatsReportOutboundRTP.html">SKWStatsReportOutboundRTP</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Classes/SKWStream.html">SKWStream</a>
               </li>
               <li class="nav-group-task">
@@ -172,6 +163,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/SKWVideoView.html">SKWVideoView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKWWebRTCStats.html">SKWWebRTCStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKWWebRTCStatsReport.html">SKWWebRTCStatsReport</a>
               </li>
             </ul>
           </li>
@@ -347,24 +344,24 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>SKWStatsReportInboundRTP</h1>
+            <h1>SKWWebRTCStatsReport</h1>
               <div class="declaration">
                 <div class="language">
                   <p class="aside-title">Objective-C</p>
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SKWStatsReportInboundRTP</span><span class="p">:</span> <span class="nc">NSObject</span>
-
-<span class="k">@property</span> <span class="kt">uint64_t</span> <span class="n">bytesReceived</span><span class="p">;</span>
-
-<span class="k">@end</span></code></pre>
+                  <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">SKWWebRTCStatsReport</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                 </div>
                 <div class="language">
                   <p class="aside-title">Swift</p>
-                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SKWStatsReportInboundRTP</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">WebRTCStatsReport</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>WebRTC統計情報の一覧</p>
+
+<p>併せて公式サイトの通信状態の統計的分析もご確認ください。
+<a href="https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/">https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/</a></p>
 
           </section>
           <section class="section task-group-section">
@@ -373,15 +370,130 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)SKWStatsReportInboundRTP(py)bytesReceived"></a>
-                    <a name="//apple_ref/objc/Property/bytesReceived" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SKWStatsReportInboundRTP(py)bytesReceived">bytesReceived</a>
+                    <a name="/c:objc(cs)SKWWebRTCStatsReport(py)id"></a>
+                    <a name="//apple_ref/objc/Property/id" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SKWWebRTCStatsReport(py)id">id</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>統計情報のID</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">id</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SKWWebRTCStatsReport(py)type"></a>
+                    <a name="//apple_ref/objc/Property/type" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SKWWebRTCStatsReport(py)type">type</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>統計情報のType</p>
+
+<p>Type一覧はこちらをご確認ください。
+<a href="https://w3c.github.io/webrtc-stats/#rtctatstype-*">https://w3c.github.io/webrtc-stats/#rtctatstype-*</a></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">type</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SKWWebRTCStatsReport(py)params"></a>
+                    <a name="//apple_ref/objc/Property/params" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SKWWebRTCStatsReport(py)params">params</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>IDとType以外のパラメータ</p>
+
+<p>パラメータはtypeに応じて値が異なります。</p>
+
+<p>例えば、typeが<code>codec</code>の場合はこのkey, valueの組み合わせになります。</p>
+
+<p><a href="https://w3c.github.io/webrtc-stats/#codec-dict*">https://w3c.github.io/webrtc-stats/#codec-dict*</a></p>
+
+<p>valueの取りうる値の型は、NSString, NSNumber , NSDataです。</p>
+
+<p>BoolはNSNumber(0 or 1)で表現されます。</p>
+
+<p>配列・オブジェクトの場合、JSON文字列をNSData型で返します。</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSDictionary</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*</span><span class="p">,</span> <span class="n">NSObject</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">params</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">params</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SKWWebRTCStatsReport(im)init"></a>
+                    <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)SKWWebRTCStatsReport(im)init">-init</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-unavailable">
+                        <p class="aside-title">Unavailable</p>
+                        
+                      </div>
                       <div class="abstract">
                         <p>Undocumented</p>
 
@@ -390,12 +502,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="kt">uint64_t</span> <span class="n">bytesReceived</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">bytesReceived</span><span class="p">:</span> <span class="kt">UInt64</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span><span class="p">(</span><span class="n"><a href="../Classes/SKWWebRTCStatsReport.html#/c:objc(cs)SKWWebRTCStatsReport(py)id">id</a></span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">init</span> <span class="n">NS_UNAVAILABLE</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -407,7 +514,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2023-02-10)</p>
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2023-03-17)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

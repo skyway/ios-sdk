@@ -72,21 +72,28 @@
     },
     {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWChannel.h",
-      "line": 264,
+      "line": 106,
+      "symbol": "SKWChannel.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWChannel.h",
+      "line": 265,
       "symbol": "SKWChannel()",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWChannel.h",
-      "line": 267,
+      "line": 268,
       "symbol": "SKWChannel.delegate.-delegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWChannel.h",
-      "line": 267,
+      "line": 268,
       "symbol": "SKWChannel.delegate.-setDelegate:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
@@ -128,28 +135,28 @@
     },
     {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWContext.h",
-      "line": 65,
+      "line": 70,
       "symbol": "SKWContextDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWContext.h",
-      "line": 92,
+      "line": 97,
       "symbol": "SKWContext()",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWContext.h",
-      "line": 95,
+      "line": 100,
       "symbol": "SKWContext.delegate.+delegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWContext.h",
-      "line": 95,
+      "line": 100,
       "symbol": "SKWContext.delegate.+setDelegate:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
@@ -940,231 +947,63 @@
     },
     {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 26,
-      "symbol": "SKWPublication",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 28,
+      "line": 33,
       "symbol": "SKWPublicationUpdateMetadataCompletion",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 29,
+      "line": 34,
       "symbol": "SKWPublicationCancelCompletion",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 30,
+      "line": 35,
       "symbol": "SKWPublicationEnableCompletion",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 31,
+      "line": 36,
       "symbol": "SKWPublicationDisableCompletion",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 33,
-      "symbol": "SKWPublication.id",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 34,
-      "symbol": "SKWPublication.publisher",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 35,
-      "symbol": "SKWPublication.subscriptions",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 36,
-      "symbol": "SKWPublication.contentType",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 37,
-      "symbol": "SKWPublication.metadata",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 38,
-      "symbol": "SKWPublication.codecCapabilities",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 39,
-      "symbol": "SKWPublication.encodings",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 40,
-      "symbol": "SKWPublication.state",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 41,
-      "symbol": "SKWPublication.stream",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 42,
+      "line": 60,
       "symbol": "SKWPublication.origin",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 44,
-      "symbol": "SKWPublication.-updateMetadata:completion:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 45,
-      "symbol": "SKWPublication.-cancelWithCompletion:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 46,
-      "symbol": "SKWPublication.-enableWithCompletion:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 47,
-      "symbol": "SKWPublication.-disableWithCompletion:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 48,
-      "symbol": "SKWPublication.-updateEncodings:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 53,
-      "symbol": "SKWPublicationDelegate",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 55,
-      "symbol": "SKWPublicationDelegate.-publicationUnpublished:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 56,
-      "symbol": "SKWPublicationDelegate.-publicationSubscribed:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 57,
-      "symbol": "SKWPublicationDelegate.-publicationUnsubscribed:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 58,
-      "symbol": "SKWPublicationDelegate.-publicationSubscriptionListDidChange:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 59,
-      "symbol": "SKWPublicationDelegate.-publication:didUpdateMetadata:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 60,
-      "symbol": "SKWPublicationDelegate.-publicationEnabled:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 61,
-      "symbol": "SKWPublicationDelegate.-publicationDisabled:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
       "line": 62,
-      "symbol": "SKWPublicationDelegate.-publicationStateDidChange:",
+      "symbol": "SKWPublication.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 65,
+      "line": 154,
       "symbol": "SKWPublication()",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 67,
-      "symbol": "SKWPublication.delegate",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 67,
+      "line": 157,
       "symbol": "SKWPublication.delegate.-delegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWPublication.h",
-      "line": 67,
+      "line": 157,
       "symbol": "SKWPublication.delegate.-setDelegate:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
@@ -1213,7 +1052,7 @@
     },
     {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWRemoteMember.h",
-      "line": 17,
+      "line": 16,
       "symbol": "SKWRemoteMember",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
@@ -1303,55 +1142,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWStatsReport.h",
-      "line": 14,
-      "symbol": "SKWStatsReportInboundRTP",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWStatsReport.h",
-      "line": 16,
-      "symbol": "SKWStatsReportInboundRTP.bytesReceived",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWStatsReport.h",
-      "line": 20,
-      "symbol": "SKWStatsReportOutboundRTP",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWStatsReport.h",
-      "line": 22,
-      "symbol": "SKWStatsReportOutboundRTP.bytesSent",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWStatsReport.h",
-      "line": 26,
-      "symbol": "SKWStatsReport",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWStatsReport.h",
-      "line": 28,
-      "symbol": "SKWStatsReport.inbound",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWStatsReport.h",
-      "line": 29,
-      "symbol": "SKWStatsReport.outbound",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWStream.h",
       "line": 17,
       "symbol": "SKWVideoStreamProtocol",
@@ -1373,78 +1163,57 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWStream.h",
-      "line": 23,
-      "symbol": "SKWStream",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWStream.h",
-      "line": 24,
-      "symbol": "SKWStream.id",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWStream.h",
-      "line": 25,
-      "symbol": "SKWStream.side",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWStream.h",
-      "line": 26,
-      "symbol": "SKWStream.contentType",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWSubscription.h",
-      "line": 31,
+      "line": 32,
       "symbol": "SKWSubscriptionCancelCompletion",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWSubscription.h",
-      "line": 65,
+      "line": 54,
+      "symbol": "SKWSubscription.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWSubscription.h",
+      "line": 80,
       "symbol": "SKWSubscriptionDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWSubscription.h",
-      "line": 67,
+      "line": 82,
       "symbol": "SKWSubscriptionDelegate.-subscriptionCanceled:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWSubscription.h",
-      "line": 70,
+      "line": 85,
       "symbol": "SKWSubscription()",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWSubscription.h",
-      "line": 72,
+      "line": 87,
       "symbol": "SKWSubscription.delegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWSubscription.h",
-      "line": 72,
+      "line": 87,
       "symbol": "SKWSubscription.delegate.-delegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWSubscription.h",
-      "line": 72,
+      "line": 87,
       "symbol": "SKWSubscription.delegate.-setDelegate:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
@@ -1481,6 +1250,20 @@
       "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWVideoSource.h",
       "line": 23,
       "symbol": "SKWVideoSource.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWWebRTCStats.h",
+      "line": 24,
+      "symbol": "SKWWebRTCStats.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sandabu/dev/v3/ios-sdk/projects/SkyWay/Frameworks/Core/SkyWayCore.Framework/Headers/SKWWebRTCStatsReport.h",
+      "line": 45,
+      "symbol": "SKWWebRTCStatsReport.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },

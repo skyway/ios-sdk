@@ -17,7 +17,7 @@
     <a title="Protocols  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">SkyWayCore Docs</a> (38% documented)</p>
+        <p><a href="index.html">SkyWayCore Docs</a> (47% documented)</p>
         <div class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -150,15 +150,6 @@
                 <a href="Classes/SKWRemoteVideoStream.html">SKWRemoteVideoStream</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/SKWStatsReport.html">SKWStatsReport</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/SKWStatsReportInboundRTP.html">SKWStatsReportInboundRTP</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/SKWStatsReportOutboundRTP.html">SKWStatsReportOutboundRTP</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Classes/SKWStream.html">SKWStream</a>
               </li>
               <li class="nav-group-task">
@@ -172,6 +163,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="Classes/SKWVideoView.html">SKWVideoView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SKWWebRTCStats.html">SKWWebRTCStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SKWWebRTCStatsReport.html">SKWWebRTCStatsReport</a>
               </li>
             </ul>
           </li>
@@ -530,7 +527,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Publicationイベントデリゲート</p>
 
                         <a href="Protocols/SKWPublicationDelegate.html" class="slightly-smaller">See more</a>
                       </div>
@@ -538,17 +535,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">SKWPublicationDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span>
-<span class="k">@optional</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">publicationUnpublished</span><span class="p">:(</span><span class="n"><a href="Classes/SKWPublication.html">SKWPublication</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publication</span><span class="p">;</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">publicationSubscribed</span><span class="p">:(</span><span class="n"><a href="Classes/SKWPublication.html">SKWPublication</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publication</span><span class="p">;</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">publicationUnsubscribed</span><span class="p">:(</span><span class="n"><a href="Classes/SKWPublication.html">SKWPublication</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publication</span><span class="p">;</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">publicationSubscriptionListDidChange</span><span class="p">:(</span><span class="n"><a href="Classes/SKWPublication.html">SKWPublication</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publication</span><span class="p">;</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">publication</span><span class="p">:(</span><span class="n"><a href="Classes/SKWPublication.html">SKWPublication</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publication</span> <span class="nf">didUpdateMetadata</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">metadata</span><span class="p">;</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">publicationEnabled</span><span class="p">:(</span><span class="n"><a href="Classes/SKWPublication.html">SKWPublication</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publication</span><span class="p">;</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">publicationDisabled</span><span class="p">:(</span><span class="n"><a href="Classes/SKWPublication.html">SKWPublication</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publication</span><span class="p">;</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">publicationStateDidChange</span><span class="p">:(</span><span class="n"><a href="Classes/SKWPublication.html">SKWPublication</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publication</span><span class="p">;</span>
-<span class="k">@end</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">SKWPublicationDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -707,7 +694,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2023-02-10)</p>
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2023-03-17)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

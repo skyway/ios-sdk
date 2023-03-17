@@ -17,7 +17,7 @@
     <a title="SKWPublication Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">SkyWayCore Docs</a> (38% documented)</p>
+        <p><a href="../index.html">SkyWayCore Docs</a> (47% documented)</p>
         <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -150,15 +150,6 @@
                 <a href="../Classes/SKWRemoteVideoStream.html">SKWRemoteVideoStream</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/SKWStatsReport.html">SKWStatsReport</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/SKWStatsReportInboundRTP.html">SKWStatsReportInboundRTP</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/SKWStatsReportOutboundRTP.html">SKWStatsReportOutboundRTP</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Classes/SKWStream.html">SKWStream</a>
               </li>
               <li class="nav-group-task">
@@ -172,6 +163,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/SKWVideoView.html">SKWVideoView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKWWebRTCStats.html">SKWWebRTCStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKWWebRTCStatsReport.html">SKWWebRTCStatsReport</a>
               </li>
             </ul>
           </li>
@@ -351,31 +348,8 @@
               <div class="declaration">
                 <div class="language">
                   <p class="aside-title">Objective-C</p>
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SKWPublication</span> <span class="p">:</span> <span class="nc">NSObject</span>
-
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationUpdateMetadataCompletion">SKWPublicationUpdateMetadataCompletion</a></span><span class="p">)(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">);</span>
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationCancelCompletion">SKWPublicationCancelCompletion</a></span><span class="p">)(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">);</span>
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationEnableCompletion">SKWPublicationEnableCompletion</a></span><span class="p">)(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">);</span>
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationDisableCompletion">SKWPublicationDisableCompletion</a></span><span class="p">)(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">);</span>
-
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">id</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/SKWMember.html">SKWMember</a></span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">publisher</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/SKWSubscription.html">SKWSubscription</a></span><span class="o">*&gt;*</span> <span class="n">_Nonnull</span> <span class="n">subscriptions</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/SKWContentType.html">SKWContentType</a></span> <span class="n">contentType</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">metadata</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/SKWCodec.html">SKWCodec</a></span><span class="o">*&gt;*</span> <span class="n">_Nonnull</span> <span class="n">codecCapabilities</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/SKWEncoding.html">SKWEncoding</a></span><span class="o">*&gt;*</span> <span class="n">_Nonnull</span> <span class="n">encodings</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/SKWPublicationState.html">SKWPublicationState</a></span> <span class="n">state</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/SKWLocalStream.html">SKWLocalStream</a></span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">stream</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">SKWPublication</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">origin</span><span class="p">;</span>
-
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">updateMetadata</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">metadata</span> <span class="nf">completion</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationUpdateMetadataCompletion">SKWPublicationUpdateMetadataCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">cancelWithCompletion</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationCancelCompletion">SKWPublicationCancelCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">enableWithCompletion</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationEnableCompletion">SKWPublicationEnableCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">disableWithCompletion</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationDisableCompletion">SKWPublicationDisableCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">updateEncodings</span><span class="p">:(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/SKWEncoding.html">SKWEncoding</a></span><span class="o">*&gt;*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">encodings</span><span class="p">;</span>
-
-<span class="k">@end</span></code></pre>
+                  <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">SKWPublication</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                 </div>
                 <div class="language">
@@ -384,7 +358,11 @@
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>Publication</p>
+
+<p>PublicationはLocalMemberがPublishした時に取得でき、Roomに参加している他クライアント(RemoteMember)がSubscribeされると通信を行います。</p>
+
+<p>Roomなどから他の人のPublicationも取得することはできますが、その場合Streamは含まれません。</p>
 
           </section>
           <section class="section task-group-section">
@@ -403,14 +381,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Publicationを識別するためのID</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">id</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">id</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -435,14 +413,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>このPublicationを生成したMember</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/SKWMember.html">SKWMember</a></span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">publisher</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/SKWMember.html">SKWMember</a></span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">publisher</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -467,14 +445,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>このPublicationに紐づくSubscription一覧</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/SKWSubscription.html">SKWSubscription</a></span><span class="o">*&gt;*</span> <span class="n">_Nonnull</span> <span class="n">subscriptions</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/SKWSubscription.html">SKWSubscription</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">subscriptions</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -499,14 +477,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>PublishしているStreamのコンテントタイプ</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/SKWContentType.html">SKWContentType</a></span> <span class="n">contentType</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/SKWContentType.html">SKWContentType</a></span> <span class="n">contentType</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -531,14 +509,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>メタデータ</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">metadata</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">metadata</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -563,14 +541,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>コーデック指定</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/SKWCodec.html">SKWCodec</a></span><span class="o">*&gt;*</span> <span class="n">_Nonnull</span> <span class="n">codecCapabilities</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/SKWCodec.html">SKWCodec</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">codecCapabilities</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -595,14 +573,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>エンコーディング設定</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/SKWEncoding.html">SKWEncoding</a></span><span class="o">*&gt;*</span> <span class="n">_Nonnull</span> <span class="n">encodings</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/SKWEncoding.html">SKWEncoding</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">encodings</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -627,14 +605,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>ステート</p>
+
+<p>Canceledの場合、このオブジェクトの操作は無効です。</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/SKWPublicationState.html">SKWPublicationState</a></span> <span class="n">state</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/SKWPublicationState.html">SKWPublicationState</a></span> <span class="n">state</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -659,14 +639,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>このPublicationに紐づくStream</p>
+
+<p>LocalRoomMemberがPublishした時に得られるPublicationのみセットされます。</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/SKWLocalStream.html">SKWLocalStream</a></span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">stream</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/SKWLocalStream.html">SKWLocalStream</a></span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">stream</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -713,6 +695,37 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)SKWPublication(im)init"></a>
+                    <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)SKWPublication(im)init">-init</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-unavailable">
+                        <p class="aside-title">Unavailable</p>
+                        
+                      </div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span><span class="p">(</span><span class="n"><a href="../Classes/SKWPublication.html#/c:objc(cs)SKWPublication(py)id">id</a></span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">init</span> <span class="n">NS_UNAVAILABLE</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)SKWPublication(im)updateMetadata:completion:"></a>
                     <a name="//apple_ref/objc/Method/-updateMetadata:completion:" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)SKWPublication(im)updateMetadata:completion:">-updateMetadata:<wbr>completion:<wbr></a>
@@ -723,14 +736,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>メタデータを更新します。</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">updateMetadata</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">metadata</span> <span class="nf">completion</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationUpdateMetadataCompletion">SKWPublicationUpdateMetadataCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">updateMetadata</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">metadata</span>
+            <span class="nf">completion</span><span class="p">:</span>
+                <span class="p">(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationUpdateMetadataCompletion">SKWPublicationUpdateMetadataCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -755,14 +770,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Publishを中止します</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">cancelWithCompletion</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationCancelCompletion">SKWPublicationCancelCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">cancelWithCompletion</span><span class="p">:</span>
+    <span class="p">(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationCancelCompletion">SKWPublicationCancelCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -787,14 +803,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Publicationを有効状態にします。</p>
+
+<p>このAPIはLocalPublicationのみ機能します。</p>
+
+<p>既に有効状態の場合は何もしません。</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">enableWithCompletion</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationEnableCompletion">SKWPublicationEnableCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">enableWithCompletion</span><span class="p">:</span>
+    <span class="p">(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationEnableCompletion">SKWPublicationEnableCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -819,19 +840,61 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Publicationを無効状態にします。</p>
+
+<p>既に無効状態の場合は何もしません。</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">disableWithCompletion</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationDisableCompletion">SKWPublicationDisableCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">disableWithCompletion</span><span class="p">:</span>
+    <span class="p">(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationDisableCompletion">SKWPublicationDisableCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">disable</span><span class="p">()</span> <span class="k">async</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SKWPublication(im)getStatsWithMemberId:"></a>
+                    <a name="//apple_ref/objc/Method/-getStatsWithMemberId:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SKWPublication(im)getStatsWithMemberId:">-getStatsWithMemberId:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[Experimental API]</p>
+
+<p>試験的なAPIです。今後インターフェースや仕様が変更される可能性があります。</p>
+
+<p>通信中の統計情報を取得します。</p>
+
+<p>併せて公式サイトの通信状態の統計的分析もご確認ください。
+<a href="https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/">https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/</a></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n"><a href="../Classes/SKWWebRTCStats.html">SKWWebRTCStats</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nf">getStatsWithMemberId</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">memberId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getStats</span><span class="p">(</span><span class="n">withMemberId</span> <span class="nv">memberId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">WebRTCStats</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -851,14 +914,20 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>エンコーディング設定を更新します。</p>
+
+<p>更新はLocalRoomMemberのPublishしたPublicationのみ有効で、ContentTypeがAudioまたはVideoの時のみ更新ができます。</p>
+
+<p>Publish時に設定したエンコーディングの数と一致している必要があります。</p>
+
+<p>IDの変更は行えません。</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">updateEncodings</span><span class="p">:(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/SKWEncoding.html">SKWEncoding</a></span><span class="o">*&gt;*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">encodings</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">updateEncodings</span><span class="p">:(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/SKWEncoding.html">SKWEncoding</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">encodings</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -883,7 +952,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>イベントデリゲート</p>
 
                         <a href="../Classes/SKWPublication/delegate.html" class="slightly-smaller">See more</a>
                       </div>
@@ -891,7 +960,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">weak</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/SKWPublication.html#/c:objc(cs)SKWPublication(py)id">id</a></span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SKWPublicationDelegate.html">SKWPublicationDelegate</a></span><span class="o">&gt;</span> <span class="n">_Nullable</span> <span class="n">delegate</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">weak</span><span class="p">)</span> <span class="n"><a href="../Classes/SKWPublication.html#/c:objc(cs)SKWPublication(py)id">id</a></span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SKWPublicationDelegate.html">SKWPublicationDelegate</a></span><span class="o">&gt;</span> <span class="n">_Nullable</span> <span class="n">delegate</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -908,7 +977,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2023-02-10)</p>
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2023-03-17)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

@@ -17,7 +17,7 @@
     <a title="SKWSubscription Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">SkyWayCore Docs</a> (38% documented)</p>
+        <p><a href="../index.html">SkyWayCore Docs</a> (47% documented)</p>
         <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -150,15 +150,6 @@
                 <a href="../Classes/SKWRemoteVideoStream.html">SKWRemoteVideoStream</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/SKWStatsReport.html">SKWStatsReport</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/SKWStatsReportInboundRTP.html">SKWStatsReportInboundRTP</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/SKWStatsReportOutboundRTP.html">SKWStatsReportOutboundRTP</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Classes/SKWStream.html">SKWStream</a>
               </li>
               <li class="nav-group-task">
@@ -172,6 +163,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/SKWVideoView.html">SKWVideoView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKWWebRTCStats.html">SKWWebRTCStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKWWebRTCStatsReport.html">SKWWebRTCStatsReport</a>
               </li>
             </ul>
           </li>
@@ -600,6 +597,37 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)SKWSubscription(im)init"></a>
+                    <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)SKWSubscription(im)init">-init</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-unavailable">
+                        <p class="aside-title">Unavailable</p>
+                        
+                      </div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span><span class="p">(</span><span class="n"><a href="../Classes/SKWSubscription.html#/c:objc(cs)SKWSubscription(py)id">id</a></span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">init</span> <span class="n">NS_UNAVAILABLE</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)SKWSubscription(im)changePreferredEncodingWithEncodingId:"></a>
                     <a name="//apple_ref/objc/Method/-changePreferredEncodingWithEncodingId:" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)SKWSubscription(im)changePreferredEncodingWithEncodingId:">-changePreferredEncodingWithEncodingId:<wbr></a>
@@ -644,7 +672,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Subscribeを中止します。</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -657,6 +686,45 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">cancel</span><span class="p">()</span> <span class="k">async</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SKWSubscription(im)getStats"></a>
+                    <a name="//apple_ref/objc/Method/-getStats" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SKWSubscription(im)getStats">-getStats</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[Experimental API]</p>
+
+<p>試験的なAPIです。今後インターフェースや仕様が変更される可能性があります。</p>
+
+<p>通信中の統計情報を取得します。</p>
+
+<p>併せて公式サイトの通信状態の統計的分析もご確認ください。
+<a href="https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/">https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/</a></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n"><a href="../Classes/SKWWebRTCStats.html">SKWWebRTCStats</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="n">getStats</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getStats</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">WebRTCStats</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -701,7 +769,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2023-02-10)</p>
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2023-03-17)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

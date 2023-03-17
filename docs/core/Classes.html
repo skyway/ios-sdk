@@ -17,7 +17,7 @@
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">SkyWayCore Docs</a> (38% documented)</p>
+        <p><a href="index.html">SkyWayCore Docs</a> (47% documented)</p>
         <div class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -150,15 +150,6 @@
                 <a href="Classes/SKWRemoteVideoStream.html">SKWRemoteVideoStream</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/SKWStatsReport.html">SKWStatsReport</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/SKWStatsReportInboundRTP.html">SKWStatsReportInboundRTP</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/SKWStatsReportOutboundRTP.html">SKWStatsReportOutboundRTP</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Classes/SKWStream.html">SKWStream</a>
               </li>
               <li class="nav-group-task">
@@ -172,6 +163,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="Classes/SKWVideoView.html">SKWVideoView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SKWWebRTCStats.html">SKWWebRTCStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SKWWebRTCStatsReport.html">SKWWebRTCStatsReport</a>
               </li>
             </ul>
           </li>
@@ -1483,7 +1480,11 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Publication</p>
+
+<p>PublicationはLocalMemberがPublishした時に取得でき、Roomに参加している他クライアント(RemoteMember)がSubscribeされると通信を行います。</p>
+
+<p>Roomなどから他の人のPublicationも取得することはできますが、その場合Streamは含まれません。</p>
 
                         <a href="Classes/SKWPublication.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1491,31 +1492,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SKWPublication</span> <span class="p">:</span> <span class="nc">NSObject</span>
-
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n"><a href="Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationUpdateMetadataCompletion">SKWPublicationUpdateMetadataCompletion</a></span><span class="p">)(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">);</span>
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n"><a href="Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationCancelCompletion">SKWPublicationCancelCompletion</a></span><span class="p">)(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">);</span>
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n"><a href="Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationEnableCompletion">SKWPublicationEnableCompletion</a></span><span class="p">)(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">);</span>
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n"><a href="Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationDisableCompletion">SKWPublicationDisableCompletion</a></span><span class="p">)(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">);</span>
-
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">id</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="Classes/SKWMember.html">SKWMember</a></span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">publisher</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="Classes/SKWSubscription.html">SKWSubscription</a></span><span class="o">*&gt;*</span> <span class="n">_Nonnull</span> <span class="n">subscriptions</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="Enums/SKWContentType.html">SKWContentType</a></span> <span class="n">contentType</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">metadata</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="Classes/SKWCodec.html">SKWCodec</a></span><span class="o">*&gt;*</span> <span class="n">_Nonnull</span> <span class="n">codecCapabilities</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="Classes/SKWEncoding.html">SKWEncoding</a></span><span class="o">*&gt;*</span> <span class="n">_Nonnull</span> <span class="n">encodings</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="Enums/SKWPublicationState.html">SKWPublicationState</a></span> <span class="n">state</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="Classes/SKWLocalStream.html">SKWLocalStream</a></span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">stream</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">SKWPublication</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">origin</span><span class="p">;</span>
-
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">updateMetadata</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">metadata</span> <span class="nf">completion</span><span class="p">:(</span><span class="n"><a href="Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationUpdateMetadataCompletion">SKWPublicationUpdateMetadataCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">cancelWithCompletion</span><span class="p">:(</span><span class="n"><a href="Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationCancelCompletion">SKWPublicationCancelCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">enableWithCompletion</span><span class="p">:(</span><span class="n"><a href="Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationEnableCompletion">SKWPublicationEnableCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">disableWithCompletion</span><span class="p">:(</span><span class="n"><a href="Type%20Definitions.html#/c:SKWPublication.h@T@SKWPublicationDisableCompletion">SKWPublicationDisableCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">updateEncodings</span><span class="p">:(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="Classes/SKWEncoding.html">SKWEncoding</a></span><span class="o">*&gt;*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">encodings</span><span class="p">;</span>
-
-<span class="k">@end</span></code></pre>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">SKWPublication</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -1565,6 +1543,8 @@
 <span class="c1">/// SFUを利用する場合、複数設定がある場合のみサイマルキャストが有効になります。</span>
 <span class="c1">///</span>
 <span class="c1">/// P2P通信において複数設定されている場合は最大ビットレートが低いまたはスケールダウン指数が高いエンコーディング設定が有効になります。</span>
+<span class="c1">///</span>
+<span class="c1">/// 詳しい設定例については開発者ドキュメントの[大規模会議アプリを実装する上での注意点](https://skyway.ntt.com/ja/docs/user-guide/tips/large-scale/)をご覧ください。</span>
 <span class="k">@property</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="Classes/SKWEncoding.html">SKWEncoding</a></span><span class="o">*&gt;*</span> <span class="n">_Nonnull</span> <span class="n">encodings</span><span class="p">;</span>
 
 <span class="c1">/// Publicationが有効かどうか</span>
@@ -1797,118 +1777,6 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)SKWStatsReportInboundRTP"></a>
-                    <a name="//apple_ref/objc/Class/SKWStatsReportInboundRTP" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SKWStatsReportInboundRTP">SKWStatsReportInboundRTP</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="Classes/SKWStatsReportInboundRTP.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SKWStatsReportInboundRTP</span><span class="p">:</span> <span class="nc">NSObject</span>
-
-<span class="k">@property</span> <span class="kt">uint64_t</span> <span class="n">bytesReceived</span><span class="p">;</span>
-
-<span class="k">@end</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SKWStatsReportInboundRTP</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)SKWStatsReportOutboundRTP"></a>
-                    <a name="//apple_ref/objc/Class/SKWStatsReportOutboundRTP" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SKWStatsReportOutboundRTP">SKWStatsReportOutboundRTP</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="Classes/SKWStatsReportOutboundRTP.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SKWStatsReportOutboundRTP</span><span class="p">:</span> <span class="nc">NSObject</span>
-
-<span class="k">@property</span> <span class="kt">uint64_t</span> <span class="n">bytesSent</span><span class="p">;</span>
-
-<span class="k">@end</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SKWStatsReportOutboundRTP</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)SKWStatsReport"></a>
-                    <a name="//apple_ref/objc/Class/SKWStatsReport" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SKWStatsReport">SKWStatsReport</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="Classes/SKWStatsReport.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SKWStatsReport</span><span class="p">:</span> <span class="nc">NSObject</span>
-
-<span class="k">@property</span> <span class="n"><a href="Classes/SKWStatsReportInboundRTP.html">SKWStatsReportInboundRTP</a></span><span class="o">*</span> <span class="n">inbound</span><span class="p">;</span>
-<span class="k">@property</span> <span class="n"><a href="Classes/SKWStatsReportOutboundRTP.html">SKWStatsReportOutboundRTP</a></span><span class="o">*</span> <span class="n">outbound</span><span class="p">;</span>
-
-<span class="k">@end</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SKWStatsReport</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/c:objc(cs)SKWStream"></a>
                     <a name="//apple_ref/objc/Class/SKWStream" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)SKWStream">SKWStream</a>
@@ -1919,7 +1787,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Stream抽象クラス</p>
 
                         <a href="Classes/SKWStream.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1927,11 +1795,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SKWStream</span><span class="p">:</span> <span class="nc">NSObject</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">id</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="Enums/SKWSide.html">SKWSide</a></span> <span class="n">side</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="Enums/SKWContentType.html">SKWContentType</a></span> <span class="n">contentType</span><span class="p">;</span>
-<span class="k">@end</span></code></pre>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">SKWStream</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -2086,12 +1951,86 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SKWWebRTCStats"></a>
+                    <a name="//apple_ref/objc/Class/SKWWebRTCStats" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SKWWebRTCStats">SKWWebRTCStats</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>WebRTC統計情報の一覧の構造体</p>
+
+<p>併せて公式サイトの通信状態の統計的分析もご確認ください。
+<a href="https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/">https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/</a></p>
+
+                        <a href="Classes/SKWWebRTCStats.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">SKWWebRTCStats</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">WebRTCStats</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SKWWebRTCStatsReport"></a>
+                    <a name="//apple_ref/objc/Class/SKWWebRTCStatsReport" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SKWWebRTCStatsReport">SKWWebRTCStatsReport</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>WebRTC統計情報の一覧</p>
+
+<p>併せて公式サイトの通信状態の統計的分析もご確認ください。
+<a href="https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/">https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/</a></p>
+
+                        <a href="Classes/SKWWebRTCStatsReport.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">SKWWebRTCStatsReport</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">WebRTCStatsReport</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2023-02-10)</p>
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2023-03-17)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
