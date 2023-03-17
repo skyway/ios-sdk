@@ -1,6 +1,5 @@
 //
 //  SkyWayViewModel.swift
-//  P2PRoom
 //
 //  Created by Naoto Takahashi on 2022/12/26.
 //

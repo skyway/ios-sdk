@@ -1,6 +1,5 @@
 //
 //  RemotePublicationView.swift
-//  RoomExample
 //
 //  Created by Naoto Takahashi on 2023/01/16.
 //
