@@ -91,10 +91,6 @@ using NativeContextOptions = skyway::core::ContextOptions;
 
 @end
 
-@interface SKWContextOptionsRTCConfig()
--(skyway::core::ContextOptions::RtcConfig)native;
-@end
-
 @implementation SKWContextOptionsRTCConfig
 
 -(id)init {

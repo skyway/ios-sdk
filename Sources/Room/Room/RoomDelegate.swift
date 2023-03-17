@@ -102,13 +102,13 @@ import Foundation
     @objc optional func room(_ room: Room, publication: RoomPublication, metadataDidUpdate metadata: String)
 
     
-    /// StreamがSubscribeまたはUnsubscribeされた後に発生するイベント
+    /// PublicationがSubscribeまたはUnsubscribeされた後に発生するイベント
     /// `room(_:didSubscribePublicationOf:)`または`room(_:UnsubscribePublicationOf:)`がコールされた後にコールされます。
     /// - Parameter room: Room
     @objc optional func roomSubscriptionListDidChange(_ room: Room)
 
     
-    /// StreamがSubscribeされた後にコールされるイベント
+    /// PublicationがSubscribeされた後にコールされるイベント
     ///
     /// - Parameters:
     ///   - room: Room
@@ -116,7 +116,7 @@ import Foundation
     @objc optional func room(_ room: Room, didSubscribePublicationOf subscription: RoomSubscription)
 
     
-    /// StreamがUnsubscribeされた後にコールされるイベント
+    /// PublicationがUnsubscribeされた後にコールされるイベント
     /// 
     /// - Parameters:
     ///   - room: Room

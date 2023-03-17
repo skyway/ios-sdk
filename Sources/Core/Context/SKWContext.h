@@ -44,6 +44,11 @@ typedef void (^SKWChannelDisposeCompletion)(NSError* _Nullable);
 +(bool)updateToken:(NSString* _Nonnull)token;
 
 
+/// [内部向けAPI]
+///
+/// このAPIは内部向けのものであり、サポート対象外です。
++(void)_updateRTCConfig:(SKWContextOptionsRTCConfig* _Nonnull)config;
+
 /// プラグインを登録します。
 ///
 /// @param plugin プラグイン

@@ -16,6 +16,7 @@
 #import "SKWErrorFactory+SFUBot.h"
 
 #import "NSString+StdString.h"
+#import "skyway/global/util.hpp"
 
 using NativeForwardingConfigure = skyway::plugin::sfu_bot::ForwardingConfigure;
 
@@ -86,7 +87,15 @@ private:
         auto nativeForwarding = nativeBot->StartForwarding(publication.native, nativeConfigure);
         if(completion) {
             if(nativeForwarding) {
-                completion([[SKWForwarding alloc] initWithNative:nativeForwarding repository:self.repository], nil);
+                // Wait for updating on repository
+                auto res = skyway::global::util::SpinLockWithTimeout([=]{
+                    return [self.repository findPublicationByPublicationID: nativeForwarding->RelayingPublication()->Id()] != nil;
+                });
+                if(res) {
+                    completion([[SKWForwarding alloc] initWithNative:nativeForwarding repository:self.repository], nil);
+                }else {
+                    completion(nil, [SKWErrorFactory sfuBotMemberStartForwardingError]);
+                }
             }else {
                 completion(nil, [SKWErrorFactory sfuBotMemberStartForwardingError]);
             }

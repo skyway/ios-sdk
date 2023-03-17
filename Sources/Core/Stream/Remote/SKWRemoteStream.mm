@@ -8,9 +8,5 @@
 
 #import "SKWRemoteStream.h"
 
-#import <skyway/core/interface/remote_stream.hpp>
-
 @implementation SKWRemoteStream
-
-
 @end

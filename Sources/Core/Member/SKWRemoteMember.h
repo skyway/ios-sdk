@@ -11,7 +11,6 @@
 
 #import "SKWMember.h"
 #import "SKWPublication.h"
-#import "SKWStatsReport.h"
 
 NS_SWIFT_NAME(RemoteMember)
 @interface SKWRemoteMember : SKWMember

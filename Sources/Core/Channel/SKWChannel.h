@@ -103,6 +103,7 @@ typedef void (^SKWChannelLeaveMemberCompletion)(NSError* _Nullable);
 typedef void (^SKWChannelCloseCompletion)(NSError* _Nullable);
 typedef void (^SKWChannelDisposeCompletion)(NSError* _Nullable);
 
+-(id _Nonnull)init NS_UNAVAILABLE;
 
 /// クエリからChannelを検索します。
 ///

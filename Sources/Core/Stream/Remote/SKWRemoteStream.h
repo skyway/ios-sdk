@@ -11,11 +11,10 @@
 
 #import "SKWStream.h"
 
-
 /// 抽象RemoteStreamクラス
 NS_SWIFT_NAME(RemoteStream)
 @interface SKWRemoteStream : SKWStream
-@end
 
+@end
 
 #endif /* SKWRemoteStream_h */

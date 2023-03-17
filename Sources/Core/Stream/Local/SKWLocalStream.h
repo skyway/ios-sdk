@@ -10,7 +10,7 @@
 #define SKWLocalStream_h
 
 #import "SKWStream.h"
-
+#import "SKWWebRTCStats.h"
 
 /// 抽象LocalStreamクラス
 ///
@@ -21,6 +21,7 @@ NS_SWIFT_NAME(LocalStream)
 @interface SKWLocalStream: SKWStream
 
 -(id _Nonnull)init NS_UNAVAILABLE;
+
 
 @end
 

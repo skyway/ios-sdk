@@ -19,10 +19,15 @@ NS_SWIFT_NAME(VideoStreamProtocol)
 -(void)detachView:(SKWVideoView* _Nonnull)view;
 @end
 
+/// Stream抽象クラス
 NS_SWIFT_NAME(Stream)
 @interface SKWStream: NSObject
+
+/// ID
 @property(nonatomic, readonly) NSString* _Nonnull id;
+///LocalかRemoteかを返します。
 @property(nonatomic, readonly) SKWSide side;
+/// コンテントタイプを返します。
 @property(nonatomic, readonly) SKWContentType contentType;
 @end
 

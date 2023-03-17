@@ -43,7 +43,7 @@ import SkyWayCore
     ///
     /// 同じインスタンスのStreamを複数回Publishすることはできません。必要ならば各種Sourceから再度作成してPublishしてください。
     ///
-    /// オプションについては Core SDK のリファレンスもご確認ください。
+    /// 詳しいオプションの設定例については Core SDK の[PublicationOptions](/core/Classes/SKWPublicationOptions.html)、開発者ドキュメントの[大規模会議アプリを実装する上での注意点](https://skyway.ntt.com/ja/docs/user-guide/tips/large-scale/)をご覧ください。
     ///
     /// - Parameters:
     ///   - stream: PublishするStream
@@ -68,7 +68,7 @@ import SkyWayCore
     ///
     /// 同じインスタンスのStreamを複数回Publishすることはできません。必要ならば各種Sourceから再度作成してPublishしてください。
     ///
-    /// オプションについては Core SDK のリファレンスもご確認ください。
+    /// 詳しいオプションの設定例については Core SDK の[PublicationOptions](/core/Classes/SKWPublicationOptions.html)、開発者ドキュメントの[大規模会議アプリを実装する上での注意点](https://skyway.ntt.com/ja/docs/user-guide/tips/large-scale/)をご覧ください。
     ///
     /// - Parameters:
     ///   - stream: PublishするStream

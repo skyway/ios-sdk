@@ -17,6 +17,7 @@
 #import "SKWStream+Internal.h"
 #import "SKWRemoteDataStream+Internal.h"
 #import "SKWErrorFactory.h"
+#import "SKWWebRTCStats+Internal.h"
 #import "Type+Internal.h"
 
 
@@ -119,6 +120,14 @@ private:
             }
         }
     });
+}
+
+-(SKWWebRTCStats* _Nullable)getStats {
+    auto stats = self.native->GetStats();
+    if(!stats) {
+        return nil;
+    }
+    return [[SKWWebRTCStats alloc] initWithNativeStats:*stats];
 }
 
 -(void)instantiateStream {

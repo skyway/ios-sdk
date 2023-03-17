@@ -10,7 +10,6 @@
 #import "SKWMember+Internal.h"
 #import "SKWPublication+Internal.h"
 #import "SKWSubscription+Internal.h"
-#import "SKWStatsReport+Internal.h"
 
 #import <skyway/core/interface/remote_member.hpp>
 

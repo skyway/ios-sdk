@@ -16,6 +16,7 @@
 #import "SKWCodec+Internal.h"
 #import "SKWEncoding+Internal.h"
 #import "SKWErrorFactory.h"
+#import "SKWWebRTCStats+Internal.h"
 
 #import "Type+Internal.h"
 
@@ -225,6 +226,14 @@ private:
             }
         }
     });
+}
+
+-(SKWWebRTCStats* _Nullable)getStatsWithMemberId:(NSString* _Nonnull)memberId {
+    auto stats = self.native->GetStats(memberId.stdString);
+    if(!stats) {
+        return nil;
+    }
+    return [[SKWWebRTCStats alloc] initWithNativeStats:*stats];
 }
 
 

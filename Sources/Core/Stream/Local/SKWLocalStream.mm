@@ -8,11 +8,11 @@
 
 #import "SKWLocalStream.h"
 #import "SKWStream+Internal.h"
+#import "NSString+StdString.h"
 
 #import <skyway/core/interface/local_stream.hpp>
 
-using NativeLocalStream = skyway::core::interface::LocalStream;
-
 @implementation SKWLocalStream
+
 
 @end

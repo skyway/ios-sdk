@@ -133,6 +133,10 @@ static dispatch_group_t eventGroup = dispatch_group_create();
     return Context::UpdateAuthToken(nativeToken);
 }
 
++(void)_updateRTCConfig:(SKWContextOptionsRTCConfig* _Nonnull)config {
+    Context::_UpdateRtcConfig(config.native);
+}
+
 +(void)registerPlugin:(SKWPlugin* _Nonnull)plugin {
     [_plugins addObject:plugin];
     Context::RegisterPlugin(plugin.uniqueNative);

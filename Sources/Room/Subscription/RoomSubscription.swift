@@ -116,6 +116,18 @@ import SkyWayCore
     @objc public func cancel(completion:((Error?)->Void)?){
         core.cancel(completion: completion)
     }
+     
+    /// [Experimental API]
+     /// 
+    /// 試験的なAPIです。今後インターフェースや仕様が変更される可能性があります。
+    ///
+    /// 通信中の統計情報を取得します。
+    ///
+    /// 併せて公式サイトの通信状態の統計的分析もご確認ください。
+    /// https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/
+    @objc public func getStats() -> WebRTCStats? {
+        return core.getStats()
+    }
     
     // MARK: - NSObject
     override open func isEqual(_ object: Any?) -> Bool {

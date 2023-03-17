@@ -66,6 +66,8 @@ import SkyWayCore
     }
     
     /// エンコーディング設定
+    ///
+    /// 詳しい設定例については開発者ドキュメントの[大規模会議アプリを実装する上での注意点](https://skyway.ntt.com/ja/docs/user-guide/tips/large-scale/)をご覧ください。
     @objc public var encodings: [Encoding] {
         get {
             let _core = core.origin ?? core
@@ -213,6 +215,30 @@ import SkyWayCore
     @objc public func disable(completion:((Error?)->Void)?) {
         let _core = core.origin ?? core
         _core.disable(completion: completion)
+    }
+    
+    
+    /// [Experimental API]
+    /// 
+    /// 試験的なAPIです。今後インターフェースや仕様が変更される可能性があります。
+    ///
+    /// 通信中の統計情報を取得します。
+    ///
+    /// 併せて公式サイトの通信状態の統計的分析もご確認ください。
+    /// https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/
+    /// - Parameter memberId: 通信相手のMemberID
+    @objc public func getStats(memberId: String) -> WebRTCStats? {
+        if core.origin == nil {
+            // Should be P2PRoom
+            return core.getStats(withMemberId: memberId)
+        }else {
+            // Shoud be SFURoom
+            assert(core.publisher?.type == .bot)
+            guard let botId = core.publisher?.id else {
+                return nil
+            }
+            return core.origin?.getStats(withMemberId: botId)
+        }
     }
     
     
