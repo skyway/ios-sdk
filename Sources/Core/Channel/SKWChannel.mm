@@ -380,7 +380,6 @@ private:
 -(void)disposeWithCompletion:(SKWChannelDisposeCompletion _Nullable)completion {
     dispatch_group_notify(eventGroup, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         self.native->Dispose();
-        [self.repository clear];
         if(completion) {
             completion(nil);
         }

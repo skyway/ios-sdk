@@ -238,12 +238,4 @@
     return [[SKWSubscription alloc] initWithNative:native repository:self];
 }
 
--(void)clear{
-    @synchronized(self) {
-        [mutableMembers removeAllObjects];
-        [mutableSubscriptions removeAllObjects];
-        [mutablePublications removeAllObjects];
-    }
-}
-
 @end
