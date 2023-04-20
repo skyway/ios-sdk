@@ -17,7 +17,7 @@
 ///
 /// `CMSampleBuffer`の画像フレームをループ内からアップデートして描画を行います。
 ///
-/// ReplayKitと組み合わせることで画面共有が行えます。
+/// ReplayKitと組み合わせることでアプリの画面をソースにして画面共有が行えます。
 ///
 /// ```swift
 /// let source: CustomFrameVideoSource = .init()

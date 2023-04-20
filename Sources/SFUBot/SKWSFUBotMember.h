@@ -26,6 +26,8 @@ typedef void (^SKWSFUBotMemberStartForwardingPublicationCompletion)(SKWForwardin
 ///
 /// コーデック指定(`codecCapabilities`)のあるPublicationはサポートされていないので失敗します。
 ///
+/// また、maxFramerateを複数設定したPublicationのForwarding(サイマルキャスト)は利用できません。
+///
 /// - Parameters:
 ///   - publication: Publication
 ///   - configure: コンフィグオプション

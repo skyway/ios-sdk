@@ -17,6 +17,8 @@
 
 #import "NSString+StdString.h"
 
+#import "skyway/global/interface/logger.hpp"
+
 using NativeChannelInit = skyway::model::Channel::Init;
 using NativeMemberInit = skyway::model::Member::Init;
 using NativeChannelQuery = skyway::model::Channel::Query;
@@ -55,6 +57,10 @@ public:
     }
 
     void OnMemberJoined(NativeMemberInterface* nativeMember) override {
+        if(!nativeMember) {
+            SKW_ERROR("Undefined Member.");
+            return;
+        }
         id member = [channel_.repository registerMemberIfNeeded:nativeMember];
         if([channel_.delegate respondsToSelector:@selector(channel:memberDidJoin:)]) {
             dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{

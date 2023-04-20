@@ -39,10 +39,21 @@ NS_SWIFT_NAME(ForwardingConfigure)
 @interface SKWForwarding : NSObject
 
 
+/// Forwarding識別子
+///
+/// RelayingPublicationのidと同じです。
 @property(nonatomic, readonly) NSString* _Nonnull identifier;
+
+/// Forwardingの状態
 @property(nonatomic, readonly) SKWForwardingState state;
+
+/// コンフィグ
 @property(nonatomic, readonly) SKWForwardingConfigure* _Nonnull configure;
+
+/// Forwarding対象(オリジナル)のPublication
 @property(nonatomic, readonly) SKWPublication* _Nonnull originPublication;
+
+/// Forwardingを表すPublication
 @property(nonatomic, readonly) SKWPublication* _Nonnull relayingPublication;
 
 -(id _Nonnull)init NS_UNAVAILABLE;

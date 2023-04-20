@@ -50,6 +50,11 @@ NS_SWIFT_NAME(Encoding)
 /// デフォルトでは1.0です。
 @property double scaleResolutionDownBy;
 
+/// 最大フレームレート
+///
+/// SFURoomまたはSFUBotにおいて、複数エンコーディング指定(サイマルキャスト)は利用できません。
+@property double maxFramerate;
+
 @end
 
 #endif /* SKWEncoding_h */

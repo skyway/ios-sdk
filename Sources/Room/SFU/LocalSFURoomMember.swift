@@ -25,6 +25,8 @@ import SkyWaySFUBot
     ///
     /// SFURoomではコーデック指定されたPublishはサポートされていませんので、`options.codecCapabilities`が指定されている場合、失敗します。
     ///
+    /// また、maxFramerateを複数設定したPublish(サイマルキャスト)は利用できません。
+    ///
     /// オプションについては Core SDK のリファレンスもご確認ください。
     ///
     /// - Parameters:

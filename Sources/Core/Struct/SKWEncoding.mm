@@ -25,6 +25,9 @@
     if(nativeEncoding.scale_resolution_down_by) {
         encoding.scaleResolutionDownBy = nativeEncoding.scale_resolution_down_by.get();
     }
+    if(nativeEncoding.max_framerate) {
+        encoding.maxFramerate = nativeEncoding.max_framerate.get();
+    }
     return encoding;
 }
 
@@ -38,6 +41,9 @@
     }
     if(_scaleResolutionDownBy) {
         nativeEncoding.scale_resolution_down_by = _scaleResolutionDownBy;
+    }
+    if(_maxFramerate) {
+        nativeEncoding.max_framerate = _maxFramerate;
     }
     return nativeEncoding;
 }

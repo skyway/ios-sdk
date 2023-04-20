@@ -69,7 +69,8 @@ public:
     // MARK: - LocalPerson::EventListener
     void OnStreamPublished(NativePublication* nativePublication) override{
         if([person_.delegate respondsToSelector:@selector(localPerson:didPublishStreamOfPublication:)]) {
-            id publication = [person_.repository findPublicationByPublicationID:nativePublication->Id()];
+            // Use `registerPublicationIfNeeded` instead of `findPublicationByPublicationID` because the event of LocalPerson comes earlier than channel's event
+            id publication = [person_.repository registerPublicationIfNeeded:nativePublication];
             dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
                 [person_.delegate localPerson:person_ didPublishStreamOfPublication:publication];
             });
@@ -87,7 +88,8 @@ public:
     
     void OnPublicationSubscribed(NativeSubscription* nativeSubscription) override{
         if([person_.delegate respondsToSelector:@selector(localPerson:didSubscribePublicationOfSubscription:)]) {
-            id subscription = [person_.repository findSubscriptionBySubscriptionID:nativeSubscription->Id()];
+            // Use `registerSubscriptionIfNeeded` instead of `findSubscriptionBySubscriptionID` because the event of LocalPerson comes earlier than channel's event
+            id subscription = [person_.repository registerSubscriptionIfNeeded:nativeSubscription];
             dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
                 [person_.delegate localPerson:person_ didSubscribePublicationOfSubscription:subscription];
             });

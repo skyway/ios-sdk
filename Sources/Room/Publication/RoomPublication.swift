@@ -256,6 +256,18 @@ import SkyWayCore
     }
     
     
+    /// 送信するストリームを切り替えます。
+    ///
+    /// このAPIはLocalRoomMemberがPublishしたPublication(Streamがnilではない)のみ操作可能で、切り替え前と同じContentTypeである必要があります。
+    ///
+    /// DataStreamを入れ替えることはできません。
+    /// - Parameter stream: ストリーム
+    @objc public func replace(_ stream: LocalStream) {
+        let _core = core.origin ?? core
+        _core.replaceStream(stream)
+    }
+    
+    
     // MARK: - NSObject
     override open func isEqual(_ object: Any?) -> Bool {
         return (object as? RoomPublication)?.id == self.id

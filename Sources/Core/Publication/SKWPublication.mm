@@ -12,6 +12,7 @@
 
 #import "SKWLocalPerson.h"
 #import "SKWMember+Internal.h"
+#import "SKWStream+Internal.h"
 
 #import "SKWCodec+Internal.h"
 #import "SKWEncoding+Internal.h"
@@ -19,6 +20,8 @@
 #import "SKWWebRTCStats+Internal.h"
 
 #import "Type+Internal.h"
+
+using NativeLocalStream = skyway::core::interface::LocalStream;
 
 class PublicationEventListener: public NativePublication::EventListener{
 public:
@@ -238,13 +241,21 @@ private:
 
 
 -(void)updateEncodings:(NSArray<SKWEncoding*>* _Nonnull)encodings{
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        __block std::vector<NativeEncoding> nativeEncodings;
-        [encodings enumerateObjectsUsingBlock:^(SKWEncoding * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            nativeEncodings.emplace_back([obj nativeEncoding]);
-        }];
-        self.native->UpdateEncodings(nativeEncodings);
-    });
+    __block std::vector<NativeEncoding> nativeEncodings;
+    [encodings enumerateObjectsUsingBlock:^(SKWEncoding * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        nativeEncodings.emplace_back([obj nativeEncoding]);
+    }];
+    self.native->UpdateEncodings(nativeEncodings);
+}
+
+-(void)replaceStream:(SKWLocalStream* _Nonnull)stream {
+    auto nativeStream = std::static_pointer_cast<NativeLocalStream>(stream.native);
+    bool result = self.native->ReplaceStream(nativeStream);
+    if (!result) {
+        SKW_ERROR("Replace stream failed.");
+        return;
+    }
+    [self setStream:stream];
 }
 
 -(void)setStream:(SKWLocalStream* _Nonnull)stream {

@@ -109,6 +109,14 @@ NS_SWIFT_NAME(getStats(withMemberId:));
 /// IDの変更は行えません。
 -(void)updateEncodings:(NSArray<SKWEncoding*>* _Nonnull)encodings;
 
+/// 送信するストリームを切り替えます。
+///
+/// このAPIはLocalPersonがPublishしたPublication(Streamがnilではない)のみ操作可能で、切り替え前と同じContentTypeである必要があります。
+///
+/// DataStreamを入れ替えることはできません。
+/// - Parameter stream: ストリーム
+-(void)replaceStream:(SKWLocalStream* _Nonnull)stream;
+
 @end
 
 /// Publicationイベントデリゲート
