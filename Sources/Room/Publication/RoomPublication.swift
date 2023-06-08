@@ -28,6 +28,7 @@ import SkyWayCore
         get {
             let _core = core.origin ?? core
             guard let room = room else {
+                Logger.error(message: "Room is missing.")
                 return nil
             }
             return _core.publisher?.toRoomMember(room)
@@ -235,6 +236,7 @@ import SkyWayCore
             // Shoud be SFURoom
             assert(core.publisher?.type == .bot)
             guard let botId = core.publisher?.id else {
+                Logger.error(message: "Publisher is missing.")
                 return nil
             }
             return core.origin?.getStats(withMemberId: botId)

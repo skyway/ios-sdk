@@ -10,6 +10,7 @@
 
 #import "SKWVideoView.h"
 #import "SKWVideoView+Internal.h"
+#import "DispatchMainSync.h"
 
 
 @interface SKWVideoView(){
@@ -31,17 +32,20 @@
     RTCMTLVideoView* mtlRendererView = [[RTCMTLVideoView alloc] init];
     mtlRendererView.videoContentMode = _videoContentMode;
     mtlRendererView.delegate = self;
+    if(_rendererView != nil) {
+        [self removeRenderer];
+    }
     _rendererView = mtlRendererView;
     _rendererView.frame = self.bounds;
     videoTrack = track;
-    dispatch_async(dispatch_get_main_queue(), ^{
+    dispatch_main_sync(^{
         [track addRenderer:mtlRendererView];
         [self addSubview:mtlRendererView];
     });
 }
 
 -(void)removeRenderer {
-    dispatch_async(dispatch_get_main_queue(), ^{
+    dispatch_main_sync(^{
         RTCMTLVideoView* mtlRendererView = (RTCMTLVideoView*)self->_rendererView;
         [self->videoTrack removeRenderer:mtlRendererView];
         [self->_rendererView removeFromSuperview];

@@ -22,6 +22,7 @@ using NativeForwarding = skyway::plugin::sfu_bot::Forwarding;
 @property(nonatomic, readonly, weak) ChannelStateRepository* _Nullable repository;
 
 -(id _Nonnull)initWithNative:(NativeForwarding* _Nonnull)native repository:(ChannelStateRepository* _Nonnull)repository;
+-(void)dispose;
 
 @end
 

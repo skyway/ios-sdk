@@ -103,4 +103,9 @@ using NativeMember = skyway::core::interface::Member;
     });
 }
 
+-(void)dispose {
+    [NSException raise:NSInternalInconsistencyException
+                    format:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)];
+}
+
 @end

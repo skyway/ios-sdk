@@ -15,7 +15,6 @@
 #import "SKWPublication.h"
 #import "SKWSubscription.h"
 
-
 /// Channel初期化オプション
 NS_SWIFT_NAME(ChannelInit)
 @interface SKWChannelInit: NSObject
@@ -58,7 +57,6 @@ typedef NS_ENUM(NSUInteger, SKWChannelState) {
     /// 利用不可能状態
     Closed,
 } NS_SWIFT_NAME(ChannelState);
-
 
 /// チャンネル
 NS_SWIFT_NAME(Channel)

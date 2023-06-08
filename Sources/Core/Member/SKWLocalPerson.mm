@@ -24,6 +24,7 @@
 
 #import <skyway/core/channel/member/local_person.hpp>
 #import <skyway/core/interface/local_stream.hpp>
+#import "skyway/global/interface/logger.hpp"
 
 using NativeLocalPerson = skyway::core::channel::member::LocalPerson;
 using NativePublicationOptions = skyway::core::channel::member::LocalPerson::PublicationOptions;
@@ -105,7 +106,7 @@ public:
         }
     }
 private:
-    SKWLocalPerson* person_;
+    __weak SKWLocalPerson* person_;
     dispatch_group_t group_;
 };
 
@@ -125,9 +126,7 @@ private:
 }
 
 -(void)dealloc{
-    if(self.native) {
-        self.native->RemoveEventListener(listener.get());
-    }
+    SKW_TRACE("~SKWLocalPerson");
 }
 
 -(void)publishStream:(SKWLocalStream* _Nonnull)stream options:(SKWPublicationOptions* _Nullable)options completion:(SKWLocalPersonPublishStreamCompletion _Nullable)completion{
@@ -198,6 +197,10 @@ private:
             }
         }
     });
+}
+
+-(void)dispose {
+    self.native->RemoveEventListener(listener.get());
 }
 
 @end

@@ -23,6 +23,7 @@ using NativeSubscription = skyway::core::interface::Subscription;
 @property(nonatomic, readonly, weak) ChannelStateRepository* _Nullable repository;
 
 -(id _Nonnull)initWithNative:(NativeSubscription* _Nonnull)native repository:(ChannelStateRepository* _Nonnull)repository;
+-(void)dispose;
 
 @end
 

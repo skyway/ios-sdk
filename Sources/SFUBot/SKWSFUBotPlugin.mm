@@ -16,22 +16,42 @@
 #import "SKWErrorFactory+SFUBot.h"
 
 #import <skyway/plugin/sfu_bot_plugin/plugin.hpp>
+#import <skyway/plugin/sfu_bot_plugin/sfu_options.hpp>
 
 using NativeSfuPlugin = skyway::plugin::sfu_bot::Plugin;
 using NativeSfuBot = skyway::plugin::sfu_bot::SfuBot;
 
+@implementation SKWSFUBotPluginOptions
+
+- (id)init {
+    
+    if(self = [super init]) {
+        _domain = nil;
+        _version = 0;
+        _secure = true;
+    }
+    
+    return self;
+}
+
+@end
+
 @implementation SKWSFUBotPlugin
 
 -(id _Nonnull)initWithOptions:(SKWSFUBotPluginOptions* _Nullable)options {
-    boost::optional<std::string> nativeUrl = boost::none;
+    skyway::plugin::sfu_bot::SfuOptions native_options = {};
     if(options != nil) {
-        if(options.apiUrl != nil) {
-            nativeUrl = [NSString stdStringForString:options.apiUrl];
+        if(options.domain != nil) {
+            native_options.domain = [NSString stdStringForString:options.domain];
         }
+        if(options.version != 0) {
+            native_options.version = options.version;
+        }
+        native_options.secure = options.secure;
     }
     auto nativePeerConnectionFactory = SKWContext.pcFactory.nativeFactory;
     
-    return [super initWithUniqueNative:std::make_unique<NativeSfuPlugin>(skyway::network::interface::HttpClient::Shared(), nativePeerConnectionFactory, nativeUrl)];
+    return [super initWithUniqueNative:std::make_unique<NativeSfuPlugin>(skyway::network::interface::HttpClient::Shared(), nativePeerConnectionFactory, native_options)];
 }
 
 -(void)createBotOnChannel:(SKWChannel* _Nonnull)channel completion:(SKWSFUBotPluginCreateBotOnChannelCompletion _Nullable)completion {

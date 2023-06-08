@@ -14,15 +14,14 @@ import SkyWaySFUBot
     var onStreamUnpublished: ((Publication)->Void)?
     
     /// Roomを作成します。
-    ///
-    /// `options`でRoomの名前を指定して作成できますが、同じ名前のRoomは作成することができません。
-    ///
-    /// - Parameter options: 初期化オプション
+    /// - Parameters:
+    ///   - options: `options`でRoomの名前を指定して作成できますが、同じ名前のRoomは作成することができません。
+    ///   - sfuOptions: 内部向けオプションのため、設定は不要です。
     /// - Returns: Room
     @available(iOS 13.0, *)
-    @objc public static func create(with options: InitOptions?) async throws -> SFURoom {
+    @objc public static func create(with options: InitOptions?, sfuOptions: SFUBotPluginOptions? = nil) async throws -> SFURoom {
         try await withCheckedThrowingContinuation { continuation in
-            Self.create(with: options) { room, error in
+            Self.create(with: options, sfuOptions: sfuOptions) { room, error in
                 if let room = room {
                     continuation.resume(returning: room)
                 }else {
@@ -37,9 +36,10 @@ import SkyWaySFUBot
     ///
     /// - Parameters:
     ///   - options: 初期化オプション
+    ///   - sfuOptions: 内部向けオプションのため、設定は不要です。
     ///   - completion: 完了コールバック
-    @objc public static func create(with options: InitOptions?, completion:((SFURoom?, Error?) -> Void)?) {
-        let plugin = Self.findOrRegisterPlugin()
+    @objc public static func create(with options: InitOptions?, sfuOptions: SFUBotPluginOptions? = nil, completion:((SFURoom?, Error?) -> Void)?) {
+        let plugin = Self.findOrRegisterPlugin(sfuOptions: sfuOptions)
         Channel.create(with: options?.toCore()) { (channel, error) in
             guard let channel = channel else {
                 completion?(nil, error)
@@ -60,12 +60,14 @@ import SkyWaySFUBot
     ///
     /// クエリはRoomのIDまたはNameを入力します。両方とも入力される場合はIDが優先されます。
     ///
-    /// - Parameter query: 検索クエリ
+    /// - Parameters:
+    ///    - query: 検索クエリ
+    ///    - sfuOptions: 内部向けオプションのため、設定は不要です。
     /// - Returns: Room
     @available(iOS 13.0, *)
-    @objc public static func find(by query: Query) async throws -> SFURoom {
+    @objc public static func find(by query: Query, sfuOption: SFUBotPluginOptions? = nil) async throws -> SFURoom {
         try await withCheckedThrowingContinuation { continuation in
-            Self.find(by: query) { room, error in
+            Self.find(by: query, sfuOptions: sfuOption) { room, error in
                 if let room = room {
                     continuation.resume(returning: room)
                 }else {
@@ -81,9 +83,10 @@ import SkyWaySFUBot
     ///
     /// - Parameters:
     ///   - query: 検索クエリ
+    ///   - sfuOptions: 内部向けオプションのため、設定は不要です。
     ///   - completion: 完了コールバック
-    @objc public static func find(by query: Query, completion:((SFURoom?, Error?) -> Void)?) {
-        let _ = Self.findOrRegisterPlugin()
+    @objc public static func find(by query: Query, sfuOptions: SFUBotPluginOptions? = nil, completion:((SFURoom?, Error?) -> Void)?) {
+        let _ = Self.findOrRegisterPlugin(sfuOptions: sfuOptions)
         Channel.find(with: query.toCore()) { (channel, error) in
             guard let channel = channel else {
                 completion?(nil, error)
@@ -97,12 +100,14 @@ import SkyWaySFUBot
 
     /// Roomを名前から検索し、存在しない場合は作成します。
     ///
-    /// - Parameter options: 検索・初期化オプション
+    /// - Parameters:
+    ///    - options: 検索・初期化オプション
+    ///    - sfuOptions: 内部向けオプションのため、設定は不要です。
     /// - Returns: Room
     @available(iOS 13.0, *)
-    @objc public static func findOrCreate(with options: InitOptions) async throws -> SFURoom {
+    @objc public static func findOrCreate(with options: InitOptions, sfuOptions: SFUBotPluginOptions? = nil) async throws -> SFURoom {
         try await withCheckedThrowingContinuation { continuation in
-            Self.findOrCreate(with: options) { room, error in
+            Self.findOrCreate(with: options, sfuOptions: sfuOptions) { room, error in
                 if let room = room {
                     continuation.resume(returning: room)
                 }else {
@@ -115,9 +120,10 @@ import SkyWaySFUBot
     /// Roomを名前から検索し、存在しない場合は作成します。
     /// - Parameters:
     ///   - options: 検索・初期化オプション
+    ///   - sfuOptions: 内部向けオプションのため、設定は不要です。
     ///   - completion: 完了コールバック
-    @objc public static func findOrCreate(with options: InitOptions, completion:((SFURoom?, Error?) -> Void)?) {
-        let plugin = Self.findOrRegisterPlugin()
+    @objc public static func findOrCreate(with options: InitOptions, sfuOptions: SFUBotPluginOptions? = nil, completion:((SFURoom?, Error?) -> Void)?) {
+        let plugin = Self.findOrRegisterPlugin(sfuOptions: sfuOptions)
         Channel.findOrCreate(with: options.toCore()) { (channel, error) in
             guard let channel = channel else {
                 completion?(nil, error)
@@ -198,11 +204,11 @@ import SkyWaySFUBot
         }
     }
     
-    private static func findOrRegisterPlugin() -> SFUBotPlugin {
+    private static func findOrRegisterPlugin(sfuOptions: SFUBotPluginOptions?) -> SFUBotPlugin {
         if let plugin = Context.plugins.first(where: { $0.subtype == "sfu" }) as? SFUBotPlugin {
             return plugin
         }
-        let plugin: SFUBotPlugin = .init(options: nil)
+        let plugin: SFUBotPlugin = .init(options: sfuOptions)
         Context.registerPlugin(plugin)
         return plugin
     }

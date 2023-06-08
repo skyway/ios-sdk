@@ -35,7 +35,7 @@ public:
         }
     }
 private:
-    SKWSubscription* subscription_;
+    __weak SKWSubscription* subscription_;
     dispatch_group_t group_;
 };
 
@@ -60,6 +60,10 @@ private:
         [self instantiateStream];
     }
     return self;
+}
+
+-(void)dealloc{
+    SKW_TRACE("~SKWSubscription");
 }
 
 -(NSString* _Nonnull)id {
@@ -147,6 +151,10 @@ private:
             _stream =[[SKWRemoteDataStream alloc] initWithSharedNative:nativeStream eventGroup:_repository.eventGroup];
             break;
     }
+}
+
+-(void)dispose {
+    _native->RemoveEventListener(listener.get());
 }
 
 @end

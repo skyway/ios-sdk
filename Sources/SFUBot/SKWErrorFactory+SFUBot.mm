@@ -7,14 +7,18 @@
 //
 
 #import "SKWErrorFactory+SFUBot.h"
+// A representative class for SFUBotPlugin to get bundle identifier
+#import "SKWSFUBotPlugin.h"
 
 @implementation SKWErrorFactory(SFUBot)
 +(NSError* _Nonnull)pluginCreateBotError {
-    return [[NSError alloc] initWithDomain:[[NSBundle mainBundle] bundleIdentifier] code:SKWSFUBotPluginCreateBotError userInfo:nil];
+    NSBundle *bundle = [NSBundle bundleForClass:SKWSFUBotPlugin.class];
+    return [[NSError alloc] initWithDomain:bundle.bundleIdentifier code:SKWSFUBotPluginCreateBotError userInfo:nil];
 }
 
 +(NSError* _Nonnull)sfuBotMemberStartForwardingError {
-    return [[NSError alloc] initWithDomain:[[NSBundle mainBundle] bundleIdentifier] code:SKWSFUBotSFUBotMemberStartForwardingError userInfo:nil];
+    NSBundle *bundle = [NSBundle bundleForClass:SKWSFUBotPlugin.class];
+    return [[NSError alloc] initWithDomain:bundle.bundleIdentifier code:SKWSFUBotSFUBotMemberStartForwardingError userInfo:nil];
 }
 
 @end

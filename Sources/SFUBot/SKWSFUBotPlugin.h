@@ -17,7 +17,22 @@
 NS_SWIFT_NAME(SFUBotPluginOptions)
 @interface SKWSFUBotPluginOptions: NSObject
 
-@property(nonatomic) NSString* _Nullable apiUrl;
+/// SFUサーバの宛先ドメインを指定できます。
+///
+/// 指定のない場合はデフォルトの値が指定されて接続されます。
+@property(nonatomic) NSString* _Nullable domain;
+
+/// APIのバージョンを指定できます。
+///
+/// 指定のない場合または0が指定された場合は、デフォルトの値が使用されます。
+@property(nonatomic) int version;
+
+/// セキュアな通信を行うかどうかを指定できます。
+///
+/// 指定のない場合は`true`が設定されます。
+@property(nonatomic) bool secure;
+
+- (id _Nonnull)init;
 
 @end
 

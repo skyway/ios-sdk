@@ -22,6 +22,9 @@ NS_SWIFT_NAME(SFUBotMember)
 typedef void (^SKWSFUBotMemberStartForwardingPublicationCompletion)(SKWForwarding* _Nullable, NSError* _Nullable error);
 
 
+/// フォワーディング一覧
+@property(nonatomic, readonly) NSArray<SKWForwarding*>* _Nonnull forwardings;
+
 /// Publicationをフォワードさせます。
 ///
 /// コーデック指定(`codecCapabilities`)のあるPublicationはサポートされていないので失敗します。

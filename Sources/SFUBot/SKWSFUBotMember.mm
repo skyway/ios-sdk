@@ -56,12 +56,13 @@ public:
         }
     }
 private:
-    SKWSFUBotMember* bot_;
+    __weak SKWSFUBotMember* bot_;
     dispatch_group_t group_;
 };
 
 @interface SKWSFUBotMember(){
     std::unique_ptr<SFUBotEventListener> listener;
+    NSMutableArray<SKWForwarding*>* mutableForwardings;
 }
 @end
 
@@ -70,9 +71,26 @@ private:
 -(id _Nonnull)initWithNativeSFUBot:(NativeSFUBot* _Nonnull)native repository:(ChannelStateRepository* _Nonnull)repository{
     if(self = [super initWithNative:native repository:repository]) {
         listener = std::make_unique<SFUBotEventListener>(self);
+        mutableForwardings = [[NSMutableArray alloc] init];
         native->AddEventListener(listener.get());
     }
     return self;
+}
+
+-(void)dealloc{
+    SKW_TRACE("~SKWSFUBotMember");
+}
+
+-(NSArray<SKWForwarding*>* _Nonnull)forwardings {
+    @synchronized (mutableForwardings) {
+        NSMutableArray<SKWForwarding*>* forwardings = [[NSMutableArray alloc] init];
+        [mutableForwardings enumerateObjectsUsingBlock:^(SKWForwarding * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            if(obj.state != SKWForwardingStateStopped) {
+                [forwardings addObject:obj];
+            }
+        }];
+        return [forwardings copy];
+    }
 }
 
 
@@ -92,7 +110,9 @@ private:
                     return [self.repository findPublicationByPublicationID: nativeForwarding->RelayingPublication()->Id()] != nil;
                 });
                 if(res) {
-                    completion([[SKWForwarding alloc] initWithNative:nativeForwarding repository:self.repository], nil);
+                    SKWForwarding* forwarding = [[SKWForwarding alloc] initWithNative:nativeForwarding repository:self.repository];
+                    [self->mutableForwardings addObject:forwarding];
+                    completion(forwarding, nil);
                 }else {
                     completion(nil, [SKWErrorFactory sfuBotMemberStartForwardingError]);
                 }
@@ -101,6 +121,13 @@ private:
             }
         }
     });
+}
+
+-(void)dispose {
+    self.native->RemoveEventListener(listener.get());
+    [mutableForwardings enumerateObjectsUsingBlock:^(SKWForwarding * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [obj dispose];
+    }];
 }
 
 @end

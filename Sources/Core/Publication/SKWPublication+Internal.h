@@ -25,6 +25,7 @@ using NativePublication = skyway::core::interface::Publication;
 -(id _Nonnull)initWithNative:(NativePublication* _Nonnull)native repository:(ChannelStateRepository* _Nonnull)repository;
 
 -(void)setStream:(SKWLocalStream* _Nonnull)stream;
+-(void)dispose;
 
 @end
 

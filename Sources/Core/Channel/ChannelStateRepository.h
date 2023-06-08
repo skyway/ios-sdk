@@ -45,6 +45,8 @@ using NativeSubscriptionInterface = skyway::core::interface::Subscription;
 -(NSArray<SKWSubscription*>* _Nonnull)getActiveSubscriptionsBySubscriberID:(NSString* _Nonnull)subscriberID;
 -(NSArray<SKWSubscription*>* _Nonnull)getActiveSubscriptionsByPublicationID:(NSString* _Nonnull)publicationID;
 
+-(void)clear;
+
 
 @end
 

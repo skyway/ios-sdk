@@ -10,6 +10,8 @@
 #import "SKWForwarding+Internal.h"
 #import "NSString+StdString.h"
 
+#import "skyway/global/interface/logger.hpp"
+
 using NativeForwardingListener = skyway::plugin::sfu_bot::Forwarding::EventListener;
 
 @implementation SKWForwardingConfigure
@@ -27,7 +29,7 @@ public:
         }
     }
 private:
-    SKWForwarding* forwarding_;
+    __weak SKWForwarding* forwarding_;
     dispatch_group_t group_;
 };
 
@@ -48,6 +50,10 @@ private:
         _native->AddEventListener(listener.get());
     }
     return self;
+}
+
+-(void)dealloc{
+    SKW_TRACE("~SKWForwarding");
 }
 
 -(NSString* _Nonnull)identifier {
@@ -78,6 +84,10 @@ private:
 
 -(SKWPublication* _Nonnull)relayingPublication {
     return [self.repository findPublicationByPublicationID:_native->RelayingPublication()->Id()];
+}
+
+-(void)dispose {
+    _native->RemoveEventListener(listener.get());
 }
 
 @end

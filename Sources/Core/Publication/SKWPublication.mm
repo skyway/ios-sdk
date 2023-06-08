@@ -93,7 +93,7 @@ public:
     }
     
 private:
-    SKWPublication* publication_;
+    __weak SKWPublication* publication_;
     dispatch_group_t group_;
 };
 
@@ -112,6 +112,10 @@ private:
         _native->AddEventListener(listener.get());
     }
     return self;
+}
+
+-(void)dealloc{
+    SKW_TRACE("~SKWPublication");
 }
 
 -(NSString* _Nonnull)id {
@@ -260,6 +264,11 @@ private:
 
 -(void)setStream:(SKWLocalStream* _Nonnull)stream {
     _stream = stream;
+}
+
+-(void)dispose {
+    _native->RemoveEventListener(listener.get());
+    
 }
 
 

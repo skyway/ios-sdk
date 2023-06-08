@@ -8,12 +8,15 @@
 
 #import "ChannelStateRepository.h"
 
+#import "SKWMember+Internal.h"
 #import "SKWLocalPerson+Internal.h"
 #import "SKWPublication+Internal.h"
 #import "SKWSubscription+Internal.h"
 #import "SKWPlugin+Internal.h"
 #import "SKWContext.h"
 #import "NSString+StdString.h"
+
+#import "skyway/global/interface/logger.hpp"
 
 @interface ChannelStateRepository(){
     NSMutableArray<SKWMember*>* mutableMembers;
@@ -39,6 +42,10 @@
         [self syncNativeChannel:native];
     }
     return self;
+}
+
+-(void)dealloc {
+    SKW_TRACE("~SKWChannelStateRepository");
 }
 
 -(void)syncNativeChannel:(NativeChannelInterface* _Nonnull)nativeChannel{
@@ -236,6 +243,24 @@
 
 -(SKWSubscription* _Nonnull)createSubscriptionForNative:(NativeSubscription* _Nonnull)native{
     return [[SKWSubscription alloc] initWithNative:native repository:self];
+}
+
+-(void)clear {
+    @synchronized(self) {
+        [mutableMembers enumerateObjectsUsingBlock:^(SKWMember * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [obj dispose];
+        }];
+        [mutableSubscriptions enumerateObjectsUsingBlock:^(SKWSubscription * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [obj dispose];
+        }];
+        [mutablePublications enumerateObjectsUsingBlock:^(SKWPublication * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [obj dispose];
+        }];
+        
+        [mutableMembers removeAllObjects];
+        [mutableSubscriptions removeAllObjects];
+        [mutablePublications removeAllObjects];
+    }
 }
 
 @end

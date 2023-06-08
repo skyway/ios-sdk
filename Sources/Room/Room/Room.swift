@@ -300,12 +300,9 @@ import SkyWayCore
     /// SDKのバージョンを取得します
     /// - Returns: バージョン
     @objc public static func getSDKVersion() -> String {
-        // TODO: Use id of info.plist
-        let bundleId = "com.ntt.skyway.room"
-        if let bundle = Bundle.allFrameworks.first(where: { $0.bundleIdentifier == bundleId }) {
-            if let version = bundle.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String {
-                return version
-            }
+        let bundle = Bundle(for: self)
+        if let version = bundle.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String {
+            return version
         }
         return "0.0.0"
     }

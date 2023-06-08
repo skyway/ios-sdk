@@ -26,6 +26,9 @@ using NativeMember = skyway::core::interface::Member;
 
 -(id _Nonnull)initWithNative:(NativeMember* _Nonnull)native repository:(ChannelStateRepository* _Nonnull)repository;
 
+
+-(void)dispose;
+
 @end
 
 

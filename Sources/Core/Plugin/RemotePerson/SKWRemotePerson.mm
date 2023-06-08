@@ -14,6 +14,8 @@
 #import "NSString+StdString.h"
 #import "SKWErrorFactory.h"
 
+#import "skyway/global/interface/logger.hpp"
+
 class RemotePersonEventListener: public NativeRemotePerson::EventListener {
 public:
     // MARK: - Member::EventListener
@@ -68,7 +70,7 @@ public:
         }
     }
 private:
-    SKWRemotePerson* person_;
+    __weak SKWRemotePerson* person_;
     dispatch_group_t group_;
 };
 
@@ -85,6 +87,10 @@ private:
         native->AddEventListener(listener.get());
     }
     return self;
+}
+
+-(void)dealloc{
+    SKW_TRACE("~SKWRemotePerson");
 }
 
 -(void)subscribePublicationWithPublicationID:(NSString* _Nonnull)publicationID completion:(SKWRemotePersonSubscribePublicationCompletion _Nullable)completion {
@@ -120,5 +126,8 @@ private:
     });
 }
 
+-(void)dispose {
+    self.native->RemoveEventListener(listener.get());
+}
 
 @end

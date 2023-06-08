@@ -65,4 +65,4 @@ FOUNDATION_EXPORT const unsigned char SkyWayCoreVersionString[];
 #import "SKWPublicationOptions.h"
 #import "SKWSubscriptionOptions.h"
 #import "SKWErrorFactory.h"
-
+#import "SKWLoggerWrapper.h"
