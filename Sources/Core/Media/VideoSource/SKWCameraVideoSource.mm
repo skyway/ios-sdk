@@ -106,7 +106,7 @@ static SKWCameraVideoSource* defaultInstance = nil;
     RTCCameraVideoCapturer* cameraCapturer = (RTCCameraVideoCapturer*)self.rtcCapturer;
     if(cameraCapturer.captureSession.running) {
         [self startCapturingWithDevice:device options:_captureOptions completion:completion];
-    }else {
+    }else if(completion) {
         completion(nil);
     }
 }

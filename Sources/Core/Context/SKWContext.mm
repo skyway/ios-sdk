@@ -94,9 +94,11 @@ static dispatch_group_t eventGroup = dispatch_group_create();
 +(void)setupWithToken:(NSString* _Nonnull)token options:(SKWContextOptions* _Nullable)options completion:(SKWContextSetupCompletion _Nullable)completion {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         RTCInitializeSSL();
-        _pcFactory = [[RTCPeerConnectionFactory alloc]
-                      initWithEncoderFactory:[[RTCDefaultVideoEncoderFactory alloc] init]
-                      decoderFactory:[[RTCDefaultVideoDecoderFactory alloc] init]];
+        if(_pcFactory == nil) {
+            _pcFactory = [[RTCPeerConnectionFactory alloc]
+                          initWithEncoderFactory:[[RTCDefaultVideoEncoderFactory alloc] init]
+                          decoderFactory:[[RTCDefaultVideoDecoderFactory alloc] init]];
+        }
         NativeContextOptions nativeOptions;
         if(options) {
             nativeOptions = options.nativeOptions;
@@ -157,7 +159,8 @@ static dispatch_group_t eventGroup = dispatch_group_create();
 +(void)disposeWithCompletion:(SKWChannelDisposeCompletion _Nullable)completion {
     dispatch_group_notify(eventGroup, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         Context::Dispose();
-        _pcFactory = nil;
+        // DO NOT remove `_pcFactory` here because some resources still remain (e.g. RTCMediaTrack)
+        // and these depend on a rtc thread managed by PeerConnection factory.
         _contextListener.reset();
         _authTokenListener.reset();
         [_plugins removeAllObjects];
