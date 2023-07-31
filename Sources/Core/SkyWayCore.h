@@ -21,6 +21,7 @@ FOUNDATION_EXPORT const unsigned char SkyWayCoreVersionString[];
 #import "SKWMember.h"
 #import "SKWRemoteMember.h"
 #import "SKWLocalPerson.h"
+#import "SKWUnknownMember.h"
 
 #import "SKWPublication.h"
 #import "SKWSubscription.h"

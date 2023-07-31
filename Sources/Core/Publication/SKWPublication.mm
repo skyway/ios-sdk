@@ -92,6 +92,15 @@ public:
         }
     }
     
+    void OnConnectionStateChanged(const skyway::core::ConnectionState new_state) override {
+        SKWConnectionState state = SKWConvertConnectionState(new_state);
+        if([publication_.delegate respondsToSelector:@selector(publication:connectionStateDidChange:)]) {
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [publication_.delegate publication:publication_ connectionStateDidChange:state];
+            });
+        }
+    }
+    
 private:
     __weak SKWPublication* publication_;
     dispatch_group_t group_;

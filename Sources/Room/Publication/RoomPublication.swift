@@ -104,6 +104,7 @@ import SkyWayCore
         }
         set(value) {
             core.delegate = self
+            core.origin?.delegate = self
             _delegate = value
         }
     }

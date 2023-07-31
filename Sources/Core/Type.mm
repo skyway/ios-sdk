@@ -48,3 +48,13 @@ SKWContentType SKWContentTypeFromNativeContentType(NativeContentType nativeType)
         case skyway::model::ContentType::kData: return SKWContentTypeData;
     }
 }
+
+SKWConnectionState SKWConvertConnectionState(skyway::core::ConnectionState state) {
+    switch (state) {
+        case skyway::core::ConnectionState::kNew: return SKWNew;
+        case skyway::core::ConnectionState::kConnecting: return SKWConnecting;
+        case skyway::core::ConnectionState::kConnected: return SKWConnected;
+        case skyway::core::ConnectionState::kReconnecting: return SKWReconnecting;
+        case skyway::core::ConnectionState::kDisconnected: return SKWDisconnected;
+    }
+}

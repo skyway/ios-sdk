@@ -157,6 +157,11 @@ NS_SWIFT_NAME(PublicationDelegate)
 /// このPublicationのステートが変化した時に発生するイベント
 /// - Parameter publication: Publication
 -(void)publicationStateDidChange:(SKWPublication* _Nonnull)publication;
+
+/// このPublicationの接続状態が変化したときに発生するイベント
+/// - Parameter publication: Publication
+/// - Parameter connectionState: newState
+-(void)publication:(SKWPublication* _Nonnull)publication connectionStateDidChange: (SKWConnectionState)connectionState;
 @end
 
 @interface SKWPublication()

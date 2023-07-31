@@ -14,6 +14,7 @@
 #import <skyway/model/domain.hpp>
 #import <skyway/core/context_options.hpp>
 #import <skyway/global/interface/logger.hpp>
+#import <skyway/core/connection_state.hpp>
 
 using NativeLogLevel = skyway::global::interface::Logger::Level;
 using NativeSide = skyway::model::Side;
@@ -28,6 +29,7 @@ NativeTurnPolicy nativeTurnPolicyForTurnPolicy(SKWTurnPolicy policy);
 SKWSide SKWSideFromNativeSide(NativeSide nativeSide);
 SKWMemberType SKWMemberTypeFromNativeType(NativeMemberType nativeType);
 SKWContentType SKWContentTypeFromNativeContentType(NativeContentType nativeType);
+SKWConnectionState SKWConvertConnectionState(skyway::core::ConnectionState state);
 
 
 #endif /* Type_Internal_h */

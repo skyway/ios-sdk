@@ -12,6 +12,7 @@
 #import "SKWRemoteStream.h"
 #import "SKWMember.h"
 #import "SKWWebRTCStats.h"
+#import "Type.h"
 
 /// Subscriptionの状態
 typedef NS_ENUM(NSUInteger, SKWSubscriptionState) {
@@ -79,7 +80,17 @@ typedef void (^SKWSubscriptionCancelCompletion)(NSError* _Nullable error);
 NS_SWIFT_NAME(SubscriptionDelegate)
 @protocol SKWSubscriptionDelegate <NSObject>
 @optional
+
+/// RoomSubscriptionがUnsubscribeされCanceled状態に変化した後にコールされます。
+/// - Parameter subscription: Subscription
 -(void)subscriptionCanceled:(SKWSubscription* _Nonnull)subscription;
+
+/// RoomSubscriptionの接続状態が変化した後にコールされるイベント
+///
+/// - Parameters:
+///   - subscription: Subscription
+///   - connectionState: 接続状態
+-(void)subscription:(SKWSubscription* _Nonnull)subscription connectionStateDidChange: (SKWConnectionState)connectionState;
 @end
 
 @interface SKWSubscription()

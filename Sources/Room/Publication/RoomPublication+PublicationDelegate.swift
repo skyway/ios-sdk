@@ -10,6 +10,10 @@ import SkyWayCore
 
 extension RoomPublication: PublicationDelegate {
     public func publicationUnpublished(_ publication: Publication) {
+        if (shouldNotNotifyEventOnSFURoom(publication)) {
+            Logger.debug(message: "In the case of `SFURoom`, the event of origin publication is not notified.")
+            return
+        }
         delegate?.publicationUnpublished?(self)
     }
     
@@ -30,16 +34,36 @@ extension RoomPublication: PublicationDelegate {
     }
     
     public func publicationEnabled(_ publication: Publication) {
+        if (shouldNotNotifyEventOnSFURoom(publication)) {
+            Logger.debug(message: "In the case of `SFURoom`, the event of origin publication is not notified.")
+            return
+        }
         delegate?.publicationEnabled?(self)
     }
     
     public func publicationDisabled(_ publication: Publication) {
+        if (shouldNotNotifyEventOnSFURoom(publication)) {
+            Logger.debug(message: "In the case of `SFURoom`, the event of origin publication is not notified.")
+            return
+        }
         delegate?.publicationDisabled?(self)
     }
     
     public func publicationStateDidChange(_ publication: Publication) {
+        if (shouldNotNotifyEventOnSFURoom(publication)) {
+            Logger.debug(message: "In the case of `SFURoom`, the event of origin publication is not notified.")
+            return
+        }
         delegate?.publicationStateDidChange?(self)
     }
     
+    public func publication(_ publication: Publication, connectionStateDidChange connectionState: ConnectionState) {
+        delegate?.publication?(self, connectionStateDidChange: connectionState)
+    }
     
+    // RoomPublication subscribes both of origin and relayed publications on SFURoom.
+    // Some same events are emitted simultaneously so filter one of them using this function.
+    private func shouldNotNotifyEventOnSFURoom(_ publication: Publication) -> Bool {
+        return room is SFURoom && (publication.origin == nil)
+    }
 }

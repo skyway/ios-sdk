@@ -49,6 +49,12 @@ import Foundation
     
     /// Publicationの状態(Enabled, Disabled, Canceled)が変化した後にコールされるイベント
     ///
-    /// @param publication Publication
+    /// - Parameter publication: RoomPublication
     @objc optional func publicationStateDidChange(_ publication: RoomPublication)
+    
+    /// Publicationの接続状態が変化した後にコールされるイベント
+    /// - Parameters:
+    ///   - publication: RoomPublication
+    ///   - connectionState: 接続状態
+    @objc optional func publication(_ publication: RoomPublication, connectionStateDidChange connectionState: ConnectionState)
 }

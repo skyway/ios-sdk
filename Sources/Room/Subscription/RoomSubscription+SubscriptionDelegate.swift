@@ -12,4 +12,8 @@ extension RoomSubscription: SubscriptionDelegate {
     public func subscriptionCanceled(_ subscription: Subscription) {
         delegate?.subscriptionCancaled?(subscription.toRoomSubscription(room))
     }
+    
+    public func subscription(_ subscription: Subscription, connectionStateDidChange connectionState: ConnectionState) {
+        delegate?.subscription?(self, connectionStateDidChange: connectionState)
+    }
 }

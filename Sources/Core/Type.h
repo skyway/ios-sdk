@@ -70,4 +70,12 @@ typedef NS_ENUM(NSUInteger, SKWTurnPolicy) {
     SKWTurnPolicyTurnOnly,
 } NS_SWIFT_NAME(TurnPolicy);
 
+typedef NS_ENUM(NSUInteger, SKWConnectionState) {
+    SKWNew,
+    SKWConnecting,
+    SKWConnected,
+    SKWReconnecting,
+    SKWDisconnected,
+} NS_SWIFT_NAME(ConnectionState);
+
 #endif /* Type_h */

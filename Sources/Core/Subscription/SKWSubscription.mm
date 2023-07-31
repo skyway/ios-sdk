@@ -20,7 +20,6 @@
 #import "SKWWebRTCStats+Internal.h"
 #import "Type+Internal.h"
 
-
 #import "NSString+StdString.h"
 
 class SubscriptionEventListener: public NativeSubscription::EventListener{
@@ -34,6 +33,16 @@ public:
             });
         }
     }
+    
+    void OnConnectionStateChanged(const skyway::core::ConnectionState new_state) override {
+        SKWConnectionState state = SKWConvertConnectionState(new_state);
+        if([subscription_.delegate respondsToSelector:@selector(subscription:connectionStateDidChange:)]) {
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [subscription_.delegate subscription:subscription_ connectionStateDidChange:state];
+            });
+        }
+    }
+    
 private:
     __weak SKWSubscription* subscription_;
     dispatch_group_t group_;

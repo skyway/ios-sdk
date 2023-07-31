@@ -14,6 +14,8 @@
 #import "SKWSubscription+Internal.h"
 #import "SKWPlugin+Internal.h"
 #import "SKWContext.h"
+#import "SKWUnknownMember.h"
+
 #import "NSString+StdString.h"
 
 #import "skyway/global/interface/logger.hpp"
@@ -230,10 +232,12 @@
             *stop = YES;
         }
     }];
-    if(auto nativeRemoteMember = dynamic_cast<NativeRemoteMember*>(native)) {
+    if(plugin == nil) {
+        return [[SKWUnknownMember alloc] initWithNative:native repository:self];
+    }else if(auto nativeRemoteMember = dynamic_cast<NativeRemoteMember*>(native)) {
         return [plugin createRemoteMemberWithNative:nativeRemoteMember repository:self];
     }
-    
+    SKW_ERROR("Creating remote member failed.");
     return nil;
 }
 
