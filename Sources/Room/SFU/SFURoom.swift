@@ -11,7 +11,8 @@ import SkyWaySFUBot
 
 /// SFUサーバを介して通信を行うRoom
 @objc open class SFURoom: Room {
-    var onStreamUnpublished: ((Publication)->Void)?
+    /// LocalMemberのUnpublish操作において、RelayedPublicationのUnpublish完了まで待つための内部コールバック
+    var onStreamUnpublished: [String : ((Publication)->Void)] = [:]
     
     /// Roomを作成します。
     /// - Parameters:

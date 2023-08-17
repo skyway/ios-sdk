@@ -204,6 +204,31 @@ import SkyWayCore
         }
     }
     
+    /// メタデータを更新します。
+    ///
+    /// - Parameter metadata: 更新するメタデータ
+    @available(iOS 13.0, *)
+    @objc public func updateMetadata(_ metadata: String) async throws {
+        try await withCheckedThrowingContinuation { (continuation: CheckedContinuation<Void, Error>) in
+            self.updateMetadata(metadata) { error in
+                if let error = error {
+                    continuation.resume(throwing: error)
+                }else {
+                    continuation.resume()
+                }
+            }
+        }
+    }
+    
+    /// メタデータを更新します。
+    ///
+    /// - Parameters:
+    ///   - metadata: 更新するメタデータ
+    ///   - completion: 完了コールバック
+    @objc public func updateMetadata(_ metadata: String, completion:((Error?) -> Void)?) {
+        channel.updateMetadata(metadata, completion: completion);
+    }
+    
     /// RoomからMemberを退出させます。
     ///
     /// 権限があればLocalRoomMemberだけでなく、RemoteRoomMemberも退出させることができます。

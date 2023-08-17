@@ -423,6 +423,19 @@ private:
     });
 }
 
+-(void)updateMetadata:(NSString* _Nonnull)metadata completion:(SKWChannelUpdateMetadataCompletion _Nullable)completion {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        auto res = self.native->UpdateMetadata(metadata.stdString);
+        if(completion) {
+            if(res) {
+                completion(nil);
+            }else {
+                completion([SKWErrorFactory channelLeaveError]);
+            }
+        }
+    });
+}
+
 -(void)leaveMember:(SKWMember* _Nonnull)member completion:(SKWChannelLeaveMemberCompletion _Nullable)completion{
     auto nativeMember = member.native;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{

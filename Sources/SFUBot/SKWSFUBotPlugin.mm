@@ -39,7 +39,7 @@ using NativeSfuBot = skyway::plugin::sfu_bot::SfuBot;
 @implementation SKWSFUBotPlugin
 
 -(id _Nonnull)initWithOptions:(SKWSFUBotPluginOptions* _Nullable)options {
-    skyway::plugin::sfu_bot::SfuOptions native_options = {};
+    skyway::plugin::sfu_options::SfuOptionsParams native_options;
     if(options != nil) {
         if(options.domain != nil) {
             native_options.domain = [NSString stdStringForString:options.domain];

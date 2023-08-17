@@ -127,5 +127,10 @@
     return [[NSError alloc] initWithDomain:bundle.bundleIdentifier code:SKWFatalErrorRAPIReconnectFailed userInfo:nil];
 }
 
++(NSError* _Nonnull)channelUpdateMetadataError {
+    NSBundle *bundle = [NSBundle bundleForClass:self];
+    return [[NSError alloc] initWithDomain:bundle.bundleIdentifier code:SKWChannelUpdateMetadataError userInfo:nil];
+}
+
 
 @end

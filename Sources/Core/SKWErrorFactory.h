@@ -36,6 +36,7 @@ typedef NS_ENUM(NSUInteger, SKWErrorCode) {
     SKWSubscriptionCancelError = 21,
     SKWContextDisposeError = 22,
     SKWFatalErrorRAPIReconnectFailed = 23,
+    SKWChannelUpdateMetadataError = 24,
 };
 
 @interface SKWErrorFactory: NSObject
@@ -64,6 +65,7 @@ typedef NS_ENUM(NSUInteger, SKWErrorCode) {
 +(NSError* _Nonnull)subscriptionCancelError;
 +(NSError* _Nonnull)contextDisposeError;
 +(NSError* _Nonnull)fatalErrorRAPIReconnectFailedError;
++(NSError* _Nonnull)channelUpdateMetadataError;
 
 @end
 

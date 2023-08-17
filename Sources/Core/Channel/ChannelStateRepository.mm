@@ -175,9 +175,11 @@
     SKWSubscription* subscription;
     @synchronized (mutableSubscriptions) {
         if(id existingSubscription = [self findSubscriptionBySubscriptionID:nativeSubscription->Id()]) {
+            if (![existingSubscription stream] && nativeSubscription->Stream()) {
+                [existingSubscription setStreamFromNativeStream:nativeSubscription->Stream()];
+            }
             return existingSubscription;
         }
-        
         subscription = [self createSubscriptionForNative:nativeSubscription];
         [mutableSubscriptions addObject:subscription];
     }

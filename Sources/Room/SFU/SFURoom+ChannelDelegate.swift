@@ -53,7 +53,9 @@ extension SFURoom {
             return
         }
         // It should be relayed publication
-        self.onStreamUnpublished?(publication)
+        self.onStreamUnpublished.forEach { (key: String, value: ((Publication) -> Void)) in
+            value(publication)
+        }
         super.channel(channel, didUnpublishStreamOf: publication)
         delegate?.roomPublicationListDidChange?(self)
     }

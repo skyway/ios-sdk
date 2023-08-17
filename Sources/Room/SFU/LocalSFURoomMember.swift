@@ -62,18 +62,21 @@ import SkyWaySFUBot
         let person = core as! LocalPerson
         guard let publication = self.room?.channel.publications.first(where: { $0.id == publicationId }),
               let origin = publication.origin else {
+            Logger.error(message: "The publication is missing on channel.")
+            completion?(SKWErrorFactory.localSfuRoomMemberUnublishError())
             return
         }
         guard let room = (room as? SFURoom) else {
+            Logger.error(message: "Casting room to Sfu failed.")
+            completion?(SKWErrorFactory.localSfuRoomMemberUnublishError())
             return
         }
-        room.onStreamUnpublished = { publication in
+        room.onStreamUnpublished.updateValue({ publication in
             if publication.id == publicationId {
                 completion?(nil)
-                room.onStreamUnpublished = nil
+                room.onStreamUnpublished.removeValue(forKey: publicationId)
             }
-        }
+        }, forKey: publicationId)
         person.unpublish(publicationID: origin.id, completion: nil)
-
     }
 }

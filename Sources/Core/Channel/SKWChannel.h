@@ -97,6 +97,7 @@ NS_SWIFT_NAME(Channel)
 
 typedef void (^SKWChannelCompletion)(SKWChannel* _Nullable, NSError* _Nullable);
 typedef void (^SKWChannelJoinCompletion)(SKWLocalPerson* _Nullable, NSError* _Nullable);
+typedef void (^SKWChannelUpdateMetadataCompletion)(NSError* _Nullable);
 typedef void (^SKWChannelLeaveMemberCompletion)(NSError* _Nullable);
 typedef void (^SKWChannelCloseCompletion)(NSError* _Nullable);
 typedef void (^SKWChannelDisposeCompletion)(NSError* _Nullable);
@@ -128,6 +129,14 @@ typedef void (^SKWChannelDisposeCompletion)(NSError* _Nullable);
 /// @param init LocalPerson初期化オプション
 /// @param completion 完了コールバック
 -(void)joinWithInit:(SKWMemberInit* _Nullable)init completion:(SKWChannelJoinCompletion _Nullable)completion;
+
+
+/// メタデータを更新します。
+/// 
+/// - Parameters:
+///   - metadata: メタデータ
+///   - completion: 完了コールバック
+-(void)updateMetadata:(NSString* _Nonnull)metadata completion:(SKWChannelUpdateMetadataCompletion _Nullable)completion;
 
 
 /// ChannelからMemberを退出させます。

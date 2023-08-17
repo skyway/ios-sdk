@@ -145,6 +145,10 @@ private:
 
 -(void)instantiateStream {
     auto nativeStream = _native->Stream();
+    [self setStreamFromNativeStream:nativeStream];
+}
+
+-(void)setStreamFromNativeStream:(std::shared_ptr<skyway::core::interface::RemoteStream>)nativeStream {
     if(!nativeStream) {
         return;
     }

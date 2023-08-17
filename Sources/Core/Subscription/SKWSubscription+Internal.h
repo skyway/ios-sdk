@@ -23,6 +23,7 @@ using NativeSubscription = skyway::core::interface::Subscription;
 @property(nonatomic, readonly, weak) ChannelStateRepository* _Nullable repository;
 
 -(id _Nonnull)initWithNative:(NativeSubscription* _Nonnull)native repository:(ChannelStateRepository* _Nonnull)repository;
+-(void)setStreamFromNativeStream:(std::shared_ptr<skyway::core::interface::RemoteStream>)nativeStream;
 -(void)dispose;
 
 @end

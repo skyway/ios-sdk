@@ -35,18 +35,30 @@ public:
         }
     }
     
-    void OnSubscribed() override {
+    void OnSubscribed(skyway::core::interface::Subscription* subscription) override {
+        SKWSubscription* sub = [publication_.repository registerSubscriptionIfNeeded:subscription];
         if([publication_.delegate respondsToSelector:@selector(publicationSubscribed:)]) {
             dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
                 [publication_.delegate publicationSubscribed:publication_];
             });
         }
+        if([publication_.delegate respondsToSelector:@selector(publication:subscribed:)]) {
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [publication_.delegate publication:publication_ subscribed:sub];
+            });
+        }
     }
     
-    void OnUnsubscribed() override {
+    void OnUnsubscribed(skyway::core::interface::Subscription* subscription) override {
+        SKWSubscription* sub = [publication_.repository findSubscriptionBySubscriptionID:subscription->Id()];
         if([publication_.delegate respondsToSelector:@selector(publicationUnsubscribed:)]) {
             dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
                 [publication_.delegate publicationUnsubscribed:publication_];
+            });
+        }
+        if([publication_.delegate respondsToSelector:@selector(publication:unsubscribed:)]) {
+            dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [publication_.delegate publication:publication_ unsubscribed:sub];
             });
         }
     }

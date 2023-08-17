@@ -10,12 +10,39 @@
 #define Type_h
 
 #import <Foundation/Foundation.h>
+
+///
+/// ログのレベル一覧
+///
 typedef NS_ENUM(NSUInteger, SKWLogLevel) {
+    ///
+    /// デフォルト値。異常に関する情報を出力します。このエラーが発生したメソッドからは無効値が返されます。
+    ///
     SKWLogLevelError,
+    
+    ///
+    /// SDK内部で発生した一時的なエラーに関する情報を出力します。
+    ///
     SKWLogLevelWarn,
+    
+    ///
+    /// SDK が提供しているメソッドの呼び出しに関する情報を出力します。
+    ///
     SKWLogLevelInfo,
+    
+    ///
+    /// イベントの発火やリクエスト・レスポンスに関する情報など、デバッグ時に参考となる情報を出力します。
+    ///
     SKWLogLevelDebug,
+    
+    ///
+    /// メモリの破棄など、最も詳細なログを出力します。
+    ///
     SKWLogLevelTrace,
+    
+    ///
+    /// ログを出力しません。
+    ///
     SKWLogLevelOff,
 } NS_SWIFT_NAME(LogLevel);
 

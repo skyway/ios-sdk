@@ -20,7 +20,7 @@ NS_SWIFT_NAME(Context)
 @interface SKWContext: NSObject
 
 typedef void (^SKWContextSetupCompletion)(NSError* _Nullable);
-typedef void (^SKWChannelDisposeCompletion)(NSError* _Nullable);
+typedef void (^SKWContextDisposeCompletion)(NSError* _Nullable);
 
 @property(class, nonatomic, readonly) NSArray<SKWPlugin*>* _Nonnull plugins;
 
@@ -61,7 +61,7 @@ typedef void (^SKWChannelDisposeCompletion)(NSError* _Nullable);
 /// Dispose完了後にSDKで生成されたリソースにアクセスしないでください。
 ///
 /// `setup(withToken:options:completion)`を再度コールすることで利用可能になります。
-+(void)disposeWithCompletion:(SKWChannelDisposeCompletion _Nullable)completion;
++(void)disposeWithCompletion:(SKWContextDisposeCompletion _Nullable)completion;
 
 @end
 

@@ -156,7 +156,7 @@ static dispatch_group_t eventGroup = dispatch_group_create();
     _delegate = delegate;
 }
 
-+(void)disposeWithCompletion:(SKWChannelDisposeCompletion _Nullable)completion {
++(void)disposeWithCompletion:(SKWContextDisposeCompletion _Nullable)completion {
     dispatch_group_notify(eventGroup, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         Context::Dispose();
         // DO NOT remove `_pcFactory` here because some resources still remain (e.g. RTCMediaTrack)

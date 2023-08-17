@@ -130,11 +130,23 @@ NS_SWIFT_NAME(PublicationDelegate)
 /// このPublicationがSubscribeされた時に発生するイベント
 ///
 /// - Parameter publication: Publication
--(void)publicationSubscribed:(SKWPublication* _Nonnull)publication;
+-(void)publicationSubscribed:(SKWPublication* _Nonnull)publication __attribute__ ((deprecated("SkyWayCore v1.5.0で非推奨となりました。`-publication:subscribed:`をご利用ください。")));
+/// このPublicationがSubscribeされた時に発生するイベント
+///
+/// - Parameters:
+///   - publication: Publication
+///   - subscription: Subscription
+-(void)publication:(SKWPublication* _Nonnull)publication subscribed:(SKWSubscription* _Nonnull) subscription;
 /// このPublicationがUnsubscribeされた時に発生するイベント
 ///
 /// - Parameter publication: Publication
--(void)publicationUnsubscribed:(SKWPublication* _Nonnull)publication;
+-(void)publicationUnsubscribed:(SKWPublication* _Nonnull)publication __attribute__ ((deprecated("SkyWayCore v1.5.0で非推奨となりました。`-publication:unsubscribed:`をご利用ください。")));
+/// このPublicationがUnsubscribeされた時に発生するイベント
+///
+/// - Parameters:
+///   - publication: Publication
+///   - subscription: Subscription
+-(void)publication:(SKWPublication* _Nonnull)publication unsubscribed:(SKWSubscription* _Nonnull) subscription;
 /// このPublicationのSubscribeされている数が変化した時に発生するイベント
 ///
 /// - Parameter publication: Publication
