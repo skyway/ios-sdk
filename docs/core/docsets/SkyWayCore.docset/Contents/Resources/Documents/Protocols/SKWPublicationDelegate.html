@@ -17,7 +17,7 @@
     <a title="SKWPublicationDelegate Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">SkyWayCore 1.4.0 Docs</a> (48% documented)</p>
+        <p><a href="../index.html">SkyWayCore 1.5.0 Docs</a> (48% documented)</p>
         <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -293,6 +293,12 @@
                 <a href="../Type%20Definitions.html#/c:SKWChannel.h@T@SKWChannelLeaveMemberCompletion">SKWChannelLeaveMemberCompletion</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:SKWChannel.h@T@SKWChannelUpdateMetadataCompletion">SKWChannelUpdateMetadataCompletion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:SKWContext.h@T@SKWContextDisposeCompletion">SKWContextDisposeCompletion</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Type%20Definitions.html#/c:SKWContext.h@T@SKWContextSetupCompletion">SKWContextSetupCompletion</a>
               </li>
               <li class="nav-group-task">
@@ -409,13 +415,18 @@
                     <code>
                     <a name="/c:objc(pl)SKWPublicationDelegate(im)publicationSubscribed:"></a>
                     <a name="//apple_ref/objc/Method/-publicationSubscribed:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)SKWPublicationDelegate(im)publicationSubscribed:">-publicationSubscribed:<wbr></a>
+                    <a class="token discouraged" href="#/c:objc(pl)SKWPublicationDelegate(im)publicationSubscribed:">-publicationSubscribed:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>SkyWayCore v1.5.0で非推奨となりました。<code><a href="../Protocols/SKWPublicationDelegate.html#/c:objc(pl)SKWPublicationDelegate(im)publication:subscribed:">-publication:subscribed:</a></code>をご利用ください。</p>
+
+                      </div>
                       <div class="abstract">
                         <p>このPublicationがSubscribeされた時に発生するイベント</p>
 
@@ -439,15 +450,53 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(pl)SKWPublicationDelegate(im)publicationUnsubscribed:"></a>
-                    <a name="//apple_ref/objc/Method/-publicationUnsubscribed:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)SKWPublicationDelegate(im)publicationUnsubscribed:">-publicationUnsubscribed:<wbr></a>
+                    <a name="/c:objc(pl)SKWPublicationDelegate(im)publication:subscribed:"></a>
+                    <a name="//apple_ref/objc/Method/-publication:subscribed:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SKWPublicationDelegate(im)publication:subscribed:">-publication:<wbr>subscribed:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>このPublicationがSubscribeされた時に発生するイベント</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">publication</span><span class="p">:(</span><span class="n"><a href="../Classes/SKWPublication.html">SKWPublication</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publication</span>
+         <span class="nf">subscribed</span><span class="p">:(</span><span class="n"><a href="../Classes/SKWSubscription.html">SKWSubscription</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">subscription</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">publication</span><span class="p">(</span><span class="n">_</span> <span class="nv">publication</span><span class="p">:</span> <span class="kt">Publication</span><span class="p">,</span> <span class="n">subscribed</span> <span class="nv">subscription</span><span class="p">:</span> <span class="kt">Subscription</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SKWPublicationDelegate(im)publicationUnsubscribed:"></a>
+                    <a name="//apple_ref/objc/Method/-publicationUnsubscribed:" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(pl)SKWPublicationDelegate(im)publicationUnsubscribed:">-publicationUnsubscribed:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>SkyWayCore v1.5.0で非推奨となりました。<code><a href="../Protocols/SKWPublicationDelegate.html#/c:objc(pl)SKWPublicationDelegate(im)publication:unsubscribed:">-publication:unsubscribed:</a></code>をご利用ください。</p>
+
+                      </div>
                       <div class="abstract">
                         <p>このPublicationがUnsubscribeされた時に発生するイベント</p>
 
@@ -462,6 +511,39 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">publicationUnsubscribed</span><span class="p">(</span><span class="n">_</span> <span class="nv">publication</span><span class="p">:</span> <span class="kt">Publication</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SKWPublicationDelegate(im)publication:unsubscribed:"></a>
+                    <a name="//apple_ref/objc/Method/-publication:unsubscribed:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SKWPublicationDelegate(im)publication:unsubscribed:">-publication:<wbr>unsubscribed:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>このPublicationがUnsubscribeされた時に発生するイベント</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">publication</span><span class="p">:(</span><span class="n"><a href="../Classes/SKWPublication.html">SKWPublication</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publication</span>
+       <span class="nf">unsubscribed</span><span class="p">:(</span><span class="n"><a href="../Classes/SKWSubscription.html">SKWSubscription</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">subscription</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">publication</span><span class="p">(</span><span class="n">_</span> <span class="nv">publication</span><span class="p">:</span> <span class="kt">Publication</span><span class="p">,</span> <span class="n">unsubscribed</span> <span class="nv">subscription</span><span class="p">:</span> <span class="kt">Subscription</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -668,8 +750,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2023-08-04)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2023-08-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
