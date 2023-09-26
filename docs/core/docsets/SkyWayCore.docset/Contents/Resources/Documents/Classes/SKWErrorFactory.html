@@ -17,7 +17,7 @@
     <a title="SKWErrorFactory Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">SkyWayCore 1.5.1 Docs</a> (48% documented)</p>
+        <p><a href="../index.html">SkyWayCore 1.5.2 Docs</a> (48% documented)</p>
         <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -363,33 +363,33 @@
               <div class="declaration">
                 <div class="language">
                   <p class="aside-title">Objective-C</p>
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SKWErrorFactory</span><span class="p">:</span> <span class="nc">NSObject</span>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SKWErrorFactory</span> <span class="p">:</span> <span class="nc">NSObject</span>
 
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">availableCameraIsMissing</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">cameraIsNotSet</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">contextSetupError</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelFindError</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelCreateError</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelFindOrCreateError</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelJoinError</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelLeaveError</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelCloseError</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">memberUpdateMetadataError</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">memberLeaveError</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">localPersonPublishError</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">localPersonSubscribeError</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">localPersonUnpublishError</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">localPersonUnsubscribeError</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">remotePersonSubscribeError</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">remotePersonUnsubscribeError</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">publicationUpdateMetadataError</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">publicationCancelError</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">publicationEnableError</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">publicationDisableError</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">subscriptionCancelError</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">contextDisposeError</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">fatalErrorRAPIReconnectFailedError</span><span class="p">;</span>
-<span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelUpdateMetadataError</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">availableCameraIsMissing</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">cameraIsNotSet</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">contextSetupError</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelFindError</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelCreateError</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelFindOrCreateError</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelJoinError</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelLeaveError</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelCloseError</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">memberUpdateMetadataError</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">memberLeaveError</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">localPersonPublishError</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">localPersonSubscribeError</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">localPersonUnpublishError</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">localPersonUnsubscribeError</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">remotePersonSubscribeError</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">remotePersonUnsubscribeError</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">publicationUpdateMetadataError</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">publicationCancelError</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">publicationEnableError</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">publicationDisableError</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">subscriptionCancelError</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">contextDisposeError</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">fatalErrorRAPIReconnectFailedError</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelUpdateMetadataError</span><span class="p">;</span>
 
 <span class="k">@end</span></code></pre>
 
@@ -426,7 +426,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">availableCameraIsMissing</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">availableCameraIsMissing</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -458,7 +458,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">cameraIsNotSet</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">cameraIsNotSet</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -490,7 +490,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">contextSetupError</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">contextSetupError</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -522,7 +522,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelFindError</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelFindError</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -554,7 +554,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelCreateError</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelCreateError</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -586,7 +586,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelFindOrCreateError</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelFindOrCreateError</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -618,7 +618,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelJoinError</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelJoinError</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -650,7 +650,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelLeaveError</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelLeaveError</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -682,7 +682,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelCloseError</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelCloseError</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -714,7 +714,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">memberUpdateMetadataError</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">memberUpdateMetadataError</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -746,7 +746,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">memberLeaveError</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">memberLeaveError</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -778,7 +778,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">localPersonPublishError</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">localPersonPublishError</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -810,7 +810,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">localPersonSubscribeError</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">localPersonSubscribeError</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -842,7 +842,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">localPersonUnpublishError</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">localPersonUnpublishError</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -874,7 +874,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">localPersonUnsubscribeError</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">localPersonUnsubscribeError</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -906,7 +906,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">remotePersonSubscribeError</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">remotePersonSubscribeError</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -938,7 +938,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">remotePersonUnsubscribeError</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">remotePersonUnsubscribeError</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -970,7 +970,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">publicationUpdateMetadataError</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">publicationUpdateMetadataError</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -1002,7 +1002,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">publicationCancelError</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">publicationCancelError</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -1034,7 +1034,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">publicationEnableError</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">publicationEnableError</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -1066,7 +1066,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">publicationDisableError</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">publicationDisableError</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -1098,7 +1098,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">subscriptionCancelError</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">subscriptionCancelError</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -1130,7 +1130,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">contextDisposeError</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">contextDisposeError</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -1162,7 +1162,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">fatalErrorRAPIReconnectFailedError</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">fatalErrorRAPIReconnectFailedError</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -1194,7 +1194,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span><span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelUpdateMetadataError</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelUpdateMetadataError</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -1211,8 +1211,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2023-08-30)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2023-09-26)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>

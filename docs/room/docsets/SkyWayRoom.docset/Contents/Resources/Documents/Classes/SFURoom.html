@@ -17,7 +17,7 @@
     <a title="SFURoom Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">SkyWayRoom 1.6.1 Docs</a> (95% documented)</p>
+        <p><a href="../index.html">SkyWayRoom 1.6.2 Docs</a> (95% documented)</p>
         <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -158,7 +158,10 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="n">iOS</span> <span class="mf">13.0</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span>
 <span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">create</span><span class="p">(</span><span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">InitOptions</span><span class="p">?,</span> <span class="nv">sfuOptions</span><span class="p">:</span> <span class="kt">SFUBotPluginOptions</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">SFURoom</span></code></pre>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">create</span><span class="p">(</span>
+    <span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">InitOptions</span><span class="p">?,</span>
+    <span class="nv">sfuOptions</span><span class="p">:</span> <span class="kt">SFUBotPluginOptions</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">SFURoom</span></code></pre>
 
                         </div>
                       </div>
@@ -223,7 +226,11 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">create</span><span class="p">(</span><span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">InitOptions</span><span class="p">?,</span> <span class="nv">sfuOptions</span><span class="p">:</span> <span class="kt">SFUBotPluginOptions</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">SFURoom</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">create</span><span class="p">(</span>
+    <span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">InitOptions</span><span class="p">?,</span>
+    <span class="nv">sfuOptions</span><span class="p">:</span> <span class="kt">SFUBotPluginOptions</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">SFURoom</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span>
+<span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -300,7 +307,9 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="n">iOS</span> <span class="mf">13.0</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span>
 <span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">find</span><span class="p">(</span><span class="n">by</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">Query</span><span class="p">,</span> <span class="nv">sfuOption</span><span class="p">:</span> <span class="kt">SFUBotPluginOptions</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">SFURoom</span></code></pre>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">find</span><span class="p">(</span><span class="n">by</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">Query</span><span class="p">,</span> <span class="nv">sfuOption</span><span class="p">:</span> <span class="kt">SFUBotPluginOptions</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span>
+    <span class="k">async</span> <span class="k">throws</span>
+    <span class="o">-&gt;</span> <span class="kt">SFURoom</span></code></pre>
 
                         </div>
                       </div>
@@ -365,7 +374,11 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">find</span><span class="p">(</span><span class="n">by</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">Query</span><span class="p">,</span> <span class="nv">sfuOptions</span><span class="p">:</span> <span class="kt">SFUBotPluginOptions</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">SFURoom</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">find</span><span class="p">(</span>
+    <span class="n">by</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">Query</span><span class="p">,</span>
+    <span class="nv">sfuOptions</span><span class="p">:</span> <span class="kt">SFUBotPluginOptions</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">SFURoom</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span>
+<span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -440,7 +453,10 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="n">iOS</span> <span class="mf">13.0</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span>
 <span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">findOrCreate</span><span class="p">(</span><span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">InitOptions</span><span class="p">,</span> <span class="nv">sfuOptions</span><span class="p">:</span> <span class="kt">SFUBotPluginOptions</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">SFURoom</span></code></pre>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">findOrCreate</span><span class="p">(</span>
+    <span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">InitOptions</span><span class="p">,</span>
+    <span class="nv">sfuOptions</span><span class="p">:</span> <span class="kt">SFUBotPluginOptions</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">SFURoom</span></code></pre>
 
                         </div>
                       </div>
@@ -503,7 +519,11 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">findOrCreate</span><span class="p">(</span><span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">InitOptions</span><span class="p">,</span> <span class="nv">sfuOptions</span><span class="p">:</span> <span class="kt">SFUBotPluginOptions</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">SFURoom</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">findOrCreate</span><span class="p">(</span>
+    <span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">InitOptions</span><span class="p">,</span>
+    <span class="nv">sfuOptions</span><span class="p">:</span> <span class="kt">SFUBotPluginOptions</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">SFURoom</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span>
+<span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -579,7 +599,8 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="n">iOS</span> <span class="mf">13.0</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span>
-<span class="k">override</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">join</span><span class="p">(</span><span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Classes/Room.html">Room</a></span><span class="o">.</span><span class="kt">MemberInitOptions</span><span class="p">?)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/LocalSFURoomMember.html">LocalSFURoomMember</a></span></code></pre>
+<span class="k">override</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">join</span><span class="p">(</span><span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Classes/Room.html">Room</a></span><span class="o">.</span><span class="kt">MemberInitOptions</span><span class="p">?)</span> <span class="k">async</span> <span class="k">throws</span>
+    <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/LocalSFURoomMember.html">LocalSFURoomMember</a></span></code></pre>
 
                         </div>
                       </div>
@@ -631,7 +652,10 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">join</span><span class="p">(</span><span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Classes/Room.html">Room</a></span><span class="o">.</span><span class="kt">MemberInitOptions</span><span class="p">?,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt"><a href="../Classes/LocalSFURoomMember.html">LocalSFURoomMember</a></span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">join</span><span class="p">(</span>
+    <span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Classes/Room.html">Room</a></span><span class="o">.</span><span class="kt">MemberInitOptions</span><span class="p">?,</span>
+    <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt"><a href="../Classes/LocalSFURoomMember.html">LocalSFURoomMember</a></span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span>
+<span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -755,8 +779,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2023-08-30)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2023-09-26)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>

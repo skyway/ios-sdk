@@ -17,7 +17,7 @@
     <a title="Protocols  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">SkyWayCore 1.5.1 Docs</a> (48% documented)</p>
+        <p><a href="index.html">SkyWayCore 1.5.2 Docs</a> (48% documented)</p>
         <div class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -424,10 +424,10 @@
 <span class="k">@optional</span>
 
 <span class="c1">/// SkyWayサーバと再接続開始後にコールされるイベント</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">startReconnecting</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">startReconnecting</span><span class="p">;</span>
 
 <span class="c1">/// SkyWayサーバと再接続成功後にコールされるイベント</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">reconnectingSucceeded</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">reconnectingSucceeded</span><span class="p">;</span>
 
 <span class="c1">/// トークンが期限切れにより失効した後にコールされるイベント</span>
 <span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">tokenExpired</span><span class="p">;</span>
@@ -480,10 +480,14 @@
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">SKWLocalPersonDelegate</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/SKWMemberDelegate.html">SKWMemberDelegate</a></span><span class="o">&gt;</span>
 <span class="k">@optional</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">localPerson</span><span class="p">:(</span><span class="n"><a href="Classes/SKWLocalPerson.html">SKWLocalPerson</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">localPerson</span> <span class="nf">didPublishStreamOfPublication</span><span class="p">:(</span><span class="n"><a href="Classes/SKWPublication.html">SKWPublication</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publication</span><span class="p">;</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">localPerson</span><span class="p">:(</span><span class="n"><a href="Classes/SKWLocalPerson.html">SKWLocalPerson</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">localPerson</span> <span class="nf">didUnpublishStreamOfPublication</span><span class="p">:(</span><span class="n"><a href="Classes/SKWPublication.html">SKWPublication</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publication</span><span class="p">;</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">localPerson</span><span class="p">:(</span><span class="n"><a href="Classes/SKWLocalPerson.html">SKWLocalPerson</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">localPerson</span> <span class="nf">didSubscribePublicationOfSubscription</span><span class="p">:(</span><span class="n"><a href="Classes/SKWSubscription.html">SKWSubscription</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">subscription</span><span class="p">;</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">localPerson</span><span class="p">:(</span><span class="n"><a href="Classes/SKWLocalPerson.html">SKWLocalPerson</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">localPerson</span> <span class="nf">didUnsubscribePublicationOfSubscription</span><span class="p">:(</span><span class="n"><a href="Classes/SKWSubscription.html">SKWSubscription</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">subscription</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">localPerson</span><span class="p">:(</span><span class="n"><a href="Classes/SKWLocalPerson.html">SKWLocalPerson</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">localPerson</span>
+    <span class="nf">didPublishStreamOfPublication</span><span class="p">:(</span><span class="n"><a href="Classes/SKWPublication.html">SKWPublication</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publication</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">localPerson</span><span class="p">:(</span><span class="n"><a href="Classes/SKWLocalPerson.html">SKWLocalPerson</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">localPerson</span>
+    <span class="nf">didUnpublishStreamOfPublication</span><span class="p">:(</span><span class="n"><a href="Classes/SKWPublication.html">SKWPublication</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publication</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">localPerson</span><span class="p">:(</span><span class="n"><a href="Classes/SKWLocalPerson.html">SKWLocalPerson</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">localPerson</span>
+    <span class="nf">didSubscribePublicationOfSubscription</span><span class="p">:(</span><span class="n"><a href="Classes/SKWSubscription.html">SKWSubscription</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">subscription</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">localPerson</span><span class="p">:(</span><span class="n"><a href="Classes/SKWLocalPerson.html">SKWLocalPerson</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">localPerson</span>
+    <span class="nf">didUnsubscribePublicationOfSubscription</span><span class="p">:(</span><span class="n"><a href="Classes/SKWSubscription.html">SKWSubscription</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">subscription</span><span class="p">;</span>
 <span class="k">@end</span></code></pre>
 
                         </div>
@@ -618,8 +622,10 @@
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">SKWRemotePersonDelegate</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/SKWMemberDelegate.html">SKWMemberDelegate</a></span><span class="o">&gt;</span>
 <span class="k">@optional</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">remotePerson</span><span class="p">:(</span><span class="n"><a href="Classes/SKWRemotePerson.html">SKWRemotePerson</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">remotePerson</span> <span class="nf">didSubscribePublicationOfSubscription</span><span class="p">:(</span><span class="n"><a href="Classes/SKWSubscription.html">SKWSubscription</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">subscription</span><span class="p">;</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">remotePerson</span><span class="p">:(</span><span class="n"><a href="Classes/SKWRemotePerson.html">SKWRemotePerson</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">remotePerson</span> <span class="nf">didUnsubscribePublicationOfSubscription</span><span class="p">:(</span><span class="n"><a href="Classes/SKWSubscription.html">SKWSubscription</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">subscription</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">remotePerson</span><span class="p">:(</span><span class="n"><a href="Classes/SKWRemotePerson.html">SKWRemotePerson</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">remotePerson</span>
+    <span class="nf">didSubscribePublicationOfSubscription</span><span class="p">:(</span><span class="n"><a href="Classes/SKWSubscription.html">SKWSubscription</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">subscription</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">remotePerson</span><span class="p">:(</span><span class="n"><a href="Classes/SKWRemotePerson.html">SKWRemotePerson</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">remotePerson</span>
+    <span class="nf">didUnsubscribePublicationOfSubscription</span><span class="p">:(</span><span class="n"><a href="Classes/SKWSubscription.html">SKWSubscription</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">subscription</span><span class="p">;</span>
 <span class="k">@end</span></code></pre>
 
                         </div>
@@ -654,8 +660,8 @@
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">SKWVideoStreamProtocol</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">attachView</span><span class="p">:(</span><span class="n"><a href="Classes/SKWVideoView.html">SKWVideoView</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">view</span><span class="p">;</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">detachView</span><span class="p">:(</span><span class="n"><a href="Classes/SKWVideoView.html">SKWVideoView</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">view</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">attachView</span><span class="p">:(</span><span class="n"><a href="Classes/SKWVideoView.html">SKWVideoView</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">view</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">detachView</span><span class="p">:(</span><span class="n"><a href="Classes/SKWVideoView.html">SKWVideoView</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">view</span><span class="p">;</span>
 <span class="k">@end</span></code></pre>
 
                         </div>
@@ -694,14 +700,15 @@
 
 <span class="c1">/// RoomSubscriptionがUnsubscribeされCanceled状態に変化した後にコールされます。</span>
 <span class="c1">/// - Parameter subscription: Subscription</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">subscriptionCanceled</span><span class="p">:(</span><span class="n"><a href="Classes/SKWSubscription.html">SKWSubscription</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">subscription</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">subscriptionCanceled</span><span class="p">:(</span><span class="n"><a href="Classes/SKWSubscription.html">SKWSubscription</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">subscription</span><span class="p">;</span>
 
 <span class="c1">/// RoomSubscriptionの接続状態が変化した後にコールされるイベント</span>
 <span class="c1">///</span>
 <span class="c1">/// - Parameters:</span>
 <span class="c1">///   - subscription: Subscription</span>
 <span class="c1">///   - connectionState: 接続状態</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">subscription</span><span class="p">:(</span><span class="n"><a href="Classes/SKWSubscription.html">SKWSubscription</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">subscription</span> <span class="nf">connectionStateDidChange</span><span class="p">:</span> <span class="p">(</span><span class="n"><a href="Enums/SKWConnectionState.html">SKWConnectionState</a></span><span class="p">)</span><span class="nv">connectionState</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">subscription</span><span class="p">:(</span><span class="n"><a href="Classes/SKWSubscription.html">SKWSubscription</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">subscription</span>
+    <span class="nf">connectionStateDidChange</span><span class="p">:(</span><span class="n"><a href="Enums/SKWConnectionState.html">SKWConnectionState</a></span><span class="p">)</span><span class="nv">connectionState</span><span class="p">;</span>
 <span class="k">@end</span></code></pre>
 
                         </div>
@@ -719,8 +726,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2023-08-30)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2023-09-26)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
