@@ -11,7 +11,7 @@
 
 #import "SKWPlugin.h"
 
-@interface SKWRemotePersonPlugin: SKWPlugin
+@interface SKWRemotePersonPlugin : SKWPlugin
 @end
 
 #endif /* SKWRemotePersonPlugin_h */

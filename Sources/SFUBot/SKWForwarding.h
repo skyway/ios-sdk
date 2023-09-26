@@ -21,7 +21,7 @@ typedef NS_ENUM(NSUInteger, SKWForwardingState) {
 
 /// フォワードコンフィグ
 NS_SWIFT_NAME(ForwardingConfigure)
-@interface SKWForwardingConfigure: NSObject
+@interface SKWForwardingConfigure : NSObject
 
 /// フォワードしたPublicationをSubscribeできる最大人数
 ///
@@ -32,12 +32,10 @@ NS_SWIFT_NAME(ForwardingConfigure)
 
 @end
 
-
 /// フォワーディング
 ///
 /// Botがフォワードした時に取得できます。
 @interface SKWForwarding : NSObject
-
 
 /// Forwarding識別子
 ///
@@ -56,18 +54,18 @@ NS_SWIFT_NAME(ForwardingConfigure)
 /// Forwardingを表すPublication
 @property(nonatomic, readonly) SKWPublication* _Nonnull relayingPublication;
 
--(id _Nonnull)init NS_UNAVAILABLE;
+- (id _Nonnull)init NS_UNAVAILABLE;
 
 @end
 
 @protocol SKWForwardingDelegate <NSObject>
 @optional
--(void)forwardingDidStop:(SKWForwarding* _Nonnull)forwarding;
+- (void)forwardingDidStop:(SKWForwarding* _Nonnull)forwarding;
 @end
 
-@interface SKWForwarding()
+@interface SKWForwarding ()
 
-@property (weak, nonatomic) id<SKWForwardingDelegate> _Nullable delegate;
+@property(weak, nonatomic) id<SKWForwardingDelegate> _Nullable delegate;
 
 @end
 

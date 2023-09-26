@@ -13,7 +13,6 @@
 
 #import "SKWLocalStream.h"
 
-
 /// LocalAudioStreamクラス
 ///
 /// Sourceの`createStream()`から生成してください。
@@ -21,9 +20,8 @@ NS_SWIFT_NAME(LocalAudioStream)
 @interface SKWLocalAudioStream : SKWLocalStream
 
 /// イニシャライザ
--(id _Nonnull)init;
+- (id _Nonnull)init;
 
 @end
-
 
 #endif /* SKWLocalAudioStream_h */

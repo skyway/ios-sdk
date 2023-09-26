@@ -14,23 +14,21 @@
 
 @implementation SKWFileVideoSource
 
--(id _Nonnull)initWithFilename:(NSString* _Nonnull)filename {
-    if(self = [super initWithRTCCapturer:[[RTCFileVideoCapturer alloc] init]]) {
+- (id _Nonnull)initWithFilename:(NSString* _Nonnull)filename {
+    if (self = [super initWithRTCCapturer:[[RTCFileVideoCapturer alloc] init]]) {
         _filename = filename;
     }
     return self;
 }
 
--(void)startCapturingOnError:(SKWFileVideoSourceStartCapturingOnError _Nullable)onError {
+- (void)startCapturingOnError:(SKWFileVideoSourceStartCapturingOnError _Nullable)onError {
     RTCFileVideoCapturer* fileCapturer = (RTCFileVideoCapturer*)self.rtcCapturer;
     [fileCapturer startCapturingFromFileNamed:_filename onError:onError];
 }
 
--(void)stopCapturing{
+- (void)stopCapturing {
     RTCFileVideoCapturer* fileCapturer = (RTCFileVideoCapturer*)self.rtcCapturer;
     [fileCapturer stopCapture];
 }
-
-
 
 @end

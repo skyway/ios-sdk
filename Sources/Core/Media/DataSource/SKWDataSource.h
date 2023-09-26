@@ -15,10 +15,10 @@
 
 /// データ入力ソース
 NS_SWIFT_NAME(DataSource)
-@interface SKWDataSource: NSObject
+@interface SKWDataSource : NSObject
 
 /// ストリームを作成します。
--(SKWLocalDataStream* _Nonnull)createStream;
+- (SKWLocalDataStream* _Nonnull)createStream;
 
 @end
 

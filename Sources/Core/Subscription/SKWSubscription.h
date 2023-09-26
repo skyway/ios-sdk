@@ -9,8 +9,8 @@
 #ifndef SKWSubscription_h
 #define SKWSubscription_h
 
-#import "SKWRemoteStream.h"
 #import "SKWMember.h"
+#import "SKWRemoteStream.h"
 #import "SKWWebRTCStats.h"
 #import "Type.h"
 
@@ -32,7 +32,6 @@ NS_SWIFT_NAME(Subscription)
 
 typedef void (^SKWSubscriptionCancelCompletion)(NSError* _Nullable error);
 
-
 /// Subscriptionを識別するID
 @property(nonatomic, readonly) NSString* _Nonnull id;
 /// このSubscriptionに紐づくStreamのContentType
@@ -52,28 +51,28 @@ typedef void (^SKWSubscriptionCancelCompletion)(NSError* _Nullable error);
 /// 優先エンコーディング設定
 @property(nonatomic, readonly) NSString* _Nullable preferredEncodingId;
 
--(id _Nonnull)init NS_UNAVAILABLE;
+- (id _Nonnull)init NS_UNAVAILABLE;
 
 /// Simulcastで利用するPreferredEncodingIDを変更します。
 ///
-/// LocalRoomMemberがSFU bot がforwardingしたPublicationをSubscribeした時のSubscriptionで、ContentTypeがAudioまたはVideoの時のみ変更ができます。
--(void)changePreferredEncodingWithEncodingId:(NSString* _Nonnull)encodingId;
+/// LocalRoomMemberがSFU bot
+/// がforwardingしたPublicationをSubscribeした時のSubscriptionで、ContentTypeがAudioまたはVideoの時のみ変更ができます。
+- (void)changePreferredEncodingWithEncodingId:(NSString* _Nonnull)encodingId;
 
 ///  Subscribeを中止します。
-///  
+///
 /// - Parameter completion: 完了コールバック
--(void)cancelWithCompletion:(SKWSubscriptionCancelCompletion _Nullable)completion;
-
+- (void)cancelWithCompletion:(SKWSubscriptionCancelCompletion _Nullable)completion;
 
 /// [Experimental API]
-/// 
+///
 /// 試験的なAPIです。今後インターフェースや仕様が変更される可能性があります。
 ///
 /// 通信中の統計情報を取得します。
 ///
 /// 併せて公式サイトの通信状態の統計的分析もご確認ください。
 /// https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/
--(SKWWebRTCStats* _Nullable)getStats;
+- (SKWWebRTCStats* _Nullable)getStats;
 
 @end
 
@@ -83,19 +82,20 @@ NS_SWIFT_NAME(SubscriptionDelegate)
 
 /// RoomSubscriptionがUnsubscribeされCanceled状態に変化した後にコールされます。
 /// - Parameter subscription: Subscription
--(void)subscriptionCanceled:(SKWSubscription* _Nonnull)subscription;
+- (void)subscriptionCanceled:(SKWSubscription* _Nonnull)subscription;
 
 /// RoomSubscriptionの接続状態が変化した後にコールされるイベント
 ///
 /// - Parameters:
 ///   - subscription: Subscription
 ///   - connectionState: 接続状態
--(void)subscription:(SKWSubscription* _Nonnull)subscription connectionStateDidChange: (SKWConnectionState)connectionState;
+- (void)subscription:(SKWSubscription* _Nonnull)subscription
+    connectionStateDidChange:(SKWConnectionState)connectionState;
 @end
 
-@interface SKWSubscription()
+@interface SKWSubscription ()
 
-@property (weak, nonatomic) id<SKWSubscriptionDelegate> _Nullable delegate;
+@property(weak, nonatomic) id<SKWSubscriptionDelegate> _Nullable delegate;
 
 @end
 

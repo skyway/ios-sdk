@@ -9,17 +9,16 @@
 #ifndef SKWRemotePerson_Internal_h
 #define SKWRemotePerson_Internal_h
 
-#import "SKWRemotePerson.h"
 #import "ChannelStateRepository.h"
+#import "SKWRemotePerson.h"
 
 #import <skyway/plugin/remote_person_plugin/remote_person.hpp>
 
 using NativeRemotePerson = skyway::plugin::remote_person::RemotePerson;
 
-@interface SKWRemotePerson()
--(id _Nonnull)initWithNativePerson:(NativeRemotePerson* _Nonnull)native repository:(ChannelStateRepository* _Nonnull)repository;
+@interface SKWRemotePerson ()
+- (id _Nonnull)initWithNativePerson:(NativeRemotePerson* _Nonnull)native
+                         repository:(ChannelStateRepository* _Nonnull)repository;
 @end
-
-
 
 #endif /* SKWRemotePerson_Internal_h */

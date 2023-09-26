@@ -11,13 +11,13 @@
 
 #import <Foundation/Foundation.h>
 #import "SKWLocalPerson.h"
-#import "SKWRemoteMember.h"
 #import "SKWPublication.h"
+#import "SKWRemoteMember.h"
 #import "SKWSubscription.h"
 
 /// Channel初期化オプション
 NS_SWIFT_NAME(ChannelInit)
-@interface SKWChannelInit: NSObject
+@interface SKWChannelInit : NSObject
 /// Channel名
 @property NSString* _Nullable name;
 /// Channelのメタデータ
@@ -25,10 +25,9 @@ NS_SWIFT_NAME(ChannelInit)
 
 @end
 
-
 /// Channel検索クエリ
 NS_SWIFT_NAME(ChannelQuery)
-@interface SKWChannelQuery: NSObject
+@interface SKWChannelQuery : NSObject
 /// チャンネル名
 @property NSString* _Nullable name;
 
@@ -37,10 +36,9 @@ NS_SWIFT_NAME(ChannelQuery)
 
 @end
 
-
 /// Member初期化オプション
 NS_SWIFT_NAME(MemberInit)
-@interface SKWMemberInit: NSObject
+@interface SKWMemberInit : NSObject
 /// Member名
 @property NSString* _Nullable name;
 /// Memberのメタデータ
@@ -60,7 +58,7 @@ typedef NS_ENUM(NSUInteger, SKWChannelState) {
 
 /// チャンネル
 NS_SWIFT_NAME(Channel)
-@interface SKWChannel: NSObject
+@interface SKWChannel : NSObject
 
 /// Channel識別子
 @property(nonatomic, readonly) NSString* _Nonnull id;
@@ -102,50 +100,51 @@ typedef void (^SKWChannelLeaveMemberCompletion)(NSError* _Nullable);
 typedef void (^SKWChannelCloseCompletion)(NSError* _Nullable);
 typedef void (^SKWChannelDisposeCompletion)(NSError* _Nullable);
 
--(id _Nonnull)init NS_UNAVAILABLE;
+- (id _Nonnull)init NS_UNAVAILABLE;
 
 /// クエリからChannelを検索します。
 ///
 /// @param query 検索クエリ
 /// @param completion 完了コールバック
-+(void)findWithQuery:(SKWChannelQuery* _Nonnull)query completion:(SKWChannelCompletion _Nullable)completion;
++ (void)findWithQuery:(SKWChannelQuery* _Nonnull)query
+           completion:(SKWChannelCompletion _Nullable)completion;
 
 /// Channelを新規作成します。
 ///
 /// @param init 初期化オプション
 /// @param completion 完了コールバック
-+(void)createWithInit:(SKWChannelInit* _Nullable)init completion:(SKWChannelCompletion _Nullable)completion;
-
++ (void)createWithInit:(SKWChannelInit* _Nullable)init
+            completion:(SKWChannelCompletion _Nullable)completion;
 
 /// Channelを名前から検索し、存在しない場合は新規作成します。
 ///
 /// @param init 検索・初期化オプション
 /// @param completion 完了コールバック
-+(void)findOrCreateWithInit:(SKWChannelInit* _Nonnull)init completion:(SKWChannelCompletion _Nullable)completion;
-
++ (void)findOrCreateWithInit:(SKWChannelInit* _Nonnull)init
+                  completion:(SKWChannelCompletion _Nullable)completion;
 
 /// Channelに参加し、LocalPersonを作成します。
 ///
 /// @param init LocalPerson初期化オプション
 /// @param completion 完了コールバック
--(void)joinWithInit:(SKWMemberInit* _Nullable)init completion:(SKWChannelJoinCompletion _Nullable)completion;
-
+- (void)joinWithInit:(SKWMemberInit* _Nullable)init
+          completion:(SKWChannelJoinCompletion _Nullable)completion;
 
 /// メタデータを更新します。
-/// 
+///
 /// - Parameters:
 ///   - metadata: メタデータ
 ///   - completion: 完了コールバック
--(void)updateMetadata:(NSString* _Nonnull)metadata completion:(SKWChannelUpdateMetadataCompletion _Nullable)completion;
-
+- (void)updateMetadata:(NSString* _Nonnull)metadata
+            completion:(SKWChannelUpdateMetadataCompletion _Nullable)completion;
 
 /// ChannelからMemberを退出させます。
 ///
 /// 認可されていれば自分自身(LocalPerson)だけでなく、RemoteMemberも退出させることができます。
 /// @param member 退出させるMember
 /// @param completion 完了コールバック
--(void)leaveMember:(SKWMember* _Nonnull)member completion:(SKWChannelLeaveMemberCompletion _Nullable)completion;
-
+- (void)leaveMember:(SKWMember* _Nonnull)member
+         completion:(SKWChannelLeaveMemberCompletion _Nullable)completion;
 
 /// Channelを閉じます。
 ///
@@ -153,25 +152,25 @@ typedef void (^SKWChannelDisposeCompletion)(NSError* _Nullable);
 ///
 /// 入室している全てのMemberがPublishとSubscribeをしている場合は中止してから退出します。
 ///
-/// Close後のChannelインスタンスおよび、Channelで生成されたMember, Publication, Subscriptionインスタンスは利用できません。
+/// Close後のChannelインスタンスおよび、Channelで生成されたMember, Publication,
+/// Subscriptionインスタンスは利用できません。
 ///
 /// @param completion 完了コールバック
--(void)closeWithCompletion:(SKWChannelCloseCompletion _Nullable)completion;
-
+- (void)closeWithCompletion:(SKWChannelCloseCompletion _Nullable)completion;
 
 /// Channelを閉じずにChannelインスタンスを無効にし、非同期的にリソースを解放します。
 ///
 /// `close(completion:)`とは異なり、サーバ上でのChannel破棄しないため入室しているMemberには影響しません。
 ///
-/// Dispose完了後のChannelインスタンスおよび、Channelで生成されたMember, Publication, Subscriptionインスタンスは利用できません。
--(void)disposeWithCompletion:(SKWChannelDisposeCompletion _Nullable)completion;
+/// Dispose完了後のChannelインスタンスおよび、Channelで生成されたMember, Publication,
+/// Subscriptionインスタンスは利用できません。
+- (void)disposeWithCompletion:(SKWChannelDisposeCompletion _Nullable)completion;
 
 @end
 
-
 /// Channelイベントデリゲート
 NS_SWIFT_NAME(ChannelDelegate)
-@protocol SKWChannelDelegate <NSObject> 
+@protocol SKWChannelDelegate <NSObject>
 @optional
 
 /// このChannelが閉じられた時に発生するイベント
@@ -209,7 +208,9 @@ NS_SWIFT_NAME(ChannelDelegate)
 /// @param channel Channel
 /// @param member 対象のMember
 /// @param metadata Metadata
-- (void)channel:(SKWChannel* _Nonnull)channel member:(SKWMember* _Nonnull)member metadataDidUpdate:(NSString* _Nonnull)metadata;
+- (void)channel:(SKWChannel* _Nonnull)channel
+               member:(SKWMember* _Nonnull)member
+    metadataDidUpdate:(NSString* _Nonnull)metadata;
 
 /// このChannelのPublicationの数が変化した時に発生するイベント
 ///
@@ -222,32 +223,38 @@ NS_SWIFT_NAME(ChannelDelegate)
 ///
 /// @param channel Channel
 /// @param publication 対象のPublication
-- (void)channel:(SKWChannel* _Nonnull)channel didPublishStreamOfPublication:(SKWPublication* _Nonnull)publication;
+- (void)channel:(SKWChannel* _Nonnull)channel
+    didPublishStreamOfPublication:(SKWPublication* _Nonnull)publication;
 
 /// このChannelにStreamがUnpublishされた時に発生するイベント
 ///
 /// @param channel Channel
 /// @param publication 対象のPublication
-- (void)channel:(SKWChannel* _Nonnull)channel didUnpublishStreamOfPublication:(SKWPublication* _Nonnull)publication;
+- (void)channel:(SKWChannel* _Nonnull)channel
+    didUnpublishStreamOfPublication:(SKWPublication* _Nonnull)publication;
 
 /// このChannelのPublicationが`Enabled`状態に変更された時に発生するイベント
 ///
 /// @param channel Channel
 /// @param publication 対象のPublication
-- (void)channel:(SKWChannel* _Nonnull)channel publicationDidChangeToEnabled:(SKWPublication* _Nonnull)publication;
+- (void)channel:(SKWChannel* _Nonnull)channel
+    publicationDidChangeToEnabled:(SKWPublication* _Nonnull)publication;
 
 /// このChannelのPublicationが`Disabled`状態に変更された時に発生するイベント
 ///
 /// @param channel Channel
 /// @param publication 対象のPublication
-- (void)channel:(SKWChannel* _Nonnull)channel publicationDidChangeToDisabled:(SKWPublication* _Nonnull)publication;
+- (void)channel:(SKWChannel* _Nonnull)channel
+    publicationDidChangeToDisabled:(SKWPublication* _Nonnull)publication;
 
 /// このChannelのPublicationのMetadataが更新された時に発生するイベント
 ///
 /// @param channel Channel
 /// @param publication 対象のPublication
 /// @param metadata Metadata
-- (void)channel:(SKWChannel* _Nonnull)channel publication:(SKWPublication* _Nonnull)publication metadataDidUpdate:(NSString* _Nonnull)metadata;
+- (void)channel:(SKWChannel* _Nonnull)channel
+          publication:(SKWPublication* _Nonnull)publication
+    metadataDidUpdate:(NSString* _Nonnull)metadata;
 
 /// StreamがSubscribeまたはUnsubscribeされた時に発生するイベント
 ///
@@ -259,20 +266,21 @@ NS_SWIFT_NAME(ChannelDelegate)
 ///
 /// @param channel Channel
 /// @param subscription 対象のSubscription
-- (void)channel:(SKWChannel* _Nonnull)channel didSubscribePublicationOfSubscription:(SKWSubscription* _Nonnull)subscription;
-
+- (void)channel:(SKWChannel* _Nonnull)channel
+    didSubscribePublicationOfSubscription:(SKWSubscription* _Nonnull)subscription;
 
 /// StreamがUnsubscribeされた時に発生するイベント
 ///
 /// @param channel Channel
 /// @param subscription 対象のSubscription
-- (void)channel:(SKWChannel* _Nonnull)channel didUnsubscribePublicationOfSubscription:(SKWSubscription* _Nonnull)subscription;
+- (void)channel:(SKWChannel* _Nonnull)channel
+    didUnsubscribePublicationOfSubscription:(SKWSubscription* _Nonnull)subscription;
 @end
 
-@interface SKWChannel()
+@interface SKWChannel ()
 
 /// イベントデリゲート
-@property (weak, nonatomic) id<SKWChannelDelegate> _Nullable delegate;
+@property(weak, nonatomic) id<SKWChannelDelegate> _Nullable delegate;
 
 @end
 

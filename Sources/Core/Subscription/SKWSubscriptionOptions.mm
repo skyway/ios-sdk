@@ -6,21 +6,21 @@
 //  Copyright © 2022 NTT Communications. All rights reserved.
 //
 
-#import "SKWSubscriptionOptions+Internal.h"
 #import "NSString+StdString.h"
+#import "SKWSubscriptionOptions+Internal.h"
 
 @implementation SKWSubscriptionOptions
 
--(id)init{
-    if(self = [super init]) {
-//        _isEnabled = true;
+- (id)init {
+    if (self = [super init]) {
+        //        _isEnabled = true;
     }
     return self;
 }
 
--(NativeSubscriptionOptions)nativeSubscriptionOptions {
+- (NativeSubscriptionOptions)nativeSubscriptionOptions {
     NativeSubscriptionOptions nativeOptions;
-    if(_preferredEncodingId) {
+    if (_preferredEncodingId) {
         nativeOptions.preferred_encoding_id = [NSString stdStringForString:_preferredEncodingId];
     }
     return nativeOptions;

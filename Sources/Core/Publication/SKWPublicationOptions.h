@@ -13,7 +13,7 @@
 #import "SKWEncoding.h"
 
 NS_SWIFT_NAME(PublicationOptions)
-@interface SKWPublicationOptions: NSObject
+@interface SKWPublicationOptions : NSObject
 
 /// Publicationに付与するメタデータ
 @property NSString* _Nullable metadata;
@@ -22,7 +22,8 @@ NS_SWIFT_NAME(PublicationOptions)
 ///
 /// SkyWayが対応していないコーデックが選択された場合はこのオプションは無視されます。
 ///
-/// SFU Botは非対応です。 SFU RoomのPublishまたはSFU BotにおけるStartForwardingでこの値が設定されている場合は失敗します。
+/// SFU Botは非対応です。 SFU RoomのPublishまたはSFU
+/// BotにおけるStartForwardingでこの値が設定されている場合は失敗します。
 @property NSArray<SKWCodec*>* _Nonnull codecCapabilities;
 
 /// エンコーディング設定

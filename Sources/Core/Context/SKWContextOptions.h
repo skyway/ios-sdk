@@ -12,7 +12,7 @@
 #import "Type.h"
 
 NS_SWIFT_NAME(ContextOptionsRTCAPI)
-@interface SKWContextOptionsRTCAPI: NSObject
+@interface SKWContextOptionsRTCAPI : NSObject
 
 @property(nonatomic) NSString* _Nullable domain;
 @property(nonatomic) BOOL secure;
@@ -20,7 +20,7 @@ NS_SWIFT_NAME(ContextOptionsRTCAPI)
 @end
 
 NS_SWIFT_NAME(ContextOptionsICEParams)
-@interface SKWContextOptionsICEParams: NSObject
+@interface SKWContextOptionsICEParams : NSObject
 
 @property(nonatomic) NSString* _Nullable domain;
 @property(nonatomic) int version;
@@ -29,7 +29,7 @@ NS_SWIFT_NAME(ContextOptionsICEParams)
 @end
 
 NS_SWIFT_NAME(ContextOptionsSignaling)
-@interface SKWContextOptionsSignaling: NSObject
+@interface SKWContextOptionsSignaling : NSObject
 
 @property(nonatomic) NSString* _Nullable domain;
 @property(nonatomic) BOOL secure;
@@ -38,7 +38,7 @@ NS_SWIFT_NAME(ContextOptionsSignaling)
 
 /// WebRTCに関するオプション
 NS_SWIFT_NAME(ContextOptionsRTCConfig)
-@interface SKWContextOptionsRTCConfig: NSObject
+@interface SKWContextOptionsRTCConfig : NSObject
 
 /// TURNサーバに関するポリシー
 @property(nonatomic) SKWTurnPolicy policy;
@@ -46,7 +46,7 @@ NS_SWIFT_NAME(ContextOptionsRTCConfig)
 @end
 
 NS_SWIFT_NAME(ContextOptionsToken)
-@interface SKWContextOptionsToken: NSObject
+@interface SKWContextOptionsToken : NSObject
 
 /// トークン失効リマインダー時間(秒)
 ///
@@ -58,7 +58,7 @@ NS_SWIFT_NAME(ContextOptionsToken)
 @end
 
 NS_SWIFT_NAME(ContextOptions)
-@interface SKWContextOptions: NSObject
+@interface SKWContextOptions : NSObject
 
 /// ログレベル
 @property(nonatomic) SKWLogLevel logLevel;

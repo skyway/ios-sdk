@@ -11,7 +11,6 @@
 
 #import "SKWRemoteStream.h"
 
-
 /// RemoteAudioStreamクラス
 NS_SWIFT_NAME(RemoteAudioStream)
 @interface SKWRemoteAudioStream : SKWRemoteStream

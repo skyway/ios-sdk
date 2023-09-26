@@ -16,14 +16,14 @@
 #import <skyway/core/channel/channel.hpp>
 
 using NativeChannel = skyway::core::channel::Channel;
-using NativeMember = skyway::core::interface::Member;
+using NativeMember  = skyway::core::interface::Member;
 
-@interface SKWChannel()
+@interface SKWChannel ()
 
 @property(nonatomic, readonly) ChannelStateRepository* _Nonnull repository;
-@property(nonatomic, readonly) std::shared_ptr<NativeChannel>native;
+@property(nonatomic, readonly) std::shared_ptr<NativeChannel> native;
 
--(id _Nonnull)initWithSharedNative:(std::shared_ptr<NativeChannel>)native;
+- (id _Nonnull)initWithSharedNative:(std::shared_ptr<NativeChannel>)native;
 
 @end
 

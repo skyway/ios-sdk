@@ -11,13 +11,11 @@
 
 #import <Foundation/Foundation.h>
 
-
 /// コーデック設定
 NS_SWIFT_NAME(Codec)
-@interface SKWCodec: NSObject
+@interface SKWCodec : NSObject
 
--(id _Nonnull)initWithMimeType:(NSString* _Nonnull)mimeType;
-
+- (id _Nonnull)initWithMimeType:(NSString* _Nonnull)mimeType;
 
 /// コーデックのmimeType
 ///

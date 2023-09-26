@@ -14,48 +14,48 @@
 
 @implementation SKWLoggerWrapper
 
-+(void)traceLogWithMessage:(NSString* _Nonnull)message
-                  filename:(NSString* _Nonnull)filename
-                  function:(NSString* _Nonnull)function
-                      line:(int)line{
++ (void)traceLogWithMessage:(NSString* _Nonnull)message
+                   filename:(NSString* _Nonnull)filename
+                   function:(NSString* _Nonnull)function
+                       line:(int)line {
     auto nativeLogger = skyway::global::interface::Logger::Shared();
-    if(nativeLogger) {
+    if (nativeLogger) {
         nativeLogger->Trace(message.stdString, filename.stdString, function.stdString, line);
     }
 }
-+(void)debugLogWithMessage:(NSString* _Nonnull)message
-                  filename:(NSString* _Nonnull)filename
-                  function:(NSString* _Nonnull)function
-                      line:(int)line{
++ (void)debugLogWithMessage:(NSString* _Nonnull)message
+                   filename:(NSString* _Nonnull)filename
+                   function:(NSString* _Nonnull)function
+                       line:(int)line {
     auto nativeLogger = skyway::global::interface::Logger::Shared();
-    if(nativeLogger) {
+    if (nativeLogger) {
         nativeLogger->Debug(message.stdString, filename.stdString, function.stdString, line);
     }
 }
-+(void)infoLogWithMessage:(NSString* _Nonnull)message
++ (void)infoLogWithMessage:(NSString* _Nonnull)message
                   filename:(NSString* _Nonnull)filename
                   function:(NSString* _Nonnull)function
-                     line:(int)line{
+                      line:(int)line {
     auto nativeLogger = skyway::global::interface::Logger::Shared();
-    if(nativeLogger) {
+    if (nativeLogger) {
         nativeLogger->Info(message.stdString, filename.stdString, function.stdString, line);
     }
 }
-+(void)warnLogWithMessage:(NSString* _Nonnull)message
++ (void)warnLogWithMessage:(NSString* _Nonnull)message
                   filename:(NSString* _Nonnull)filename
                   function:(NSString* _Nonnull)function
-                     line:(int)line{
+                      line:(int)line {
     auto nativeLogger = skyway::global::interface::Logger::Shared();
-    if(nativeLogger) {
+    if (nativeLogger) {
         nativeLogger->Warn(message.stdString, filename.stdString, function.stdString, line);
     }
 }
-+(void)errorLogWithMessage:(NSString* _Nonnull)message
-                  filename:(NSString* _Nonnull)filename
-                  function:(NSString* _Nonnull)function
-                      line:(int)line{
++ (void)errorLogWithMessage:(NSString* _Nonnull)message
+                   filename:(NSString* _Nonnull)filename
+                   function:(NSString* _Nonnull)function
+                       line:(int)line {
     auto nativeLogger = skyway::global::interface::Logger::Shared();
-    if(nativeLogger) {
+    if (nativeLogger) {
         nativeLogger->Error(message.stdString, filename.stdString, function.stdString, line);
     }
 }

@@ -10,21 +10,20 @@
 #define SKWContext_h
 
 #import <Foundation/Foundation.h>
-#import "SKWPlugin.h"
 #import "SKWContextOptions.h"
+#import "SKWPlugin.h"
 #import "Type.h"
-
 
 /// SkyWay全体の設定、取得を行うStaticなコンテキスト
 NS_SWIFT_NAME(Context)
-@interface SKWContext: NSObject
+@interface SKWContext : NSObject
 
 typedef void (^SKWContextSetupCompletion)(NSError* _Nullable);
 typedef void (^SKWContextDisposeCompletion)(NSError* _Nullable);
 
 @property(class, nonatomic, readonly) NSArray<SKWPlugin*>* _Nonnull plugins;
 
--(id _Nonnull)init NS_UNAVAILABLE;
+- (id _Nonnull)init NS_UNAVAILABLE;
 
 /// SkyWayの初期化をします。
 ///
@@ -33,26 +32,25 @@ typedef void (^SKWContextDisposeCompletion)(NSError* _Nullable);
 /// @param token JWT形式のSkyWayAuthToken
 /// @param options 初期化 オプション
 /// @param completion 完了コールバック
-+(void)setupWithToken:(NSString* _Nonnull)token options:(SKWContextOptions* _Nullable)options completion:(SKWContextSetupCompletion _Nullable)completion;
-
-
++ (void)setupWithToken:(NSString* _Nonnull)token
+               options:(SKWContextOptions* _Nullable)options
+            completion:(SKWContextSetupCompletion _Nullable)completion;
 
 /// SkyWayAuthTokenを更新します。
 ///
 /// @param token 新しいSkyWayAuthToken
 /// @return 更新成功かどうか
-+(bool)updateToken:(NSString* _Nonnull)token;
-
++ (bool)updateToken:(NSString* _Nonnull)token;
 
 /// [内部向けAPI]
 ///
 /// このAPIは内部向けのものであり、サポート対象外です。
-+(void)_updateRTCConfig:(SKWContextOptionsRTCConfig* _Nonnull)config;
++ (void)_updateRTCConfig:(SKWContextOptionsRTCConfig* _Nonnull)config;
 
 /// プラグインを登録します。
 ///
 /// @param plugin プラグイン
-+(void)registerPlugin:(SKWPlugin* _Nonnull)plugin;
++ (void)registerPlugin:(SKWPlugin* _Nonnull)plugin;
 
 /// コンテキストを破棄し、全ての接続を切断します。
 ///
@@ -61,7 +59,7 @@ typedef void (^SKWContextDisposeCompletion)(NSError* _Nullable);
 /// Dispose完了後にSDKで生成されたリソースにアクセスしないでください。
 ///
 /// `setup(withToken:options:completion)`を再度コールすることで利用可能になります。
-+(void)disposeWithCompletion:(SKWContextDisposeCompletion _Nullable)completion;
++ (void)disposeWithCompletion:(SKWContextDisposeCompletion _Nullable)completion;
 
 @end
 
@@ -71,10 +69,10 @@ NS_SWIFT_NAME(ContextDelegate)
 @optional
 
 /// SkyWayサーバと再接続開始後にコールされるイベント
--(void)startReconnecting;
+- (void)startReconnecting;
 
 /// SkyWayサーバと再接続成功後にコールされるイベント
--(void)reconnectingSucceeded;
+- (void)reconnectingSucceeded;
 
 /// トークンが期限切れにより失効した後にコールされるイベント
 - (void)tokenExpired;
@@ -94,12 +92,11 @@ NS_SWIFT_NAME(ContextDelegate)
 
 @end
 
-@interface SKWContext()
+@interface SKWContext ()
 
 /// イベントデリゲート
-@property (class, weak, nonatomic) id<SKWContextDelegate> _Nullable delegate;
+@property(class, weak, nonatomic) id<SKWContextDelegate> _Nullable delegate;
 
 @end
-
 
 #endif /* SKWContext_h */

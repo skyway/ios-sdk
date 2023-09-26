@@ -16,12 +16,12 @@
 /// 併せて公式サイトの通信状態の統計的分析もご確認ください。
 /// https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/
 NS_SWIFT_NAME(WebRTCStats)
-@interface SKWWebRTCStats: NSObject
+@interface SKWWebRTCStats : NSObject
 
 /// WebRTC統計情報の一覧
 @property(nonatomic, readonly) NSArray<SKWWebRTCStatsReport*>* _Nonnull reports;
 
--(id _Nonnull)init NS_UNAVAILABLE;
+- (id _Nonnull)init NS_UNAVAILABLE;
 
 @end
 

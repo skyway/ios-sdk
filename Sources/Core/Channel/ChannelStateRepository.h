@@ -18,10 +18,10 @@
 @class SKWPublication;
 @class SKWSubscription;
 
-using NativeChannelInterface = skyway::core::interface::Channel;
-using NativeMemberInterface = skyway::core::interface::Member;
+using NativeChannelInterface      = skyway::core::interface::Channel;
+using NativeMemberInterface       = skyway::core::interface::Member;
 using NativeRemoteMemberInterface = skyway::core::interface::RemoteMember;
-using NativePublicationInterface = skyway::core::interface::Publication;
+using NativePublicationInterface  = skyway::core::interface::Publication;
 using NativeSubscriptionInterface = skyway::core::interface::Subscription;
 
 @interface ChannelStateRepository : NSObject
@@ -31,22 +31,27 @@ using NativeSubscriptionInterface = skyway::core::interface::Subscription;
 @property(nonatomic, readonly) NSArray<SKWSubscription*>* _Nonnull subscriptions;
 @property(nonatomic, readonly) dispatch_group_t _Nonnull eventGroup;
 
--(id _Nonnull)initWithNative:(NativeChannelInterface* _Nonnull)native eventGroup:(dispatch_group_t _Nonnull)eventGroup;
+- (id _Nonnull)initWithNative:(NativeChannelInterface* _Nonnull)native
+                   eventGroup:(dispatch_group_t _Nonnull)eventGroup;
 
--(SKWMember* _Nullable)findMemberByMemberID:(const std::string&)memberID;
--(SKWPublication* _Nullable)findPublicationByPublicationID:(const std::string&)publicationID;
--(SKWSubscription* _Nullable)findSubscriptionBySubscriptionID:(const std::string&)subscriptionID;
+- (SKWMember* _Nullable)findMemberByMemberID:(const std::string&)memberID;
+- (SKWPublication* _Nullable)findPublicationByPublicationID:(const std::string&)publicationID;
+- (SKWSubscription* _Nullable)findSubscriptionBySubscriptionID:(const std::string&)subscriptionID;
 
--(SKWMember* _Nonnull)registerMemberIfNeeded:(NativeMemberInterface* _Nonnull)nativeMember;
--(SKWPublication* _Nonnull)registerPublicationIfNeeded:(NativePublicationInterface* _Nonnull)nativePublication;
--(SKWSubscription* _Nonnull)registerSubscriptionIfNeeded:(NativeSubscriptionInterface* _Nonnull)nativeSubscription;
+- (SKWMember* _Nonnull)registerMemberIfNeeded:(NativeMemberInterface* _Nonnull)nativeMember;
+- (SKWPublication* _Nonnull)registerPublicationIfNeeded:
+    (NativePublicationInterface* _Nonnull)nativePublication;
+- (SKWSubscription* _Nonnull)registerSubscriptionIfNeeded:
+    (NativeSubscriptionInterface* _Nonnull)nativeSubscription;
 
--(NSArray<SKWPublication*>* _Nonnull)getActivePublicationsByPublisherID:(NSString* _Nonnull)publisherID;
--(NSArray<SKWSubscription*>* _Nonnull)getActiveSubscriptionsBySubscriberID:(NSString* _Nonnull)subscriberID;
--(NSArray<SKWSubscription*>* _Nonnull)getActiveSubscriptionsByPublicationID:(NSString* _Nonnull)publicationID;
+- (NSArray<SKWPublication*>* _Nonnull)getActivePublicationsByPublisherID:
+    (NSString* _Nonnull)publisherID;
+- (NSArray<SKWSubscription*>* _Nonnull)getActiveSubscriptionsBySubscriberID:
+    (NSString* _Nonnull)subscriberID;
+- (NSArray<SKWSubscription*>* _Nonnull)getActiveSubscriptionsByPublicationID:
+    (NSString* _Nonnull)publicationID;
 
--(void)clear;
-
+- (void)clear;
 
 @end
 

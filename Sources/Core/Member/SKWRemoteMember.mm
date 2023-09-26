@@ -16,7 +16,7 @@
 using NativeRemoteMember = skyway::core::interface::RemoteMember;
 
 @implementation SKWRemoteMember
--(void)dispose {
+- (void)dispose {
     // Do nothing
 }
 @end

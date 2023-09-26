@@ -15,15 +15,15 @@
 
 /// 映像入力ソースの抽象クラス
 NS_SWIFT_NAME(VideoSource)
-@interface SKWVideoSource: NSObject
+@interface SKWVideoSource : NSObject
 
 typedef void (^SKWVideoSourceStartCapturingCompletion)(NSError* _Nullable error);
 typedef void (^SKWVideoSourceCapturingOnError)(NSError* _Nullable error);
 
--(id _Nonnull)init NS_UNAVAILABLE;
+- (id _Nonnull)init NS_UNAVAILABLE;
 
 /// ストリームを作成します。
--(SKWLocalVideoStream* _Nonnull)createStream;
+- (SKWLocalVideoStream* _Nonnull)createStream;
 
 @end
 

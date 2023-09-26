@@ -13,12 +13,10 @@
 
 #import "SKWContext.h"
 
-
-@interface SKWContext()
+@interface SKWContext ()
 
 @property(class, nonatomic, readonly) RTCPeerConnectionFactory* _Nullable pcFactory;
 
 @end
-
 
 #endif /* SKWContext_Internal_h */

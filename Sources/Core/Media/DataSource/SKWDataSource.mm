@@ -12,9 +12,8 @@
 
 @implementation SKWDataSource
 
--(SKWLocalDataStream* _Nonnull)createStream {
+- (SKWLocalDataStream* _Nonnull)createStream {
     return [[SKWLocalDataStream alloc] initWithVoid];
 }
 
 @end
-

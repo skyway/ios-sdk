@@ -9,20 +9,21 @@
 #ifndef SKWForwarding_Internal_h
 #define SKWForwarding_Internal_h
 
-#import "SKWForwarding.h"
 #import "ChannelStateRepository.h"
+#import "SKWForwarding.h"
 
 #import <skyway/plugin/sfu_bot_plugin/forwarding.hpp>
 
 using NativeForwarding = skyway::plugin::sfu_bot::Forwarding;
 
-@interface SKWForwarding()
+@interface SKWForwarding ()
 
 @property(nonatomic, readonly) NativeForwarding* _Nonnull native;
 @property(nonatomic, readonly, weak) ChannelStateRepository* _Nullable repository;
 
--(id _Nonnull)initWithNative:(NativeForwarding* _Nonnull)native repository:(ChannelStateRepository* _Nonnull)repository;
--(void)dispose;
+- (id _Nonnull)initWithNative:(NativeForwarding* _Nonnull)native
+                   repository:(ChannelStateRepository* _Nonnull)repository;
+- (void)dispose;
 
 @end
 

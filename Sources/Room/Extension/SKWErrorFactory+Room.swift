@@ -15,6 +15,9 @@ enum RoomErrorCode: Int {
 extension SKWErrorFactory {
     static func localSfuRoomMemberUnublishError() -> Error {
         let bundle: Bundle = .init(for: Room.self)
-        return NSError(domain: bundle.bundleIdentifier!, code: RoomErrorCode.localSfuRoomMemberUnublishError.rawValue)
+        return NSError(
+            domain: bundle.bundleIdentifier!,
+            code: RoomErrorCode.localSfuRoomMemberUnublishError.rawValue
+        )
     }
 }

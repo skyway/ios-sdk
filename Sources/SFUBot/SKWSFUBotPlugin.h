@@ -15,7 +15,7 @@
 
 /// SFUBotPluginオプション
 NS_SWIFT_NAME(SFUBotPluginOptions)
-@interface SKWSFUBotPluginOptions: NSObject
+@interface SKWSFUBotPluginOptions : NSObject
 
 /// SFUサーバの宛先ドメインを指定できます。
 ///
@@ -49,21 +49,21 @@ NS_SWIFT_NAME(SFUBotPluginOptions)
 NS_SWIFT_NAME(SFUBotPlugin)
 @interface SKWSFUBotPlugin : SKWPlugin
 
-
 /// コンストラクタ
 ///
 /// - Parameter options: オプション
--(id _Nonnull)initWithOptions:(SKWSFUBotPluginOptions* _Nullable)options;
+- (id _Nonnull)initWithOptions:(SKWSFUBotPluginOptions* _Nullable)options;
 
-typedef void (^SKWSFUBotPluginCreateBotOnChannelCompletion)(SKWSFUBotMember* _Nullable, NSError* _Nullable error);
-
+typedef void (^SKWSFUBotPluginCreateBotOnChannelCompletion)(SKWSFUBotMember* _Nullable,
+                                                            NSError* _Nullable error);
 
 /// SFUBotを作成し、Channelに入室させます。
 ///
 /// - Parameters:
 ///   - channel: 入室させるChannel
 ///   - completion: 完了コールバック
--(void)createBotOnChannel:(SKWChannel* _Nonnull)channel completion:(SKWSFUBotPluginCreateBotOnChannelCompletion _Nullable)completion;
+- (void)createBotOnChannel:(SKWChannel* _Nonnull)channel
+                completion:(SKWSFUBotPluginCreateBotOnChannelCompletion _Nullable)completion;
 @end
 
 #endif /* SKWSFUBotPlugin_h */

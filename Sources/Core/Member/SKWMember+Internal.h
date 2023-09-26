@@ -19,19 +19,16 @@ using NativeMember = skyway::core::interface::Member;
 
 @class ChannelStateRepository;
 
-@interface SKWMember()
+@interface SKWMember ()
 
 @property(nonatomic, readonly) NativeMember* _Nonnull native;
 @property(nonatomic, readonly, weak) ChannelStateRepository* _Nullable repository;
 
--(id _Nonnull)initWithNative:(NativeMember* _Nonnull)native repository:(ChannelStateRepository* _Nonnull)repository;
+- (id _Nonnull)initWithNative:(NativeMember* _Nonnull)native
+                   repository:(ChannelStateRepository* _Nonnull)repository;
 
-
--(void)dispose;
+- (void)dispose;
 
 @end
-
-
-
 
 #endif /* SKWMember_Internal_h */

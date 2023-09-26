@@ -12,33 +12,32 @@
 
 @implementation SKWCameraPreviewView
 
--(void)setVideoGravity:(AVLayerVideoGravity)videoGravity {
-    if(_rendererView) {
+- (void)setVideoGravity:(AVLayerVideoGravity)videoGravity {
+    if (_rendererView) {
         AVCaptureVideoPreviewLayer* layer = (AVCaptureVideoPreviewLayer*)_rendererView.layer;
-        layer.videoGravity = videoGravity;
+        layer.videoGravity                = videoGravity;
     }
     _videoGravity = videoGravity;
 }
 
--(void)renderWithCaptureSession:(AVCaptureSession* _Nonnull)captureSession{
+- (void)renderWithCaptureSession:(AVCaptureSession* _Nonnull)captureSession {
     dispatch_async(dispatch_get_main_queue(), ^{
-        RTCCameraPreviewView* rtcView = [[RTCCameraPreviewView alloc] initWithFrame:self.bounds];
-        rtcView.captureSession = captureSession;
-        self->_rendererView = rtcView;
-        [self setVideoGravity:self.videoGravity];
-        [self addSubview:self->_rendererView];
-        [self sendSubviewToBack:self->_rendererView];
+      RTCCameraPreviewView* rtcView = [[RTCCameraPreviewView alloc] initWithFrame:self.bounds];
+      rtcView.captureSession        = captureSession;
+      self->_rendererView           = rtcView;
+      [self setVideoGravity:self.videoGravity];
+      [self addSubview:self->_rendererView];
+      [self sendSubviewToBack:self->_rendererView];
     });
 }
 
--(void)stopRendering{
+- (void)stopRendering {
     dispatch_async(dispatch_get_main_queue(), ^{
-        if(self->_rendererView != nil) {
-            [self->_rendererView removeFromSuperview];
-            self->_rendererView = nil;
-        }
+      if (self->_rendererView != nil) {
+          [self->_rendererView removeFromSuperview];
+          self->_rendererView = nil;
+      }
     });
 }
-
 
 @end

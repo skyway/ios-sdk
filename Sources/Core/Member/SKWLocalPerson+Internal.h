@@ -9,16 +9,17 @@
 #ifndef SKWLocalPerson_Internal_h
 #define SKWLocalPerson_Internal_h
 
-#import "SKWLocalPerson.h"
 #import "ChannelStateRepository.h"
+#import "SKWLocalPerson.h"
 
 #import <skyway/core/channel/member/local_person.hpp>
 
 using NativeLocalPerson = skyway::core::channel::member::LocalPerson;
 
-@interface SKWLocalPerson()
+@interface SKWLocalPerson ()
 
--(id _Nonnull)initWithNativePerson:(NativeLocalPerson* _Nonnull)native repository:(ChannelStateRepository* _Nonnull)repository;
+- (id _Nonnull)initWithNativePerson:(NativeLocalPerson* _Nonnull)native
+                         repository:(ChannelStateRepository* _Nonnull)repository;
 
 @end
 

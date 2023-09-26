@@ -15,7 +15,6 @@
 #import "SKWVideoSource.h"
 #import "SKWVideoView.h"
 
-
 /// LocalVideoStreamクラス
 ///
 /// 各種VideoSourceの`createStream()`から生成してください。
@@ -28,13 +27,12 @@ NS_SWIFT_NAME(LocalVideoStream)
 /// VideoStreamの映像をViewに描画します。
 ///
 /// - Parameter view: 描画させるView
--(void)attachView:(SKWVideoView* _Nonnull)view;
-
+- (void)attachView:(SKWVideoView* _Nonnull)view;
 
 /// Viewへの描画を中止します。
 ///
 /// - Parameter view: 中止する描画中のView
--(void)detachView:(SKWVideoView* _Nonnull)view;
+- (void)detachView:(SKWVideoView* _Nonnull)view;
 
 @end
 

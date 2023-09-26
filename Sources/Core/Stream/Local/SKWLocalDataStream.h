@@ -17,18 +17,17 @@
 NS_SWIFT_NAME(LocalDataStream)
 @interface SKWLocalDataStream : SKWLocalStream
 
--(id _Nonnull)init NS_UNAVAILABLE;
+- (id _Nonnull)init NS_UNAVAILABLE;
 
 /// 文字列を送信します。
 ///
 /// - Parameter string: 送信する文字列
--(void)writeString:(NSString* _Nonnull)string;
-
+- (void)writeString:(NSString* _Nonnull)string;
 
 /// データを送信します。
 ///
 /// - Parameter data: 送信するデータ
--(void)writeData:(NSData* _Nonnull)data;
+- (void)writeData:(NSData* _Nonnull)data;
 
 @end
 

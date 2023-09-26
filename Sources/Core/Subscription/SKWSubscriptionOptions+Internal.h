@@ -15,9 +15,9 @@
 
 using NativeSubscriptionOptions = skyway::core::channel::member::LocalPerson::SubscriptionOptions;
 
-@interface SKWSubscriptionOptions()
+@interface SKWSubscriptionOptions ()
 
--(NativeSubscriptionOptions)nativeSubscriptionOptions;
+- (NativeSubscriptionOptions)nativeSubscriptionOptions;
 
 @end
 

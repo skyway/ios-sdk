@@ -19,8 +19,8 @@
 NS_SWIFT_NAME(SFUBotMember)
 @interface SKWSFUBotMember : SKWRemoteMember
 
-typedef void (^SKWSFUBotMemberStartForwardingPublicationCompletion)(SKWForwarding* _Nullable, NSError* _Nullable error);
-
+typedef void (^SKWSFUBotMemberStartForwardingPublicationCompletion)(SKWForwarding* _Nullable,
+                                                                    NSError* _Nullable error);
 
 /// フォワーディング一覧
 @property(nonatomic, readonly) NSArray<SKWForwarding*>* _Nonnull forwardings;
@@ -35,7 +35,11 @@ typedef void (^SKWSFUBotMemberStartForwardingPublicationCompletion)(SKWForwardin
 ///   - publication: Publication
 ///   - configure: コンフィグオプション
 ///   - completion: 完了コールバック
--(void)startForwardingPublication:(SKWPublication* _Nonnull)publication withConfigure:(SKWForwardingConfigure* _Nullable)configure completion:(SKWSFUBotMemberStartForwardingPublicationCompletion _Nullable)completion NS_SWIFT_NAME(startForwarding(_:configure:completion:));
+- (void)startForwardingPublication:(SKWPublication* _Nonnull)publication
+                     withConfigure:(SKWForwardingConfigure* _Nullable)configure
+                        completion:(SKWSFUBotMemberStartForwardingPublicationCompletion _Nullable)
+                                       completion
+    NS_SWIFT_NAME(startForwarding(_:configure:completion:));
 @end
 
 /// イベントデリゲート
@@ -48,13 +52,11 @@ NS_SWIFT_NAME(SFUBotMemberDelegate)
 //-(void)botForwardingListChanged:(SKWSFUBotMember* _Nonnull)bot;
 @end
 
-@interface SKWSFUBotMember()
+@interface SKWSFUBotMember ()
 
 /// イベントデリゲート
 @property(nonatomic, weak) id<SKWSFUBotMemberDelegate> _Nullable delegate;
 
 @end
-
-
 
 #endif /* SKWSFUBotMember_h */

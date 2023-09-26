@@ -9,11 +9,11 @@
 #ifndef SKWPublication_h
 #define SKWPublication_h
 
+#import "SKWCodec.h"
+#import "SKWEncoding.h"
 #import "SKWLocalStream.h"
 #import "SKWMember.h"
 #import "SKWSubscription.h"
-#import "SKWCodec.h"
-#import "SKWEncoding.h"
 #import "Type.h"
 
 typedef NS_ENUM(NSUInteger, SKWPublicationState) {
@@ -59,18 +59,18 @@ typedef void (^SKWPublicationDisableCompletion)(NSError* _Nullable error);
 @property(nonatomic, readonly) SKWLocalStream* _Nullable stream;
 @property(nonatomic, readonly) SKWPublication* _Nullable origin;
 
--(id _Nonnull)init NS_UNAVAILABLE;
+- (id _Nonnull)init NS_UNAVAILABLE;
 
 /// メタデータを更新します。
 /// - Parameters:
 ///   - metadata: メタデータ
 ///   - completion: 完了コールバック
--(void)updateMetadata:(NSString* _Nonnull)metadata completion:(SKWPublicationUpdateMetadataCompletion _Nullable)completion;
-
+- (void)updateMetadata:(NSString* _Nonnull)metadata
+            completion:(SKWPublicationUpdateMetadataCompletion _Nullable)completion;
 
 /// Publishを中止します
 /// - Parameter completion: 完了コールバック
--(void)cancelWithCompletion:(SKWPublicationCancelCompletion _Nullable)completion;
+- (void)cancelWithCompletion:(SKWPublicationCancelCompletion _Nullable)completion;
 
 /// Publicationを有効状態にします。
 ///
@@ -78,18 +78,16 @@ typedef void (^SKWPublicationDisableCompletion)(NSError* _Nullable error);
 ///
 /// 既に有効状態の場合は何もしません。
 /// - Parameter completion: 完了コールバック
--(void)enableWithCompletion:(SKWPublicationEnableCompletion _Nullable)completion;
-
+- (void)enableWithCompletion:(SKWPublicationEnableCompletion _Nullable)completion;
 
 /// Publicationを無効状態にします。
 ///
 /// 既に無効状態の場合は何もしません。
 /// - Parameter completion: 完了コールバック
--(void)disableWithCompletion:(SKWPublicationDisableCompletion _Nullable)completion;
-
+- (void)disableWithCompletion:(SKWPublicationDisableCompletion _Nullable)completion;
 
 /// [Experimental API]
-/// 
+///
 /// 試験的なAPIです。今後インターフェースや仕様が変更される可能性があります。
 ///
 /// 通信中の統計情報を取得します。
@@ -97,8 +95,8 @@ typedef void (^SKWPublicationDisableCompletion)(NSError* _Nullable error);
 /// 併せて公式サイトの通信状態の統計的分析もご確認ください。
 /// https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/
 /// - Parameter memberId: 通信相手のMemberID
--(SKWWebRTCStats* _Nullable)getStatsWithMemberId:(NSString* _Nonnull)memberId
-NS_SWIFT_NAME(getStats(withMemberId:));
+- (SKWWebRTCStats* _Nullable)getStatsWithMemberId:(NSString* _Nonnull)memberId
+    NS_SWIFT_NAME(getStats(withMemberId:));
 
 /// エンコーディング設定を更新します。
 ///
@@ -107,7 +105,7 @@ NS_SWIFT_NAME(getStats(withMemberId:));
 /// Publish時に設定したエンコーディングの数と一致している必要があります。
 ///
 /// IDの変更は行えません。
--(void)updateEncodings:(NSArray<SKWEncoding*>* _Nonnull)encodings;
+- (void)updateEncodings:(NSArray<SKWEncoding*>* _Nonnull)encodings;
 
 /// 送信するストリームを切り替えます。
 ///
@@ -115,7 +113,7 @@ NS_SWIFT_NAME(getStats(withMemberId:));
 ///
 /// DataStreamを入れ替えることはできません。
 /// - Parameter stream: ストリーム
--(void)replaceStream:(SKWLocalStream* _Nonnull)stream;
+- (void)replaceStream:(SKWLocalStream* _Nonnull)stream;
 
 @end
 
@@ -126,60 +124,68 @@ NS_SWIFT_NAME(PublicationDelegate)
 /// このPublicationが中止された時に発生するイベント
 ///
 /// - Parameter publication: Publication
--(void)publicationUnpublished:(SKWPublication* _Nonnull)publication;
+- (void)publicationUnpublished:(SKWPublication* _Nonnull)publication;
 /// このPublicationがSubscribeされた時に発生するイベント
 ///
 /// - Parameter publication: Publication
--(void)publicationSubscribed:(SKWPublication* _Nonnull)publication __attribute__ ((deprecated("SkyWayCore v1.5.0で非推奨となりました。`-publication:subscribed:`をご利用ください。")));
+- (void)publicationSubscribed:(SKWPublication* _Nonnull)publication
+    __attribute__((deprecated(
+        "SkyWayCore v1.5.0で非推奨となりました。`-publication:subscribed:`をご利用ください。")));
 /// このPublicationがSubscribeされた時に発生するイベント
 ///
 /// - Parameters:
 ///   - publication: Publication
 ///   - subscription: Subscription
--(void)publication:(SKWPublication* _Nonnull)publication subscribed:(SKWSubscription* _Nonnull) subscription;
+- (void)publication:(SKWPublication* _Nonnull)publication
+         subscribed:(SKWSubscription* _Nonnull)subscription;
 /// このPublicationがUnsubscribeされた時に発生するイベント
 ///
 /// - Parameter publication: Publication
--(void)publicationUnsubscribed:(SKWPublication* _Nonnull)publication __attribute__ ((deprecated("SkyWayCore v1.5.0で非推奨となりました。`-publication:unsubscribed:`をご利用ください。")));
+- (void)publicationUnsubscribed:(SKWPublication* _Nonnull)publication
+    __attribute__((deprecated(
+        "SkyWayCore v1.5.0で非推奨となりました。`-publication:unsubscribed:`をご利用ください。")));
 /// このPublicationがUnsubscribeされた時に発生するイベント
 ///
 /// - Parameters:
 ///   - publication: Publication
 ///   - subscription: Subscription
--(void)publication:(SKWPublication* _Nonnull)publication unsubscribed:(SKWSubscription* _Nonnull) subscription;
+- (void)publication:(SKWPublication* _Nonnull)publication
+       unsubscribed:(SKWSubscription* _Nonnull)subscription;
 /// このPublicationのSubscribeされている数が変化した時に発生するイベント
 ///
 /// - Parameter publication: Publication
--(void)publicationSubscriptionListDidChange:(SKWPublication* _Nonnull)publication;
+- (void)publicationSubscriptionListDidChange:(SKWPublication* _Nonnull)publication;
 
 /// このPublicationのMetadataが更新された時に発生するイベント
 /// - Parameters:
 ///   - publication: Publication
 ///   - metadata: Metadata
--(void)publication:(SKWPublication* _Nonnull)publication didUpdateMetadata:(NSString* _Nonnull)metadata;
+- (void)publication:(SKWPublication* _Nonnull)publication
+    didUpdateMetadata:(NSString* _Nonnull)metadata;
 
 /// このPublicationが有効状態に変化した時に発生するイベント
 /// - Parameter publication: Publication
--(void)publicationEnabled:(SKWPublication* _Nonnull)publication;
+- (void)publicationEnabled:(SKWPublication* _Nonnull)publication;
 
 /// このPublicationが無効状態に変化した時に発生するイベント
 /// - Parameter publication: Publication
--(void)publicationDisabled:(SKWPublication* _Nonnull)publication;
+- (void)publicationDisabled:(SKWPublication* _Nonnull)publication;
 
 /// このPublicationのステートが変化した時に発生するイベント
 /// - Parameter publication: Publication
--(void)publicationStateDidChange:(SKWPublication* _Nonnull)publication;
+- (void)publicationStateDidChange:(SKWPublication* _Nonnull)publication;
 
 /// このPublicationの接続状態が変化したときに発生するイベント
 /// - Parameter publication: Publication
 /// - Parameter connectionState: newState
--(void)publication:(SKWPublication* _Nonnull)publication connectionStateDidChange: (SKWConnectionState)connectionState;
+- (void)publication:(SKWPublication* _Nonnull)publication
+    connectionStateDidChange:(SKWConnectionState)connectionState;
 @end
 
-@interface SKWPublication()
+@interface SKWPublication ()
 
 /// イベントデリゲート
-@property (weak, nonatomic) id<SKWPublicationDelegate> _Nullable delegate;
+@property(weak, nonatomic) id<SKWPublicationDelegate> _Nullable delegate;
 
 @end
 

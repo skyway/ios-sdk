@@ -7,30 +7,29 @@
 //
 
 #import "SKWSFUBotPlugin.h"
-#import "SKWPlugin+Internal.h"
-#import "SKWChannel+Internal.h"
-#import "SKWSFUBotMember+Internal.h"
-#import "SKWContext+Internal.h"
 #import "NSString+StdString.h"
 #import "RTCPeerConnectionFactory+Private.h"
+#import "SKWChannel+Internal.h"
+#import "SKWContext+Internal.h"
 #import "SKWErrorFactory+SFUBot.h"
+#import "SKWPlugin+Internal.h"
+#import "SKWSFUBotMember+Internal.h"
 
 #import <skyway/plugin/sfu_bot_plugin/plugin.hpp>
 #import <skyway/plugin/sfu_bot_plugin/sfu_options.hpp>
 
 using NativeSfuPlugin = skyway::plugin::sfu_bot::Plugin;
-using NativeSfuBot = skyway::plugin::sfu_bot::SfuBot;
+using NativeSfuBot    = skyway::plugin::sfu_bot::SfuBot;
 
 @implementation SKWSFUBotPluginOptions
 
 - (id)init {
-    
-    if(self = [super init]) {
-        _domain = nil;
+    if (self = [super init]) {
+        _domain  = nil;
         _version = 0;
-        _secure = true;
+        _secure  = true;
     }
-    
+
     return self;
 }
 
@@ -38,45 +37,49 @@ using NativeSfuBot = skyway::plugin::sfu_bot::SfuBot;
 
 @implementation SKWSFUBotPlugin
 
--(id _Nonnull)initWithOptions:(SKWSFUBotPluginOptions* _Nullable)options {
+- (id _Nonnull)initWithOptions:(SKWSFUBotPluginOptions* _Nullable)options {
     skyway::plugin::sfu_options::SfuOptionsParams native_options;
-    if(options != nil) {
-        if(options.domain != nil) {
+    if (options != nil) {
+        if (options.domain != nil) {
             native_options.domain = [NSString stdStringForString:options.domain];
         }
-        if(options.version != 0) {
+        if (options.version != 0) {
             native_options.version = options.version;
         }
         native_options.secure = options.secure;
     }
     auto nativePeerConnectionFactory = SKWContext.pcFactory.nativeFactory;
-    
-    return [super initWithUniqueNative:std::make_unique<NativeSfuPlugin>(skyway::network::interface::HttpClient::Shared(), nativePeerConnectionFactory, native_options)];
+
+    return [super initWithUniqueNative:std::make_unique<NativeSfuPlugin>(
+                                           skyway::network::interface::HttpClient::Shared(),
+                                           nativePeerConnectionFactory,
+                                           native_options)];
 }
 
--(void)createBotOnChannel:(SKWChannel* _Nonnull)channel completion:(SKWSFUBotPluginCreateBotOnChannelCompletion _Nullable)completion {
-    auto nativePlugin = (NativeSfuPlugin*)self.native;
+- (void)createBotOnChannel:(SKWChannel* _Nonnull)channel
+                completion:(SKWSFUBotPluginCreateBotOnChannelCompletion _Nullable)completion {
+    auto nativePlugin  = (NativeSfuPlugin*)self.native;
     auto nativeChannel = channel.native;
-    
+
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        auto nativeBot = nativePlugin->CreateBot(nativeChannel.get());
-        if(completion) {
-            if(nativeBot) {
-                id bot = [channel.repository registerMemberIfNeeded: nativeBot];
-                completion((SKWSFUBotMember*)bot, nil);
-            }else {
-                completion(nil, [SKWErrorFactory pluginCreateBotError]);
-            }
-        }
+      auto nativeBot = nativePlugin->CreateBot(nativeChannel.get());
+      if (completion) {
+          if (nativeBot) {
+              id bot = [channel.repository registerMemberIfNeeded:nativeBot];
+              completion((SKWSFUBotMember*)bot, nil);
+          } else {
+              completion(nil, [SKWErrorFactory pluginCreateBotError]);
+          }
+      }
     });
 }
 
 // MARK: - SKWPlugin
 
--(SKWRemoteMember* _Nullable)createRemoteMemberWithNative:(NativeRemoteMember* _Nonnull)native
-                                              repository:(ChannelStateRepository* _Nonnull)repository{
-    
-    if(auto nativeBot = dynamic_cast<NativeSfuBot*>(native)) {
+- (SKWRemoteMember* _Nullable)createRemoteMemberWithNative:(NativeRemoteMember* _Nonnull)native
+                                                repository:
+                                                    (ChannelStateRepository* _Nonnull)repository {
+    if (auto nativeBot = dynamic_cast<NativeSfuBot*>(native)) {
         return [[SKWSFUBotMember alloc] initWithNativeSFUBot:nativeBot repository:repository];
     }
     return nil;

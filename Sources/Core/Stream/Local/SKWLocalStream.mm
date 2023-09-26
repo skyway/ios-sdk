@@ -7,12 +7,11 @@
 //
 
 #import "SKWLocalStream.h"
-#import "SKWStream+Internal.h"
 #import "NSString+StdString.h"
+#import "SKWStream+Internal.h"
 
 #import <skyway/core/interface/local_stream.hpp>
 
 @implementation SKWLocalStream
-
 
 @end

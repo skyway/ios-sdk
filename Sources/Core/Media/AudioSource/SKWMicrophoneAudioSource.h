@@ -17,10 +17,10 @@ NS_SWIFT_NAME(MicrophoneAudioSource)
 @interface SKWMicrophoneAudioSource : SKWAudioSource
 
 /// イニシャライザ
--(id _Nonnull)init;
+- (id _Nonnull)init;
 
 // Override
--(SKWLocalAudioStream* _Nonnull)createStream;
+- (SKWLocalAudioStream* _Nonnull)createStream;
 
 @end
 

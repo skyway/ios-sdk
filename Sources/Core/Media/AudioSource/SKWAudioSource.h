@@ -15,10 +15,10 @@
 NS_SWIFT_NAME(AudioSource)
 @interface SKWAudioSource : NSObject
 
--(id _Nonnull)init NS_UNAVAILABLE;
+- (id _Nonnull)init NS_UNAVAILABLE;
 
 /// ストリームを作成します。
--(SKWLocalAudioStream* _Nonnull)createStream;
+- (SKWLocalAudioStream* _Nonnull)createStream;
 
 @end
 

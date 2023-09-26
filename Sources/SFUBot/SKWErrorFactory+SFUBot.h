@@ -12,14 +12,14 @@
 #import <SkyWayCore/SkyWayCore.h>
 
 typedef NS_ENUM(NSUInteger, SKWSFUBotErrorCode) {
-    SKWSFUBotPluginCreateBotError = 300,
+    SKWSFUBotPluginCreateBotError             = 300,
     SKWSFUBotSFUBotMemberStartForwardingError = 301,
 };
 
-@interface SKWErrorFactory(SFUBot)
+@interface SKWErrorFactory (SFUBot)
 
-+(NSError* _Nonnull)pluginCreateBotError;
-+(NSError* _Nonnull)sfuBotMemberStartForwardingError;
++ (NSError* _Nonnull)pluginCreateBotError;
++ (NSError* _Nonnull)sfuBotMemberStartForwardingError;
 
 @end
 

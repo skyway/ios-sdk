@@ -7,8 +7,8 @@
 //
 
 #import "SKWRemoteVideoStream.h"
-#import "SKWStream+Internal.h"
 #import "SKWContext+Internal.h"
+#import "SKWStream+Internal.h"
 #import "SKWVideoView+Internal.h"
 
 #import "RTCMediaStreamTrack+Private.h"
@@ -17,21 +17,22 @@
 
 using NativeRemoteVideoStream = skyway::core::stream::remote::RemoteVideoStream;
 
-@interface SKWRemoteVideoStream(){
+@interface SKWRemoteVideoStream () {
     RTCVideoTrack* track;
 }
 @end
 
 @implementation SKWRemoteVideoStream
 
--(void)attachView:(SKWVideoView* _Nonnull)view{
+- (void)attachView:(SKWVideoView* _Nonnull)view {
     auto nativeVideoStream = std::static_pointer_cast<NativeRemoteVideoStream>(self.native);
-    auto nativeTrack = nativeVideoStream->GetTrack();
-    track = (RTCVideoTrack*)[RTCMediaStreamTrack mediaTrackForNativeTrack:nativeTrack factory:SKWContext.pcFactory];
+    auto nativeTrack       = nativeVideoStream->GetTrack();
+    track = (RTCVideoTrack*)[RTCMediaStreamTrack mediaTrackForNativeTrack:nativeTrack
+                                                                  factory:SKWContext.pcFactory];
     [view addRendererWithTrack:track];
 }
 
--(void)detachView:(SKWVideoView* _Nonnull)view {
+- (void)detachView:(SKWVideoView* _Nonnull)view {
     [view removeRenderer];
     track = nil;
 }

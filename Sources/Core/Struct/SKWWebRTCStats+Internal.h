@@ -13,9 +13,9 @@
 
 #import <skyway/core/interface/local_stream.hpp>
 
-@interface SKWWebRTCStats()
+@interface SKWWebRTCStats ()
 
--(id _Nonnull)initWithNativeStats:(skyway::model::WebRTCStats)stats;
+- (id _Nonnull)initWithNativeStats:(skyway::model::WebRTCStats)stats;
 
 @end
 

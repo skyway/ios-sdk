@@ -9,7 +9,7 @@
 import Foundation
 
 /// RoomMemberイベントデリゲート
-@objc public protocol RoomMemberDelegate: AnyObject{
+@objc public protocol RoomMemberDelegate: AnyObject {
     /// RoomMemberがRoomから退出した後にコールされます。
     /// - Parameter member: Member
     @objc optional func memberDidLeave(_ member: RoomMember)

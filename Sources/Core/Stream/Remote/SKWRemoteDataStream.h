@@ -11,13 +11,11 @@
 
 #import "SKWRemoteStream.h"
 
-
 /// RemoteDataStreamクラス
 NS_SWIFT_NAME(RemoteDataStream)
 @interface SKWRemoteDataStream : SKWRemoteStream
 
 @end
-
 
 /// RemoteDataStreamイベントデリゲート
 NS_SWIFT_NAME(RemoteDataStreamDelegate)
@@ -29,7 +27,8 @@ NS_SWIFT_NAME(RemoteDataStreamDelegate)
 ///   - dataStream: 対象のDataStream
 ///   - string: 受信した文字列
 @optional
-- (void)dataStream:(SKWRemoteDataStream* _Nonnull)dataStream didReceiveString:(NSString* _Nonnull)string;
+- (void)dataStream:(SKWRemoteDataStream* _Nonnull)dataStream
+    didReceiveString:(NSString* _Nonnull)string;
 
 /// バイナリを受信した時にコールされるイベント
 ///
@@ -40,17 +39,11 @@ NS_SWIFT_NAME(RemoteDataStreamDelegate)
 - (void)dataStream:(SKWRemoteDataStream* _Nonnull)dataStream didReceiveData:(NSData* _Nonnull)data;
 @end
 
-@interface SKWRemoteDataStream()
-
+@interface SKWRemoteDataStream ()
 
 /// イベントデリゲート
-@property (weak, nonatomic) id<SKWRemoteDataStreamDelegate> _Nullable delegate;
+@property(weak, nonatomic) id<SKWRemoteDataStreamDelegate> _Nullable delegate;
 
 @end
-
-
-
-
-
 
 #endif /* SKWRemoteDataStream_h */

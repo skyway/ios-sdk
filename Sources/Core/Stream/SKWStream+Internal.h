@@ -15,11 +15,11 @@
 
 using NativeStream = skyway::core::interface::Stream;
 
-@interface SKWStream()
+@interface SKWStream ()
 
-@property(nonatomic, readonly) std::shared_ptr<NativeStream>native;
+@property(nonatomic, readonly) std::shared_ptr<NativeStream> native;
 
--(id _Nonnull)initWithSharedNative:(std::shared_ptr<NativeStream>)native;
+- (id _Nonnull)initWithSharedNative:(std::shared_ptr<NativeStream>)native;
 
 @end
 

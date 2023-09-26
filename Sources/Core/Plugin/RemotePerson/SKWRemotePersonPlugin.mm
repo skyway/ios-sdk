@@ -8,28 +8,30 @@
 
 #import "SKWRemotePersonPlugin+Internal.h"
 
+#import "RTCPeerConnectionFactory+Private.h"
 #import "SKWContext+Internal.h"
 #import "SKWPlugin+Internal.h"
 #import "SKWRemotePerson+Internal.h"
-#import "RTCPeerConnectionFactory+Private.h"
 
 #import <skyway/plugin/remote_person_plugin/plugin.hpp>
 #import <skyway/plugin/remote_person_plugin/remote_person.hpp>
 
 using NativeRemotePersonPlugin = skyway::plugin::remote_person::Plugin;
-using NativeRemotePerson = skyway::plugin::remote_person::RemotePerson;
+using NativeRemotePerson       = skyway::plugin::remote_person::RemotePerson;
 
 @implementation SKWRemotePersonPlugin
 
--(id _Nonnull)initWithVoid {
+- (id _Nonnull)initWithVoid {
     auto nativeFactory = SKWContext.pcFactory.nativeFactory;
     return [super initWithUniqueNative:std::make_unique<NativeRemotePersonPlugin>(nativeFactory)];
 }
 
--(SKWRemoteMember* _Nullable)createRemoteMemberWithNative:(NativeRemoteMember* _Nonnull)native
-                                               repository:(ChannelStateRepository* _Nonnull)repository {
-    if(auto nativeRemotePerson = dynamic_cast<NativeRemotePerson*>(native)) {
-        return [[SKWRemotePerson alloc] initWithNativePerson:nativeRemotePerson repository:repository];
+- (SKWRemoteMember* _Nullable)createRemoteMemberWithNative:(NativeRemoteMember* _Nonnull)native
+                                                repository:
+                                                    (ChannelStateRepository* _Nonnull)repository {
+    if (auto nativeRemotePerson = dynamic_cast<NativeRemotePerson*>(native)) {
+        return [[SKWRemotePerson alloc] initWithNativePerson:nativeRemotePerson
+                                                  repository:repository];
     }
     return nil;
 }

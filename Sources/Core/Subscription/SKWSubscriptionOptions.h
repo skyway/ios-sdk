@@ -12,7 +12,7 @@
 #import <Foundation/Foundation.h>
 
 NS_SWIFT_NAME(SubscriptionOptions)
-@interface SKWSubscriptionOptions: NSObject
+@interface SKWSubscriptionOptions : NSObject
 
 //@property BOOL isEnabled;
 @property(nonatomic) NSString* _Nullable preferredEncodingId;

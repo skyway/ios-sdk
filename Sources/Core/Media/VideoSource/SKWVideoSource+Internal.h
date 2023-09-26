@@ -13,13 +13,12 @@
 
 #import "SKWVideoSource.h"
 
-@interface SKWVideoSource()
+@interface SKWVideoSource ()
 
 @property(nonatomic, readonly) RTCVideoCapturer* _Nonnull rtcCapturer;
 
--(id _Nonnull)initWithRTCCapturer:(RTCVideoCapturer* _Nonnull)rtcCapturer;
+- (id _Nonnull)initWithRTCCapturer:(RTCVideoCapturer* _Nonnull)rtcCapturer;
 
 @end
-
 
 #endif /* SKWVideoSource_Internal_h */

@@ -16,7 +16,7 @@ import SkyWaySFUBot
         bot = room.channel.members.first(where: { $0 is SFUBotMember }) as! SFUBotMember
         super.init(core: core, room: room)
     }
-        
+
     /// 入室しているRoomにStreamをPublishします。
     ///
     /// Streamは各種Sourceから作成できます。
@@ -33,7 +33,11 @@ import SkyWaySFUBot
     ///   - stream: PublishするStream
     ///   - options: Publishオプション
     ///   - completion: 完了コールバック
-    @objc override public func publish(_ stream: LocalStream, options: RoomPublicationOptions?, completion:((RoomPublication?, Error?)->Void)?) {
+    @objc override public func publish(
+        _ stream: LocalStream,
+        options: RoomPublicationOptions?,
+        completion: ((RoomPublication?, Error?) -> Void)?
+    ) {
         let person = core as! LocalPerson
         person.publish(stream, options: options) { (publication, error) in
             guard let publication = publication else {
@@ -42,7 +46,8 @@ import SkyWaySFUBot
             }
             let forwardingConfigure: ForwardingConfigure = .init()
             forwardingConfigure.maxSubscribers = options?.maxSubscribers ?? 10
-            self.bot.startForwarding(publication, configure: forwardingConfigure) { (forwarding, error) in
+            self.bot.startForwarding(publication, configure: forwardingConfigure) {
+                (forwarding, error) in
                 guard let forwarding = forwarding else {
                     completion?(nil, error)
                     return
@@ -51,17 +56,21 @@ import SkyWaySFUBot
             }
         }
     }
-    
+
     /// Publishを停止します。
     ///
     /// - Parameters:
     ///   - publicationId: 停止するPublicationのID
     ///   - completion: 完了コールバック
-    @objc override public func unpublish(publicationId: String, completion:((Error?)->Void)?){
+    @objc override public func unpublish(publicationId: String, completion: ((Error?) -> Void)?) {
         // Convert relayed publication id(forwarding id) to origin id
         let person = core as! LocalPerson
-        guard let publication = self.room?.channel.publications.first(where: { $0.id == publicationId }),
-              let origin = publication.origin else {
+        guard
+            let publication = self.room?.channel.publications.first(where: {
+                $0.id == publicationId
+            }),
+            let origin = publication.origin
+        else {
             Logger.error(message: "The publication is missing on channel.")
             completion?(SKWErrorFactory.localSfuRoomMemberUnublishError())
             return
@@ -71,12 +80,15 @@ import SkyWaySFUBot
             completion?(SKWErrorFactory.localSfuRoomMemberUnublishError())
             return
         }
-        room.onStreamUnpublished.updateValue({ publication in
-            if publication.id == publicationId {
-                completion?(nil)
-                room.onStreamUnpublished.removeValue(forKey: publicationId)
-            }
-        }, forKey: publicationId)
+        room.onStreamUnpublished.updateValue(
+            { publication in
+                if publication.id == publicationId {
+                    completion?(nil)
+                    room.onStreamUnpublished.removeValue(forKey: publicationId)
+                }
+            },
+            forKey: publicationId
+        )
         person.unpublish(publicationID: origin.id, completion: nil)
     }
 }

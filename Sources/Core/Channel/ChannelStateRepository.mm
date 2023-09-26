@@ -8,49 +8,50 @@
 
 #import "ChannelStateRepository.h"
 
-#import "SKWMember+Internal.h"
+#import "SKWContext.h"
 #import "SKWLocalPerson+Internal.h"
+#import "SKWMember+Internal.h"
+#import "SKWPlugin+Internal.h"
 #import "SKWPublication+Internal.h"
 #import "SKWSubscription+Internal.h"
-#import "SKWPlugin+Internal.h"
-#import "SKWContext.h"
 #import "SKWUnknownMember.h"
 
 #import "NSString+StdString.h"
 
 #import "skyway/global/interface/logger.hpp"
 
-@interface ChannelStateRepository(){
+@interface ChannelStateRepository () {
     NSMutableArray<SKWMember*>* mutableMembers;
     NSMutableArray<SKWPublication*>* mutablePublications;
     NSMutableArray<SKWSubscription*>* mutableSubscriptions;
 }
--(void)syncNativeChannel:(NativeChannelInterface* _Nonnull)nativeChannel;
+- (void)syncNativeChannel:(NativeChannelInterface* _Nonnull)nativeChannel;
 
--(SKWMember* _Nullable)createMemberForNative:(NativeMemberInterface* _Nonnull)native;
--(SKWPublication* _Nonnull)createPublicationForNative:(NativePublication* _Nonnull)native;
--(SKWSubscription* _Nonnull)createSubscriptionForNative:(NativeSubscription* _Nonnull)native;
+- (SKWMember* _Nullable)createMemberForNative:(NativeMemberInterface* _Nonnull)native;
+- (SKWPublication* _Nonnull)createPublicationForNative:(NativePublication* _Nonnull)native;
+- (SKWSubscription* _Nonnull)createSubscriptionForNative:(NativeSubscription* _Nonnull)native;
 
 @end
 
 @implementation ChannelStateRepository
 
--(id _Nonnull)initWithNative:(NativeChannelInterface* _Nonnull)native eventGroup:(dispatch_group_t)eventGroup{
-    if(self = [super init]) {
-        mutableMembers = [[NSMutableArray alloc] init];
-        mutablePublications = [[NSMutableArray alloc] init];
+- (id _Nonnull)initWithNative:(NativeChannelInterface* _Nonnull)native
+                   eventGroup:(dispatch_group_t)eventGroup {
+    if (self = [super init]) {
+        mutableMembers       = [[NSMutableArray alloc] init];
+        mutablePublications  = [[NSMutableArray alloc] init];
         mutableSubscriptions = [[NSMutableArray alloc] init];
-        _eventGroup = eventGroup;
+        _eventGroup          = eventGroup;
         [self syncNativeChannel:native];
     }
     return self;
 }
 
--(void)dealloc {
+- (void)dealloc {
     SKW_TRACE("~SKWChannelStateRepository");
 }
 
--(void)syncNativeChannel:(NativeChannelInterface* _Nonnull)nativeChannel{
+- (void)syncNativeChannel:(NativeChannelInterface* _Nonnull)nativeChannel {
     for (const auto& nativeMember : nativeChannel->Members()) {
         [self registerMemberIfNeeded:nativeMember];
     }
@@ -62,94 +63,103 @@
     }
 }
 
--(NSArray<SKWMember*>* _Nonnull)members {
-    @synchronized (mutableMembers) {
+- (NSArray<SKWMember*>* _Nonnull)members {
+    @synchronized(mutableMembers) {
         NSMutableArray<SKWMember*>* members = [[NSMutableArray alloc] init];
-        [mutableMembers enumerateObjectsUsingBlock:^(SKWMember * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            if(obj.state != SKWMemberStateLeft) {
-                [members addObject:obj];
-            }
+        [mutableMembers enumerateObjectsUsingBlock:^(
+                            SKWMember* _Nonnull obj, NSUInteger idx, BOOL* _Nonnull stop) {
+          if (obj.state != SKWMemberStateLeft) {
+              [members addObject:obj];
+          }
         }];
         return [members copy];
     }
 }
 
--(NSArray<SKWPublication*>* _Nonnull)publications {
-    @synchronized (mutablePublications) {
+- (NSArray<SKWPublication*>* _Nonnull)publications {
+    @synchronized(mutablePublications) {
         NSMutableArray<SKWPublication*>* publications = [[NSMutableArray alloc] init];
-        [mutablePublications enumerateObjectsUsingBlock:^(SKWPublication * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            if(obj.state != SKWPublicationStateCanceled) {
-                [publications addObject:obj];
-            }
-        }];
+        [mutablePublications
+            enumerateObjectsUsingBlock:^(
+                SKWPublication* _Nonnull obj, NSUInteger idx, BOOL* _Nonnull stop) {
+              if (obj.state != SKWPublicationStateCanceled) {
+                  [publications addObject:obj];
+              }
+            }];
         return [publications copy];
     }
 }
 
--(NSArray<SKWSubscription*>* _Nonnull)subscriptions {
-    @synchronized (mutableSubscriptions) {
+- (NSArray<SKWSubscription*>* _Nonnull)subscriptions {
+    @synchronized(mutableSubscriptions) {
         NSMutableArray<SKWSubscription*>* subscriptions = [[NSMutableArray alloc] init];
-        [mutableSubscriptions enumerateObjectsUsingBlock:^(SKWSubscription * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            if(obj.state != SKWSubscriptionStateCanceled) {
-                [subscriptions addObject:obj];
-            }
-        }];
+        [mutableSubscriptions
+            enumerateObjectsUsingBlock:^(
+                SKWSubscription* _Nonnull obj, NSUInteger idx, BOOL* _Nonnull stop) {
+              if (obj.state != SKWSubscriptionStateCanceled) {
+                  [subscriptions addObject:obj];
+              }
+            }];
         return [subscriptions copy];
     }
 }
 
-
--(SKWMember* _Nullable)findMemberByMemberID:(const std::string&)memberID{
+- (SKWMember* _Nullable)findMemberByMemberID:(const std::string&)memberID {
     SKWMember* member;
     @synchronized(mutableMembers) {
         NSString* identifier = [NSString stringForStdString:memberID];
-        NSUInteger idx = [mutableMembers indexOfObjectPassingTest:^BOOL(SKWMember * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            return [obj.id isEqualToString:identifier];
-        }];
-        if(idx != NSNotFound) {
+        NSUInteger idx =
+            [mutableMembers indexOfObjectPassingTest:^BOOL(
+                                SKWMember* _Nonnull obj, NSUInteger idx, BOOL* _Nonnull stop) {
+              return [obj.id isEqualToString:identifier];
+            }];
+        if (idx != NSNotFound) {
             member = mutableMembers[idx];
         }
     }
-    
+
     return member;
 }
 
--(SKWPublication* _Nullable)findPublicationByPublicationID:(const std::string&)publicationID{
+- (SKWPublication* _Nullable)findPublicationByPublicationID:(const std::string&)publicationID {
     SKWPublication* publication;
     @synchronized(mutablePublications) {
         NSString* identifier = [NSString stringForStdString:publicationID];
-        NSUInteger idx = [mutablePublications indexOfObjectPassingTest:^BOOL(SKWPublication * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            return [obj.id isEqualToString:identifier];
-        }];
-        if(idx != NSNotFound) {
+        NSUInteger idx       = [mutablePublications
+            indexOfObjectPassingTest:^BOOL(
+                SKWPublication* _Nonnull obj, NSUInteger idx, BOOL* _Nonnull stop) {
+                    return [obj.id isEqualToString:identifier];
+            }];
+        if (idx != NSNotFound) {
             publication = mutablePublications[idx];
         }
     }
     return publication;
 }
 
--(SKWSubscription* _Nullable)findSubscriptionBySubscriptionID:(const std::string&)subscriptionID{
+- (SKWSubscription* _Nullable)findSubscriptionBySubscriptionID:(const std::string&)subscriptionID {
     SKWSubscription* subscription;
     @synchronized(mutableSubscriptions) {
         NSString* identifier = [NSString stringForStdString:subscriptionID];
-        NSUInteger idx = [mutableSubscriptions indexOfObjectPassingTest:^BOOL(SKWSubscription * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            return [obj.id isEqualToString:identifier];
-        }];
-        if(idx != NSNotFound) {
+        NSUInteger idx       = [mutableSubscriptions
+            indexOfObjectPassingTest:^BOOL(
+                SKWSubscription* _Nonnull obj, NSUInteger idx, BOOL* _Nonnull stop) {
+                    return [obj.id isEqualToString:identifier];
+            }];
+        if (idx != NSNotFound) {
             subscription = mutableSubscriptions[idx];
         }
     }
     return subscription;
 }
 
-
--(SKWMember* _Nonnull)registerMemberIfNeeded:(NativeMemberInterface* _Nonnull)nativeMember{
+- (SKWMember* _Nonnull)registerMemberIfNeeded:(NativeMemberInterface* _Nonnull)nativeMember {
     SKWMember* member;
     @synchronized(mutableMembers) {
-        if(id existingMember = [self findMemberByMemberID:nativeMember->Id()]) {
+        if (id existingMember = [self findMemberByMemberID:nativeMember->Id()]) {
             return existingMember;
         }
-        
+
         member = [self createMemberForNative:nativeMember];
         [mutableMembers addObject:member];
     }
@@ -157,13 +167,15 @@
     return member;
 }
 
--(SKWPublication* _Nonnull)registerPublicationIfNeeded:(NativePublicationInterface* _Nonnull)nativePublication{
+- (SKWPublication* _Nonnull)registerPublicationIfNeeded:
+    (NativePublicationInterface* _Nonnull)nativePublication {
     SKWPublication* publication;
-    @synchronized (mutablePublications) {
-        if(id existingPublication = [self findPublicationByPublicationID:nativePublication->Id()]) {
+    @synchronized(mutablePublications) {
+        if (id existingPublication =
+                [self findPublicationByPublicationID:nativePublication->Id()]) {
             return existingPublication;
         }
-        
+
         publication = [self createPublicationForNative:nativePublication];
         [mutablePublications addObject:publication];
     }
@@ -171,10 +183,12 @@
     return publication;
 }
 
--(SKWSubscription* _Nonnull)registerSubscriptionIfNeeded:(NativeSubscriptionInterface* _Nonnull)nativeSubscription{
+- (SKWSubscription* _Nonnull)registerSubscriptionIfNeeded:
+    (NativeSubscriptionInterface* _Nonnull)nativeSubscription {
     SKWSubscription* subscription;
-    @synchronized (mutableSubscriptions) {
-        if(id existingSubscription = [self findSubscriptionBySubscriptionID:nativeSubscription->Id()]) {
+    @synchronized(mutableSubscriptions) {
+        if (id existingSubscription =
+                [self findSubscriptionBySubscriptionID:nativeSubscription->Id()]) {
             if (![existingSubscription stream] && nativeSubscription->Stream()) {
                 [existingSubscription setStreamFromNativeStream:nativeSubscription->Stream()];
             }
@@ -186,83 +200,97 @@
     return subscription;
 }
 
--(NSArray<SKWPublication*>* _Nonnull)getActivePublicationsByPublisherID:(NSString* _Nonnull)publisherID{
+- (NSArray<SKWPublication*>* _Nonnull)getActivePublicationsByPublisherID:
+    (NSString* _Nonnull)publisherID {
     NSMutableArray<SKWPublication*>* publications = [[NSMutableArray alloc] init];
     @synchronized(mutablePublications) {
-        [self.publications enumerateObjectsUsingBlock:^(SKWPublication * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            if([obj.publisher.id isEqualToString:publisherID]){
-                [publications addObject:obj];
-            }
+        [self.publications enumerateObjectsUsingBlock:^(
+                               SKWPublication* _Nonnull obj, NSUInteger idx, BOOL* _Nonnull stop) {
+          if ([obj.publisher.id isEqualToString:publisherID]) {
+              [publications addObject:obj];
+          }
         }];
     }
     return [publications copy];
 }
 
--(NSArray<SKWSubscription*>* _Nonnull)getActiveSubscriptionsBySubscriberID:(NSString* _Nonnull)subscriberID{
+- (NSArray<SKWSubscription*>* _Nonnull)getActiveSubscriptionsBySubscriberID:
+    (NSString* _Nonnull)subscriberID {
     NSMutableArray<SKWSubscription*>* subscriptions = [[NSMutableArray alloc] init];
     @synchronized(mutableSubscriptions) {
-        [self.subscriptions enumerateObjectsUsingBlock:^(SKWSubscription * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            if([obj.subscriber.id isEqualToString:subscriberID]){
-                [subscriptions addObject:obj];
-            }
-        }];
+        [self.subscriptions
+            enumerateObjectsUsingBlock:^(
+                SKWSubscription* _Nonnull obj, NSUInteger idx, BOOL* _Nonnull stop) {
+              if ([obj.subscriber.id isEqualToString:subscriberID]) {
+                  [subscriptions addObject:obj];
+              }
+            }];
     }
 
     return [subscriptions copy];
 }
 
--(NSArray<SKWSubscription*>* _Nonnull)getActiveSubscriptionsByPublicationID:(NSString* _Nonnull)publicationID{
+- (NSArray<SKWSubscription*>* _Nonnull)getActiveSubscriptionsByPublicationID:
+    (NSString* _Nonnull)publicationID {
     NSMutableArray<SKWSubscription*>* subscriptions = [[NSMutableArray alloc] init];
     @synchronized(mutableSubscriptions) {
-        [self.subscriptions enumerateObjectsUsingBlock:^(SKWSubscription * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            if([obj.publication.id isEqualToString:publicationID]){
-                [subscriptions addObject:obj];
-            }
-        }];
+        [self.subscriptions
+            enumerateObjectsUsingBlock:^(
+                SKWSubscription* _Nonnull obj, NSUInteger idx, BOOL* _Nonnull stop) {
+              if ([obj.publication.id isEqualToString:publicationID]) {
+                  [subscriptions addObject:obj];
+              }
+            }];
     }
     return [subscriptions copy];
 }
 
--(SKWMember* _Nullable)createMemberForNative:(NativeMemberInterface* _Nonnull)native{
-    if(auto localPerson = dynamic_cast<NativeLocalPerson*>(native)) {
+- (SKWMember* _Nullable)createMemberForNative:(NativeMemberInterface* _Nonnull)native {
+    if (auto localPerson = dynamic_cast<NativeLocalPerson*>(native)) {
         return [[SKWLocalPerson alloc] initWithNativePerson:localPerson repository:self];
     }
     __block SKWPlugin* plugin = nil;
-    [SKWContext.plugins enumerateObjectsUsingBlock:^(SKWPlugin * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if([obj.subtype isEqualToString:[NSString stringForStdString:native->Subtype()]]) {
-            plugin = obj;
-            *stop = YES;
-        }
-    }];
-    if(plugin == nil) {
+    [SKWContext.plugins
+        enumerateObjectsUsingBlock:^(SKWPlugin* _Nonnull obj, NSUInteger idx, BOOL* _Nonnull stop) {
+          if ([obj.subtype isEqualToString:[NSString stringForStdString:native->Subtype()]]) {
+              plugin = obj;
+              *stop  = YES;
+          }
+        }];
+    if (plugin == nil) {
         return [[SKWUnknownMember alloc] initWithNative:native repository:self];
-    }else if(auto nativeRemoteMember = dynamic_cast<NativeRemoteMember*>(native)) {
+    } else if (auto nativeRemoteMember = dynamic_cast<NativeRemoteMember*>(native)) {
         return [plugin createRemoteMemberWithNative:nativeRemoteMember repository:self];
     }
     SKW_ERROR("Creating remote member failed.");
     return nil;
 }
 
--(SKWPublication* _Nonnull)createPublicationForNative:(NativePublication* _Nonnull)native{
+- (SKWPublication* _Nonnull)createPublicationForNative:(NativePublication* _Nonnull)native {
     return [[SKWPublication alloc] initWithNative:native repository:self];
 }
 
--(SKWSubscription* _Nonnull)createSubscriptionForNative:(NativeSubscription* _Nonnull)native{
+- (SKWSubscription* _Nonnull)createSubscriptionForNative:(NativeSubscription* _Nonnull)native {
     return [[SKWSubscription alloc] initWithNative:native repository:self];
 }
 
--(void)clear {
+- (void)clear {
     @synchronized(self) {
-        [mutableMembers enumerateObjectsUsingBlock:^(SKWMember * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            [obj dispose];
+        [mutableMembers enumerateObjectsUsingBlock:^(
+                            SKWMember* _Nonnull obj, NSUInteger idx, BOOL* _Nonnull stop) {
+          [obj dispose];
         }];
-        [mutableSubscriptions enumerateObjectsUsingBlock:^(SKWSubscription * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            [obj dispose];
-        }];
-        [mutablePublications enumerateObjectsUsingBlock:^(SKWPublication * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            [obj dispose];
-        }];
-        
+        [mutableSubscriptions
+            enumerateObjectsUsingBlock:^(
+                SKWSubscription* _Nonnull obj, NSUInteger idx, BOOL* _Nonnull stop) {
+              [obj dispose];
+            }];
+        [mutablePublications
+            enumerateObjectsUsingBlock:^(
+                SKWPublication* _Nonnull obj, NSUInteger idx, BOOL* _Nonnull stop) {
+              [obj dispose];
+            }];
+
         [mutableMembers removeAllObjects];
         [mutableSubscriptions removeAllObjects];
         [mutablePublications removeAllObjects];

@@ -15,10 +15,10 @@
 
 using NativeEncoding = skyway::model::Encoding;
 
-@interface SKWEncoding()
+@interface SKWEncoding ()
 
-+(SKWEncoding*)encodingForNativeEncoding:(NativeEncoding)nativeEncoding;
--(NativeEncoding)nativeEncoding;
++ (SKWEncoding*)encodingForNativeEncoding:(NativeEncoding)nativeEncoding;
+- (NativeEncoding)nativeEncoding;
 
 @end
 

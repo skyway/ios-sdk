@@ -7,8 +7,8 @@
 //
 
 #import "SKWMember.h"
-#import "SKWMember+Internal.h"
 #import "SKWErrorFactory.h"
+#import "SKWMember+Internal.h"
 
 #import "Type+Internal.h"
 
@@ -20,92 +20,96 @@ using NativeMember = skyway::core::interface::Member;
 
 @implementation SKWMember
 
--(id _Nonnull)initWithNative:(NativeMember* _Nonnull)native repository:(ChannelStateRepository* _Nonnull)repository{
-    if(self = [super init]) {
-        _native = native;
+- (id _Nonnull)initWithNative:(NativeMember* _Nonnull)native
+                   repository:(ChannelStateRepository* _Nonnull)repository {
+    if (self = [super init]) {
+        _native     = native;
         _repository = repository;
     }
     return self;
 }
 
--(NSString* _Nonnull)id {
+- (NSString* _Nonnull)id {
     auto nativeId = _native->Id();
     return [NSString stringForStdString:nativeId];
 }
 
--(NSString* _Nullable)name {
+- (NSString* _Nullable)name {
     auto name = _native->Name();
-    if(name) {
+    if (name) {
         return [NSString stringForStdString:*name];
     }
     return nil;
 }
 
--(NSString* _Nullable)metadata {
+- (NSString* _Nullable)metadata {
     auto metadata = _native->Metadata();
-    if(metadata) {
+    if (metadata) {
         return [NSString stringForStdString:*metadata];
     }
     return nil;
 }
 
--(SKWMemberType)type {
+- (SKWMemberType)type {
     return SKWMemberTypeFromNativeType(_native->Type());
 }
 
--(SKWSide)side {
+- (SKWSide)side {
     return SKWSideFromNativeSide(_native->Side());
 }
 
--(NSString* _Nonnull)subtype {
+- (NSString* _Nonnull)subtype {
     return [NSString stringForStdString:_native->Subtype()];
 }
 
--(SKWMemberState)state{
+- (SKWMemberState)state {
     switch (_native->State()) {
-        case skyway::core::interface::MemberState::kJoined: return SKWMemberStateJoined;
-        case skyway::core::interface::MemberState::kLeft: return SKWMemberStateLeft;
+        case skyway::core::interface::MemberState::kJoined:
+            return SKWMemberStateJoined;
+        case skyway::core::interface::MemberState::kLeft:
+            return SKWMemberStateLeft;
     }
 }
 
--(NSArray<SKWPublication*>* _Nonnull)publications {
+- (NSArray<SKWPublication*>* _Nonnull)publications {
     return [_repository getActivePublicationsByPublisherID:self.id];
 }
 
--(NSArray<SKWSubscription*>* _Nonnull)subscriptions {
+- (NSArray<SKWSubscription*>* _Nonnull)subscriptions {
     return [_repository getActiveSubscriptionsBySubscriberID:self.id];
 }
 
--(void)updateMetadata:(NSString* _Nonnull)metadata completion:(SKWMemberUpdateMetadataCompletion _Nullable)completion{
+- (void)updateMetadata:(NSString* _Nonnull)metadata
+            completion:(SKWMemberUpdateMetadataCompletion _Nullable)completion {
     auto nativeMetadata = [NSString stdStringForString:metadata];
-    
+
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        auto result = self.native->UpdateMetadata(nativeMetadata);
-        if(completion) {
-            if(result) {
-                completion(nil);
-            }else {
-                completion([SKWErrorFactory memberUpdateMetadataError]);
-            }
-        }
+      auto result = self.native->UpdateMetadata(nativeMetadata);
+      if (completion) {
+          if (result) {
+              completion(nil);
+          } else {
+              completion([SKWErrorFactory memberUpdateMetadataError]);
+          }
+      }
     });
 }
 
--(void)leaveWithCompletion:(SKWMemberLeaveCompletion _Nullable)completion {
+- (void)leaveWithCompletion:(SKWMemberLeaveCompletion _Nullable)completion {
     auto nativeMemberId = [NSString stdStringForString:self.id];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        auto result = self.native->Leave();
-        if(result) {
-            completion(nil);
-        }else {
-            completion([SKWErrorFactory memberLeaveError]);
-        }
+      auto result = self.native->Leave();
+      if (result) {
+          completion(nil);
+      } else {
+          completion([SKWErrorFactory memberLeaveError]);
+      }
     });
 }
 
--(void)dispose {
+- (void)dispose {
     [NSException raise:NSInternalInconsistencyException
-                    format:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)];
+                format:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)];
 }
 
 @end

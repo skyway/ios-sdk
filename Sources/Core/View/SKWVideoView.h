@@ -24,13 +24,12 @@ NS_SWIFT_NAME(VideoView)
 /// 映像をWrapしているレンダラービュー
 ///
 /// ViewはStreamからAttachされた後に生成されアクセスできます。
-/// 
+///
 /// このViewも更に内部ではMTKViewをWrapしています。
 @property(nonatomic, readonly) UIView* _Nullable rendererView;
 
 /// 描画するVideoのContentMode
 @property(nonatomic) UIViewContentMode videoContentMode;
-
 
 @end
 

@@ -18,30 +18,30 @@
 /// Core SDKでの内部ロギングは`SKW_DEBUG`などのNativeマクロを利用してください。
 ///
 /// いずれも`Logger.mm`の実装が利用されます。
-@interface SKWLoggerWrapper: NSObject
+@interface SKWLoggerWrapper : NSObject
 
--(id _Nonnull)init NS_UNAVAILABLE;
+- (id _Nonnull)init NS_UNAVAILABLE;
 
-+(void)traceLogWithMessage:(NSString* _Nonnull)message
++ (void)traceLogWithMessage:(NSString* _Nonnull)message
+                   filename:(NSString* _Nonnull)filename
+                   function:(NSString* _Nonnull)function
+                       line:(int)line;
++ (void)debugLogWithMessage:(NSString* _Nonnull)message
+                   filename:(NSString* _Nonnull)filename
+                   function:(NSString* _Nonnull)function
+                       line:(int)line;
++ (void)infoLogWithMessage:(NSString* _Nonnull)message
                   filename:(NSString* _Nonnull)filename
                   function:(NSString* _Nonnull)function
                       line:(int)line;
-+(void)debugLogWithMessage:(NSString* _Nonnull)message
++ (void)warnLogWithMessage:(NSString* _Nonnull)message
                   filename:(NSString* _Nonnull)filename
                   function:(NSString* _Nonnull)function
                       line:(int)line;
-+(void)infoLogWithMessage:(NSString* _Nonnull)message
-                  filename:(NSString* _Nonnull)filename
-                  function:(NSString* _Nonnull)function
-                     line:(int)line;
-+(void)warnLogWithMessage:(NSString* _Nonnull)message
-                  filename:(NSString* _Nonnull)filename
-                  function:(NSString* _Nonnull)function
-                     line:(int)line;
-+(void)errorLogWithMessage:(NSString* _Nonnull)message
-                  filename:(NSString* _Nonnull)filename
-                  function:(NSString* _Nonnull)function
-                      line:(int)line;
++ (void)errorLogWithMessage:(NSString* _Nonnull)message
+                   filename:(NSString* _Nonnull)filename
+                   function:(NSString* _Nonnull)function
+                       line:(int)line;
 
 @end
 

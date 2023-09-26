@@ -11,9 +11,9 @@
 
 #import "SKWLocalDataStream.h"
 
-@interface SKWLocalDataStream()
+@interface SKWLocalDataStream ()
 
--(id _Nonnull)initWithVoid;
+- (id _Nonnull)initWithVoid;
 
 @end
 

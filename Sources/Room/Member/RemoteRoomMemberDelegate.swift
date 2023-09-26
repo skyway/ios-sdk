@@ -9,19 +9,24 @@
 import Foundation
 
 /// RemoteRoomMemberイベントデリゲート
-@objc public protocol RemoteRoomMemberDelegate: RoomMemberDelegate{
+@objc public protocol RemoteRoomMemberDelegate: RoomMemberDelegate {
     /// RemoteRoomMemberがPublicationをSubscribeした時にコールされます。
     ///
     /// - Parameters:
     ///   - member: Member
     ///   - subscription: Subscribeした時のSubscription
-    @objc optional func remoteRoomMember(_ member: RemoteRoomMember, didSubscribePublicationOf subscription: RoomSubscription)
-    
-    
+    @objc optional func remoteRoomMember(
+        _ member: RemoteRoomMember,
+        didSubscribePublicationOf subscription: RoomSubscription
+    )
+
     /// RemoteRoomMemberがPublicationをUnsubscribeした時にコールされます。
     ///
     /// - Parameters:
     ///   - member: Member
     ///   - subscription: Unsubscribeした時のSubscription
-    @objc optional func remoteRoomMember(_ member: RemoteRoomMember, didUnsubscribePublicationOf subscription: RoomSubscription)
+    @objc optional func remoteRoomMember(
+        _ member: RemoteRoomMember,
+        didUnsubscribePublicationOf subscription: RoomSubscription
+    )
 }

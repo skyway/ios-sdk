@@ -11,7 +11,7 @@
 
 #import "SKWRemoteMember.h"
 
-@interface SKWUnknownMember: SKWRemoteMember
+@interface SKWUnknownMember : SKWRemoteMember
 
 @end
 

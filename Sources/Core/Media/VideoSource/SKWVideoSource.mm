@@ -11,14 +11,14 @@
 
 @implementation SKWVideoSource
 
--(id _Nonnull)initWithRTCCapturer:(RTCVideoCapturer* _Nonnull)rtcCapturer{
-    if(self = [super init]){
+- (id _Nonnull)initWithRTCCapturer:(RTCVideoCapturer* _Nonnull)rtcCapturer {
+    if (self = [super init]) {
         _rtcCapturer = rtcCapturer;
     }
     return self;
 }
 
--(SKWLocalVideoStream* _Nonnull)createStream{
+- (SKWLocalVideoStream* _Nonnull)createStream {
     return [[SKWLocalVideoStream alloc] initWithSource:self];
 }
 

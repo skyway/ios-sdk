@@ -11,8 +11,8 @@
 
 #import "SKWAudioSource.h"
 
-@interface SKWAudioSource()
--(id _Nonnull)initWithVoid;
+@interface SKWAudioSource ()
+- (id _Nonnull)initWithVoid;
 @end
 
 #endif /* SKWAudioSource_Internal_h */

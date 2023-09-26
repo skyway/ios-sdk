@@ -12,7 +12,6 @@
 #import "SKWRemoteStream.h"
 #import "SKWVideoView.h"
 
-
 /// RemoteVideoStream
 NS_SWIFT_NAME(RemoteVideoStream)
 @interface SKWRemoteVideoStream : SKWRemoteStream <SKWVideoStreamProtocol>
@@ -20,13 +19,12 @@ NS_SWIFT_NAME(RemoteVideoStream)
 /// VideoStreamの映像をViewに描画します。
 ///
 /// - Parameter view: 描画させるView
--(void)attachView:(SKWVideoView* _Nonnull)view;
-
+- (void)attachView:(SKWVideoView* _Nonnull)view;
 
 /// Viewへの描画を中止します。
 ///
 /// - Parameter view: 中止する描画中のView
--(void)detachView:(SKWVideoView* _Nonnull)view;
+- (void)detachView:(SKWVideoView* _Nonnull)view;
 @end
 
 #endif /* SKWRemoteVideoStream_h */

@@ -11,11 +11,11 @@
 
 @implementation SKWMicrophoneAudioSource
 
--(id _Nonnull)init{
+- (id _Nonnull)init {
     return [super initWithVoid];
 }
 
--(SKWLocalAudioStream* _Nonnull)createStream {
+- (SKWLocalAudioStream* _Nonnull)createStream {
     return [[SKWLocalAudioStream alloc] init];
 }
 

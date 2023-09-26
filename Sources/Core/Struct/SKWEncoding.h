@@ -11,10 +11,9 @@
 
 #import <Foundation/Foundation.h>
 
-
 /// エンコード設定
 NS_SWIFT_NAME(Encoding)
-@interface SKWEncoding: NSObject
+@interface SKWEncoding : NSObject
 
 /// エンコードID
 ///
@@ -37,7 +36,6 @@ NS_SWIFT_NAME(Encoding)
 /// ```
 @property NSString* _Nullable id;
 
-
 /// 最大ビットレート
 @property int maxBitrate;
 
@@ -46,7 +44,7 @@ NS_SWIFT_NAME(Encoding)
 /// このオプションはVideoStreamのみ有効です。
 ///
 /// 例えば2.0を設定してPublishを行うと、縦横それぞれ半分の解像度にスケールダウンするのでオリジナルの映像の25%まで解像度が下がります。
-/// 
+///
 /// デフォルトでは1.0です。
 @property double scaleResolutionDownBy;
 

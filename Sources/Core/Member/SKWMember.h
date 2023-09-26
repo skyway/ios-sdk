@@ -21,7 +21,7 @@ typedef NS_ENUM(NSUInteger, SKWMemberState) {
 @class SKWSubscription;
 
 NS_SWIFT_NAME(Member)
-@interface SKWMember: NSObject
+@interface SKWMember : NSObject
 
 typedef void (^SKWMemberUpdateMetadataCompletion)(NSError* _Nullable);
 typedef void (^SKWMemberLeaveCompletion)(NSError* _Nullable);
@@ -36,8 +36,9 @@ typedef void (^SKWMemberLeaveCompletion)(NSError* _Nullable);
 @property(nonatomic, readonly) NSArray<SKWPublication*>* _Nonnull publications;
 @property(nonatomic, readonly) NSArray<SKWSubscription*>* _Nonnull subscriptions;
 
--(void)updateMetadata:(NSString* _Nonnull)metadata completion:(SKWMemberUpdateMetadataCompletion _Nullable)completion;
--(void)leaveWithCompletion:(SKWMemberLeaveCompletion _Nullable)completion;
+- (void)updateMetadata:(NSString* _Nonnull)metadata
+            completion:(SKWMemberUpdateMetadataCompletion _Nullable)completion;
+- (void)leaveWithCompletion:(SKWMemberLeaveCompletion _Nullable)completion;
 
 @end
 
@@ -47,25 +48,21 @@ NS_SWIFT_NAME(MemberDelegate)
 @optional
 /// MemberがChannelから退出した時にコールされます。
 /// - Parameter member: Member
--(void)memberDidLeave:(SKWMember* _Nonnull)member;
+- (void)memberDidLeave:(SKWMember* _Nonnull)member;
 
 /// Memberのメタデータが更新された時にコールされます。
 /// - Parameters:
 ///   - member: Member
 ///   - metatada: 更新後のMetada
--(void)member:(SKWMember* _Nonnull)member didUpdateMetadata:(NSString* _Nonnull)metatada;
-
+- (void)member:(SKWMember* _Nonnull)member didUpdateMetadata:(NSString* _Nonnull)metatada;
 
 /// MemberがPublishしているStreamの数が変化した時にコールされます。
 /// - Parameter member: Member
--(void)memberPublicationListDidChange:(SKWMember* _Nonnull)member;
-
+- (void)memberPublicationListDidChange:(SKWMember* _Nonnull)member;
 
 /// MemberがSubscribeしているStreamの数が変化した時にコールされます。
 /// - Parameter member: Member
--(void)memberSubscriptionListDidChange:(SKWMember* _Nonnull)member;
+- (void)memberSubscriptionListDidChange:(SKWMember* _Nonnull)member;
 @end
-
-
 
 #endif /* SKWMember_h */

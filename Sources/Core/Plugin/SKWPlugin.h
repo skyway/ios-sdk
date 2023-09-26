@@ -18,7 +18,7 @@ NS_SWIFT_NAME(Plugin)
 /// Botタイプ
 @property(nonatomic, readonly) NSString* _Nonnull subtype;
 
--(id _Nonnull)init NS_UNAVAILABLE;
+- (id _Nonnull)init NS_UNAVAILABLE;
 
 @end
 

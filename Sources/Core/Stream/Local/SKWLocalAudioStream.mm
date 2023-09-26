@@ -7,26 +7,26 @@
 //
 #import <WebRTC/WebRTC.h>
 
-#import "SKWLocalAudioStream.h"
 #import "SKWContext+Internal.h"
+#import "SKWLocalAudioStream.h"
 
 #import "NSString+StdString.h"
 
 #import <skyway/core/stream/local/audio_stream.hpp>
 
-#import "SKWStream+Internal.h"
 #import "RTCAudioTrack+Private.h"
+#import "SKWStream+Internal.h"
 
 using NativeLocalAudioStream = skyway::core::stream::local::LocalAudioStream;
 
 @implementation SKWLocalAudioStream
 
--(id _Nonnull)init{
+- (id _Nonnull)init {
     RTCPeerConnectionFactory* pcFactory = SKWContext.pcFactory;
-    NSString* trackId = [[[NSUUID UUID] UUIDString] lowercaseString];
-    RTCAudioTrack* track = [pcFactory audioTrackWithTrackId:trackId];
-    auto nativeTrack = track.nativeAudioTrack;
-    auto native = std::make_shared<NativeLocalAudioStream>(nativeTrack);
+    NSString* trackId                   = [[[NSUUID UUID] UUIDString] lowercaseString];
+    RTCAudioTrack* track                = [pcFactory audioTrackWithTrackId:trackId];
+    auto nativeTrack                    = track.nativeAudioTrack;
+    auto native                         = std::make_shared<NativeLocalAudioStream>(nativeTrack);
 
     self = [super initWithSharedNative:native];
     return self;

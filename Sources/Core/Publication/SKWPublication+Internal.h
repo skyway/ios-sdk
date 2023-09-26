@@ -17,17 +17,17 @@
 
 using NativePublication = skyway::core::interface::Publication;
 
-@interface SKWPublication()
+@interface SKWPublication ()
 
 @property(nonatomic, readonly) NativePublication* _Nonnull native;
 @property(nonatomic, readonly, weak) ChannelStateRepository* _Nullable repository;
 
--(id _Nonnull)initWithNative:(NativePublication* _Nonnull)native repository:(ChannelStateRepository* _Nonnull)repository;
+- (id _Nonnull)initWithNative:(NativePublication* _Nonnull)native
+                   repository:(ChannelStateRepository* _Nonnull)repository;
 
--(void)setStream:(SKWLocalStream* _Nonnull)stream;
--(void)dispose;
+- (void)setStream:(SKWLocalStream* _Nonnull)stream;
+- (void)dispose;
 
 @end
-
 
 #endif /* SKWPublication_Internal_h */

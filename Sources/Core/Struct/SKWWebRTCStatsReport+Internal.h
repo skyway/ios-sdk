@@ -9,14 +9,13 @@
 #ifndef SKWWebRTCStatsReport_Internal_h
 #define SKWWebRTCStatsReport_Internal_h
 
-#import "SKWWebRTCStatsReport.h"
 #import <skyway/model/domain.hpp>
+#import "SKWWebRTCStatsReport.h"
 
-@interface SKWWebRTCStatsReport()
+@interface SKWWebRTCStatsReport ()
 
--(id _Nonnull)initWithNativeReport:(skyway::model::WebRTCStatsReport)report;
+- (id _Nonnull)initWithNativeReport:(skyway::model::WebRTCStatsReport)report;
 
 @end
-
 
 #endif /* SKWWebRTCStatsReport_Internal_h */

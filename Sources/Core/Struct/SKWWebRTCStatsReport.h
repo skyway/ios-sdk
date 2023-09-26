@@ -16,7 +16,7 @@
 /// 併せて公式サイトの通信状態の統計的分析もご確認ください。
 /// https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/
 NS_SWIFT_NAME(WebRTCStatsReport)
-@interface SKWWebRTCStatsReport: NSObject
+@interface SKWWebRTCStatsReport : NSObject
 
 /// 統計情報のID
 @property(nonatomic, readonly) NSString* _Nonnull id;
@@ -42,9 +42,8 @@ NS_SWIFT_NAME(WebRTCStatsReport)
 /// 配列・オブジェクトの場合、JSON文字列をNSData型で返します。
 @property(nonatomic, readonly) NSDictionary<NSString*, NSObject*>* _Nonnull params;
 
--(id _Nonnull)init NS_UNAVAILABLE;
+- (id _Nonnull)init NS_UNAVAILABLE;
 
 @end
-
 
 #endif /* SKWWebRTCStatsReport_h */

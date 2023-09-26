@@ -11,9 +11,9 @@
 
 #import "SKWRemotePersonPlugin.h"
 
-@interface SKWRemotePersonPlugin()
+@interface SKWRemotePersonPlugin ()
 
--(id _Nonnull)initWithVoid;
+- (id _Nonnull)initWithVoid;
 
 @end
 

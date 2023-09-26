@@ -7,9 +7,9 @@
 //
 
 #import "SKWStream.h"
+#import "NSString+StdString.h"
 #import "SKWStream+Internal.h"
 #import "Type+Internal.h"
-#import "NSString+StdString.h"
 
 #import <skyway/core/interface/stream.hpp>
 
@@ -17,22 +17,22 @@ using NativeStream = skyway::core::interface::Stream;
 
 @implementation SKWStream
 
--(id _Nonnull)initWithSharedNative:(std::shared_ptr<NativeStream>)native {
-    if(self = [super init]) {
+- (id _Nonnull)initWithSharedNative:(std::shared_ptr<NativeStream>)native {
+    if (self = [super init]) {
         _native = native;
     }
     return self;
 }
 
--(NSString* _Nonnull)id {
+- (NSString* _Nonnull)id {
     return [NSString stringForStdString:_native->Id()];
 }
 
--(SKWSide)side{
+- (SKWSide)side {
     return SKWSideFromNativeSide(_native->Side());
 }
 
--(SKWContentType)contentType {
+- (SKWContentType)contentType {
     return SKWContentTypeFromNativeContentType(_native->ContentType());
 }
 

@@ -12,14 +12,14 @@
 #import <AVFoundation/AVFoundation.h>
 #import <WebRTC/WebRTC.h>
 
-#import "SKWVideoView.h"
 #import "SKWLocalVideoStream.h"
 #import "SKWRemoteVideoStream.h"
+#import "SKWVideoView.h"
 
-@interface SKWVideoView()<RTCVideoViewDelegate>
+@interface SKWVideoView () <RTCVideoViewDelegate>
 
--(void)addRendererWithTrack:(RTCVideoTrack* _Nonnull)track;
--(void)removeRenderer;
+- (void)addRendererWithTrack:(RTCVideoTrack* _Nonnull)track;
+- (void)removeRenderer;
 @end
 
 #endif /* SKWVideoView_Internal_h */

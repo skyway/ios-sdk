@@ -13,9 +13,9 @@
 
 #include "SKWCameraPreviewView.h"
 
-@interface SKWCameraPreviewView()
--(void)renderWithCaptureSession:(AVCaptureSession* _Nonnull)captureSession;
--(void)stopRendering;
+@interface SKWCameraPreviewView ()
+- (void)renderWithCaptureSession:(AVCaptureSession* _Nonnull)captureSession;
+- (void)stopRendering;
 @end
 
 #endif /* SKWCameraPreviewView_Internal_h */

@@ -33,12 +33,12 @@
 NS_SWIFT_NAME(CustomFrameVideoSource)
 @interface SKWCustomFrameVideoSource : SKWVideoSource
 
--(id _Nonnull)init;
+- (id _Nonnull)init;
 
 /// 画像のサンプルバッファを更新します。
-/// 
+///
 /// @param sampleBuffer 更新する画像フレームのサンプルバッファ
--(void)updateFrameWithSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer;
+- (void)updateFrameWithSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer;
 @end
 
 #endif /* SKWCustomFrameVideoSource_h */

@@ -15,11 +15,11 @@
 
 using NativeCodec = skyway::model::Codec;
 
-@interface SKWCodec()
+@interface SKWCodec ()
 
-+(SKWCodec*)codecForNativeCodec:(NativeCodec)nativeCodec;
++ (SKWCodec*)codecForNativeCodec:(NativeCodec)nativeCodec;
 
--(NativeCodec)nativeCodec;
+- (NativeCodec)nativeCodec;
 
 @end
 

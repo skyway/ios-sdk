@@ -18,10 +18,9 @@
 ///
 /// 同じLocalStreamインスタンスを複数回Publishすることはできません。
 NS_SWIFT_NAME(LocalStream)
-@interface SKWLocalStream: SKWStream
+@interface SKWLocalStream : SKWStream
 
--(id _Nonnull)init NS_UNAVAILABLE;
-
+- (id _Nonnull)init NS_UNAVAILABLE;
 
 @end
 

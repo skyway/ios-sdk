@@ -13,14 +13,14 @@
 
 #import "SKWLocalVideoStream.h"
 
-@interface SKWLocalVideoStream()
+@interface SKWLocalVideoStream ()
 
--(id _Nonnull)initWithSource:(SKWVideoSource* _Nonnull)source;
+- (id _Nonnull)initWithSource:(SKWVideoSource* _Nonnull)source;
 
--(id _Nonnull)initWithSource:(SKWVideoSource* _Nonnull)source
-              rtcVideoSource:(RTCVideoSource* _Nonnull)rtcVideoSource;
+- (id _Nonnull)initWithSource:(SKWVideoSource* _Nonnull)source
+               rtcVideoSource:(RTCVideoSource* _Nonnull)rtcVideoSource;
 
--(void)customFrameUpdated:(NSNotification* _Nonnull)notification;
+- (void)customFrameUpdated:(NSNotification* _Nonnull)notification;
 
 @end
 

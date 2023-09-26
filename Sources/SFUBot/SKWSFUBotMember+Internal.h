@@ -9,16 +9,18 @@
 #ifndef SKWSFUBotMember_Internal_h
 #define SKWSFUBotMember_Internal_h
 
-#import "SKWSFUBotMember.h"
 #import "ChannelStateRepository.h"
+#import "SKWSFUBotMember.h"
 
 #import <skyway/plugin/sfu_bot_plugin/sfu_bot.hpp>
 
 using NativeSFUBot = skyway::plugin::sfu_bot::SfuBot;
 
-@interface SKWSFUBotMember()
+@interface SKWSFUBotMember ()
 
--(id _Nonnull)initWithNativeSFUBot:(NativeSFUBot* _Nonnull)native repository:(ChannelStateRepository* _Nonnull)repository;;
+- (id _Nonnull)initWithNativeSFUBot:(NativeSFUBot* _Nonnull)native
+                         repository:(ChannelStateRepository* _Nonnull)repository;
+;
 
 @end
 

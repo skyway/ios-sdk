@@ -8,60 +8,59 @@
 
 #import <WebRTC/WebRTC.h>
 
-#import "SKWVideoView.h"
-#import "SKWVideoView+Internal.h"
 #import "DispatchMainSync.h"
+#import "SKWVideoView+Internal.h"
+#import "SKWVideoView.h"
 
-
-@interface SKWVideoView(){
+@interface SKWVideoView () {
     RTCVideoTrack* videoTrack;
 }
 @end
 
 @implementation SKWVideoView
 
--(void)setVideoContentMode:(UIViewContentMode)videoContentMode {
-    if(_rendererView) {
+- (void)setVideoContentMode:(UIViewContentMode)videoContentMode {
+    if (_rendererView) {
         RTCMTLVideoView* mtlRendererView = (RTCMTLVideoView*)_rendererView;
         mtlRendererView.videoContentMode = videoContentMode;
     }
     _videoContentMode = videoContentMode;
 }
 
--(void)addRendererWithTrack:(RTCVideoTrack* _Nonnull)track {
+- (void)addRendererWithTrack:(RTCVideoTrack* _Nonnull)track {
     RTCMTLVideoView* mtlRendererView = [[RTCMTLVideoView alloc] init];
     mtlRendererView.videoContentMode = _videoContentMode;
-    mtlRendererView.delegate = self;
-    if(_rendererView != nil) {
+    mtlRendererView.delegate         = self;
+    if (_rendererView != nil) {
         [self removeRenderer];
     }
-    _rendererView = mtlRendererView;
+    _rendererView       = mtlRendererView;
     _rendererView.frame = self.bounds;
-    videoTrack = track;
+    videoTrack          = track;
     dispatch_main_sync(^{
-        [track addRenderer:mtlRendererView];
-        [self addSubview:mtlRendererView];
+      [track addRenderer:mtlRendererView];
+      [self addSubview:mtlRendererView];
     });
 }
 
--(void)removeRenderer {
+- (void)removeRenderer {
     dispatch_main_sync(^{
-        RTCMTLVideoView* mtlRendererView = (RTCMTLVideoView*)self->_rendererView;
-        [self->videoTrack removeRenderer:mtlRendererView];
-        [self->_rendererView removeFromSuperview];
-        self->videoTrack = nil;
-        self->_rendererView = nil;
+      RTCMTLVideoView* mtlRendererView = (RTCMTLVideoView*)self->_rendererView;
+      [self->videoTrack removeRenderer:mtlRendererView];
+      [self->_rendererView removeFromSuperview];
+      self->videoTrack    = nil;
+      self->_rendererView = nil;
     });
 }
 
--(void)layoutSubviews {
+- (void)layoutSubviews {
     [super layoutSubviews];
-    if(_rendererView) {
+    if (_rendererView) {
         _rendererView.frame = self.bounds;
     }
 }
 
--(void)layoutIfNeeded {
+- (void)layoutIfNeeded {
     [super layoutIfNeeded];
 }
 

@@ -13,7 +13,7 @@ import SkyWayCore
     init(core: RemotePerson, room: Room) {
         super.init(core: core, room: room)
     }
-    
+
     /// イベントデリゲート
     @objc public var delegate: RemoteRoomMemberDelegate? {
         get {
@@ -24,7 +24,7 @@ import SkyWayCore
             _delegate = value
         }
     }
-    
+
     /// PublicationをSubscribeさせます。
     ///
     /// - Parameters:
@@ -36,19 +36,22 @@ import SkyWayCore
             self.subscribe(publicationId: publicationId) { subscription, error in
                 if let subscription = subscription {
                     continuation.resume(returning: subscription)
-                }else {
+                } else {
                     continuation.resume(throwing: error!)
                 }
             }
         }
     }
-    
+
     /// PublicationをSubscribeさせます。
     ///
     /// - Parameters:
     ///   - publicationId: SubscribeするPublicationのID
     ///   - completion: 完了コールバック
-    @objc public func subscribe(publicationId: String, completion:((RoomSubscription?, Error?)->Void)?) {
+    @objc public func subscribe(
+        publicationId: String,
+        completion: ((RoomSubscription?, Error?) -> Void)?
+    ) {
         let person = core as! RemotePerson
         person.subscribePublication(publicationID: publicationId) { (subscription, error) in
             guard let subscription = subscription else {
@@ -58,29 +61,29 @@ import SkyWayCore
             completion?(subscription.toRoomSubscription(self.room), nil)
         }
     }
-    
+
     /// Subscribeを中止させます。
     ///
     /// - Parameter subscriptionId: 停止するSubscriptionのID
     @available(iOS 13.0, *)
     @objc public func unsubscribe(subscriptionId: String) async throws {
-        try await withCheckedThrowingContinuation { (continuation: CheckedContinuation<Void, Error>) in
+        try await withCheckedThrowingContinuation {
+            (continuation: CheckedContinuation<Void, Error>) in
             self.unsubscribe(subscriptionId: subscriptionId) { error in
                 if let error = error {
                     continuation.resume(throwing: error)
-                }else {
+                } else {
                     continuation.resume()
                 }
             }
         }
     }
-    
-    
+
     /// Subscribeを中止させます。
     ///
     /// - Parameter subscriptionId: 停止するSubscriptionのID
     ///   - completion: 完了コールバック
-    @objc public func unsubscribe(subscriptionId: String, completion:((Error?)->Void)?){
+    @objc public func unsubscribe(subscriptionId: String, completion: ((Error?) -> Void)?) {
         let person = core as! RemotePerson
         person.unsubscribe(subscriptionID: subscriptionId) { error in
             guard error == nil else {

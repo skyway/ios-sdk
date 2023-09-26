@@ -15,9 +15,9 @@
 
 using NativePublicationOptions = skyway::core::channel::member::LocalPerson::PublicationOptions;
 
-@interface SKWPublicationOptions()
+@interface SKWPublicationOptions ()
 
--(NativePublicationOptions)nativePublicationOptions;
+- (NativePublicationOptions)nativePublicationOptions;
 
 @end
 

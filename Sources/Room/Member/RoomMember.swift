@@ -16,54 +16,41 @@ import SkyWayCore
     @objc public let roomName: String?
     /// 入室しているRoomの種別
     @objc public let roomType: RoomType
-    
+
     /// Memberを識別するためのID
     @objc public var id: String {
-        get {
-            return core.id
-        }
+        return core.id
     }
-    
+
     /// Memberの名前
     @objc public var name: String? {
-        get {
-            return core.name
-        }
+        return core.name
     }
-    
+
     /// メタデータ
     @objc public var metadata: String? {
-        get {
-            return core.metadata
-        }
+        return core.metadata
     }
-    
+
     /// ステート
     ///
     /// Leftの場合、このオブジェクトの操作は無効です。
     @objc public var state: MemberState {
-        get {
-            return core.state
-        }
+        return core.state
     }
-    
+
     /// Publish中のPublication一覧
     @objc public var publications: [RoomPublication] {
-        get {
-            return room?.publications.filter({ $0.publisher == self }) ?? []
-        }
+        return room?.publications.filter({ $0.publisher == self }) ?? []
     }
-    
-    
+
     /// Subscribe中のSubscription一覧
     @objc public var subscriptions: [RoomSubscription] {
-        get {
-            return core.subscriptions.map({ $0.toRoomSubscription(room) })
-        }
+        return core.subscriptions.map({ $0.toRoomSubscription(room) })
     }
-    
+
     weak var _delegate: RoomMemberDelegate?
-    
+
     let core: Member
     weak var room: Room?
     init(core: Member, room: Room) {
@@ -73,24 +60,24 @@ import SkyWayCore
         self.core = core
         self.room = room
     }
-    
-    
+
     /// メタデータを更新します。
     ///
     /// - Parameter metadata: 更新するメタデータ
     @available(iOS 13.0, *)
     @objc public func updateMetadata(_ metadata: String) async throws {
-        try await withCheckedThrowingContinuation { (continuation: CheckedContinuation<Void, Error>) in
+        try await withCheckedThrowingContinuation {
+            (continuation: CheckedContinuation<Void, Error>) in
             self.updateMetadata(metadata) { error in
                 if let error = error {
                     continuation.resume(throwing: error)
-                }else {
+                } else {
                     continuation.resume()
                 }
             }
         }
     }
-    
+
     /// メタデータを更新します。
     ///
     /// - Parameters:
@@ -101,29 +88,30 @@ import SkyWayCore
             completion?(error)
         }
     }
-    
+
     /// Roomから退出します。
     ///
     /// Memberを指定してRoomの`leave(_:)`をコールした時と同じ効果です。
     @available(iOS 13.0, *)
     @objc public func leave() async throws {
-        try await withCheckedThrowingContinuation { (continuation: CheckedContinuation<Void, Error>) in
+        try await withCheckedThrowingContinuation {
+            (continuation: CheckedContinuation<Void, Error>) in
             self.leave { error in
                 if let error = error {
                     continuation.resume(throwing: error)
-                }else {
+                } else {
                     continuation.resume()
                 }
             }
         }
     }
-    
+
     /// Roomから退出します。
     ///
     /// Memberを指定してRoomの`leave(_:)`をコールした時と同じ効果です。
     /// - Parameter completion: 完了コールバック
-    @objc public func leave(completion: ((Error?)->Void)?) {
-        core.leave() { error in
+    @objc public func leave(completion: ((Error?) -> Void)?) {
+        core.leave { error in
             guard error == nil else {
                 completion?(error)
                 return
@@ -131,12 +119,12 @@ import SkyWayCore
             completion?(nil)
         }
     }
-    
+
     // MARK: - NSObject
     override open func isEqual(_ object: Any?) -> Bool {
         return (object as? RoomMember)?.id == self.id
     }
-    
+
     open override var hash: Int {
         var hasher: Hasher = .init()
         id.hash(into: &hasher)
@@ -150,7 +138,7 @@ extension Member {
         case is LocalPerson:
             if room is P2PRoom {
                 return LocalP2PRoomMember.init(core: (self as! LocalPerson), room: room)
-            }else if room is SFURoom {
+            } else if room is SFURoom {
                 return LocalSFURoomMember.init(core: (self as! LocalPerson), room: room)
             }
         case is RemotePerson:

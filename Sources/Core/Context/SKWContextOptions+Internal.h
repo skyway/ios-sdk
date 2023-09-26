@@ -11,11 +11,11 @@
 
 #import <skyway/core/context.hpp>
 
-@interface SKWContextOptionsRTCConfig()
--(skyway::core::ContextOptions::RtcConfig)native;
+@interface SKWContextOptionsRTCConfig ()
+- (skyway::core::ContextOptions::RtcConfig)native;
 @end
 
-@interface SKWContextOptions()
--(skyway::core::ContextOptions)nativeOptions;
+@interface SKWContextOptions ()
+- (skyway::core::ContextOptions)nativeOptions;
 @end
 #endif /* SKWContextOptions_Internal_h */

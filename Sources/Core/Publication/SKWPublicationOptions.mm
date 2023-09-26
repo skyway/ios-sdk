@@ -7,30 +7,30 @@
 //
 
 #import "SKWPublicationOptions.h"
-#import "SKWPublicationOptions+Internal.h"
 #import "NSString+StdString.h"
+#import "SKWPublicationOptions+Internal.h"
 
 #import "SKWCodec+Internal.h"
 #import "SKWEncoding+Internal.h"
 
 @implementation SKWPublicationOptions
 
--(id)init{
-    if(self = [super init]) {
+- (id)init {
+    if (self = [super init]) {
         _isEnabled = true;
     }
     return self;
 }
 
--(NativePublicationOptions)nativePublicationOptions {
+- (NativePublicationOptions)nativePublicationOptions {
     NativePublicationOptions nativeOptions;
-    if(_metadata != nil) {
+    if (_metadata != nil) {
         nativeOptions.metadata = [NSString stdStringForString:_metadata];
     }
-    for(SKWCodec* codec in _codecCapabilities) {
+    for (SKWCodec* codec in _codecCapabilities) {
         nativeOptions.codec_capabilities.emplace_back(codec.nativeCodec);
     }
-    for(SKWEncoding* encoding in _encodings) {
+    for (SKWEncoding* encoding in _encodings) {
         nativeOptions.encodings.emplace_back(encoding.nativeEncoding);
     }
     return nativeOptions;

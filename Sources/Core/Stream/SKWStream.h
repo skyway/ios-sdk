@@ -15,17 +15,17 @@
 
 NS_SWIFT_NAME(VideoStreamProtocol)
 @protocol SKWVideoStreamProtocol <NSObject>
--(void)attachView:(SKWVideoView* _Nonnull)view;
--(void)detachView:(SKWVideoView* _Nonnull)view;
+- (void)attachView:(SKWVideoView* _Nonnull)view;
+- (void)detachView:(SKWVideoView* _Nonnull)view;
 @end
 
 /// Stream抽象クラス
 NS_SWIFT_NAME(Stream)
-@interface SKWStream: NSObject
+@interface SKWStream : NSObject
 
 /// ID
 @property(nonatomic, readonly) NSString* _Nonnull id;
-///LocalかRemoteかを返します。
+/// LocalかRemoteかを返します。
 @property(nonatomic, readonly) SKWSide side;
 /// コンテントタイプを返します。
 @property(nonatomic, readonly) SKWContentType contentType;

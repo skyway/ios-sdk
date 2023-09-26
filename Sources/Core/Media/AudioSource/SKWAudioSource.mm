@@ -10,11 +10,11 @@
 
 @implementation SKWAudioSource
 
--(id _Nonnull)initWithVoid{
+- (id _Nonnull)initWithVoid {
     return [super init];
 }
 
--(SKWLocalAudioStream* _Nonnull)createStream {
+- (SKWLocalAudioStream* _Nonnull)createStream {
     return nil;
 }
 @end

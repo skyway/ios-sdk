@@ -11,12 +11,12 @@
 
 #import <UIKit/UIKit.h>
 
-
 /// カメラプレビュー用View
 ///
 /// 描画するためには`SKWCameraVideoSource`の`attachView(_)`に引数を渡してください。
 ///
-/// StoryboardのCustom Classを利用する場合は`CameraPreviewView`ではなく`SKWCameraPreviewView`を指定して下さい。
+/// StoryboardのCustom
+/// Classを利用する場合は`CameraPreviewView`ではなく`SKWCameraPreviewView`を指定して下さい。
 NS_SWIFT_NAME(CameraPreviewView)
 @interface SKWCameraPreviewView : UIView
 

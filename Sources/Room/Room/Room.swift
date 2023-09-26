@@ -9,7 +9,7 @@
 import SkyWayCore
 
 /// ルームの状態
-@objc public enum RoomState: Int{
+@objc public enum RoomState: Int {
     /// オープン状態
     ///
     /// アクティブでRoomおよび、Roomで管理しているリソースが有効です
@@ -20,8 +20,8 @@ import SkyWayCore
     ///
     /// この状態の時、Roomオブジェクトは利用できません
     case closed
-    static func Create(core: ChannelState) -> RoomState {
-        switch(core) {
+    static func create(core: ChannelState) -> RoomState {
+        switch core {
         case .Opened:
             return Self.opened
         case .Closed:
@@ -72,7 +72,7 @@ import SkyWayCore
             return core
         }
     }
-    
+
     /// RoomMember初期化オプション
     @objc public class MemberInitOptions: NSObject {
         /// Memberの名前
@@ -99,72 +99,54 @@ import SkyWayCore
             return core
         }
     }
-    
+
     /// Roomを識別するID
     @objc public var id: String {
-        get {
-            return channel.id
-        }
+        return channel.id
     }
-    
+
     /// Roomの名前
     @objc public var name: String? {
-        get {
-            return channel.name
-        }
+        return channel.name
     }
-    
+
     /// メタデータ
     @objc public var metadata: String? {
-        get {
-            return channel.metadata
-        }
+        return channel.metadata
     }
-    
-    
+
     /// ステート
     ///
     /// closedの場合、このオブジェクトの操作は無効です。
     @objc public var state: RoomState {
-        get {
-            return RoomState.Create(core: channel.state)
-        }
+        return RoomState.create(core: channel.state)
     }
-    
-    
+
     /// 入室しているメンバーの一覧
     @objc public var members: [RoomMember] {
-        get {
-            return channel.members.map({ $0.toRoomMember(self) })
-        }
+        return channel.members.map({ $0.toRoomMember(self) })
     }
-    
-    
+
     /// このRoomでPublishされているStreamのPublication一覧
     @objc public var publications: [RoomPublication] {
-        get {
-            return channel.publications.map({ $0.toRoomPublication(self) })
-        }
+        return channel.publications.map({ $0.toRoomPublication(self) })
     }
-    
-    
+
     /// このRoomでSubscribeされているSubscription一覧
     @objc public var subscriptions: [RoomSubscription] {
-        get {
-            return channel.subscriptions.map({ $0.toRoomSubscription(self) })
-        }
+        return channel.subscriptions.map({ $0.toRoomSubscription(self) })
     }
-    
+
     /// イベントデリゲート
     @objc public weak var delegate: RoomDelegate?
-    
+
     let channel: Channel
     init(channel: Channel) {
         self.channel = channel
         super.init()
         self.channel.delegate = self
     }
-    
+
     /// RoomにLocalRoomMemberを作成し、入室させます。
     ///
     /// 1RoomインスタンスにJoinできるLocalRoomMemberは1人だけです。
@@ -176,20 +158,23 @@ import SkyWayCore
             self.join(with: options) { member, error in
                 if let member = member {
                     continuation.resume(returning: member)
-                }else {
+                } else {
                     continuation.resume(throwing: error!)
                 }
             }
         }
     }
-    
+
     /// RoomにLocalRoomMemberを作成し、入室させます。
     ///
     /// 1RoomインスタンスにJoinできるLocalRoomMemberは1人だけです。
     /// - Parameters:
     ///   - options: Member初期化オプション
     ///   - completion: 完了コールバック
-    @objc public func join(with options: MemberInitOptions?, completion:((LocalRoomMember?, Error?) -> Void)?) {
+    @objc public func join(
+        with options: MemberInitOptions?,
+        completion: ((LocalRoomMember?, Error?) -> Void)?
+    ) {
         let _options: MemberInitOptions = options ?? .init()
         if _options.name == nil {
             _options.name = UUID().uuidString.lowercased()
@@ -203,32 +188,33 @@ import SkyWayCore
             completion?((roomMember as? LocalRoomMember), nil)
         }
     }
-    
+
     /// メタデータを更新します。
     ///
     /// - Parameter metadata: 更新するメタデータ
     @available(iOS 13.0, *)
     @objc public func updateMetadata(_ metadata: String) async throws {
-        try await withCheckedThrowingContinuation { (continuation: CheckedContinuation<Void, Error>) in
+        try await withCheckedThrowingContinuation {
+            (continuation: CheckedContinuation<Void, Error>) in
             self.updateMetadata(metadata) { error in
                 if let error = error {
                     continuation.resume(throwing: error)
-                }else {
+                } else {
                     continuation.resume()
                 }
             }
         }
     }
-    
+
     /// メタデータを更新します。
     ///
     /// - Parameters:
     ///   - metadata: 更新するメタデータ
     ///   - completion: 完了コールバック
-    @objc public func updateMetadata(_ metadata: String, completion:((Error?) -> Void)?) {
-        channel.updateMetadata(metadata, completion: completion);
+    @objc public func updateMetadata(_ metadata: String, completion: ((Error?) -> Void)?) {
+        channel.updateMetadata(metadata, completion: completion)
     }
-    
+
     /// RoomからMemberを退出させます。
     ///
     /// 権限があればLocalRoomMemberだけでなく、RemoteRoomMemberも退出させることができます。
@@ -236,29 +222,31 @@ import SkyWayCore
     /// - Parameter member: 退出するMember
     @available(iOS 13.0, *)
     @objc public func leave(_ member: RoomMember) async throws {
-        try await withCheckedThrowingContinuation { (continuation: CheckedContinuation<Void, Error>) in
-            self.leave(member, completion: { error in
-                if let error = error {
-                    continuation.resume(throwing: error)
-                }else {
-                    continuation.resume()
+        try await withCheckedThrowingContinuation {
+            (continuation: CheckedContinuation<Void, Error>) in
+            self.leave(
+                member,
+                completion: { error in
+                    if let error = error {
+                        continuation.resume(throwing: error)
+                    } else {
+                        continuation.resume()
+                    }
                 }
-            })
+            )
         }
     }
-    
+
     /// RoomからMemberを退出させます。
     ///
     /// 権限があればLocalRoomMemberだけでなく、RemoteRoomMemberも退出させることができます。
     ///
     /// - Parameter member: 退出するMember
     /// - Parameter completion: 完了コールバック
-    @objc public func leave(_ member: RoomMember, completion: ((Error?)->Void)?) {
+    @objc public func leave(_ member: RoomMember, completion: ((Error?) -> Void)?) {
         channel.leaveMember(member.core, completion: completion)
     }
-    
-    
-    
+
     /// Roomを閉じます。
     ///
     /// `dispose()`とは異なり、Roomを閉じると参加しているMemberは全て退出し、Roomは破棄されます。
@@ -270,17 +258,18 @@ import SkyWayCore
     /// インスタンスにアクセスした場合、クラッシュする可能性があります。
     @available(iOS 13.0, *)
     @objc public func close() async throws {
-        try await withCheckedThrowingContinuation { (continuation: CheckedContinuation<Void, Error>) in
+        try await withCheckedThrowingContinuation {
+            (continuation: CheckedContinuation<Void, Error>) in
             self.close(completion: { error in
                 if let error = error {
                     continuation.resume(throwing: error)
-                }else {
+                } else {
                     continuation.resume()
                 }
             })
         }
     }
-    
+
     /// Roomを閉じます。
     ///
     /// `dispose()`とは異なり、Roomを閉じると参加しているMemberは全て退出し、サーバ上におけるRoomは破棄されます。
@@ -291,10 +280,10 @@ import SkyWayCore
     ///
     /// インスタンスにアクセスした場合、クラッシュする可能性があります。
     /// - Parameter completion: 完了コールバック
-    @objc public func close(completion: ((Error?)->Void)?) {
+    @objc public func close(completion: ((Error?) -> Void)?) {
         channel.close(completion: completion)
     }
-    
+
     /// Roomを閉じずにRoomインスタンスを無効にし、リソースを解放します。
     ///
     /// `close()`とは異なり、Roomは破棄しないため入室しているMemberには影響しません。
@@ -302,48 +291,47 @@ import SkyWayCore
     /// Dispose完了後にSDKで生成されたリソースにアクセスしないでください。クラッシュする可能性があります。
     @available(iOS 13.0, *)
     @objc public func dispose() async throws {
-        try await withCheckedThrowingContinuation { (continuation: CheckedContinuation<Void, Error>) in
+        try await withCheckedThrowingContinuation {
+            (continuation: CheckedContinuation<Void, Error>) in
             self.dispose(completion: { error in
                 if let error = error {
                     continuation.resume(throwing: error)
-                }else {
+                } else {
                     continuation.resume()
                 }
             })
         }
     }
-    
+
     /// Roomを閉じずにRoomインスタンスを無効にし、リソースを解放します。
     ///
     /// `close()`とは異なり、Roomは破棄しないため入室しているMemberには影響しません。
     ///
     /// Dispose完了後にSDKで生成されたリソースにアクセスしないでください。クラッシュする可能性があります。
-    @objc public func dispose(completion: ((Error?)->Void)?) {
+    @objc public func dispose(completion: ((Error?) -> Void)?) {
         channel.dispose(completion: completion)
     }
-    
+
     /// SDKのバージョンを取得します
     /// - Returns: バージョン
     @objc public static func getSDKVersion() -> String {
         let bundle = Bundle(for: self)
-        if let version = bundle.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String {
+        if let version = bundle.object(forInfoDictionaryKey: "CFBundleShortVersionString")
+            as? String
+        {
             return version
         }
         return "0.0.0"
     }
-    
-    
+
     // MARK: - NSObject
     override open func isEqual(_ object: Any?) -> Bool {
         return (object as? Room)?.id == self.id
     }
-    
+
     open override var hash: Int {
         var hasher: Hasher = .init()
         id.hash(into: &hasher)
         return hasher.finalize()
     }
 }
-
-
-

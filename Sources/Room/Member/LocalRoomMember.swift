@@ -25,7 +25,7 @@ import SkyWayCore
     init(core: LocalPerson, room: Room) {
         super.init(core: core, room: room)
     }
-    
+
     /// イベントデリゲート
     @objc public var delegate: LocalRoomMemberDelegate? {
         get {
@@ -36,7 +36,7 @@ import SkyWayCore
             _delegate = value
         }
     }
-    
+
     /// 入室しているRoomにStreamをPublishします。
     ///
     /// Streamは各種Sourceから作成できます。
@@ -50,18 +50,20 @@ import SkyWayCore
     ///   - options: Publishオプション
     /// - Returns: RoomPublication
     @available(iOS 13.0, *)
-    @objc public func publish(_ stream: LocalStream, options: RoomPublicationOptions?) async throws -> RoomPublication {
+    @objc public func publish(_ stream: LocalStream, options: RoomPublicationOptions?) async throws
+        -> RoomPublication
+    {
         try await withCheckedThrowingContinuation { continuation in
             self.publish(stream, options: options) { publication, error in
                 if let publication = publication {
                     continuation.resume(returning: publication)
-                }else {
+                } else {
                     continuation.resume(throwing: error!)
                 }
             }
         }
     }
-    
+
     /// 入室しているRoomにStreamをPublishします。
     ///
     /// Streamは各種Sourceから作成できます。
@@ -74,7 +76,11 @@ import SkyWayCore
     ///   - stream: PublishするStream
     ///   - options: Publishオプション
     ///   - completion: 完了コールバック
-    @objc public func publish(_ stream: LocalStream, options: RoomPublicationOptions?, completion:((RoomPublication?, Error?)->Void)?) {
+    @objc public func publish(
+        _ stream: LocalStream,
+        options: RoomPublicationOptions?,
+        completion: ((RoomPublication?, Error?) -> Void)?
+    ) {
         let person = core as! LocalPerson
         person.publish(stream, options: options) { (publication, error) in
             guard let publication = publication else {
@@ -84,29 +90,30 @@ import SkyWayCore
             completion?(publication.toRoomPublication(self.room), nil)
         }
     }
-    
+
     /// Publishを停止します。
     ///
     /// - Parameter publicationId: 停止するPublicationのID
     @available(iOS 13.0, *)
     @objc public func unpublish(publicationId: String) async throws {
-        try await withCheckedThrowingContinuation { (continuation: CheckedContinuation<Void, Error>) in
+        try await withCheckedThrowingContinuation {
+            (continuation: CheckedContinuation<Void, Error>) in
             self.unpublish(publicationId: publicationId) { error in
                 if let error = error {
                     continuation.resume(throwing: error)
-                }else {
+                } else {
                     continuation.resume()
                 }
             }
         }
     }
-    
+
     /// Publishを停止します。
     ///
     /// - Parameters:
     ///   - publicationId: 停止するPublicationのID
     ///   - completion: 完了コールバック
-    @objc public func unpublish(publicationId: String, completion:((Error?)->Void)?){
+    @objc public func unpublish(publicationId: String, completion: ((Error?) -> Void)?) {
         let person = core as! LocalPerson
         person.unpublish(publicationID: publicationId) { error in
             guard error == nil else {
@@ -116,7 +123,7 @@ import SkyWayCore
             completion?(nil)
         }
     }
-    
+
     /// PublicationをSubscribeします。
     ///
     /// オプションについては Core SDK のリファレンスもご確認ください。
@@ -126,18 +133,20 @@ import SkyWayCore
     ///   - options: Subscribeオプション
     /// - Returns: Subscription
     @available(iOS 13.0, *)
-    @objc public func subscribe(publicationId: String, options: SubscriptionOptions?) async throws -> RoomSubscription {
+    @objc public func subscribe(publicationId: String, options: SubscriptionOptions?) async throws
+        -> RoomSubscription
+    {
         try await withCheckedThrowingContinuation { continuation in
             self.subscribe(publicationId: publicationId, options: options) { subscription, error in
                 if let subscription = subscription {
                     continuation.resume(returning: subscription)
-                }else {
+                } else {
                     continuation.resume(throwing: error!)
                 }
             }
         }
     }
-    
+
     /// PublicationをSubscribeします。
     ///
     /// オプションについては Core SDK のリファレンスもご確認ください。
@@ -146,9 +155,14 @@ import SkyWayCore
     ///   - publicationId: SubscribeするPublicationのID
     ///   - options: Subscribeオプション
     ///   - completion: 完了コールバック
-    @objc public func subscribe(publicationId: String, options: SubscriptionOptions?, completion:((RoomSubscription?, Error?)->Void)?) {
+    @objc public func subscribe(
+        publicationId: String,
+        options: SubscriptionOptions?,
+        completion: ((RoomSubscription?, Error?) -> Void)?
+    ) {
         let person = core as! LocalPerson
-        person.subscribePublication(publicationID: publicationId, options: options) { (subscription, error) in
+        person.subscribePublication(publicationID: publicationId, options: options) {
+            (subscription, error) in
             guard let subscription = subscription else {
                 completion?(nil, error)
                 return
@@ -156,31 +170,31 @@ import SkyWayCore
             completion?(subscription.toRoomSubscription(self.room), nil)
         }
     }
-    
+
     /// Subscribeを中止します。
     ///
     /// - Parameter subscriptionId: 停止するSubscriptionのID
     @available(iOS 13.0, *)
     @objc public func unsubscribe(subscriptionId: String) async throws {
-        try await withCheckedThrowingContinuation { (continuation: CheckedContinuation<Void, Error>) in
+        try await withCheckedThrowingContinuation {
+            (continuation: CheckedContinuation<Void, Error>) in
             self.unsubscribe(subscriptionId: subscriptionId) { error in
                 if let error = error {
                     continuation.resume(throwing: error)
-                }else {
+                } else {
                     continuation.resume()
                 }
             }
         }
     }
-    
-    
+
     /// Subscribeを中止します。
-    /// 
+    ///
     /// - Parameter subscriptionId: 停止するSubscriptionのID
     ///   - completion: 完了コールバック
-    @objc public func unsubscribe(subscriptionId: String, completion:((Error?)->Void)?){
+    @objc public func unsubscribe(subscriptionId: String, completion: ((Error?) -> Void)?) {
         let person = core as! LocalPerson
-        person.unsubscribe(subscriptionID: subscriptionId) { error in 
+        person.unsubscribe(subscriptionID: subscriptionId) { error in
             guard error == nil else {
                 completion?(error)
                 return
