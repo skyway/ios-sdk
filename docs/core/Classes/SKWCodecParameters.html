@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SKWMemberDelegate Protocol Reference</title>
+    <title>SKWCodecParameters Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/objc/Protocol/SKWMemberDelegate" class="dashAnchor"></a>
-    <a title="SKWMemberDelegate Protocol Reference"></a>
+    <a name="//apple_ref/objc/Class/SKWCodecParameters" class="dashAnchor"></a>
+    <a title="SKWCodecParameters Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">SkyWayCore 1.6.0 Docs</a> (48% documented)</p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">SkyWayCore Reference</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        SKWMemberDelegate Protocol Reference
+        SKWCodecParameters Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -362,20 +362,21 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>SKWMemberDelegate</h1>
+            <h1>SKWCodecParameters</h1>
               <div class="declaration">
                 <div class="language">
                   <p class="aside-title">Objective-C</p>
-                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">SKWMemberDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+                  <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">SKWCodecParameters</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                 </div>
                 <div class="language">
                   <p class="aside-title">Swift</p>
-                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">MemberDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">CodecParameters</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
-            <p>Memberイベントデリゲート</p>
+            <p>コーデックパラメータ</p>
 
           </section>
           <section class="section task-group-section">
@@ -384,9 +385,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(pl)SKWMemberDelegate(im)memberDidLeave:"></a>
-                    <a name="//apple_ref/objc/Method/-memberDidLeave:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)SKWMemberDelegate(im)memberDidLeave:">-memberDidLeave:<wbr></a>
+                    <a name="/c:objc(cs)SKWCodecParameters(py)useDTX"></a>
+                    <a name="//apple_ref/objc/Property/useDTX" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SKWCodecParameters(py)useDTX">useDTX</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -394,116 +395,29 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>MemberがChannelから退出した時にコールされます。</p>
+                        <p>Opus DTXを利用するかどうか</p>
+
+<p>利用する場合、発話していない時の音声通信を停止します。</p>
+
+<p>コーデックでOpusが利用される場合は、デフォルトで利用します。</p>
+
+<p>利用しない場合は以下のように設定します。</p>
+<pre class="highlight objective_c"><code><span class="n">let</span> <span class="n">codec</span><span class="o">:</span> <span class="n">Codec</span> <span class="o">=</span> <span class="p">.</span><span class="n">init</span><span class="p">(</span><span class="n">mimeType</span><span class="o">:</span> <span class="s">"audio/opus"</span><span class="p">)</span>
+<span class="n">codec</span><span class="p">.</span><span class="n">parameters</span><span class="p">.</span><span class="n">useDTX</span> <span class="o">=</span> <span class="nb">false</span>
+<span class="c1">// and publish with codec options</span>
+</code></pre>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">memberDidLeave</span><span class="p">:(</span><span class="n"><a href="../Classes/SKWMember.html">SKWMember</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">member</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">BOOL</span> <span class="n">useDTX</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">memberDidLeave</span><span class="p">(</span><span class="n">_</span> <span class="nv">member</span><span class="p">:</span> <span class="kt">Member</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(pl)SKWMemberDelegate(im)member:didUpdateMetadata:"></a>
-                    <a name="//apple_ref/objc/Method/-member:didUpdateMetadata:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)SKWMemberDelegate(im)member:didUpdateMetadata:">-member:<wbr>didUpdateMetadata:<wbr></a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Memberのメタデータが更新された時にコールされます。</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">member</span><span class="p">:(</span><span class="n"><a href="../Classes/SKWMember.html">SKWMember</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">member</span>
-    <span class="nf">didUpdateMetadata</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">metatada</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">member</span><span class="p">(</span><span class="n">_</span> <span class="nv">member</span><span class="p">:</span> <span class="kt">Member</span><span class="p">,</span> <span class="n">didUpdateMetadata</span> <span class="nv">metatada</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(pl)SKWMemberDelegate(im)memberPublicationListDidChange:"></a>
-                    <a name="//apple_ref/objc/Method/-memberPublicationListDidChange:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)SKWMemberDelegate(im)memberPublicationListDidChange:">-memberPublicationListDidChange:<wbr></a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>MemberがPublishしているStreamの数が変化した時にコールされます。</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">memberPublicationListDidChange</span><span class="p">:(</span><span class="n"><a href="../Classes/SKWMember.html">SKWMember</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">member</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">memberPublicationListDidChange</span><span class="p">(</span><span class="n">_</span> <span class="nv">member</span><span class="p">:</span> <span class="kt">Member</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(pl)SKWMemberDelegate(im)memberSubscriptionListDidChange:"></a>
-                    <a name="//apple_ref/objc/Method/-memberSubscriptionListDidChange:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)SKWMemberDelegate(im)memberSubscriptionListDidChange:">-memberSubscriptionListDidChange:<wbr></a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>MemberがSubscribeしているStreamの数が変化した時にコールされます。</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">memberSubscriptionListDidChange</span><span class="p">:(</span><span class="n"><a href="../Classes/SKWMember.html">SKWMember</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">member</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">memberSubscriptionListDidChange</span><span class="p">(</span><span class="n">_</span> <span class="nv">member</span><span class="p">:</span> <span class="kt">Member</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">useDTX</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
