@@ -128,7 +128,7 @@
         NSUInteger idx       = [mutablePublications
             indexOfObjectPassingTest:^BOOL(
                 SKWPublication* _Nonnull obj, NSUInteger idx, BOOL* _Nonnull stop) {
-                    return [obj.id isEqualToString:identifier];
+              return [obj.id isEqualToString:identifier];
             }];
         if (idx != NSNotFound) {
             publication = mutablePublications[idx];
@@ -144,7 +144,7 @@
         NSUInteger idx       = [mutableSubscriptions
             indexOfObjectPassingTest:^BOOL(
                 SKWSubscription* _Nonnull obj, NSUInteger idx, BOOL* _Nonnull stop) {
-                    return [obj.id isEqualToString:identifier];
+              return [obj.id isEqualToString:identifier];
             }];
         if (idx != NSNotFound) {
             subscription = mutableSubscriptions[idx];

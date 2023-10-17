@@ -89,5 +89,5 @@ std::future<boost::optional<HttpClientInterface::Response>> HttpClient::Request(
     return promise.get_future();
 }
 
-}
-}
+}  // namespace network
+}  // namespace skyway

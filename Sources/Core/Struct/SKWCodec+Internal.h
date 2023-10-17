@@ -15,6 +15,11 @@
 
 using NativeCodec = skyway::model::Codec;
 
+@interface SKWCodecParameters ()
++ (SKWCodecParameters*)parameterForNativeParameter:(NativeCodec::Parameters)nativeParameters;
+- (NativeCodec::Parameters)nativeParameter;
+@end
+
 @interface SKWCodec ()
 
 + (SKWCodec*)codecForNativeCodec:(NativeCodec)nativeCodec;

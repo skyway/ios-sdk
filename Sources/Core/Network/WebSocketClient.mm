@@ -220,5 +220,5 @@ std::shared_ptr<interface::WebSocketClient> WebSocketClientFactory::Create() {
     return std::make_shared<WebSocketClient>();
 }
 
-}
-}
+}  // namespace network
+}  // namespace skyway

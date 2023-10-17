@@ -198,5 +198,5 @@ void Logger::Error(const std::string& msg,
                                    line:line];
 }
 
-}
-}
+}  // namespace global
+}  // namespace skyway

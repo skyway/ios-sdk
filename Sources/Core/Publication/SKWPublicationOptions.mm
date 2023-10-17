@@ -33,6 +33,7 @@
     for (SKWEncoding* encoding in _encodings) {
         nativeOptions.encodings.emplace_back(encoding.nativeEncoding);
     }
+    nativeOptions.is_enabled = _isEnabled;
     return nativeOptions;
 }
 
