@@ -11,7 +11,7 @@ import SkyWayCore
 extension RoomPublication: PublicationDelegate {
     public func publicationUnpublished(_ publication: Publication) {
         if shouldNotNotifyEventOnSFURoom(publication) {
-            Logger.debug(
+            InternalLogger.debug(
                 message:
                     "In the case of `SFURoom`, the event of origin publication is not notified."
             )
@@ -48,7 +48,7 @@ extension RoomPublication: PublicationDelegate {
 
     public func publicationEnabled(_ publication: Publication) {
         if shouldNotNotifyEventOnSFURoom(publication) {
-            Logger.debug(
+            InternalLogger.debug(
                 message:
                     "In the case of `SFURoom`, the event of origin publication is not notified."
             )
@@ -59,7 +59,7 @@ extension RoomPublication: PublicationDelegate {
 
     public func publicationDisabled(_ publication: Publication) {
         if shouldNotNotifyEventOnSFURoom(publication) {
-            Logger.debug(
+            InternalLogger.debug(
                 message:
                     "In the case of `SFURoom`, the event of origin publication is not notified."
             )
@@ -70,7 +70,7 @@ extension RoomPublication: PublicationDelegate {
 
     public func publicationStateDidChange(_ publication: Publication) {
         if shouldNotNotifyEventOnSFURoom(publication) {
-            Logger.debug(
+            InternalLogger.debug(
                 message:
                     "In the case of `SFURoom`, the event of origin publication is not notified."
             )

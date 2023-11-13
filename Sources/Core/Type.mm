@@ -36,6 +36,23 @@ NativeTurnPolicy nativeTurnPolicyForTurnPolicy(SKWTurnPolicy policy) {
     }
 }
 
+SKWLogLevel SKWLogLevelFromNativeLogLevel(NativeLogLevel nativeLogLevel) {
+    switch (nativeLogLevel) {
+        case NativeLogLevel::kError:
+            return SKWLogLevelError;
+        case NativeLogLevel::kWarn:
+            return SKWLogLevelWarn;
+        case NativeLogLevel::kInfo:
+            return SKWLogLevelInfo;
+        case NativeLogLevel::kDebug:
+            return SKWLogLevelDebug;
+        case NativeLogLevel::kTrace:
+            return SKWLogLevelTrace;
+        case NativeLogLevel::kOff:
+            return SKWLogLevelOff;
+    }
+}
+
 SKWSide SKWSideFromNativeSide(NativeSide nativeSide) {
     switch (nativeSide) {
         case skyway::model::Side::kLocal:

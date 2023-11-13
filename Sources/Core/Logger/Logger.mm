@@ -11,10 +11,12 @@
 #import "NSString+StdString.h"
 
 #include <string>
-#include "./Logger.hpp"
+#include "Logger.hpp"
 
-@interface LoggerDelegator : NSObject
+@interface LoggerDelegator : NSObject {
+}
 @property(nonatomic, readonly) LoggerInterface::Level level;
+@property(nonatomic, readonly) dispatch_queue_t event_queue;
 - (id)initWithLevel:(LoggerInterface::Level)level;
 - (void)traceWithMessage:(NSString*)message
                 filename:(NSString*)filename
@@ -32,9 +34,15 @@
 @end
 
 @implementation LoggerDelegator
+
+static skyway::global::Logger::Listener* _listener = nil;
+static std::mutex _listener_mtx;
+
 - (id)initWithLevel:(LoggerInterface::Level)level {
     if (self = [super init]) {
         _level = level;
+        _event_queue =
+            dispatch_queue_create("com.ntt.skyway.core.logger.event", DISPATCH_QUEUE_SERIAL);
     }
     return self;
 }
@@ -134,6 +142,13 @@
     NSString* suffix = [NSString stringWithFormat:@" | %@(%@:%d)", function, filename, line];
     NSString* output = [[prefix stringByAppendingString:message] stringByAppendingString:suffix];
     NSLog(@"%@", output);
+
+    dispatch_async(_event_queue, ^{
+      std::lock_guard<std::mutex> lg(_listener_mtx);
+      if (_listener) {
+          _listener->OnLog(level, output.stdString);
+      }
+    });
 }
 
 @end
@@ -196,6 +211,16 @@ void Logger::Error(const std::string& msg,
                                filename:[NSString stringForStdString:filename]
                                function:[NSString stringForStdString:function]
                                    line:line];
+}
+
+void Logger::RegisterListener(Listener* listener) {
+    std::lock_guard<std::mutex> lock(_listener_mtx);
+    _listener = listener;
+}
+
+void Logger::UnregisterListener() {
+    std::lock_guard<std::mutex> lock(_listener_mtx);
+    _listener = nil;
 }
 
 }  // namespace global

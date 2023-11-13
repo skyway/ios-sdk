@@ -71,12 +71,12 @@ import SkyWaySFUBot
             }),
             let origin = publication.origin
         else {
-            Logger.error(message: "The publication is missing on channel.")
+            InternalLogger.error(message: "The publication is missing on channel.")
             completion?(SKWErrorFactory.localSfuRoomMemberUnublishError())
             return
         }
         guard let room = (room as? SFURoom) else {
-            Logger.error(message: "Casting room to Sfu failed.")
+            InternalLogger.error(message: "Casting room to Sfu failed.")
             completion?(SKWErrorFactory.localSfuRoomMemberUnublishError())
             return
         }

@@ -18,6 +18,10 @@ namespace global {
 
 class Logger: public LoggerInterface {
 public:
+    class Listener {
+    public:
+        virtual void OnLog(LoggerInterface::Level level, const std::string& text) = 0;
+    };
     Logger(LoggerInterface::Level level);
     ~Logger();
     void Trace(const std::string& msg,
@@ -40,6 +44,8 @@ public:
                        const std::string& filename,
                        const std::string& function,
                        int line)       override;
+    static void RegisterListener(Listener* listener);
+    static void UnregisterListener();
 private:
     class Impl;
     std::unique_ptr<Impl> impl_;

@@ -26,6 +26,7 @@ using NativeTurnPolicy = skyway::core::TurnPolicy;
 NativeLogLevel nativeLogLevelForLogLevel(SKWLogLevel level);
 NativeTurnPolicy nativeTurnPolicyForTurnPolicy(SKWTurnPolicy policy);
 
+SKWLogLevel SKWLogLevelFromNativeLogLevel(NativeLogLevel nativeLogLevel);
 SKWSide SKWSideFromNativeSide(NativeSide nativeSide);
 SKWMemberType SKWMemberTypeFromNativeType(NativeMemberType nativeType);
 SKWContentType SKWContentTypeFromNativeContentType(NativeContentType nativeType);
