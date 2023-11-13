@@ -23,16 +23,16 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "SkyWayRoom",
-            url: "https://github.com/skyway/ios-sdk/releases/download/1.7.0/SkyWayRoom.xcframework.zip",
-            checksum: "6f38d68e99548538274a1bbf86c1ed90f04c0469db574cec8d16b0286bd42b79"),
+            url: "https://github.com/skyway/ios-sdk/releases/download/1.8.0/SkyWayRoom.xcframework.zip",
+            checksum: "25e854a7b6675c14b2189b07fcf725f40bafaa4746ea31c65100672daf502e99"),
         .binaryTarget(
             name: "SkyWayCore",
-            url: "https://github.com/skyway/ios-sdk/releases/download/1.7.0/SkyWayCore.xcframework.zip",
-            checksum: "a667b17f53c00d9226c9ed2dc286aa206c3760e956868152a9a882b0b4a989f5"),
+            url: "https://github.com/skyway/ios-sdk/releases/download/1.8.0/SkyWayCore.xcframework.zip",
+            checksum: "38896a5728df60497bfe2bdbc82cc55c76003fa5e752a13b9dfa700b63821e2b"),
         .binaryTarget(
             name: "SkyWaySFUBot",
-            url: "https://github.com/skyway/ios-sdk/releases/download/1.7.0/SkyWaySFUBot.xcframework.zip",
-            checksum: "ffe5dc7d2bce9faf580652ef2133a3d78f1408921ee1a482cc4a88b16bfeeaef"),
+            url: "https://github.com/skyway/ios-sdk/releases/download/1.8.0/SkyWaySFUBot.xcframework.zip",
+            checksum: "aee24790285d01eed1dc366f29371f39313a00c5ccbebd9d8731ba6c6a6ef2a2"),
         .binaryTarget(
             name: "WebRTC",
             url: "https://github.com/skyway/skyway-ios-webrtc-specs/releases/download/104.0.1/WebRTC.xcframework.zip",
