@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SKWCameraPreviewView Class Reference</title>
+    <title>SKWLoggerDelegate Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/objc/Class/SKWCameraPreviewView" class="dashAnchor"></a>
-    <a title="SKWCameraPreviewView Class Reference"></a>
+    <a name="//apple_ref/objc/Protocol/SKWLoggerDelegate" class="dashAnchor"></a>
+    <a title="SKWLoggerDelegate Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">SkyWayCore 1.7.0 Docs</a> (48% documented)</p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">SkyWayCore Reference</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        SKWCameraPreviewView Class Reference
+        SKWLoggerDelegate Protocol Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -365,21 +365,32 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>SKWCameraPreviewView</h1>
+            <h1>SKWLoggerDelegate</h1>
               <div class="declaration">
                 <div class="language">
-                  
-                  <pre class="highlight objective_c"><code>
-<span class="k">@interface</span> <span class="nc">SKWCameraPreviewView</span></code></pre>
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">SKWLoggerDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span>
+<span class="k">@optional</span>
+
+<span class="c1">/// SkyWay内部で出力したログのハンドラです。</span>
+<span class="c1">///</span>
+<span class="c1">/// 出力されるログのレベルは`ContextOptions.logLevel`で設定した値に依存します。</span>
+<span class="c1">///</span>
+<span class="c1">/// - Parameters:</span>
+<span class="c1">///   - log: ログメッセージ</span>
+<span class="c1">///   - level:  発生したログのレベル</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didReceiveLog</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">log</span> <span class="nf">atLevel</span><span class="p">:(</span><span class="n"><a href="../Enums/SKWLogLevel.html">SKWLogLevel</a></span><span class="p">)</span><span class="nv">level</span><span class="p">;</span>
+
+<span class="k">@end</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">LoggerDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                 </div>
               </div>
-            <p>カメラプレビュー用View</p>
-
-<p>描画するためには<code>SKWCameraVideoSource</code>の<code>attachView(_)</code>に引数を渡してください。</p>
-
-<p>StoryboardのCustom
-Classを利用する場合は<code>CameraPreviewView</code>ではなく<code>SKWCameraPreviewView</code>を指定して下さい。</p>
+            <p>Undocumented</p>
 
           </section>
           <section class="section task-group-section">
@@ -388,9 +399,9 @@ Classを利用する場合は<code>CameraPreviewView</code>ではなく<code>SKW
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)SKWCameraPreviewView(py)rendererView"></a>
-                    <a name="//apple_ref/objc/Property/rendererView" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SKWCameraPreviewView(py)rendererView">rendererView</a>
+                    <a name="/c:objc(pl)SKWLoggerDelegate(im)didReceiveLog:atLevel:"></a>
+                    <a name="//apple_ref/objc/Method/-didReceiveLog:atLevel:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SKWLoggerDelegate(im)didReceiveLog:atLevel:">-didReceiveLog:<wbr>atLevel:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -398,47 +409,21 @@ Classを利用する場合は<code>CameraPreviewView</code>ではなく<code>SKW
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Wrapしているレンダラービュー</p>
+                        <p>SkyWay内部で出力したログのハンドラです。</p>
 
-<p>ViewはSourceへAttachされた後に生成されアクセスできます。</p>
-
-<p>映像は<code>AVCaptureVideoPreviewLayer</code>で描画しています。</p>
+<p>出力されるログのレベルは<code>ContextOptions.logLevel</code>で設定した値に依存します。</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="kt">int</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">rendererView</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didReceiveLog</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">log</span> <span class="nf">atLevel</span><span class="p">:(</span><span class="n"><a href="../Enums/SKWLogLevel.html">SKWLogLevel</a></span><span class="p">)</span><span class="nv">level</span><span class="p">;</span></code></pre>
 
                         </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)SKWCameraPreviewView(py)videoGravity"></a>
-                    <a name="//apple_ref/objc/Property/videoGravity" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SKWCameraPreviewView(py)videoGravity">videoGravity</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>映像の描画モード</p>
-
-<p>デフォルトは<code>ResizeAspect</code>がセットされます。</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
                         <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">AVLayerVideoGravity</span> <span class="n">_Nonnull</span> <span class="n">videoGravity</span><span class="p">;</span></code></pre>
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didReceiveLog</span><span class="p">(</span><span class="n">_</span> <span class="nv">log</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">at</span> <span class="nv">level</span><span class="p">:</span> <span class="kt">LogLevel</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
