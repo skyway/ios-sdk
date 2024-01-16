@@ -25,7 +25,7 @@ NS_SWIFT_NAME(ForwardingConfigure)
 
 /// フォワードしたPublicationをSubscribeできる最大人数
 ///
-/// デフォルトは4人で、最大値は99です。詳しくはこちらをご覧ください。
+/// デフォルトは10人で、最大値は99です。詳しくはこちらをご覧ください。
 ///
 /// https://skyway.ntt.com/ja/docs/user-guide/sfu/
 @property(nonatomic) int maxSubscribers;

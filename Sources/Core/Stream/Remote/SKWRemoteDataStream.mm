@@ -39,6 +39,7 @@ public:
     }
 
 private:
+    // TODO: Add `__weak` attribute
     SKWRemoteDataStream* stream_;
     dispatch_group_t group_;
 };

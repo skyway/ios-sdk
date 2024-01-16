@@ -56,9 +56,16 @@
 - (std::future<bool>)connectWithUrl:(NSURL*)url subprotocol:(NSString*)subprotocol {
     @synchronized(self) {
         openPromise_ = std::promise<bool>();
-        if (_socket && _socket.readyState == SR_OPEN) {
-            openPromise_.set_value(true);
-            return openPromise_.get_future();
+        if (_socket) {
+            if (_socket.readyState == SR_OPEN) {
+                openPromise_.set_value(true);
+                return openPromise_.get_future();
+            } else {
+                // Workaround to avoid `webSocketDidOpen` is called twice
+                // in the bad network environment.
+                _socket.delegate = nil;
+                _socket          = nil;
+            }
         }
         NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL:url];
         _socket = [[SRWebSocket alloc] initWithURLRequest:request protocols:@[ subprotocol ]];
@@ -74,23 +81,25 @@
 }
 
 - (std::future<bool>)sendMessage:(NSString*)message {
-    std::promise<bool> promise;
-    if (!_socket || _socket.readyState != SR_OPEN) {
-        SKW_ERROR("Sending message failed because webSocket is not open.");
-        promise.set_value(false);
-        return promise.get_future();
-    }
+    @synchronized(self) {
+        std::promise<bool> promise;
+        if (!_socket || _socket.readyState != SR_OPEN) {
+            SKW_ERROR("Sending message failed because webSocket is not open.");
+            promise.set_value(false);
+            return promise.get_future();
+        }
 
-    NSError* error;
-    BOOL result = [_socket sendString:message error:&error];
-    if (error) {
-        std::string errorStdString = [NSString stdStringForString:[error localizedDescription]];
-        SKW_ERROR(errorStdString);
-        promise.set_value(false);
+        NSError* error;
+        BOOL result = [_socket sendString:message error:&error];
+        if (error) {
+            std::string errorStdString = [NSString stdStringForString:[error localizedDescription]];
+            SKW_ERROR(errorStdString);
+            promise.set_value(false);
+            return promise.get_future();
+        }
+        promise.set_value(result);
         return promise.get_future();
     }
-    promise.set_value(result);
-    return promise.get_future();
 }
 
 - (std::future<bool>)closeWithCode:(int)code reason:(NSString* _Nullable)reason {
@@ -127,8 +136,17 @@
 }
 
 - (void)webSocketDidOpen:(SRWebSocket*)webSocket {
-    SKW_DEBUG("🔔OnOpen")
-    openPromise_.set_value(true);
+    @synchronized(self) {
+        // Workaround to avoid `openPromise_.set_value`
+        // is called twice in the bad network environment.
+        try {
+            SKW_DEBUG("🔔OnOpen")
+            openPromise_.set_value(true);
+        } catch (std::future_error& error) {
+            SKW_WARN("The promise value has already been set.")
+            return;
+        }
+    }
 }
 
 - (void)webSocket:(SRWebSocket*)webSocket didFailWithError:(NSError*)error {

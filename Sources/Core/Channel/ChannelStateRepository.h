@@ -30,6 +30,7 @@ using NativeSubscriptionInterface = skyway::core::interface::Subscription;
 @property(nonatomic, readonly) NSArray<SKWPublication*>* _Nonnull publications;
 @property(nonatomic, readonly) NSArray<SKWSubscription*>* _Nonnull subscriptions;
 @property(nonatomic, readonly) dispatch_group_t _Nonnull eventGroup;
+@property(nonatomic, readonly) BOOL isCleared;
 
 - (id _Nonnull)initWithNative:(NativeChannelInterface* _Nonnull)native
                    eventGroup:(dispatch_group_t _Nonnull)eventGroup;

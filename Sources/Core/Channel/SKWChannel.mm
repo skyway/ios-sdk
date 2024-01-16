@@ -307,7 +307,9 @@ private:
     _native->RemoveEventListener(listener.get());
     // Remove repository resources before removing `_native`(channel)
     // because it has an ownership of native resources(e.g. member, publication etc.)
-    [_repository clear];
+    if (!_repository.isCleared) {
+        [_repository clear];
+    }
 }
 
 - (NSString* _Nonnull)id {
@@ -513,7 +515,6 @@ private:
 }
 
 - (void)disposeWithCompletion:(SKWChannelDisposeCompletion _Nullable)completion {
-    // TODO: Remove dispatch_group
     dispatch_group_notify(
         eventGroup, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
           [self->_repository clear];
