@@ -24,15 +24,15 @@ let package = Package(
         .binaryTarget(
             name: "SkyWayRoom",
             url: "https://github.com/skyway/ios-sdk/releases/download/1.8.3/SkyWayRoom.xcframework.zip",
-            checksum: "653045da086be8b65d293d2b712998d12e86b11afceea1e7eb2551bc72e2f0af"),
+            checksum: "42e3e739405ca400f3b62c8b40cf50ae043483555628aff97b097f0e26f571ea"),
         .binaryTarget(
             name: "SkyWayCore",
             url: "https://github.com/skyway/ios-sdk/releases/download/1.8.3/SkyWayCore.xcframework.zip",
-            checksum: "f985f1066284de3264cbe0b86ec3885b324ccb667454f254f4e1521b3c94d398"),
+            checksum: "f8f49b40c4528d3b52553cf305f9bb1d452e909e729109730190c631682cf652"),
         .binaryTarget(
             name: "SkyWaySFUBot",
             url: "https://github.com/skyway/ios-sdk/releases/download/1.8.3/SkyWaySFUBot.xcframework.zip",
-            checksum: "8dea6af7793b373b23788b00b5be6702ee5407ccdb1351363d5194ed3cb1ae62"),
+            checksum: "e790a3ff42b0e70a6e352f775d6b9de5324949cbd13e2f992ecf115a1fed7cfa"),
         .binaryTarget(
             name: "WebRTC",
             url: "https://github.com/skyway/skyway-ios-webrtc-specs/releases/download/104.0.1/WebRTC.xcframework.zip",
