@@ -15,6 +15,14 @@
 using NativeForwardingListener = skyway::plugin::sfu_bot::Forwarding::EventListener;
 
 @implementation SKWForwardingConfigure
+- (id _Nonnull)init {
+    if (self = [super init]) {
+        // Use this default value, not libskyway's because `maxSubscribers` can be set `0` for
+        // normal-case and Core SDK can't express optional value.
+        _maxSubscribers = skyway::plugin::sfu_bot::config::DEFAULT_MAX_SUBSCRIBERS;
+    }
+    return self;
+}
 @end
 
 class ForwardingListener : public NativeForwardingListener {

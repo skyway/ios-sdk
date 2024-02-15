@@ -105,7 +105,7 @@ private:
                                        completion {
     auto nativeBot = (NativeSFUBot*)self.native;
     NativeForwardingConfigure nativeConfigure;
-    if (configure && configure.maxSubscribers) {
+    if (configure) {
         nativeConfigure.max_subscribers = configure.maxSubscribers;
     }
 

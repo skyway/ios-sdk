@@ -30,6 +30,8 @@ NS_SWIFT_NAME(ForwardingConfigure)
 /// https://skyway.ntt.com/ja/docs/user-guide/sfu/
 @property(nonatomic) int maxSubscribers;
 
+- (id _Nonnull)init;
+
 @end
 
 /// フォワーディング

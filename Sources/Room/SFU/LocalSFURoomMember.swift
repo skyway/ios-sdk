@@ -45,7 +45,9 @@ import SkyWaySFUBot
                 return
             }
             let forwardingConfigure: ForwardingConfigure = .init()
-            forwardingConfigure.maxSubscribers = options?.maxSubscribers ?? 10
+            if let maxSubscribers = options?.maxSubscribers {
+                forwardingConfigure.maxSubscribers = maxSubscribers
+            }
             self.bot.startForwarding(publication, configure: forwardingConfigure) {
                 (forwarding, error) in
                 guard let forwarding = forwarding else {
