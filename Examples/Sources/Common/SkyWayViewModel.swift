@@ -172,6 +172,7 @@ class SkyWayViewModel: NSObject, ObservableObject, RoomDelegate, RemoteDataStrea
         if publication.publisher != localMember {
             if isAutoSubscribing {
                 Task {
+                    // `subscribe(publicationId:options:)`の返り値のsubscriptionではstreamが取得できるため、これをviewに伝える。
                     guard let sub = try? await localMember.subscribe(publicationId: publication.id, options: nil) else {
                         return
                     }
@@ -183,12 +184,17 @@ class SkyWayViewModel: NSObject, ObservableObject, RoomDelegate, RemoteDataStrea
         }
     }
     
+    func room(_ room: Room, didUnsubscribePublicationOf subscription: RoomSubscription) {
+        DispatchQueue.main.sync {
+            localSubscriptions.removeAll(where: { $0 == subscription })
+        }
+    }
+    
     func roomPublicationListDidChange(_ room: Room) {
         DispatchQueue.main.sync {
             remotePublications = room.publications.filter({ $0.publisher != localMember })
         }
     }
-    
     
     // MARK: - RemoteDataStreamDelegate
     func dataStream(_ dataStream: RemoteDataStream, didReceive string: String) {
