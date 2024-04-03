@@ -120,11 +120,17 @@ class SkyWayViewModel: NSObject, ObservableObject, RoomDelegate, RemoteDataStrea
         if let dataStream = sub.stream as? RemoteDataStream {
             dataStream.delegate = self
         }
+        DispatchQueue.main.sync {
+            localSubscriptions.append(sub)
+        }
         return sub
     }
     
     func unsubscribe(subscriptionId: String) async throws {
         try await localMember?.unsubscribe(subscriptionId: subscriptionId)
+        DispatchQueue.main.sync {
+            localSubscriptions.removeAll(where: { $0.id == subscriptionId })
+        }
     }
     
     func sendMessage(_ message: String) {
@@ -165,8 +171,22 @@ class SkyWayViewModel: NSObject, ObservableObject, RoomDelegate, RemoteDataStrea
         }
         if publication.publisher != localMember {
             if isAutoSubscribing {
-                localMember.subscribe(publicationId: publication.id, options: nil, completion: nil)
+                Task {
+                    // `subscribe(publicationId:options:)`の返り値のsubscriptionではstreamが取得できるため、これをviewに伝える。
+                    guard let sub = try? await localMember.subscribe(publicationId: publication.id, options: nil) else {
+                        return
+                    }
+                    DispatchQueue.main.sync {
+                        localSubscriptions.append(sub)
+                    }
+                }
             }
+        }
+    }
+    
+    func room(_ room: Room, didUnsubscribePublicationOf subscription: RoomSubscription) {
+        DispatchQueue.main.sync {
+            localSubscriptions.removeAll(where: { $0 == subscription })
         }
     }
     
@@ -175,13 +195,6 @@ class SkyWayViewModel: NSObject, ObservableObject, RoomDelegate, RemoteDataStrea
             remotePublications = room.publications.filter({ $0.publisher != localMember })
         }
     }
-    
-    func roomSubscriptionListDidChange(_ room: Room) {
-        DispatchQueue.main.sync {
-            localSubscriptions = room.subscriptions.filter({ $0.subscriber == localMember })
-        }
-    }
-    
     
     // MARK: - RemoteDataStreamDelegate
     func dataStream(_ dataStream: RemoteDataStream, didReceive string: String) {
