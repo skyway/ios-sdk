@@ -176,9 +176,6 @@ import SkyWayCore
         completion: ((LocalRoomMember?, Error?) -> Void)?
     ) {
         let _options: MemberInitOptions = options ?? .init()
-        if _options.name == nil {
-            _options.name = UUID().uuidString.lowercased()
-        }
         channel.join(with: _options.toCore()) { (person, error) in
             guard let person = person else {
                 completion?(nil, error)

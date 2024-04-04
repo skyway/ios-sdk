@@ -17,6 +17,7 @@
 
 #import "HttpClient.hpp"
 #import "Logger.hpp"
+#import "PlatformInfoDelegator.hpp"
 #import "WebSocketClient.hpp"
 
 #import "NSString+StdString.h"
@@ -126,10 +127,12 @@ static dispatch_group_t eventGroup = dispatch_group_create();
       auto http               = std::make_unique<skyway::network::HttpClient>();
       std::string nativeToken = [NSString stdStringForString:token];
       auto ws_factory         = std::make_unique<skyway::network::WebSocketClientFactory>();
+      auto platform_info      = std::make_unique<skyway::platform::PlatformInfoDelegator>();
       _contextListener        = std::make_unique<ContextEventListener>(eventGroup);
       auto result             = Context::Setup(nativeToken,
                                    std::move(http),
                                    std::move(ws_factory),
+                                   std::move(platform_info),
                                    std::move(logger),
                                    _contextListener.get(),
                                    nativeOptions);

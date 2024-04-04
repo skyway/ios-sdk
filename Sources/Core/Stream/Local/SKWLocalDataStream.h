@@ -21,12 +21,12 @@ NS_SWIFT_NAME(LocalDataStream)
 
 /// 文字列を送信します。
 ///
-/// - Parameter string: 送信する文字列
+/// @param string 送信する文字列
 - (void)writeString:(NSString* _Nonnull)string;
 
 /// データを送信します。
 ///
-/// - Parameter data: 送信するデータ
+/// @param data 送信するデータ
 - (void)writeData:(NSData* _Nonnull)data;
 
 @end

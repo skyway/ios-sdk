@@ -112,7 +112,7 @@ import Foundation
     ///
     /// - Parameters:
     ///   - room: Room
-    ///   - subscription: 対象のSubscription
+    ///   - subscription: 対象のSubscription LocalRoomMemberによるSubscribeである場合、まだstreamがsetされていない可能性があります。
     @objc optional func room(_ room: Room, didSubscribePublicationOf subscription: RoomSubscription)
 
     /// PublicationがUnsubscribeされた後にコールされるイベント

@@ -34,7 +34,7 @@ import Foundation
     ///
     /// - Parameters:
     ///   - member: Member
-    ///   - subscription: Subscribeした時のSubscription
+    ///   - subscription: Subscribeした時のSubscription まだstreamがsetされていない可能性があります。
     @objc optional func localRoomMember(
         _ member: LocalRoomMember,
         didSubscribePublicationOf subscription: RoomSubscription

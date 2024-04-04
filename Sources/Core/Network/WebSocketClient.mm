@@ -27,7 +27,9 @@
 @property(nonatomic) SRWebSocket* socket;
 
 - (void)registerListener:(skyway::network::WebSocketClient::Listener*)listener;
-- (std::future<bool>)connectWithUrl:(NSURL*)url subprotocol:(NSString*)subprotocol;
+- (std::future<bool>)connectWithUrl:(NSURL*)url
+                       subprotocols:(NSArray<NSString*>* _Nonnull)subprotocols
+                            headers:(NSDictionary<NSString*, NSString*>* _Nonnull)headers;
 - (std::future<bool>)sendMessage:(NSString*)message;
 - (std::future<bool>)closeWithCode:(int)code reason:(NSString* _Nullable)reason;
 - (std::future<bool>)destroy;
@@ -53,7 +55,9 @@
     listener_ = listener;
 }
 
-- (std::future<bool>)connectWithUrl:(NSURL*)url subprotocol:(NSString*)subprotocol {
+- (std::future<bool>)connectWithUrl:(NSURL*)url
+                       subprotocols:(NSArray<NSString*>* _Nonnull)subprotocols
+                            headers:(NSDictionary<NSString*, NSString*>* _Nonnull)headers {
     @synchronized(self) {
         openPromise_ = std::promise<bool>();
         if (_socket) {
@@ -68,7 +72,11 @@
             }
         }
         NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL:url];
-        _socket = [[SRWebSocket alloc] initWithURLRequest:request protocols:@[ subprotocol ]];
+        [headers enumerateKeysAndObjectsUsingBlock:^(
+                     NSString* _Nonnull key, NSString* _Nonnull obj, BOOL* _Nonnull stop) {
+          [request setValue:obj forHTTPHeaderField:key];
+        }];
+        _socket          = [[SRWebSocket alloc] initWithURLRequest:request protocols:subprotocols];
         _socket.delegate = self;
         // Sub thread is created and set because default thread is main and it will be blocked
         // below.
@@ -211,10 +219,31 @@ void WebSocketClient::RegisterListener(WebSocketClientInterface::Listener* liste
 
 std::future<bool> WebSocketClient::Connect(const std::string& native_url,
                                            const std::string& native_sub_protocol) {
-    NSString* urlString         = [NSString stringForStdString:native_url];
-    NSURL* url                  = [[NSURL alloc] initWithString:urlString];
-    NSString* subProtocolString = [NSString stringForStdString:native_sub_protocol];
-    return [impl_->delegator_ connectWithUrl:url subprotocol:subProtocolString];
+    std::vector<std::string> sub_protocols{native_sub_protocol};
+    return this->Connect(native_url, sub_protocols, {});
+}
+
+std::future<bool> WebSocketClient::Connect(
+    const std::string& native_url,
+    const std::vector<std::string>& native_sub_protocols,
+    const std::unordered_map<std::string, std::string>& headers) {
+    NSString* urlString = [NSString stringForStdString:native_url];
+    NSURL* url          = [[NSURL alloc] initWithString:urlString];
+
+    NSMutableArray<NSString*>* sub_protocols = [NSMutableArray array];
+    for (const auto& native_subprotocol : native_sub_protocols) {
+        NSString* subprotocol = [NSString stringForStdString:native_subprotocol];
+        [sub_protocols addObject:subprotocol];
+    }
+
+    NSMutableDictionary<NSString*, NSString*>* headers_dict = [NSMutableDictionary dictionary];
+    for (const auto& pair : headers) {
+        NSString* key   = [NSString stringForStdString:pair.first];
+        NSString* value = [NSString stringForStdString:pair.second];
+        [headers_dict setValue:value forKey:key];
+    }
+
+    return [impl_->delegator_ connectWithUrl:url subprotocols:sub_protocols headers:headers_dict];
 }
 
 std::future<bool> WebSocketClient::Send(const std::string& native_message) {

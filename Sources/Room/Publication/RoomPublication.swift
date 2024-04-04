@@ -205,15 +205,8 @@ import SkyWayCore
         _core.disable(completion: completion)
     }
 
-    /// [Experimental API]
-    ///
-    /// 試験的なAPIです。今後インターフェースや仕様が変更される可能性があります。
-    ///
-    /// 通信中の統計情報を取得します。
-    ///
-    /// 併せて公式サイトの通信状態の統計的分析もご確認ください。
-    /// https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/
-    /// - Parameter memberId: 通信相手のMemberID
+    /// - Warning: SkyWayRoom v2.0.0で非推奨となりました。
+    @available(*, deprecated, message: "SkyWayRoom v2.0.0で非推奨となりました。")
     @objc public func getStats(memberId: String) -> WebRTCStats? {
         if core.origin == nil {
             // Should be P2PRoom

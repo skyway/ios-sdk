@@ -20,9 +20,8 @@ NS_SWIFT_NAME(LoggerDelegate)
 ///
 /// 出力されるログのレベルは`ContextOptions.logLevel`で設定した値に依存します。
 ///
-/// - Parameters:
-///   - log: ログメッセージ
-///   - level:  発生したログのレベル
+/// @param log ログメッセージ
+/// @param level  発生したログのレベル
 - (void)didReceiveLog:(NSString* _Nonnull)log atLevel:(SKWLogLevel)level;
 
 @end

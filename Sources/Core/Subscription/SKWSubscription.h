@@ -46,7 +46,9 @@ typedef void (^SKWSubscriptionCancelCompletion)(NSError* _Nullable error);
 @property(nonatomic, readonly) SKWSubscriptionState state;
 /// このSubscriptionに紐づくStream
 ///
-/// LocalRoomMemberがSubscribeした時のみセットされます。
+/// LocalPersonがSubscribeし、成功した時の返り値または完了コールバックで得られるSubscriptionにおいては値がSetされていることが保証されています。
+///
+/// その他、イベントによってSubscriptionを取得した場合、まだ値がSetされていない可能性があります。
 @property(nonatomic, readonly) SKWRemoteStream* _Nullable stream;
 /// 優先エンコーディング設定
 @property(nonatomic, readonly) NSString* _Nullable preferredEncodingId;
@@ -61,18 +63,11 @@ typedef void (^SKWSubscriptionCancelCompletion)(NSError* _Nullable error);
 
 ///  Subscribeを中止します。
 ///
-/// - Parameter completion: 完了コールバック
+/// @param completion 完了コールバック
 - (void)cancelWithCompletion:(SKWSubscriptionCancelCompletion _Nullable)completion;
 
-/// [Experimental API]
-///
-/// 試験的なAPIです。今後インターフェースや仕様が変更される可能性があります。
-///
-/// 通信中の統計情報を取得します。
-///
-/// 併せて公式サイトの通信状態の統計的分析もご確認ください。
-/// https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/
-- (SKWWebRTCStats* _Nullable)getStats;
+- (SKWWebRTCStats* _Nullable)getStats
+    __attribute__((deprecated("SkyWayCore v2.0.0で非推奨となりました。")));
 
 @end
 
@@ -81,14 +76,13 @@ NS_SWIFT_NAME(SubscriptionDelegate)
 @optional
 
 /// RoomSubscriptionがUnsubscribeされCanceled状態に変化した後にコールされます。
-/// - Parameter subscription: Subscription
+/// @param subscription Subscription
 - (void)subscriptionCanceled:(SKWSubscription* _Nonnull)subscription;
 
 /// RoomSubscriptionの接続状態が変化した後にコールされるイベント
 ///
-/// - Parameters:
-///   - subscription: Subscription
-///   - connectionState: 接続状態
+/// @param subscription Subscription
+/// @param connectionState 接続状態
 - (void)subscription:(SKWSubscription* _Nonnull)subscription
     connectionStateDidChange:(SKWConnectionState)connectionState;
 @end
