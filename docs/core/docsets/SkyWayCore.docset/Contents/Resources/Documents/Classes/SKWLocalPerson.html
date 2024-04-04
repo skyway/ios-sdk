@@ -17,7 +17,7 @@
     <a title="SKWLocalPerson Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">SkyWayCore 1.7.6 Docs</a> (48% documented)</p>
+        <p><a href="../index.html">SkyWayCore 2.0.0 Docs</a> (52% documented)</p>
         <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -70,6 +70,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/SKWContextOptions.html">SKWContextOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKWContextOptionsAnalytics.html">SKWContextOptionsAnalytics</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/SKWContextOptionsICEParams.html">SKWContextOptionsICEParams</a>
@@ -369,36 +372,8 @@
               <div class="declaration">
                 <div class="language">
                   <p class="aside-title">Objective-C</p>
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SKWLocalPerson</span> <span class="p">:</span> <span class="nc"><a href="../Classes/SKWMember.html">SKWMember</a></span>
-
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonPublishStreamCompletion">SKWLocalPersonPublishStreamCompletion</a></span><span class="p">)(</span><span class="n"><a href="../Classes/SKWPublication.html">SKWPublication</a></span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">,</span>
-                                                      <span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">);</span>
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonSubscribePublicationCompletion">SKWLocalPersonSubscribePublicationCompletion</a></span><span class="p">)(</span><span class="n"><a href="../Classes/SKWSubscription.html">SKWSubscription</a></span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">,</span>
-                                                             <span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">);</span>
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonUnpublishCompletion">SKWLocalPersonUnpublishCompletion</a></span><span class="p">)(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">);</span>
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonUnsubscribeCompletion">SKWLocalPersonUnsubscribeCompletion</a></span><span class="p">)(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">);</span>
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonLeaveCompletion">SKWLocalPersonLeaveCompletion</a></span><span class="p">)(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">);</span>
-
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">publishStream</span><span class="p">:(</span><span class="n"><a href="../Classes/SKWLocalStream.html">SKWLocalStream</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">stream</span>
-              <span class="nf">options</span><span class="p">:(</span><span class="n"><a href="../Classes/SKWPublicationOptions.html">SKWPublicationOptions</a></span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span>
-           <span class="nf">completion</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonPublishStreamCompletion">SKWLocalPersonPublishStreamCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span>
-    <span class="n">NS_SWIFT_NAME</span><span class="p">(</span><span class="n">publish</span><span class="p">(</span><span class="n">_</span><span class="o">:</span><span class="n">options</span><span class="o">:</span><span class="n">completion</span><span class="o">:</span><span class="p">));</span>
-
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">subscribePublicationWithPublicationID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publicationID</span>
-                                      <span class="nf">options</span><span class="p">:(</span><span class="n"><a href="../Classes/SKWSubscriptionOptions.html">SKWSubscriptionOptions</a></span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span>
-                                   <span class="nf">completion</span><span class="p">:</span>
-                                       <span class="p">(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonSubscribePublicationCompletion">SKWLocalPersonSubscribePublicationCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span>
-                                           <span class="n">completion</span>
-    <span class="nf">NS_SWIFT_NAME</span><span class="p">(</span><span class="n">subscribePublication</span><span class="p">(</span><span class="n">publicationID</span><span class="o">:</span><span class="n">options</span><span class="o">:</span><span class="n">completion</span><span class="o">:</span><span class="p">));</span>
-
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">unpublishWithPublicationID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publicationID</span>
-                        <span class="nf">completion</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonUnpublishCompletion">SKWLocalPersonUnpublishCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span>
-    <span class="n">NS_SWIFT_NAME</span><span class="p">(</span><span class="n">unpublish</span><span class="p">(</span><span class="n">publicationID</span><span class="o">:</span><span class="n">completion</span><span class="o">:</span><span class="p">));</span>
-
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">unsubscribeWithSubscriptionID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">subscriptionID</span>
-                           <span class="nf">completion</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonUnsubscribeCompletion">SKWLocalPersonUnsubscribeCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span>
-    <span class="n">NS_SWIFT_NAME</span><span class="p">(</span><span class="n">unsubscribe</span><span class="p">(</span><span class="n">subscriptionID</span><span class="o">:</span><span class="n">completion</span><span class="o">:</span><span class="p">));</span>
-<span class="k">@end</span></code></pre>
+                  <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">SKWLocalPerson</span> <span class="p">:</span> <span class="nc"><a href="../Classes/SKWMember.html">SKWMember</a></span></code></pre>
 
                 </div>
                 <div class="language">
@@ -407,7 +382,7 @@
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>このSDKで生成されたLocalMember</p>
 
           </section>
           <section class="section task-group-section">
@@ -426,17 +401,23 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>入室しているChannelにStreamをPublishします。</p>
+
+<p>Streamは各種Sourceから作成できます。</p>
+
+<p>同じインスタンスのStreamを複数回Publishすることはできません。必要ならば各種Sourceから再度作成してPublishしてください。</p>
+
+<p>詳しいオプションの設定例については<a href="/core/Classes/SKWPublicationOptions.html">PublicationOptions</a>、開発者ドキュメントの<a href="https://skyway.ntt.com/ja/docs/user-guide/tips/large-scale/">大規模会議アプリを実装する上での注意点</a>をご覧ください。</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">publishStream</span><span class="p">:(</span><span class="n"><a href="../Classes/SKWLocalStream.html">SKWLocalStream</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">stream</span>
-              <span class="nf">options</span><span class="p">:(</span><span class="n"><a href="../Classes/SKWPublicationOptions.html">SKWPublicationOptions</a></span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span>
-           <span class="nf">completion</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonPublishStreamCompletion">SKWLocalPersonPublishStreamCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span>
-    <span class="n">NS_SWIFT_NAME</span><span class="p">(</span><span class="n">publish</span><span class="p">(</span><span class="n">_</span><span class="o">:</span><span class="n">options</span><span class="o">:</span><span class="n">completion</span><span class="o">:</span><span class="p">));</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">publishStream</span><span class="p">:(</span><span class="n"><a href="../Classes/SKWLocalStream.html">SKWLocalStream</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">stream</span>
+              <span class="nf">options</span><span class="p">:(</span><span class="n"><a href="../Classes/SKWPublicationOptions.html">SKWPublicationOptions</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span>
+           <span class="nf">completion</span><span class="p">:</span>
+               <span class="p">(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonPublishStreamCompletion">SKWLocalPersonPublishStreamCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -444,6 +425,49 @@
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">publish</span><span class="p">(</span><span class="n">_</span> <span class="nv">stream</span><span class="p">:</span> <span class="kt">LocalStream</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">PublicationOptions</span><span class="p">?)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Publication</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>stream</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>PublishするStream</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Publishオプション</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>完了コールバック</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -461,19 +485,20 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>PublicationをSubscribeします。</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">subscribePublicationWithPublicationID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publicationID</span>
-                                      <span class="nf">options</span><span class="p">:(</span><span class="n"><a href="../Classes/SKWSubscriptionOptions.html">SKWSubscriptionOptions</a></span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span>
-                                   <span class="nf">completion</span><span class="p">:</span>
-                                       <span class="p">(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonSubscribePublicationCompletion">SKWLocalPersonSubscribePublicationCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span>
-                                           <span class="n">completion</span>
-    <span class="nf">NS_SWIFT_NAME</span><span class="p">(</span><span class="n">subscribePublication</span><span class="p">(</span><span class="n">publicationID</span><span class="o">:</span><span class="n">options</span><span class="o">:</span><span class="n">completion</span><span class="o">:</span><span class="p">));</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+    <span class="nf">subscribePublicationWithPublicationID</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publicationID</span>
+                                  <span class="nf">options</span><span class="p">:</span>
+                                      <span class="p">(</span><span class="n"><a href="../Classes/SKWSubscriptionOptions.html">SKWSubscriptionOptions</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span>
+                               <span class="nf">completion</span><span class="p">:</span>
+                                   <span class="p">(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonSubscribePublicationCompletion">SKWLocalPersonSubscribePublicationCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span>
+                                       <span class="n">completion</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -481,6 +506,49 @@
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">subscribePublication</span><span class="p">(</span><span class="nv">publicationID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">SubscriptionOptions</span><span class="p">?)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Subscription</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>publicationID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>SubscribeするPublicationのID</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Subscribeオプション</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>完了コールバック</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -498,16 +566,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Publishを中止します。</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">unpublishWithPublicationID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publicationID</span>
-                        <span class="nf">completion</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonUnpublishCompletion">SKWLocalPersonUnpublishCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span>
-    <span class="n">NS_SWIFT_NAME</span><span class="p">(</span><span class="n">unpublish</span><span class="p">(</span><span class="n">publicationID</span><span class="o">:</span><span class="n">completion</span><span class="o">:</span><span class="p">));</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">unpublishWithPublicationID</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publicationID</span>
+                        <span class="nf">completion</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonUnpublishCompletion">SKWLocalPersonUnpublishCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span>
+                                       <span class="n">completion</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -515,6 +583,37 @@
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">unpublish</span><span class="p">(</span><span class="nv">publicationID</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>publicationID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>中止するPublicationのID</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>完了コールバック</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -532,16 +631,17 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Subscribeを中止します。</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">unsubscribeWithSubscriptionID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">subscriptionID</span>
-                           <span class="nf">completion</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonUnsubscribeCompletion">SKWLocalPersonUnsubscribeCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span>
-    <span class="n">NS_SWIFT_NAME</span><span class="p">(</span><span class="n">unsubscribe</span><span class="p">(</span><span class="n">subscriptionID</span><span class="o">:</span><span class="n">completion</span><span class="o">:</span><span class="p">));</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">unsubscribeWithSubscriptionID</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">subscriptionID</span>
+                           <span class="nf">completion</span><span class="p">:</span>
+                               <span class="p">(</span><span class="n"><a href="../Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonUnsubscribeCompletion">SKWLocalPersonUnsubscribeCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span>
+                                   <span class="n">completion</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -549,6 +649,37 @@
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">unsubscribe</span><span class="p">(</span><span class="nv">subscriptionID</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>subscriptionID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>中止するSubscriptionのID</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>完了コールバック</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -591,8 +722,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2024-03-12)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2024-04-04)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>

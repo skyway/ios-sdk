@@ -17,7 +17,7 @@
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">SkyWayCore 1.7.6 Docs</a> (48% documented)</p>
+        <p><a href="index.html">SkyWayCore 2.0.0 Docs</a> (52% documented)</p>
         <div class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -70,6 +70,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Classes/SKWContextOptions.html">SKWContextOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SKWContextOptionsAnalytics.html">SKWContextOptionsAnalytics</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/SKWContextOptionsICEParams.html">SKWContextOptionsICEParams</a>
@@ -872,6 +875,44 @@ Classを利用する場合は<code>CameraPreviewView</code>ではなく<code>SKW
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)SKWContextOptionsAnalytics"></a>
+                    <a name="//apple_ref/objc/Class/SKWContextOptionsAnalytics" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SKWContextOptionsAnalytics">SKWContextOptionsAnalytics</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Classes/SKWContextOptionsAnalytics.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SKWContextOptionsAnalytics</span> <span class="p">:</span> <span class="nc">NSObject</span>
+
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">domain</span><span class="p">;</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">secure</span><span class="p">;</span>
+
+<span class="k">@end</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">ContextOptionsAnalytics</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)SKWContextOptionsRTCConfig"></a>
                     <a name="//apple_ref/objc/Class/SKWContextOptionsRTCConfig" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)SKWContextOptionsRTCConfig">SKWContextOptionsRTCConfig</a>
@@ -977,6 +1018,8 @@ Classを利用する場合は<code>CameraPreviewView</code>ではなく<code>SKW
 <span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="Classes/SKWContextOptionsICEParams.html">SKWContextOptionsICEParams</a></span><span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">iceParams</span><span class="p">;</span>
 <span class="c1">/// 内部向けオプション</span>
 <span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="Classes/SKWContextOptionsSignaling.html">SKWContextOptionsSignaling</a></span><span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">signaling</span><span class="p">;</span>
+<span class="c1">/// 内部向けオプション</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="Classes/SKWContextOptionsAnalytics.html">SKWContextOptionsAnalytics</a></span><span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">analytics</span><span class="p">;</span>
 <span class="c1">/// WebRTCに関するオプション</span>
 <span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="Classes/SKWContextOptionsRTCConfig.html">SKWContextOptionsRTCConfig</a></span><span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">rtcConfig</span><span class="p">;</span>
 <span class="c1">/// SkyWayAuthTokenに関するオプション</span>
@@ -1292,7 +1335,7 @@ Classを利用する場合は<code>CameraPreviewView</code>ではなく<code>SKW
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>このSDKで生成されたLocalMember</p>
 
                         <a href="Classes/SKWLocalPerson.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1300,36 +1343,8 @@ Classを利用する場合は<code>CameraPreviewView</code>ではなく<code>SKW
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SKWLocalPerson</span> <span class="p">:</span> <span class="nc"><a href="Classes/SKWMember.html">SKWMember</a></span>
-
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n"><a href="Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonPublishStreamCompletion">SKWLocalPersonPublishStreamCompletion</a></span><span class="p">)(</span><span class="n"><a href="Classes/SKWPublication.html">SKWPublication</a></span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">,</span>
-                                                      <span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">);</span>
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n"><a href="Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonSubscribePublicationCompletion">SKWLocalPersonSubscribePublicationCompletion</a></span><span class="p">)(</span><span class="n"><a href="Classes/SKWSubscription.html">SKWSubscription</a></span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">,</span>
-                                                             <span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">);</span>
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n"><a href="Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonUnpublishCompletion">SKWLocalPersonUnpublishCompletion</a></span><span class="p">)(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">);</span>
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n"><a href="Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonUnsubscribeCompletion">SKWLocalPersonUnsubscribeCompletion</a></span><span class="p">)(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">);</span>
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n"><a href="Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonLeaveCompletion">SKWLocalPersonLeaveCompletion</a></span><span class="p">)(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">);</span>
-
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">publishStream</span><span class="p">:(</span><span class="n"><a href="Classes/SKWLocalStream.html">SKWLocalStream</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">stream</span>
-              <span class="nf">options</span><span class="p">:(</span><span class="n"><a href="Classes/SKWPublicationOptions.html">SKWPublicationOptions</a></span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span>
-           <span class="nf">completion</span><span class="p">:(</span><span class="n"><a href="Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonPublishStreamCompletion">SKWLocalPersonPublishStreamCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span>
-    <span class="n">NS_SWIFT_NAME</span><span class="p">(</span><span class="n">publish</span><span class="p">(</span><span class="n">_</span><span class="o">:</span><span class="n">options</span><span class="o">:</span><span class="n">completion</span><span class="o">:</span><span class="p">));</span>
-
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">subscribePublicationWithPublicationID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publicationID</span>
-                                      <span class="nf">options</span><span class="p">:(</span><span class="n"><a href="Classes/SKWSubscriptionOptions.html">SKWSubscriptionOptions</a></span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span>
-                                   <span class="nf">completion</span><span class="p">:</span>
-                                       <span class="p">(</span><span class="n"><a href="Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonSubscribePublicationCompletion">SKWLocalPersonSubscribePublicationCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span>
-                                           <span class="n">completion</span>
-    <span class="nf">NS_SWIFT_NAME</span><span class="p">(</span><span class="n">subscribePublication</span><span class="p">(</span><span class="n">publicationID</span><span class="o">:</span><span class="n">options</span><span class="o">:</span><span class="n">completion</span><span class="o">:</span><span class="p">));</span>
-
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">unpublishWithPublicationID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publicationID</span>
-                        <span class="nf">completion</span><span class="p">:(</span><span class="n"><a href="Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonUnpublishCompletion">SKWLocalPersonUnpublishCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span>
-    <span class="n">NS_SWIFT_NAME</span><span class="p">(</span><span class="n">unpublish</span><span class="p">(</span><span class="n">publicationID</span><span class="o">:</span><span class="n">completion</span><span class="o">:</span><span class="p">));</span>
-
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">unsubscribeWithSubscriptionID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">subscriptionID</span>
-                           <span class="nf">completion</span><span class="p">:(</span><span class="n"><a href="Type%20Definitions.html#/c:SKWLocalPerson.h@T@SKWLocalPersonUnsubscribeCompletion">SKWLocalPersonUnsubscribeCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span>
-    <span class="n">NS_SWIFT_NAME</span><span class="p">(</span><span class="n">unsubscribe</span><span class="p">(</span><span class="n">subscriptionID</span><span class="o">:</span><span class="n">completion</span><span class="o">:</span><span class="p">));</span>
-<span class="k">@end</span></code></pre>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">SKWLocalPerson</span> <span class="p">:</span> <span class="nc"><a href="Classes/SKWMember.html">SKWMember</a></span></code></pre>
 
                         </div>
                         <div class="language">
@@ -1462,7 +1477,7 @@ Classを利用する場合は<code>CameraPreviewView</code>ではなく<code>SKW
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Channelに入室しているMemberの抽象クラス</p>
 
                         <a href="Classes/SKWMember.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1470,26 +1485,8 @@ Classを利用する場合は<code>CameraPreviewView</code>ではなく<code>SKW
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SKWMember</span> <span class="p">:</span> <span class="nc">NSObject</span>
-
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n"><a href="Type%20Definitions.html#/c:SKWMember.h@T@SKWMemberUpdateMetadataCompletion">SKWMemberUpdateMetadataCompletion</a></span><span class="p">)(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">);</span>
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n"><a href="Type%20Definitions.html#/c:SKWMember.h@T@SKWMemberLeaveCompletion">SKWMemberLeaveCompletion</a></span><span class="p">)(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">);</span>
-
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">id</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">name</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">metadata</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="Enums/SKWMemberType.html">SKWMemberType</a></span> <span class="n">type</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="Enums/SKWSide.html">SKWSide</a></span> <span class="n">side</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">subtype</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="Enums/SKWMemberState.html">SKWMemberState</a></span> <span class="n">state</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="Classes/SKWPublication.html">SKWPublication</a></span><span class="o">*&gt;*</span> <span class="n">_Nonnull</span> <span class="n">publications</span><span class="p">;</span>
-<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="Classes/SKWSubscription.html">SKWSubscription</a></span><span class="o">*&gt;*</span> <span class="n">_Nonnull</span> <span class="n">subscriptions</span><span class="p">;</span>
-
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">updateMetadata</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">metadata</span>
-            <span class="nf">completion</span><span class="p">:(</span><span class="n"><a href="Type%20Definitions.html#/c:SKWMember.h@T@SKWMemberUpdateMetadataCompletion">SKWMemberUpdateMetadataCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">leaveWithCompletion</span><span class="p">:(</span><span class="n"><a href="Type%20Definitions.html#/c:SKWMember.h@T@SKWMemberLeaveCompletion">SKWMemberLeaveCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span>
-
-<span class="k">@end</span></code></pre>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">SKWMember</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -1752,8 +1749,8 @@ Classを利用する場合は<code>CameraPreviewView</code>ではなく<code>SKW
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SKWRemoteMember</span> <span class="p">:</span> <span class="nc"><a href="Classes/SKWMember.html">SKWMember</a></span>
-<span class="k">@end</span></code></pre>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">SKWRemoteMember</span> <span class="p">:</span> <span class="nc"><a href="Classes/SKWMember.html">SKWMember</a></span></code></pre>
 
                         </div>
                         <div class="language">
@@ -1786,23 +1783,8 @@ Classを利用する場合は<code>CameraPreviewView</code>ではなく<code>SKW
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SKWRemotePerson</span> <span class="p">:</span> <span class="nc"><a href="Classes.html#/c:objc(cs)SKWRemoteMember">SKWRemoteMember</a></span>
-
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n"><a href="Type%20Definitions.html#/c:SKWRemotePerson.h@T@SKWRemotePersonSubscribePublicationCompletion">SKWRemotePersonSubscribePublicationCompletion</a></span><span class="p">)(</span><span class="n"><a href="Classes/SKWSubscription.html">SKWSubscription</a></span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">,</span>
-                                                              <span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">);</span>
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n"><a href="Type%20Definitions.html#/c:SKWRemotePerson.h@T@SKWRemotePersonUnsubscribeCompletion">SKWRemotePersonUnsubscribeCompletion</a></span><span class="p">)(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">);</span>
-
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">subscribePublicationWithPublicationID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publicationID</span>
-                                   <span class="nf">completion</span><span class="p">:</span>
-                                       <span class="p">(</span><span class="n"><a href="Type%20Definitions.html#/c:SKWRemotePerson.h@T@SKWRemotePersonSubscribePublicationCompletion">SKWRemotePersonSubscribePublicationCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span>
-                                           <span class="n">completion</span>
-    <span class="nf">NS_SWIFT_NAME</span><span class="p">(</span><span class="n">subscribePublication</span><span class="p">(</span><span class="n">publicationID</span><span class="o">:</span><span class="n">completion</span><span class="o">:</span><span class="p">));</span>
-
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">unsubscribeWithSubscriptionID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">subscriptionID</span>
-                           <span class="nf">completion</span><span class="p">:(</span><span class="n"><a href="Type%20Definitions.html#/c:SKWRemotePerson.h@T@SKWRemotePersonUnsubscribeCompletion">SKWRemotePersonUnsubscribeCompletion</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span>
-    <span class="n">NS_SWIFT_NAME</span><span class="p">(</span><span class="n">unsubscribe</span><span class="p">(</span><span class="n">subscriptionID</span><span class="o">:</span><span class="n">completion</span><span class="o">:</span><span class="p">));</span>
-
-<span class="k">@end</span></code></pre>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">SKWRemotePerson</span> <span class="p">:</span> <span class="nc"><a href="Classes.html#/c:objc(cs)SKWRemoteMember">SKWRemoteMember</a></span></code></pre>
 
                         </div>
                         <div class="language">
@@ -2009,9 +1991,7 @@ Classを利用する場合は<code>CameraPreviewView</code>ではなく<code>SKW
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SKWUnknownMember</span> <span class="p">:</span> <span class="nc"><a href="Classes.html#/c:objc(cs)SKWRemoteMember">SKWRemoteMember</a></span>
-
-<span class="k">@end</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SKWUnknownMember</span> <span class="p">:</span> <span class="nc"><a href="Classes.html#/c:objc(cs)SKWRemoteMember">SKWRemoteMember</a></span></code></pre>
 
                         </div>
                         <div class="language">
@@ -2097,18 +2077,20 @@ Classを利用する場合は<code>CameraPreviewView</code>ではなく<code>SKW
                     <code>
                     <a name="/c:objc(cs)SKWWebRTCStats"></a>
                     <a name="//apple_ref/objc/Class/SKWWebRTCStats" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SKWWebRTCStats">SKWWebRTCStats</a>
+                    <a class="token discouraged" href="#/c:objc(cs)SKWWebRTCStats">SKWWebRTCStats</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>WebRTC統計情報の一覧の構造体</p>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>SkyWayCore v2.0.0で非推奨となりました。</p>
 
-<p>併せて公式サイトの通信状態の統計的分析もご確認ください。
-<a href="https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/">https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/</a></p>
+                      </div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
 
                         <a href="Classes/SKWWebRTCStats.html" class="slightly-smaller">See more</a>
                       </div>
@@ -2116,8 +2098,14 @@ Classを利用する場合は<code>CameraPreviewView</code>ではなく<code>SKW
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code>
-<span class="k">@interface</span> <span class="nc">SKWWebRTCStats</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SKWWebRTCStats</span> <span class="p">:</span> <span class="nc">NSObject</span>
+
+<span class="c1">/// WebRTC統計情報の一覧</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="Classes/SKWWebRTCStatsReport.html">SKWWebRTCStatsReport</a></span><span class="o">*&gt;*</span> <span class="n">_Nonnull</span> <span class="n">reports</span><span class="p">;</span>
+
+<span class="k">-</span> <span class="p">(</span><span class="n">id</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">init</span> <span class="n">NS_UNAVAILABLE</span><span class="p">;</span>
+
+<span class="k">@end</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -2134,18 +2122,20 @@ Classを利用する場合は<code>CameraPreviewView</code>ではなく<code>SKW
                     <code>
                     <a name="/c:objc(cs)SKWWebRTCStatsReport"></a>
                     <a name="//apple_ref/objc/Class/SKWWebRTCStatsReport" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SKWWebRTCStatsReport">SKWWebRTCStatsReport</a>
+                    <a class="token discouraged" href="#/c:objc(cs)SKWWebRTCStatsReport">SKWWebRTCStatsReport</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>WebRTC統計情報の一覧</p>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>SkyWayCore v2.0.0で非推奨となりました。</p>
 
-<p>併せて公式サイトの通信状態の統計的分析もご確認ください。
-<a href="https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/">https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/</a></p>
+                      </div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
 
                         <a href="Classes/SKWWebRTCStatsReport.html" class="slightly-smaller">See more</a>
                       </div>
@@ -2153,8 +2143,35 @@ Classを利用する場合は<code>CameraPreviewView</code>ではなく<code>SKW
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code>
-<span class="k">@interface</span> <span class="nc">SKWWebRTCStatsReport</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SKWWebRTCStatsReport</span> <span class="p">:</span> <span class="nc">NSObject</span>
+
+<span class="c1">/// 統計情報のID</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">id</span><span class="p">;</span>
+
+<span class="c1">/// 統計情報のType</span>
+<span class="c1">///</span>
+<span class="c1">/// Type一覧はこちらをご確認ください。</span>
+<span class="c1">/// https://w3c.github.io/webrtc-stats/#rtctatstype-*</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">type</span><span class="p">;</span>
+
+<span class="c1">/// IDとType以外のパラメータ</span>
+<span class="c1">///</span>
+<span class="c1">/// パラメータはtypeに応じて値が異なります。</span>
+<span class="c1">///</span>
+<span class="c1">/// 例えば、typeが`codec`の場合はこのkey, valueの組み合わせになります。</span>
+<span class="c1">///</span>
+<span class="c1">/// https://w3c.github.io/webrtc-stats/#codec-dict*</span>
+<span class="c1">///</span>
+<span class="c1">/// valueの取りうる値の型は、NSString, NSNumber , NSDataです。</span>
+<span class="c1">///</span>
+<span class="c1">/// BoolはNSNumber(0 or 1)で表現されます。</span>
+<span class="c1">///</span>
+<span class="c1">/// 配列・オブジェクトの場合、JSON文字列をNSData型で返します。</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSDictionary</span><span class="o">&lt;</span><span class="n">NSString</span><span class="o">*</span><span class="p">,</span> <span class="n">NSObject</span><span class="o">*&gt;*</span> <span class="n">_Nonnull</span> <span class="n">params</span><span class="p">;</span>
+
+<span class="k">-</span> <span class="p">(</span><span class="n">id</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">init</span> <span class="n">NS_UNAVAILABLE</span><span class="p">;</span>
+
+<span class="k">@end</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -2171,8 +2188,8 @@ Classを利用する場合は<code>CameraPreviewView</code>ではなく<code>SKW
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2024-03-12)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2024-04-04)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
