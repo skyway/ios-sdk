@@ -68,7 +68,7 @@ typedef void (^SKWCameraVideoSourceChangeDeviceCompletion)(NSError* _Nullable er
 
 /// Viewへの描画を中止します。
 ///
-/// - Parameter view: 中止する描画中のView
+/// @param view 中止する描画中のView
 - (void)detachView:(SKWCameraPreviewView* _Nonnull)view;
 
 /// キャプチャを開始します。

@@ -11,12 +11,8 @@
 
 #import "SKWWebRTCStatsReport.h"
 
-/// WebRTC統計情報の一覧の構造体
-///
-/// 併せて公式サイトの通信状態の統計的分析もご確認ください。
-/// https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/
-NS_SWIFT_NAME(WebRTCStats)
-@interface SKWWebRTCStats : NSObject
+__attribute__((deprecated("SkyWayCore v2.0.0で非推奨となりました。"))) NS_SWIFT_NAME(WebRTCStats)
+    @interface SKWWebRTCStats : NSObject
 
 /// WebRTC統計情報の一覧
 @property(nonatomic, readonly) NSArray<SKWWebRTCStatsReport*>* _Nonnull reports;

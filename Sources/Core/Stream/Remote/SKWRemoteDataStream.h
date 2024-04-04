@@ -23,18 +23,16 @@ NS_SWIFT_NAME(RemoteDataStreamDelegate)
 
 /// 文字列情報を受信した時にコールされるイベント
 ///
-/// - Parameters:
-///   - dataStream: 対象のDataStream
-///   - string: 受信した文字列
+/// @param dataStream 対象のDataStream
+/// @param string 受信した文字列
 @optional
 - (void)dataStream:(SKWRemoteDataStream* _Nonnull)dataStream
     didReceiveString:(NSString* _Nonnull)string;
 
 /// バイナリを受信した時にコールされるイベント
 ///
-/// - Parameters:
-///   - dataStream:対象のDataStream
-///   - data: 受信したデータ
+/// @param dataStream 対象のDataStream
+/// @param data  受信したデータ
 @optional
 - (void)dataStream:(SKWRemoteDataStream* _Nonnull)dataStream didReceiveData:(NSData* _Nonnull)data;
 @end

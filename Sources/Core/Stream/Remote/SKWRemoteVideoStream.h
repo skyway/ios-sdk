@@ -18,12 +18,12 @@ NS_SWIFT_NAME(RemoteVideoStream)
 
 /// VideoStreamの映像をViewに描画します。
 ///
-/// - Parameter view: 描画させるView
+/// @param view 描画させるView
 - (void)attachView:(SKWVideoView* _Nonnull)view;
 
 /// Viewへの描画を中止します。
 ///
-/// - Parameter view: 中止する描画中のView
+/// @param view 中止する描画中のView
 - (void)detachView:(SKWVideoView* _Nonnull)view;
 @end
 

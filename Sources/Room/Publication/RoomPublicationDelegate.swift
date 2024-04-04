@@ -17,27 +17,13 @@ import Foundation
 
     /// PublicationがRoomMemberにSubscribeされた後にコールされるイベント
     ///
-    /// - Parameter publication: RoomPublication
-    /// - Warning: SkyWayRoom v1.6.0で非推奨となりました。`publication(_:subscribed:)`をご利用ください。
-    @available(*, deprecated, renamed: "publication(_:subscribed:)")
-    @objc optional func publicationSubscribed(_ publication: RoomPublication)
-
-    /// PublicationがRoomMemberにSubscribeされた後にコールされるイベント
-    ///
     /// - Parameters:
     ///   - publication: RoomPublication
-    ///   - subscription: RoomSubscription
+    ///   - subscription: RoomSubscription LocalRoomMemberによるSubscribeである場合、まだstreamがsetされていない可能性があります。
     @objc optional func publication(
         _ publication: RoomPublication,
         subscribed subscription: RoomSubscription
     )
-
-    /// PublicationがRoomMemberにUnsubscribeされた後にコールされるイベント
-    ///
-    /// - Parameter publication: RoomPublication
-    /// - Warning: SkyWayRoom v1.6.0で非推奨となりました。`publication(_:unsubscribed:)`をご利用ください。
-    @available(*, deprecated, renamed: "publication(_:unsubscribed:)")
-    @objc optional func publicationUnsubscribed(_ publication: RoomPublication)
 
     /// PublicationがRoomMemberにUnsubscribeされた後にコールされるイベント
     ///

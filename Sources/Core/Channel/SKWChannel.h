@@ -132,9 +132,8 @@ typedef void (^SKWChannelDisposeCompletion)(NSError* _Nullable);
 
 /// メタデータを更新します。
 ///
-/// - Parameters:
-///   - metadata: メタデータ
-///   - completion: 完了コールバック
+/// @param metadata メタデータ
+/// @param completion 完了コールバック
 - (void)updateMetadata:(NSString* _Nonnull)metadata
             completion:(SKWChannelUpdateMetadataCompletion _Nullable)completion;
 
@@ -266,6 +265,7 @@ NS_SWIFT_NAME(ChannelDelegate)
 ///
 /// @param channel Channel
 /// @param subscription 対象のSubscription
+/// LocalPersonによるSubscribeである場合、まだstreamがsetされていない可能性があります。
 - (void)channel:(SKWChannel* _Nonnull)channel
     didSubscribePublicationOfSubscription:(SKWSubscription* _Nonnull)subscription;
 

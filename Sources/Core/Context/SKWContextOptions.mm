@@ -91,6 +91,30 @@ using NativeContextOptions = skyway::core::ContextOptions;
 
 @end
 
+@interface SKWContextOptionsAnalytics ()
+- (skyway::core::ContextOptions::Analytics)native;
+@end
+
+@implementation SKWContextOptionsAnalytics
+
+- (id)init {
+    if (self = [super init]) {
+        _secure = true;
+    }
+    return self;
+}
+
+- (NativeContextOptions::Analytics)native {
+    NativeContextOptions::Analytics native;
+    if (_domain) {
+        native.domain = [NSString stdStringForString:_domain];
+    }
+    native.secure = _secure;
+    return native;
+}
+
+@end
+
 @implementation SKWContextOptionsRTCConfig
 
 - (id)init {
@@ -139,6 +163,7 @@ using NativeContextOptions = skyway::core::ContextOptions;
         _rtcApi    = [[SKWContextOptionsRTCAPI alloc] init];
         _iceParams = [[SKWContextOptionsICEParams alloc] init];
         _signaling = [[SKWContextOptionsSignaling alloc] init];
+        _analytics = [[SKWContextOptionsAnalytics alloc] init];
         _rtcConfig = [[SKWContextOptionsRTCConfig alloc] init];
         _token     = [[SKWContextOptionsToken alloc] init];
     }
@@ -150,6 +175,7 @@ using NativeContextOptions = skyway::core::ContextOptions;
     nativeOptions.rtc_api    = _rtcApi.native;
     nativeOptions.ice_params = _iceParams.native;
     nativeOptions.signaling  = _signaling.native;
+    nativeOptions.analytics  = _analytics.native;
     nativeOptions.rtc_config = _rtcConfig.native;
     nativeOptions.token      = _token.native;
     return nativeOptions;

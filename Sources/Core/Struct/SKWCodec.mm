@@ -34,13 +34,6 @@
 
 @implementation SKWCodec
 
-- (id _Nonnull)init {
-    if (self = [super init]) {
-        _parameters = [[SKWCodecParameters alloc] init];
-    }
-    return self;
-}
-
 - (id _Nonnull)initWithMimeType:(NSString* _Nonnull)mimeType {
     if (self = [super init]) {
         _mimeType   = mimeType;

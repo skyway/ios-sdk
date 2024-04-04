@@ -36,6 +36,14 @@ NS_SWIFT_NAME(ContextOptionsSignaling)
 
 @end
 
+NS_SWIFT_NAME(ContextOptionsAnalytics)
+@interface SKWContextOptionsAnalytics : NSObject
+
+@property(nonatomic) NSString* _Nullable domain;
+@property(nonatomic) BOOL secure;
+
+@end
+
 /// WebRTCに関するオプション
 NS_SWIFT_NAME(ContextOptionsRTCConfig)
 @interface SKWContextOptionsRTCConfig : NSObject
@@ -69,6 +77,8 @@ NS_SWIFT_NAME(ContextOptions)
 @property(nonatomic) SKWContextOptionsICEParams* _Nonnull iceParams;
 /// 内部向けオプション
 @property(nonatomic) SKWContextOptionsSignaling* _Nonnull signaling;
+/// 内部向けオプション
+@property(nonatomic) SKWContextOptionsAnalytics* _Nonnull analytics;
 /// WebRTCに関するオプション
 @property(nonatomic) SKWContextOptionsRTCConfig* _Nonnull rtcConfig;
 /// SkyWayAuthTokenに関するオプション

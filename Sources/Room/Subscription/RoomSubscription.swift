@@ -40,7 +40,9 @@ import SkyWayCore
     }
     /// このSubscriptionに紐づくStream
     ///
-    /// LocalRoomMemberがSubscribeした時のみセットされます。
+    /// LocalRoomMemberがSubscribeし、成功した時の返り値または完了コールバックで得られるSubscriptionにおいては値がSetされていることが保証されています。
+    ///
+    /// その他、イベントによってSubscriptionを取得した場合、まだ値がSetされていない可能性があります。
     @objc public var stream: RemoteStream? {
         return core.stream
     }
@@ -104,14 +106,8 @@ import SkyWayCore
         core.cancel(completion: completion)
     }
 
-    /// [Experimental API]
-    ///
-    /// 試験的なAPIです。今後インターフェースや仕様が変更される可能性があります。
-    ///
-    /// 通信中の統計情報を取得します。
-    ///
-    /// 併せて公式サイトの通信状態の統計的分析もご確認ください。
-    /// https://skyway.ntt.com/ja/docs/user-guide/tips/getstats/
+    /// - Warning: SkyWayRoom v2.0.0で非推奨となりました。
+    @available(*, deprecated, message: "SkyWayRoom v2.0.0で非推奨となりました。")
     @objc public func getStats() -> WebRTCStats? {
         return core.getStats()
     }

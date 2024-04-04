@@ -173,7 +173,7 @@ import SkyWayCore
 
     /// Subscribeを中止します。
     ///
-    /// - Parameter subscriptionId: 停止するSubscriptionのID
+    /// - Parameter subscriptionId: 中止するSubscriptionのID
     @available(iOS 13.0, *)
     @objc public func unsubscribe(subscriptionId: String) async throws {
         try await withCheckedThrowingContinuation {
@@ -190,7 +190,7 @@ import SkyWayCore
 
     /// Subscribeを中止します。
     ///
-    /// - Parameter subscriptionId: 停止するSubscriptionのID
+    /// - Parameter subscriptionId: 中止するSubscriptionのID
     ///   - completion: 完了コールバック
     @objc public func unsubscribe(subscriptionId: String, completion: ((Error?) -> Void)?) {
         let person = core as! LocalPerson

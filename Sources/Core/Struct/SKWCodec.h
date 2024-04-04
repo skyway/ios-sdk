@@ -35,8 +35,6 @@ NS_SWIFT_NAME(CodecParameters)
 NS_SWIFT_NAME(Codec)
 @interface SKWCodec : NSObject
 
-- (id _Nonnull)init __attribute__((
-    deprecated("SkyWayCore v1.6.0で非推奨となりました。`init(mimeType:)`をご利用ください。")));
 - (id _Nonnull)initWithMimeType:(NSString* _Nonnull)mimeType;
 
 /// コーデックのmimeType

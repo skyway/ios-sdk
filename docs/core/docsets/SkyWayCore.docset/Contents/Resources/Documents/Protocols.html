@@ -17,7 +17,7 @@
     <a title="Protocols  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">SkyWayCore 1.7.6 Docs</a> (48% documented)</p>
+        <p><a href="index.html">SkyWayCore 2.0.0 Docs</a> (52% documented)</p>
         <div class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -70,6 +70,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Classes/SKWContextOptions.html">SKWContextOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SKWContextOptionsAnalytics.html">SKWContextOptionsAnalytics</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/SKWContextOptionsICEParams.html">SKWContextOptionsICEParams</a>
@@ -476,7 +479,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>LocalPersonイベントデリゲート</p>
 
                         <a href="Protocols/SKWLocalPersonDelegate.html" class="slightly-smaller">See more</a>
                       </div>
@@ -484,17 +487,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">SKWLocalPersonDelegate</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/SKWMemberDelegate.html">SKWMemberDelegate</a></span><span class="o">&gt;</span>
-<span class="k">@optional</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">localPerson</span><span class="p">:(</span><span class="n"><a href="Classes/SKWLocalPerson.html">SKWLocalPerson</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">localPerson</span>
-    <span class="nf">didPublishStreamOfPublication</span><span class="p">:(</span><span class="n"><a href="Classes/SKWPublication.html">SKWPublication</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publication</span><span class="p">;</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">localPerson</span><span class="p">:(</span><span class="n"><a href="Classes/SKWLocalPerson.html">SKWLocalPerson</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">localPerson</span>
-    <span class="nf">didUnpublishStreamOfPublication</span><span class="p">:(</span><span class="n"><a href="Classes/SKWPublication.html">SKWPublication</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">publication</span><span class="p">;</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">localPerson</span><span class="p">:(</span><span class="n"><a href="Classes/SKWLocalPerson.html">SKWLocalPerson</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">localPerson</span>
-    <span class="nf">didSubscribePublicationOfSubscription</span><span class="p">:(</span><span class="n"><a href="Classes/SKWSubscription.html">SKWSubscription</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">subscription</span><span class="p">;</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">localPerson</span><span class="p">:(</span><span class="n"><a href="Classes/SKWLocalPerson.html">SKWLocalPerson</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">localPerson</span>
-    <span class="nf">didUnsubscribePublicationOfSubscription</span><span class="p">:(</span><span class="n"><a href="Classes/SKWSubscription.html">SKWSubscription</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">subscription</span><span class="p">;</span>
-<span class="k">@end</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">SKWLocalPersonDelegate</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/SKWMemberDelegate.html">SKWMemberDelegate</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -534,9 +527,8 @@
 <span class="c1">///</span>
 <span class="c1">/// 出力されるログのレベルは`ContextOptions.logLevel`で設定した値に依存します。</span>
 <span class="c1">///</span>
-<span class="c1">/// - Parameters:</span>
-<span class="c1">///   - log: ログメッセージ</span>
-<span class="c1">///   - level:  発生したログのレベル</span>
+<span class="c1">/// @param log ログメッセージ</span>
+<span class="c1">/// @param level  発生したログのレベル</span>
 <span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didReceiveLog</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">log</span> <span class="nf">atLevel</span><span class="p">:(</span><span class="n"><a href="Enums/SKWLogLevel.html">SKWLogLevel</a></span><span class="p">)</span><span class="nv">level</span><span class="p">;</span>
 
 <span class="k">@end</span></code></pre>
@@ -750,14 +742,13 @@
 <span class="k">@optional</span>
 
 <span class="c1">/// RoomSubscriptionがUnsubscribeされCanceled状態に変化した後にコールされます。</span>
-<span class="c1">/// - Parameter subscription: Subscription</span>
+<span class="c1">/// @param subscription Subscription</span>
 <span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">subscriptionCanceled</span><span class="p">:(</span><span class="n"><a href="Classes/SKWSubscription.html">SKWSubscription</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">subscription</span><span class="p">;</span>
 
 <span class="c1">/// RoomSubscriptionの接続状態が変化した後にコールされるイベント</span>
 <span class="c1">///</span>
-<span class="c1">/// - Parameters:</span>
-<span class="c1">///   - subscription: Subscription</span>
-<span class="c1">///   - connectionState: 接続状態</span>
+<span class="c1">/// @param subscription Subscription</span>
+<span class="c1">/// @param connectionState 接続状態</span>
 <span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">subscription</span><span class="p">:(</span><span class="n"><a href="Classes/SKWSubscription.html">SKWSubscription</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">subscription</span>
     <span class="nf">connectionStateDidChange</span><span class="p">:(</span><span class="n"><a href="Enums/SKWConnectionState.html">SKWConnectionState</a></span><span class="p">)</span><span class="nv">connectionState</span><span class="p">;</span>
 <span class="k">@end</span></code></pre>
@@ -777,8 +768,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2024-03-12)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2024-04-04)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>

@@ -20,17 +20,9 @@ extension RoomPublication: PublicationDelegate {
         delegate?.publicationUnpublished?(self)
     }
 
-    public func publicationSubscribed(_ publication: Publication) {
-        delegate?.publicationSubscribed?(self)
-    }
-
     public func publication(_ publication: Publication, subscribed subscription: Subscription) {
         let roomSubscription: RoomSubscription = subscription.toRoomSubscription(room)
         delegate?.publication?(self, subscribed: roomSubscription)
-    }
-
-    public func publicationUnsubscribed(_ publication: Publication) {
-        delegate?.publicationUnsubscribed?(self)
     }
 
     public func publication(_ publication: Publication, unsubscribed subscription: Subscription) {
