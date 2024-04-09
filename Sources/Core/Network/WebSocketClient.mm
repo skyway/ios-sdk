@@ -19,7 +19,7 @@
     std::promise<bool> openPromise_;
     std::promise<bool> closePromise_;
     skyway::network::WebSocketClient::Listener* listener_;
-    std::mutex listener_threads_mtx_;
+    std::mutex listener_related_mtx_;
     std::unordered_set<std::unique_ptr<std::thread>> listener_threads_;
     bool selfClosing_;
 }
@@ -46,12 +46,14 @@
 
 - (id)init {
     if (self = [super init]) {
+        listener_    = nullptr;
         selfClosing_ = false;
     }
     return self;
 }
 
 - (void)registerListener:(skyway::network::WebSocketClient::Listener*)listener {
+    std::lock_guard<std::mutex> lg(listener_related_mtx_);
     listener_ = listener;
 }
 
@@ -118,8 +120,8 @@
             [_socket closeWithCode:code reason:reason];
         } else {
             SKW_DEBUG("Socket has already closed or not connected.");
-            selfClosing_ = false;
             closePromise_.set_value(true);
+            selfClosing_ = false;
         }
         return closePromise_.get_future();
     }
@@ -128,7 +130,7 @@
 - (std::future<bool>)destroy {
     return std::async(std::launch::async, [=] {
         {
-            std::lock_guard<std::mutex> lg(listener_threads_mtx_);
+            std::lock_guard<std::mutex> lg(listener_related_mtx_);
             for (const auto& t : listener_threads_) {
                 if (t && t->joinable()) {
                     t->join();
@@ -158,19 +160,25 @@
 }
 
 - (void)webSocket:(SRWebSocket*)webSocket didFailWithError:(NSError*)error {
-    SKW_ERROR(error.description.stdString);
-    auto code = (int)[[error.userInfo valueForKey:@"HTTPResponseStatusCode"] integerValue];
-    std::lock_guard<std::mutex> lg(listener_threads_mtx_);
-    if (listener_) {
-        auto t = std::make_unique<std::thread>([=] { listener_->OnError(code); });
-        listener_threads_.emplace(std::move(t));
+    @synchronized(self) {
+        SKW_ERROR(error.description.stdString);
+        auto code = (int)[[error.userInfo valueForKey:@"HTTPResponseStatusCode"] integerValue];
+        if (selfClosing_) {
+            closePromise_.set_value(false);
+            selfClosing_ = false;
+        }
+        std::lock_guard<std::mutex> lg(listener_related_mtx_);
+        if (listener_) {
+            auto t = std::make_unique<std::thread>([=] { listener_->OnError(code); });
+            listener_threads_.emplace(std::move(t));
+        }
     }
 }
 
 - (void)webSocket:(SRWebSocket*)webSocket didReceiveMessageWithString:(NSString*)string {
     SKW_DEBUG("🔔OnMessage")
     std::string nativeString = [NSString stdStringForString:string];
-    std::lock_guard<std::mutex> lg(listener_threads_mtx_);
+    std::lock_guard<std::mutex> lg(listener_related_mtx_);
     if (listener_) {
         auto t = std::make_unique<std::thread>([=] { listener_->OnMessage(nativeString); });
         listener_threads_.emplace(std::move(t));
@@ -187,7 +195,7 @@
             SKW_WARN([NSString stdStringForString:reason]);
         }
         _socket = nil;
-        std::lock_guard<std::mutex> lg(listener_threads_mtx_);
+        std::lock_guard<std::mutex> lg(listener_related_mtx_);
         if (listener_) {
             auto t = std::make_unique<std::thread>([=] { listener_->OnClose((int)code); });
             listener_threads_.emplace(std::move(t));
