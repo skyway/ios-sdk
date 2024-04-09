@@ -17,7 +17,7 @@
     <a title="Type Definitions  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">SkyWayCore 2.0.0 Docs</a> (52% documented)</p>
+        <p><a href="index.html">SkyWayCore 2.0.1 Docs</a> (52% documented)</p>
         <div class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -400,7 +400,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWCameraVideoSourceStartCapturingCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWCameraVideoSourceStartCapturingCompletion</span> <span class="o">=</span> <span class="p">((</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -432,7 +432,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWCameraVideoSourceSetCameraCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWCameraVideoSourceSetCameraCompletion</span> <span class="o">=</span> <span class="p">((</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -464,7 +464,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWCameraVideoSourceChangeDeviceCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWCameraVideoSourceChangeDeviceCompletion</span> <span class="o">=</span> <span class="p">((</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -496,7 +496,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWChannelCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Channel</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWChannelCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Channel</span><span class="p">?,</span> <span class="p">(</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -528,7 +528,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWChannelJoinCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">LocalPerson</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWChannelJoinCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">LocalPerson</span><span class="p">?,</span> <span class="p">(</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -560,7 +560,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWChannelUpdateMetadataCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWChannelUpdateMetadataCompletion</span> <span class="o">=</span> <span class="p">((</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -592,7 +592,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWChannelLeaveMemberCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWChannelLeaveMemberCompletion</span> <span class="o">=</span> <span class="p">((</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -624,7 +624,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWChannelCloseCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWChannelCloseCompletion</span> <span class="o">=</span> <span class="p">((</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -656,7 +656,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWChannelDisposeCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWChannelDisposeCompletion</span> <span class="o">=</span> <span class="p">((</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -688,7 +688,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWContextSetupCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWContextSetupCompletion</span> <span class="o">=</span> <span class="p">((</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -720,7 +720,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWContextDisposeCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWContextDisposeCompletion</span> <span class="o">=</span> <span class="p">((</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -752,7 +752,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWFileVideoSourceStartCapturingOnError</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWFileVideoSourceStartCapturingOnError</span> <span class="o">=</span> <span class="p">((</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -785,7 +785,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWLocalPersonPublishStreamCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Publication</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWLocalPersonPublishStreamCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Publication</span><span class="p">?,</span> <span class="p">(</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -818,7 +818,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWLocalPersonSubscribePublicationCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Subscription</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWLocalPersonSubscribePublicationCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Subscription</span><span class="p">?,</span> <span class="p">(</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -850,7 +850,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWLocalPersonUnpublishCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWLocalPersonUnpublishCompletion</span> <span class="o">=</span> <span class="p">((</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -882,7 +882,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWLocalPersonUnsubscribeCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWLocalPersonUnsubscribeCompletion</span> <span class="o">=</span> <span class="p">((</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -914,7 +914,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWLocalPersonLeaveCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWLocalPersonLeaveCompletion</span> <span class="o">=</span> <span class="p">((</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -946,7 +946,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWMemberUpdateMetadataCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWMemberUpdateMetadataCompletion</span> <span class="o">=</span> <span class="p">((</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -978,7 +978,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWMemberLeaveCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWMemberLeaveCompletion</span> <span class="o">=</span> <span class="p">((</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -1010,7 +1010,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWPublicationUpdateMetadataCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWPublicationUpdateMetadataCompletion</span> <span class="o">=</span> <span class="p">((</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -1042,7 +1042,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWPublicationCancelCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWPublicationCancelCompletion</span> <span class="o">=</span> <span class="p">((</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -1074,7 +1074,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWPublicationEnableCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWPublicationEnableCompletion</span> <span class="o">=</span> <span class="p">((</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -1106,7 +1106,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWPublicationDisableCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWPublicationDisableCompletion</span> <span class="o">=</span> <span class="p">((</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -1139,7 +1139,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWRemotePersonSubscribePublicationCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Subscription</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWRemotePersonSubscribePublicationCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Subscription</span><span class="p">?,</span> <span class="p">(</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -1171,7 +1171,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWRemotePersonUnsubscribeCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWRemotePersonUnsubscribeCompletion</span> <span class="o">=</span> <span class="p">((</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -1203,7 +1203,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWSubscriptionCancelCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWSubscriptionCancelCompletion</span> <span class="o">=</span> <span class="p">((</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -1235,7 +1235,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWVideoSourceStartCapturingCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWVideoSourceStartCapturingCompletion</span> <span class="o">=</span> <span class="p">((</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -1267,7 +1267,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWVideoSourceCapturingOnError</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SKWVideoSourceCapturingOnError</span> <span class="o">=</span> <span class="p">((</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -1279,8 +1279,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2024-04-04)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2024-04-09)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
