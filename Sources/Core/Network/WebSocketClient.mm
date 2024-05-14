@@ -225,12 +225,6 @@ void WebSocketClient::RegisterListener(WebSocketClientInterface::Listener* liste
     [impl_->delegator_ registerListener:listener];
 }
 
-std::future<bool> WebSocketClient::Connect(const std::string& native_url,
-                                           const std::string& native_sub_protocol) {
-    std::vector<std::string> sub_protocols{native_sub_protocol};
-    return this->Connect(native_url, sub_protocols, {});
-}
-
 std::future<bool> WebSocketClient::Connect(
     const std::string& native_url,
     const std::vector<std::string>& native_sub_protocols,

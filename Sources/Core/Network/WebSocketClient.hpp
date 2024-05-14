@@ -22,7 +22,6 @@ public:
     ~WebSocketClient();
     // WebSocketClientInterface
     void RegisterListener(WebSocketClientInterface::Listener* listener) override;
-    std::future<bool> Connect(const std::string& url, const std::string& sub_protocol) override;
     std::future<bool> Connect(const std::string& url, const std::vector<std::string>& sub_protocols, const std::unordered_map<std::string, std::string>& headers) override;
     std::future<bool> Send(const std::string& message) override;
     std::future<bool> Close(const int code, const std::string& reason) override;
