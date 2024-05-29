@@ -18,9 +18,8 @@
 @interface WebSocketDelegator : NSObject <SRWebSocketDelegate> {
     std::promise<bool> openPromise_;
     std::promise<bool> closePromise_;
+    std::mutex listener_mtx_;
     skyway::network::WebSocketClient::Listener* listener_;
-    std::mutex listener_related_mtx_;
-    std::unordered_set<std::unique_ptr<std::thread>> listener_threads_;
     bool selfClosing_;
 }
 
@@ -53,7 +52,7 @@
 }
 
 - (void)registerListener:(skyway::network::WebSocketClient::Listener*)listener {
-    std::lock_guard<std::mutex> lg(listener_related_mtx_);
+    std::lock_guard<std::mutex> lg(listener_mtx_);
     listener_ = listener;
 }
 
@@ -130,13 +129,7 @@
 - (std::future<bool>)destroy {
     return std::async(std::launch::async, [=] {
         {
-            std::lock_guard<std::mutex> lg(listener_related_mtx_);
-            for (const auto& t : listener_threads_) {
-                if (t && t->joinable()) {
-                    t->join();
-                }
-            }
-            listener_threads_.clear();
+            std::lock_guard<std::mutex> lg(listener_mtx_);
             listener_ = nullptr;
             // Unlock here becasue onClose will get lock guard with listener_threads_mtx_
         }
@@ -167,22 +160,24 @@
             closePromise_.set_value(false);
             selfClosing_ = false;
         }
-        std::lock_guard<std::mutex> lg(listener_related_mtx_);
-        if (listener_) {
-            auto t = std::make_unique<std::thread>([=] { listener_->OnError(code); });
-            listener_threads_.emplace(std::move(t));
-        }
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+          std::lock_guard<std::mutex> lg(self->listener_mtx_);
+          if (self->listener_) {
+              self->listener_->OnError(code);
+          }
+        });
     }
 }
 
 - (void)webSocket:(SRWebSocket*)webSocket didReceiveMessageWithString:(NSString*)string {
     SKW_DEBUG("🔔OnMessage")
     std::string nativeString = [NSString stdStringForString:string];
-    std::lock_guard<std::mutex> lg(listener_related_mtx_);
-    if (listener_) {
-        auto t = std::make_unique<std::thread>([=] { listener_->OnMessage(nativeString); });
-        listener_threads_.emplace(std::move(t));
-    }
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+      std::lock_guard<std::mutex> lg(self->listener_mtx_);
+      if (self->listener_) {
+          self->listener_->OnMessage(nativeString);
+      }
+    });
 }
 
 - (void)webSocket:(SRWebSocket*)webSocket
@@ -195,11 +190,12 @@
             SKW_WARN([NSString stdStringForString:reason]);
         }
         _socket = nil;
-        std::lock_guard<std::mutex> lg(listener_related_mtx_);
-        if (listener_) {
-            auto t = std::make_unique<std::thread>([=] { listener_->OnClose((int)code); });
-            listener_threads_.emplace(std::move(t));
-        }
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+          std::lock_guard<std::mutex> lg(self->listener_mtx_);
+          if (self->listener_) {
+              self->listener_->OnClose((int)code);
+          }
+        });
         if (selfClosing_) {
             closePromise_.set_value(true);
             selfClosing_ = false;
