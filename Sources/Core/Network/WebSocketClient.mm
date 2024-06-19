@@ -18,9 +18,9 @@
 @interface WebSocketDelegator : NSObject <SRWebSocketDelegate> {
     std::promise<bool> openPromise_;
     std::promise<bool> closePromise_;
-    std::mutex listener_mtx_;
     skyway::network::WebSocketClient::Listener* listener_;
     bool selfClosing_;
+    dispatch_group_t group_;
 }
 
 @property(nonatomic) SRWebSocket* socket;
@@ -47,12 +47,12 @@
     if (self = [super init]) {
         listener_    = nullptr;
         selfClosing_ = false;
+        group_       = dispatch_group_create();
     }
     return self;
 }
 
 - (void)registerListener:(skyway::network::WebSocketClient::Listener*)listener {
-    std::lock_guard<std::mutex> lg(listener_mtx_);
     listener_ = listener;
 }
 
@@ -113,6 +113,11 @@
 
 - (std::future<bool>)closeWithCode:(int)code reason:(NSString* _Nullable)reason {
     @synchronized(self) {
+        if (selfClosing_) {
+            std::promise<bool> promise;
+            promise.set_value(false);
+            return promise.get_future();
+        }
         selfClosing_  = true;
         closePromise_ = std::promise<bool>();
         if (_socket && _socket.readyState == SR_OPEN) {
@@ -127,15 +132,17 @@
 }
 
 - (std::future<bool>)destroy {
-    return std::async(std::launch::async, [=] {
-        {
-            std::lock_guard<std::mutex> lg(listener_mtx_);
-            listener_ = nullptr;
-            // Unlock here becasue onClose will get lock guard with listener_threads_mtx_
-        }
-        auto close_res = [self closeWithCode:1000 reason:@""];
-        return close_res.get();
-    });
+    auto close_res = [self closeWithCode:1000 reason:@""];
+    close_res.wait();
+
+    // Stop receiving event.
+    _socket.delegate = nil;
+    _socket          = nil;
+
+    dispatch_group_wait(group_, DISPATCH_TIME_FOREVER);
+    listener_ = nullptr;  // Safely remove listener after waiting for events.
+
+    return close_res;
 }
 
 - (void)webSocketDidOpen:(SRWebSocket*)webSocket {
@@ -160,21 +167,21 @@
             closePromise_.set_value(false);
             selfClosing_ = false;
         }
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-          std::lock_guard<std::mutex> lg(self->listener_mtx_);
-          if (self->listener_) {
-              self->listener_->OnError(code);
-          }
-        });
+
+        dispatch_group_async(
+            group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+              if (self->listener_) {
+                  self->listener_->OnError(code);
+              }
+            });
     }
 }
 
 - (void)webSocket:(SRWebSocket*)webSocket didReceiveMessageWithString:(NSString*)string {
     SKW_DEBUG("🔔OnMessage")
-    std::string nativeString = [NSString stdStringForString:string];
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-      std::lock_guard<std::mutex> lg(self->listener_mtx_);
+    dispatch_group_async(group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
       if (self->listener_) {
+          std::string nativeString = [NSString stdStringForString:string];
           self->listener_->OnMessage(nativeString);
       }
     });
@@ -189,13 +196,13 @@
         if (!wasClean) {
             SKW_WARN([NSString stdStringForString:reason]);
         }
-        _socket = nil;
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-          std::lock_guard<std::mutex> lg(self->listener_mtx_);
-          if (self->listener_) {
-              self->listener_->OnClose((int)code);
-          }
-        });
+        dispatch_group_async(
+            group_, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+              if (self->listener_) {
+                  self->listener_->OnClose((int)code);
+              }
+            });
+
         if (selfClosing_) {
             closePromise_.set_value(true);
             selfClosing_ = false;

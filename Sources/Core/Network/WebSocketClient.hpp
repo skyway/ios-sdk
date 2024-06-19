@@ -29,9 +29,6 @@ public:
 private:
     class Impl;
     std::unique_ptr<Impl> impl_;
-    std::mutex disposer_mtx_;
-    std::unique_ptr<std::thread> disposer_thread_;
-    std::condition_variable disposer_cv_;
 };
 
 class WebSocketClientFactory : public interface::WebSocketClientFactory {
