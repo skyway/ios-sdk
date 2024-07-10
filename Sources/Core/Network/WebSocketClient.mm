@@ -7,7 +7,6 @@
 //
 
 #import <SocketRocket/SocketRocket.h>
-#include <unordered_set>
 
 #include "./WebSocketClient.hpp"
 
@@ -60,18 +59,31 @@
                        subprotocols:(NSArray<NSString*>* _Nonnull)subprotocols
                             headers:(NSDictionary<NSString*, NSString*>* _Nonnull)headers {
     @synchronized(self) {
-        openPromise_ = std::promise<bool>();
         if (_socket) {
-            if (_socket.readyState == SR_OPEN) {
-                openPromise_.set_value(true);
-                return openPromise_.get_future();
-            } else {
-                // Workaround to avoid `webSocketDidOpen` is called twice
-                // in the bad network environment.
-                _socket.delegate = nil;
-                _socket          = nil;
+            switch (_socket.readyState) {
+                case SR_CONNECTING: {
+                    SKW_WARN("WebSocket is already connecting.");
+                    std::promise<bool> promise;
+                    promise.set_value(false);
+                    return promise.get_future();
+                }
+                case SR_OPEN: {
+                    SKW_WARN("WebSocket is already opened.");
+                    std::promise<bool> promise;
+                    promise.set_value(true);
+                    return promise.get_future();
+                }
+                default:
+                    // Workaround to avoid `webSocketDidOpen` is called twice
+                    // in the bad network environment.
+                    _socket.delegate = nil;
+                    _socket          = nil;
+                    break;
             }
         }
+
+        openPromise_ = std::promise<bool>();
+
         NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL:url];
         [headers enumerateKeysAndObjectsUsingBlock:^(
                      NSString* _Nonnull key, NSString* _Nonnull obj, BOOL* _Nonnull stop) {
