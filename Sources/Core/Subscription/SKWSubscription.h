@@ -64,7 +64,8 @@ typedef void (^SKWSubscriptionCancelCompletion)(NSError* _Nullable error);
 ///  Subscribeを中止します。
 ///
 /// @param completion 完了コールバック
-- (void)cancelWithCompletion:(SKWSubscriptionCancelCompletion _Nullable)completion;
+- (void)cancelWithCompletion:(SKWSubscriptionCancelCompletion _Nullable)completion
+    __attribute__((deprecated("SkyWayCore v2.0.7で非推奨となりました。")));
 
 - (SKWWebRTCStats* _Nullable)getStats
     __attribute__((deprecated("SkyWayCore v2.0.0で非推奨となりました。")));
@@ -77,7 +78,8 @@ NS_SWIFT_NAME(SubscriptionDelegate)
 
 /// RoomSubscriptionがUnsubscribeされCanceled状態に変化した後にコールされます。
 /// @param subscription Subscription
-- (void)subscriptionCanceled:(SKWSubscription* _Nonnull)subscription;
+- (void)subscriptionCanceled:(SKWSubscription* _Nonnull)subscription
+    __attribute__((deprecated("SkyWayCore v2.0.7で非推奨となりました。")));
 
 /// RoomSubscriptionの接続状態が変化した後にコールされるイベント
 ///

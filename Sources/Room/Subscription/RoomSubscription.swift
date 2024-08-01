@@ -84,8 +84,8 @@ import SkyWayCore
     }
 
     /// Subscribeを中止します。
-    ///
-    @available(iOS 13.0, *)
+    /// - Warning: SkyWayRoom v2.0.7で非推奨となりました。
+    @available(iOS, introduced: 13.0, deprecated, message: "SkyWayRoom v2.0.7で非推奨となりました。")
     @objc public func cancel() async throws {
         try await withCheckedThrowingContinuation {
             (continuation: CheckedContinuation<Void, Error>) in
@@ -102,6 +102,8 @@ import SkyWayCore
     /// Subscribeを中止します。
     ///
     /// - Parameter completion: 完了コールバック
+    /// - Warning: SkyWayRoom v2.0.7で非推奨となりました。
+    @available(*, deprecated, message: "SkyWayRoom v2.0.7で非推奨となりました。")
     @objc public func cancel(completion: ((Error?) -> Void)?) {
         core.cancel(completion: completion)
     }

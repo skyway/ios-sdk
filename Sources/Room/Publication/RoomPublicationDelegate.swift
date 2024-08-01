@@ -13,6 +13,8 @@ import Foundation
     /// PublicationがUnpublishされた後にコールされるイベント
     ///
     /// - Parameter publication: RoomPublication
+    /// - Warning: SkyWayRoom v2.0.7で非推奨となりました。
+    @available(*, deprecated, message: "SkyWayRoom v2.0.7で非推奨となりました。")
     @objc optional func publicationUnpublished(_ publication: RoomPublication)
 
     /// PublicationがRoomMemberにSubscribeされた後にコールされるイベント

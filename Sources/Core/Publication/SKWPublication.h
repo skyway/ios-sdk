@@ -70,7 +70,8 @@ typedef void (^SKWPublicationDisableCompletion)(NSError* _Nullable error);
 
 /// Publishを中止します
 /// @param completion 完了コールバック
-- (void)cancelWithCompletion:(SKWPublicationCancelCompletion _Nullable)completion;
+- (void)cancelWithCompletion:(SKWPublicationCancelCompletion _Nullable)completion
+    __attribute__((deprecated("SkyWayCore v2.0.7で非推奨となりました。")));
 
 /// Publicationを有効状態にします。
 ///
@@ -116,7 +117,8 @@ NS_SWIFT_NAME(PublicationDelegate)
 /// このPublicationが中止された時に発生するイベント
 ///
 /// @param publication Publication
-- (void)publicationUnpublished:(SKWPublication* _Nonnull)publication;
+- (void)publicationUnpublished:(SKWPublication* _Nonnull)publication
+    __attribute__((deprecated("SkyWayCore v2.0.7で非推奨となりました。")));
 
 /// このPublicationがSubscribeされた時に発生するイベント
 ///

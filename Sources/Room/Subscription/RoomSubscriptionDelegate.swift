@@ -14,6 +14,8 @@ import Foundation
     /// RoomSubscriptionがUnsubscribeされCanceled状態に変化した後にコールされます。
     ///
     /// - Parameter subscription: RoomSubscription
+    /// - Warning: SkyWayRoom v2.0.7で非推奨となりました。
+    @available(*, deprecated, message: "SkyWayRoom v2.0.7で非推奨となりました。")
     @objc optional func subscriptionCancaled(_ subscription: RoomSubscription)
 
     /// RoomSubscriptionの接続状態が変化した後にコールされるイベント
