@@ -276,32 +276,36 @@
 }
 
 - (void)clear {
-    @synchronized(self) {
-        SKW_DEBUG("Wait for event threads to finish executing...");
-        // It shouldn't cause dead-lock even if SKWChannel is destroyed or disposed on event thread
-        // because `dispatch_group_wait` won't wait on the same queue with `_eventGroup`.
-        dispatch_group_wait(_eventGroup, DISPATCH_TIME_FOREVER);
+    SKW_DEBUG("Wait for event threads to finish executing...");
+    // It shouldn't cause dead-lock even if SKWChannel is destroyed or disposed on event thread
+    // because `dispatch_group_wait` won't wait on the same queue with `_eventGroup`.
+    dispatch_group_wait(_eventGroup, DISPATCH_TIME_FOREVER);
+    SKW_DEBUG("Start removing resources on repository.");
+    @synchronized(mutableMembers) {
         [mutableMembers enumerateObjectsUsingBlock:^(
                             SKWMember* _Nonnull obj, NSUInteger idx, BOOL* _Nonnull stop) {
           [obj dispose];
         }];
+        [mutableMembers removeAllObjects];
+    }
+    @synchronized(mutableSubscriptions) {
         [mutableSubscriptions
             enumerateObjectsUsingBlock:^(
                 SKWSubscription* _Nonnull obj, NSUInteger idx, BOOL* _Nonnull stop) {
               [obj dispose];
             }];
+        [mutableSubscriptions removeAllObjects];
+    }
+    @synchronized(mutablePublications) {
         [mutablePublications
             enumerateObjectsUsingBlock:^(
                 SKWPublication* _Nonnull obj, NSUInteger idx, BOOL* _Nonnull stop) {
               [obj dispose];
             }];
-        SKW_DEBUG("Start removing resources on repository.");
-        [mutableMembers removeAllObjects];
-        [mutableSubscriptions removeAllObjects];
         [mutablePublications removeAllObjects];
-        _isCleared = YES;
-        SKW_DEBUG("Resources were cleared.");
     }
+    _isCleared = YES;
+    SKW_DEBUG("Resources were cleared.");
 }
 
 @end
