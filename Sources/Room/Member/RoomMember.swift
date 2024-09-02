@@ -32,6 +32,13 @@ import SkyWayCore
         return core.metadata
     }
 
+    /// メンバーサイド
+    ///
+    /// このクライアントで生成されたメンバーの場合localになります。
+    @objc public var side: Side {
+        return core.side
+    }
+
     /// ステート
     ///
     /// Leftの場合、このオブジェクトの操作は無効です。

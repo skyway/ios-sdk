@@ -87,15 +87,24 @@ import SkyWayCore
         ///
         /// Memberの退出はMemberの`leave()`または、権限があればRoomの`leave(_:)`でも退出させることができますが、退出処理を行わずアプリケーションがクラッシュした時、SkyWayを終了した時などは情報に不整合が発生し、RemoteMemberから見るとまだRoomに存在するように見えます。
         ///
-        /// このオプションではSkyWayサーバとのkeepalive時間を設定することでその不整合が起こる時間を設定できます。
+        /// このオプションではSkyWayサーバとのkeepalive時間を設定することでその不整合を解消するまでの時間を設定できます。
         ///
         /// 短すぎる設定では、頻繁にサーバに対してリクエストをすることになるのでパフォーマンスが低下する恐れがあります。
         public var keepaliveIntervalSec: Int32 = 0
+        /// MemberのKeepAliveの更新間隔時間を超えてRoomからMemberが削除されるまでの時間(秒)
+        ///
+        /// デフォルトは30秒です。
+        ///
+        /// `keepaliveIntervalSec`と同様に、SkyWayサーバにおけるMemberの存在情報の不整合を解消するまでの時間を設定できます。
+        ///
+        /// 短すぎる設定では、正常な通信であってもRoomから退出させられてしまう恐れがあります。
+        public var keepaliveIntervalGapSec: Int32 = 0
         func toCore() -> MemberInit {
             let core: MemberInit = .init()
             core.name = name
             core.metadata = metadata
             core.keepaliveIntervalSec = keepaliveIntervalSec
+            core.keepaliveIntervalGapSec = keepaliveIntervalGapSec
             return core
         }
     }

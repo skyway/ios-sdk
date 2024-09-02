@@ -457,6 +457,9 @@ private:
         if (init.keepaliveIntervalSec != 0) {
             nativeInit.keepalive_interval_sec = init.keepaliveIntervalSec;
         }
+        if (init.keepaliveIntervalGapSec != 0) {
+            nativeInit.keepalive_interval_gap_sec = init.keepaliveIntervalGapSec;
+        }
     }
 
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{

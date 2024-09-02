@@ -45,6 +45,8 @@ NS_SWIFT_NAME(MemberInit)
 @property NSString* _Nullable metadata;
 /// MemberのKeepAliveの更新間隔時間
 @property int keepaliveIntervalSec;
+/// MemberのKeepAliveの更新間隔時間を超えてChannelからMemberが削除されるまでの時間
+@property int keepaliveIntervalGapSec;
 
 @end
 
