@@ -16,9 +16,15 @@ namespace platform {
 
 class PlatformInfoDelegator : public interface::PlatformInfoDelegator {
 public:
+    PlatformInfoDelegator();
+    ~PlatformInfoDelegator();
     std::string GetPlatform() const override;
     std::string GetOsInfo() const override;
     std::string GetModelName() const override;
+    std::string GetSdkVersion() const override;
+private:
+    class Impl;
+    std::unique_ptr<Impl> impl_;
 };
 
 }  // namespace platform
