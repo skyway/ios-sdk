@@ -23,7 +23,7 @@
 
 using NativeLocalStream = skyway::core::interface::LocalStream;
 
-class PublicationEventListener : public NativePublication::EventListener {
+class PublicationEventListener : public skyway::core::interface::Publication::EventListener {
 public:
     PublicationEventListener(SKWPublication* publication)
         : publication_(publication), group_(publication.repository.eventGroup) {}
@@ -36,7 +36,8 @@ public:
         }
     }
 
-    void OnSubscribed(skyway::core::interface::Subscription* subscription) override {
+    void OnSubscribed(
+        std::shared_ptr<skyway::core::interface::Subscription> subscription) override {
         SKWSubscription* sub = [publication_.repository registerSubscriptionIfNeeded:subscription];
         if ([publication_.delegate respondsToSelector:@selector(publication:subscribed:)]) {
             dispatch_group_async(
@@ -46,7 +47,8 @@ public:
         }
     }
 
-    void OnUnsubscribed(skyway::core::interface::Subscription* subscription) override {
+    void OnUnsubscribed(
+        std::shared_ptr<skyway::core::interface::Subscription> subscription) override {
         SKWSubscription* sub =
             [publication_.repository findSubscriptionBySubscriptionID:subscription->Id()];
         if ([publication_.delegate respondsToSelector:@selector(publication:unsubscribed:)]) {
@@ -127,7 +129,7 @@ private:
 
 @implementation SKWPublication
 
-- (id _Nonnull)initWithNative:(NativePublication* _Nonnull)native
+- (id _Nonnull)initWithNative:(std::shared_ptr<skyway::core::interface::Publication>)native
                    repository:(ChannelStateRepository* _Nonnull)repository;
 {
     if (self = [super init]) {

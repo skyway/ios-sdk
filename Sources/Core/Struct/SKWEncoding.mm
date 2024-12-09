@@ -10,23 +10,21 @@
 #import "NSString+StdString.h"
 #import "SKWEncoding+Internal.h"
 
-#include <boost/optional.hpp>
-
 @implementation SKWEncoding
 
 + (SKWEncoding*)encodingForNativeEncoding:(NativeEncoding)nativeEncoding {
     SKWEncoding* encoding = [[SKWEncoding alloc] init];
     if (nativeEncoding.id) {
-        encoding.id = [NSString stringForStdString:nativeEncoding.id.get()];
+        encoding.id = [NSString stringForStdString:nativeEncoding.id.value()];
     }
     if (nativeEncoding.max_bitrate) {
-        encoding.maxBitrate = nativeEncoding.max_bitrate.get();
+        encoding.maxBitrate = nativeEncoding.max_bitrate.value();
     }
     if (nativeEncoding.scale_resolution_down_by) {
-        encoding.scaleResolutionDownBy = nativeEncoding.scale_resolution_down_by.get();
+        encoding.scaleResolutionDownBy = nativeEncoding.scale_resolution_down_by.value();
     }
     if (nativeEncoding.max_framerate) {
-        encoding.maxFramerate = nativeEncoding.max_framerate.get();
+        encoding.maxFramerate = nativeEncoding.max_framerate.value();
     }
     return encoding;
 }

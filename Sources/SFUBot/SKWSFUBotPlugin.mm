@@ -19,7 +19,6 @@
 #import <skyway/plugin/sfu_bot_plugin/sfu_options.hpp>
 
 using NativeSfuPlugin = skyway::plugin::sfu_bot::Plugin;
-using NativeSfuBot    = skyway::plugin::sfu_bot::SfuBot;
 
 @implementation SKWSFUBotPluginOptions
 
@@ -62,7 +61,7 @@ using NativeSfuBot    = skyway::plugin::sfu_bot::SfuBot;
     auto nativeChannel = channel.native;
 
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-      auto nativeBot = nativePlugin->CreateBot(nativeChannel.get());
+      auto nativeBot = nativePlugin->CreateBot(nativeChannel);
       if (completion) {
           if (nativeBot) {
               id bot = [channel.repository registerMemberIfNeeded:nativeBot];
@@ -76,10 +75,10 @@ using NativeSfuBot    = skyway::plugin::sfu_bot::SfuBot;
 
 // MARK: - SKWPlugin
 
-- (SKWRemoteMember* _Nullable)createRemoteMemberWithNative:(NativeRemoteMember* _Nonnull)native
-                                                repository:
-                                                    (ChannelStateRepository* _Nonnull)repository {
-    if (auto nativeBot = dynamic_cast<NativeSfuBot*>(native)) {
+- (SKWRemoteMember* _Nullable)
+    createRemoteMemberWithNative:(std::shared_ptr<skyway::core::interface::RemoteMember>)native
+                      repository:(ChannelStateRepository* _Nonnull)repository {
+    if (auto nativeBot = std::dynamic_pointer_cast<skyway::plugin::sfu_bot::SfuBot>(native)) {
         return [[SKWSFUBotMember alloc] initWithNativeSFUBot:nativeBot repository:repository];
     }
     return nil;

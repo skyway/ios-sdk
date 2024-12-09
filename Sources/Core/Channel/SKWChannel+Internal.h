@@ -16,7 +16,6 @@
 #import <skyway/core/channel/channel.hpp>
 
 using NativeChannel = skyway::core::channel::Channel;
-using NativeMember  = skyway::core::interface::Member;
 
 @interface SKWChannel ()
 

@@ -21,7 +21,7 @@
 
 + (SKWCodecParameters*)parameterForNativeParameter:(NativeCodec::Parameters)nativeParameters {
     SKWCodecParameters* parameters = [[SKWCodecParameters alloc] init];
-    parameters.useDTX = nativeParameters.use_dtx == boost::none || *nativeParameters.use_dtx;
+    parameters.useDTX              = nativeParameters.use_dtx.value_or(true);
     return parameters;
 }
 - (NativeCodec::Parameters)nativeParameter {

@@ -15,16 +15,14 @@
 
 #import <skyway/core/interface/member.hpp>
 
-using NativeMember = skyway::core::interface::Member;
-
 @class ChannelStateRepository;
 
 @interface SKWMember ()
 
-@property(nonatomic, readonly) NativeMember* _Nonnull native;
+@property(nonatomic, readonly) std::shared_ptr<skyway::core::interface::Member> native;
 @property(nonatomic, readonly, weak) ChannelStateRepository* _Nullable repository;
 
-- (id _Nonnull)initWithNative:(NativeMember* _Nonnull)native
+- (id _Nonnull)initWithNative:(std::shared_ptr<skyway::core::interface::Member>)native
                    repository:(ChannelStateRepository* _Nonnull)repository;
 
 - (void)dispose;

@@ -18,12 +18,6 @@
 @class SKWPublication;
 @class SKWSubscription;
 
-using NativeChannelInterface      = skyway::core::interface::Channel;
-using NativeMemberInterface       = skyway::core::interface::Member;
-using NativeRemoteMemberInterface = skyway::core::interface::RemoteMember;
-using NativePublicationInterface  = skyway::core::interface::Publication;
-using NativeSubscriptionInterface = skyway::core::interface::Subscription;
-
 @interface ChannelStateRepository : NSObject
 
 @property(nonatomic, readonly) NSArray<SKWMember*>* _Nonnull members;
@@ -32,18 +26,19 @@ using NativeSubscriptionInterface = skyway::core::interface::Subscription;
 @property(nonatomic, readonly) dispatch_group_t _Nonnull eventGroup;
 @property(nonatomic, readonly) BOOL isCleared;
 
-- (id _Nonnull)initWithNative:(NativeChannelInterface* _Nonnull)native
+- (id _Nonnull)initWithNative:(std::shared_ptr<skyway::core::interface::Channel>)native
                    eventGroup:(dispatch_group_t _Nonnull)eventGroup;
 
 - (SKWMember* _Nullable)findMemberByMemberID:(const std::string&)memberID;
 - (SKWPublication* _Nullable)findPublicationByPublicationID:(const std::string&)publicationID;
 - (SKWSubscription* _Nullable)findSubscriptionBySubscriptionID:(const std::string&)subscriptionID;
 
-- (SKWMember* _Nonnull)registerMemberIfNeeded:(NativeMemberInterface* _Nonnull)nativeMember;
+- (SKWMember* _Nonnull)registerMemberIfNeeded:
+    (std::shared_ptr<skyway::core::interface::Member>)nativeMember;
 - (SKWPublication* _Nonnull)registerPublicationIfNeeded:
-    (NativePublicationInterface* _Nonnull)nativePublication;
+    (std::shared_ptr<skyway::core::interface::Publication>)nativePublication;
 - (SKWSubscription* _Nonnull)registerSubscriptionIfNeeded:
-    (NativeSubscriptionInterface* _Nonnull)nativeSubscription;
+    (std::shared_ptr<skyway::core::interface::Subscription>)nativeSubscription;
 
 - (NSArray<SKWPublication*>* _Nonnull)getActivePublicationsByPublisherID:
     (NSString* _Nonnull)publisherID;

@@ -14,11 +14,9 @@
 
 #import <skyway/plugin/sfu_bot_plugin/sfu_bot.hpp>
 
-using NativeSFUBot = skyway::plugin::sfu_bot::SfuBot;
-
 @interface SKWSFUBotMember ()
 
-- (id _Nonnull)initWithNativeSFUBot:(NativeSFUBot* _Nonnull)native
+- (id _Nonnull)initWithNativeSFUBot:(std::shared_ptr<skyway::plugin::sfu_bot::SfuBot>)native
                          repository:(ChannelStateRepository* _Nonnull)repository;
 ;
 

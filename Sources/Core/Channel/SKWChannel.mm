@@ -24,11 +24,6 @@ using NativeMemberInit           = skyway::model::Member::Init;
 using NativeChannelQuery         = skyway::model::Channel::Query;
 using NativeChannelEventListener = skyway::core::interface::Channel::EventListener;
 
-using NativeMemberInterface       = skyway::core::interface::Member;
-using NativeRemoteMemberInterface = skyway::core::interface::RemoteMember;
-using NativePublicationInterface  = skyway::core::interface::Publication;
-using NativeSubscriptionInterface = skyway::core::interface::Subscription;
-
 class ChannelEventListener : public NativeChannelEventListener {
 public:
     ChannelEventListener(SKWChannel* channel, dispatch_group_t group)
@@ -71,7 +66,7 @@ public:
         }
     }
 
-    void OnMemberJoined(NativeMemberInterface* nativeMember) override {
+    void OnMemberJoined(std::shared_ptr<skyway::core::interface::Member> nativeMember) override {
         __strong SKWChannel* strongChannel = channel_;
         if (!strongChannel) {
             return;
@@ -88,7 +83,7 @@ public:
                 });
         }
     }
-    void OnMemberLeft(NativeMemberInterface* nativeMember) override {
+    void OnMemberLeft(std::shared_ptr<skyway::core::interface::Member> nativeMember) override {
         __strong SKWChannel* strongChannel = channel_;
         if (!strongChannel) {
             return;
@@ -101,7 +96,7 @@ public:
                 });
         }
     }
-    void OnMemberMetadataUpdated(NativeMemberInterface* nativeMember,
+    void OnMemberMetadataUpdated(std::shared_ptr<skyway::core::interface::Member> nativeMember,
                                  const std::string& nativeMetadata) override {
         __strong SKWChannel* strongChannel = channel_;
         if (!strongChannel) {
@@ -134,7 +129,8 @@ public:
         }
     }
 
-    void OnStreamPublished(NativePublicationInterface* nativePublication) override {
+    void OnStreamPublished(
+        std::shared_ptr<skyway::core::interface::Publication> nativePublication) override {
         __strong SKWChannel* strongChannel = channel_;
         if (!strongChannel) {
             return;
@@ -149,7 +145,8 @@ public:
                 });
         }
     }
-    void OnStreamUnpublished(NativePublicationInterface* nativePublication) override {
+    void OnStreamUnpublished(
+        std::shared_ptr<skyway::core::interface::Publication> nativePublication) override {
         __strong SKWChannel* strongChannel = channel_;
         if (!strongChannel) {
             return;
@@ -166,7 +163,8 @@ public:
         }
     }
 
-    void OnPublicationEnabled(NativePublicationInterface* nativePublication) override {
+    void OnPublicationEnabled(
+        std::shared_ptr<skyway::core::interface::Publication> nativePublication) override {
         __strong SKWChannel* strongChannel = channel_;
         if (!strongChannel) {
             return;
@@ -183,7 +181,8 @@ public:
         }
     }
 
-    void OnPublicationDisabled(NativePublicationInterface* nativePublication) override {
+    void OnPublicationDisabled(
+        std::shared_ptr<skyway::core::interface::Publication> nativePublication) override {
         __strong SKWChannel* strongChannel = channel_;
         if (!strongChannel) {
             return;
@@ -200,8 +199,9 @@ public:
         }
     }
 
-    void OnPublicationMetadataUpdated(NativePublicationInterface* nativePublication,
-                                      const std::string& nativeMetadata) override {
+    void OnPublicationMetadataUpdated(
+        std::shared_ptr<skyway::core::interface::Publication> nativePublication,
+        const std::string& nativeMetadata) override {
         __strong SKWChannel* strongChannel = channel_;
         if (!strongChannel) {
             return;
@@ -234,7 +234,8 @@ public:
         }
     }
 
-    void OnPublicationSubscribed(NativeSubscriptionInterface* nativeSubscription) override {
+    void OnPublicationSubscribed(
+        std::shared_ptr<skyway::core::interface::Subscription> nativeSubscription) override {
         __strong SKWChannel* strongChannel = channel_;
         if (!strongChannel) {
             return;
@@ -250,7 +251,8 @@ public:
                 });
         }
     }
-    void OnPublicationUnsubscribed(NativeSubscriptionInterface* nativeSubscription) override {
+    void OnPublicationUnsubscribed(
+        std::shared_ptr<skyway::core::interface::Subscription> nativeSubscription) override {
         __strong SKWChannel* strongChannel = channel_;
         if (!strongChannel) {
             return;
@@ -293,8 +295,7 @@ private:
     if (self = [super init]) {
         _native     = native;
         eventGroup  = dispatch_group_create();
-        _repository = [[ChannelStateRepository alloc] initWithNative:native.get()
-                                                          eventGroup:eventGroup];
+        _repository = [[ChannelStateRepository alloc] initWithNative:native eventGroup:eventGroup];
 
         listener = std::make_unique<ChannelEventListener>(self, eventGroup);
         _native->AddEventListener(listener.get());

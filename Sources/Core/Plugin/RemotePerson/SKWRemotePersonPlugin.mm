@@ -17,7 +17,6 @@
 #import <skyway/plugin/remote_person_plugin/remote_person.hpp>
 
 using NativeRemotePersonPlugin = skyway::plugin::remote_person::Plugin;
-using NativeRemotePerson       = skyway::plugin::remote_person::RemotePerson;
 
 @implementation SKWRemotePersonPlugin
 
@@ -26,10 +25,11 @@ using NativeRemotePerson       = skyway::plugin::remote_person::RemotePerson;
     return [super initWithUniqueNative:std::make_unique<NativeRemotePersonPlugin>(nativeFactory)];
 }
 
-- (SKWRemoteMember* _Nullable)createRemoteMemberWithNative:(NativeRemoteMember* _Nonnull)native
-                                                repository:
-                                                    (ChannelStateRepository* _Nonnull)repository {
-    if (auto nativeRemotePerson = dynamic_cast<NativeRemotePerson*>(native)) {
+- (SKWRemoteMember* _Nullable)
+    createRemoteMemberWithNative:(std::shared_ptr<skyway::core::interface::RemoteMember>)native
+                      repository:(ChannelStateRepository* _Nonnull)repository {
+    if (auto nativeRemotePerson =
+            std::dynamic_pointer_cast<skyway::plugin::remote_person::RemotePerson>(native)) {
         return [[SKWRemotePerson alloc] initWithNativePerson:nativeRemotePerson
                                                   repository:repository];
     }

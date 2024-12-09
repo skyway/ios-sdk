@@ -15,8 +15,10 @@
 #import "SKWSubscriptionOptions+Internal.h"
 
 #import "skyway/global/interface/logger.hpp"
+#import "skyway/global/util.hpp"
 
-class RemotePersonEventListener : public NativeRemotePerson::EventListener {
+class RemotePersonEventListener
+    : public skyway::plugin::remote_person::RemotePerson::EventListener {
 public:
     // MARK: - Member::EventListener
     RemotePersonEventListener(SKWRemotePerson* person)
@@ -56,7 +58,8 @@ public:
         }
     }
     // MARK: - RemotePerson::EventListener
-    void OnPublicationSubscribed(NativeSubscription* nativeSubscription) override {
+    void OnPublicationSubscribed(
+        std::shared_ptr<skyway::core::interface::Subscription> nativeSubscription) override {
         if ([person_.delegate respondsToSelector:@selector(remotePerson:
                                                      didSubscribePublicationOfSubscription:)]) {
             id subscription =
@@ -69,7 +72,8 @@ public:
         }
     }
 
-    void OnPublicationUnsubscribed(NativeSubscription* nativeSubscription) override {
+    void OnPublicationUnsubscribed(
+        std::shared_ptr<skyway::core::interface::Subscription> nativeSubscription) override {
         if ([person_.delegate respondsToSelector:@selector(remotePerson:
                                                      didUnsubscribePublicationOfSubscription:)]) {
             id subscription =
@@ -94,7 +98,8 @@ private:
 
 @implementation SKWRemotePerson
 
-- (id _Nonnull)initWithNativePerson:(NativeRemotePerson* _Nonnull)native
+- (id _Nonnull)initWithNativePerson:
+                   (std::shared_ptr<skyway::plugin::remote_person::RemotePerson>)native
                          repository:(ChannelStateRepository* _Nonnull)repository {
     if (self = [super initWithNative:native repository:repository]) {
         listener = std::make_unique<RemotePersonEventListener>(self);
@@ -112,7 +117,8 @@ private:
                                        (SKWRemotePersonSubscribePublicationCompletion _Nullable)
                                            completion {
     auto nativePublicationId = [NSString stdStringForString:publicationID];
-    auto nativePerson        = (NativeRemotePerson*)self.native;
+    auto nativePerson =
+        std::dynamic_pointer_cast<skyway::plugin::remote_person::RemotePerson>(self.native);
 
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
       auto nativeSubscription = nativePerson->Subscribe(nativePublicationId);
@@ -131,7 +137,8 @@ private:
 - (void)unsubscribeWithSubscriptionID:(NSString* _Nonnull)subscriptionID
                            completion:(SKWRemotePersonUnsubscribeCompletion _Nullable)completion {
     auto nativeSubscriptionId = [NSString stdStringForString:subscriptionID];
-    auto nativePerson         = (NativeRemotePerson*)self.native;
+    auto nativePerson =
+        std::dynamic_pointer_cast<skyway::plugin::remote_person::RemotePerson>(self.native);
 
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
       auto result = nativePerson->Unsubscribe(nativeSubscriptionId);

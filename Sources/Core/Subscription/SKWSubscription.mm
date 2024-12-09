@@ -22,7 +22,7 @@
 
 #import "NSString+StdString.h"
 
-class SubscriptionEventListener : public NativeSubscription::EventListener {
+class SubscriptionEventListener : public skyway::core::interface::Subscription::EventListener {
 public:
     SubscriptionEventListener(SKWSubscription* subscription)
         : subscription_(subscription), group_(subscription.repository.eventGroup) {}
@@ -62,7 +62,7 @@ private:
 
 @implementation SKWSubscription
 
-- (id _Nonnull)initWithNative:(NativeSubscription* _Nonnull)native
+- (id _Nonnull)initWithNative:(std::shared_ptr<skyway::core::interface::Subscription>)native
                    repository:(ChannelStateRepository* _Nonnull)repository {
     if (self = [super init]) {
         _native     = native;

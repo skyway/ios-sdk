@@ -15,14 +15,12 @@
 
 #import <skyway/core/interface/publication.hpp>
 
-using NativeSubscription = skyway::core::interface::Subscription;
-
 @interface SKWSubscription ()
 
-@property(nonatomic, readonly) NativeSubscription* _Nonnull native;
+@property(nonatomic, readonly) std::shared_ptr<skyway::core::interface::Subscription> native;
 @property(nonatomic, readonly, weak) ChannelStateRepository* _Nullable repository;
 
-- (id _Nonnull)initWithNative:(NativeSubscription* _Nonnull)native
+- (id _Nonnull)initWithNative:(std::shared_ptr<skyway::core::interface::Subscription>)native
                    repository:(ChannelStateRepository* _Nonnull)repository;
 - (void)setStreamFromNativeStream:
     (std::shared_ptr<skyway::core::interface::RemoteStream>)nativeStream;

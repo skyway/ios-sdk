@@ -13,8 +13,6 @@
 
 #import <skyway/core/interface/remote_member.hpp>
 
-using NativeRemoteMember = skyway::core::interface::RemoteMember;
-
 @implementation SKWRemoteMember
 - (void)dispose {
     // Do nothing

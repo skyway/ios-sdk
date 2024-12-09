@@ -15,14 +15,12 @@
 
 #import <skyway/core/interface/publication.hpp>
 
-using NativePublication = skyway::core::interface::Publication;
-
 @interface SKWPublication ()
 
-@property(nonatomic, readonly) NativePublication* _Nonnull native;
+@property(nonatomic, readonly) std::shared_ptr<skyway::core::interface::Publication> native;
 @property(nonatomic, readonly, weak) ChannelStateRepository* _Nullable repository;
 
-- (id _Nonnull)initWithNative:(NativePublication* _Nonnull)native
+- (id _Nonnull)initWithNative:(std::shared_ptr<skyway::core::interface::Publication>)native
                    repository:(ChannelStateRepository* _Nonnull)repository;
 
 - (void)setStream:(SKWLocalStream* _Nonnull)stream;

@@ -15,12 +15,12 @@
 namespace skyway {
 namespace network {
 
-std::future<boost::optional<HttpClientInterface::Response>> HttpClient::Request(
+std::future<std::optional<HttpClientInterface::Response>> HttpClient::Request(
     const std::string& native_url,
     const std::string& native_method,
     const nlohmann::json& native_header,
     const nlohmann::json& native_body) {
-    __block std::promise<boost::optional<HttpClientInterface::Response>> promise;
+    __block std::promise<std::optional<HttpClientInterface::Response>> promise;
     NSString* method             = [NSString stringForStdString:native_method];
     NSString* urlString          = [NSString stringForStdString:native_url];
     NSURL* url                   = [[NSURL alloc] initWithString:urlString];
@@ -49,7 +49,7 @@ std::future<boost::optional<HttpClientInterface::Response>> HttpClient::Request(
             NSError* error              = _error;
             if (error) {
                 SKW_WARN("Error response has received. code: %d", error.code);
-                promise.set_value(boost::none);
+                promise.set_value(std::nullopt);
                 return;
             }
             __block nlohmann::json nativeHeader;
@@ -73,7 +73,7 @@ std::future<boost::optional<HttpClientInterface::Response>> HttpClient::Request(
                     };
                         // clang-format on
                         SKW_ERROR("Server returns invalid JSON format body: %s", nativeBody);
-                        promise.set_value(boost::none);
+                        promise.set_value(std::nullopt);
                         return;
                     }
                 }

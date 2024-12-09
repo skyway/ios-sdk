@@ -26,13 +26,10 @@
 #import <skyway/core/interface/local_stream.hpp>
 #import "skyway/global/interface/logger.hpp"
 
-using NativeLocalPerson           = skyway::core::channel::member::LocalPerson;
-using NativePublicationOptions    = skyway::core::channel::member::LocalPerson::PublicationOptions;
-using NativeLocalStream           = skyway::core::interface::LocalStream;
-using NativePublicationInterface  = skyway::core::interface::Publication;
-using NativeSubscriptionInterface = skyway::core::interface::Subscription;
+using NativePublicationOptions = skyway::core::channel::member::LocalPerson::PublicationOptions;
+using NativeLocalStream        = skyway::core::interface::LocalStream;
 
-class LocalPersonEventListener : public NativeLocalPerson::EventListener {
+class LocalPersonEventListener : public skyway::core::channel::member::LocalPerson::EventListener {
 public:
     LocalPersonEventListener(SKWLocalPerson* person)
         : person_(person), group_(person.repository.eventGroup) {}
@@ -72,7 +69,8 @@ public:
         }
     }
     // MARK: - LocalPerson::EventListener
-    void OnStreamPublished(NativePublication* nativePublication) override {
+    void OnStreamPublished(
+        std::shared_ptr<skyway::core::interface::Publication> nativePublication) override {
         if ([person_.delegate respondsToSelector:@selector(localPerson:
                                                      didPublishStreamOfPublication:)]) {
             // Use `registerPublicationIfNeeded` instead of `findPublicationByPublicationID` because
@@ -85,7 +83,8 @@ public:
         }
     }
 
-    void OnStreamUnpublished(NativePublication* nativePublication) override {
+    void OnStreamUnpublished(
+        std::shared_ptr<skyway::core::interface::Publication> nativePublication) override {
         if ([person_.delegate respondsToSelector:@selector(localPerson:
                                                      didUnpublishStreamOfPublication:)]) {
             id publication =
@@ -98,7 +97,8 @@ public:
         }
     }
 
-    void OnPublicationSubscribed(NativeSubscription* nativeSubscription) override {
+    void OnPublicationSubscribed(
+        std::shared_ptr<skyway::core::interface::Subscription> nativeSubscription) override {
         if ([person_.delegate respondsToSelector:@selector(localPerson:
                                                      didSubscribePublicationOfSubscription:)]) {
             // Use `registerSubscriptionIfNeeded` instead of `findSubscriptionBySubscriptionID`
@@ -112,7 +112,8 @@ public:
         }
     }
 
-    void OnPublicationUnsubscribed(NativeSubscription* nativeSubscription) override {
+    void OnPublicationUnsubscribed(
+        std::shared_ptr<skyway::core::interface::Subscription> nativeSubscription) override {
         if ([person_.delegate respondsToSelector:@selector(localPerson:
                                                      didUnsubscribePublicationOfSubscription:)]) {
             id subscription =
@@ -137,7 +138,8 @@ private:
 
 @implementation SKWLocalPerson
 
-- (id _Nonnull)initWithNativePerson:(NativeLocalPerson* _Nonnull)native
+- (id _Nonnull)initWithNativePerson:
+                   (std::shared_ptr<skyway::core::channel::member::LocalPerson>)native
                          repository:(ChannelStateRepository* _Nonnull)repository {
     if (self = [super initWithNative:native repository:repository]) {
         listener = std::make_unique<LocalPersonEventListener>(self);
@@ -154,7 +156,8 @@ private:
               options:(SKWPublicationOptions* _Nullable)options
            completion:(SKWLocalPersonPublishStreamCompletion _Nullable)completion {
     auto nativeStream = std::static_pointer_cast<NativeLocalStream>(stream.native);
-    auto nativePerson = (NativeLocalPerson*)self.native;
+    auto nativePerson =
+        std::static_pointer_cast<skyway::core::channel::member::LocalPerson>(self.native);
     NativePublicationOptions nativeOptions;
     if (options) {
         nativeOptions = options.nativePublicationOptions;
@@ -179,7 +182,8 @@ private:
                                        (SKWLocalPersonSubscribePublicationCompletion _Nullable)
                                            completion {
     auto nativePublicationId = [NSString stdStringForString:publicationID];
-    auto nativePerson        = (NativeLocalPerson*)self.native;
+    auto nativePerson =
+        std::static_pointer_cast<skyway::core::channel::member::LocalPerson>(self.native);
 
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
       auto nativeSubscription =
@@ -199,7 +203,8 @@ private:
 - (void)unpublishWithPublicationID:(NSString* _Nonnull)publicationID
                         completion:(SKWLocalPersonUnpublishCompletion _Nullable)completion {
     auto nativePublicationId = [NSString stdStringForString:publicationID];
-    auto nativePerson        = (NativeLocalPerson*)self.native;
+    auto nativePerson =
+        std::static_pointer_cast<skyway::core::channel::member::LocalPerson>(self.native);
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
       auto result = nativePerson->Unpublish(nativePublicationId);
       if (completion) {
@@ -215,7 +220,8 @@ private:
 - (void)unsubscribeWithSubscriptionID:(NSString* _Nonnull)subscriptionID
                            completion:(SKWLocalPersonUnsubscribeCompletion _Nullable)completion {
     auto nativeSubscriptionId = [NSString stdStringForString:subscriptionID];
-    auto nativePerson         = (NativeLocalPerson*)self.native;
+    auto nativePerson =
+        std::static_pointer_cast<skyway::core::channel::member::LocalPerson>(self.native);
 
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
       auto result = nativePerson->Unsubscribe(nativeSubscriptionId);

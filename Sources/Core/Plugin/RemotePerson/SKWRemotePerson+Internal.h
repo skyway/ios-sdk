@@ -14,10 +14,9 @@
 
 #import <skyway/plugin/remote_person_plugin/remote_person.hpp>
 
-using NativeRemotePerson = skyway::plugin::remote_person::RemotePerson;
-
 @interface SKWRemotePerson ()
-- (id _Nonnull)initWithNativePerson:(NativeRemotePerson* _Nonnull)native
+- (id _Nonnull)initWithNativePerson:
+                   (std::shared_ptr<skyway::plugin::remote_person::RemotePerson>)native
                          repository:(ChannelStateRepository* _Nonnull)repository;
 @end
 

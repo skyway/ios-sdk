@@ -20,7 +20,7 @@
 
 using NativeForwardingConfigure = skyway::plugin::sfu_bot::ForwardingConfigure;
 
-class SFUBotEventListener : public NativeSFUBot::EventListener {
+class SFUBotEventListener : public skyway::plugin::sfu_bot::SfuBot::EventListener {
 public:
     SFUBotEventListener(SKWSFUBotMember* bot) : bot_(bot), group_(bot.repository.eventGroup) {}
     // MARK: - Member::EventListener
@@ -72,7 +72,7 @@ private:
 
 @implementation SKWSFUBotMember
 
-- (id _Nonnull)initWithNativeSFUBot:(NativeSFUBot* _Nonnull)native
+- (id _Nonnull)initWithNativeSFUBot:(std::shared_ptr<skyway::plugin::sfu_bot::SfuBot>)native
                          repository:(ChannelStateRepository* _Nonnull)repository {
     if (self = [super initWithNative:native repository:repository]) {
         listener           = std::make_unique<SFUBotEventListener>(self);
@@ -103,7 +103,7 @@ private:
                      withConfigure:(SKWForwardingConfigure* _Nullable)configure
                         completion:(SKWSFUBotMemberStartForwardingPublicationCompletion _Nullable)
                                        completion {
-    auto nativeBot = (NativeSFUBot*)self.native;
+    auto nativeBot = std::dynamic_pointer_cast<skyway::plugin::sfu_bot::SfuBot>(self.native);
     NativeForwardingConfigure nativeConfigure;
     if (configure) {
         nativeConfigure.max_subscribers = configure.maxSubscribers;

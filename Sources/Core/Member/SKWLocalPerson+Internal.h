@@ -14,11 +14,10 @@
 
 #import <skyway/core/channel/member/local_person.hpp>
 
-using NativeLocalPerson = skyway::core::channel::member::LocalPerson;
-
 @interface SKWLocalPerson ()
 
-- (id _Nonnull)initWithNativePerson:(NativeLocalPerson* _Nonnull)native
+- (id _Nonnull)initWithNativePerson:
+                   (std::shared_ptr<skyway::core::channel::member::LocalPerson>)native
                          repository:(ChannelStateRepository* _Nonnull)repository;
 
 @end

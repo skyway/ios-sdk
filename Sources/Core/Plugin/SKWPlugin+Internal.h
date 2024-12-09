@@ -13,8 +13,7 @@
 #import "ChannelStateRepository.h"
 #import "SKWPlugin.h"
 
-using NativePlugin       = skyway::core::interface::RemoteMemberPlugin;
-using NativeRemoteMember = skyway::core::interface::RemoteMember;
+using NativePlugin = skyway::core::interface::RemoteMemberPlugin;
 
 @interface SKWPlugin () {
     // Ownership will be transferred to conotext
@@ -28,9 +27,9 @@ using NativeRemoteMember = skyway::core::interface::RemoteMember;
 - (std::unique_ptr<NativePlugin>)uniqueNative;
 
 // Must implement
-- (SKWRemoteMember* _Nullable)createRemoteMemberWithNative:(NativeRemoteMember* _Nonnull)native
-                                                repository:
-                                                    (ChannelStateRepository* _Nonnull)repository;
+- (SKWRemoteMember* _Nullable)
+    createRemoteMemberWithNative:(std::shared_ptr<skyway::core::interface::RemoteMember>)native
+                      repository:(ChannelStateRepository* _Nonnull)repository;
 
 @end
 

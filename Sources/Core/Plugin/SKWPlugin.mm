@@ -29,7 +29,8 @@
 
 // MARK: - SKWPlugin
 
-- (SKWRemoteMember* _Nullable)createRemoteMemberWithNative:(NativeRemoteMember*)native
+- (SKWRemoteMember* _Nullable)createRemoteMemberWithNative:
+                                  (std::shared_ptr<skyway::core::interface::RemoteMember>)native
                                                 repository:(ChannelStateRepository*)repository {
     [NSException raise:@"NotImplemented" format:@"Subclasses must implement a valid method"];
     return nil;

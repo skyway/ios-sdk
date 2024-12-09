@@ -21,7 +21,7 @@ using HttpClientInterface = interface::HttpClient;
 
 class HttpClient : public HttpClientInterface {
 public:
-    std::future<boost::optional<HttpClientInterface::Response>> Request(
+    std::future<std::optional<HttpClientInterface::Response>> Request(
         const std::string& native_url,
         const std::string& native_method,
         const nlohmann::json& native_header,

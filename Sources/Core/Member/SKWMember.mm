@@ -16,11 +16,9 @@
 
 #import <skyway/core/interface/member.hpp>
 
-using NativeMember = skyway::core::interface::Member;
-
 @implementation SKWMember
 
-- (id _Nonnull)initWithNative:(NativeMember* _Nonnull)native
+- (id _Nonnull)initWithNative:(std::shared_ptr<skyway::core::interface::Member>)native
                    repository:(ChannelStateRepository* _Nonnull)repository {
     if (self = [super init]) {
         _native     = native;
