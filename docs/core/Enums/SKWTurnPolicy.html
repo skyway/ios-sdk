@@ -17,7 +17,7 @@
     <a title="SKWTurnPolicy Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">SkyWayCore 2.1.6 Docs</a> (52% documented)</p>
+        <p><a href="../index.html">SkyWayCore 2.1.7 Docs</a> (61% documented)</p>
         <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -107,7 +107,7 @@
                 <a href="../Classes/SKWFileVideoSource.html">SKWFileVideoSource</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/SKWLocalAudioStream.html">SKWLocalAudioStream</a>
+                <a href="../Classes.html#/c:objc(cs)SKWLocalAudioStream">SKWLocalAudioStream</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/SKWLocalDataStream.html">SKWLocalDataStream</a>
@@ -374,30 +374,7 @@
               <div class="declaration">
                 <div class="language">
                   <p class="aside-title">Objective-C</p>
-                  <pre class="highlight objective_c"><code><span class="n">NS_ENUM</span><span class="p">(</span><span class="n">NSUInteger</span><span class="p">,</span> <span class="n">SKWTurnPolicy</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">/// TURNが有効なモード</span>
-    <span class="c1">///</span>
-    <span class="c1">/// SkyWay Auth Tokenのturnが有効のとき、TURNサーバが利用されることがあります。</span>
-    <span class="c1">///</span>
-    <span class="c1">/// TURNについてはこちらをご覧ください。</span>
-    <span class="c1">///</span>
-    <span class="c1">/// https://skyway.ntt.com/ja/docs/user-guide/turn/</span>
-    <span class="n">SKWTurnPolicyEnable</span><span class="p">,</span>
-    <span class="c1">/// TURNが無効なモード</span>
-    <span class="c1">///</span>
-    <span class="c1">/// SkyWay Auth Tokenのturnが有効であっても、TURNサーバ経由で通信されません。</span>
-    <span class="c1">///</span>
-    <span class="c1">/// TURNについてはこちらをご覧ください。</span>
-    <span class="c1">///</span>
-    <span class="c1">/// https://skyway.ntt.com/ja/docs/user-guide/turn/</span>
-    <span class="n">SKWTurnPolicyDisable</span><span class="p">,</span>
-    <span class="c1">/// TURNサーバ経由を強制するモード</span>
-    <span class="c1">///</span>
-    <span class="c1">/// TURNについてはこちらをご覧ください。</span>
-    <span class="c1">///</span>
-    <span class="c1">/// https://skyway.ntt.com/ja/docs/user-guide/turn/</span>
-    <span class="n">SKWTurnPolicyTurnOnly</span><span class="p">,</span>
-<span class="p">}</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">SKWTurnPolicy</span> <span class="o">:</span> <span class="n">NSUInteger</span> <span class="p">{}</span></code></pre>
 
                 </div>
                 <div class="language">
@@ -406,7 +383,11 @@
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>TURNサーバに関するポリシー</p>
+
+<p>TURNについてはこちらをご覧ください。</p>
+
+<p><a href="https://skyway.ntt.com/ja/docs/user-guide/turn/">https://skyway.ntt.com/ja/docs/user-guide/turn/</a></p>
 
           </section>
           <section class="section task-group-section">
@@ -426,12 +407,8 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>TURNが有効なモード</p>
-<pre class="highlight objective_c"><code><span class="n">SkyWay</span> <span class="n">Auth</span> <span class="n">Token</span><span class="err">の</span><span class="n">turn</span><span class="err">が有効のとき、</span><span class="n">TURN</span><span class="err">サーバが利用されることがあります。</span>
 
-<span class="n">TURN</span><span class="err">についてはこちらをご覧ください。</span>
-
-<span class="n">https</span><span class="o">:</span><span class="c1">//skyway.ntt.com/ja/docs/user-guide/turn/</span>
-</code></pre>
+<p>SkyWay Auth Tokenのturnが有効のとき、TURNサーバが利用されることがあります。</p>
 
                       </div>
                       <div class="declaration">
@@ -464,12 +441,8 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>TURNが無効なモード</p>
-<pre class="highlight objective_c"><code><span class="n">SkyWay</span> <span class="n">Auth</span> <span class="n">Token</span><span class="err">の</span><span class="n">turn</span><span class="err">が有効であっても、</span><span class="n">TURN</span><span class="err">サーバ経由で通信されません。</span>
 
-<span class="n">TURN</span><span class="err">についてはこちらをご覧ください。</span>
-
-<span class="n">https</span><span class="o">:</span><span class="c1">//skyway.ntt.com/ja/docs/user-guide/turn/</span>
-</code></pre>
+<p>SkyWay Auth Tokenのturnが有効であっても、TURNサーバ経由で通信されません。</p>
 
                       </div>
                       <div class="declaration">
@@ -502,10 +475,6 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>TURNサーバ経由を強制するモード</p>
-<pre class="highlight objective_c"><code><span class="n">TURN</span><span class="err">についてはこちらをご覧ください。</span>
-
-<span class="n">https</span><span class="o">:</span><span class="c1">//skyway.ntt.com/ja/docs/user-guide/turn/</span>
-</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -529,7 +498,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2024-12-25)</p>
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2025-01-09)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

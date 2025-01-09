@@ -17,7 +17,7 @@
     <a title="SKWErrorFactory Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">SkyWayCore 2.1.6 Docs</a> (52% documented)</p>
+        <p><a href="../index.html">SkyWayCore 2.1.7 Docs</a> (61% documented)</p>
         <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -107,7 +107,7 @@
                 <a href="../Classes/SKWFileVideoSource.html">SKWFileVideoSource</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/SKWLocalAudioStream.html">SKWLocalAudioStream</a>
+                <a href="../Classes.html#/c:objc(cs)SKWLocalAudioStream">SKWLocalAudioStream</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/SKWLocalDataStream.html">SKWLocalDataStream</a>
@@ -374,35 +374,7 @@
               <div class="declaration">
                 <div class="language">
                   <p class="aside-title">Objective-C</p>
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SKWErrorFactory</span> <span class="p">:</span> <span class="nc">NSObject</span>
-
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">availableCameraIsMissing</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">cameraIsNotSet</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">contextSetupError</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelFindError</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelCreateError</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelFindOrCreateError</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelJoinError</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelLeaveError</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelCloseError</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">memberUpdateMetadataError</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">memberLeaveError</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">localPersonPublishError</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">localPersonSubscribeError</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">localPersonUnpublishError</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">localPersonUnsubscribeError</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">remotePersonSubscribeError</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">remotePersonUnsubscribeError</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">publicationUpdateMetadataError</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">publicationCancelError</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">publicationEnableError</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">publicationDisableError</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">subscriptionCancelError</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">contextDisposeError</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">fatalErrorRAPIReconnectFailedError</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">channelUpdateMetadataError</span><span class="p">;</span>
-
-<span class="k">@end</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SKWErrorFactory</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                 </div>
                 <div class="language">
@@ -411,7 +383,7 @@
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>エラーファクトリー</p>
 
           </section>
           <section class="section task-group-section">
@@ -1222,7 +1194,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2024-12-25)</p>
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2025-01-09)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

@@ -17,7 +17,7 @@
     <a title="SKWContextDelegate Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">SkyWayCore 2.1.6 Docs</a> (52% documented)</p>
+        <p><a href="../index.html">SkyWayCore 2.1.7 Docs</a> (61% documented)</p>
         <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -107,7 +107,7 @@
                 <a href="../Classes/SKWFileVideoSource.html">SKWFileVideoSource</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/SKWLocalAudioStream.html">SKWLocalAudioStream</a>
+                <a href="../Classes.html#/c:objc(cs)SKWLocalAudioStream">SKWLocalAudioStream</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/SKWLocalDataStream.html">SKWLocalDataStream</a>
@@ -374,32 +374,7 @@
               <div class="declaration">
                 <div class="language">
                   <p class="aside-title">Objective-C</p>
-                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">SKWContextDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span>
-<span class="k">@optional</span>
-
-<span class="c1">/// SkyWayサーバと再接続開始後にコールされるイベント</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">startReconnecting</span><span class="p">;</span>
-
-<span class="c1">/// SkyWayサーバと再接続成功後にコールされるイベント</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">reconnectingSucceeded</span><span class="p">;</span>
-
-<span class="c1">/// トークンが期限切れにより失効した後にコールされるイベント</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">tokenExpired</span><span class="p">;</span>
-
-<span class="c1">/// トークンの失効が切れる前にコールされるイベント</span>
-<span class="c1">///</span>
-<span class="c1">/// このイベントがどの程度前にコールされるかの時間は`ContextOptions`の`token`から設定できます。</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">shouldUpdateToken</span><span class="p">;</span>
-
-<span class="c1">/// SkyWay内部で回復不能なエラーが発生した後にコールされるイベント</span>
-<span class="c1">///</span>
-<span class="c1">/// 再度ご利用いただくためには、インターネット接続状況を確認した上で`dispose(completion:)`をコールして完了コールバックを待った後、再度`setup(withToken:options:completion:)`をコールし直してください。</span>
-<span class="c1">///</span>
-<span class="c1">/// また、`dispose(completion:)`をコール後はそれまでSDKで生成されたリソースにアクセスしないでください。クラッシュする可能性があります。</span>
-<span class="c1">///</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">fatalErrorOccurred</span><span class="p">:(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span>
-
-<span class="k">@end</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">SKWContextDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
 
                 </div>
                 <div class="language">
@@ -408,7 +383,7 @@
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>Contextイベントデリゲート</p>
 
           </section>
           <section class="section task-group-section">
@@ -577,6 +552,25 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>エラー</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -585,7 +579,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2024-12-25)</p>
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener">NTT Communications</a>. All rights reserved. (Last updated: 2025-01-09)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
