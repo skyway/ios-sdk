@@ -88,9 +88,10 @@ class SkyWayViewModel: NSObject, ObservableObject, RoomDelegate, RemoteDataStrea
         let _ = try await localMember?.publish(audioStream, options: audioPublicationOptions)
         let videoPublicationOptions: RoomPublicationOptions = .init()
         if room is SFURoom {
-            let lowEnc: Encoding = .init()
-            lowEnc.id = lowEncodeId
-            lowEnc.scaleResolutionDownBy = 8.0
+            // lowEnc is not in use.
+            //let lowEnc: Encoding = .init()
+            //lowEnc.id = lowEncodeId
+            //lowEnc.scaleResolutionDownBy = 8.0
             let highEnc: Encoding = .init()
             highEnc.id = highEncodeId
             highEnc.scaleResolutionDownBy = 1.0
