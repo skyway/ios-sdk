@@ -15,7 +15,7 @@ https://skyway.ntt.com/ja/docs/user-guide/ios-sdk/
 - [SFU Bot ライブラリ](https://ios-sdk.api-reference.skyway.ntt.com/sfu)
 
 ### 対応OS
-iOS12+, iPadOS13+
+iOS14+, iPadOS14+
 
 ## License
 
