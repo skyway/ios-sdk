@@ -2,6 +2,7 @@
 //  RepresentableCameraPreviewView.swift
 //
 //  Created by Naoto Takahashi on 2022/12/26.
+//  Copyright © 2025 NTT DOCOMO BUSINESS, Inc. All rights reserved.
 //
 
 import SwiftUI

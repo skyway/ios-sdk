@@ -3,6 +3,7 @@
 //  Tutorial
 //
 //  Created by Naoto Takahashi on 2022/09/16.
+//  Copyright © 2025 NTT DOCOMO BUSINESS, Inc. All rights reserved.
 //
 
 import UIKit

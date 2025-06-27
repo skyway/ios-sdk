@@ -3,6 +3,7 @@
 //  P2PRoom
 //
 //  Created by Naoto Takahashi on 2022/12/23.
+//  Copyright © 2025 NTT DOCOMO BUSINESS, Inc. All rights reserved.
 //
 
 import SwiftUI
