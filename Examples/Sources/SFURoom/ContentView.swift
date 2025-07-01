@@ -3,6 +3,7 @@
 //  SFURoom
 //
 //  Created by Naoto Takahashi on 2023/01/05.
+//  Copyright © 2025 NTT DOCOMO BUSINESS, Inc. All rights reserved.
 //
 
 import SwiftUI

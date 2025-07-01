@@ -2,6 +2,7 @@
 //  RemotePublicationView.swift
 //
 //  Created by Naoto Takahashi on 2023/01/16.
+//  Copyright © 2025 NTT DOCOMO BUSINESS, Inc. All rights reserved.
 //
 
 import SwiftUI
