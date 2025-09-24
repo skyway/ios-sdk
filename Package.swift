@@ -35,8 +35,8 @@ let package = Package(
             checksum: "a2df06dc9301a578c5c4f6d3dda4174a378044d2c837691faad3d13b260abe17"),
         .binaryTarget(
             name: "WebRTC",
-            url: "https://github.com/skyway/skyway-ios-webrtc-specs/releases/download/120.0.0/WebRTC.xcframework.zip",
-            checksum: "6883b2e09669e380041bac4097c40644681c63fd78772dcd94416b4d3fce1317"),
+            url: "https://github.com/skyway/skyway-ios-webrtc-specs/releases/download/120.1.0/WebRTC.xcframework.zip",
+            checksum: "c2085bf5c51121c6cfec204aaa42ff21a9f3b7f0253cf2b6bb32efa56efbff4e"),
 
     ],
     swiftLanguageVersions: [.v5]
