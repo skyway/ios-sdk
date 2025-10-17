@@ -12,17 +12,17 @@ import SkyWayRoom
 class ViewController: UIViewController {
     @IBOutlet weak var localView: CameraPreviewView!
     @IBOutlet weak var remoteView: VideoView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         Task {
-            let token = "トークンを入力"
+            let token: String = "トークンを入力"
             // SkyWayのセットアップ
             let contextOpt: ContextOptions = .init()
             contextOpt.logLevel = .trace
-            try? await Context.setup(withToken: token, options: nil)
+            try? await Context.setup(withToken: token, options: contextOpt)
             let roomInit: Room.InitOptions = .init()
-            guard let room: SFURoom = try? await .create(with: roomInit) else {
+            guard let room: Room = try? await .create(with: roomInit) else {
                  print("[Tutorial] Creating room failed.")
                  return
             }
@@ -33,9 +33,11 @@ class ViewController: UIViewController {
                  return
             }
             // AudioStreamの作成
-            let auidoSource: MicrophoneAudioSource = .init()
-            let audioStream = auidoSource.createStream()
-            guard let audioPublication = try? await member.publish(audioStream, options: nil) else {
+            let audioSource: MicrophoneAudioSource = .init()
+            let audioStream = audioSource.createStream()
+            let audioPublicationOptions: RoomPublicationOptions = .init()
+            audioPublicationOptions.type = .SFU
+            guard let audioPublication = try? await member.publish(audioStream, options: audioPublicationOptions) else {
                  print("[Tutorial] Publishing failed.")
                  return
             }
@@ -45,7 +47,7 @@ class ViewController: UIViewController {
                  return
             }
             print("🎉Subscribing audio stream successfully.")
-//
+
             // Cameraの設定
             guard let camera = CameraVideoSource.supportedCameras().first(where: { $0.position == .front }) else {
                 print("Supported cameras is not found.");
@@ -58,7 +60,9 @@ class ViewController: UIViewController {
 
             // VideoStreamの作成
             let localVideoStream = CameraVideoSource.shared().createStream()
-            guard let videoPublication = try? await member.publish(localVideoStream, options: nil) else {
+            let videoPublicationOptions: RoomPublicationOptions = .init()
+            videoPublicationOptions.type = .SFU
+            guard let videoPublication = try? await member.publish(localVideoStream, options: videoPublicationOptions) else {
                  print("[Tutorial] Publishing failed.")
                  return
             }
