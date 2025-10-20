@@ -27,7 +27,7 @@
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">SkyWayRoom 3.0.0 Docs</a> (80% documented)</p>
+        <p><a href="index.html">SkyWayRoom 3.1.0 Docs</a> (80% documented)</p>
         <div class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -97,6 +97,9 @@
                 <a href="Classes/ContextOptionsRTCConfig.html">ContextOptionsRTCConfig</a>
               </li>
               <li class="nav-group-task">
+                <a href="Classes/ContextOptionsSFU.html">ContextOptionsSFU</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/ContextOptionsSignaling.html">ContextOptionsSignaling</a>
               </li>
               <li class="nav-group-task">
@@ -121,7 +124,7 @@
                 <a href="Classes/LocalDataStream.html">LocalDataStream</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes.html#/c:@M@SkyWayRoom@objc(cs)LocalP2PRoomMember">LocalP2PRoomMember</a>
+                <a href="Classes/LocalP2PRoomMember.html">LocalP2PRoomMember</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/LocalPerson.html">LocalPerson</a>
@@ -285,6 +288,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Enums/PublicationState.html">PublicationState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/PublicationType.html">PublicationType</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/RoomState.html">RoomState</a>
@@ -933,6 +939,34 @@ Classを利用する場合は<code>CameraPreviewView</code>ではなく<code>SKW
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">ContextOptionsAnalytics</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SKWContextOptionsSFU"></a>
+                    <a name="//apple_ref/swift/Class/ContextOptionsSFU" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SKWContextOptionsSFU">ContextOptionsSFU</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>内部向けオプション</p>
+
+                        <a href="Classes/ContextOptionsSFU.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">ContextOptionsSFU</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -2045,7 +2079,11 @@ Classを利用する場合は<code>CameraPreviewView</code>ではなく<code>SKW
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>このSDKで生成されたRoomMemberの抽象クラス</p>
+                        <p>RoomのLocalMember</p>
+
+<p>このLocalMemberはRoomの<code>join(with:)</code>から生成できます。</p>
+
+<p>一つのRoomインスタンスには一つのLocalRoomMemberがjoinでき、複数管理することはできません。</p>
 
                         <a href="Classes/LocalRoomMember.html" class="slightly-smaller">See more</a>
                       </div>
@@ -2140,6 +2178,7 @@ Classを利用する場合は<code>CameraPreviewView</code>ではなく<code>SKW
 
 <p>メソッドに関しては、LocalRoomMemberクラスをご確認ください。</p>
 
+                        <a href="Classes/LocalP2PRoomMember.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -2232,13 +2271,9 @@ Classを利用する場合は<code>CameraPreviewView</code>ではなく<code>SKW
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Room抽象クラス</p>
+                        <p>Roomクラス</p>
 
-<p>RoomとはCore SDKのChannelのラッパークラスです。</p>
-
-<p>Room SDKをご利用いただく場合はChannelというドメインは隠蔽されているので、ChannelではなくRoomを扱います。</p>
-
-<p>RoomにはP2PRoomとSFURoomが存在し、ユースケースに応じて選択してください。</p>
+<p>メディア通信毎に P2P と SFU の方式を選択できます。</p>
 
 <p>RoomにはMemberが入退出できます。Room作成時点のように、Memberのいない状態のRoomも存在できます。</p>
 
@@ -2356,7 +2391,7 @@ Classを利用する場合は<code>CameraPreviewView</code>ではなく<code>SKW
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener">NTT DOCOMO BUSINESS, Inc</a>. All rights reserved. (Last updated: 2025-09-24)</p>
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener">NTT DOCOMO BUSINESS, Inc</a>. All rights reserved. (Last updated: 2025-10-20)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

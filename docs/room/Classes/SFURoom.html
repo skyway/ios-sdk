@@ -27,7 +27,7 @@
     <a title="SFURoom Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">SkyWayRoom 3.0.0 Docs</a> (80% documented)</p>
+        <p><a href="../index.html">SkyWayRoom 3.1.0 Docs</a> (80% documented)</p>
         <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -97,6 +97,9 @@
                 <a href="../Classes/ContextOptionsRTCConfig.html">ContextOptionsRTCConfig</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/ContextOptionsSFU.html">ContextOptionsSFU</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/ContextOptionsSignaling.html">ContextOptionsSignaling</a>
               </li>
               <li class="nav-group-task">
@@ -121,7 +124,7 @@
                 <a href="../Classes/LocalDataStream.html">LocalDataStream</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes.html#/c:@M@SkyWayRoom@objc(cs)LocalP2PRoomMember">LocalP2PRoomMember</a>
+                <a href="../Classes/LocalP2PRoomMember.html">LocalP2PRoomMember</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/LocalPerson.html">LocalPerson</a>
@@ -285,6 +288,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/PublicationState.html">PublicationState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PublicationType.html">PublicationType</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/RoomState.html">RoomState</a>
@@ -489,9 +495,74 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:@M@SkyWayRoom@objc(cs)SFURoom(py)type"></a>
+                    <a name="//apple_ref/swift/Property/type" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SkyWayRoom@objc(cs)SFURoom(py)type">type</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums/RoomType.html">RoomType</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)createWith:sfuOptions:completionHandler:"></a>
                     <a name="//apple_ref/swift/Method/create(with:sfuOptions:)" class="dashAnchor"></a>
                     <a class="token" href="#/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)createWith:sfuOptions:completionHandler:">create(with:<wbr>sfuOptions:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    SkyWayRoom v3.1.0で非推奨となりました。
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"SkyWayRoom v3.1.0で非推奨となりました。"</span><span class="p">)</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">create</span><span class="p">(</span>
+    <span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">InitOptions</span><span class="p">?,</span>
+    <span class="nv">sfuOptions</span><span class="p">:</span> <span class="kt"><a href="../Classes/SFUBotPluginOptions.html">SFUBotPluginOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">SFURoom</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)createWith:completionHandler:"></a>
+                    <a name="//apple_ref/swift/Method/create(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)createWith:completionHandler:">create(with:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Asynchronous
@@ -510,10 +581,8 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="n">iOS</span> <span class="mf">13.0</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span>
-<span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">create</span><span class="p">(</span>
+<span class="kd">public</span> <span class="k">override</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">create</span><span class="p">(</span>
     <span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">InitOptions</span><span class="p">?,</span>
-    <span class="nv">sfuOptions</span><span class="p">:</span> <span class="kt"><a href="../Classes/SFUBotPluginOptions.html">SFUBotPluginOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
 <span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">SFURoom</span></code></pre>
 
                         </div>
@@ -531,18 +600,6 @@
                               <td>
                                 <div>
                                   <p><code>options</code>でRoomの名前を指定して作成できますが、同じ名前のRoomは作成することができません。</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>sfuOptions</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>内部向けオプションのため、設定は不要です。</p>
                                 </div>
                               </td>
                             </tr>
@@ -569,6 +626,43 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
+                        <div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    SkyWayRoom v3.1.0で非推奨となりました。
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"SkyWayRoom v3.1.0で非推奨となりました。"</span><span class="p">)</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">create</span><span class="p">(</span>
+    <span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">InitOptions</span><span class="p">?,</span>
+    <span class="nv">sfuOptions</span><span class="p">:</span> <span class="kt"><a href="../Classes/SFUBotPluginOptions.html">SFUBotPluginOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">SFURoom</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)createWith:completion:"></a>
+                    <a name="//apple_ref/swift/Method/create(with:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)createWith:completion:">create(with:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
                         <p>Roomを作成します。</p>
 
 <p><code>options</code>でRoomの名前を指定して作成できますが、同じ名前のRoomは作成することができません。</p>
@@ -578,10 +672,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">create</span><span class="p">(</span>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">create</span><span class="p">(</span>
     <span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">InitOptions</span><span class="p">?,</span>
-    <span class="nv">sfuOptions</span><span class="p">:</span> <span class="kt"><a href="../Classes/SFUBotPluginOptions.html">SFUBotPluginOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
     <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">SFURoom</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span>
 <span class="p">)</span></code></pre>
 
@@ -600,18 +692,6 @@
                               <td>
                                 <div>
                                   <p>初期化オプション</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>sfuOptions</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>内部向けオプションのため、設定は不要です。</p>
                                 </div>
                               </td>
                             </tr>
@@ -649,6 +729,43 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
+                        <div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    SkyWayRoom v3.1.0で非推奨となりました。
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"SkyWayRoom v3.1.0で非推奨となりました。"</span><span class="p">)</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">find</span><span class="p">(</span><span class="n">by</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">Query</span><span class="p">,</span> <span class="nv">sfuOption</span><span class="p">:</span> <span class="kt"><a href="../Classes/SFUBotPluginOptions.html">SFUBotPluginOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span>
+    <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">SFURoom</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)findBy:completionHandler:"></a>
+                    <a name="//apple_ref/swift/Method/find(by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)findBy:completionHandler:">find(by:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
                         <p>Roomクエリを元にRoomを検索します。</p>
 
 <p>クエリはRoomのIDまたはNameを入力します。両方とも入力される場合はIDが優先されます。</p>
@@ -659,10 +776,8 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="n">iOS</span> <span class="mf">13.0</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span>
-<span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">find</span><span class="p">(</span><span class="n">by</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">Query</span><span class="p">,</span> <span class="nv">sfuOption</span><span class="p">:</span> <span class="kt"><a href="../Classes/SFUBotPluginOptions.html">SFUBotPluginOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span>
-    <span class="k">async</span> <span class="k">throws</span>
-    <span class="o">-&gt;</span> <span class="kt">SFURoom</span></code></pre>
+<span class="kd">public</span> <span class="k">override</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">find</span><span class="p">(</span><span class="n">by</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">Query</span><span class="p">)</span>
+    <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">SFURoom</span></code></pre>
 
                         </div>
                       </div>
@@ -679,18 +794,6 @@
                               <td>
                                 <div>
                                   <p>検索クエリ</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>sfuOptions</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>内部向けオプションのため、設定は不要です。</p>
                                 </div>
                               </td>
                             </tr>
@@ -717,6 +820,43 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
+                        <div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    SkyWayRoom v3.1.0で非推奨となりました。
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"SkyWayRoom v3.1.0で非推奨となりました。"</span><span class="p">)</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">find</span><span class="p">(</span>
+    <span class="n">by</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">Query</span><span class="p">,</span>
+    <span class="nv">sfuOptions</span><span class="p">:</span> <span class="kt"><a href="../Classes/SFUBotPluginOptions.html">SFUBotPluginOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">SFURoom</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)findBy:completion:"></a>
+                    <a name="//apple_ref/swift/Method/find(by:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)findBy:completion:">find(by:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
                         <p>Roomクエリを元にRoomを検索します。</p>
 
 <p>クエリはRoomのIDまたはNameを入力します。両方とも入力される場合はIDが優先されます。</p>
@@ -726,10 +866,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">find</span><span class="p">(</span>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">find</span><span class="p">(</span>
     <span class="n">by</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">Query</span><span class="p">,</span>
-    <span class="nv">sfuOptions</span><span class="p">:</span> <span class="kt"><a href="../Classes/SFUBotPluginOptions.html">SFUBotPluginOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
     <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">SFURoom</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span>
 <span class="p">)</span></code></pre>
 
@@ -748,18 +886,6 @@
                               <td>
                                 <div>
                                   <p>検索クエリ</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>sfuOptions</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>内部向けオプションのため、設定は不要です。</p>
                                 </div>
                               </td>
                             </tr>
@@ -797,6 +923,45 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
+                        <div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    SkyWayRoom v3.1.0で非推奨となりました。
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"SkyWayRoom v3.1.0で非推奨となりました。"</span><span class="p">)</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">findOrCreate</span><span class="p">(</span>
+    <span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">InitOptions</span><span class="p">,</span>
+    <span class="nv">sfuOptions</span><span class="p">:</span> <span class="kt"><a href="../Classes/SFUBotPluginOptions.html">SFUBotPluginOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">SFURoom</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)findOrCreateWith:completionHandler:"></a>
+                    <a name="//apple_ref/swift/Method/findOrCreate(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)findOrCreateWith:completionHandler:">findOrCreate(with:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
                         <p>Roomを名前から検索し、存在しない場合は作成します。</p>
 
                       </div>
@@ -805,10 +970,8 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="n">iOS</span> <span class="mf">13.0</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span>
-<span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">findOrCreate</span><span class="p">(</span>
-    <span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">InitOptions</span><span class="p">,</span>
-    <span class="nv">sfuOptions</span><span class="p">:</span> <span class="kt"><a href="../Classes/SFUBotPluginOptions.html">SFUBotPluginOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="kd">public</span> <span class="k">override</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">findOrCreate</span><span class="p">(</span>
+    <span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">InitOptions</span>
 <span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">SFURoom</span></code></pre>
 
                         </div>
@@ -826,18 +989,6 @@
                               <td>
                                 <div>
                                   <p>検索・初期化オプション</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>sfuOptions</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>内部向けオプションのため、設定は不要です。</p>
                                 </div>
                               </td>
                             </tr>
@@ -864,6 +1015,43 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
+                        <div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    SkyWayRoom v3.1.0で非推奨となりました。
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"SkyWayRoom v3.1.0で非推奨となりました。"</span><span class="p">)</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">findOrCreate</span><span class="p">(</span>
+    <span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">InitOptions</span><span class="p">,</span>
+    <span class="nv">sfuOptions</span><span class="p">:</span> <span class="kt"><a href="../Classes/SFUBotPluginOptions.html">SFUBotPluginOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">SFURoom</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)findOrCreateWith:completion:"></a>
+                    <a name="//apple_ref/swift/Method/findOrCreate(with:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SkyWayRoom@objc(cs)SFURoom(cm)findOrCreateWith:completion:">findOrCreate(with:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
                         <p>Roomを名前から検索し、存在しない場合は作成します。</p>
 
                       </div>
@@ -871,10 +1059,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">findOrCreate</span><span class="p">(</span>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">findOrCreate</span><span class="p">(</span>
     <span class="n">with</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">InitOptions</span><span class="p">,</span>
-    <span class="nv">sfuOptions</span><span class="p">:</span> <span class="kt"><a href="../Classes/SFUBotPluginOptions.html">SFUBotPluginOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
     <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">SFURoom</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span>
 <span class="p">)</span></code></pre>
 
@@ -893,18 +1079,6 @@
                               <td>
                                 <div>
                                   <p>検索・初期化オプション</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>sfuOptions</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>内部向けオプションのため、設定は不要です。</p>
                                 </div>
                               </td>
                             </tr>
@@ -1049,33 +1223,6 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@SkyWayRoom@objc(cs)SFURoom(py)members"></a>
-                    <a name="//apple_ref/swift/Property/members" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@SkyWayRoom@objc(cs)SFURoom(py)members">members</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>入室しているメンバーの一覧</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">members</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/RoomMember.html">RoomMember</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/c:@M@SkyWayRoom@objc(cs)SFURoom(py)publications"></a>
                     <a name="//apple_ref/swift/Property/publications" class="dashAnchor"></a>
                     <a class="token" href="#/c:@M@SkyWayRoom@objc(cs)SFURoom(py)publications">publications</a>
@@ -1100,39 +1247,12 @@
                     </section>
                   </div>
                 </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@SkyWayRoom@objc(cs)SFURoom(py)subscriptions"></a>
-                    <a name="//apple_ref/swift/Property/subscriptions" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@SkyWayRoom@objc(cs)SFURoom(py)subscriptions">subscriptions</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>このRoomでSubscribeされているSubscription一覧</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">subscriptions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/RoomSubscription.html">RoomSubscription</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener">NTT DOCOMO BUSINESS, Inc</a>. All rights reserved. (Last updated: 2025-09-24)</p>
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener">NTT DOCOMO BUSINESS, Inc</a>. All rights reserved. (Last updated: 2025-10-20)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
