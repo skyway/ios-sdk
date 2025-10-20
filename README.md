@@ -11,8 +11,6 @@ https://skyway.ntt.com/ja/docs/user-guide/ios-sdk/
 ### API リファレンス
 
 - [Room ライブラリ](https://ios-sdk.api-reference.skyway.ntt.com/room)
-- [Core ライブラリ](https://ios-sdk.api-reference.skyway.ntt.com/core)
-- [SFU Bot ライブラリ](https://ios-sdk.api-reference.skyway.ntt.com/sfu)
 
 ### 対応OS
 iOS14+, iPadOS14+
