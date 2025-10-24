@@ -16,11 +16,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Task {
-            let token: String = "トークンを入力"
+            let appId = "アプリケーションIDを入力してください"
+            let secretKey = "シークレットキーを入力してください"
             // SkyWayのセットアップ
             let contextOpt: ContextOptions = .init()
             contextOpt.logLevel = .trace
-            try? await Context.setup(withToken: token, options: contextOpt)
+            try? await Context.setupForDev(withAppId: appId, secretKey: secretKey, options: contextOpt)
             let roomInit: Room.InitOptions = .init()
             guard let room: Room = try? await .create(with: roomInit) else {
                  print("[Tutorial] Creating room failed.")

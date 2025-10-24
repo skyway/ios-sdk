@@ -21,17 +21,18 @@ class SkyWayViewModel: NSObject, ObservableObject, RoomDelegate, RemoteDataStrea
     
     lazy var currentEncoding: String = highEncodeId
     
-    var isJoined: Bool{
+    var isJoined: Bool {
         get {
            return localMember != nil
         }
     }
     
-    func setup() async throws{
-        let token = "トークンを入力してください"
+    func setup() async throws {
+        let appId = "アプリケーションIDを入力してください"
+        let secretKey = "シークレットキーを入力してください"
         let opt: ContextOptions = .init()
         opt.logLevel = .trace
-        try await Context.setup(withToken: token, options: opt)
+        try await Context.setupForDev(withAppId: appId, secretKey: secretKey, options: opt)
         let backCamera = CameraVideoSource.supportedCameras().first(where: { $0.position == .back })
         if let backCamera = backCamera {
             try await CameraVideoSource.shared().startCapturing(with: backCamera, options: nil)
