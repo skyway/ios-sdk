@@ -26,7 +26,7 @@
     <a title="SkyWayRoom  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">SkyWayRoom 3.1.0 Docs</a> (80% documented)</p>
+        <p><a href="index.html">SkyWayRoom 3.1.1 Docs</a> (80% documented)</p>
         <div class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -36,9 +36,7 @@
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
-        <a href="index.html">SkyWayRoom Reference</a>
-        <img id="carat" src="img/carat.png" alt=""/>
-        SkyWayRoom  Reference
+        <a href="index.html">SkyWayRoom</a>
       </p>
     </div>
     <div class="content-wrapper">
@@ -477,17 +475,358 @@
         <section>
           <section class="section">
             
-            <h1 id='skyway-room-sdk-api-reference' class='heading'>SkyWay Room SDK API Reference</h1>
+            <h1 id='skyway-ios-sdk-api-reference' class='heading'>SkyWay iOS SDK API Reference</h1>
+
+<p>SkyWay iOS SDK(以下、iOS SDK)は iOS デバイス用のアプリケーションから SkyWay を利用するための SDK です。<br>
+iOS のネイティブなアプリケーションに SkyWay を組み込むことで、デバイス同士やブラウザとのリアルタイム通信を実現できます。</p>
+<h2 id='目次' class='heading'>目次</h2>
 
 <ul>
-<li><a href="../room">Room SDK</a></li>
+<li>インストール方法</li>
+<li>SkyWay を用いたアプリ開発の概要</li>
+<li>用語の解説</li>
+<li>基本機能の解説</li>
+<li>Tips</li>
+<li>参考リンク</li>
+</ul>
+<h2 id='インストール方法' class='heading'>インストール方法</h2>
+
+<p>Swift Package Manager に対応しています。<br>
+以下のリポジトリで公開しています。</p>
+
+<p><a href="https://github.com/skyway/ios-sdk">https://github.com/skyway/ios-sdk</a></p>
+<h2 id='skywayを用いたアプリ開発の概要' class='heading'>SkyWayを用いたアプリ開発の概要</h2>
+
+<p>SkyWayを利用するためには、通信を開始するまでに以下のステップを踏む必要があります。  </p>
+
+<p><strong>1. SkyWay Auth Token を作成する</strong></p>
+
+<p>SkyWay を利用するために必要な認証情報（AuthToken）を作成します。<br>
+詳細は <a href="https://skyway.ntt.com/ja/docs/user-guide/authentication/">SkyWay Auth Token について</a>をご覧ください。</p>
+
+<p><strong>2. Room を作成する</strong></p>
+
+<p>メディア通信を行うグループの単位を Room と呼びます。<br>
+まずは Room を作成する必要があります。（SkyWay Auth Token に Room を作成する権限が必要）</p>
+
+<p><strong>3. Room に参加して Member を取得する</strong></p>
+
+<p>作成した Room に参加し、その結果として Member を取得します。<br>
+他のクライアントでは、作成済みの Room を取得して参加します。</p>
+
+<p><strong>4. Room 内に Stream を 公開（Publish）する</strong></p>
+
+<p>Member を使って Room に 映像や音声などの Stream の情報を公開（Publish）します。<br>
+すると、 Room 上に Stream の公開情報（Publication） が作成されます。</p>
+
+<p><strong>5. Room 内に公開されている Streamの 情報（Publication）を購読（Subscribe）する</strong></p>
+
+<p>Room 上に作成された Publication を 他の Member から購読（Subscribe）します。<br>
+すると、メディア通信を開始することができ、結果として購読情報（Subscription）が作成されます。<br>
+その Subscription から取得した Stream を利用することで、受信した映像や音声を出力することができます。</p>
+<h2 id='用語の解説' class='heading'>用語の解説</h2>
+
+<p>SkyWay を利用する際に登場する用語について解説します。</p>
+
+<p><strong>Room</strong><br>
+Roomは通話を行うグループの単位であり、共通の Room に参加したユーザー同士で通話を行うことができます。</p>
+
+<p><strong>Member</strong><br>
+Room に参加しているユーザーのことを Member と呼びます。</p>
+
+<p><strong>Stream</strong><br>
+Room 上で送受信できるメディアのことを Stream といいます。<br>
+音声、映像、データの3種類の Stream を利用できます。</p>
+
+<p><strong>Publish</strong><br>
+Member が Stream を Room に公開することを Publish といいます。<br>
+Stream を Publish すると Room 上に Stream に対応する Publication というリソースが作成されます。</p>
+
+<p><strong>Subscribe</strong><br>
+Member が Room 上の Publication を受信することを Subscribe といいます。<br>
+Subscribe をすると Room 上に Subscription というリソースが作成されます。<br>
+Publication を Subscribe した Member は Subscription を通じて Stream にアクセスし映像や音声を受信できます。</p>
+<h2 id='基本機能の解説' class='heading'>基本機能の解説</h2>
+
+<p>iOS SDK の基本的な機能について解説します。<br>
+動作するアプリケーションを作成したい場合は、<a href="https://skyway.ntt.com/ja/docs/user-guide/ios-sdk/quickstart/">クイックスタート</a>も合わせてご参照ください。</p>
+<h3 id='context' class='heading'>Context</h3>
+
+<p><code><a href="Classes/Context.html">Context</a></code> は SkyWay 利用の開始や終了を行うためのクラスです。<br>
+ログレベルなど、アプリケーション全体に影響するオプションの設定も担っています。</p>
+<h4 id='skyway-利用の開始' class='heading'>SkyWay 利用の開始</h4>
+<pre class="highlight swift"><code><span class="c1">// 開発環境ではappId/secretKeyで初期化することができます。</span>
+<span class="k">try</span> <span class="k">await</span> <span class="kt">Context</span><span class="o">.</span><span class="nf">setupForDev</span><span class="p">(</span><span class="nv">withAppId</span><span class="p">:</span> <span class="n">appId</span><span class="p">,</span> <span class="nv">secretKey</span><span class="p">:</span> <span class="n">secret</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="o">.</span><span class="nf">init</span><span class="p">())</span>
+
+<span class="c1">// 本番環境ではAuthTokenを作成し、そちらを利用して初期化してください。</span>
+<span class="k">try</span> <span class="k">await</span> <span class="kt">Context</span><span class="o">.</span><span class="nf">setup</span><span class="p">(</span><span class="nv">withToken</span><span class="p">:</span> <span class="n">token</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="o">.</span><span class="nf">init</span><span class="p">())</span>
+</code></pre>
+<h4 id='auth-token-の更新' class='heading'>Auth Token の更新</h4>
+
+<p>Auth Token には期限を設定する必要があり、期限が切れると SkyWay を利用できなくなります。<br>
+そのため、 Auth Token が失効する前に更新してください。</p>
+<pre class="highlight swift"><code><span class="kt">Context</span><span class="o">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="k">self</span>
+
+<span class="c1">// MARK: - ContextDelegate</span>
+<span class="kd">func</span> <span class="nf">shouldUpdateToken</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">Context</span><span class="o">.</span><span class="nf">updateToken</span><span class="p">(</span><span class="n">newToken</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<h4 id='skyway-利用の終了' class='heading'>SkyWay 利用の終了</h4>
+<pre class="highlight swift"><code><span class="k">try</span> <span class="k">await</span> <span class="kt">Context</span><span class="o">.</span><span class="nf">dispose</span><span class="p">()</span>
+</code></pre>
+<h3 id='room' class='heading'>Room</h3>
+
+<p>通話グループである Room の作成/取得および操作を行うことができます。</p>
+<h4 id='room-の作成-取得' class='heading'>Room の作成・取得</h4>
+
+<p><code><a href="Classes/Room.html">Room</a></code> の作成時に <code>name</code> を指定することができます。<br>
+他のクライアントからは同じ <code>name</code> を指定して <code><a href="Classes/Room.html">Room</a></code> を取得することができます。</p>
+<pre class="highlight swift"><code><span class="c1">// Roomの作成</span>
+<span class="k">let</span> <span class="nv">options</span> <span class="o">=</span> <span class="kt">Room</span><span class="o">.</span><span class="kt">InitOptions</span><span class="p">()</span>
+<span class="n">options</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">roomName</span>
+<span class="k">let</span> <span class="nv">room</span> <span class="o">=</span> <span class="k">try</span> <span class="k">await</span> <span class="kt">Room</span><span class="o">.</span><span class="nf">create</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">options</span><span class="p">)</span>
+
+<span class="c1">// Roomの取得</span>
+<span class="k">let</span> <span class="nv">query</span> <span class="o">=</span> <span class="kt">Room</span><span class="o">.</span><span class="kt">Query</span><span class="p">()</span>
+<span class="n">query</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">roomName</span>
+<span class="c1">// query.id = roomId // idでの取得も可能</span>
+<span class="k">let</span> <span class="nv">room</span> <span class="o">=</span> <span class="k">try</span> <span class="k">await</span> <span class="kt">Room</span><span class="o">.</span><span class="nf">find</span><span class="p">(</span><span class="nv">by</span><span class="p">:</span> <span class="n">query</span><span class="p">)</span>
+
+<span class="c1">// Roomの取得を試み、存在しなければ作成</span>
+<span class="k">let</span> <span class="nv">options</span> <span class="o">=</span> <span class="kt">Room</span><span class="o">.</span><span class="kt">InitOptions</span><span class="p">()</span>
+<span class="n">options</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">roomName</span>
+<span class="k">let</span> <span class="nv">room</span> <span class="o">=</span> <span class="k">try</span> <span class="k">await</span> <span class="kt">Room</span><span class="o">.</span><span class="nf">findOrCreate</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">options</span><span class="p">)</span>
+</code></pre>
+<h4 id='metadata-の更新' class='heading'>Metadata の更新</h4>
+
+<p><code><a href="Classes/Room.html">Room</a></code> の Metadata を更新することができます。</p>
+<pre class="highlight swift"><code><span class="c1">// metadataの取得</span>
+<span class="k">let</span> <span class="nv">metadata</span> <span class="o">=</span> <span class="n">room</span><span class="o">.</span><span class="n">metadata</span>
+
+<span class="c1">// metadataの更新</span>
+<span class="k">try</span> <span class="k">await</span> <span class="n">room</span><span class="o">.</span><span class="nf">updateMetadata</span><span class="p">(</span><span class="s">"metadata"</span><span class="p">)</span>
+</code></pre>
+<h4 id='member-の-room-への参加' class='heading'>Member の Room への参加</h4>
+
+<p><code><a href="Classes/Room.html">Room</a></code> に参加すると <code><a href="Classes/LocalRoomMember.html">LocalRoomMember</a></code> インスタンスを取得できます。<br>
+<code><a href="Classes/Room/MemberInitOptions.html">Room.MemberInitOptions</a></code> には <code>name</code> と <code>metadata</code> の設定が可能です。</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">options</span> <span class="o">=</span> <span class="kt">Room</span><span class="o">.</span><span class="kt">MemberInitOptions</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">member</span> <span class="o">=</span> <span class="k">try</span> <span class="k">await</span> <span class="n">room</span><span class="o">.</span><span class="nf">join</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">options</span><span class="p">)</span>
+</code></pre>
+<h3 id='localroommember' class='heading'>LocalRoomMember</h3>
+
+<p>Member の操作を行うことができます。<br>
+具体的には、 Metadata の更新、 Stream の Publish/Subscribe を行うことが出来ます。</p>
+<h4 id='metadata-の更新' class='heading'>Metadata の更新</h4>
+
+<p>Member の Metadata を更新することができます。</p>
+<pre class="highlight swift"><code><span class="c1">// metadataの取得</span>
+<span class="k">let</span> <span class="nv">metadata</span> <span class="o">=</span> <span class="n">member</span><span class="o">.</span><span class="n">metadata</span>
+
+<span class="c1">// metadataの更新</span>
+<span class="k">try</span> <span class="k">await</span> <span class="n">member</span><span class="o">.</span><span class="nf">updateMetadata</span><span class="p">(</span><span class="s">"metadata"</span><span class="p">)</span>
+</code></pre>
+<h4 id='stream-の-publish' class='heading'>Stream の Publish</h4>
+
+<p>Room に Stream を Publish することができます。<br>
+また、 Room 上の Stream の Publication を Unpublish することができます。<br>
+このとき、対象の Publication に対する Subscription は自動的に Unsubscribe されます。</p>
+<pre class="highlight swift"><code><span class="c1">// Publish</span>
+<span class="k">let</span> <span class="nv">options</span> <span class="o">=</span>  <span class="kt">RoomPublicationOptions</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">publication</span> <span class="o">=</span> <span class="k">try</span> <span class="k">await</span> <span class="n">member</span><span class="o">.</span><span class="nf">publish</span><span class="p">(</span><span class="n">stream</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="n">options</span><span class="p">)</span>
+
+<span class="c1">// Unpublish</span>
+<span class="k">try</span> <span class="k">await</span> <span class="n">member</span><span class="o">.</span><span class="nf">unpublish</span><span class="p">(</span><span class="n">publication</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
+</code></pre>
+
+<p><code><a href="Classes/RoomPublicationOptions.html">RoomPublicationOptions</a></code> でメディアの通信方式を P2P と SFU の2種類から選択します。<br>
+指定しなかった場合は P2P が選択されます。</p>
+<h5 id='p2p' class='heading'>P2P</h5>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">options</span> <span class="o">=</span>  <span class="kt">RoomPublicationOptions</span><span class="p">()</span>
+<span class="n">options</span><span class="o">.</span><span class="n">type</span> <span class="o">=</span> <span class="o">.</span><span class="kt">P2P</span>
+<span class="k">let</span> <span class="nv">publication</span> <span class="o">=</span> <span class="k">try</span> <span class="k">await</span> <span class="n">member</span><span class="o">.</span><span class="nf">publish</span><span class="p">(</span><span class="n">stream</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="n">options</span><span class="p">)</span>
+</code></pre>
+<h5 id='sfu' class='heading'>SFU</h5>
+
+<p>maxSubscribers では Publish した Stream を Subscribe できる数の上限値を指定できます。<br>
+指定しない場合、maxSubscribers には 10 がセットされます。<br>
+maxSubscribers の最大値は 99 です。</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">options</span> <span class="o">=</span>  <span class="kt">RoomPublicationOptions</span><span class="p">()</span>
+<span class="n">options</span><span class="o">.</span><span class="n">type</span> <span class="o">=</span> <span class="o">.</span><span class="kt">SFU</span>
+<span class="n">options</span><span class="o">.</span><span class="n">maxSubscribers</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">let</span> <span class="nv">publication</span> <span class="o">=</span> <span class="k">try</span> <span class="k">await</span> <span class="n">member</span><span class="o">.</span><span class="nf">publish</span><span class="p">(</span><span class="n">stream</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="n">options</span><span class="p">)</span>
+</code></pre>
+<h6 id='サイマルキャストの利用' class='heading'>サイマルキャストの利用</h6>
+
+<p>サイマルキャストは、受信側クライアントデバイスが通信品質に合わせて自動的に最適なエンコード設定の映像を受け取る機能です。<br>
+VideoStream を Publish する際に複数のエンコード設定を指定することで、サイマルキャストを利用できます。</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">options</span> <span class="o">=</span>  <span class="kt">RoomPublicationOptions</span><span class="p">()</span>
+<span class="n">options</span><span class="o">.</span><span class="n">type</span> <span class="o">=</span> <span class="o">.</span><span class="kt">SFU</span>
+
+<span class="k">let</span> <span class="nv">lowEnc</span> <span class="o">=</span>  <span class="kt">Encoding</span><span class="p">()</span>
+<span class="n">lowEnc</span><span class="o">.</span><span class="n">id</span> <span class="o">=</span> <span class="s">"low"</span>
+<span class="n">lowEnc</span><span class="o">.</span><span class="n">maxBitrate</span> <span class="o">=</span> <span class="mi">10_000</span>
+
+<span class="k">let</span> <span class="nv">highEnc</span> <span class="o">=</span> <span class="kt">Encoding</span><span class="p">()</span>
+<span class="n">highEnc</span><span class="o">.</span><span class="n">id</span> <span class="o">=</span> <span class="s">"high"</span>
+<span class="n">highEnc</span><span class="o">.</span><span class="n">maxBitrate</span> <span class="o">=</span> <span class="mi">2000</span> <span class="o">*</span> <span class="mi">1000</span>
+
+<span class="n">options</span><span class="o">.</span><span class="n">encodings</span> <span class="o">=</span> <span class="p">[</span><span class="n">lowEnc</span><span class="p">,</span> <span class="n">highEnc</span><span class="p">]</span>
+
+<span class="k">let</span> <span class="nv">publication</span> <span class="o">=</span> <span class="k">try</span> <span class="k">await</span> <span class="n">member</span><span class="o">.</span><span class="nf">publish</span><span class="p">(</span><span class="n">stream</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="n">options</span><span class="p">)</span>
+</code></pre>
+<h5 id='コーデックの指定' class='heading'>コーデックの指定</h5>
+
+<p>Publish を行う際に、メディア通信に優先して利用するコーデックを指定することができます。<br>
+codecCapabilities 配列の先頭のコーデックを優先して利用します。<br>
+いずれのコーデックにも対応していない場合はデバイスが対応している他のコーデックを自動的に利用します。</p>
+<pre class="highlight swift"><code><span class="n">videoOptions</span><span class="o">.</span><span class="n">codecCapabilities</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Codec</span><span class="p">(</span><span class="nv">mimeType</span><span class="p">:</span> <span class="s">"video/vp9"</span><span class="p">)]</span>
+<span class="k">let</span> <span class="nv">videoPublication</span> <span class="o">=</span> <span class="k">try</span> <span class="k">await</span> <span class="n">member</span><span class="o">.</span><span class="nf">publish</span><span class="p">(</span><span class="n">videoStream</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="n">videoOptions</span><span class="p">)</span>
+
+<span class="n">audioOptions</span><span class="o">.</span><span class="n">codecCapabilities</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Codec</span><span class="p">(</span><span class="nv">mimeType</span><span class="p">:</span> <span class="s">"audio/red"</span><span class="p">)]</span>
+<span class="k">let</span> <span class="nv">audioPublication</span> <span class="o">=</span> <span class="k">try</span> <span class="k">await</span> <span class="n">member</span><span class="o">.</span><span class="nf">publish</span><span class="p">(</span><span class="n">audioStream</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="n">audioOptions</span><span class="p">)</span>
+</code></pre>
+<h4 id='publication-の-subscribe' class='heading'>Publication の Subscribe</h4>
+
+<p>Room 上の Publication を Subscribe することができます。</p>
+<pre class="highlight swift"><code><span class="c1">// Subscribe</span>
+<span class="k">let</span> <span class="nv">subscription</span> <span class="o">=</span> <span class="k">try</span> <span class="k">await</span> <span class="n">member</span><span class="o">.</span><span class="nf">subscribe</span><span class="p">(</span><span class="nv">publicationId</span><span class="p">:</span> <span class="n">publication</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+
+<span class="c1">// Unsubscribe</span>
+<span class="k">try</span> <span class="k">await</span> <span class="n">member</span><span class="o">.</span><span class="nf">unsubscribe</span><span class="p">(</span><span class="nv">subscriptionId</span><span class="p">:</span> <span class="n">subscription</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
+</code></pre>
+<h3 id='source-stream' class='heading'>Source/Stream</h3>
+
+<p>Source は、 SDK から各種メディアへアクセスする API を提供します。<br>
+また、 Publish 可能な Stream を作成することが出来ます。</p>
+<h4 id='source-から-stream-の作成' class='heading'>Source から Stream の作成</h4>
+<pre class="highlight swift"><code><span class="c1">// マイク音声のソース</span>
+<span class="k">let</span> <span class="nv">audioSource</span> <span class="o">=</span> <span class="kt">MicrophoneAudioSource</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">stream</span> <span class="o">=</span> <span class="n">audioSource</span><span class="o">.</span><span class="nf">createStream</span><span class="p">()</span>
+
+<span class="c1">// カメラ映像のソース</span>
+<span class="k">let</span> <span class="nv">frontCamera</span> <span class="o">=</span> <span class="kt">CameraVideoSource</span><span class="o">.</span><span class="nf">supportedCameras</span><span class="p">()</span><span class="o">.</span><span class="nf">first</span><span class="p">(</span><span class="nv">where</span><span class="p">:</span> <span class="p">{</span> <span class="nv">$0</span><span class="o">.</span><span class="n">position</span> <span class="o">==</span> <span class="o">.</span><span class="n">front</span> <span class="p">})</span>
+<span class="k">try</span> <span class="k">await</span> <span class="kt">CameraVideoSource</span><span class="o">.</span><span class="nf">shared</span><span class="p">()</span><span class="o">.</span><span class="nf">startCapturing</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">frontCamera</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">stream</span> <span class="o">=</span> <span class="kt">CameraVideoSource</span><span class="o">.</span><span class="nf">shared</span><span class="p">()</span><span class="o">.</span><span class="nf">createStream</span><span class="p">()</span>
+
+<span class="c1">// 画面共有のソース</span>
+<span class="k">let</span> <span class="nv">source</span> <span class="o">=</span> <span class="kt">CustomFrameVideoSource</span><span class="p">()</span>
+<span class="kt">RPScreenRecorder</span><span class="o">.</span><span class="nf">shared</span><span class="p">()</span><span class="o">.</span><span class="n">startCapture</span> <span class="p">{</span> <span class="n">buffer</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">err</span> <span class="k">in</span>
+    <span class="k">guard</span> <span class="n">err</span> <span class="o">==</span> <span class="kc">nil</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span>
+    <span class="p">}</span>
+    <span class="n">source</span><span class="o">.</span><span class="nf">updateFrame</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">buffer</span><span class="p">)</span>
+<span class="p">}</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">{</span> <span class="n">_</span> <span class="k">in</span> <span class="p">}</span>
+
+<span class="k">let</span> <span class="nv">stream</span> <span class="o">=</span> <span class="n">source</span><span class="o">.</span><span class="nf">createStream</span><span class="p">()</span>
+
+<span class="c1">// データソース</span>
+<span class="k">let</span> <span class="nv">source</span> <span class="o">=</span>  <span class="kt">DataSource</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">stream</span> <span class="o">=</span> <span class="n">source</span><span class="o">.</span><span class="nf">createStream</span><span class="p">()</span>
+</code></pre>
+<h4 id='audiostream-の再生' class='heading'>AudioStream の再生</h4>
+
+<p>ローカルの音声は再生されません。<br>
+受信した音声はスピーカーから自動的に再生されます。</p>
+<h4 id='videostream-の再生' class='heading'>VideoStream の再生</h4>
+
+<p>ローカルのカメラ映像を確認するために、再生することができます。<br>
+また、受信した映像を再生することができます。</p>
+<pre class="highlight swift"><code><span class="c1">// ローカル</span>
+<span class="kt">CameraVideoSource</span><span class="o">.</span><span class="nf">shared</span><span class="p">()</span><span class="o">.</span><span class="nf">attach</span><span class="p">(</span><span class="n">cameraPreviewView</span><span class="p">)</span>
+
+<span class="c1">// リモート</span>
+<span class="n">remoteVideoStream</span><span class="o">.</span><span class="nf">attach</span><span class="p">(</span><span class="n">videoView</span><span class="p">)</span>
+</code></pre>
+<h4 id='datastreamによるデータの送受信' class='heading'>DataStreamによるデータの送受信</h4>
+
+<p>任意のデータを送信できます。（SFU 通信では使用できません）</p>
+<pre class="highlight swift"><code><span class="c1">// データの送信</span>
+<span class="k">try</span> <span class="k">await</span> <span class="n">stream</span><span class="o">.</span><span class="nf">write</span><span class="p">(</span><span class="s">"hello"</span><span class="p">)</span>
+
+<span class="c1">// データの受信</span>
+<span class="n">stream</span><span class="o">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="k">self</span>
+
+<span class="c1">// MARK: - RemoteDataStreamDelegate</span>
+<span class="kd">func</span> <span class="nf">dataStream</span><span class="p">(</span><span class="n">_</span> <span class="nv">dataStream</span><span class="p">:</span> <span class="kt">RemoteDataStream</span><span class="p">,</span> <span class="n">didReceive</span> <span class="nv">string</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='roompublication' class='heading'>RoomPublication</h3>
+
+<p>Publication の情報の参照と操作ができます。</p>
+<h4 id='metadata-の取得-更新' class='heading'>Metadata の取得・更新</h4>
+
+<p>Publication の Metadata を取得・更新することができます。</p>
+<pre class="highlight swift"><code><span class="c1">// metadataの取得</span>
+<span class="k">let</span> <span class="nv">metadata</span> <span class="o">=</span> <span class="n">publication</span><span class="o">.</span><span class="n">metadata</span>
+
+<span class="c1">// metadataの更新</span>
+<span class="k">try</span> <span class="k">await</span> <span class="n">publication</span><span class="o">.</span><span class="nf">updateMetadata</span><span class="p">(</span><span class="s">"metadata"</span><span class="p">)</span>
+</code></pre>
+<h4 id='ミュート' class='heading'>ミュート</h4>
+
+<p>Publication に紐付いた映像や音声などの配信を一時停止（ミュート）することができます。</p>
+<pre class="highlight swift"><code><span class="c1">// ミュート</span>
+<span class="k">try</span> <span class="k">await</span> <span class="n">publication</span><span class="o">.</span><span class="nf">disable</span><span class="p">()</span>
+
+<span class="c1">// ミュートの解除</span>
+<span class="k">try</span> <span class="k">await</span> <span class="n">publication</span><span class="o">.</span><span class="nf">enable</span><span class="p">()</span>
+</code></pre>
+<h3 id='roomsubscription' class='heading'>RoomSubscription</h3>
+
+<p>Subscription の情報の参照と操作ができます。</p>
+<h4 id='stream-の参照' class='heading'>Stream の参照</h4>
+
+<p>Subscription から映像/音声/データの Stream を参照できます。</p>
+<pre class="highlight swift"><code><span class="k">switch</span> <span class="n">subscription</span><span class="o">.</span><span class="n">contentType</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nv">audio</span><span class="p">:</span>
+        <span class="k">let</span> <span class="nv">stream</span> <span class="o">=</span> <span class="n">subscription</span><span class="o">.</span><span class="n">stream</span> <span class="k">as!</span> <span class="kt">RemoteAudioStream</span>
+        <span class="c1">// do something</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nv">video</span><span class="p">:</span>
+        <span class="k">let</span> <span class="nv">stream</span> <span class="o">=</span> <span class="n">subscription</span><span class="o">.</span><span class="n">stream</span> <span class="k">as!</span> <span class="kt">RemoteVideoStream</span>
+        <span class="c1">// do something</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nv">data</span><span class="p">:</span>
+        <span class="k">let</span> <span class="nv">stream</span> <span class="o">=</span> <span class="n">subscription</span><span class="o">.</span><span class="n">stream</span> <span class="k">as!</span> <span class="kt">RemoteDataStream</span>
+        <span class="c1">// do something</span>
+<span class="p">}</span>
+</code></pre>
+<h4 id='受信映像の品質設定' class='heading'>受信映像の品質設定</h4>
+
+<p>Publication にサイマルキャストが設定されている場合、 <code>preferredEncodingId</code> に受信する映像品質設定の ID を指定することができます。<br>
+なお、通信帯域が輻輳を起こしている場合は、高い品質の映像設定を指定しても低い品質の映像が受信されます。</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">options</span> <span class="o">=</span> <span class="kt">SubscriptionOptions</span><span class="p">()</span>
+<span class="n">options</span><span class="o">.</span><span class="n">preferredEncodingId</span> <span class="o">=</span> <span class="n">preferredEncodingId</span>
+<span class="k">let</span> <span class="nv">subscription</span> <span class="o">=</span> <span class="k">try</span> <span class="k">await</span> <span class="n">member</span><span class="o">.</span><span class="nf">subscribe</span><span class="p">(</span><span class="nv">publicationId</span><span class="p">:</span> <span class="n">publication</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="n">options</span><span class="p">)</span>
+</code></pre>
+<h4 id='受信映像の品質設定を変更する' class='heading'>受信映像の品質設定を変更する</h4>
+
+<p>映像の受信開始後に任意のタイミングで品質設定を変更することができます。<br>
+なお、通信帯域が輻輳を起こしている場合は、高い品質の映像設定を指定しても低い品質の映像が受信されます。</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">encodings</span> <span class="o">=</span> <span class="n">subscription</span><span class="o">.</span><span class="n">publication</span><span class="p">?</span><span class="o">.</span><span class="n">encodings</span> <span class="p">??</span> <span class="p">[]</span>
+<span class="k">if</span> <span class="n">encodings</span><span class="o">.</span><span class="n">isEmpty</span> <span class="p">{</span>
+    <span class="k">return</span>
+<span class="p">}</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">subscription</span><span class="o">.</span><span class="nf">changePreferredEncoding</span><span class="p">(</span><span class="nv">encodingId</span><span class="p">:</span> <span class="n">encodings</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">id</span><span class="o">!</span><span class="p">)</span>
+</code></pre>
+<h2 id='tips' class='heading'>Tips</h2>
+<h3 id='room-単位でメディアの通信方式を指定する' class='heading'>Room 単位でメディアの通信方式を指定する</h3>
+
+<p><code><a href="Classes/P2PRoom.html">P2PRoom</a></code> もしくは <code><a href="Classes/SFURoom.html">SFURoom</a></code> を使用することであらかじめメディアの通信方式を指定できます。<br>
+それぞれの API は <code><a href="Classes/Room.html">Room</a></code> と共通しています。<br>
+なお、 P2PRoom における SFU 通信の利用、 SFURoom における P2P 通信の利用はできません。</p>
+<h2 id='参考リンク' class='heading'>参考リンク</h2>
+
+<ul>
+<li><a href="https://skyway.ntt.com/ja/docs/cookbook/ios-sdk/">クックブック（アプリケーション開発において役立つ様々な情報を紹介しています）</a></li>
 </ul>
 
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener">NTT DOCOMO BUSINESS, Inc</a>. All rights reserved. (Last updated: 2025-10-20)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener">NTT DOCOMO BUSINESS, Inc</a>. All rights reserved. (Last updated: 2025-12-16)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
