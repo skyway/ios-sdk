@@ -9,6 +9,7 @@ import SkyWayRoom
 
 class SkyWayViewModel: NSObject, ObservableObject, RoomDelegate, RemoteDataStreamDelegate {
     var room: Room?
+    var roomType: RoomType?
     var localMember: LocalRoomMember?
     var dataStream: LocalDataStream?
     var isAutoSubscribing: Bool = false
@@ -43,7 +44,8 @@ class SkyWayViewModel: NSObject, ObservableObject, RoomDelegate, RemoteDataStrea
         let opt: Room.InitOptions = .init()
         opt.name = roomName
         let memberOpt: Room.MemberInitOptions = .init()
-        if roomType == .P2P {
+        self.roomType = roomType
+        if self.roomType == .P2P {
             let room = try await P2PRoom.findOrCreate(with: opt)
             DispatchQueue.main.sync {
                 remotePublications = room.publications
@@ -52,8 +54,17 @@ class SkyWayViewModel: NSObject, ObservableObject, RoomDelegate, RemoteDataStrea
             self.room = room
             room.delegate = self
             self.localMember = localMember
-        }else {
+        }else if self.roomType == .SFU {
             let room = try await SFURoom.findOrCreate(with: opt)
+            DispatchQueue.main.sync {
+                remotePublications = room.publications
+            }
+            let localMember = try await room.join(with: memberOpt)
+            self.room = room
+            room.delegate = self
+            self.localMember = localMember
+        }else if self.roomType == .default {
+            let room = try await Room.findOrCreate(with: opt)
             DispatchQueue.main.sync {
                 remotePublications = room.publications
             }
@@ -79,6 +90,7 @@ class SkyWayViewModel: NSObject, ObservableObject, RoomDelegate, RemoteDataStrea
         try? await room?.dispose()
         localMember = nil
         room = nil
+        roomType = nil
     }
     
     func publishStreams(includeDataStream: Bool = true) async throws {
@@ -89,7 +101,7 @@ class SkyWayViewModel: NSObject, ObservableObject, RoomDelegate, RemoteDataStrea
         let audioPublicationOptions: RoomPublicationOptions = .init()
         let _ = try await localMember?.publish(audioStream, options: audioPublicationOptions)
         let videoPublicationOptions: RoomPublicationOptions = .init()
-        if room is SFURoom {
+        if roomType == .SFU {
             let lowEnc: Encoding = .init()
             lowEnc.id = lowEncodeId
             lowEnc.scaleResolutionDownBy = 8.0
@@ -97,10 +109,11 @@ class SkyWayViewModel: NSObject, ObservableObject, RoomDelegate, RemoteDataStrea
             highEnc.id = highEncodeId
             highEnc.scaleResolutionDownBy = 1.0
             videoPublicationOptions.encodings = [ highEnc ]
-        }else {
+        }else if roomType == .P2P || roomType == .default {
             let enc: Encoding = .init()
             enc.scaleResolutionDownBy = 1.0
             videoPublicationOptions.encodings = [ enc ]
+            videoPublicationOptions.type = .P2P
         }
         let _ = try await localMember?.publish(videoStream, options: videoPublicationOptions)
         if room is P2PRoom && includeDataStream {

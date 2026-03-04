@@ -19,6 +19,15 @@ target 'P2PRoom' do
   pod 'SkyWayRoom'
 end
 
+target 'DefaultRoom' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for DefaultRoom
+  pod 'SkyWayRoom'
+end
+
+
 target 'SFURoom' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
