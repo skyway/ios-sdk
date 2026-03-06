@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2193304B8C67262D042ACC9B /* Pods_DefaultRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 678778B5800F37C3A77F398F /* Pods_DefaultRoom.framework */; };
+		3C72500A2F4D90EE006324AA /* SkyWayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D352983E57E005D1449 /* SkyWayViewModel.swift */; };
+		3C72500C2F4D90EE006324AA /* RemotePublicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D382983E57E005D1449 /* RemotePublicationView.swift */; };
+		3C72500D2F4D90EE006324AA /* RepresentableVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D362983E57E005D1449 /* RepresentableVideoView.swift */; };
+		3C72500F2F4D90EE006324AA /* RepresentableCameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D372983E57E005D1449 /* RepresentableCameraPreviewView.swift */; };
+		3C72502A2F4D9294006324AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7250242F4D9294006324AA /* Preview Assets.xcassets */; };
+		3C72502B2F4D9294006324AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7250262F4D9294006324AA /* Assets.xcassets */; };
+		3C72502C2F4D9294006324AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7250272F4D9294006324AA /* ContentView.swift */; };
+		3C72502D2F4D9294006324AA /* DefaultRoomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7250282F4D9294006324AA /* DefaultRoomApp.swift */; };
 		78A3206050F733BC9A1838A9 /* Pods_P2PRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79F55872D83DD0B91C11146 /* Pods_P2PRoom.framework */; };
 		9838D086DA554D60E5C31E78 /* Pods_AutoSubscribingRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DA03349465DFE95198F8D2 /* Pods_AutoSubscribingRoom.framework */; };
 		A01D1D4A2983E5B9005D1449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A01D1D2F2983E57E005D1449 /* Assets.xcassets */; };
@@ -40,10 +49,18 @@
 		03459EEDDB23D1AA2E0F8B6D /* Pods-AutoSubscribingRoom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoSubscribingRoom.debug.xcconfig"; path = "Target Support Files/Pods-AutoSubscribingRoom/Pods-AutoSubscribingRoom.debug.xcconfig"; sourceTree = "<group>"; };
 		1EAFA4B0CFF94060E6C59B2B /* Pods_SFURoom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFURoom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		390E181AB35CFBF81853508F /* Pods-SFURoom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFURoom.debug.xcconfig"; path = "Target Support Files/Pods-SFURoom/Pods-SFURoom.debug.xcconfig"; sourceTree = "<group>"; };
+		3C7250192F4D90EE006324AA /* DefaultRoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefaultRoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C7250242F4D9294006324AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3C7250262F4D9294006324AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C7250272F4D9294006324AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3C7250282F4D9294006324AA /* DefaultRoomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRoomApp.swift; sourceTree = "<group>"; };
+		3CB9FB2460EC751E9B7027BA /* Pods-DefaultRoom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DefaultRoom.debug.xcconfig"; path = "Target Support Files/Pods-DefaultRoom/Pods-DefaultRoom.debug.xcconfig"; sourceTree = "<group>"; };
 		42237F9D497E05D20DA7C8AB /* Pods-SFURoom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFURoom.release.xcconfig"; path = "Target Support Files/Pods-SFURoom/Pods-SFURoom.release.xcconfig"; sourceTree = "<group>"; };
 		439C28B2A68D10C183FD060C /* Pods-P2PRoom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P2PRoom.debug.xcconfig"; path = "Target Support Files/Pods-P2PRoom/Pods-P2PRoom.debug.xcconfig"; sourceTree = "<group>"; };
 		59DA03349465DFE95198F8D2 /* Pods_AutoSubscribingRoom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoSubscribingRoom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		678778B5800F37C3A77F398F /* Pods_DefaultRoom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DefaultRoom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		898D53AD1D44C3E54FBB7FA5 /* Pods-P2PRoom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P2PRoom.release.xcconfig"; path = "Target Support Files/Pods-P2PRoom/Pods-P2PRoom.release.xcconfig"; sourceTree = "<group>"; };
+		9D3ADB6FCCA9B18BBC9670E5 /* Pods-DefaultRoom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DefaultRoom.release.xcconfig"; path = "Target Support Files/Pods-DefaultRoom/Pods-DefaultRoom.release.xcconfig"; sourceTree = "<group>"; };
 		A01D1D2F2983E57E005D1449 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A01D1D312983E57E005D1449 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A01D1D322983E57E005D1449 /* P2PRoomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2PRoomApp.swift; sourceTree = "<group>"; };
@@ -68,6 +85,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3C7250102F4D90EE006324AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2193304B8C67262D042ACC9B /* Pods_DefaultRoom.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A02326652955CD460015BF5C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,6 +120,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C7250252F4D9294006324AA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3C7250242F4D9294006324AA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3C7250292F4D9294006324AA /* DefaultRoom */ = {
+			isa = PBXGroup;
+			children = (
+				3C7250252F4D9294006324AA /* Preview Content */,
+				3C7250262F4D9294006324AA /* Assets.xcassets */,
+				3C7250272F4D9294006324AA /* ContentView.swift */,
+				3C7250282F4D9294006324AA /* DefaultRoomApp.swift */,
+			);
+			name = DefaultRoom;
+			path = Sources/DefaultRoom;
+			sourceTree = "<group>";
+		};
 		A01D1D2E2983E57E005D1449 /* P2PRoom */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +215,7 @@
 		A023265F2955CD460015BF5C = {
 			isa = PBXGroup;
 			children = (
+				3C7250292F4D9294006324AA /* DefaultRoom */,
 				A01D1D2E2983E57E005D1449 /* P2PRoom */,
 				A01D1D762983EDBB005D1449 /* SFURoom */,
 				A01D1D392983E57E005D1449 /* AutoSubscribingRoom */,
@@ -186,6 +232,7 @@
 				A02326682955CD460015BF5C /* P2PRoom.app */,
 				A083F3C7296675B100AEF5E8 /* SFURoom.app */,
 				A038916A297647ED00477E88 /* AutoSubscribingRoom.app */,
+				3C7250192F4D90EE006324AA /* DefaultRoom.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,6 +243,7 @@
 				59DA03349465DFE95198F8D2 /* Pods_AutoSubscribingRoom.framework */,
 				E79F55872D83DD0B91C11146 /* Pods_P2PRoom.framework */,
 				1EAFA4B0CFF94060E6C59B2B /* Pods_SFURoom.framework */,
+				678778B5800F37C3A77F398F /* Pods_DefaultRoom.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -209,6 +257,8 @@
 				898D53AD1D44C3E54FBB7FA5 /* Pods-P2PRoom.release.xcconfig */,
 				390E181AB35CFBF81853508F /* Pods-SFURoom.debug.xcconfig */,
 				42237F9D497E05D20DA7C8AB /* Pods-SFURoom.release.xcconfig */,
+				3CB9FB2460EC751E9B7027BA /* Pods-DefaultRoom.debug.xcconfig */,
+				9D3ADB6FCCA9B18BBC9670E5 /* Pods-DefaultRoom.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -216,6 +266,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3C7250072F4D90EE006324AA /* DefaultRoom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C7250162F4D90EE006324AA /* Build configuration list for PBXNativeTarget "DefaultRoom" */;
+			buildPhases = (
+				3C7250082F4D90EE006324AA /* [CP] Check Pods Manifest.lock */,
+				3C7250092F4D90EE006324AA /* Sources */,
+				3C7250102F4D90EE006324AA /* Frameworks */,
+				3C7250122F4D90EE006324AA /* Resources */,
+				3C7250152F4D90EE006324AA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DefaultRoom;
+			productName = P2PRoom;
+			productReference = 3C7250192F4D90EE006324AA /* DefaultRoom.app */;
+			productType = "com.apple.product-type.application";
+		};
 		A02326672955CD460015BF5C /* P2PRoom */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A02326762955CD470015BF5C /* Build configuration list for PBXNativeTarget "P2PRoom" */;
@@ -304,12 +373,11 @@
 				Base,
 			);
 			mainGroup = A023265F2955CD460015BF5C;
-			packageReferences = (
-			);
 			productRefGroup = A02326692955CD460015BF5C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				3C7250072F4D90EE006324AA /* DefaultRoom */,
 				A02326672955CD460015BF5C /* P2PRoom */,
 				A083F3C6296675B100AEF5E8 /* SFURoom */,
 				A0389169297647ED00477E88 /* AutoSubscribingRoom */,
@@ -318,6 +386,15 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3C7250122F4D90EE006324AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C72502A2F4D9294006324AA /* Preview Assets.xcassets in Resources */,
+				3C72502B2F4D9294006324AA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A02326662955CD460015BF5C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -356,13 +433,60 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SFURoom/Pods-SFURoom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SFURoom/Pods-SFURoom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SFURoom/Pods-SFURoom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C7250082F4D90EE006324AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DefaultRoom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C7250152F4D90EE006324AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DefaultRoom/Pods-DefaultRoom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DefaultRoom/Pods-DefaultRoom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DefaultRoom/Pods-DefaultRoom-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5F8EF95368B3A085658F5C4E /* [CP] Check Pods Manifest.lock */ = {
@@ -417,9 +541,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AutoSubscribingRoom/Pods-AutoSubscribingRoom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AutoSubscribingRoom/Pods-AutoSubscribingRoom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -434,9 +562,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-P2PRoom/Pods-P2PRoom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-P2PRoom/Pods-P2PRoom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -468,6 +600,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3C7250092F4D90EE006324AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C72500A2F4D90EE006324AA /* SkyWayViewModel.swift in Sources */,
+				3C72500C2F4D90EE006324AA /* RemotePublicationView.swift in Sources */,
+				3C72500D2F4D90EE006324AA /* RepresentableVideoView.swift in Sources */,
+				3C72502C2F4D9294006324AA /* ContentView.swift in Sources */,
+				3C72502D2F4D9294006324AA /* DefaultRoomApp.swift in Sources */,
+				3C72500F2F4D90EE006324AA /* RepresentableCameraPreviewView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A02326642955CD460015BF5C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -510,6 +655,73 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		3C7250172F4D90EE006324AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB9FB2460EC751E9B7027BA /* Pods-DefaultRoom.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "Sources/DefaultRoom/Preview\\ Content";
+				DEVELOPMENT_TEAM = M29R4N83HB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラを利用します";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "マイクを利用します";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ntt.skyway.exmple.P2PRoom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C7250182F4D90EE006324AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D3ADB6FCCA9B18BBC9670E5 /* Pods-DefaultRoom.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "Sources/DefaultRoom/Preview\\ Content";
+				DEVELOPMENT_TEAM = M29R4N83HB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラを利用します";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "マイクを利用します";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ntt.skyway.exmple.P2PRoom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		A02326742955CD470015BF5C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -828,6 +1040,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3C7250162F4D90EE006324AA /* Build configuration list for PBXNativeTarget "DefaultRoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C7250172F4D90EE006324AA /* Debug */,
+				3C7250182F4D90EE006324AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A02326632955CD460015BF5C /* Build configuration list for PBXProject "SkyWayExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
