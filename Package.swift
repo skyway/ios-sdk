@@ -24,7 +24,7 @@ let package = Package(
         .binaryTarget(
             name: "SkyWayRoom",
             url: "https://github.com/skyway/ios-sdk/releases/download/3.3.0/SkyWayRoom.xcframework.zip",
-            checksum: "40c4f62a84f65414fd85a1428a086a776672d694bea98fe0e960720f8e5c2f31"),
+            checksum: "aaa997ad9cfd3c5907accb7b8748bf580da5fb245d39667ba0dd4739c189ddbe"),
         .binaryTarget(
             name: "WebRTC",
             url: "https://github.com/skyway/skyway-ios-webrtc-specs/releases/download/120.1.0/WebRTC.xcframework.zip",
