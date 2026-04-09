@@ -27,7 +27,7 @@
     <a title="LocalRoomMember Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">SkyWayRoom 3.3.0 Docs</a> (80% documented)</p>
+        <p><a href="../index.html">SkyWayRoom 3.4.0 Docs</a> (80% documented)</p>
         <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -548,15 +548,14 @@
 
 <p>同じインスタンスのStreamを複数回Publishすることはできません。必要ならば各種Sourceから再度作成してPublishしてください。</p>
 
-<p>詳しいオプションの設定例については Core SDK の<a href="/core/Classes/SKWPublicationOptions.html">PublicationOptions</a>、開発者ドキュメントの<a href="https://skyway.ntt.com/ja/docs/user-guide/tips/large-scale/">大規模会議アプリを実装する上での注意点</a>をご覧ください。</p>
+<p>詳しいオプションの設定例については開発者ドキュメントの<a href="https://skyway.ntt.com/ja/docs/user-guide/tips/large-scale/">大規模会議アプリを実装する上での注意点</a>をご覧ください。</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="n">iOS</span> <span class="mf">13.0</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span>
-<span class="kd">@objc</span>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
 <span class="kd">public</span> <span class="kd">func</span> <span class="nf">publish</span><span class="p">(</span><span class="n">_</span> <span class="nv">stream</span><span class="p">:</span> <span class="kt"><a href="../Classes/LocalStream.html">LocalStream</a></span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Classes/RoomPublicationOptions.html">RoomPublicationOptions</a></span><span class="p">?)</span> <span class="k">async</span> <span class="k">throws</span>
     <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/RoomPublication.html">RoomPublication</a></span></code></pre>
 
@@ -619,7 +618,7 @@
 
 <p>同じインスタンスのStreamを複数回Publishすることはできません。必要ならば各種Sourceから再度作成してPublishしてください。</p>
 
-<p>詳しいオプションの設定例については Core SDK の<a href="/core/Classes/SKWPublicationOptions.html">PublicationOptions</a>、開発者ドキュメントの<a href="https://skyway.ntt.com/ja/docs/user-guide/tips/large-scale/">大規模会議アプリを実装する上での注意点</a>をご覧ください。</p>
+<p>詳しいオプションの設定例については開発者ドキュメントの<a href="https://skyway.ntt.com/ja/docs/user-guide/tips/large-scale/">大規模会議アプリを実装する上での注意点</a>をご覧ください。</p>
 
                       </div>
                       <div class="declaration">
@@ -704,8 +703,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="n">iOS</span> <span class="mf">13.0</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span>
-<span class="kd">@objc</span>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
 <span class="kd">public</span> <span class="kd">func</span> <span class="nf">unpublish</span><span class="p">(</span><span class="nv">publicationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span></code></pre>
 
                         </div>
@@ -809,15 +807,12 @@
                       <div class="abstract">
                         <p>PublicationをSubscribeします。</p>
 
-<p>オプションについては Core SDK のリファレンスもご確認ください。</p>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="n">iOS</span> <span class="mf">13.0</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span>
-<span class="kd">@objc</span>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
 <span class="kd">public</span> <span class="kd">func</span> <span class="nf">subscribe</span><span class="p">(</span><span class="nv">publicationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Classes/SubscriptionOptions.html">SubscriptionOptions</a></span><span class="p">?)</span> <span class="k">async</span> <span class="k">throws</span>
     <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/RoomSubscription.html">RoomSubscription</a></span></code></pre>
 
@@ -875,8 +870,6 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>PublicationをSubscribeします。</p>
-
-<p>オプションについては Core SDK のリファレンスもご確認ください。</p>
 
                       </div>
                       <div class="declaration">
@@ -961,8 +954,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="n">iOS</span> <span class="mf">13.0</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span>
-<span class="kd">@objc</span>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
 <span class="kd">public</span> <span class="kd">func</span> <span class="nf">unsubscribe</span><span class="p">(</span><span class="nv">subscriptionId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span></code></pre>
 
                         </div>
@@ -1045,7 +1037,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener">NTT DOCOMO BUSINESS, Inc</a>. All rights reserved. (Last updated: 2026-02-18)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener">NTT DOCOMO BUSINESS, Inc</a>. All rights reserved. (Last updated: 2026-04-09)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
