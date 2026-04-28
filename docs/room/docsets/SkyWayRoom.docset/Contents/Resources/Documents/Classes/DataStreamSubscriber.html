@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SFUBotPluginOptions Class Reference</title>
+    <title>DataStreamSubscriber Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -23,8 +23,8 @@
   </head>
   <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NN5JX4B" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <a name="//apple_ref/swift/Class/SFUBotPluginOptions" class="dashAnchor"></a>
-    <a title="SFUBotPluginOptions Class Reference"></a>
+    <a name="//apple_ref/swift/Class/DataStreamSubscriber" class="dashAnchor"></a>
+    <a title="DataStreamSubscriber Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">SkyWayRoom 3.5.0 Docs</a> (80% documented)</p>
@@ -41,7 +41,7 @@
         <img id="carat" src="../img/carat.png" alt=""/>
         <a href="../Classes.html">Classes</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        SFUBotPluginOptions Class Reference
+        DataStreamSubscriber Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -485,15 +485,15 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>SFUBotPluginOptions</h1>
+            <h1>DataStreamSubscriber</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SFUBotPluginOptions</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">DataStreamSubscriber</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
-            <p>SFUBotPluginオプション</p>
+            <p>DataStreamのサブスクライバー情報</p>
 
           </section>
           <section class="section task-group-section">
@@ -502,9 +502,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)SKWSFUBotPluginOptions(py)domain"></a>
-                    <a name="//apple_ref/swift/Property/domain" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SKWSFUBotPluginOptions(py)domain">domain</a>
+                    <a name="/c:objc(cs)SKWDataStreamSubscriber(py)id"></a>
+                    <a name="//apple_ref/swift/Property/id" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SKWDataStreamSubscriber(py)id">id</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -512,16 +512,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>SFUサーバの宛先ドメインを指定できます。</p>
-
-<p>指定のない場合はデフォルトの値が指定されて接続されます。</p>
+                        <p>サブスクライバーID</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">domain</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -531,9 +529,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)SKWSFUBotPluginOptions(py)version"></a>
-                    <a name="//apple_ref/swift/Property/version" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SKWSFUBotPluginOptions(py)version">version</a>
+                    <a name="/c:objc(cs)SKWDataStreamSubscriber(py)name"></a>
+                    <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SKWDataStreamSubscriber(py)name">name</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -541,16 +539,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>APIのバージョンを指定できます。</p>
-
-<p>指定のない場合または0が指定された場合は、デフォルトの値が使用されます。</p>
+                        <p>サブスクライバー名（任意）</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">version</span><span class="p">:</span> <span class="kt">Int32</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -560,9 +556,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)SKWSFUBotPluginOptions(py)secure"></a>
-                    <a name="//apple_ref/swift/Property/secure" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SKWSFUBotPluginOptions(py)secure">secure</a>
+                    <a name="/c:objc(cs)SKWDataStreamSubscriber(im)initWithId:name:"></a>
+                    <a name="//apple_ref/swift/Method/init(id:name:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SKWDataStreamSubscriber(im)initWithId:name:">init(id:<wbr>name:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -570,43 +566,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>セキュアな通信を行うかどうかを指定できます。</p>
-
-<p>指定のない場合は<code>true</code>が設定されます。</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">secure</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)SKWSFUBotPluginOptions(im)init"></a>
-                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SKWSFUBotPluginOptions(im)init">init()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>イニシャライザ</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
 
                         </div>
                       </div>

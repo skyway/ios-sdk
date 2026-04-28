@@ -27,7 +27,7 @@
     <a title="RemoteDataStreamDelegate Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">SkyWayRoom 3.4.0 Docs</a> (80% documented)</p>
+        <p><a href="../index.html">SkyWayRoom 3.5.0 Docs</a> (80% documented)</p>
         <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -112,6 +112,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/DataSource.html">DataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DataStreamSubscriber.html">DataStreamSubscriber</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/Encoding.html">Encoding</a>
@@ -327,6 +330,9 @@
                 <a href="../Protocols/ContextDelegate.html">ContextDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/LocalDataStreamDelegate.html">LocalDataStreamDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/LocalPersonDelegate.html">LocalPersonDelegate</a>
               </li>
               <li class="nav-group-task">
@@ -506,7 +512,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>文字列情報を受信した時にコールされるイベント</p>
 
                       </div>
                       <div class="declaration">
@@ -516,6 +522,37 @@
                           <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">dataStream</span><span class="p">(</span><span class="n">_</span> <span class="nv">dataStream</span><span class="p">:</span> <span class="kt"><a href="../Classes/RemoteDataStream.html">RemoteDataStream</a></span><span class="p">,</span> <span class="n">didReceive</span> <span class="nv">string</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dataStream</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>対象のDataStream</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>string</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>受信した文字列</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -533,7 +570,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>バイナリを受信した時にコールされるイベント</p>
 
                       </div>
                       <div class="declaration">
@@ -544,6 +581,37 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dataStream</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>対象のDataStream</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>受信したデータ</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -552,7 +620,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener">NTT DOCOMO BUSINESS, Inc</a>. All rights reserved. (Last updated: 2026-04-09)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener">NTT DOCOMO BUSINESS, Inc</a>. All rights reserved. (Last updated: 2026-04-28)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
