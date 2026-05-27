@@ -35,3 +35,11 @@ target 'SFURoom' do
   # Pods for SFURoom
   pod 'SkyWayRoom'
 end
+
+target 'VideoProcessorExample' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for VideoProcessorExample
+  pod 'SkyWayRoom'
+end

@@ -1,0 +1,90 @@
+name: SkyWayExample
+attributes:
+  ORGANIZATIONNAME: NTT DOCOMO BUSINESS, Inc
+configs:
+  Debug: debug
+  Release: release
+options:
+  defaultConfig: Release
+  groupSortPosition: bottom
+
+settings:
+  base:
+    IPHONEOS_DEPLOYMENT_TARGET: '16.0'
+
+targetTemplates:
+  ExampleApp:
+    type: application
+    platform: iOS
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: 'YES'
+        INFOPLIST_KEY_NSCameraUsageDescription: "Use camera"
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: "Use mic"
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: 'YES'
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: 'YES'
+        INFOPLIST_KEY_UILaunchScreen_Generation: 'YES'
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: >
+          UIInterfaceOrientationPortrait
+          UIInterfaceOrientationPortraitUpsideDown
+          UIInterfaceOrientationLandscapeLeft
+          UIInterfaceOrientationLandscapeRight
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: >
+          UIInterfaceOrientationPortrait
+          UIInterfaceOrientationLandscapeLeft
+          UIInterfaceOrientationLandscapeRight
+        PRODUCT_BUNDLE_IDENTIFIER: com.ntt.skyway.example.${target_name}
+        DEVELOPMENT_ASSET_PATHS: '"Sources/${target_name}/Preview Content"'
+
+targets:
+  P2PRoom:
+    templates:
+      - ExampleApp
+    sources:
+      - name: Common
+        group: Sources
+        path: Sources/Common
+      - name: P2PRoom
+        group: Sources
+        path: Sources/P2PRoom
+
+  SFURoom:
+    templates:
+      - ExampleApp
+    sources:
+      - name: Common
+        group: Sources
+        path: Sources/Common
+      - name: SFURoom
+        group: Sources
+        path: Sources/SFURoom
+
+  AutoSubscribingRoom:
+    templates:
+      - ExampleApp
+    sources:
+      - name: Common
+        group: Sources
+        path: Sources/Common
+      - name: AutoSubscribingRoom
+        group: Sources
+        path: Sources/AutoSubscribingRoom
+
+  DefaultRoom:
+    templates:
+      - ExampleApp
+    sources:
+      - name: Common
+        group: Sources
+        path: Sources/Common
+      - name: DefaultRoom
+        group: Sources
+        path: Sources/DefaultRoom
+
+  VideoProcessorExample:
+    templates:
+      - ExampleApp
+    sources:
+      - name: VideoProcessorExample
+        group: Sources
+        path: Sources/VideoProcessorExample
