@@ -47,7 +47,14 @@ class ProcessorViewModel: NSObject, ObservableObject, RoomDelegate {
     }
     /// 現在セットされている背景画像（nil = 未設定）
     @Published var vbBackgroundImage: UIImage? = nil {
-        didSet { virtualBackgroundProcessor.backgroundImage = vbBackgroundImage }
+        didSet {
+            guard #available(iOS 15.0, *) else { return }
+            // カメラの pixelBuffer は常に landscape で渡されるため、
+            // 背景画像も landscape に正規化してから渡す。
+            // （RTCVideoFrame の display rotation により portrait 表示時に正しく見える）
+            virtualBackgroundProcessor.backgroundImage =
+                vbBackgroundImage.flatMap { Self.landscapeNormalized($0) }
+        }
     }
 
     // MARK: - Private
@@ -56,6 +63,8 @@ class ProcessorViewModel: NSObject, ObservableObject, RoomDelegate {
     private lazy var blurProcessor = BlurProcessor()
     @available(iOS 15.0, *)
     private lazy var virtualBackgroundProcessor = VirtualBackgroundProcessor()
+
+    @Published var localVideoStream: LocalVideoStream? = nil
 
     private var room: Room?
     private var localMember: LocalRoomMember?
@@ -110,6 +119,7 @@ class ProcessorViewModel: NSObject, ObservableObject, RoomDelegate {
 
         // Video: setup() で startCapturing 済みのため createStream() のみ
         let videoStream = CameraVideoSource.shared().createStream()
+        localVideoStream = videoStream
         let videoOpt: RoomPublicationOptions = .init()
         let enc: Encoding = .init()
         enc.scaleResolutionDownBy = 1.0
@@ -126,6 +136,7 @@ class ProcessorViewModel: NSObject, ObservableObject, RoomDelegate {
         try? await room?.dispose()
         room = nil
         localMember = nil
+        localVideoStream = nil
         isJoined = false
         isPublished = false
 
@@ -178,4 +189,40 @@ class ProcessorViewModel: NSObject, ObservableObject, RoomDelegate {
     nonisolated func roomPublicationListDidChange(_ room: Room) {}
     nonisolated func room(_ room: Room, didPublishStreamOf publication: RoomPublication) {}
     nonisolated func room(_ room: Room, didUnsubscribePublicationOf subscription: RoomSubscription) {}
+
+    // MARK: - Image normalization
+
+    /// UIImage をカメラの pixelBuffer（landscape）の座標空間に合わせた UIImage に変換する。
+    ///
+    /// カメラの pixelBuffer は常に landscape で渡される。
+    /// VirtualBackgroundProcessor 内で CIImage(image:) を使うと imageOrientation が適用されて
+    /// 視覚的に正しい向きの CIImage になるが、landscape な pixelBuffer との座標系が
+    /// portrait/landscape で食い違い、縦横が逆に見える。
+    /// そのため、ここで画像を描き直して imageOrientation = .up の landscape UIImage に正規化し、
+    /// SDK に渡す。
+    private static func landscapeNormalized(_ image: UIImage) -> UIImage? {
+        // Step 1: imageOrientation を .up に正規化（UIGraphics で描き直す）
+        let uprightSize = image.size
+        UIGraphicsBeginImageContextWithOptions(uprightSize, false, image.scale)
+        image.draw(in: CGRect(origin: .zero, size: uprightSize))
+        let upright = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        guard let upright else { return nil }
+
+        // Step 2: portrait（縦長）ならカメラの landscape pixelBuffer に合わせて 90° CW 回転
+        guard upright.size.height > upright.size.width else {
+            return upright  // 既に landscape または正方形
+        }
+
+        let newSize = CGSize(width: upright.size.height, height: upright.size.width)
+        UIGraphicsBeginImageContextWithOptions(newSize, false, upright.scale)
+        if let ctx = UIGraphicsGetCurrentContext() {
+            ctx.translateBy(x: 0, y: newSize.height)
+            ctx.rotate(by: -.pi / 2)
+            upright.draw(in: CGRect(origin: .zero, size: upright.size))
+        }
+        let rotated = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return rotated
+    }
 }

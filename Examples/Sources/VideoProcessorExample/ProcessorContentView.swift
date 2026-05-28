@@ -59,8 +59,8 @@ struct ProcessorContentView: View {
 
     private var cameraPreviewSection: some View {
         Group {
-            if vm.isSetup {
-                RepresentableCameraPreviewView()
+            if let stream = vm.localVideoStream {
+                RepresentableVideoView(stream: stream)
                     .aspectRatio(9 / 16, contentMode: .fit)
                     .frame(maxWidth: .infinity)
                     .background(Color.black)
@@ -68,7 +68,6 @@ struct ProcessorContentView: View {
                 Color.black
                     .aspectRatio(9 / 16, contentMode: .fit)
                     .frame(maxWidth: .infinity)
-                    .overlay(ProgressView().tint(.white))
             }
         }
     }
