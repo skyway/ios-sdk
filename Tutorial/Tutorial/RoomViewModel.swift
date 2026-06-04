@@ -12,12 +12,7 @@ import SkyWayRoom
 final class RoomViewModel: ObservableObject {
     @Published var remoteVideoStream: RemoteVideoStream?
 
-    private var hasStarted = false
-
     func start() async {
-        guard !hasStarted else { return }
-        hasStarted = true
-
         let appId = "アプリケーションIDを入力してください"
         let secretKey = "シークレットキーを入力してください"
         // SkyWayのセットアップ
