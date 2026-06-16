@@ -21,14 +21,14 @@ final class RoomViewModel: ObservableObject {
         try? await Context.setupForDev(withAppId: appId, secretKey: secretKey, options: contextOpt)
         let roomInit: Room.InitOptions = .init()
         guard let room: Room = try? await .create(with: roomInit) else {
-            print("[Tutorial] Creating room failed.")
-            return
+             print("[Tutorial] Creating room failed.")
+             return
         }
         let memberInit: Room.MemberInitOptions = .init()
         memberInit.name = "Alice" // Memberに名前を付けることができます
         guard let member = try? await room.join(with: memberInit) else {
-            print("[Tutorial] Join failed.")
-            return
+             print("[Tutorial] Join failed.")
+             return
         }
         // AudioStreamの作成
         let audioSource: MicrophoneAudioSource = .init()
@@ -36,13 +36,13 @@ final class RoomViewModel: ObservableObject {
         let audioPublicationOptions: RoomPublicationOptions = .init()
         audioPublicationOptions.type = .SFU
         guard let audioPublication = try? await member.publish(audioStream, options: audioPublicationOptions) else {
-            print("[Tutorial] Publishing failed.")
-            return
+             print("[Tutorial] Publishing failed.")
+             return
         }
         // Audioの場合、subscribeした時から音声が流れます
         guard let _ = try? await member.subscribe(publicationId: audioPublication.id, options: nil) else {
-            print("[Tutorial] Subscribing failed.")
-            return
+             print("[Tutorial] Subscribing failed.")
+             return
         }
         print("🎉Subscribing audio stream successfully.")
 
@@ -59,12 +59,12 @@ final class RoomViewModel: ObservableObject {
         let videoPublicationOptions: RoomPublicationOptions = .init()
         videoPublicationOptions.type = .SFU
         guard let videoPublication = try? await member.publish(localVideoStream, options: videoPublicationOptions) else {
-            print("[Tutorial] Publishing failed.")
-            return
+             print("[Tutorial] Publishing failed.")
+             return
         }
         guard let videoSubscription = try? await member.subscribe(publicationId: videoPublication.id, options: nil) else {
-            print("[Tutorial] Subscribing failed.")
-            return
+             print("[Tutorial] Subscribing failed.")
+             return
         }
         print("🎉Subscribing video stream successfully.")
 
