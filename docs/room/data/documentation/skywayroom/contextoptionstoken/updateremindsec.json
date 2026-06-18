@@ -1,1 +1,436 @@
-{"primaryContentSections":[{"kind":"declarations","declarations":[{"platforms":["iOS"],"languages":["swift"],"tokens":[{"kind":"keyword","text":"var"},{"kind":"text","text":" "},{"kind":"identifier","text":"updateRemindSec"},{"kind":"text","text":": "},{"kind":"typeIdentifier","preciseIdentifier":"s:s5Int32V","text":"Int32"},{"kind":"text","text":" { "},{"kind":"keyword","text":"get"},{"kind":"text","text":" "},{"kind":"keyword","text":"set"},{"kind":"text","text":" }"}]}]},{"content":[{"text":"Discussion","level":2,"anchor":"discussion","type":"heading"},{"inlineContent":[{"code":"Context.delegate","type":"codeVoice"},{"type":"text","text":"がセットされている時に有効です。"}],"type":"paragraph"},{"inlineContent":[{"type":"text","text":"デフォルトは60秒です。"}],"type":"paragraph"}],"kind":"content"}],"variants":[{"paths":["\/documentation\/skywayroom\/contextoptionstoken\/updateremindsec"],"traits":[{"interfaceLanguage":"swift"}]},{"paths":["\/documentation\/skywayroom\/contextoptionstoken\/updateremindsec"],"traits":[{"interfaceLanguage":"occ"}]}],"metadata":{"roleHeading":"Instance Property","navigatorTitle":[{"text":"updateRemindSec","kind":"identifier"}],"title":"updateRemindSec","symbolKind":"property","externalID":"c:objc(cs)SKWContextOptionsToken(py)updateRemindSec","modules":[{"name":"SkyWayRoom"}],"role":"symbol","fragments":[{"kind":"keyword","text":"var"},{"kind":"text","text":" "},{"kind":"identifier","text":"updateRemindSec"},{"kind":"text","text":": "},{"kind":"typeIdentifier","preciseIdentifier":"s:s5Int32V","text":"Int32"}]},"sections":[],"kind":"symbol","abstract":[{"type":"text","text":"トークン失効リマインダー時間(秒)"}],"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptionsToken"]]},"schemaVersion":{"patch":0,"major":0,"minor":3},"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptionsToken\/updateRemindSec","interfaceLanguage":"swift"},"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptionsToken/updateRemindSec":{"url":"\/documentation\/skywayroom\/contextoptionstoken\/updateremindsec","navigatorTitle":[{"text":"updateRemindSec","kind":"identifier"}],"type":"topic","kind":"symbol","title":"updateRemindSec","abstract":[{"text":"トークン失効リマインダー時間(秒)","type":"text"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptionsToken\/updateRemindSec","fragments":[{"text":"var","kind":"keyword"},{"text":" ","kind":"text"},{"text":"updateRemindSec","kind":"identifier"},{"text":": ","kind":"text"},{"text":"Int32","kind":"typeIdentifier","preciseIdentifier":"s:s5Int32V"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptionsToken":{"kind":"symbol","fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"ContextOptionsToken","kind":"identifier"}],"url":"\/documentation\/skywayroom\/contextoptionstoken","role":"symbol","navigatorTitle":[{"text":"ContextOptionsToken","kind":"identifier"}],"type":"topic","title":"ContextOptionsToken","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptionsToken","abstract":[{"text":"トークンに関するオプション","type":"text"}]}},"variantOverrides":[{"traits":[{"interfaceLanguage":"occ"}],"patch":[{"path":"\/identifier\/interfaceLanguage","value":"occ","op":"replace"},{"op":"add","path":"\/metadata\/platforms","value":null},{"op":"replace","path":"\/metadata\/roleHeading","value":"Instance Property"},{"op":"replace","path":"\/metadata\/title","value":"updateRemindSec"},{"op":"replace","path":"\/metadata\/symbolKind","value":"property"},{"path":"\/metadata\/fragments","value":[{"text":"updateRemindSec","kind":"identifier"}],"op":"replace"},{"path":"\/topicSections","value":null,"op":"add"},{"path":"\/relationshipsSections","value":null,"op":"add"},{"path":"\/seeAlsoSections","value":null,"op":"add"},{"path":"\/primaryContentSections\/0","value":{"kind":"declarations","declarations":[{"tokens":[{"text":"@property","kind":"keyword"},{"text":" (","kind":"text"},{"text":"nonatomic","kind":"keyword"},{"text":") ","kind":"text"},{"preciseIdentifier":"c:I","text":"int","kind":"typeIdentifier"},{"text":" ","kind":"text"},{"text":"updateRemindSec","kind":"identifier"},{"text":";","kind":"text"}],"languages":["occ"],"platforms":["iOS"]}]},"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsToken~1updateRemindSec\/title","value":"updateRemindSec","op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsToken~1updateRemindSec\/fragments","value":[{"text":"updateRemindSec","kind":"identifier"}],"op":"replace"},{"op":"replace","value":"SKWContextOptionsToken","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsToken\/title"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsToken\/fragments","value":[{"text":"SKWContextOptionsToken","kind":"identifier"}],"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsToken\/navigatorTitle","value":[{"text":"SKWContextOptionsToken","kind":"identifier"}],"op":"replace"}]}]}
+{
+  "abstract": [
+    {
+      "text": "トークン失効リマインダー時間(秒)",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptionsToken"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptionsToken/updateRemindSec"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:objc(cs)SKWContextOptionsToken(py)updateRemindSec",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "var"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "updateRemindSec"
+      },
+      {
+        "kind": "text",
+        "text": ": "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:s5Int32V",
+        "text": "Int32"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "updateRemindSec"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Instance Property",
+    "symbolKind": "property",
+    "title": "updateRemindSec"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "var"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "updateRemindSec"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:s5Int32V",
+              "text": "Int32"
+            },
+            {
+              "kind": "text",
+              "text": " { "
+            },
+            {
+              "kind": "keyword",
+              "text": "get"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "set"
+            },
+            {
+              "kind": "text",
+              "text": " }"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "inlineContent": [
+            {
+              "code": "Context.delegate",
+              "type": "codeVoice"
+            },
+            {
+              "text": "がセットされている時に有効です。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "デフォルトは60秒です。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "kind": "content"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptionsToken": {
+      "abstract": [
+        {
+          "text": "トークンに関するオプション",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "ContextOptionsToken"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptionsToken",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "ContextOptionsToken"
+        }
+      ],
+      "role": "symbol",
+      "title": "ContextOptionsToken",
+      "type": "topic",
+      "url": "/documentation/skywayroom/contextoptionstoken"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptionsToken/updateRemindSec": {
+      "abstract": [
+        {
+          "text": "トークン失効リマインダー時間(秒)",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "updateRemindSec"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:s5Int32V",
+          "text": "Int32"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptionsToken/updateRemindSec",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "updateRemindSec"
+        }
+      ],
+      "role": "symbol",
+      "title": "updateRemindSec",
+      "type": "topic",
+      "url": "/documentation/skywayroom/contextoptionstoken/updateremindsec"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Instance Property"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "updateRemindSec"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "property"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "updateRemindSec"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "keyword",
+                    "text": "@property"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " ("
+                  },
+                  {
+                    "kind": "keyword",
+                    "text": "nonatomic"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ") "
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:I",
+                    "text": "int"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "updateRemindSec"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ";"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsToken/title",
+          "value": "SKWContextOptionsToken"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsToken/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWContextOptionsToken"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsToken/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWContextOptionsToken"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsToken~1updateRemindSec/title",
+          "value": "updateRemindSec"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsToken~1updateRemindSec/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "updateRemindSec"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/contextoptionstoken/updateremindsec"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/contextoptionstoken/updateremindsec"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

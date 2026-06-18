@@ -1,1 +1,440 @@
-{"primaryContentSections":[{"kind":"declarations","declarations":[{"platforms":["iOS"],"languages":["swift"],"tokens":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"keyword","text":"var"},{"kind":"text","text":" "},{"kind":"identifier","text":"authToken"},{"kind":"text","text":": "},{"kind":"typeIdentifier","text":"String","preciseIdentifier":"s:SS"},{"kind":"text","text":"? { "},{"kind":"keyword","text":"get"},{"kind":"text","text":" }"}]}]}],"variants":[{"paths":["\/documentation\/skywayroom\/context\/authtoken"],"traits":[{"interfaceLanguage":"swift"}]},{"paths":["\/documentation\/skywayroom\/context\/authtoken"],"traits":[{"interfaceLanguage":"occ"}]}],"metadata":{"roleHeading":"Type Property","navigatorTitle":[{"text":"authToken","kind":"identifier"}],"title":"authToken","externalID":"c:objc(cs)SKWContext(cpy)authToken","symbolKind":"property","modules":[{"name":"SkyWayRoom"}],"role":"symbol","fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"var","kind":"keyword"},{"text":" ","kind":"text"},{"text":"authToken","kind":"identifier"},{"text":": ","kind":"text"},{"text":"String","kind":"typeIdentifier","preciseIdentifier":"s:SS"},{"text":"?","kind":"text"}]},"kind":"symbol","sections":[],"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Context"]]},"schemaVersion":{"patch":0,"minor":3,"major":0},"identifier":{"interfaceLanguage":"swift","url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Context\/authToken"},"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom/Context/authToken":{"url":"\/documentation\/skywayroom\/context\/authtoken","navigatorTitle":[{"kind":"identifier","text":"authToken"}],"type":"topic","kind":"symbol","title":"authToken","abstract":[],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Context\/authToken","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"keyword","text":"var"},{"kind":"text","text":" "},{"kind":"identifier","text":"authToken"},{"kind":"text","text":": "},{"kind":"typeIdentifier","preciseIdentifier":"s:SS","text":"String"},{"kind":"text","text":"?"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/Context":{"url":"\/documentation\/skywayroom\/context","navigatorTitle":[{"kind":"identifier","text":"Context"}],"type":"topic","kind":"symbol","title":"Context","abstract":[{"text":"SkyWay全体の設定、取得を行うStaticなコンテキスト","type":"text"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Context","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"Context"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]}},"variantOverrides":[{"patch":[{"path":"\/identifier\/interfaceLanguage","op":"replace","value":"occ"},{"path":"\/metadata\/platforms","op":"add","value":null},{"path":"\/metadata\/roleHeading","op":"replace","value":"Type Property"},{"path":"\/metadata\/title","op":"replace","value":"authToken"},{"path":"\/metadata\/symbolKind","op":"replace","value":"property"},{"path":"\/metadata\/fragments","op":"replace","value":[{"text":"authToken","kind":"identifier"}]},{"path":"\/topicSections","op":"add","value":null},{"path":"\/relationshipsSections","op":"add","value":null},{"path":"\/seeAlsoSections","op":"add","value":null},{"path":"\/primaryContentSections\/0","op":"replace","value":{"kind":"declarations","declarations":[{"platforms":["iOS"],"languages":["occ"],"tokens":[{"text":"@property","kind":"keyword"},{"text":" (","kind":"text"},{"text":"class","kind":"keyword"},{"text":", ","kind":"text"},{"text":"nonatomic","kind":"keyword"},{"text":", ","kind":"text"},{"text":"copy","kind":"keyword"},{"text":", ","kind":"text"},{"text":"readonly","kind":"keyword"},{"text":") ","kind":"text"},{"text":"NSString","kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)NSString"},{"text":" * ","kind":"text"},{"text":"authToken","kind":"identifier"},{"text":";","kind":"text"}]}]}},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1authToken\/title","op":"replace","value":"authToken"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1authToken\/fragments","op":"replace","value":[{"text":"authToken","kind":"identifier"}]},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context\/title","op":"replace","value":"SKWContext"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context\/fragments","op":"replace","value":[{"text":"SKWContext","kind":"identifier"}]},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context\/navigatorTitle","op":"replace","value":[{"text":"SKWContext","kind":"identifier"}]}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Context"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Context/authToken"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:objc(cs)SKWContext(cpy)authToken",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "class"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "keyword",
+        "text": "var"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "authToken"
+      },
+      {
+        "kind": "text",
+        "text": ": "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:SS",
+        "text": "String"
+      },
+      {
+        "kind": "text",
+        "text": "?"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "authToken"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Type Property",
+    "symbolKind": "property",
+    "title": "authToken"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "class"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "var"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "authToken"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:SS",
+              "text": "String"
+            },
+            {
+              "kind": "text",
+              "text": "? { "
+            },
+            {
+              "kind": "keyword",
+              "text": "get"
+            },
+            {
+              "kind": "text",
+              "text": " }"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Context": {
+      "abstract": [
+        {
+          "text": "SkyWay全体の設定、取得を行うStaticなコンテキスト",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "Context"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Context",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "Context"
+        }
+      ],
+      "role": "symbol",
+      "title": "Context",
+      "type": "topic",
+      "url": "/documentation/skywayroom/context"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Context/authToken": {
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "authToken"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:SS",
+          "text": "String"
+        },
+        {
+          "kind": "text",
+          "text": "?"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Context/authToken",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "authToken"
+        }
+      ],
+      "role": "symbol",
+      "title": "authToken",
+      "type": "topic",
+      "url": "/documentation/skywayroom/context/authtoken"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Type Property"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "authToken"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "property"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "authToken"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "keyword",
+                    "text": "@property"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " ("
+                  },
+                  {
+                    "kind": "keyword",
+                    "text": "class"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ", "
+                  },
+                  {
+                    "kind": "keyword",
+                    "text": "nonatomic"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ", "
+                  },
+                  {
+                    "kind": "keyword",
+                    "text": "copy"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ", "
+                  },
+                  {
+                    "kind": "keyword",
+                    "text": "readonly"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ") "
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:objc(cs)NSString",
+                    "text": "NSString"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " * "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "authToken"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ";"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context/title",
+          "value": "SKWContext"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWContext"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWContext"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1authToken/title",
+          "value": "authToken"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1authToken/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "authToken"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/context/authtoken"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/context/authtoken"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

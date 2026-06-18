@@ -1,1 +1,185 @@
-{"variants":[{"paths":["\/documentation\/skywayainoisecanceller\/errorcode\/unknown"],"traits":[{"interfaceLanguage":"swift"}]}],"kind":"symbol","primaryContentSections":[{"declarations":[{"languages":["swift"],"platforms":["iOS"],"tokens":[{"kind":"keyword","text":"case"},{"kind":"text","text":" "},{"kind":"identifier","text":"unknown"}]}],"kind":"declarations"}],"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller","doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ErrorCode"]]},"sections":[],"abstract":[{"type":"text","text":"未定義のエラー"}],"metadata":{"symbolKind":"case","roleHeading":"Case","fragments":[{"text":"case","kind":"keyword"},{"text":" ","kind":"text"},{"text":"unknown","kind":"identifier"}],"externalID":"s:22SkyWayAINoiseCanceller9ErrorCodeO7unknownyA2CmF","title":"ErrorCode.unknown","modules":[{"name":"SkyWayAINoiseCanceller"}],"role":"symbol"},"schemaVersion":{"minor":3,"patch":0,"major":0},"identifier":{"url":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ErrorCode\/unknown","interfaceLanguage":"swift"},"references":{"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ErrorCode/unknown":{"url":"\/documentation\/skywayainoisecanceller\/errorcode\/unknown","fragments":[{"kind":"keyword","text":"case"},{"kind":"text","text":" "},{"kind":"identifier","text":"unknown"}],"type":"topic","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ErrorCode\/unknown","title":"ErrorCode.unknown","kind":"symbol","abstract":[{"text":"未定義のエラー","type":"text"}],"role":"symbol"},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ErrorCode":{"fragments":[{"kind":"keyword","text":"enum"},{"kind":"text","text":" "},{"kind":"identifier","text":"ErrorCode"}],"abstract":[{"type":"codeVoice","code":"SkyWayNoiseCanceller.fatalErrorHandler"},{"type":"text","text":" が呼ばれる際に渡されるエラーコード"}],"type":"topic","title":"ErrorCode","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ErrorCode","kind":"symbol","navigatorTitle":[{"kind":"identifier","text":"ErrorCode"}],"url":"\/documentation\/skywayainoisecanceller\/errorcode","role":"symbol"},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller":{"title":"SkyWayAINoiseCanceller","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller","role":"collection","url":"\/documentation\/skywayainoisecanceller","abstract":[{"type":"strong","inlineContent":[{"text":"Version: 1.1.0","type":"text"}]},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}],"type":"topic","kind":"symbol"}}}
+{
+  "abstract": [
+    {
+      "text": "未定義のエラー",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller",
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ErrorCode"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ErrorCode/unknown"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "s:22SkyWayAINoiseCanceller9ErrorCodeO7unknownyA2CmF",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "case"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "unknown"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayAINoiseCanceller"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Case",
+    "symbolKind": "case",
+    "title": "ErrorCode.unknown"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "case"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "unknown"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 1.1.0",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayAINoiseCanceller",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ErrorCode": {
+      "abstract": [
+        {
+          "code": "SkyWayNoiseCanceller.fatalErrorHandler",
+          "type": "codeVoice"
+        },
+        {
+          "text": " が呼ばれる際に渡されるエラーコード",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "enum"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "ErrorCode"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ErrorCode",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "ErrorCode"
+        }
+      ],
+      "role": "symbol",
+      "title": "ErrorCode",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/errorcode"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ErrorCode/unknown": {
+      "abstract": [
+        {
+          "text": "未定義のエラー",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "case"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "unknown"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ErrorCode/unknown",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "ErrorCode.unknown",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/errorcode/unknown"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayainoisecanceller/errorcode/unknown"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    }
+  ]
+}

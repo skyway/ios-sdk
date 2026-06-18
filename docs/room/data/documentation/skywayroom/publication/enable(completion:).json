@@ -1,1 +1,623 @@
-{"variants":[{"paths":["\/documentation\/skywayroom\/publication\/enable(completion:)"],"traits":[{"interfaceLanguage":"swift"}]},{"paths":["\/documentation\/skywayroom\/publication\/enable(completion:)"],"traits":[{"interfaceLanguage":"occ"}]}],"schemaVersion":{"patch":0,"major":0,"minor":3},"abstract":[{"type":"text","text":"Publicationを有効状態にします。"}],"sections":[],"primaryContentSections":[{"declarations":[{"tokens":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"enable","kind":"identifier"},{"text":"(","kind":"text"},{"text":"completion","kind":"externalParam"},{"text":": (((any ","kind":"text"},{"text":"Error","preciseIdentifier":"s:s5ErrorP","kind":"typeIdentifier"},{"text":")?) -> ","kind":"text"},{"text":"Void","preciseIdentifier":"s:s4Voida","kind":"typeIdentifier"},{"text":")? = nil)","kind":"text"}],"languages":["swift"],"platforms":["iOS"]},{"tokens":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"enable","kind":"identifier"},{"text":"() ","kind":"text"},{"text":"async","kind":"keyword"},{"text":" ","kind":"text"},{"text":"throws","kind":"keyword"}],"languages":["swift"],"platforms":["iOS"]}],"kind":"declarations"},{"parameters":[{"content":[{"inlineContent":[{"text":"完了コールバック","type":"text"}],"type":"paragraph"}],"name":"completion"}],"kind":"parameters"},{"content":[{"text":"Discussion","anchor":"discussion","type":"heading","level":2},{"inlineContent":[{"text":"このAPIはLocalPublicationのみ機能します。","type":"text"}],"type":"paragraph"},{"inlineContent":[{"text":"既に有効状態の場合は何もしません。","type":"text"}],"type":"paragraph"}],"kind":"content"}],"metadata":{"roleHeading":"Instance Method","fragments":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"enable","kind":"identifier"},{"text":"(","kind":"text"},{"text":"completion","kind":"externalParam"},{"text":": (((any ","kind":"text"},{"text":"Error","preciseIdentifier":"s:s5ErrorP","kind":"typeIdentifier"},{"text":")?) -> ","kind":"text"},{"text":"Void","preciseIdentifier":"s:s4Voida","kind":"typeIdentifier"},{"text":")?)","kind":"text"}],"externalID":"c:objc(cs)SKWPublication(im)enableWithCompletion:","role":"symbol","modules":[{"name":"SkyWayRoom"}],"navigatorTitle":[{"kind":"identifier","text":"enableWithCompletion:"}],"title":"enable(completion:)","symbolKind":"method"},"identifier":{"interfaceLanguage":"swift","url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Publication\/enable(completion:)"},"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Publication"]]},"kind":"symbol","references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom/Publication/enable(completion:)":{"url":"\/documentation\/skywayroom\/publication\/enable(completion:)","type":"topic","abstract":[{"text":"Publicationを有効状態にします。","type":"text"}],"fragments":[{"kind":"keyword","text":"func"},{"text":" ","kind":"text"},{"text":"enable","kind":"identifier"},{"kind":"text","text":"("},{"kind":"externalParam","text":"completion"},{"kind":"text","text":": (((any "},{"kind":"typeIdentifier","preciseIdentifier":"s:s5ErrorP","text":"Error"},{"kind":"text","text":")?) -> "},{"kind":"typeIdentifier","preciseIdentifier":"s:s4Voida","text":"Void"},{"kind":"text","text":")?)"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Publication\/enable(completion:)","title":"enable(completion:)","navigatorTitle":[{"kind":"identifier","text":"enableWithCompletion:"}],"kind":"symbol"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWPublicationEnableCompletion":{"kind":"symbol","fragments":[{"kind":"keyword","text":"typealias"},{"text":" ","kind":"text"},{"text":"SKWPublicationEnableCompletion","kind":"identifier"}],"url":"\/documentation\/skywayroom\/skwpublicationenablecompletion","role":"symbol","navigatorTitle":[{"text":"SKWPublicationEnableCompletion","kind":"identifier"}],"type":"topic","title":"SKWPublicationEnableCompletion","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SKWPublicationEnableCompletion","abstract":[]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/Publication":{"kind":"symbol","fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"Publication","kind":"identifier"}],"url":"\/documentation\/skywayroom\/publication","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"Publication"}],"type":"topic","title":"Publication","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Publication","abstract":[{"type":"text","text":"Publication"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]}},"variantOverrides":[{"patch":[{"op":"replace","path":"\/identifier\/interfaceLanguage","value":"occ"},{"op":"add","path":"\/metadata\/platforms","value":null},{"op":"replace","path":"\/metadata\/roleHeading","value":"Instance Method"},{"op":"replace","path":"\/metadata\/title","value":"enableWithCompletion:"},{"op":"replace","path":"\/metadata\/symbolKind","value":"method"},{"op":"replace","path":"\/metadata\/fragments","value":[{"text":"- ","kind":"text"},{"text":"enableWithCompletion:","kind":"identifier"}]},{"op":"add","path":"\/topicSections","value":null},{"op":"add","path":"\/relationshipsSections","value":null},{"op":"add","path":"\/seeAlsoSections","value":null},{"path":"\/primaryContentSections\/0","op":"replace","value":{"kind":"declarations","declarations":[{"tokens":[{"text":"- (","kind":"text"},{"text":"void","preciseIdentifier":"c:v","kind":"typeIdentifier"},{"text":") ","kind":"text"},{"text":"enableWithCompletion:","kind":"identifier"},{"text":"(","kind":"text"},{"identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SKWPublicationEnableCompletion","text":"SKWPublicationEnableCompletion","preciseIdentifier":"c:SKWPublication.h@T@SKWPublicationEnableCompletion","kind":"typeIdentifier"},{"text":") ","kind":"text"},{"text":"completion","kind":"internalParam"},{"text":";","kind":"text"}],"languages":["occ"],"platforms":["iOS"]}]}},{"path":"\/primaryContentSections\/1","op":"replace","value":{"parameters":[{"content":[{"inlineContent":[{"type":"text","text":"完了コールバック"}],"type":"paragraph"}],"name":"completion"}],"kind":"parameters"}},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication~1enable(completion:)\/title","value":"enableWithCompletion:"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication~1enable(completion:)\/fragments","op":"replace","value":[{"text":"- ","kind":"text"},{"text":"enableWithCompletion:","kind":"identifier"}]},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWPublicationEnableCompletion\/title","op":"replace","value":"SKWPublicationEnableCompletion"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWPublicationEnableCompletion\/fragments","op":"replace","value":[{"text":"SKWPublicationEnableCompletion","kind":"identifier"}]},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWPublicationEnableCompletion\/navigatorTitle","op":"replace","value":[{"text":"SKWPublicationEnableCompletion","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication\/title","value":"SKWPublication"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication\/fragments","op":"replace","value":[{"text":"SKWPublication","kind":"identifier"}]},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication\/navigatorTitle","value":[{"text":"SKWPublication","kind":"identifier"}],"op":"replace"}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "abstract": [
+    {
+      "text": "Publicationを有効状態にします。",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Publication"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Publication/enable(completion:)"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:objc(cs)SKWPublication(im)enableWithCompletion:",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "func"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "enable"
+      },
+      {
+        "kind": "text",
+        "text": "("
+      },
+      {
+        "kind": "externalParam",
+        "text": "completion"
+      },
+      {
+        "kind": "text",
+        "text": ": (((any "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:s5ErrorP",
+        "text": "Error"
+      },
+      {
+        "kind": "text",
+        "text": ")?) -> "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:s4Voida",
+        "text": "Void"
+      },
+      {
+        "kind": "text",
+        "text": ")?)"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "enableWithCompletion:"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "symbolKind": "method",
+    "title": "enable(completion:)"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "enable"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "externalParam",
+              "text": "completion"
+            },
+            {
+              "kind": "text",
+              "text": ": (((any "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:s5ErrorP",
+              "text": "Error"
+            },
+            {
+              "kind": "text",
+              "text": ")?) -> "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:s4Voida",
+              "text": "Void"
+            },
+            {
+              "kind": "text",
+              "text": ")? = nil)"
+            }
+          ]
+        },
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "enable"
+            },
+            {
+              "kind": "text",
+              "text": "() "
+            },
+            {
+              "kind": "keyword",
+              "text": "async"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "throws"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "kind": "parameters",
+      "parameters": [
+        {
+          "content": [
+            {
+              "inlineContent": [
+                {
+                  "text": "完了コールバック",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "completion"
+        }
+      ]
+    },
+    {
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "このAPIはLocalPublicationのみ機能します。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "既に有効状態の場合は何もしません。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "kind": "content"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Publication": {
+      "abstract": [
+        {
+          "text": "Publication",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "Publication"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Publication",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "Publication"
+        }
+      ],
+      "role": "symbol",
+      "title": "Publication",
+      "type": "topic",
+      "url": "/documentation/skywayroom/publication"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Publication/enable(completion:)": {
+      "abstract": [
+        {
+          "text": "Publicationを有効状態にします。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "enable"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "externalParam",
+          "text": "completion"
+        },
+        {
+          "kind": "text",
+          "text": ": (((any "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:s5ErrorP",
+          "text": "Error"
+        },
+        {
+          "kind": "text",
+          "text": ")?) -> "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:s4Voida",
+          "text": "Void"
+        },
+        {
+          "kind": "text",
+          "text": ")?)"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Publication/enable(completion:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "enableWithCompletion:"
+        }
+      ],
+      "role": "symbol",
+      "title": "enable(completion:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/publication/enable(completion:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWPublicationEnableCompletion": {
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "typealias"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "SKWPublicationEnableCompletion"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWPublicationEnableCompletion",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SKWPublicationEnableCompletion"
+        }
+      ],
+      "role": "symbol",
+      "title": "SKWPublicationEnableCompletion",
+      "type": "topic",
+      "url": "/documentation/skywayroom/skwpublicationenablecompletion"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Instance Method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "enableWithCompletion:"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "enableWithCompletion:"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "text",
+                    "text": "- ("
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:v",
+                    "text": "void"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ") "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "enableWithCompletion:"
+                  },
+                  {
+                    "kind": "text",
+                    "text": "("
+                  },
+                  {
+                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWPublicationEnableCompletion",
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:SKWPublication.h@T@SKWPublicationEnableCompletion",
+                    "text": "SKWPublicationEnableCompletion"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ") "
+                  },
+                  {
+                    "kind": "internalParam",
+                    "text": "completion"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ";"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/1",
+          "value": {
+            "kind": "parameters",
+            "parameters": [
+              {
+                "content": [
+                  {
+                    "inlineContent": [
+                      {
+                        "text": "完了コールバック",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "name": "completion"
+              }
+            ]
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication/title",
+          "value": "SKWPublication"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPublication"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPublication"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWPublicationEnableCompletion/title",
+          "value": "SKWPublicationEnableCompletion"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWPublicationEnableCompletion/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPublicationEnableCompletion"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWPublicationEnableCompletion/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPublicationEnableCompletion"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication~1enable(completion:)/title",
+          "value": "enableWithCompletion:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication~1enable(completion:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "enableWithCompletion:"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/publication/enable(completion:)"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/publication/enable(completion:)"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

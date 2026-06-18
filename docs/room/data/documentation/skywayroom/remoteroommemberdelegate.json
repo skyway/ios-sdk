@@ -1,1 +1,592 @@
-{"primaryContentSections":[{"declarations":[{"languages":["swift"],"platforms":["iOS"],"tokens":[{"text":"@objc","kind":"attribute"},{"text":" ","kind":"text"},{"text":"protocol","kind":"keyword"},{"text":" ","kind":"text"},{"text":"RemoteRoomMemberDelegate","kind":"identifier"},{"text":" : ","kind":"text"},{"kind":"typeIdentifier","text":"RoomMemberDelegate","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomMemberDelegate","preciseIdentifier":"c:@M@SkyWayRoom@objc(pl)RoomMemberDelegate"}]}],"kind":"declarations"}],"variants":[{"paths":["\/documentation\/skywayroom\/remoteroommemberdelegate"],"traits":[{"interfaceLanguage":"swift"}]},{"paths":["\/documentation\/skywayroom\/remoteroommemberdelegate"],"traits":[{"interfaceLanguage":"occ"}]}],"metadata":{"roleHeading":"Protocol","fragments":[{"text":"protocol","kind":"keyword"},{"text":" ","kind":"text"},{"text":"RemoteRoomMemberDelegate","kind":"identifier"}],"externalID":"c:@M@SkyWayRoom@objc(pl)RemoteRoomMemberDelegate","role":"symbol","modules":[{"name":"SkyWayRoom"}],"navigatorTitle":[{"text":"RemoteRoomMemberDelegate","kind":"identifier"}],"title":"RemoteRoomMemberDelegate","symbolKind":"protocol"},"kind":"symbol","sections":[],"abstract":[{"type":"text","text":"RemoteRoomMemberイベントデリゲート"}],"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom"]]},"schemaVersion":{"patch":0,"minor":3,"major":0},"topicSections":[{"generated":true,"anchor":"Instance-Methods","title":"Instance Methods","identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteRoomMemberDelegate\/remoteRoomMember(_:didSubscribePublicationOf:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteRoomMemberDelegate\/remoteRoomMember(_:didUnsubscribePublicationOf:)"]}],"identifier":{"interfaceLanguage":"swift","url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteRoomMemberDelegate"},"relationshipsSections":[{"identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomMemberDelegate"],"kind":"relationships","type":"inheritsFrom","title":"Inherits From"}],"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteRoomMemberDelegate/remoteRoomMember(_:didSubscribePublicationOf:)":{"url":"\/documentation\/skywayroom\/remoteroommemberdelegate\/remoteroommember(_:didsubscribepublicationof:)","type":"topic","abstract":[{"type":"text","text":"RemoteRoomMemberがPublicationをSubscribeした時にコールされます。"}],"fragments":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"remoteRoomMember","kind":"identifier"},{"text":"(","kind":"text"},{"text":"RemoteRoomMember","kind":"typeIdentifier","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)RemoteRoomMember"},{"text":", ","kind":"text"},{"text":"didSubscribePublicationOf","kind":"externalParam"},{"text":": ","kind":"text"},{"text":"RoomSubscription","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)RoomSubscription","kind":"typeIdentifier"},{"text":")","kind":"text"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteRoomMemberDelegate\/remoteRoomMember(_:didSubscribePublicationOf:)","title":"remoteRoomMember(_:didSubscribePublicationOf:)","navigatorTitle":[{"text":"remoteRoomMember:didSubscribePublicationOf:","kind":"identifier"}],"kind":"symbol"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteRoomMemberDelegate/remoteRoomMember(_:didUnsubscribePublicationOf:)":{"url":"\/documentation\/skywayroom\/remoteroommemberdelegate\/remoteroommember(_:didunsubscribepublicationof:)","navigatorTitle":[{"text":"remoteRoomMember:didUnsubscribePublicationOf:","kind":"identifier"}],"type":"topic","kind":"symbol","title":"remoteRoomMember(_:didUnsubscribePublicationOf:)","abstract":[{"type":"text","text":"RemoteRoomMemberがPublicationをUnsubscribeした時にコールされます。"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteRoomMemberDelegate\/remoteRoomMember(_:didUnsubscribePublicationOf:)","fragments":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"kind":"identifier","text":"remoteRoomMember"},{"kind":"text","text":"("},{"text":"RemoteRoomMember","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)RemoteRoomMember","kind":"typeIdentifier"},{"text":", ","kind":"text"},{"text":"didUnsubscribePublicationOf","kind":"externalParam"},{"text":": ","kind":"text"},{"text":"RoomSubscription","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)RoomSubscription","kind":"typeIdentifier"},{"kind":"text","text":")"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomMemberDelegate":{"kind":"symbol","fragments":[{"text":"protocol","kind":"keyword"},{"text":" ","kind":"text"},{"text":"RoomMemberDelegate","kind":"identifier"}],"url":"\/documentation\/skywayroom\/roommemberdelegate","role":"symbol","navigatorTitle":[{"text":"RoomMemberDelegate","kind":"identifier"}],"type":"topic","title":"RoomMemberDelegate","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomMemberDelegate","abstract":[{"text":"RoomMemberイベントデリゲート","type":"text"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteRoomMemberDelegate":{"kind":"symbol","abstract":[{"type":"text","text":"RemoteRoomMemberイベントデリゲート"}],"title":"RemoteRoomMemberDelegate","fragments":[{"kind":"keyword","text":"protocol"},{"kind":"text","text":" "},{"kind":"identifier","text":"RemoteRoomMemberDelegate"}],"identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteRoomMemberDelegate","navigatorTitle":[{"kind":"identifier","text":"RemoteRoomMemberDelegate"}],"role":"symbol","url":"\/documentation\/skywayroom\/remoteroommemberdelegate","type":"topic"}},"variantOverrides":[{"patch":[{"path":"\/identifier\/interfaceLanguage","op":"replace","value":"occ"},{"value":null,"path":"\/metadata\/platforms","op":"add"},{"value":"Protocol","path":"\/metadata\/roleHeading","op":"replace"},{"path":"\/metadata\/title","op":"replace","value":"RemoteRoomMemberDelegate"},{"path":"\/metadata\/symbolKind","value":"protocol","op":"replace"},{"op":"replace","path":"\/metadata\/fragments","value":[{"text":"RemoteRoomMemberDelegate","kind":"identifier"}]},{"op":"replace","path":"\/metadata\/navigatorTitle","value":[{"text":"RemoteRoomMemberDelegate","kind":"identifier"}]},{"op":"replace","value":[{"generated":true,"anchor":"Instance-Methods","title":"Instance Methods","identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteRoomMemberDelegate\/remoteRoomMember(_:didSubscribePublicationOf:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteRoomMemberDelegate\/remoteRoomMember(_:didUnsubscribePublicationOf:)"]}],"path":"\/topicSections"},{"op":"replace","path":"\/relationshipsSections","value":[{"identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomMemberDelegate"],"kind":"relationships","title":"Inherits From","type":"inheritsFrom"}]},{"path":"\/seeAlsoSections","value":null,"op":"add"},{"op":"replace","value":{"declarations":[{"platforms":["iOS"],"languages":["occ"],"tokens":[{"text":"@protocol","kind":"keyword"},{"text":" ","kind":"text"},{"text":"RemoteRoomMemberDelegate","kind":"identifier"},{"text":" <","kind":"text"},{"identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomMemberDelegate","text":"RoomMemberDelegate","preciseIdentifier":"c:@M@SkyWayRoom@objc(pl)RoomMemberDelegate","kind":"typeIdentifier"},{"text":">","kind":"text"}]}],"kind":"declarations"},"path":"\/primaryContentSections\/0"},{"op":"replace","value":"remoteRoomMember:didSubscribePublicationOf:","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate~1remoteRoomMember(_:didSubscribePublicationOf:)\/title"},{"value":[{"text":"- ","kind":"text"},{"kind":"identifier","text":"remoteRoomMember:didSubscribePublicationOf:"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate~1remoteRoomMember(_:didSubscribePublicationOf:)\/fragments","op":"replace"},{"op":"replace","value":"remoteRoomMember:didUnsubscribePublicationOf:","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate~1remoteRoomMember(_:didUnsubscribePublicationOf:)\/title"},{"op":"replace","value":[{"text":"- ","kind":"text"},{"text":"remoteRoomMember:didUnsubscribePublicationOf:","kind":"identifier"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate~1remoteRoomMember(_:didUnsubscribePublicationOf:)\/fragments"},{"op":"replace","value":"RoomMemberDelegate","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberDelegate\/title"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberDelegate\/fragments","op":"replace","value":[{"kind":"identifier","text":"RoomMemberDelegate"}]},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberDelegate\/navigatorTitle","op":"replace","value":[{"text":"RoomMemberDelegate","kind":"identifier"}]},{"op":"replace","value":"RemoteRoomMemberDelegate","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate\/title"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate\/fragments","op":"replace","value":[{"text":"RemoteRoomMemberDelegate","kind":"identifier"}]},{"op":"replace","value":[{"kind":"identifier","text":"RemoteRoomMemberDelegate"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate\/navigatorTitle"}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "abstract": [
+    {
+      "text": "RemoteRoomMemberイベントデリゲート",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteRoomMemberDelegate"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:@M@SkyWayRoom@objc(pl)RemoteRoomMemberDelegate",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "protocol"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "RemoteRoomMemberDelegate"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "RemoteRoomMemberDelegate"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Protocol",
+    "symbolKind": "protocol",
+    "title": "RemoteRoomMemberDelegate"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "attribute",
+              "text": "@objc"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "protocol"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "RemoteRoomMemberDelegate"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomMemberDelegate",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@M@SkyWayRoom@objc(pl)RoomMemberDelegate",
+              "text": "RoomMemberDelegate"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteRoomMemberDelegate": {
+      "abstract": [
+        {
+          "text": "RemoteRoomMemberイベントデリゲート",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "protocol"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "RemoteRoomMemberDelegate"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteRoomMemberDelegate",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "RemoteRoomMemberDelegate"
+        }
+      ],
+      "role": "symbol",
+      "title": "RemoteRoomMemberDelegate",
+      "type": "topic",
+      "url": "/documentation/skywayroom/remoteroommemberdelegate"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteRoomMemberDelegate/remoteRoomMember(_:didSubscribePublicationOf:)": {
+      "abstract": [
+        {
+          "text": "RemoteRoomMemberがPublicationをSubscribeした時にコールされます。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "remoteRoomMember"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)RemoteRoomMember",
+          "text": "RemoteRoomMember"
+        },
+        {
+          "kind": "text",
+          "text": ", "
+        },
+        {
+          "kind": "externalParam",
+          "text": "didSubscribePublicationOf"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)RoomSubscription",
+          "text": "RoomSubscription"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteRoomMemberDelegate/remoteRoomMember(_:didSubscribePublicationOf:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "remoteRoomMember:didSubscribePublicationOf:"
+        }
+      ],
+      "role": "symbol",
+      "title": "remoteRoomMember(_:didSubscribePublicationOf:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/remoteroommemberdelegate/remoteroommember(_:didsubscribepublicationof:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteRoomMemberDelegate/remoteRoomMember(_:didUnsubscribePublicationOf:)": {
+      "abstract": [
+        {
+          "text": "RemoteRoomMemberがPublicationをUnsubscribeした時にコールされます。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "remoteRoomMember"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)RemoteRoomMember",
+          "text": "RemoteRoomMember"
+        },
+        {
+          "kind": "text",
+          "text": ", "
+        },
+        {
+          "kind": "externalParam",
+          "text": "didUnsubscribePublicationOf"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)RoomSubscription",
+          "text": "RoomSubscription"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteRoomMemberDelegate/remoteRoomMember(_:didUnsubscribePublicationOf:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "remoteRoomMember:didUnsubscribePublicationOf:"
+        }
+      ],
+      "role": "symbol",
+      "title": "remoteRoomMember(_:didUnsubscribePublicationOf:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/remoteroommemberdelegate/remoteroommember(_:didunsubscribepublicationof:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomMemberDelegate": {
+      "abstract": [
+        {
+          "text": "RoomMemberイベントデリゲート",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "protocol"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "RoomMemberDelegate"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomMemberDelegate",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "RoomMemberDelegate"
+        }
+      ],
+      "role": "symbol",
+      "title": "RoomMemberDelegate",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roommemberdelegate"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomMemberDelegate"
+      ],
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom"
+    }
+  ],
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "topicSections": [
+    {
+      "anchor": "Instance-Methods",
+      "generated": true,
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteRoomMemberDelegate/remoteRoomMember(_:didSubscribePublicationOf:)",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteRoomMemberDelegate/remoteRoomMember(_:didUnsubscribePublicationOf:)"
+      ],
+      "title": "Instance Methods"
+    }
+  ],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Protocol"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "RemoteRoomMemberDelegate"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "protocol"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RemoteRoomMemberDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RemoteRoomMemberDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/topicSections",
+          "value": [
+            {
+              "anchor": "Instance-Methods",
+              "generated": true,
+              "identifiers": [
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteRoomMemberDelegate/remoteRoomMember(_:didSubscribePublicationOf:)",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteRoomMemberDelegate/remoteRoomMember(_:didUnsubscribePublicationOf:)"
+              ],
+              "title": "Instance Methods"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/relationshipsSections",
+          "value": [
+            {
+              "identifiers": [
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomMemberDelegate"
+              ],
+              "kind": "relationships",
+              "title": "Inherits From",
+              "type": "inheritsFrom"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "keyword",
+                    "text": "@protocol"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "RemoteRoomMemberDelegate"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " <"
+                  },
+                  {
+                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomMemberDelegate",
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:@M@SkyWayRoom@objc(pl)RoomMemberDelegate",
+                    "text": "RoomMemberDelegate"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ">"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate/title",
+          "value": "RemoteRoomMemberDelegate"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RemoteRoomMemberDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RemoteRoomMemberDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate~1remoteRoomMember(_:didUnsubscribePublicationOf:)/title",
+          "value": "remoteRoomMember:didUnsubscribePublicationOf:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate~1remoteRoomMember(_:didUnsubscribePublicationOf:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "remoteRoomMember:didUnsubscribePublicationOf:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate~1remoteRoomMember(_:didSubscribePublicationOf:)/title",
+          "value": "remoteRoomMember:didSubscribePublicationOf:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate~1remoteRoomMember(_:didSubscribePublicationOf:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "remoteRoomMember:didSubscribePublicationOf:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberDelegate/title",
+          "value": "RoomMemberDelegate"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberDelegate/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomMemberDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberDelegate/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomMemberDelegate"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/remoteroommemberdelegate"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/remoteroommemberdelegate"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

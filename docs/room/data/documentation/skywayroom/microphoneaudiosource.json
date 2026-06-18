@@ -1,1 +1,560 @@
-{"kind":"symbol","topicSections":[{"title":"Initializers","identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/MicrophoneAudioSource\/init()"],"anchor":"Initializers","generated":true},{"title":"Instance Methods","identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/MicrophoneAudioSource\/createStream()"],"anchor":"Instance-Methods","generated":true}],"sections":[],"variants":[{"paths":["\/documentation\/skywayroom\/microphoneaudiosource"],"traits":[{"interfaceLanguage":"swift"}]},{"paths":["\/documentation\/skywayroom\/microphoneaudiosource"],"traits":[{"interfaceLanguage":"occ"}]}],"relationshipsSections":[{"title":"Inherits From","kind":"relationships","identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/AudioSource"],"type":"inheritsFrom"},{"kind":"relationships","title":"Conforms To","type":"conformsTo","identifiers":["doc:\/\/com.ntt.skyway.room\/objc(pl)NSObject","doc:\/\/com.ntt.skyway.room\/s7CVarArgP","doc:\/\/com.ntt.skyway.room\/s28CustomDebugStringConvertibleP","doc:\/\/com.ntt.skyway.room\/s23CustomStringConvertibleP","doc:\/\/com.ntt.skyway.room\/SQ","doc:\/\/com.ntt.skyway.room\/SH"]}],"primaryContentSections":[{"declarations":[{"languages":["swift"],"platforms":["iOS"],"tokens":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"MicrophoneAudioSource","kind":"identifier"}]}],"kind":"declarations"}],"schemaVersion":{"major":0,"minor":3,"patch":0},"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom"]]},"metadata":{"modules":[{"name":"SkyWayRoom"}],"externalID":"c:objc(cs)SKWMicrophoneAudioSource","fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"MicrophoneAudioSource","kind":"identifier"}],"role":"symbol","navigatorTitle":[{"text":"MicrophoneAudioSource","kind":"identifier"}],"roleHeading":"Class","symbolKind":"class","title":"MicrophoneAudioSource"},"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/MicrophoneAudioSource","interfaceLanguage":"swift"},"abstract":[{"type":"text","text":"マイク入力ソース"}],"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom/MicrophoneAudioSource":{"url":"\/documentation\/skywayroom\/microphoneaudiosource","type":"topic","abstract":[{"type":"text","text":"マイク入力ソース"}],"fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"MicrophoneAudioSource","kind":"identifier"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/MicrophoneAudioSource","title":"MicrophoneAudioSource","navigatorTitle":[{"text":"MicrophoneAudioSource","kind":"identifier"}],"kind":"symbol"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/MicrophoneAudioSource/init()":{"kind":"symbol","fragments":[{"text":"init","kind":"identifier"},{"text":"()","kind":"text"}],"url":"\/documentation\/skywayroom\/microphoneaudiosource\/init()","role":"symbol","navigatorTitle":[{"text":"init","kind":"identifier"}],"type":"topic","title":"init()","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/MicrophoneAudioSource\/init()","abstract":[{"text":"イニシャライザ","type":"text"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"doc://com.ntt.skyway.room/SH":{"identifier":"doc:\/\/com.ntt.skyway.room\/SH","title":"Swift.Hashable","type":"unresolvable"},"doc://com.ntt.skyway.room/SQ":{"identifier":"doc:\/\/com.ntt.skyway.room\/SQ","title":"Swift.Equatable","type":"unresolvable"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/AudioSource":{"url":"\/documentation\/skywayroom\/audiosource","type":"topic","abstract":[{"text":"音声入力ソースの抽象クラス","type":"text"}],"fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"AudioSource","kind":"identifier"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/AudioSource","title":"AudioSource","navigatorTitle":[{"text":"AudioSource","kind":"identifier"}],"kind":"symbol"},"doc://com.ntt.skyway.room/s7CVarArgP":{"type":"unresolvable","identifier":"doc:\/\/com.ntt.skyway.room\/s7CVarArgP","title":"Swift.CVarArg"},"doc://com.ntt.skyway.room/objc(pl)NSObject":{"identifier":"doc:\/\/com.ntt.skyway.room\/objc(pl)NSObject","type":"unresolvable","title":"ObjectiveC.NSObjectProtocol"},"doc://com.ntt.skyway.room/s23CustomStringConvertibleP":{"identifier":"doc:\/\/com.ntt.skyway.room\/s23CustomStringConvertibleP","type":"unresolvable","title":"Swift.CustomStringConvertible"},"doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP":{"identifier":"doc:\/\/com.ntt.skyway.room\/s28CustomDebugStringConvertibleP","title":"Swift.CustomDebugStringConvertible","type":"unresolvable"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/MicrophoneAudioSource/createStream()":{"url":"\/documentation\/skywayroom\/microphoneaudiosource\/createstream()","type":"topic","abstract":[],"fragments":[{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"createStream"},{"kind":"text","text":"() -> "},{"kind":"typeIdentifier","text":"LocalAudioStream","preciseIdentifier":"c:objc(cs)SKWLocalAudioStream"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/MicrophoneAudioSource\/createStream()","title":"createStream()","navigatorTitle":[{"text":"createStream","kind":"identifier"}],"kind":"symbol"}},"variantOverrides":[{"traits":[{"interfaceLanguage":"occ"}],"patch":[{"path":"\/identifier\/interfaceLanguage","value":"occ","op":"replace"},{"path":"\/metadata\/platforms","value":null,"op":"add"},{"path":"\/metadata\/roleHeading","value":"Class","op":"replace"},{"path":"\/metadata\/title","value":"SKWMicrophoneAudioSource","op":"replace"},{"path":"\/metadata\/symbolKind","value":"class","op":"replace"},{"op":"replace","path":"\/metadata\/fragments","value":[{"text":"SKWMicrophoneAudioSource","kind":"identifier"}]},{"path":"\/metadata\/navigatorTitle","op":"replace","value":[{"kind":"identifier","text":"SKWMicrophoneAudioSource"}]},{"op":"replace","path":"\/topicSections","value":[{"title":"Instance Methods","identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/MicrophoneAudioSource\/createStream()","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/MicrophoneAudioSource\/init()"],"anchor":"Instance-Methods","generated":true}]},{"op":"replace","path":"\/relationshipsSections","value":[{"type":"inheritsFrom","identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/AudioSource"],"title":"Inherits From","kind":"relationships"}]},{"path":"\/seeAlsoSections","op":"add","value":null},{"op":"replace","path":"\/primaryContentSections\/0","value":{"declarations":[{"platforms":["iOS"],"languages":["occ"],"tokens":[{"text":"@interface","kind":"keyword"},{"text":" ","kind":"text"},{"text":"SKWMicrophoneAudioSource","kind":"identifier"},{"text":" : ","kind":"text"},{"identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/AudioSource","text":"SKWAudioSource","kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWAudioSource"}]}],"kind":"declarations"}},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MicrophoneAudioSource\/title","value":"SKWMicrophoneAudioSource"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MicrophoneAudioSource\/fragments","value":[{"text":"SKWMicrophoneAudioSource","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MicrophoneAudioSource\/navigatorTitle","value":[{"text":"SKWMicrophoneAudioSource","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MicrophoneAudioSource~1init()\/title","value":"init"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MicrophoneAudioSource~1init()\/fragments","value":[{"kind":"text","text":"- "},{"kind":"identifier","text":"init"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource\/title","value":"SKWAudioSource"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource\/fragments","value":[{"text":"SKWAudioSource","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource\/navigatorTitle","value":[{"text":"SKWAudioSource","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MicrophoneAudioSource~1createStream()\/title","value":"createStream"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MicrophoneAudioSource~1createStream()\/fragments","value":[{"text":"- ","kind":"text"},{"text":"createStream","kind":"identifier"}]}]}]}
+{
+  "abstract": [
+    {
+      "text": "マイク入力ソース",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MicrophoneAudioSource"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:objc(cs)SKWMicrophoneAudioSource",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "class"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "MicrophoneAudioSource"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "MicrophoneAudioSource"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Class",
+    "symbolKind": "class",
+    "title": "MicrophoneAudioSource"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "class"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "MicrophoneAudioSource"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/SH": {
+      "identifier": "doc://com.ntt.skyway.room/SH",
+      "title": "Swift.Hashable",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/SQ": {
+      "identifier": "doc://com.ntt.skyway.room/SQ",
+      "title": "Swift.Equatable",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/AudioSource": {
+      "abstract": [
+        {
+          "text": "音声入力ソースの抽象クラス",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "AudioSource"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/AudioSource",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "AudioSource"
+        }
+      ],
+      "role": "symbol",
+      "title": "AudioSource",
+      "type": "topic",
+      "url": "/documentation/skywayroom/audiosource"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MicrophoneAudioSource": {
+      "abstract": [
+        {
+          "text": "マイク入力ソース",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "MicrophoneAudioSource"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MicrophoneAudioSource",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "MicrophoneAudioSource"
+        }
+      ],
+      "role": "symbol",
+      "title": "MicrophoneAudioSource",
+      "type": "topic",
+      "url": "/documentation/skywayroom/microphoneaudiosource"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MicrophoneAudioSource/createStream()": {
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "createStream"
+        },
+        {
+          "kind": "text",
+          "text": "() -> "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWLocalAudioStream",
+          "text": "LocalAudioStream"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MicrophoneAudioSource/createStream()",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "createStream"
+        }
+      ],
+      "role": "symbol",
+      "title": "createStream()",
+      "type": "topic",
+      "url": "/documentation/skywayroom/microphoneaudiosource/createstream()"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MicrophoneAudioSource/init()": {
+      "abstract": [
+        {
+          "text": "イニシャライザ",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "()"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MicrophoneAudioSource/init()",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        }
+      ],
+      "role": "symbol",
+      "title": "init()",
+      "type": "topic",
+      "url": "/documentation/skywayroom/microphoneaudiosource/init()"
+    },
+    "doc://com.ntt.skyway.room/objc(pl)NSObject": {
+      "identifier": "doc://com.ntt.skyway.room/objc(pl)NSObject",
+      "title": "ObjectiveC.NSObjectProtocol",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/s23CustomStringConvertibleP": {
+      "identifier": "doc://com.ntt.skyway.room/s23CustomStringConvertibleP",
+      "title": "Swift.CustomStringConvertible",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP": {
+      "identifier": "doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP",
+      "title": "Swift.CustomDebugStringConvertible",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/s7CVarArgP": {
+      "identifier": "doc://com.ntt.skyway.room/s7CVarArgP",
+      "title": "Swift.CVarArg",
+      "type": "unresolvable"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/AudioSource"
+      ],
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom"
+    },
+    {
+      "identifiers": [
+        "doc://com.ntt.skyway.room/objc(pl)NSObject",
+        "doc://com.ntt.skyway.room/s7CVarArgP",
+        "doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP",
+        "doc://com.ntt.skyway.room/s23CustomStringConvertibleP",
+        "doc://com.ntt.skyway.room/SQ",
+        "doc://com.ntt.skyway.room/SH"
+      ],
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo"
+    }
+  ],
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "topicSections": [
+    {
+      "anchor": "Initializers",
+      "generated": true,
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MicrophoneAudioSource/init()"
+      ],
+      "title": "Initializers"
+    },
+    {
+      "anchor": "Instance-Methods",
+      "generated": true,
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MicrophoneAudioSource/createStream()"
+      ],
+      "title": "Instance Methods"
+    }
+  ],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Class"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "SKWMicrophoneAudioSource"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "class"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWMicrophoneAudioSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWMicrophoneAudioSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/topicSections",
+          "value": [
+            {
+              "anchor": "Instance-Methods",
+              "generated": true,
+              "identifiers": [
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MicrophoneAudioSource/createStream()",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MicrophoneAudioSource/init()"
+              ],
+              "title": "Instance Methods"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/relationshipsSections",
+          "value": [
+            {
+              "identifiers": [
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/AudioSource"
+              ],
+              "kind": "relationships",
+              "title": "Inherits From",
+              "type": "inheritsFrom"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "keyword",
+                    "text": "@interface"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "SKWMicrophoneAudioSource"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " : "
+                  },
+                  {
+                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/AudioSource",
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:objc(cs)SKWAudioSource",
+                    "text": "SKWAudioSource"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MicrophoneAudioSource/title",
+          "value": "SKWMicrophoneAudioSource"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MicrophoneAudioSource/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWMicrophoneAudioSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MicrophoneAudioSource/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWMicrophoneAudioSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MicrophoneAudioSource~1createStream()/title",
+          "value": "createStream"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MicrophoneAudioSource~1createStream()/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "createStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource/title",
+          "value": "SKWAudioSource"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWAudioSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWAudioSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MicrophoneAudioSource~1init()/title",
+          "value": "init"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MicrophoneAudioSource~1init()/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "init"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/microphoneaudiosource"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/microphoneaudiosource"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

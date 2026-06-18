@@ -1,1 +1,452 @@
-{"relationshipsSections":[{"identifiers":["doc:\/\/com.ntt.skyway.room\/objc(cs)NSObject"],"kind":"relationships","title":"Inherits From","type":"inheritsFrom"},{"identifiers":["doc:\/\/com.ntt.skyway.room\/objc(pl)NSObject","doc:\/\/com.ntt.skyway.room\/s7CVarArgP","doc:\/\/com.ntt.skyway.room\/s28CustomDebugStringConvertibleP","doc:\/\/com.ntt.skyway.room\/s23CustomStringConvertibleP","doc:\/\/com.ntt.skyway.room\/SQ","doc:\/\/com.ntt.skyway.room\/SH"],"kind":"relationships","title":"Conforms To","type":"conformsTo"}],"variants":[{"paths":["\/documentation\/skywayroom\/datasource"],"traits":[{"interfaceLanguage":"swift"}]},{"paths":["\/documentation\/skywayroom\/datasource"],"traits":[{"interfaceLanguage":"occ"}]}],"schemaVersion":{"patch":0,"major":0,"minor":3},"abstract":[{"text":"データ入力ソース","type":"text"}],"topicSections":[{"identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/DataSource\/createStream()"],"generated":true,"anchor":"Instance-Methods","title":"Instance Methods"}],"sections":[],"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"DataSource","kind":"identifier"}],"platforms":["iOS"],"languages":["swift"]}]}],"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/DataSource","interfaceLanguage":"swift"},"metadata":{"roleHeading":"Class","fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"DataSource","kind":"identifier"}],"externalID":"c:objc(cs)SKWDataSource","role":"symbol","modules":[{"name":"SkyWayRoom"}],"navigatorTitle":[{"text":"DataSource","kind":"identifier"}],"title":"DataSource","symbolKind":"class"},"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom"]]},"kind":"symbol","references":{"doc://com.ntt.skyway.room/SH":{"identifier":"doc:\/\/com.ntt.skyway.room\/SH","type":"unresolvable","title":"Swift.Hashable"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/DataSource":{"abstract":[{"type":"text","text":"データ入力ソース"}],"title":"DataSource","kind":"symbol","fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"DataSource","kind":"identifier"}],"identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/DataSource","navigatorTitle":[{"text":"DataSource","kind":"identifier"}],"role":"symbol","url":"\/documentation\/skywayroom\/datasource","type":"topic"},"doc://com.ntt.skyway.room/objc(cs)NSObject":{"identifier":"doc:\/\/com.ntt.skyway.room\/objc(cs)NSObject","type":"unresolvable","title":"NSObject"},"doc://com.ntt.skyway.room/SQ":{"identifier":"doc:\/\/com.ntt.skyway.room\/SQ","type":"unresolvable","title":"Swift.Equatable"},"doc://com.ntt.skyway.room/objc(pl)NSObject":{"identifier":"doc:\/\/com.ntt.skyway.room\/objc(pl)NSObject","type":"unresolvable","title":"ObjectiveC.NSObjectProtocol"},"doc://com.ntt.skyway.room/s23CustomStringConvertibleP":{"identifier":"doc:\/\/com.ntt.skyway.room\/s23CustomStringConvertibleP","type":"unresolvable","title":"Swift.CustomStringConvertible"},"doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP":{"identifier":"doc:\/\/com.ntt.skyway.room\/s28CustomDebugStringConvertibleP","type":"unresolvable","title":"Swift.CustomDebugStringConvertible"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/DataSource/createStream()":{"abstract":[{"type":"text","text":"ストリームを作成します。"}],"title":"createStream()","kind":"symbol","fragments":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"createStream","kind":"identifier"},{"text":"() -> ","kind":"text"},{"text":"LocalDataStream","kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWLocalDataStream"}],"identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/DataSource\/createStream()","navigatorTitle":[{"text":"createStream","kind":"identifier"}],"role":"symbol","url":"\/documentation\/skywayroom\/datasource\/createstream()","type":"topic"},"doc://com.ntt.skyway.room/s7CVarArgP":{"identifier":"doc:\/\/com.ntt.skyway.room\/s7CVarArgP","type":"unresolvable","title":"Swift.CVarArg"}},"variantOverrides":[{"patch":[{"op":"replace","path":"\/identifier\/interfaceLanguage","value":"occ"},{"op":"add","path":"\/metadata\/platforms","value":null},{"op":"replace","path":"\/metadata\/roleHeading","value":"Class"},{"op":"replace","path":"\/metadata\/title","value":"SKWDataSource"},{"op":"replace","path":"\/metadata\/symbolKind","value":"class"},{"op":"replace","path":"\/metadata\/fragments","value":[{"text":"SKWDataSource","kind":"identifier"}]},{"op":"replace","path":"\/metadata\/navigatorTitle","value":[{"text":"SKWDataSource","kind":"identifier"}]},{"path":"\/topicSections","value":[{"anchor":"Instance-Methods","title":"Instance Methods","identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/DataSource\/createStream()"],"generated":true}],"op":"replace"},{"path":"\/relationshipsSections","value":[{"title":"Inherits From","kind":"relationships","identifiers":["doc:\/\/com.ntt.skyway.room\/objc(cs)NSObject"],"type":"inheritsFrom"}],"op":"replace"},{"path":"\/seeAlsoSections","value":null,"op":"add"},{"path":"\/primaryContentSections\/0","value":{"declarations":[{"languages":["occ"],"tokens":[{"text":"@interface","kind":"keyword"},{"text":" ","kind":"text"},{"text":"SKWDataSource","kind":"identifier"},{"text":" : ","kind":"text"},{"preciseIdentifier":"c:objc(cs)NSObject","text":"NSObject","kind":"typeIdentifier"}],"platforms":["iOS"]}],"kind":"declarations"},"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1DataSource\/title","op":"replace","value":"SKWDataSource"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1DataSource\/fragments","op":"replace","value":[{"text":"SKWDataSource","kind":"identifier"}]},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1DataSource\/navigatorTitle","value":[{"text":"SKWDataSource","kind":"identifier"}],"op":"replace"},{"value":"createStream","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1DataSource~1createStream()\/title","op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1DataSource~1createStream()\/fragments","value":[{"text":"- ","kind":"text"},{"text":"createStream","kind":"identifier"}],"op":"replace"}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "abstract": [
+    {
+      "text": "データ入力ソース",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/DataSource"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:objc(cs)SKWDataSource",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "class"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "DataSource"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "DataSource"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Class",
+    "symbolKind": "class",
+    "title": "DataSource"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "class"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "DataSource"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/SH": {
+      "identifier": "doc://com.ntt.skyway.room/SH",
+      "title": "Swift.Hashable",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/SQ": {
+      "identifier": "doc://com.ntt.skyway.room/SQ",
+      "title": "Swift.Equatable",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/DataSource": {
+      "abstract": [
+        {
+          "text": "データ入力ソース",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "DataSource"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/DataSource",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "DataSource"
+        }
+      ],
+      "role": "symbol",
+      "title": "DataSource",
+      "type": "topic",
+      "url": "/documentation/skywayroom/datasource"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/DataSource/createStream()": {
+      "abstract": [
+        {
+          "text": "ストリームを作成します。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "createStream"
+        },
+        {
+          "kind": "text",
+          "text": "() -> "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWLocalDataStream",
+          "text": "LocalDataStream"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/DataSource/createStream()",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "createStream"
+        }
+      ],
+      "role": "symbol",
+      "title": "createStream()",
+      "type": "topic",
+      "url": "/documentation/skywayroom/datasource/createstream()"
+    },
+    "doc://com.ntt.skyway.room/objc(cs)NSObject": {
+      "identifier": "doc://com.ntt.skyway.room/objc(cs)NSObject",
+      "title": "NSObject",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/objc(pl)NSObject": {
+      "identifier": "doc://com.ntt.skyway.room/objc(pl)NSObject",
+      "title": "ObjectiveC.NSObjectProtocol",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/s23CustomStringConvertibleP": {
+      "identifier": "doc://com.ntt.skyway.room/s23CustomStringConvertibleP",
+      "title": "Swift.CustomStringConvertible",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP": {
+      "identifier": "doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP",
+      "title": "Swift.CustomDebugStringConvertible",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/s7CVarArgP": {
+      "identifier": "doc://com.ntt.skyway.room/s7CVarArgP",
+      "title": "Swift.CVarArg",
+      "type": "unresolvable"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "identifiers": [
+        "doc://com.ntt.skyway.room/objc(cs)NSObject"
+      ],
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom"
+    },
+    {
+      "identifiers": [
+        "doc://com.ntt.skyway.room/objc(pl)NSObject",
+        "doc://com.ntt.skyway.room/s7CVarArgP",
+        "doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP",
+        "doc://com.ntt.skyway.room/s23CustomStringConvertibleP",
+        "doc://com.ntt.skyway.room/SQ",
+        "doc://com.ntt.skyway.room/SH"
+      ],
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo"
+    }
+  ],
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "topicSections": [
+    {
+      "anchor": "Instance-Methods",
+      "generated": true,
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/DataSource/createStream()"
+      ],
+      "title": "Instance Methods"
+    }
+  ],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Class"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "SKWDataSource"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "class"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWDataSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWDataSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/topicSections",
+          "value": [
+            {
+              "anchor": "Instance-Methods",
+              "generated": true,
+              "identifiers": [
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/DataSource/createStream()"
+              ],
+              "title": "Instance Methods"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/relationshipsSections",
+          "value": [
+            {
+              "identifiers": [
+                "doc://com.ntt.skyway.room/objc(cs)NSObject"
+              ],
+              "kind": "relationships",
+              "title": "Inherits From",
+              "type": "inheritsFrom"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "keyword",
+                    "text": "@interface"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "SKWDataSource"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " : "
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:objc(cs)NSObject",
+                    "text": "NSObject"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1DataSource/title",
+          "value": "SKWDataSource"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1DataSource/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWDataSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1DataSource/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWDataSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1DataSource~1createStream()/title",
+          "value": "createStream"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1DataSource~1createStream()/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "createStream"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/datasource"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/datasource"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,316 @@
-{"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomType"]]},"schemaVersion":{"patch":0,"minor":3,"major":0},"metadata":{"roleHeading":"Case","modules":[{"name":"SkyWayRoom"}],"title":"RoomType.SFU","role":"symbol","symbolKind":"case","fragments":[{"text":"case","kind":"keyword"},{"text":" ","kind":"text"},{"text":"SFU","kind":"identifier"}],"navigatorTitle":[{"text":"SKWRoomTypeSFU","kind":"identifier"}],"externalID":"c:@E@SKWRoomType@SKWRoomTypeSFU"},"sections":[],"kind":"symbol","primaryContentSections":[{"declarations":[{"platforms":["iOS"],"languages":["swift"],"tokens":[{"kind":"keyword","text":"case"},{"kind":"text","text":" "},{"kind":"identifier","text":"SFU"}]}],"kind":"declarations"}],"variants":[{"traits":[{"interfaceLanguage":"swift"}],"paths":["\/documentation\/skywayroom\/roomtype\/sfu"]},{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/skywayroom\/roomtype\/sfu"]}],"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomType\/SFU","interfaceLanguage":"swift"},"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomType":{"url":"\/documentation\/skywayroom\/roomtype","navigatorTitle":[{"kind":"identifier","text":"RoomType"}],"type":"topic","kind":"symbol","title":"RoomType","abstract":[{"type":"text","text":"ルームタイプ"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomType","fragments":[{"kind":"keyword","text":"enum"},{"kind":"text","text":" "},{"kind":"identifier","text":"RoomType"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomType/SFU":{"url":"\/documentation\/skywayroom\/roomtype\/sfu","type":"topic","abstract":[],"fragments":[{"text":"case","kind":"keyword"},{"text":" ","kind":"text"},{"text":"SFU","kind":"identifier"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomType\/SFU","title":"RoomType.SFU","navigatorTitle":[{"text":"SKWRoomTypeSFU","kind":"identifier"}],"kind":"symbol"}},"variantOverrides":[{"patch":[{"op":"replace","path":"\/identifier\/interfaceLanguage","value":"occ"},{"op":"add","path":"\/metadata\/platforms","value":null},{"op":"replace","path":"\/metadata\/roleHeading","value":"Enumeration Case"},{"op":"replace","path":"\/metadata\/title","value":"SKWRoomTypeSFU"},{"op":"replace","path":"\/metadata\/symbolKind","value":"case"},{"op":"replace","path":"\/metadata\/fragments","value":[{"text":"SKWRoomTypeSFU","kind":"identifier"}]},{"op":"add","path":"\/topicSections","value":null},{"op":"add","path":"\/relationshipsSections","value":null},{"op":"add","path":"\/seeAlsoSections","value":null},{"op":"replace","path":"\/primaryContentSections\/0","value":{"kind":"declarations","declarations":[{"platforms":["iOS"],"languages":["occ"],"tokens":[{"kind":"identifier","text":"SKWRoomTypeSFU"}]}]}},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomType\/title","value":"SKWRoomType"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomType\/fragments","value":[{"text":"SKWRoomType","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomType\/navigatorTitle","value":[{"text":"SKWRoomType","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomType~1SFU\/title","value":"SKWRoomTypeSFU"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomType~1SFU\/fragments","value":[{"text":"SKWRoomTypeSFU","kind":"identifier"}]}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomType"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomType/SFU"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:@E@SKWRoomType@SKWRoomTypeSFU",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "case"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "SFU"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "SKWRoomTypeSFU"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Case",
+    "symbolKind": "case",
+    "title": "RoomType.SFU"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "case"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "SFU"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomType": {
+      "abstract": [
+        {
+          "text": "ルームタイプ",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "enum"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "RoomType"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomType",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "RoomType"
+        }
+      ],
+      "role": "symbol",
+      "title": "RoomType",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roomtype"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomType/SFU": {
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "case"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "SFU"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomType/SFU",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SKWRoomTypeSFU"
+        }
+      ],
+      "role": "symbol",
+      "title": "RoomType.SFU",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roomtype/sfu"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Enumeration Case"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "SKWRoomTypeSFU"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "case"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRoomTypeSFU"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "identifier",
+                    "text": "SKWRoomTypeSFU"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomType/title",
+          "value": "SKWRoomType"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomType/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRoomType"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomType/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRoomType"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomType~1SFU/title",
+          "value": "SKWRoomTypeSFU"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomType~1SFU/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRoomTypeSFU"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/roomtype/sfu"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/roomtype/sfu"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

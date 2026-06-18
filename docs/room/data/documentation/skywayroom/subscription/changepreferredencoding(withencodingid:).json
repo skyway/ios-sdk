@@ -1,1 +1,483 @@
-{"kind":"symbol","sections":[],"variants":[{"paths":["\/documentation\/skywayroom\/subscription\/changepreferredencoding(withencodingid:)"],"traits":[{"interfaceLanguage":"swift"}]},{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/skywayroom\/subscription\/changepreferredencoding(withencodingid:)"]}],"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"text":"func","kind":"keyword"},{"kind":"text","text":" "},{"text":"changePreferredEncoding","kind":"identifier"},{"text":"(","kind":"text"},{"text":"withEncodingId","kind":"externalParam"},{"text":" ","kind":"text"},{"text":"encodingId","kind":"internalParam"},{"kind":"text","text":": "},{"kind":"typeIdentifier","preciseIdentifier":"s:SS","text":"String"},{"kind":"text","text":") -> "},{"text":"Bool","kind":"typeIdentifier","preciseIdentifier":"s:Sb"}],"platforms":["iOS"],"languages":["swift"]}]},{"kind":"content","content":[{"level":2,"text":"Discussion","type":"heading","anchor":"discussion"},{"inlineContent":[{"type":"text","text":"LocalRoomMemberがSFU bot"},{"type":"text","text":" "},{"text":"がforwardingしたPublicationをSubscribeした時のSubscriptionで、ContentTypeがAudioまたはVideoの時のみ変更ができます。","type":"text"}],"type":"paragraph"}]}],"schemaVersion":{"major":0,"patch":0,"minor":3},"metadata":{"externalID":"c:objc(cs)SKWSubscription(im)changePreferredEncodingWithEncodingId:","modules":[{"name":"SkyWayRoom"}],"fragments":[{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"text":"changePreferredEncoding","kind":"identifier"},{"kind":"text","text":"("},{"text":"withEncodingId","kind":"externalParam"},{"kind":"text","text":": "},{"preciseIdentifier":"s:SS","text":"String","kind":"typeIdentifier"},{"kind":"text","text":") -> "},{"preciseIdentifier":"s:Sb","text":"Bool","kind":"typeIdentifier"}],"role":"symbol","navigatorTitle":[{"text":"changePreferredEncodingWithEncodingId:","kind":"identifier"}],"roleHeading":"Instance Method","symbolKind":"method","title":"changePreferredEncoding(withEncodingId:)"},"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Subscription"]]},"identifier":{"interfaceLanguage":"swift","url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Subscription\/changePreferredEncoding(withEncodingId:)"},"abstract":[{"text":"Simulcastで利用するPreferredEncodingIDを変更します。","type":"text"}],"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/Subscription":{"kind":"symbol","fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"Subscription","kind":"identifier"}],"url":"\/documentation\/skywayroom\/subscription","role":"symbol","navigatorTitle":[{"text":"Subscription","kind":"identifier"}],"type":"topic","title":"Subscription","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Subscription","abstract":[{"type":"text","text":"SubscriptionはLocalMemberがSubscribeした時に取得でき、Subscriptionに含まれるStreamを利用して映像を描画したりします。"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/Subscription/changePreferredEncoding(withEncodingId:)":{"kind":"symbol","fragments":[{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"changePreferredEncoding"},{"kind":"text","text":"("},{"kind":"externalParam","text":"withEncodingId"},{"kind":"text","text":": "},{"kind":"typeIdentifier","preciseIdentifier":"s:SS","text":"String"},{"kind":"text","text":") -> "},{"kind":"typeIdentifier","preciseIdentifier":"s:Sb","text":"Bool"}],"url":"\/documentation\/skywayroom\/subscription\/changepreferredencoding(withencodingid:)","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"changePreferredEncodingWithEncodingId:"}],"type":"topic","title":"changePreferredEncoding(withEncodingId:)","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Subscription\/changePreferredEncoding(withEncodingId:)","abstract":[{"text":"Simulcastで利用するPreferredEncodingIDを変更します。","type":"text"}]}},"variantOverrides":[{"patch":[{"path":"\/identifier\/interfaceLanguage","value":"occ","op":"replace"},{"path":"\/metadata\/platforms","value":null,"op":"add"},{"path":"\/metadata\/roleHeading","value":"Instance Method","op":"replace"},{"path":"\/metadata\/title","value":"changePreferredEncodingWithEncodingId:","op":"replace"},{"path":"\/metadata\/symbolKind","value":"method","op":"replace"},{"path":"\/metadata\/fragments","value":[{"kind":"text","text":"- "},{"text":"changePreferredEncodingWithEncodingId:","kind":"identifier"}],"op":"replace"},{"path":"\/topicSections","value":null,"op":"add"},{"path":"\/relationshipsSections","value":null,"op":"add"},{"path":"\/seeAlsoSections","value":null,"op":"add"},{"path":"\/primaryContentSections\/0","value":{"declarations":[{"platforms":["iOS"],"languages":["occ"],"tokens":[{"text":"- (","kind":"text"},{"text":"bool","kind":"typeIdentifier","preciseIdentifier":"c:b"},{"text":") ","kind":"text"},{"text":"changePreferredEncodingWithEncodingId:","kind":"identifier"},{"text":"(","kind":"text"},{"text":"NSString","kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)NSString"},{"text":" *) ","kind":"text"},{"text":"encodingId","kind":"internalParam"},{"text":";","kind":"text"}]}],"kind":"declarations"},"op":"replace"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Subscription\/title","value":"SKWSubscription"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Subscription\/fragments","value":[{"kind":"identifier","text":"SKWSubscription"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Subscription\/navigatorTitle","value":[{"text":"SKWSubscription","kind":"identifier"}]},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Subscription~1changePreferredEncoding(withEncodingId:)\/title","value":"changePreferredEncodingWithEncodingId:","op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Subscription~1changePreferredEncoding(withEncodingId:)\/fragments","value":[{"kind":"text","text":"- "},{"kind":"identifier","text":"changePreferredEncodingWithEncodingId:"}],"op":"replace"}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "abstract": [
+    {
+      "text": "Simulcastで利用するPreferredEncodingIDを変更します。",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Subscription"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Subscription/changePreferredEncoding(withEncodingId:)"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:objc(cs)SKWSubscription(im)changePreferredEncodingWithEncodingId:",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "func"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "changePreferredEncoding"
+      },
+      {
+        "kind": "text",
+        "text": "("
+      },
+      {
+        "kind": "externalParam",
+        "text": "withEncodingId"
+      },
+      {
+        "kind": "text",
+        "text": ": "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:SS",
+        "text": "String"
+      },
+      {
+        "kind": "text",
+        "text": ") -> "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:Sb",
+        "text": "Bool"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "changePreferredEncodingWithEncodingId:"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "symbolKind": "method",
+    "title": "changePreferredEncoding(withEncodingId:)"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "changePreferredEncoding"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "externalParam",
+              "text": "withEncodingId"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "encodingId"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:SS",
+              "text": "String"
+            },
+            {
+              "kind": "text",
+              "text": ") -> "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sb",
+              "text": "Bool"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "LocalRoomMemberがSFU bot",
+              "type": "text"
+            },
+            {
+              "text": " ",
+              "type": "text"
+            },
+            {
+              "text": "がforwardingしたPublicationをSubscribeした時のSubscriptionで、ContentTypeがAudioまたはVideoの時のみ変更ができます。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "kind": "content"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Subscription": {
+      "abstract": [
+        {
+          "text": "SubscriptionはLocalMemberがSubscribeした時に取得でき、Subscriptionに含まれるStreamを利用して映像を描画したりします。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "Subscription"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Subscription",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "Subscription"
+        }
+      ],
+      "role": "symbol",
+      "title": "Subscription",
+      "type": "topic",
+      "url": "/documentation/skywayroom/subscription"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Subscription/changePreferredEncoding(withEncodingId:)": {
+      "abstract": [
+        {
+          "text": "Simulcastで利用するPreferredEncodingIDを変更します。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "changePreferredEncoding"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "externalParam",
+          "text": "withEncodingId"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:SS",
+          "text": "String"
+        },
+        {
+          "kind": "text",
+          "text": ") -> "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:Sb",
+          "text": "Bool"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Subscription/changePreferredEncoding(withEncodingId:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "changePreferredEncodingWithEncodingId:"
+        }
+      ],
+      "role": "symbol",
+      "title": "changePreferredEncoding(withEncodingId:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/subscription/changepreferredencoding(withencodingid:)"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Instance Method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "changePreferredEncodingWithEncodingId:"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "changePreferredEncodingWithEncodingId:"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "text",
+                    "text": "- ("
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:b",
+                    "text": "bool"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ") "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "changePreferredEncodingWithEncodingId:"
+                  },
+                  {
+                    "kind": "text",
+                    "text": "("
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:objc(cs)NSString",
+                    "text": "NSString"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " *) "
+                  },
+                  {
+                    "kind": "internalParam",
+                    "text": "encodingId"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ";"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Subscription~1changePreferredEncoding(withEncodingId:)/title",
+          "value": "changePreferredEncodingWithEncodingId:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Subscription~1changePreferredEncoding(withEncodingId:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "changePreferredEncodingWithEncodingId:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Subscription/title",
+          "value": "SKWSubscription"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Subscription/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSubscription"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Subscription/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSubscription"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/subscription/changepreferredencoding(withencodingid:)"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/subscription/changepreferredencoding(withencodingid:)"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

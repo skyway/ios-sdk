@@ -1,1 +1,863 @@
-{"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Channel"]]},"schemaVersion":{"major":0,"patch":0,"minor":3},"metadata":{"modules":[{"name":"SkyWayRoom"}],"externalID":"c:objc(cs)SKWChannel(cm)findOrCreateWithInit:completion:","fragments":[{"text":"class","kind":"keyword"},{"kind":"text","text":" "},{"kind":"keyword","text":"func"},{"text":" ","kind":"text"},{"kind":"identifier","text":"findOrCreate"},{"text":"(","kind":"text"},{"kind":"externalParam","text":"with"},{"text":": ","kind":"text"},{"kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWChannelInit","text":"ChannelInit"},{"text":", ","kind":"text"},{"kind":"externalParam","text":"completion"},{"text":": ((","kind":"text"},{"kind":"typeIdentifier","text":"Channel","preciseIdentifier":"c:objc(cs)SKWChannel"},{"text":"?, (any ","kind":"text"},{"kind":"typeIdentifier","text":"Error","preciseIdentifier":"s:s5ErrorP"},{"text":")?) -> ","kind":"text"},{"text":"Void","preciseIdentifier":"s:s4Voida","kind":"typeIdentifier"},{"text":")?)","kind":"text"}],"role":"symbol","navigatorTitle":[{"text":"findOrCreateWithInit:completion:","kind":"identifier"}],"roleHeading":"Type Method","symbolKind":"method","title":"findOrCreate(with:completion:)"},"sections":[],"kind":"symbol","abstract":[{"type":"text","text":"Channelを名前から検索し、存在しない場合は新規作成します。"}],"primaryContentSections":[{"declarations":[{"platforms":["iOS"],"languages":["swift"],"tokens":[{"kind":"keyword","text":"class"},{"text":" ","kind":"text"},{"kind":"keyword","text":"func"},{"text":" ","kind":"text"},{"text":"findOrCreate","kind":"identifier"},{"text":"(","kind":"text"},{"text":"with","kind":"externalParam"},{"text":" ","kind":"text"},{"text":"init","kind":"internalParam"},{"text":": ","kind":"text"},{"text":"ChannelInit","preciseIdentifier":"c:objc(cs)SKWChannelInit","kind":"typeIdentifier","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ChannelInit"},{"text":", ","kind":"text"},{"text":"completion","kind":"externalParam"},{"text":": ((","kind":"text"},{"text":"Channel","preciseIdentifier":"c:objc(cs)SKWChannel","kind":"typeIdentifier","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Channel"},{"text":"?, (any ","kind":"text"},{"text":"Error","preciseIdentifier":"s:s5ErrorP","kind":"typeIdentifier"},{"text":")?) -> ","kind":"text"},{"text":"Void","preciseIdentifier":"s:s4Voida","kind":"typeIdentifier"},{"text":")? = nil)","kind":"text"}]},{"platforms":["iOS"],"languages":["swift"],"tokens":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"findOrCreate","kind":"identifier"},{"text":"(","kind":"text"},{"text":"with","kind":"externalParam"},{"text":" ","kind":"text"},{"text":"init","kind":"internalParam"},{"text":": ","kind":"text"},{"text":"ChannelInit","preciseIdentifier":"c:objc(cs)SKWChannelInit","kind":"typeIdentifier","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ChannelInit"},{"text":") ","kind":"text"},{"text":"async","kind":"keyword"},{"text":" ","kind":"text"},{"text":"throws","kind":"keyword"},{"text":" -> ","kind":"text"},{"text":"Channel","preciseIdentifier":"c:objc(cs)SKWChannel","kind":"typeIdentifier","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Channel"}]}],"kind":"declarations"},{"kind":"parameters","parameters":[{"content":[{"inlineContent":[{"type":"text","text":"検索・初期化オプション"}],"type":"paragraph"}],"name":"init"},{"content":[{"inlineContent":[{"type":"text","text":"完了コールバック"}],"type":"paragraph"}],"name":"completion"}]}],"variants":[{"paths":["\/documentation\/skywayroom\/channel\/findorcreate(with:completion:)"],"traits":[{"interfaceLanguage":"swift"}]},{"paths":["\/documentation\/skywayroom\/channel\/findorcreate(with:completion:)"],"traits":[{"interfaceLanguage":"occ"}]}],"identifier":{"interfaceLanguage":"swift","url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Channel\/findOrCreate(with:completion:)"},"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWChannelCompletion":{"url":"\/documentation\/skywayroom\/skwchannelcompletion","type":"topic","abstract":[],"fragments":[{"text":"typealias","kind":"keyword"},{"text":" ","kind":"text"},{"text":"SKWChannelCompletion","kind":"identifier"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SKWChannelCompletion","title":"SKWChannelCompletion","navigatorTitle":[{"text":"SKWChannelCompletion","kind":"identifier"}],"kind":"symbol"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/Channel/findOrCreate(with:completion:)":{"kind":"symbol","title":"findOrCreate(with:completion:)","abstract":[{"type":"text","text":"Channelを名前から検索し、存在しない場合は新規作成します。"}],"fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"findOrCreate"},{"kind":"text","text":"("},{"kind":"externalParam","text":"with"},{"kind":"text","text":": "},{"kind":"typeIdentifier","text":"ChannelInit","preciseIdentifier":"c:objc(cs)SKWChannelInit"},{"kind":"text","text":", "},{"kind":"externalParam","text":"completion"},{"kind":"text","text":": (("},{"kind":"typeIdentifier","text":"Channel","preciseIdentifier":"c:objc(cs)SKWChannel"},{"kind":"text","text":"?, (any "},{"kind":"typeIdentifier","text":"Error","preciseIdentifier":"s:s5ErrorP"},{"kind":"text","text":")?) -> "},{"kind":"typeIdentifier","text":"Void","preciseIdentifier":"s:s4Voida"},{"kind":"text","text":")?)"}],"identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Channel\/findOrCreate(with:completion:)","navigatorTitle":[{"kind":"identifier","text":"findOrCreateWithInit:completion:"}],"role":"symbol","type":"topic","url":"\/documentation\/skywayroom\/channel\/findorcreate(with:completion:)"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/Channel":{"kind":"symbol","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"Channel"}],"url":"\/documentation\/skywayroom\/channel","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"Channel"}],"type":"topic","title":"Channel","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Channel","abstract":[{"type":"text","text":"チャンネル"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ChannelInit":{"url":"\/documentation\/skywayroom\/channelinit","navigatorTitle":[{"text":"ChannelInit","kind":"identifier"}],"type":"topic","kind":"symbol","abstract":[{"text":"Channel初期化オプション","type":"text"}],"title":"ChannelInit","role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ChannelInit","fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"ChannelInit","kind":"identifier"}]}},"variantOverrides":[{"patch":[{"op":"replace","path":"\/identifier\/interfaceLanguage","value":"occ"},{"op":"add","path":"\/metadata\/platforms","value":null},{"op":"replace","path":"\/metadata\/roleHeading","value":"Type Method"},{"op":"replace","path":"\/metadata\/title","value":"findOrCreateWithInit:completion:"},{"op":"replace","path":"\/metadata\/symbolKind","value":"method"},{"op":"replace","path":"\/metadata\/fragments","value":[{"text":"+ ","kind":"text"},{"text":"findOrCreateWithInit:completion:","kind":"identifier"}]},{"op":"add","path":"\/topicSections","value":null},{"op":"add","path":"\/relationshipsSections","value":null},{"op":"add","path":"\/seeAlsoSections","value":null},{"op":"replace","path":"\/primaryContentSections\/0","value":{"kind":"declarations","declarations":[{"languages":["occ"],"tokens":[{"kind":"text","text":"+ ("},{"kind":"typeIdentifier","preciseIdentifier":"c:v","text":"void"},{"kind":"text","text":") "},{"kind":"identifier","text":"findOrCreateWithInit:"},{"kind":"text","text":"("},{"identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ChannelInit","kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWChannelInit","text":"SKWChannelInit"},{"kind":"text","text":" *) "},{"kind":"internalParam","text":"init"},{"kind":"text","text":" "},{"kind":"identifier","text":"completion:"},{"kind":"text","text":"("},{"identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SKWChannelCompletion","kind":"typeIdentifier","preciseIdentifier":"c:SKWChannel.h@T@SKWChannelCompletion","text":"SKWChannelCompletion"},{"kind":"text","text":") "},{"kind":"internalParam","text":"completion"},{"kind":"text","text":";"}],"platforms":["iOS"]}]}},{"op":"replace","path":"\/primaryContentSections\/1","value":{"kind":"parameters","parameters":[{"content":[{"type":"paragraph","inlineContent":[{"type":"text","text":"検索・初期化オプション"}]}],"name":"init"},{"content":[{"type":"paragraph","inlineContent":[{"type":"text","text":"完了コールバック"}]}],"name":"completion"}]}},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWChannelCompletion\/title","value":"SKWChannelCompletion"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWChannelCompletion\/fragments","value":[{"text":"SKWChannelCompletion","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWChannelCompletion\/navigatorTitle","value":[{"text":"SKWChannelCompletion","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel~1findOrCreate(with:completion:)\/title","value":"findOrCreateWithInit:completion:"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel~1findOrCreate(with:completion:)\/fragments","value":[{"text":"+ ","kind":"text"},{"text":"findOrCreateWithInit:completion:","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel\/title","value":"SKWChannel"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel\/fragments","value":[{"text":"SKWChannel","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel\/navigatorTitle","value":[{"text":"SKWChannel","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelInit\/title","value":"SKWChannelInit"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelInit\/fragments","value":[{"text":"SKWChannelInit","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelInit\/navigatorTitle","value":[{"text":"SKWChannelInit","kind":"identifier"}]}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "abstract": [
+    {
+      "text": "Channelを名前から検索し、存在しない場合は新規作成します。",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Channel"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Channel/findOrCreate(with:completion:)"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:objc(cs)SKWChannel(cm)findOrCreateWithInit:completion:",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "class"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "keyword",
+        "text": "func"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "findOrCreate"
+      },
+      {
+        "kind": "text",
+        "text": "("
+      },
+      {
+        "kind": "externalParam",
+        "text": "with"
+      },
+      {
+        "kind": "text",
+        "text": ": "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "c:objc(cs)SKWChannelInit",
+        "text": "ChannelInit"
+      },
+      {
+        "kind": "text",
+        "text": ", "
+      },
+      {
+        "kind": "externalParam",
+        "text": "completion"
+      },
+      {
+        "kind": "text",
+        "text": ": (("
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "c:objc(cs)SKWChannel",
+        "text": "Channel"
+      },
+      {
+        "kind": "text",
+        "text": "?, (any "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:s5ErrorP",
+        "text": "Error"
+      },
+      {
+        "kind": "text",
+        "text": ")?) -> "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:s4Voida",
+        "text": "Void"
+      },
+      {
+        "kind": "text",
+        "text": ")?)"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "findOrCreateWithInit:completion:"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Type Method",
+    "symbolKind": "method",
+    "title": "findOrCreate(with:completion:)"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "class"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "findOrCreate"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "externalParam",
+              "text": "with"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "init"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ChannelInit",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)SKWChannelInit",
+              "text": "ChannelInit"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "externalParam",
+              "text": "completion"
+            },
+            {
+              "kind": "text",
+              "text": ": (("
+            },
+            {
+              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Channel",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)SKWChannel",
+              "text": "Channel"
+            },
+            {
+              "kind": "text",
+              "text": "?, (any "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:s5ErrorP",
+              "text": "Error"
+            },
+            {
+              "kind": "text",
+              "text": ")?) -> "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:s4Voida",
+              "text": "Void"
+            },
+            {
+              "kind": "text",
+              "text": ")? = nil)"
+            }
+          ]
+        },
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "class"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "findOrCreate"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "externalParam",
+              "text": "with"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "init"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ChannelInit",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)SKWChannelInit",
+              "text": "ChannelInit"
+            },
+            {
+              "kind": "text",
+              "text": ") "
+            },
+            {
+              "kind": "keyword",
+              "text": "async"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "throws"
+            },
+            {
+              "kind": "text",
+              "text": " -> "
+            },
+            {
+              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Channel",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)SKWChannel",
+              "text": "Channel"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "kind": "parameters",
+      "parameters": [
+        {
+          "content": [
+            {
+              "inlineContent": [
+                {
+                  "text": "検索・初期化オプション",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "init"
+        },
+        {
+          "content": [
+            {
+              "inlineContent": [
+                {
+                  "text": "完了コールバック",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "completion"
+        }
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Channel": {
+      "abstract": [
+        {
+          "text": "チャンネル",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "Channel"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Channel",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "Channel"
+        }
+      ],
+      "role": "symbol",
+      "title": "Channel",
+      "type": "topic",
+      "url": "/documentation/skywayroom/channel"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Channel/findOrCreate(with:completion:)": {
+      "abstract": [
+        {
+          "text": "Channelを名前から検索し、存在しない場合は新規作成します。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "findOrCreate"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "externalParam",
+          "text": "with"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWChannelInit",
+          "text": "ChannelInit"
+        },
+        {
+          "kind": "text",
+          "text": ", "
+        },
+        {
+          "kind": "externalParam",
+          "text": "completion"
+        },
+        {
+          "kind": "text",
+          "text": ": (("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWChannel",
+          "text": "Channel"
+        },
+        {
+          "kind": "text",
+          "text": "?, (any "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:s5ErrorP",
+          "text": "Error"
+        },
+        {
+          "kind": "text",
+          "text": ")?) -> "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:s4Voida",
+          "text": "Void"
+        },
+        {
+          "kind": "text",
+          "text": ")?)"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Channel/findOrCreate(with:completion:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "findOrCreateWithInit:completion:"
+        }
+      ],
+      "role": "symbol",
+      "title": "findOrCreate(with:completion:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/channel/findorcreate(with:completion:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ChannelInit": {
+      "abstract": [
+        {
+          "text": "Channel初期化オプション",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "ChannelInit"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ChannelInit",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "ChannelInit"
+        }
+      ],
+      "role": "symbol",
+      "title": "ChannelInit",
+      "type": "topic",
+      "url": "/documentation/skywayroom/channelinit"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWChannelCompletion": {
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "typealias"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "SKWChannelCompletion"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWChannelCompletion",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SKWChannelCompletion"
+        }
+      ],
+      "role": "symbol",
+      "title": "SKWChannelCompletion",
+      "type": "topic",
+      "url": "/documentation/skywayroom/skwchannelcompletion"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Type Method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "findOrCreateWithInit:completion:"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "+ "
+            },
+            {
+              "kind": "identifier",
+              "text": "findOrCreateWithInit:completion:"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "text",
+                    "text": "+ ("
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:v",
+                    "text": "void"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ") "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "findOrCreateWithInit:"
+                  },
+                  {
+                    "kind": "text",
+                    "text": "("
+                  },
+                  {
+                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ChannelInit",
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:objc(cs)SKWChannelInit",
+                    "text": "SKWChannelInit"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " *) "
+                  },
+                  {
+                    "kind": "internalParam",
+                    "text": "init"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "completion:"
+                  },
+                  {
+                    "kind": "text",
+                    "text": "("
+                  },
+                  {
+                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWChannelCompletion",
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:SKWChannel.h@T@SKWChannelCompletion",
+                    "text": "SKWChannelCompletion"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ") "
+                  },
+                  {
+                    "kind": "internalParam",
+                    "text": "completion"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ";"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/1",
+          "value": {
+            "kind": "parameters",
+            "parameters": [
+              {
+                "content": [
+                  {
+                    "inlineContent": [
+                      {
+                        "text": "検索・初期化オプション",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "name": "init"
+              },
+              {
+                "content": [
+                  {
+                    "inlineContent": [
+                      {
+                        "text": "完了コールバック",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "name": "completion"
+              }
+            ]
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelInit/title",
+          "value": "SKWChannelInit"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelInit/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWChannelInit"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelInit/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWChannelInit"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel~1findOrCreate(with:completion:)/title",
+          "value": "findOrCreateWithInit:completion:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel~1findOrCreate(with:completion:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "+ "
+            },
+            {
+              "kind": "identifier",
+              "text": "findOrCreateWithInit:completion:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWChannelCompletion/title",
+          "value": "SKWChannelCompletion"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWChannelCompletion/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWChannelCompletion"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWChannelCompletion/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWChannelCompletion"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel/title",
+          "value": "SKWChannel"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWChannel"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWChannel"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/channel/findorcreate(with:completion:)"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/channel/findorcreate(with:completion:)"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

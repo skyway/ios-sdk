@@ -1,1 +1,476 @@
-{"kind":"symbol","sections":[],"variants":[{"traits":[{"interfaceLanguage":"swift"}],"paths":["\/documentation\/skywayroom\/videostreamprotocol\/attach(_:)"]},{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/skywayroom\/videostreamprotocol\/attach(_:)"]}],"primaryContentSections":[{"declarations":[{"platforms":["iOS"],"languages":["swift"],"tokens":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"attach","kind":"identifier"},{"text":"(","kind":"text"},{"text":"_","kind":"externalParam"},{"text":" ","kind":"text"},{"text":"view","kind":"internalParam"},{"text":": ","kind":"text"},{"identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/VideoView","text":"VideoView","kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWVideoView"},{"text":")","kind":"text"}]}],"kind":"declarations"}],"schemaVersion":{"patch":0,"minor":3,"major":0},"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/VideoStreamProtocol"]]},"metadata":{"externalID":"c:objc(pl)SKWVideoStreamProtocol(im)attachView:","modules":[{"name":"SkyWayRoom"}],"fragments":[{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"attach"},{"kind":"text","text":"("},{"kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWVideoView","text":"VideoView"},{"kind":"text","text":")"}],"required":true,"role":"symbol","navigatorTitle":[{"kind":"identifier","text":"attachView:"}],"roleHeading":"Instance Method","symbolKind":"method","title":"attach(_:)"},"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/VideoStreamProtocol\/attach(_:)","interfaceLanguage":"swift"},"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoStreamProtocol":{"kind":"symbol","fragments":[{"text":"protocol","kind":"keyword"},{"text":" ","kind":"text"},{"text":"VideoStreamProtocol","kind":"identifier"}],"url":"\/documentation\/skywayroom\/videostreamprotocol","role":"symbol","navigatorTitle":[{"text":"VideoStreamProtocol","kind":"identifier"}],"type":"topic","title":"VideoStreamProtocol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/VideoStreamProtocol","abstract":[{"type":"text","text":"VideoStreamProtocol"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoStreamProtocol/attach(_:)":{"kind":"symbol","fragments":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"attach","kind":"identifier"},{"text":"(","kind":"text"},{"preciseIdentifier":"c:objc(cs)SKWVideoView","text":"VideoView","kind":"typeIdentifier"},{"text":")","kind":"text"}],"url":"\/documentation\/skywayroom\/videostreamprotocol\/attach(_:)","required":true,"role":"symbol","navigatorTitle":[{"text":"attachView:","kind":"identifier"}],"type":"topic","title":"attach(_:)","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/VideoStreamProtocol\/attach(_:)","abstract":[]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoView":{"kind":"symbol","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"VideoView"}],"url":"\/documentation\/skywayroom\/videoview","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"VideoView"}],"type":"topic","title":"VideoView","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/VideoView","abstract":[{"type":"text","text":"Videoを描画するView"}]}},"variantOverrides":[{"traits":[{"interfaceLanguage":"occ"}],"patch":[{"path":"\/identifier\/interfaceLanguage","value":"occ","op":"replace"},{"path":"\/metadata\/platforms","value":null,"op":"add"},{"path":"\/metadata\/roleHeading","value":"Instance Method","op":"replace"},{"path":"\/metadata\/title","value":"attachView:","op":"replace"},{"path":"\/metadata\/symbolKind","value":"method","op":"replace"},{"path":"\/metadata\/fragments","value":[{"text":"- ","kind":"text"},{"text":"attachView:","kind":"identifier"}],"op":"replace"},{"op":"add","path":"\/topicSections","value":null},{"path":"\/relationshipsSections","value":null,"op":"add"},{"path":"\/seeAlsoSections","value":null,"op":"add"},{"path":"\/primaryContentSections\/0","value":{"kind":"declarations","declarations":[{"tokens":[{"text":"- (","kind":"text"},{"text":"void","kind":"typeIdentifier","preciseIdentifier":"c:v"},{"text":") ","kind":"text"},{"text":"attachView:","kind":"identifier"},{"text":"(","kind":"text"},{"text":"SKWVideoView","kind":"typeIdentifier","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/VideoView","preciseIdentifier":"c:objc(cs)SKWVideoView"},{"text":" *) ","kind":"text"},{"text":"view","kind":"internalParam"},{"text":";","kind":"text"}],"languages":["occ"],"platforms":["iOS"]}]},"op":"replace"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoStreamProtocol\/title","value":"SKWVideoStreamProtocol"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoStreamProtocol\/fragments","value":[{"text":"SKWVideoStreamProtocol","kind":"identifier"}],"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoStreamProtocol\/navigatorTitle","op":"replace","value":[{"text":"SKWVideoStreamProtocol","kind":"identifier"}]},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoStreamProtocol~1attach(_:)\/title","op":"replace","value":"attachView:"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoStreamProtocol~1attach(_:)\/fragments","op":"replace","value":[{"kind":"text","text":"- "},{"kind":"identifier","text":"attachView:"}]},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoView\/title","op":"replace","value":"SKWVideoView"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoView\/fragments","value":[{"text":"SKWVideoView","kind":"identifier"}]},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoView\/navigatorTitle","op":"replace","value":[{"text":"SKWVideoView","kind":"identifier"}]}]}]}
+{
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoStreamProtocol"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoStreamProtocol/attach(_:)"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:objc(pl)SKWVideoStreamProtocol(im)attachView:",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "func"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "attach"
+      },
+      {
+        "kind": "text",
+        "text": "("
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "c:objc(cs)SKWVideoView",
+        "text": "VideoView"
+      },
+      {
+        "kind": "text",
+        "text": ")"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "attachView:"
+      }
+    ],
+    "required": true,
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "symbolKind": "method",
+    "title": "attach(_:)"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "attach"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "externalParam",
+              "text": "_"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "view"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoView",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)SKWVideoView",
+              "text": "VideoView"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoStreamProtocol": {
+      "abstract": [
+        {
+          "text": "VideoStreamProtocol",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "protocol"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "VideoStreamProtocol"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoStreamProtocol",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "VideoStreamProtocol"
+        }
+      ],
+      "role": "symbol",
+      "title": "VideoStreamProtocol",
+      "type": "topic",
+      "url": "/documentation/skywayroom/videostreamprotocol"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoStreamProtocol/attach(_:)": {
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "attach"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWVideoView",
+          "text": "VideoView"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoStreamProtocol/attach(_:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "attachView:"
+        }
+      ],
+      "required": true,
+      "role": "symbol",
+      "title": "attach(_:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/videostreamprotocol/attach(_:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoView": {
+      "abstract": [
+        {
+          "text": "Videoを描画するView",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "VideoView"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoView",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "VideoView"
+        }
+      ],
+      "role": "symbol",
+      "title": "VideoView",
+      "type": "topic",
+      "url": "/documentation/skywayroom/videoview"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Instance Method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "attachView:"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "attachView:"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "text",
+                    "text": "- ("
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:v",
+                    "text": "void"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ") "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "attachView:"
+                  },
+                  {
+                    "kind": "text",
+                    "text": "("
+                  },
+                  {
+                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoView",
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:objc(cs)SKWVideoView",
+                    "text": "SKWVideoView"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " *) "
+                  },
+                  {
+                    "kind": "internalParam",
+                    "text": "view"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ";"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoStreamProtocol~1attach(_:)/title",
+          "value": "attachView:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoStreamProtocol~1attach(_:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "attachView:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoStreamProtocol/title",
+          "value": "SKWVideoStreamProtocol"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoStreamProtocol/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWVideoStreamProtocol"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoStreamProtocol/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWVideoStreamProtocol"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoView/title",
+          "value": "SKWVideoView"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoView/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWVideoView"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoView/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWVideoView"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/videostreamprotocol/attach(_:)"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/videostreamprotocol/attach(_:)"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

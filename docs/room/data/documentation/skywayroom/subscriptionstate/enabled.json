@@ -1,1 +1,327 @@
-{"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"text":"case","kind":"keyword"},{"text":" ","kind":"text"},{"text":"enabled","kind":"identifier"}],"languages":["swift"],"platforms":["iOS"]}]}],"variants":[{"traits":[{"interfaceLanguage":"swift"}],"paths":["\/documentation\/skywayroom\/subscriptionstate\/enabled"]},{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/skywayroom\/subscriptionstate\/enabled"]}],"metadata":{"roleHeading":"Case","navigatorTitle":[{"kind":"identifier","text":"SKWSubscriptionStateEnabled"}],"title":"SubscriptionState.enabled","symbolKind":"case","externalID":"c:@E@SKWSubscriptionState@SKWSubscriptionStateEnabled","modules":[{"name":"SkyWayRoom"}],"role":"symbol","fragments":[{"text":"case","kind":"keyword"},{"text":" ","kind":"text"},{"text":"enabled","kind":"identifier"}]},"kind":"symbol","sections":[],"abstract":[{"type":"text","text":"有効状態"}],"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SubscriptionState"]]},"schemaVersion":{"patch":0,"minor":3,"major":0},"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SubscriptionState\/enabled","interfaceLanguage":"swift"},"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom/SubscriptionState/enabled":{"url":"\/documentation\/skywayroom\/subscriptionstate\/enabled","navigatorTitle":[{"text":"SKWSubscriptionStateEnabled","kind":"identifier"}],"type":"topic","kind":"symbol","abstract":[{"type":"text","text":"有効状態"}],"title":"SubscriptionState.enabled","role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SubscriptionState\/enabled","fragments":[{"text":"case","kind":"keyword"},{"text":" ","kind":"text"},{"text":"enabled","kind":"identifier"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/SubscriptionState":{"url":"\/documentation\/skywayroom\/subscriptionstate","navigatorTitle":[{"text":"SubscriptionState","kind":"identifier"}],"type":"topic","kind":"symbol","abstract":[{"type":"text","text":"Subscriptionの状態"}],"title":"SubscriptionState","role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SubscriptionState","fragments":[{"text":"enum","kind":"keyword"},{"text":" ","kind":"text"},{"text":"SubscriptionState","kind":"identifier"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]}},"variantOverrides":[{"patch":[{"path":"\/identifier\/interfaceLanguage","value":"occ","op":"replace"},{"path":"\/metadata\/platforms","value":null,"op":"add"},{"path":"\/metadata\/roleHeading","value":"Enumeration Case","op":"replace"},{"path":"\/metadata\/title","value":"SKWSubscriptionStateEnabled","op":"replace"},{"path":"\/metadata\/symbolKind","value":"case","op":"replace"},{"path":"\/metadata\/fragments","value":[{"text":"SKWSubscriptionStateEnabled","kind":"identifier"}],"op":"replace"},{"path":"\/topicSections","value":null,"op":"add"},{"path":"\/relationshipsSections","value":null,"op":"add"},{"path":"\/seeAlsoSections","value":null,"op":"add"},{"path":"\/primaryContentSections\/0","value":{"kind":"declarations","declarations":[{"platforms":["iOS"],"languages":["occ"],"tokens":[{"kind":"identifier","text":"SKWSubscriptionStateEnabled"}]}]},"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState~1enabled\/title","value":"SKWSubscriptionStateEnabled","op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState~1enabled\/fragments","value":[{"text":"SKWSubscriptionStateEnabled","kind":"identifier"}],"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState\/title","value":"SKWSubscriptionState","op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState\/fragments","value":[{"text":"SKWSubscriptionState","kind":"identifier"}],"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState\/navigatorTitle","value":[{"text":"SKWSubscriptionState","kind":"identifier"}],"op":"replace"}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "abstract": [
+    {
+      "text": "有効状態",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SubscriptionState"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SubscriptionState/enabled"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:@E@SKWSubscriptionState@SKWSubscriptionStateEnabled",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "case"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "enabled"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "SKWSubscriptionStateEnabled"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Case",
+    "symbolKind": "case",
+    "title": "SubscriptionState.enabled"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "case"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "enabled"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SubscriptionState": {
+      "abstract": [
+        {
+          "text": "Subscriptionの状態",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "enum"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "SubscriptionState"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SubscriptionState",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SubscriptionState"
+        }
+      ],
+      "role": "symbol",
+      "title": "SubscriptionState",
+      "type": "topic",
+      "url": "/documentation/skywayroom/subscriptionstate"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SubscriptionState/enabled": {
+      "abstract": [
+        {
+          "text": "有効状態",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "case"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "enabled"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SubscriptionState/enabled",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SKWSubscriptionStateEnabled"
+        }
+      ],
+      "role": "symbol",
+      "title": "SubscriptionState.enabled",
+      "type": "topic",
+      "url": "/documentation/skywayroom/subscriptionstate/enabled"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Enumeration Case"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "SKWSubscriptionStateEnabled"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "case"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSubscriptionStateEnabled"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "identifier",
+                    "text": "SKWSubscriptionStateEnabled"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState/title",
+          "value": "SKWSubscriptionState"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSubscriptionState"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSubscriptionState"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState~1enabled/title",
+          "value": "SKWSubscriptionStateEnabled"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState~1enabled/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSubscriptionStateEnabled"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/subscriptionstate/enabled"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/subscriptionstate/enabled"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

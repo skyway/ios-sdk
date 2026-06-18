@@ -1,1 +1,514 @@
-{"kind":"symbol","abstract":[{"text":"再生音量を設定します。","type":"text"}],"primaryContentSections":[{"declarations":[{"tokens":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"setVolume","kind":"identifier"},{"text":"(","kind":"text"},{"text":"_","kind":"externalParam"},{"text":" ","kind":"text"},{"text":"volume","kind":"internalParam"},{"text":": ","kind":"text"},{"text":"Double","preciseIdentifier":"s:Sd","kind":"typeIdentifier"},{"text":")","kind":"text"}],"languages":["swift"],"platforms":["iOS"]}],"kind":"declarations"},{"parameters":[{"name":"volume","content":[{"type":"paragraph","inlineContent":[{"type":"text","text":"音量の倍率。通常は 0.0〜10.0 を指定します。"},{"text":" ","type":"text"},{"text":"0.0 はミュート、10.0 は標準音量を表します。","type":"text"},{"text":" ","type":"text"},{"text":"範囲外の値が指定された場合の動作は保証されないため、呼び出し側で 0.0〜1.0","type":"text"},{"text":" ","type":"text"},{"text":"に収まる値を指定してください。","type":"text"}]}]}],"kind":"parameters"}],"variants":[{"paths":["\/documentation\/skywayroom\/remoteaudiostream\/setvolume(_:)"],"traits":[{"interfaceLanguage":"swift"}]},{"paths":["\/documentation\/skywayroom\/remoteaudiostream\/setvolume(_:)"],"traits":[{"interfaceLanguage":"occ"}]}],"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteAudioStream\/setVolume(_:)","interfaceLanguage":"swift"},"schemaVersion":{"patch":0,"minor":3,"major":0},"sections":[],"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteAudioStream"]]},"metadata":{"symbolKind":"method","title":"setVolume(_:)","fragments":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"setVolume","kind":"identifier"},{"text":"(","kind":"text"},{"text":"Double","kind":"typeIdentifier","preciseIdentifier":"s:Sd"},{"text":")","kind":"text"}],"navigatorTitle":[{"text":"setVolume:","kind":"identifier"}],"role":"symbol","externalID":"c:objc(cs)SKWRemoteAudioStream(im)setVolume:","roleHeading":"Instance Method","modules":[{"name":"SkyWayRoom"}]},"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteAudioStream/setVolume(_:)":{"kind":"symbol","title":"setVolume(_:)","abstract":[{"type":"text","text":"再生音量を設定します。"}],"fragments":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"setVolume","kind":"identifier"},{"text":"(","kind":"text"},{"text":"Double","kind":"typeIdentifier","preciseIdentifier":"s:Sd"},{"text":")","kind":"text"}],"identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteAudioStream\/setVolume(_:)","navigatorTitle":[{"kind":"identifier","text":"setVolume:"}],"role":"symbol","type":"topic","url":"\/documentation\/skywayroom\/remoteaudiostream\/setvolume(_:)"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteAudioStream":{"url":"\/documentation\/skywayroom\/remoteaudiostream","type":"topic","abstract":[{"text":"RemoteAudioStreamクラス","type":"text"}],"fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"kind":"identifier","text":"RemoteAudioStream"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteAudioStream","title":"RemoteAudioStream","navigatorTitle":[{"kind":"identifier","text":"RemoteAudioStream"}],"kind":"symbol"}},"variantOverrides":[{"traits":[{"interfaceLanguage":"occ"}],"patch":[{"path":"\/identifier\/interfaceLanguage","value":"occ","op":"replace"},{"path":"\/metadata\/platforms","value":null,"op":"add"},{"path":"\/metadata\/roleHeading","value":"Instance Method","op":"replace"},{"path":"\/metadata\/title","value":"setVolume:","op":"replace"},{"path":"\/metadata\/symbolKind","value":"method","op":"replace"},{"op":"replace","value":[{"text":"- ","kind":"text"},{"text":"setVolume:","kind":"identifier"}],"path":"\/metadata\/fragments"},{"op":"add","value":null,"path":"\/topicSections"},{"op":"add","value":null,"path":"\/relationshipsSections"},{"op":"add","value":null,"path":"\/seeAlsoSections"},{"op":"replace","value":{"declarations":[{"platforms":["iOS"],"languages":["occ"],"tokens":[{"kind":"text","text":"- ("},{"text":"void","kind":"typeIdentifier","preciseIdentifier":"c:v"},{"text":") ","kind":"text"},{"text":"setVolume:","kind":"identifier"},{"text":"(","kind":"text"},{"preciseIdentifier":"c:d","text":"double","kind":"typeIdentifier"},{"text":") ","kind":"text"},{"text":"volume","kind":"internalParam"},{"text":";","kind":"text"}]}],"kind":"declarations"},"path":"\/primaryContentSections\/0"},{"op":"replace","value":{"parameters":[{"content":[{"type":"paragraph","inlineContent":[{"type":"text","text":"音量の倍率。通常は 0.0〜10.0 を指定します。"},{"type":"text","text":" "},{"type":"text","text":"0.0 はミュート、10.0 は標準音量を表します。"},{"type":"text","text":" "},{"text":"範囲外の値が指定された場合の動作は保証されないため、呼び出し側で 0.0〜1.0","type":"text"},{"text":" ","type":"text"},{"text":"に収まる値を指定してください。","type":"text"}]}],"name":"volume"}],"kind":"parameters"},"path":"\/primaryContentSections\/1"},{"op":"replace","value":"setVolume:","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream~1setVolume(_:)\/title"},{"op":"replace","value":[{"text":"- ","kind":"text"},{"text":"setVolume:","kind":"identifier"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream~1setVolume(_:)\/fragments"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream\/title","value":"SKWRemoteAudioStream"},{"op":"replace","value":[{"text":"SKWRemoteAudioStream","kind":"identifier"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream\/fragments"},{"op":"replace","value":[{"text":"SKWRemoteAudioStream","kind":"identifier"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream\/navigatorTitle"}]}]}
+{
+  "abstract": [
+    {
+      "text": "再生音量を設定します。",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteAudioStream"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteAudioStream/setVolume(_:)"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:objc(cs)SKWRemoteAudioStream(im)setVolume:",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "func"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "setVolume"
+      },
+      {
+        "kind": "text",
+        "text": "("
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:Sd",
+        "text": "Double"
+      },
+      {
+        "kind": "text",
+        "text": ")"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "setVolume:"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "symbolKind": "method",
+    "title": "setVolume(_:)"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "setVolume"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "externalParam",
+              "text": "_"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "volume"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sd",
+              "text": "Double"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "kind": "parameters",
+      "parameters": [
+        {
+          "content": [
+            {
+              "inlineContent": [
+                {
+                  "text": "音量の倍率。通常は 0.0〜10.0 を指定します。",
+                  "type": "text"
+                },
+                {
+                  "text": " ",
+                  "type": "text"
+                },
+                {
+                  "text": "0.0 はミュート、10.0 は標準音量を表します。",
+                  "type": "text"
+                },
+                {
+                  "text": " ",
+                  "type": "text"
+                },
+                {
+                  "text": "範囲外の値が指定された場合の動作は保証されないため、呼び出し側で 0.0〜1.0",
+                  "type": "text"
+                },
+                {
+                  "text": " ",
+                  "type": "text"
+                },
+                {
+                  "text": "に収まる値を指定してください。",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "volume"
+        }
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteAudioStream": {
+      "abstract": [
+        {
+          "text": "RemoteAudioStreamクラス",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "RemoteAudioStream"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteAudioStream",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "RemoteAudioStream"
+        }
+      ],
+      "role": "symbol",
+      "title": "RemoteAudioStream",
+      "type": "topic",
+      "url": "/documentation/skywayroom/remoteaudiostream"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteAudioStream/setVolume(_:)": {
+      "abstract": [
+        {
+          "text": "再生音量を設定します。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "setVolume"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:Sd",
+          "text": "Double"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteAudioStream/setVolume(_:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "setVolume:"
+        }
+      ],
+      "role": "symbol",
+      "title": "setVolume(_:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/remoteaudiostream/setvolume(_:)"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Instance Method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "setVolume:"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "setVolume:"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "text",
+                    "text": "- ("
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:v",
+                    "text": "void"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ") "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "setVolume:"
+                  },
+                  {
+                    "kind": "text",
+                    "text": "("
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:d",
+                    "text": "double"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ") "
+                  },
+                  {
+                    "kind": "internalParam",
+                    "text": "volume"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ";"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/1",
+          "value": {
+            "kind": "parameters",
+            "parameters": [
+              {
+                "content": [
+                  {
+                    "inlineContent": [
+                      {
+                        "text": "音量の倍率。通常は 0.0〜10.0 を指定します。",
+                        "type": "text"
+                      },
+                      {
+                        "text": " ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "0.0 はミュート、10.0 は標準音量を表します。",
+                        "type": "text"
+                      },
+                      {
+                        "text": " ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "範囲外の値が指定された場合の動作は保証されないため、呼び出し側で 0.0〜1.0",
+                        "type": "text"
+                      },
+                      {
+                        "text": " ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "に収まる値を指定してください。",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "name": "volume"
+              }
+            ]
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream/title",
+          "value": "SKWRemoteAudioStream"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemoteAudioStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemoteAudioStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream~1setVolume(_:)/title",
+          "value": "setVolume:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream~1setVolume(_:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "setVolume:"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/remoteaudiostream/setvolume(_:)"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/remoteaudiostream/setvolume(_:)"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

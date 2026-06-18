@@ -1,1 +1,602 @@
-{"relationshipsSections":[{"identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Member"],"kind":"relationships","type":"inheritsFrom","title":"Inherits From"},{"identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemotePerson","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SFUBotMember","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/UnknownMember"],"kind":"relationships","type":"inheritedBy","title":"Inherited By"},{"identifiers":["doc:\/\/com.ntt.skyway.room\/objc(pl)NSObject","doc:\/\/com.ntt.skyway.room\/s7CVarArgP","doc:\/\/com.ntt.skyway.room\/s28CustomDebugStringConvertibleP","doc:\/\/com.ntt.skyway.room\/s23CustomStringConvertibleP","doc:\/\/com.ntt.skyway.room\/SQ","doc:\/\/com.ntt.skyway.room\/SH"],"kind":"relationships","type":"conformsTo","title":"Conforms To"}],"variants":[{"paths":["\/documentation\/skywayroom\/remotemember"],"traits":[{"interfaceLanguage":"swift"}]},{"paths":["\/documentation\/skywayroom\/remotemember"],"traits":[{"interfaceLanguage":"occ"}]}],"schemaVersion":{"patch":0,"major":0,"minor":3},"sections":[],"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"RemoteMember"}],"languages":["swift"],"platforms":["iOS"]}]}],"identifier":{"interfaceLanguage":"swift","url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteMember"},"metadata":{"roleHeading":"Class","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"RemoteMember"}],"externalID":"c:objc(cs)SKWRemoteMember","role":"symbol","modules":[{"name":"SkyWayRoom"}],"navigatorTitle":[{"kind":"identifier","text":"RemoteMember"}],"title":"RemoteMember","symbolKind":"class"},"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom"]]},"kind":"symbol","references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePerson":{"url":"\/documentation\/skywayroom\/remoteperson","navigatorTitle":[{"kind":"identifier","text":"RemotePerson"}],"type":"topic","kind":"symbol","abstract":[],"title":"RemotePerson","role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemotePerson","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"RemotePerson"}]},"doc://com.ntt.skyway.room/s7CVarArgP":{"identifier":"doc:\/\/com.ntt.skyway.room\/s7CVarArgP","type":"unresolvable","title":"Swift.CVarArg"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/Member":{"kind":"symbol","fragments":[{"text":"class","kind":"keyword"},{"kind":"text","text":" "},{"kind":"identifier","text":"Member"}],"url":"\/documentation\/skywayroom\/member","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"Member"}],"type":"topic","title":"Member","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Member","abstract":[{"text":"Channelに入室しているMemberの抽象クラス","type":"text"}]},"doc://com.ntt.skyway.room/SH":{"identifier":"doc:\/\/com.ntt.skyway.room\/SH","type":"unresolvable","title":"Swift.Hashable"},"doc://com.ntt.skyway.room/s23CustomStringConvertibleP":{"identifier":"doc:\/\/com.ntt.skyway.room\/s23CustomStringConvertibleP","type":"unresolvable","title":"Swift.CustomStringConvertible"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteMember":{"kind":"symbol","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"RemoteMember"}],"url":"\/documentation\/skywayroom\/remotemember","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"RemoteMember"}],"type":"topic","title":"RemoteMember","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteMember","abstract":[]},"doc://com.ntt.skyway.room/SQ":{"identifier":"doc:\/\/com.ntt.skyway.room\/SQ","type":"unresolvable","title":"Swift.Equatable"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotMember":{"url":"\/documentation\/skywayroom\/sfubotmember","navigatorTitle":[{"kind":"identifier","text":"SFUBotMember"}],"type":"topic","kind":"symbol","title":"SFUBotMember","abstract":[{"type":"text","text":"SFU Bot"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SFUBotMember","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"SFUBotMember"}]},"doc://com.ntt.skyway.room/objc(pl)NSObject":{"identifier":"doc:\/\/com.ntt.skyway.room\/objc(pl)NSObject","type":"unresolvable","title":"ObjectiveC.NSObjectProtocol"},"doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP":{"identifier":"doc:\/\/com.ntt.skyway.room\/s28CustomDebugStringConvertibleP","type":"unresolvable","title":"Swift.CustomDebugStringConvertible"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/UnknownMember":{"url":"\/documentation\/skywayroom\/unknownmember","type":"topic","abstract":[],"fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"UnknownMember","kind":"identifier"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/UnknownMember","title":"UnknownMember","navigatorTitle":[{"text":"UnknownMember","kind":"identifier"}],"kind":"symbol"}},"variantOverrides":[{"patch":[{"op":"replace","path":"\/identifier\/interfaceLanguage","value":"occ"},{"op":"add","path":"\/metadata\/platforms","value":null},{"op":"replace","path":"\/metadata\/roleHeading","value":"Class"},{"op":"replace","path":"\/metadata\/title","value":"SKWRemoteMember"},{"op":"replace","path":"\/metadata\/symbolKind","value":"class"},{"op":"replace","path":"\/metadata\/fragments","value":[{"kind":"identifier","text":"SKWRemoteMember"}]},{"op":"replace","path":"\/metadata\/navigatorTitle","value":[{"kind":"identifier","text":"SKWRemoteMember"}]},{"op":"add","path":"\/topicSections","value":null},{"op":"replace","path":"\/relationshipsSections","value":[{"identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Member"],"kind":"relationships","type":"inheritsFrom","title":"Inherits From"},{"identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemotePerson","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SFUBotMember","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/UnknownMember"],"kind":"relationships","type":"inheritedBy","title":"Inherited By"}]},{"op":"add","path":"\/seeAlsoSections","value":null},{"op":"replace","path":"\/primaryContentSections\/0","value":{"kind":"declarations","declarations":[{"tokens":[{"text":"@interface","kind":"keyword"},{"text":" ","kind":"text"},{"text":"SKWRemoteMember","kind":"identifier"},{"text":" : ","kind":"text"},{"text":"SKWMember","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Member","kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWMember"}],"platforms":["iOS"],"languages":["occ"]}]}},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson\/title","value":"SKWRemotePerson"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson\/fragments","value":[{"kind":"identifier","text":"SKWRemotePerson"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson\/navigatorTitle","value":[{"kind":"identifier","text":"SKWRemotePerson"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Member\/title","value":"SKWMember"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Member\/fragments","value":[{"kind":"identifier","text":"SKWMember"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Member\/navigatorTitle","value":[{"kind":"identifier","text":"SKWMember"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteMember\/title","value":"SKWRemoteMember"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteMember\/fragments","value":[{"kind":"identifier","text":"SKWRemoteMember"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteMember\/navigatorTitle","value":[{"kind":"identifier","text":"SKWRemoteMember"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember\/title","value":"SKWSFUBotMember"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember\/fragments","value":[{"kind":"identifier","text":"SKWSFUBotMember"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember\/navigatorTitle","value":[{"kind":"identifier","text":"SKWSFUBotMember"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1UnknownMember\/title","value":"SKWUnknownMember"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1UnknownMember\/fragments","value":[{"kind":"identifier","text":"SKWUnknownMember"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1UnknownMember\/navigatorTitle","value":[{"kind":"identifier","text":"SKWUnknownMember"}]}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteMember"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:objc(cs)SKWRemoteMember",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "class"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "RemoteMember"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "RemoteMember"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Class",
+    "symbolKind": "class",
+    "title": "RemoteMember"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "class"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "RemoteMember"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/SH": {
+      "identifier": "doc://com.ntt.skyway.room/SH",
+      "title": "Swift.Hashable",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/SQ": {
+      "identifier": "doc://com.ntt.skyway.room/SQ",
+      "title": "Swift.Equatable",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Member": {
+      "abstract": [
+        {
+          "text": "Channelに入室しているMemberの抽象クラス",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "Member"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Member",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "Member"
+        }
+      ],
+      "role": "symbol",
+      "title": "Member",
+      "type": "topic",
+      "url": "/documentation/skywayroom/member"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteMember": {
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "RemoteMember"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteMember",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "RemoteMember"
+        }
+      ],
+      "role": "symbol",
+      "title": "RemoteMember",
+      "type": "topic",
+      "url": "/documentation/skywayroom/remotemember"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePerson": {
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "RemotePerson"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePerson",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "RemotePerson"
+        }
+      ],
+      "role": "symbol",
+      "title": "RemotePerson",
+      "type": "topic",
+      "url": "/documentation/skywayroom/remoteperson"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotMember": {
+      "abstract": [
+        {
+          "text": "SFU Bot",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "SFUBotMember"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotMember",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SFUBotMember"
+        }
+      ],
+      "role": "symbol",
+      "title": "SFUBotMember",
+      "type": "topic",
+      "url": "/documentation/skywayroom/sfubotmember"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/UnknownMember": {
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "UnknownMember"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/UnknownMember",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "UnknownMember"
+        }
+      ],
+      "role": "symbol",
+      "title": "UnknownMember",
+      "type": "topic",
+      "url": "/documentation/skywayroom/unknownmember"
+    },
+    "doc://com.ntt.skyway.room/objc(pl)NSObject": {
+      "identifier": "doc://com.ntt.skyway.room/objc(pl)NSObject",
+      "title": "ObjectiveC.NSObjectProtocol",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/s23CustomStringConvertibleP": {
+      "identifier": "doc://com.ntt.skyway.room/s23CustomStringConvertibleP",
+      "title": "Swift.CustomStringConvertible",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP": {
+      "identifier": "doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP",
+      "title": "Swift.CustomDebugStringConvertible",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/s7CVarArgP": {
+      "identifier": "doc://com.ntt.skyway.room/s7CVarArgP",
+      "title": "Swift.CVarArg",
+      "type": "unresolvable"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Member"
+      ],
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom"
+    },
+    {
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePerson",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotMember",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/UnknownMember"
+      ],
+      "kind": "relationships",
+      "title": "Inherited By",
+      "type": "inheritedBy"
+    },
+    {
+      "identifiers": [
+        "doc://com.ntt.skyway.room/objc(pl)NSObject",
+        "doc://com.ntt.skyway.room/s7CVarArgP",
+        "doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP",
+        "doc://com.ntt.skyway.room/s23CustomStringConvertibleP",
+        "doc://com.ntt.skyway.room/SQ",
+        "doc://com.ntt.skyway.room/SH"
+      ],
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo"
+    }
+  ],
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Class"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "SKWRemoteMember"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "class"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemoteMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemoteMember"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/relationshipsSections",
+          "value": [
+            {
+              "identifiers": [
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Member"
+              ],
+              "kind": "relationships",
+              "title": "Inherits From",
+              "type": "inheritsFrom"
+            },
+            {
+              "identifiers": [
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePerson",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotMember",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/UnknownMember"
+              ],
+              "kind": "relationships",
+              "title": "Inherited By",
+              "type": "inheritedBy"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "keyword",
+                    "text": "@interface"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "SKWRemoteMember"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " : "
+                  },
+                  {
+                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Member",
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:objc(cs)SKWMember",
+                    "text": "SKWMember"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson/title",
+          "value": "SKWRemotePerson"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemotePerson"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemotePerson"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1UnknownMember/title",
+          "value": "SKWUnknownMember"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1UnknownMember/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWUnknownMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1UnknownMember/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWUnknownMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/title",
+          "value": "SKWSFUBotMember"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSFUBotMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSFUBotMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteMember/title",
+          "value": "SKWRemoteMember"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteMember/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemoteMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteMember/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemoteMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Member/title",
+          "value": "SKWMember"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Member/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Member/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWMember"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/remotemember"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/remotemember"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,223 @@
-{"variants":[{"paths":["\/documentation\/skywayainoisecanceller\/modeltype\/init(rawvalue:)"],"traits":[{"interfaceLanguage":"swift"}]}],"schemaVersion":{"minor":3,"major":0,"patch":0},"identifier":{"url":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ModelType\/init(rawValue:)","interfaceLanguage":"swift"},"sections":[],"kind":"symbol","hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller","doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ModelType"]]},"abstract":[{"type":"text","text":"Inherited from "},{"type":"codeVoice","code":"RawRepresentable.init(rawValue:)"},{"text":".","type":"text"}],"metadata":{"symbolKind":"init","roleHeading":"Initializer","fragments":[{"text":"init","kind":"identifier"},{"text":"?(","kind":"text"},{"text":"rawValue","kind":"externalParam"},{"text":": ","kind":"text"},{"preciseIdentifier":"s:SS","text":"String","kind":"typeIdentifier"},{"text":")","kind":"text"}],"externalID":"s:22SkyWayAINoiseCanceller9ModelTypeO8rawValueACSgSS_tcfc","modules":[{"name":"SkyWayAINoiseCanceller"}],"title":"init(rawValue:)","role":"symbol"},"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"text":"init","kind":"keyword"},{"text":"?(","kind":"text"},{"text":"rawValue","kind":"externalParam"},{"text":": ","kind":"text"},{"preciseIdentifier":"s:SS","kind":"typeIdentifier","text":"String"},{"kind":"text","text":")"}],"platforms":["iOS"],"languages":["swift"]}]}],"references":{"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType":{"fragments":[{"kind":"keyword","text":"enum"},{"text":" ","kind":"text"},{"text":"ModelType","kind":"identifier"}],"abstract":[{"text":"使用するAIノイズキャンセルモデルの種類を表します。","type":"text"}],"url":"\/documentation\/skywayainoisecanceller\/modeltype","kind":"symbol","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"ModelType"}],"type":"topic","title":"ModelType","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ModelType"},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/init(rawValue:)":{"abstract":[],"fragments":[{"kind":"identifier","text":"init"},{"kind":"text","text":"?("},{"text":"rawValue","kind":"externalParam"},{"text":": ","kind":"text"},{"preciseIdentifier":"s:SS","kind":"typeIdentifier","text":"String"},{"kind":"text","text":")"}],"identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ModelType\/init(rawValue:)","title":"init(rawValue:)","role":"symbol","kind":"symbol","url":"\/documentation\/skywayainoisecanceller\/modeltype\/init(rawvalue:)","type":"topic"},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller":{"title":"SkyWayAINoiseCanceller","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller","role":"collection","url":"\/documentation\/skywayainoisecanceller","abstract":[{"type":"strong","inlineContent":[{"text":"Version: 1.1.0","type":"text"}]},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}],"type":"topic","kind":"symbol"}}}
+{
+  "abstract": [
+    {
+      "text": "Inherited from ",
+      "type": "text"
+    },
+    {
+      "code": "RawRepresentable.init(rawValue:)",
+      "type": "codeVoice"
+    },
+    {
+      "text": ".",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller",
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/init(rawValue:)"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "s:22SkyWayAINoiseCanceller9ModelTypeO8rawValueACSgSS_tcfc",
+    "fragments": [
+      {
+        "kind": "identifier",
+        "text": "init"
+      },
+      {
+        "kind": "text",
+        "text": "?("
+      },
+      {
+        "kind": "externalParam",
+        "text": "rawValue"
+      },
+      {
+        "kind": "text",
+        "text": ": "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:SS",
+        "text": "String"
+      },
+      {
+        "kind": "text",
+        "text": ")"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayAINoiseCanceller"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Initializer",
+    "symbolKind": "init",
+    "title": "init(rawValue:)"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "init"
+            },
+            {
+              "kind": "text",
+              "text": "?("
+            },
+            {
+              "kind": "externalParam",
+              "text": "rawValue"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:SS",
+              "text": "String"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 1.1.0",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayAINoiseCanceller",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType": {
+      "abstract": [
+        {
+          "text": "使用するAIノイズキャンセルモデルの種類を表します。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "enum"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "ModelType"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "ModelType"
+        }
+      ],
+      "role": "symbol",
+      "title": "ModelType",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/modeltype"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/init(rawValue:)": {
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "?("
+        },
+        {
+          "kind": "externalParam",
+          "text": "rawValue"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:SS",
+          "text": "String"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/init(rawValue:)",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "init(rawValue:)",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/modeltype/init(rawvalue:)"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayainoisecanceller/modeltype/init(rawvalue:)"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    }
+  ]
+}

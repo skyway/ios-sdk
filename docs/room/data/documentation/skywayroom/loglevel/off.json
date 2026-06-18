@@ -1,1 +1,327 @@
-{"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"text":"case","kind":"keyword"},{"text":" ","kind":"text"},{"text":"off","kind":"identifier"}],"platforms":["iOS"],"languages":["swift"]}]}],"variants":[{"traits":[{"interfaceLanguage":"swift"}],"paths":["\/documentation\/skywayroom\/loglevel\/off"]},{"paths":["\/documentation\/skywayroom\/loglevel\/off"],"traits":[{"interfaceLanguage":"occ"}]}],"metadata":{"roleHeading":"Case","navigatorTitle":[{"text":"SKWLogLevelOff","kind":"identifier"}],"title":"LogLevel.off","externalID":"c:@E@SKWLogLevel@SKWLogLevelOff","symbolKind":"case","modules":[{"name":"SkyWayRoom"}],"role":"symbol","fragments":[{"text":"case","kind":"keyword"},{"text":" ","kind":"text"},{"text":"off","kind":"identifier"}]},"kind":"symbol","sections":[],"abstract":[{"type":"text","text":"ログを出力しません。"}],"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/LogLevel"]]},"schemaVersion":{"minor":3,"patch":0,"major":0},"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/LogLevel\/off","interfaceLanguage":"swift"},"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/LogLevel":{"url":"\/documentation\/skywayroom\/loglevel","navigatorTitle":[{"kind":"identifier","text":"LogLevel"}],"type":"topic","kind":"symbol","abstract":[{"type":"text","text":"ログのレベル一覧"}],"title":"LogLevel","role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/LogLevel","fragments":[{"kind":"keyword","text":"enum"},{"kind":"text","text":" "},{"kind":"identifier","text":"LogLevel"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/LogLevel/off":{"url":"\/documentation\/skywayroom\/loglevel\/off","navigatorTitle":[{"text":"SKWLogLevelOff","kind":"identifier"}],"type":"topic","kind":"symbol","title":"LogLevel.off","abstract":[{"type":"text","text":"ログを出力しません。"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/LogLevel\/off","fragments":[{"kind":"keyword","text":"case"},{"kind":"text","text":" "},{"text":"off","kind":"identifier"}]}},"variantOverrides":[{"patch":[{"op":"replace","value":"occ","path":"\/identifier\/interfaceLanguage"},{"op":"add","value":null,"path":"\/metadata\/platforms"},{"path":"\/metadata\/roleHeading","op":"replace","value":"Enumeration Case"},{"path":"\/metadata\/title","op":"replace","value":"SKWLogLevelOff"},{"path":"\/metadata\/symbolKind","op":"replace","value":"case"},{"path":"\/metadata\/fragments","op":"replace","value":[{"text":"SKWLogLevelOff","kind":"identifier"}]},{"op":"add","path":"\/topicSections","value":null},{"path":"\/relationshipsSections","op":"add","value":null},{"op":"add","path":"\/seeAlsoSections","value":null},{"op":"replace","path":"\/primaryContentSections\/0","value":{"kind":"declarations","declarations":[{"languages":["occ"],"platforms":["iOS"],"tokens":[{"text":"SKWLogLevelOff","kind":"identifier"}]}]}},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LogLevel\/title","value":"SKWLogLevel"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LogLevel\/fragments","value":[{"text":"SKWLogLevel","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LogLevel\/navigatorTitle","value":[{"text":"SKWLogLevel","kind":"identifier"}]},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LogLevel~1off\/title","op":"replace","value":"SKWLogLevelOff"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LogLevel~1off\/fragments","value":[{"text":"SKWLogLevelOff","kind":"identifier"}]}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "abstract": [
+    {
+      "text": "ログを出力しません。",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LogLevel"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LogLevel/off"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:@E@SKWLogLevel@SKWLogLevelOff",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "case"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "off"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "SKWLogLevelOff"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Case",
+    "symbolKind": "case",
+    "title": "LogLevel.off"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "case"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "off"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LogLevel": {
+      "abstract": [
+        {
+          "text": "ログのレベル一覧",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "enum"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "LogLevel"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LogLevel",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "LogLevel"
+        }
+      ],
+      "role": "symbol",
+      "title": "LogLevel",
+      "type": "topic",
+      "url": "/documentation/skywayroom/loglevel"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LogLevel/off": {
+      "abstract": [
+        {
+          "text": "ログを出力しません。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "case"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "off"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LogLevel/off",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SKWLogLevelOff"
+        }
+      ],
+      "role": "symbol",
+      "title": "LogLevel.off",
+      "type": "topic",
+      "url": "/documentation/skywayroom/loglevel/off"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Enumeration Case"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "SKWLogLevelOff"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "case"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWLogLevelOff"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "identifier",
+                    "text": "SKWLogLevelOff"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LogLevel/title",
+          "value": "SKWLogLevel"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LogLevel/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWLogLevel"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LogLevel/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWLogLevel"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LogLevel~1off/title",
+          "value": "SKWLogLevelOff"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LogLevel~1off/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWLogLevelOff"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/loglevel/off"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/loglevel/off"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

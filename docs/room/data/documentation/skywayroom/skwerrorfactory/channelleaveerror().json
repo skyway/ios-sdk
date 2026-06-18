@@ -1,1 +1,392 @@
-{"kind":"symbol","primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"channelLeaveError"},{"kind":"text","text":"() -> any "},{"kind":"typeIdentifier","preciseIdentifier":"s:s5ErrorP","text":"Error"}],"platforms":["iOS"],"languages":["swift"]}]}],"variants":[{"traits":[{"interfaceLanguage":"swift"}],"paths":["\/documentation\/skywayroom\/skwerrorfactory\/channelleaveerror()"]},{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/skywayroom\/skwerrorfactory\/channelleaveerror()"]}],"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SKWErrorFactory\/channelLeaveError()","interfaceLanguage":"swift"},"sections":[],"schemaVersion":{"patch":0,"major":0,"minor":3},"metadata":{"symbolKind":"method","title":"channelLeaveError()","fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"channelLeaveError","kind":"identifier"},{"text":"() -> any ","kind":"text"},{"text":"Error","preciseIdentifier":"s:s5ErrorP","kind":"typeIdentifier"}],"navigatorTitle":[{"text":"channelLeaveError","kind":"identifier"}],"role":"symbol","roleHeading":"Type Method","externalID":"c:objc(cs)SKWErrorFactory(cm)channelLeaveError","modules":[{"name":"SkyWayRoom"}]},"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SKWErrorFactory"]]},"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWErrorFactory/channelLeaveError()":{"kind":"symbol","title":"channelLeaveError()","abstract":[],"fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"channelLeaveError","kind":"identifier"},{"text":"() -> any ","kind":"text"},{"text":"Error","preciseIdentifier":"s:s5ErrorP","kind":"typeIdentifier"}],"identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SKWErrorFactory\/channelLeaveError()","navigatorTitle":[{"text":"channelLeaveError","kind":"identifier"}],"role":"symbol","type":"topic","url":"\/documentation\/skywayroom\/skwerrorfactory\/channelleaveerror()"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWErrorFactory":{"url":"\/documentation\/skywayroom\/skwerrorfactory","type":"topic","abstract":[{"text":"エラーファクトリー","type":"text"}],"fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"SKWErrorFactory","kind":"identifier"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SKWErrorFactory","title":"SKWErrorFactory","navigatorTitle":[{"text":"SKWErrorFactory","kind":"identifier"}],"kind":"symbol"}},"variantOverrides":[{"patch":[{"op":"replace","value":"occ","path":"\/identifier\/interfaceLanguage"},{"op":"add","value":null,"path":"\/metadata\/platforms"},{"op":"replace","value":"Type Method","path":"\/metadata\/roleHeading"},{"op":"replace","value":"channelLeaveError","path":"\/metadata\/title"},{"op":"replace","value":"method","path":"\/metadata\/symbolKind"},{"op":"replace","value":[{"text":"+ ","kind":"text"},{"text":"channelLeaveError","kind":"identifier"}],"path":"\/metadata\/fragments"},{"op":"add","value":null,"path":"\/topicSections"},{"op":"add","value":null,"path":"\/relationshipsSections"},{"op":"add","value":null,"path":"\/seeAlsoSections"},{"op":"replace","value":{"declarations":[{"tokens":[{"kind":"text","text":"+ ("},{"kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)NSError","text":"NSError"},{"kind":"text","text":" *) "},{"kind":"identifier","text":"channelLeaveError"},{"kind":"text","text":";"}],"languages":["occ"],"platforms":["iOS"]}],"kind":"declarations"},"path":"\/primaryContentSections\/0"},{"op":"replace","value":"channelLeaveError","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorFactory~1channelLeaveError()\/title"},{"op":"replace","value":[{"text":"+ ","kind":"text"},{"text":"channelLeaveError","kind":"identifier"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorFactory~1channelLeaveError()\/fragments"},{"op":"replace","value":"SKWErrorFactory","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorFactory\/title"},{"op":"replace","value":[{"text":"SKWErrorFactory","kind":"identifier"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorFactory\/fragments"},{"op":"replace","value":[{"text":"SKWErrorFactory","kind":"identifier"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorFactory\/navigatorTitle"}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWErrorFactory"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWErrorFactory/channelLeaveError()"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:objc(cs)SKWErrorFactory(cm)channelLeaveError",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "class"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "keyword",
+        "text": "func"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "channelLeaveError"
+      },
+      {
+        "kind": "text",
+        "text": "() -> any "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:s5ErrorP",
+        "text": "Error"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "channelLeaveError"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Type Method",
+    "symbolKind": "method",
+    "title": "channelLeaveError()"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "class"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "channelLeaveError"
+            },
+            {
+              "kind": "text",
+              "text": "() -> any "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:s5ErrorP",
+              "text": "Error"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWErrorFactory": {
+      "abstract": [
+        {
+          "text": "エラーファクトリー",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "SKWErrorFactory"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWErrorFactory",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SKWErrorFactory"
+        }
+      ],
+      "role": "symbol",
+      "title": "SKWErrorFactory",
+      "type": "topic",
+      "url": "/documentation/skywayroom/skwerrorfactory"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWErrorFactory/channelLeaveError()": {
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "channelLeaveError"
+        },
+        {
+          "kind": "text",
+          "text": "() -> any "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:s5ErrorP",
+          "text": "Error"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWErrorFactory/channelLeaveError()",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "channelLeaveError"
+        }
+      ],
+      "role": "symbol",
+      "title": "channelLeaveError()",
+      "type": "topic",
+      "url": "/documentation/skywayroom/skwerrorfactory/channelleaveerror()"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Type Method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "channelLeaveError"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "+ "
+            },
+            {
+              "kind": "identifier",
+              "text": "channelLeaveError"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "text",
+                    "text": "+ ("
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:objc(cs)NSError",
+                    "text": "NSError"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " *) "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "channelLeaveError"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ";"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorFactory~1channelLeaveError()/title",
+          "value": "channelLeaveError"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorFactory~1channelLeaveError()/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "+ "
+            },
+            {
+              "kind": "identifier",
+              "text": "channelLeaveError"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorFactory/title",
+          "value": "SKWErrorFactory"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorFactory/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWErrorFactory"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorFactory/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWErrorFactory"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/skwerrorfactory/channelleaveerror()"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/skwerrorfactory/channelleaveerror()"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

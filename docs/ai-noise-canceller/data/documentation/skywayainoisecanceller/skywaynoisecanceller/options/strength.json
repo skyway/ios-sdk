@@ -1,1 +1,243 @@
-{"sections":[],"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"kind":"keyword","text":"var"},{"kind":"text","text":" "},{"kind":"identifier","text":"strength"},{"kind":"text","text":": "},{"kind":"typeIdentifier","text":"Int","preciseIdentifier":"s:Si"}],"languages":["swift"],"platforms":["iOS"]}]}],"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller","doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/SkyWayNoiseCanceller","doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/SkyWayNoiseCanceller\/Options"]]},"identifier":{"url":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/SkyWayNoiseCanceller\/Options\/strength","interfaceLanguage":"swift"},"variants":[{"traits":[{"interfaceLanguage":"swift"}],"paths":["\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/options\/strength"]}],"schemaVersion":{"patch":0,"minor":3,"major":0},"metadata":{"symbolKind":"property","roleHeading":"Instance Property","fragments":[{"kind":"keyword","text":"var"},{"kind":"text","text":" "},{"kind":"identifier","text":"strength"},{"kind":"text","text":": "},{"kind":"typeIdentifier","text":"Int","preciseIdentifier":"s:Si"}],"externalID":"s:22SkyWayAINoiseCanceller0ab5NoiseD0C7OptionsV8strengthSivp","modules":[{"name":"SkyWayAINoiseCanceller"}],"title":"strength","role":"symbol"},"kind":"symbol","abstract":[{"type":"text","text":"ノイズ抑制の強度（1〜100）"}],"references":{"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/Options":{"fragments":[{"kind":"keyword","text":"struct"},{"kind":"text","text":" "},{"text":"Options","kind":"identifier"}],"title":"SkyWayNoiseCanceller.Options","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/SkyWayNoiseCanceller\/Options","role":"symbol","kind":"symbol","url":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/options","type":"topic","abstract":[{"text":"ノイズ抑制の初期化オプション","type":"text"}],"navigatorTitle":[{"kind":"identifier","text":"Options"}]},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller":{"title":"SkyWayAINoiseCanceller","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller","role":"collection","url":"\/documentation\/skywayainoisecanceller","abstract":[{"type":"strong","inlineContent":[{"text":"Version: 1.1.0","type":"text"}]},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}],"type":"topic","kind":"symbol"},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller":{"fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"SkyWayNoiseCanceller","kind":"identifier"}],"abstract":[{"type":"text","text":"ノイズ抑制クラス"}],"type":"topic","title":"SkyWayNoiseCanceller","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/SkyWayNoiseCanceller","kind":"symbol","navigatorTitle":[{"kind":"identifier","text":"SkyWayNoiseCanceller"}],"url":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller","role":"symbol"},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/Options/strength":{"fragments":[{"kind":"keyword","text":"var"},{"kind":"text","text":" "},{"kind":"identifier","text":"strength"},{"kind":"text","text":": "},{"kind":"typeIdentifier","preciseIdentifier":"s:Si","text":"Int"}],"abstract":[{"type":"text","text":"ノイズ抑制の強度（1〜100）"}],"type":"topic","title":"strength","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/SkyWayNoiseCanceller\/Options\/strength","kind":"symbol","url":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/options\/strength","role":"symbol"}}}
+{
+  "abstract": [
+    {
+      "text": "ノイズ抑制の強度（1〜100）",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller",
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller",
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/Options"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/Options/strength"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "s:22SkyWayAINoiseCanceller0ab5NoiseD0C7OptionsV8strengthSivp",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "var"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "strength"
+      },
+      {
+        "kind": "text",
+        "text": ": "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:Si",
+        "text": "Int"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayAINoiseCanceller"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Instance Property",
+    "symbolKind": "property",
+    "title": "strength"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "var"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "strength"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Si",
+              "text": "Int"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 1.1.0",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayAINoiseCanceller",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller": {
+      "abstract": [
+        {
+          "text": "ノイズ抑制クラス",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "SkyWayNoiseCanceller"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SkyWayNoiseCanceller"
+        }
+      ],
+      "role": "symbol",
+      "title": "SkyWayNoiseCanceller",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/skywaynoisecanceller"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/Options": {
+      "abstract": [
+        {
+          "text": "ノイズ抑制の初期化オプション",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "struct"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "Options"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/Options",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "Options"
+        }
+      ],
+      "role": "symbol",
+      "title": "SkyWayNoiseCanceller.Options",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/skywaynoisecanceller/options"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/Options/strength": {
+      "abstract": [
+        {
+          "text": "ノイズ抑制の強度（1〜100）",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "strength"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:Si",
+          "text": "Int"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/Options/strength",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "strength",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/skywaynoisecanceller/options/strength"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayainoisecanceller/skywaynoisecanceller/options/strength"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,392 @@
-{"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"text":"class","kind":"keyword"},{"kind":"text","text":" "},{"kind":"keyword","text":"func"},{"text":" ","kind":"text"},{"text":"subscriptionCancelError","kind":"identifier"},{"text":"() -> any ","kind":"text"},{"text":"Error","kind":"typeIdentifier","preciseIdentifier":"s:s5ErrorP"}],"languages":["swift"],"platforms":["iOS"]}]}],"variants":[{"paths":["\/documentation\/skywayroom\/skwerrorfactory\/subscriptioncancelerror()"],"traits":[{"interfaceLanguage":"swift"}]},{"paths":["\/documentation\/skywayroom\/skwerrorfactory\/subscriptioncancelerror()"],"traits":[{"interfaceLanguage":"occ"}]}],"metadata":{"roleHeading":"Type Method","navigatorTitle":[{"text":"subscriptionCancelError","kind":"identifier"}],"title":"subscriptionCancelError()","externalID":"c:objc(cs)SKWErrorFactory(cm)subscriptionCancelError","symbolKind":"method","modules":[{"name":"SkyWayRoom"}],"role":"symbol","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"subscriptionCancelError"},{"kind":"text","text":"() -> any "},{"kind":"typeIdentifier","preciseIdentifier":"s:s5ErrorP","text":"Error"}]},"sections":[],"kind":"symbol","hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SKWErrorFactory"]]},"schemaVersion":{"patch":0,"minor":3,"major":0},"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SKWErrorFactory\/subscriptionCancelError()","interfaceLanguage":"swift"},"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWErrorFactory":{"url":"\/documentation\/skywayroom\/skwerrorfactory","type":"topic","abstract":[{"text":"エラーファクトリー","type":"text"}],"fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"SKWErrorFactory","kind":"identifier"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SKWErrorFactory","title":"SKWErrorFactory","navigatorTitle":[{"text":"SKWErrorFactory","kind":"identifier"}],"kind":"symbol"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWErrorFactory/subscriptionCancelError()":{"kind":"symbol","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"keyword","text":"func"},{"text":" ","kind":"text"},{"text":"subscriptionCancelError","kind":"identifier"},{"text":"() -> any ","kind":"text"},{"preciseIdentifier":"s:s5ErrorP","text":"Error","kind":"typeIdentifier"}],"url":"\/documentation\/skywayroom\/skwerrorfactory\/subscriptioncancelerror()","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"subscriptionCancelError"}],"type":"topic","title":"subscriptionCancelError()","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SKWErrorFactory\/subscriptionCancelError()","abstract":[]}},"variantOverrides":[{"traits":[{"interfaceLanguage":"occ"}],"patch":[{"path":"\/identifier\/interfaceLanguage","value":"occ","op":"replace"},{"path":"\/metadata\/platforms","value":null,"op":"add"},{"path":"\/metadata\/roleHeading","value":"Type Method","op":"replace"},{"path":"\/metadata\/title","value":"subscriptionCancelError","op":"replace"},{"path":"\/metadata\/symbolKind","value":"method","op":"replace"},{"path":"\/metadata\/fragments","value":[{"text":"+ ","kind":"text"},{"text":"subscriptionCancelError","kind":"identifier"}],"op":"replace"},{"path":"\/topicSections","value":null,"op":"add"},{"path":"\/relationshipsSections","value":null,"op":"add"},{"path":"\/seeAlsoSections","value":null,"op":"add"},{"path":"\/primaryContentSections\/0","value":{"kind":"declarations","declarations":[{"platforms":["iOS"],"languages":["occ"],"tokens":[{"kind":"text","text":"+ ("},{"kind":"typeIdentifier","text":"NSError","preciseIdentifier":"c:objc(cs)NSError"},{"kind":"text","text":" *) "},{"text":"subscriptionCancelError","kind":"identifier"},{"text":";","kind":"text"}]}]},"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorFactory\/title","value":"SKWErrorFactory","op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorFactory\/fragments","value":[{"kind":"identifier","text":"SKWErrorFactory"}],"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorFactory\/navigatorTitle","value":[{"kind":"identifier","text":"SKWErrorFactory"}],"op":"replace"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorFactory~1subscriptionCancelError()\/title","value":"subscriptionCancelError"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorFactory~1subscriptionCancelError()\/fragments","value":[{"kind":"text","text":"+ "},{"kind":"identifier","text":"subscriptionCancelError"}]}]}]}
+{
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWErrorFactory"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWErrorFactory/subscriptionCancelError()"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:objc(cs)SKWErrorFactory(cm)subscriptionCancelError",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "class"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "keyword",
+        "text": "func"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "subscriptionCancelError"
+      },
+      {
+        "kind": "text",
+        "text": "() -> any "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:s5ErrorP",
+        "text": "Error"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "subscriptionCancelError"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Type Method",
+    "symbolKind": "method",
+    "title": "subscriptionCancelError()"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "class"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "subscriptionCancelError"
+            },
+            {
+              "kind": "text",
+              "text": "() -> any "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:s5ErrorP",
+              "text": "Error"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWErrorFactory": {
+      "abstract": [
+        {
+          "text": "エラーファクトリー",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "SKWErrorFactory"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWErrorFactory",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SKWErrorFactory"
+        }
+      ],
+      "role": "symbol",
+      "title": "SKWErrorFactory",
+      "type": "topic",
+      "url": "/documentation/skywayroom/skwerrorfactory"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWErrorFactory/subscriptionCancelError()": {
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "subscriptionCancelError"
+        },
+        {
+          "kind": "text",
+          "text": "() -> any "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:s5ErrorP",
+          "text": "Error"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWErrorFactory/subscriptionCancelError()",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "subscriptionCancelError"
+        }
+      ],
+      "role": "symbol",
+      "title": "subscriptionCancelError()",
+      "type": "topic",
+      "url": "/documentation/skywayroom/skwerrorfactory/subscriptioncancelerror()"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Type Method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "subscriptionCancelError"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "+ "
+            },
+            {
+              "kind": "identifier",
+              "text": "subscriptionCancelError"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "text",
+                    "text": "+ ("
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:objc(cs)NSError",
+                    "text": "NSError"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " *) "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "subscriptionCancelError"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ";"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorFactory/title",
+          "value": "SKWErrorFactory"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorFactory/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWErrorFactory"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorFactory/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWErrorFactory"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorFactory~1subscriptionCancelError()/title",
+          "value": "subscriptionCancelError"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorFactory~1subscriptionCancelError()/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "+ "
+            },
+            {
+              "kind": "identifier",
+              "text": "subscriptionCancelError"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/skwerrorfactory/subscriptioncancelerror()"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/skwerrorfactory/subscriptioncancelerror()"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

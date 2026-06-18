@@ -1,1 +1,347 @@
-{"kind":"symbol","sections":[],"variants":[{"paths":["\/documentation\/skywayroom\/turnpolicy\/enable"],"traits":[{"interfaceLanguage":"swift"}]},{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/skywayroom\/turnpolicy\/enable"]}],"primaryContentSections":[{"kind":"declarations","declarations":[{"languages":["swift"],"tokens":[{"kind":"keyword","text":"case"},{"kind":"text","text":" "},{"kind":"identifier","text":"enable"}],"platforms":["iOS"]}]},{"content":[{"anchor":"discussion","type":"heading","text":"Discussion","level":2},{"type":"paragraph","inlineContent":[{"text":"SkyWay Auth Tokenのturnが有効のとき、TURNサーバが利用されることがあります。","type":"text"}]}],"kind":"content"}],"schemaVersion":{"patch":0,"major":0,"minor":3},"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/TurnPolicy"]]},"metadata":{"modules":[{"name":"SkyWayRoom"}],"externalID":"c:@E@SKWTurnPolicy@SKWTurnPolicyEnable","fragments":[{"kind":"keyword","text":"case"},{"kind":"text","text":" "},{"kind":"identifier","text":"enable"}],"role":"symbol","navigatorTitle":[{"text":"SKWTurnPolicyEnable","kind":"identifier"}],"roleHeading":"Case","symbolKind":"case","title":"TurnPolicy.enable"},"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/TurnPolicy\/enable","interfaceLanguage":"swift"},"abstract":[{"type":"text","text":"TURNが有効なモード"}],"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom/TurnPolicy/enable":{"kind":"symbol","fragments":[{"text":"case","kind":"keyword"},{"text":" ","kind":"text"},{"text":"enable","kind":"identifier"}],"url":"\/documentation\/skywayroom\/turnpolicy\/enable","role":"symbol","navigatorTitle":[{"text":"SKWTurnPolicyEnable","kind":"identifier"}],"type":"topic","title":"TurnPolicy.enable","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/TurnPolicy\/enable","abstract":[{"text":"TURNが有効なモード","type":"text"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/TurnPolicy":{"url":"\/documentation\/skywayroom\/turnpolicy","type":"topic","abstract":[{"type":"text","text":"TURNサーバに関するポリシー"}],"fragments":[{"kind":"keyword","text":"enum"},{"text":" ","kind":"text"},{"kind":"identifier","text":"TurnPolicy"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/TurnPolicy","title":"TurnPolicy","navigatorTitle":[{"kind":"identifier","text":"TurnPolicy"}],"kind":"symbol"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]}},"variantOverrides":[{"patch":[{"value":"occ","path":"\/identifier\/interfaceLanguage","op":"replace"},{"op":"add","value":null,"path":"\/metadata\/platforms"},{"value":"Enumeration Case","path":"\/metadata\/roleHeading","op":"replace"},{"op":"replace","value":"SKWTurnPolicyEnable","path":"\/metadata\/title"},{"value":"case","path":"\/metadata\/symbolKind","op":"replace"},{"value":[{"text":"SKWTurnPolicyEnable","kind":"identifier"}],"path":"\/metadata\/fragments","op":"replace"},{"value":null,"path":"\/topicSections","op":"add"},{"value":null,"path":"\/relationshipsSections","op":"add"},{"op":"add","value":null,"path":"\/seeAlsoSections"},{"op":"replace","value":{"kind":"declarations","declarations":[{"languages":["occ"],"tokens":[{"text":"SKWTurnPolicyEnable","kind":"identifier"}],"platforms":["iOS"]}]},"path":"\/primaryContentSections\/0"},{"op":"replace","value":"SKWTurnPolicyEnable","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy~1enable\/title"},{"op":"replace","value":[{"kind":"identifier","text":"SKWTurnPolicyEnable"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy~1enable\/fragments"},{"op":"replace","value":"SKWTurnPolicy","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy\/title"},{"op":"replace","value":[{"kind":"identifier","text":"SKWTurnPolicy"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy\/fragments"},{"op":"replace","value":[{"kind":"identifier","text":"SKWTurnPolicy"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy\/navigatorTitle"}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "abstract": [
+    {
+      "text": "TURNが有効なモード",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/TurnPolicy"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/TurnPolicy/enable"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:@E@SKWTurnPolicy@SKWTurnPolicyEnable",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "case"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "enable"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "SKWTurnPolicyEnable"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Case",
+    "symbolKind": "case",
+    "title": "TurnPolicy.enable"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "case"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "enable"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "SkyWay Auth Tokenのturnが有効のとき、TURNサーバが利用されることがあります。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "kind": "content"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/TurnPolicy": {
+      "abstract": [
+        {
+          "text": "TURNサーバに関するポリシー",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "enum"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "TurnPolicy"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/TurnPolicy",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "TurnPolicy"
+        }
+      ],
+      "role": "symbol",
+      "title": "TurnPolicy",
+      "type": "topic",
+      "url": "/documentation/skywayroom/turnpolicy"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/TurnPolicy/enable": {
+      "abstract": [
+        {
+          "text": "TURNが有効なモード",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "case"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "enable"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/TurnPolicy/enable",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SKWTurnPolicyEnable"
+        }
+      ],
+      "role": "symbol",
+      "title": "TurnPolicy.enable",
+      "type": "topic",
+      "url": "/documentation/skywayroom/turnpolicy/enable"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Enumeration Case"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "SKWTurnPolicyEnable"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "case"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWTurnPolicyEnable"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "identifier",
+                    "text": "SKWTurnPolicyEnable"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy~1enable/title",
+          "value": "SKWTurnPolicyEnable"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy~1enable/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWTurnPolicyEnable"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy/title",
+          "value": "SKWTurnPolicy"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWTurnPolicy"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWTurnPolicy"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/turnpolicy/enable"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/turnpolicy/enable"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

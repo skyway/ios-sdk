@@ -1,1 +1,543 @@
-{"relationshipsSections":[{"type":"conformsTo","title":"Conforms To","kind":"relationships","identifiers":["doc:\/\/com.ntt.skyway.room\/s15BitwiseCopyableP","doc:\/\/com.ntt.skyway.room\/SQ","doc:\/\/com.ntt.skyway.room\/SH","doc:\/\/com.ntt.skyway.room\/SY","doc:\/\/com.ntt.skyway.room\/s8SendableP","doc:\/\/com.ntt.skyway.room\/s16SendableMetatypeP"]}],"variants":[{"paths":["\/documentation\/skywayroom\/forwardingstate"],"traits":[{"interfaceLanguage":"swift"}]},{"paths":["\/documentation\/skywayroom\/forwardingstate"],"traits":[{"interfaceLanguage":"occ"}]}],"schemaVersion":{"major":0,"patch":0,"minor":3},"abstract":[{"type":"text","text":"フォワーディング状態"}],"topicSections":[{"title":"Enumeration Cases","anchor":"Enumeration-Cases","identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ForwardingState\/started","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ForwardingState\/stopped"],"generated":true},{"title":"Initializers","anchor":"Initializers","identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ForwardingState\/init(rawValue:)"],"generated":true},{"title":"Default Implementations","anchor":"Default-Implementations","identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ForwardingState\/Equatable-Implementations","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ForwardingState\/RawRepresentable-Implementations"],"generated":true}],"sections":[],"primaryContentSections":[{"declarations":[{"platforms":["iOS"],"languages":["swift"],"tokens":[{"text":"enum","kind":"keyword"},{"text":" ","kind":"text"},{"text":"ForwardingState","kind":"identifier"}]}],"kind":"declarations"}],"metadata":{"roleHeading":"Enumeration","fragments":[{"text":"enum","kind":"keyword"},{"text":" ","kind":"text"},{"text":"ForwardingState","kind":"identifier"}],"externalID":"c:@E@SKWForwardingState","role":"symbol","modules":[{"name":"SkyWayRoom"}],"navigatorTitle":[{"text":"ForwardingState","kind":"identifier"}],"title":"ForwardingState","symbolKind":"enum"},"identifier":{"interfaceLanguage":"swift","url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ForwardingState"},"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom"]]},"kind":"symbol","references":{"doc://com.ntt.skyway.room/s16SendableMetatypeP":{"identifier":"doc:\/\/com.ntt.skyway.room\/s16SendableMetatypeP","title":"Swift.SendableMetatype","type":"unresolvable"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState/stopped":{"kind":"symbol","title":"ForwardingState.stopped","abstract":[{"text":"フォワード停止状態","type":"text"}],"fragments":[{"kind":"keyword","text":"case"},{"kind":"text","text":" "},{"text":"stopped","kind":"identifier"}],"identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ForwardingState\/stopped","navigatorTitle":[{"text":"SKWForwardingStateStopped","kind":"identifier"}],"role":"symbol","type":"topic","url":"\/documentation\/skywayroom\/forwardingstate\/stopped"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState":{"url":"\/documentation\/skywayroom\/forwardingstate","navigatorTitle":[{"kind":"identifier","text":"ForwardingState"}],"type":"topic","kind":"symbol","title":"ForwardingState","abstract":[{"text":"フォワーディング状態","type":"text"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ForwardingState","fragments":[{"kind":"keyword","text":"enum"},{"kind":"text","text":" "},{"kind":"identifier","text":"ForwardingState"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState/init(rawValue:)":{"url":"\/documentation\/skywayroom\/forwardingstate\/init(rawvalue:)","type":"topic","abstract":[],"fragments":[{"text":"init","kind":"identifier"},{"text":"?(","kind":"text"},{"text":"rawValue","kind":"externalParam"},{"text":": ","kind":"text"},{"text":"UInt","kind":"typeIdentifier","preciseIdentifier":"s:Su"},{"text":")","kind":"text"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ForwardingState\/init(rawValue:)","title":"init(rawValue:)","kind":"symbol"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState/RawRepresentable-Implementations":{"url":"\/documentation\/skywayroom\/forwardingstate\/rawrepresentable-implementations","type":"topic","abstract":[],"role":"collectionGroup","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ForwardingState\/RawRepresentable-Implementations","title":"RawRepresentable Implementations","kind":"article"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState/started":{"url":"\/documentation\/skywayroom\/forwardingstate\/started","type":"topic","abstract":[{"type":"text","text":"フォワード状態"}],"fragments":[{"text":"case","kind":"keyword"},{"text":" ","kind":"text"},{"text":"started","kind":"identifier"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ForwardingState\/started","title":"ForwardingState.started","navigatorTitle":[{"text":"SKWForwardingStateStarted","kind":"identifier"}],"kind":"symbol"},"doc://com.ntt.skyway.room/SH":{"identifier":"doc:\/\/com.ntt.skyway.room\/SH","title":"Swift.Hashable","type":"unresolvable"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState/Equatable-Implementations":{"url":"\/documentation\/skywayroom\/forwardingstate\/equatable-implementations","type":"topic","abstract":[],"role":"collectionGroup","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ForwardingState\/Equatable-Implementations","title":"Equatable Implementations","kind":"article"},"doc://com.ntt.skyway.room/s15BitwiseCopyableP":{"identifier":"doc:\/\/com.ntt.skyway.room\/s15BitwiseCopyableP","title":"Swift.BitwiseCopyable","type":"unresolvable"},"doc://com.ntt.skyway.room/s8SendableP":{"identifier":"doc:\/\/com.ntt.skyway.room\/s8SendableP","title":"Swift.Sendable","type":"unresolvable"},"doc://com.ntt.skyway.room/SQ":{"identifier":"doc:\/\/com.ntt.skyway.room\/SQ","title":"Swift.Equatable","type":"unresolvable"},"doc://com.ntt.skyway.room/SY":{"identifier":"doc:\/\/com.ntt.skyway.room\/SY","title":"Swift.RawRepresentable","type":"unresolvable"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]}},"variantOverrides":[{"patch":[{"op":"replace","value":"occ","path":"\/identifier\/interfaceLanguage"},{"op":"add","value":null,"path":"\/metadata\/platforms"},{"op":"replace","value":"Enumeration","path":"\/metadata\/roleHeading"},{"op":"replace","value":"SKWForwardingState","path":"\/metadata\/title"},{"op":"replace","value":"enum","path":"\/metadata\/symbolKind"},{"op":"replace","value":[{"text":"SKWForwardingState","kind":"identifier"}],"path":"\/metadata\/fragments"},{"op":"replace","value":[{"text":"SKWForwardingState","kind":"identifier"}],"path":"\/metadata\/navigatorTitle"},{"op":"replace","value":[{"identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ForwardingState\/started","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ForwardingState\/stopped"],"generated":true,"anchor":"Enumeration-Cases","title":"Enumeration Cases"}],"path":"\/topicSections"},{"op":"replace","value":null,"path":"\/relationshipsSections"},{"op":"add","value":null,"path":"\/seeAlsoSections"},{"op":"replace","value":{"kind":"declarations","declarations":[{"tokens":[{"text":"enum","kind":"keyword"},{"text":" ","kind":"text"},{"text":"SKWForwardingState","kind":"identifier"},{"text":" : ","kind":"text"},{"preciseIdentifier":"c:@T@NSUInteger","text":"NSUInteger","kind":"typeIdentifier"},{"text":";","kind":"text"}],"languages":["occ"],"platforms":["iOS"]}]},"path":"\/primaryContentSections\/0"},{"op":"replace","value":"SKWForwardingStateStopped","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingState~1stopped\/title"},{"op":"replace","value":[{"text":"SKWForwardingStateStopped","kind":"identifier"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingState~1stopped\/fragments"},{"op":"replace","value":"SKWForwardingState","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingState\/title"},{"op":"replace","value":[{"text":"SKWForwardingState","kind":"identifier"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingState\/fragments"},{"op":"replace","value":[{"text":"SKWForwardingState","kind":"identifier"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingState\/navigatorTitle"},{"op":"replace","value":"SKWForwardingStateStarted","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingState~1started\/title"},{"op":"replace","value":[{"text":"SKWForwardingStateStarted","kind":"identifier"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingState~1started\/fragments"}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "abstract": [
+    {
+      "text": "フォワーディング状態",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:@E@SKWForwardingState",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "enum"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "ForwardingState"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "ForwardingState"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Enumeration",
+    "symbolKind": "enum",
+    "title": "ForwardingState"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "enum"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "ForwardingState"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/SH": {
+      "identifier": "doc://com.ntt.skyway.room/SH",
+      "title": "Swift.Hashable",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/SQ": {
+      "identifier": "doc://com.ntt.skyway.room/SQ",
+      "title": "Swift.Equatable",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/SY": {
+      "identifier": "doc://com.ntt.skyway.room/SY",
+      "title": "Swift.RawRepresentable",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState": {
+      "abstract": [
+        {
+          "text": "フォワーディング状態",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "enum"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "ForwardingState"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "ForwardingState"
+        }
+      ],
+      "role": "symbol",
+      "title": "ForwardingState",
+      "type": "topic",
+      "url": "/documentation/skywayroom/forwardingstate"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState/Equatable-Implementations": {
+      "abstract": [],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState/Equatable-Implementations",
+      "kind": "article",
+      "role": "collectionGroup",
+      "title": "Equatable Implementations",
+      "type": "topic",
+      "url": "/documentation/skywayroom/forwardingstate/equatable-implementations"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState/RawRepresentable-Implementations": {
+      "abstract": [],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState/RawRepresentable-Implementations",
+      "kind": "article",
+      "role": "collectionGroup",
+      "title": "RawRepresentable Implementations",
+      "type": "topic",
+      "url": "/documentation/skywayroom/forwardingstate/rawrepresentable-implementations"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState/init(rawValue:)": {
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "?("
+        },
+        {
+          "kind": "externalParam",
+          "text": "rawValue"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:Su",
+          "text": "UInt"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState/init(rawValue:)",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "init(rawValue:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/forwardingstate/init(rawvalue:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState/started": {
+      "abstract": [
+        {
+          "text": "フォワード状態",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "case"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "started"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState/started",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SKWForwardingStateStarted"
+        }
+      ],
+      "role": "symbol",
+      "title": "ForwardingState.started",
+      "type": "topic",
+      "url": "/documentation/skywayroom/forwardingstate/started"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState/stopped": {
+      "abstract": [
+        {
+          "text": "フォワード停止状態",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "case"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "stopped"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState/stopped",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SKWForwardingStateStopped"
+        }
+      ],
+      "role": "symbol",
+      "title": "ForwardingState.stopped",
+      "type": "topic",
+      "url": "/documentation/skywayroom/forwardingstate/stopped"
+    },
+    "doc://com.ntt.skyway.room/s15BitwiseCopyableP": {
+      "identifier": "doc://com.ntt.skyway.room/s15BitwiseCopyableP",
+      "title": "Swift.BitwiseCopyable",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/s16SendableMetatypeP": {
+      "identifier": "doc://com.ntt.skyway.room/s16SendableMetatypeP",
+      "title": "Swift.SendableMetatype",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/s8SendableP": {
+      "identifier": "doc://com.ntt.skyway.room/s8SendableP",
+      "title": "Swift.Sendable",
+      "type": "unresolvable"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "identifiers": [
+        "doc://com.ntt.skyway.room/s15BitwiseCopyableP",
+        "doc://com.ntt.skyway.room/SQ",
+        "doc://com.ntt.skyway.room/SH",
+        "doc://com.ntt.skyway.room/SY",
+        "doc://com.ntt.skyway.room/s8SendableP",
+        "doc://com.ntt.skyway.room/s16SendableMetatypeP"
+      ],
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo"
+    }
+  ],
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "topicSections": [
+    {
+      "anchor": "Enumeration-Cases",
+      "generated": true,
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState/started",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState/stopped"
+      ],
+      "title": "Enumeration Cases"
+    },
+    {
+      "anchor": "Initializers",
+      "generated": true,
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState/init(rawValue:)"
+      ],
+      "title": "Initializers"
+    },
+    {
+      "anchor": "Default-Implementations",
+      "generated": true,
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState/Equatable-Implementations",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState/RawRepresentable-Implementations"
+      ],
+      "title": "Default Implementations"
+    }
+  ],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Enumeration"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "SKWForwardingState"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "enum"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWForwardingState"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWForwardingState"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/topicSections",
+          "value": [
+            {
+              "anchor": "Enumeration-Cases",
+              "generated": true,
+              "identifiers": [
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState/started",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingState/stopped"
+              ],
+              "title": "Enumeration Cases"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "keyword",
+                    "text": "enum"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "SKWForwardingState"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " : "
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:@T@NSUInteger",
+                    "text": "NSUInteger"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ";"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingState/title",
+          "value": "SKWForwardingState"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingState/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWForwardingState"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingState/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWForwardingState"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingState~1stopped/title",
+          "value": "SKWForwardingStateStopped"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingState~1stopped/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWForwardingStateStopped"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingState~1started/title",
+          "value": "SKWForwardingStateStarted"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingState~1started/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWForwardingStateStarted"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/forwardingstate"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/forwardingstate"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

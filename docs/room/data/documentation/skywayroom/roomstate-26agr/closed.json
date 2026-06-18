@@ -1,1 +1,356 @@
-{"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"text":"case","kind":"keyword"},{"text":" ","kind":"text"},{"text":"closed","kind":"identifier"}],"platforms":["iOS"],"languages":["swift"]}]},{"kind":"content","content":[{"level":2,"type":"heading","text":"Discussion","anchor":"discussion"},{"type":"paragraph","inlineContent":[{"text":"非アクティブでRoomおよびRoomで管理しているリソースが無効です","type":"text"}]},{"type":"paragraph","inlineContent":[{"text":"この状態の時、Roomオブジェクトは利用できません","type":"text"}]}]}],"variants":[{"paths":["\/documentation\/skywayroom\/roomstate-26agr\/closed"],"traits":[{"interfaceLanguage":"swift"}]},{"paths":["\/documentation\/skywayroom\/roomstate-26agr\/closed"],"traits":[{"interfaceLanguage":"occ"}]}],"metadata":{"roleHeading":"Case","navigatorTitle":[{"text":"RoomStateClosed","kind":"identifier"}],"title":"RoomState.closed","externalID":"c:@M@SkyWayRoom@E@RoomState@RoomStateClosed","symbolKind":"case","modules":[{"name":"SkyWayRoom"}],"role":"symbol","fragments":[{"text":"case","kind":"keyword"},{"kind":"text","text":" "},{"kind":"identifier","text":"closed"}]},"sections":[],"kind":"symbol","abstract":[{"type":"text","text":"クローズ状態"}],"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomState-26agr"]]},"schemaVersion":{"patch":0,"minor":3,"major":0},"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomState-26agr\/closed","interfaceLanguage":"swift"},"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomState-26agr/closed":{"url":"\/documentation\/skywayroom\/roomstate-26agr\/closed","navigatorTitle":[{"text":"RoomStateClosed","kind":"identifier"}],"type":"topic","kind":"symbol","title":"RoomState.closed","abstract":[{"type":"text","text":"クローズ状態"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomState-26agr\/closed","fragments":[{"text":"case","kind":"keyword"},{"text":" ","kind":"text"},{"text":"closed","kind":"identifier"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomState-26agr":{"url":"\/documentation\/skywayroom\/roomstate-26agr","navigatorTitle":[{"text":"RoomState","kind":"identifier"}],"type":"topic","kind":"symbol","abstract":[{"type":"text","text":"ルームの状態"}],"title":"RoomState","role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomState-26agr","fragments":[{"text":"enum","kind":"keyword"},{"text":" ","kind":"text"},{"text":"RoomState","kind":"identifier"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]}},"variantOverrides":[{"traits":[{"interfaceLanguage":"occ"}],"patch":[{"op":"replace","path":"\/identifier\/interfaceLanguage","value":"occ"},{"op":"add","path":"\/metadata\/platforms","value":null},{"op":"replace","path":"\/metadata\/roleHeading","value":"Enumeration Case"},{"op":"replace","path":"\/metadata\/title","value":"RoomStateClosed"},{"op":"replace","path":"\/metadata\/symbolKind","value":"case"},{"op":"replace","path":"\/metadata\/fragments","value":[{"text":"RoomStateClosed","kind":"identifier"}]},{"value":null,"op":"add","path":"\/topicSections"},{"value":null,"op":"add","path":"\/relationshipsSections"},{"value":null,"op":"add","path":"\/seeAlsoSections"},{"value":{"declarations":[{"languages":["occ"],"tokens":[{"kind":"identifier","text":"RoomStateClosed"}],"platforms":["iOS"]}],"kind":"declarations"},"op":"replace","path":"\/primaryContentSections\/0"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomState-26agr~1closed\/title","op":"replace","value":"RoomStateClosed"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomState-26agr~1closed\/fragments","value":[{"text":"RoomStateClosed","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomState-26agr\/title","value":"RoomState"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomState-26agr\/fragments","value":[{"text":"RoomState","kind":"identifier"}]},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomState-26agr\/navigatorTitle","value":[{"text":"RoomState","kind":"identifier"}],"op":"replace"}]}]}
+{
+  "abstract": [
+    {
+      "text": "クローズ状態",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomState-26agr"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomState-26agr/closed"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:@M@SkyWayRoom@E@RoomState@RoomStateClosed",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "case"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "closed"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "RoomStateClosed"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Case",
+    "symbolKind": "case",
+    "title": "RoomState.closed"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "case"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "closed"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "非アクティブでRoomおよびRoomで管理しているリソースが無効です",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "この状態の時、Roomオブジェクトは利用できません",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "kind": "content"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomState-26agr": {
+      "abstract": [
+        {
+          "text": "ルームの状態",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "enum"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "RoomState"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomState-26agr",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "RoomState"
+        }
+      ],
+      "role": "symbol",
+      "title": "RoomState",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roomstate-26agr"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomState-26agr/closed": {
+      "abstract": [
+        {
+          "text": "クローズ状態",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "case"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "closed"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomState-26agr/closed",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "RoomStateClosed"
+        }
+      ],
+      "role": "symbol",
+      "title": "RoomState.closed",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roomstate-26agr/closed"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Enumeration Case"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "RoomStateClosed"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "case"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomStateClosed"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "identifier",
+                    "text": "RoomStateClosed"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomState-26agr~1closed/title",
+          "value": "RoomStateClosed"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomState-26agr~1closed/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomStateClosed"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomState-26agr/title",
+          "value": "RoomState"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomState-26agr/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomState"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomState-26agr/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomState"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/roomstate-26agr/closed"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/roomstate-26agr/closed"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

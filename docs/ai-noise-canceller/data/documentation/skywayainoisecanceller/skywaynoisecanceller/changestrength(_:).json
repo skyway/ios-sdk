@@ -1,1 +1,290 @@
-{"sections":[],"primaryContentSections":[{"kind":"declarations","declarations":[{"platforms":["iOS"],"tokens":[{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"changeStrength"},{"kind":"text","text":"("},{"kind":"externalParam","text":"_"},{"kind":"text","text":" "},{"kind":"internalParam","text":"strength"},{"kind":"text","text":": "},{"preciseIdentifier":"s:Si","kind":"typeIdentifier","text":"Int"},{"kind":"text","text":") -> "},{"preciseIdentifier":"s:Sb","kind":"typeIdentifier","text":"Bool"}],"languages":["swift"]}]},{"kind":"parameters","parameters":[{"name":"strength","content":[{"inlineContent":[{"type":"text","text":"強度（1〜100）"}],"type":"paragraph"}]}]},{"kind":"content","content":[{"anchor":"return-value","type":"heading","level":2,"text":"Return Value"},{"inlineContent":[{"text":"変更に成功したかどうか","type":"text"}],"type":"paragraph"}]}],"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller","doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/SkyWayNoiseCanceller"]]},"identifier":{"url":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/SkyWayNoiseCanceller\/changeStrength(_:)","interfaceLanguage":"swift"},"variants":[{"traits":[{"interfaceLanguage":"swift"}],"paths":["\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/changestrength(_:)"]}],"schemaVersion":{"minor":3,"major":0,"patch":0},"metadata":{"symbolKind":"method","roleHeading":"Instance Method","fragments":[{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"changeStrength"},{"kind":"text","text":"("},{"kind":"typeIdentifier","preciseIdentifier":"s:Si","text":"Int"},{"kind":"text","text":") -> "},{"kind":"typeIdentifier","preciseIdentifier":"s:Sb","text":"Bool"}],"externalID":"s:22SkyWayAINoiseCanceller0ab5NoiseD0C14changeStrengthySbSiF","title":"changeStrength(_:)","modules":[{"name":"SkyWayAINoiseCanceller"}],"role":"symbol"},"kind":"symbol","abstract":[{"text":"ノイズ抑制の強度を変更します。","type":"text"}],"references":{"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller":{"title":"SkyWayAINoiseCanceller","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller","role":"collection","url":"\/documentation\/skywayainoisecanceller","abstract":[{"type":"strong","inlineContent":[{"text":"Version: 1.1.0","type":"text"}]},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}],"type":"topic","kind":"symbol"},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller":{"fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"SkyWayNoiseCanceller","kind":"identifier"}],"abstract":[{"type":"text","text":"ノイズ抑制クラス"}],"type":"topic","title":"SkyWayNoiseCanceller","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/SkyWayNoiseCanceller","kind":"symbol","navigatorTitle":[{"kind":"identifier","text":"SkyWayNoiseCanceller"}],"url":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller","role":"symbol"},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/changeStrength(_:)":{"url":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/changestrength(_:)","fragments":[{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"changeStrength"},{"kind":"text","text":"("},{"kind":"typeIdentifier","preciseIdentifier":"s:Si","text":"Int"},{"kind":"text","text":") -> "},{"kind":"typeIdentifier","preciseIdentifier":"s:Sb","text":"Bool"}],"type":"topic","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/SkyWayNoiseCanceller\/changeStrength(_:)","title":"changeStrength(_:)","kind":"symbol","abstract":[{"type":"text","text":"ノイズ抑制の強度を変更します。"}],"role":"symbol"}}}
+{
+  "abstract": [
+    {
+      "text": "ノイズ抑制の強度を変更します。",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller",
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/changeStrength(_:)"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "s:22SkyWayAINoiseCanceller0ab5NoiseD0C14changeStrengthySbSiF",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "func"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "changeStrength"
+      },
+      {
+        "kind": "text",
+        "text": "("
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:Si",
+        "text": "Int"
+      },
+      {
+        "kind": "text",
+        "text": ") -> "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:Sb",
+        "text": "Bool"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayAINoiseCanceller"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "symbolKind": "method",
+    "title": "changeStrength(_:)"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "changeStrength"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "externalParam",
+              "text": "_"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "strength"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Si",
+              "text": "Int"
+            },
+            {
+              "kind": "text",
+              "text": ") -> "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sb",
+              "text": "Bool"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "kind": "parameters",
+      "parameters": [
+        {
+          "content": [
+            {
+              "inlineContent": [
+                {
+                  "text": "強度（1〜100）",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "strength"
+        }
+      ]
+    },
+    {
+      "content": [
+        {
+          "anchor": "return-value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "変更に成功したかどうか",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "kind": "content"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 1.1.0",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayAINoiseCanceller",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller": {
+      "abstract": [
+        {
+          "text": "ノイズ抑制クラス",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "SkyWayNoiseCanceller"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SkyWayNoiseCanceller"
+        }
+      ],
+      "role": "symbol",
+      "title": "SkyWayNoiseCanceller",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/skywaynoisecanceller"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/changeStrength(_:)": {
+      "abstract": [
+        {
+          "text": "ノイズ抑制の強度を変更します。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "changeStrength"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:Si",
+          "text": "Int"
+        },
+        {
+          "kind": "text",
+          "text": ") -> "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:Sb",
+          "text": "Bool"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/changeStrength(_:)",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "changeStrength(_:)",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/skywaynoisecanceller/changestrength(_:)"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayainoisecanceller/skywaynoisecanceller/changestrength(_:)"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,228 @@
-{"sections":[],"variants":[{"traits":[{"interfaceLanguage":"swift"}],"paths":["\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/stop()"]}],"abstract":[{"type":"text","text":"ノイズ抑制を停止します。"}],"primaryContentSections":[{"kind":"declarations","declarations":[{"languages":["swift"],"tokens":[{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"stop"},{"text":"() -> ","kind":"text"},{"kind":"typeIdentifier","preciseIdentifier":"s:Sb","text":"Bool"}],"platforms":["iOS"]}]},{"content":[{"level":2,"anchor":"return-value","text":"Return Value","type":"heading"},{"inlineContent":[{"type":"text","text":"停止に成功したかどうか"}],"type":"paragraph"}],"kind":"content"}],"metadata":{"fragments":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"stop","kind":"identifier"},{"kind":"text","text":"() -> "},{"kind":"typeIdentifier","preciseIdentifier":"s:Sb","text":"Bool"}],"roleHeading":"Instance Method","symbolKind":"method","modules":[{"name":"SkyWayAINoiseCanceller"}],"externalID":"s:22SkyWayAINoiseCanceller0ab5NoiseD0C4stopSbyF","role":"symbol","title":"stop()"},"kind":"symbol","hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller","doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/SkyWayNoiseCanceller"]]},"schemaVersion":{"patch":0,"major":0,"minor":3},"identifier":{"interfaceLanguage":"swift","url":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/SkyWayNoiseCanceller\/stop()"},"references":{"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller":{"title":"SkyWayAINoiseCanceller","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller","role":"collection","url":"\/documentation\/skywayainoisecanceller","abstract":[{"type":"strong","inlineContent":[{"text":"Version: 1.1.0","type":"text"}]},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}],"type":"topic","kind":"symbol"},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/stop()":{"type":"topic","title":"stop()","url":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/stop()","kind":"symbol","abstract":[{"type":"text","text":"ノイズ抑制を停止します。"}],"identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/SkyWayNoiseCanceller\/stop()","role":"symbol","fragments":[{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"stop"},{"kind":"text","text":"() -> "},{"kind":"typeIdentifier","preciseIdentifier":"s:Sb","text":"Bool"}]},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller":{"fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"SkyWayNoiseCanceller","kind":"identifier"}],"abstract":[{"type":"text","text":"ノイズ抑制クラス"}],"type":"topic","title":"SkyWayNoiseCanceller","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/SkyWayNoiseCanceller","kind":"symbol","navigatorTitle":[{"kind":"identifier","text":"SkyWayNoiseCanceller"}],"url":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller","role":"symbol"}}}
+{
+  "abstract": [
+    {
+      "text": "ノイズ抑制を停止します。",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller",
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/stop()"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "s:22SkyWayAINoiseCanceller0ab5NoiseD0C4stopSbyF",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "func"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "stop"
+      },
+      {
+        "kind": "text",
+        "text": "() -> "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:Sb",
+        "text": "Bool"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayAINoiseCanceller"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "symbolKind": "method",
+    "title": "stop()"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "stop"
+            },
+            {
+              "kind": "text",
+              "text": "() -> "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sb",
+              "text": "Bool"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "content": [
+        {
+          "anchor": "return-value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "停止に成功したかどうか",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "kind": "content"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 1.1.0",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayAINoiseCanceller",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller": {
+      "abstract": [
+        {
+          "text": "ノイズ抑制クラス",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "SkyWayNoiseCanceller"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SkyWayNoiseCanceller"
+        }
+      ],
+      "role": "symbol",
+      "title": "SkyWayNoiseCanceller",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/skywaynoisecanceller"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/stop()": {
+      "abstract": [
+        {
+          "text": "ノイズ抑制を停止します。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "stop"
+        },
+        {
+          "kind": "text",
+          "text": "() -> "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:Sb",
+          "text": "Bool"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/stop()",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "stop()",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/skywaynoisecanceller/stop()"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayainoisecanceller/skywaynoisecanceller/stop()"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    }
+  ]
+}

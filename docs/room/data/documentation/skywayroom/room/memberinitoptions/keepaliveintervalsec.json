@@ -1,1 +1,359 @@
-{"variants":[{"traits":[{"interfaceLanguage":"swift"}],"paths":["\/documentation\/skywayroom\/room\/memberinitoptions\/keepaliveintervalsec"]}],"schemaVersion":{"major":0,"minor":3,"patch":0},"abstract":[{"text":"MemberのKeepAliveの更新間隔時間(秒)","type":"text"}],"sections":[],"primaryContentSections":[{"kind":"declarations","declarations":[{"languages":["swift"],"platforms":["iOS"],"tokens":[{"text":"@objc","kind":"attribute"},{"text":" ","kind":"text"},{"text":"var","kind":"keyword"},{"text":" ","kind":"text"},{"text":"keepaliveIntervalSec","kind":"identifier"},{"text":": ","kind":"text"},{"text":"Int32","kind":"typeIdentifier","preciseIdentifier":"s:s5Int32V"}]}]},{"content":[{"type":"heading","text":"Discussion","anchor":"discussion","level":2},{"type":"paragraph","inlineContent":[{"type":"text","text":"デフォルトは30秒です。"}]},{"type":"paragraph","inlineContent":[{"type":"text","text":"MemberがそのRoomに存在するかどうかはSkyWayサーバで管理しています。"}]},{"type":"paragraph","inlineContent":[{"type":"text","text":"Memberの退出はMemberの"},{"type":"codeVoice","code":"leave()"},{"type":"text","text":"または、権限があればRoomの"},{"type":"codeVoice","code":"leave(_:)"},{"type":"text","text":"でも退出させることができますが、退出処理を行わずアプリケーションがクラッシュした時、SkyWayを終了した時などは情報に不整合が発生し、RemoteMemberから見るとまだRoomに存在するように見えます。"}]},{"type":"paragraph","inlineContent":[{"type":"text","text":"このオプションではSkyWayサーバとのkeepalive時間を設定することでその不整合を解消するまでの時間を設定できます。"}]},{"type":"paragraph","inlineContent":[{"text":"短すぎる設定では、頻繁にサーバに対してリクエストをすることになるのでパフォーマンスが低下する恐れがあります。","type":"text"}]}],"kind":"content"}],"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Room","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Room\/MemberInitOptions"]]},"metadata":{"roleHeading":"Instance Property","fragments":[{"text":"var","kind":"keyword"},{"text":" ","kind":"text"},{"text":"keepaliveIntervalSec","kind":"identifier"},{"kind":"text","text":": "},{"text":"Int32","kind":"typeIdentifier","preciseIdentifier":"s:s5Int32V"}],"externalID":"s:10SkyWayRoom0C0C17MemberInitOptionsC20keepaliveIntervalSecs5Int32Vvp","role":"symbol","modules":[{"name":"SkyWayRoom"}],"title":"keepaliveIntervalSec","symbolKind":"property"},"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Room\/MemberInitOptions\/keepaliveIntervalSec","interfaceLanguage":"swift"},"kind":"symbol","references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/Room":{"kind":"symbol","fragments":[{"kind":"keyword","text":"class"},{"text":" ","kind":"text"},{"kind":"identifier","text":"Room"}],"url":"\/documentation\/skywayroom\/room","role":"symbol","navigatorTitle":[{"text":"Room","kind":"identifier"}],"type":"topic","title":"Room","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Room","abstract":[{"text":"Roomクラス","type":"text"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/Room/MemberInitOptions/keepaliveIntervalSec":{"url":"\/documentation\/skywayroom\/room\/memberinitoptions\/keepaliveintervalsec","type":"topic","kind":"symbol","abstract":[{"text":"MemberのKeepAliveの更新間隔時間(秒)","type":"text"}],"title":"keepaliveIntervalSec","role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Room\/MemberInitOptions\/keepaliveIntervalSec","fragments":[{"text":"var","kind":"keyword"},{"text":" ","kind":"text"},{"text":"keepaliveIntervalSec","kind":"identifier"},{"text":": ","kind":"text"},{"text":"Int32","kind":"typeIdentifier","preciseIdentifier":"s:s5Int32V"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/Room/MemberInitOptions":{"url":"\/documentation\/skywayroom\/room\/memberinitoptions","navigatorTitle":[{"kind":"identifier","text":"MemberInitOptions"}],"type":"topic","kind":"symbol","abstract":[{"type":"text","text":"RoomMember初期化オプション"}],"title":"Room.MemberInitOptions","role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Room\/MemberInitOptions","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"MemberInitOptions"}]}},"variantOverrides":[{"patch":[{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room\/title","op":"replace","value":"Room"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room\/fragments","value":[{"text":"Room","kind":"identifier"}],"op":"replace"},{"op":"replace","value":[{"text":"Room","kind":"identifier"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room\/navigatorTitle"}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "abstract": [
+    {
+      "text": "MemberのKeepAliveの更新間隔時間(秒)",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Room",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Room/MemberInitOptions"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Room/MemberInitOptions/keepaliveIntervalSec"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "s:10SkyWayRoom0C0C17MemberInitOptionsC20keepaliveIntervalSecs5Int32Vvp",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "var"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "keepaliveIntervalSec"
+      },
+      {
+        "kind": "text",
+        "text": ": "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:s5Int32V",
+        "text": "Int32"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Instance Property",
+    "symbolKind": "property",
+    "title": "keepaliveIntervalSec"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "attribute",
+              "text": "@objc"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "var"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "keepaliveIntervalSec"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:s5Int32V",
+              "text": "Int32"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "デフォルトは30秒です。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "MemberがそのRoomに存在するかどうかはSkyWayサーバで管理しています。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "Memberの退出はMemberの",
+              "type": "text"
+            },
+            {
+              "code": "leave()",
+              "type": "codeVoice"
+            },
+            {
+              "text": "または、権限があればRoomの",
+              "type": "text"
+            },
+            {
+              "code": "leave(_:)",
+              "type": "codeVoice"
+            },
+            {
+              "text": "でも退出させることができますが、退出処理を行わずアプリケーションがクラッシュした時、SkyWayを終了した時などは情報に不整合が発生し、RemoteMemberから見るとまだRoomに存在するように見えます。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "このオプションではSkyWayサーバとのkeepalive時間を設定することでその不整合を解消するまでの時間を設定できます。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "短すぎる設定では、頻繁にサーバに対してリクエストをすることになるのでパフォーマンスが低下する恐れがあります。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "kind": "content"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Room": {
+      "abstract": [
+        {
+          "text": "Roomクラス",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "Room"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Room",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "Room"
+        }
+      ],
+      "role": "symbol",
+      "title": "Room",
+      "type": "topic",
+      "url": "/documentation/skywayroom/room"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Room/MemberInitOptions": {
+      "abstract": [
+        {
+          "text": "RoomMember初期化オプション",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "MemberInitOptions"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Room/MemberInitOptions",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "MemberInitOptions"
+        }
+      ],
+      "role": "symbol",
+      "title": "Room.MemberInitOptions",
+      "type": "topic",
+      "url": "/documentation/skywayroom/room/memberinitoptions"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Room/MemberInitOptions/keepaliveIntervalSec": {
+      "abstract": [
+        {
+          "text": "MemberのKeepAliveの更新間隔時間(秒)",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "keepaliveIntervalSec"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:s5Int32V",
+          "text": "Int32"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Room/MemberInitOptions/keepaliveIntervalSec",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "keepaliveIntervalSec",
+      "type": "topic",
+      "url": "/documentation/skywayroom/room/memberinitoptions/keepaliveintervalsec"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/title",
+          "value": "Room"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "Room"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "Room"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/room/memberinitoptions/keepaliveintervalsec"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    }
+  ]
+}

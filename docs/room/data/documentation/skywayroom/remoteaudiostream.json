@@ -1,1 +1,575 @@
-{"relationshipsSections":[{"kind":"relationships","identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteStream"],"type":"inheritsFrom","title":"Inherits From"},{"kind":"relationships","identifiers":["doc:\/\/com.ntt.skyway.room\/objc(pl)NSObject","doc:\/\/com.ntt.skyway.room\/s7CVarArgP","doc:\/\/com.ntt.skyway.room\/s28CustomDebugStringConvertibleP","doc:\/\/com.ntt.skyway.room\/s23CustomStringConvertibleP","doc:\/\/com.ntt.skyway.room\/SQ","doc:\/\/com.ntt.skyway.room\/SH"],"type":"conformsTo","title":"Conforms To"}],"variants":[{"traits":[{"interfaceLanguage":"swift"}],"paths":["\/documentation\/skywayroom\/remoteaudiostream"]},{"paths":["\/documentation\/skywayroom\/remoteaudiostream"],"traits":[{"interfaceLanguage":"occ"}]}],"schemaVersion":{"minor":3,"patch":0,"major":0},"abstract":[{"text":"RemoteAudioStreamクラス","type":"text"}],"topicSections":[{"identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteAudioStream\/getAudioLevel()","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteAudioStream\/setVolume(_:)"],"anchor":"Instance-Methods","generated":true,"title":"Instance Methods"}],"sections":[],"primaryContentSections":[{"kind":"declarations","declarations":[{"languages":["swift"],"tokens":[{"text":"class","kind":"keyword"},{"kind":"text","text":" "},{"kind":"identifier","text":"RemoteAudioStream"}],"platforms":["iOS"]}]}],"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom"]]},"identifier":{"interfaceLanguage":"swift","url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteAudioStream"},"metadata":{"roleHeading":"Class","fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"RemoteAudioStream","kind":"identifier"}],"externalID":"c:objc(cs)SKWRemoteAudioStream","role":"symbol","modules":[{"name":"SkyWayRoom"}],"navigatorTitle":[{"text":"RemoteAudioStream","kind":"identifier"}],"title":"RemoteAudioStream","symbolKind":"class"},"kind":"symbol","references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteAudioStream":{"url":"\/documentation\/skywayroom\/remoteaudiostream","type":"topic","abstract":[{"text":"RemoteAudioStreamクラス","type":"text"}],"fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"kind":"identifier","text":"RemoteAudioStream"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteAudioStream","title":"RemoteAudioStream","navigatorTitle":[{"kind":"identifier","text":"RemoteAudioStream"}],"kind":"symbol"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteAudioStream/setVolume(_:)":{"kind":"symbol","title":"setVolume(_:)","abstract":[{"type":"text","text":"再生音量を設定します。"}],"fragments":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"setVolume","kind":"identifier"},{"text":"(","kind":"text"},{"text":"Double","kind":"typeIdentifier","preciseIdentifier":"s:Sd"},{"text":")","kind":"text"}],"identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteAudioStream\/setVolume(_:)","navigatorTitle":[{"kind":"identifier","text":"setVolume:"}],"role":"symbol","type":"topic","url":"\/documentation\/skywayroom\/remoteaudiostream\/setvolume(_:)"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteStream":{"url":"\/documentation\/skywayroom\/remotestream","navigatorTitle":[{"kind":"identifier","text":"RemoteStream"}],"type":"topic","kind":"symbol","title":"RemoteStream","abstract":[{"text":"抽象RemoteStreamクラス","type":"text"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteStream","fragments":[{"text":"class","kind":"keyword"},{"kind":"text","text":" "},{"kind":"identifier","text":"RemoteStream"}]},"doc://com.ntt.skyway.room/s23CustomStringConvertibleP":{"identifier":"doc:\/\/com.ntt.skyway.room\/s23CustomStringConvertibleP","title":"Swift.CustomStringConvertible","type":"unresolvable"},"doc://com.ntt.skyway.room/objc(pl)NSObject":{"identifier":"doc:\/\/com.ntt.skyway.room\/objc(pl)NSObject","type":"unresolvable","title":"ObjectiveC.NSObjectProtocol"},"doc://com.ntt.skyway.room/s7CVarArgP":{"identifier":"doc:\/\/com.ntt.skyway.room\/s7CVarArgP","title":"Swift.CVarArg","type":"unresolvable"},"doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP":{"identifier":"doc:\/\/com.ntt.skyway.room\/s28CustomDebugStringConvertibleP","title":"Swift.CustomDebugStringConvertible","type":"unresolvable"},"doc://com.ntt.skyway.room/SH":{"identifier":"doc:\/\/com.ntt.skyway.room\/SH","title":"Swift.Hashable","type":"unresolvable"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteAudioStream/getAudioLevel()":{"kind":"symbol","fragments":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"getAudioLevel","kind":"identifier"},{"text":"() -> ","kind":"text"},{"text":"Double","preciseIdentifier":"s:Sd","kind":"typeIdentifier"}],"url":"\/documentation\/skywayroom\/remoteaudiostream\/getaudiolevel()","role":"symbol","navigatorTitle":[{"text":"getAudioLevel","kind":"identifier"}],"type":"topic","title":"getAudioLevel()","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteAudioStream\/getAudioLevel()","abstract":[{"text":"直近100msにおける最大音量を取得します（値の範囲：0.0-1.0）。","type":"text"}]},"doc://com.ntt.skyway.room/SQ":{"identifier":"doc:\/\/com.ntt.skyway.room\/SQ","type":"unresolvable","title":"Swift.Equatable"}},"variantOverrides":[{"patch":[{"value":"occ","path":"\/identifier\/interfaceLanguage","op":"replace"},{"path":"\/metadata\/platforms","value":null,"op":"add"},{"op":"replace","value":"Class","path":"\/metadata\/roleHeading"},{"value":"SKWRemoteAudioStream","op":"replace","path":"\/metadata\/title"},{"value":"class","op":"replace","path":"\/metadata\/symbolKind"},{"value":[{"kind":"identifier","text":"SKWRemoteAudioStream"}],"op":"replace","path":"\/metadata\/fragments"},{"value":[{"text":"SKWRemoteAudioStream","kind":"identifier"}],"op":"replace","path":"\/metadata\/navigatorTitle"},{"path":"\/topicSections","value":[{"anchor":"Instance-Methods","generated":true,"title":"Instance Methods","identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteAudioStream\/getAudioLevel()","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteAudioStream\/setVolume(_:)"]}],"op":"replace"},{"op":"replace","path":"\/relationshipsSections","value":[{"kind":"relationships","title":"Inherits From","identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteStream"],"type":"inheritsFrom"}]},{"op":"add","path":"\/seeAlsoSections","value":null},{"value":{"kind":"declarations","declarations":[{"languages":["occ"],"tokens":[{"kind":"keyword","text":"@interface"},{"kind":"text","text":" "},{"kind":"identifier","text":"SKWRemoteAudioStream"},{"kind":"text","text":" : "},{"identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RemoteStream","preciseIdentifier":"c:objc(cs)SKWRemoteStream","text":"SKWRemoteStream","kind":"typeIdentifier"}],"platforms":["iOS"]}]},"op":"replace","path":"\/primaryContentSections\/0"},{"value":"SKWRemoteAudioStream","op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream\/title"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream\/fragments","value":[{"kind":"identifier","text":"SKWRemoteAudioStream"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream\/navigatorTitle","value":[{"text":"SKWRemoteAudioStream","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream~1setVolume(_:)\/title","value":"setVolume:"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream~1setVolume(_:)\/fragments","value":[{"kind":"text","text":"- "},{"kind":"identifier","text":"setVolume:"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteStream\/title","value":"SKWRemoteStream"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteStream\/fragments","value":[{"text":"SKWRemoteStream","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteStream\/navigatorTitle","value":[{"kind":"identifier","text":"SKWRemoteStream"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream~1getAudioLevel()\/title","value":"getAudioLevel"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream~1getAudioLevel()\/fragments","value":[{"text":"- ","kind":"text"},{"kind":"identifier","text":"getAudioLevel"}]}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "abstract": [
+    {
+      "text": "RemoteAudioStreamクラス",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteAudioStream"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:objc(cs)SKWRemoteAudioStream",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "class"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "RemoteAudioStream"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "RemoteAudioStream"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Class",
+    "symbolKind": "class",
+    "title": "RemoteAudioStream"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "class"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "RemoteAudioStream"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/SH": {
+      "identifier": "doc://com.ntt.skyway.room/SH",
+      "title": "Swift.Hashable",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/SQ": {
+      "identifier": "doc://com.ntt.skyway.room/SQ",
+      "title": "Swift.Equatable",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteAudioStream": {
+      "abstract": [
+        {
+          "text": "RemoteAudioStreamクラス",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "RemoteAudioStream"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteAudioStream",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "RemoteAudioStream"
+        }
+      ],
+      "role": "symbol",
+      "title": "RemoteAudioStream",
+      "type": "topic",
+      "url": "/documentation/skywayroom/remoteaudiostream"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteAudioStream/getAudioLevel()": {
+      "abstract": [
+        {
+          "text": "直近100msにおける最大音量を取得します（値の範囲：0.0-1.0）。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "getAudioLevel"
+        },
+        {
+          "kind": "text",
+          "text": "() -> "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:Sd",
+          "text": "Double"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteAudioStream/getAudioLevel()",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "getAudioLevel"
+        }
+      ],
+      "role": "symbol",
+      "title": "getAudioLevel()",
+      "type": "topic",
+      "url": "/documentation/skywayroom/remoteaudiostream/getaudiolevel()"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteAudioStream/setVolume(_:)": {
+      "abstract": [
+        {
+          "text": "再生音量を設定します。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "setVolume"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:Sd",
+          "text": "Double"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteAudioStream/setVolume(_:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "setVolume:"
+        }
+      ],
+      "role": "symbol",
+      "title": "setVolume(_:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/remoteaudiostream/setvolume(_:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteStream": {
+      "abstract": [
+        {
+          "text": "抽象RemoteStreamクラス",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "RemoteStream"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteStream",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "RemoteStream"
+        }
+      ],
+      "role": "symbol",
+      "title": "RemoteStream",
+      "type": "topic",
+      "url": "/documentation/skywayroom/remotestream"
+    },
+    "doc://com.ntt.skyway.room/objc(pl)NSObject": {
+      "identifier": "doc://com.ntt.skyway.room/objc(pl)NSObject",
+      "title": "ObjectiveC.NSObjectProtocol",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/s23CustomStringConvertibleP": {
+      "identifier": "doc://com.ntt.skyway.room/s23CustomStringConvertibleP",
+      "title": "Swift.CustomStringConvertible",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP": {
+      "identifier": "doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP",
+      "title": "Swift.CustomDebugStringConvertible",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/s7CVarArgP": {
+      "identifier": "doc://com.ntt.skyway.room/s7CVarArgP",
+      "title": "Swift.CVarArg",
+      "type": "unresolvable"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteStream"
+      ],
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom"
+    },
+    {
+      "identifiers": [
+        "doc://com.ntt.skyway.room/objc(pl)NSObject",
+        "doc://com.ntt.skyway.room/s7CVarArgP",
+        "doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP",
+        "doc://com.ntt.skyway.room/s23CustomStringConvertibleP",
+        "doc://com.ntt.skyway.room/SQ",
+        "doc://com.ntt.skyway.room/SH"
+      ],
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo"
+    }
+  ],
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "topicSections": [
+    {
+      "anchor": "Instance-Methods",
+      "generated": true,
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteAudioStream/getAudioLevel()",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteAudioStream/setVolume(_:)"
+      ],
+      "title": "Instance Methods"
+    }
+  ],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Class"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "SKWRemoteAudioStream"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "class"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemoteAudioStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemoteAudioStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/topicSections",
+          "value": [
+            {
+              "anchor": "Instance-Methods",
+              "generated": true,
+              "identifiers": [
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteAudioStream/getAudioLevel()",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteAudioStream/setVolume(_:)"
+              ],
+              "title": "Instance Methods"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/relationshipsSections",
+          "value": [
+            {
+              "identifiers": [
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteStream"
+              ],
+              "kind": "relationships",
+              "title": "Inherits From",
+              "type": "inheritsFrom"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "keyword",
+                    "text": "@interface"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "SKWRemoteAudioStream"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " : "
+                  },
+                  {
+                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteStream",
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:objc(cs)SKWRemoteStream",
+                    "text": "SKWRemoteStream"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream~1setVolume(_:)/title",
+          "value": "setVolume:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream~1setVolume(_:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "setVolume:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream/title",
+          "value": "SKWRemoteAudioStream"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemoteAudioStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemoteAudioStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream~1getAudioLevel()/title",
+          "value": "getAudioLevel"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream~1getAudioLevel()/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "getAudioLevel"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteStream/title",
+          "value": "SKWRemoteStream"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteStream/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemoteStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteStream/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemoteStream"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/remoteaudiostream"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/remoteaudiostream"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

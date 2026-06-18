@@ -1,1 +1,868 @@
-{"kind":"symbol","topicSections":[{"generated":true,"anchor":"Instance-Properties","title":"Instance Properties","identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/analytics","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/iceParams","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/logLevel","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/rtcApi","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/rtcConfig","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/sfu","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/signaling","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/token"]}],"sections":[],"variants":[{"paths":["\/documentation\/skywayroom\/contextoptions"],"traits":[{"interfaceLanguage":"swift"}]},{"paths":["\/documentation\/skywayroom\/contextoptions"],"traits":[{"interfaceLanguage":"occ"}]}],"relationshipsSections":[{"title":"Inherits From","kind":"relationships","identifiers":["doc:\/\/com.ntt.skyway.room\/objc(cs)NSObject"],"type":"inheritsFrom"},{"title":"Conforms To","kind":"relationships","identifiers":["doc:\/\/com.ntt.skyway.room\/objc(pl)NSObject","doc:\/\/com.ntt.skyway.room\/s7CVarArgP","doc:\/\/com.ntt.skyway.room\/s28CustomDebugStringConvertibleP","doc:\/\/com.ntt.skyway.room\/s23CustomStringConvertibleP","doc:\/\/com.ntt.skyway.room\/SQ","doc:\/\/com.ntt.skyway.room\/SH"],"type":"conformsTo"}],"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"ContextOptions"}],"languages":["swift"],"platforms":["iOS"]}]}],"schemaVersion":{"major":0,"minor":3,"patch":0},"metadata":{"externalID":"c:objc(cs)SKWContextOptions","modules":[{"name":"SkyWayRoom"}],"fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"ContextOptions","kind":"identifier"}],"role":"symbol","navigatorTitle":[{"text":"ContextOptions","kind":"identifier"}],"roleHeading":"Class","symbolKind":"class","title":"ContextOptions"},"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom"]]},"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions","interfaceLanguage":"swift"},"abstract":[{"text":"コンテキストの初期化オプション","type":"text"}],"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/rtcConfig":{"url":"\/documentation\/skywayroom\/contextoptions\/rtcconfig","navigatorTitle":[{"text":"rtcConfig","kind":"identifier"}],"type":"topic","kind":"symbol","title":"rtcConfig","abstract":[{"text":"WebRTCに関するオプション","type":"text"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/rtcConfig","fragments":[{"kind":"keyword","text":"var"},{"kind":"text","text":" "},{"kind":"identifier","text":"rtcConfig"},{"kind":"text","text":": "},{"kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWContextOptionsRTCConfig","text":"ContextOptionsRTCConfig"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/iceParams":{"url":"\/documentation\/skywayroom\/contextoptions\/iceparams","navigatorTitle":[{"text":"iceParams","kind":"identifier"}],"type":"topic","kind":"symbol","title":"iceParams","abstract":[{"text":"内部向けオプション","type":"text"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/iceParams","fragments":[{"text":"var","kind":"keyword"},{"text":" ","kind":"text"},{"text":"iceParams","kind":"identifier"},{"text":": ","kind":"text"},{"text":"ContextOptionsICEParams","kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWContextOptionsICEParams"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/sfu":{"url":"\/documentation\/skywayroom\/contextoptions\/sfu","navigatorTitle":[{"kind":"identifier","text":"sfu"}],"type":"topic","kind":"symbol","title":"sfu","abstract":[{"type":"text","text":"内部向けオプション"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/sfu","fragments":[{"kind":"keyword","text":"var"},{"kind":"text","text":" "},{"kind":"identifier","text":"sfu"},{"kind":"text","text":": "},{"kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWContextOptionsSFU","text":"ContextOptionsSFU"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/rtcApi":{"url":"\/documentation\/skywayroom\/contextoptions\/rtcapi","navigatorTitle":[{"kind":"identifier","text":"rtcApi"}],"type":"topic","kind":"symbol","title":"rtcApi","abstract":[{"text":"内部向けオプション","type":"text"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/rtcApi","fragments":[{"kind":"keyword","text":"var"},{"kind":"text","text":" "},{"kind":"identifier","text":"rtcApi"},{"kind":"text","text":": "},{"kind":"typeIdentifier","text":"ContextOptionsRTCAPI","preciseIdentifier":"c:objc(cs)SKWContextOptionsRTCAPI"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/signaling":{"kind":"symbol","fragments":[{"kind":"keyword","text":"var"},{"kind":"text","text":" "},{"kind":"identifier","text":"signaling"},{"kind":"text","text":": "},{"kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWContextOptionsSignaling","text":"ContextOptionsSignaling"}],"url":"\/documentation\/skywayroom\/contextoptions\/signaling","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"signaling"}],"type":"topic","title":"signaling","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/signaling","abstract":[{"text":"内部向けオプション","type":"text"}]},"doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP":{"title":"Swift.CustomDebugStringConvertible","type":"unresolvable","identifier":"doc:\/\/com.ntt.skyway.room\/s28CustomDebugStringConvertibleP"},"doc://com.ntt.skyway.room/SH":{"title":"Swift.Hashable","type":"unresolvable","identifier":"doc:\/\/com.ntt.skyway.room\/SH"},"doc://com.ntt.skyway.room/s23CustomStringConvertibleP":{"title":"Swift.CustomStringConvertible","type":"unresolvable","identifier":"doc:\/\/com.ntt.skyway.room\/s23CustomStringConvertibleP"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions":{"kind":"symbol","fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"ContextOptions","kind":"identifier"}],"url":"\/documentation\/skywayroom\/contextoptions","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"ContextOptions"}],"type":"topic","title":"ContextOptions","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions","abstract":[{"type":"text","text":"コンテキストの初期化オプション"}]},"doc://com.ntt.skyway.room/objc(cs)NSObject":{"title":"NSObject","type":"unresolvable","identifier":"doc:\/\/com.ntt.skyway.room\/objc(cs)NSObject"},"doc://com.ntt.skyway.room/objc(pl)NSObject":{"title":"ObjectiveC.NSObjectProtocol","type":"unresolvable","identifier":"doc:\/\/com.ntt.skyway.room\/objc(pl)NSObject"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/logLevel":{"kind":"symbol","fragments":[{"text":"var","kind":"keyword"},{"text":" ","kind":"text"},{"kind":"identifier","text":"logLevel"},{"kind":"text","text":": "},{"kind":"typeIdentifier","text":"LogLevel","preciseIdentifier":"c:@E@SKWLogLevel"}],"url":"\/documentation\/skywayroom\/contextoptions\/loglevel","role":"symbol","navigatorTitle":[{"text":"logLevel","kind":"identifier"}],"type":"topic","title":"logLevel","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/logLevel","abstract":[{"type":"text","text":"ログレベル"}]},"doc://com.ntt.skyway.room/s7CVarArgP":{"title":"Swift.CVarArg","type":"unresolvable","identifier":"doc:\/\/com.ntt.skyway.room\/s7CVarArgP"},"doc://com.ntt.skyway.room/SQ":{"title":"Swift.Equatable","type":"unresolvable","identifier":"doc:\/\/com.ntt.skyway.room\/SQ"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/analytics":{"url":"\/documentation\/skywayroom\/contextoptions\/analytics","navigatorTitle":[{"kind":"identifier","text":"analytics"}],"type":"topic","kind":"symbol","title":"analytics","abstract":[{"type":"text","text":"内部向けオプション"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/analytics","fragments":[{"kind":"keyword","text":"var"},{"kind":"text","text":" "},{"kind":"identifier","text":"analytics"},{"kind":"text","text":": "},{"kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWContextOptionsAnalytics","text":"ContextOptionsAnalytics"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/token":{"kind":"symbol","fragments":[{"text":"var","kind":"keyword"},{"text":" ","kind":"text"},{"text":"token","kind":"identifier"},{"kind":"text","text":": "},{"kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWContextOptionsToken","text":"ContextOptionsToken"}],"url":"\/documentation\/skywayroom\/contextoptions\/token","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"token"}],"type":"topic","title":"token","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/token","abstract":[{"text":"SkyWayAuthTokenに関するオプション","type":"text"}]}},"variantOverrides":[{"patch":[{"path":"\/identifier\/interfaceLanguage","value":"occ","op":"replace"},{"path":"\/metadata\/platforms","value":null,"op":"add"},{"path":"\/metadata\/roleHeading","value":"Class","op":"replace"},{"path":"\/metadata\/title","value":"SKWContextOptions","op":"replace"},{"path":"\/metadata\/symbolKind","value":"class","op":"replace"},{"path":"\/metadata\/fragments","value":[{"text":"SKWContextOptions","kind":"identifier"}],"op":"replace"},{"op":"replace","path":"\/metadata\/navigatorTitle","value":[{"kind":"identifier","text":"SKWContextOptions"}]},{"path":"\/topicSections","value":[{"generated":true,"anchor":"Instance-Properties","title":"Instance Properties","identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/analytics","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/iceParams","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/logLevel","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/rtcApi","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/rtcConfig","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/sfu","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/signaling","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ContextOptions\/token"]}],"op":"replace"},{"op":"replace","path":"\/relationshipsSections","value":[{"identifiers":["doc:\/\/com.ntt.skyway.room\/objc(cs)NSObject"],"kind":"relationships","type":"inheritsFrom","title":"Inherits From"}]},{"path":"\/seeAlsoSections","value":null,"op":"add"},{"path":"\/primaryContentSections\/0","value":{"kind":"declarations","declarations":[{"tokens":[{"text":"@interface","kind":"keyword"},{"text":" ","kind":"text"},{"text":"SKWContextOptions","kind":"identifier"},{"text":" : ","kind":"text"},{"text":"NSObject","kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)NSObject"}],"languages":["occ"],"platforms":["iOS"]}]},"op":"replace"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1rtcConfig\/title","value":"rtcConfig"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1rtcConfig\/fragments","value":[{"text":"rtcConfig","kind":"identifier"}],"op":"replace"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1iceParams\/title","value":"iceParams"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1iceParams\/fragments","value":[{"text":"iceParams","kind":"identifier"}],"op":"replace"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1sfu\/title","value":"sfu"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1sfu\/fragments","value":[{"text":"sfu","kind":"identifier"}],"op":"replace"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1rtcApi\/title","value":"rtcApi"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1rtcApi\/fragments","value":[{"text":"rtcApi","kind":"identifier"}],"op":"replace"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1signaling\/title","value":"signaling"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1signaling\/fragments","value":[{"text":"signaling","kind":"identifier"}],"op":"replace"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions\/title","value":"SKWContextOptions"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions\/fragments","value":[{"text":"SKWContextOptions","kind":"identifier"}],"op":"replace"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions\/navigatorTitle","value":[{"kind":"identifier","text":"SKWContextOptions"}]},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1logLevel\/title","value":"logLevel","op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1logLevel\/fragments","value":[{"text":"logLevel","kind":"identifier"}],"op":"replace"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1analytics\/title","value":"analytics"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1analytics\/fragments","value":[{"text":"analytics","kind":"identifier"}],"op":"replace"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1token\/title","value":"token"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1token\/fragments","value":[{"text":"token","kind":"identifier"}],"op":"replace"}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "abstract": [
+    {
+      "text": "コンテキストの初期化オプション",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:objc(cs)SKWContextOptions",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "class"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "ContextOptions"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "ContextOptions"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Class",
+    "symbolKind": "class",
+    "title": "ContextOptions"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "class"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "ContextOptions"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/SH": {
+      "identifier": "doc://com.ntt.skyway.room/SH",
+      "title": "Swift.Hashable",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/SQ": {
+      "identifier": "doc://com.ntt.skyway.room/SQ",
+      "title": "Swift.Equatable",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions": {
+      "abstract": [
+        {
+          "text": "コンテキストの初期化オプション",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "ContextOptions"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "ContextOptions"
+        }
+      ],
+      "role": "symbol",
+      "title": "ContextOptions",
+      "type": "topic",
+      "url": "/documentation/skywayroom/contextoptions"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/analytics": {
+      "abstract": [
+        {
+          "text": "内部向けオプション",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "analytics"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWContextOptionsAnalytics",
+          "text": "ContextOptionsAnalytics"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/analytics",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "analytics"
+        }
+      ],
+      "role": "symbol",
+      "title": "analytics",
+      "type": "topic",
+      "url": "/documentation/skywayroom/contextoptions/analytics"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/iceParams": {
+      "abstract": [
+        {
+          "text": "内部向けオプション",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "iceParams"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWContextOptionsICEParams",
+          "text": "ContextOptionsICEParams"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/iceParams",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "iceParams"
+        }
+      ],
+      "role": "symbol",
+      "title": "iceParams",
+      "type": "topic",
+      "url": "/documentation/skywayroom/contextoptions/iceparams"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/logLevel": {
+      "abstract": [
+        {
+          "text": "ログレベル",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "logLevel"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@E@SKWLogLevel",
+          "text": "LogLevel"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/logLevel",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "logLevel"
+        }
+      ],
+      "role": "symbol",
+      "title": "logLevel",
+      "type": "topic",
+      "url": "/documentation/skywayroom/contextoptions/loglevel"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/rtcApi": {
+      "abstract": [
+        {
+          "text": "内部向けオプション",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "rtcApi"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWContextOptionsRTCAPI",
+          "text": "ContextOptionsRTCAPI"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/rtcApi",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "rtcApi"
+        }
+      ],
+      "role": "symbol",
+      "title": "rtcApi",
+      "type": "topic",
+      "url": "/documentation/skywayroom/contextoptions/rtcapi"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/rtcConfig": {
+      "abstract": [
+        {
+          "text": "WebRTCに関するオプション",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "rtcConfig"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWContextOptionsRTCConfig",
+          "text": "ContextOptionsRTCConfig"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/rtcConfig",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "rtcConfig"
+        }
+      ],
+      "role": "symbol",
+      "title": "rtcConfig",
+      "type": "topic",
+      "url": "/documentation/skywayroom/contextoptions/rtcconfig"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/sfu": {
+      "abstract": [
+        {
+          "text": "内部向けオプション",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "sfu"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWContextOptionsSFU",
+          "text": "ContextOptionsSFU"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/sfu",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "sfu"
+        }
+      ],
+      "role": "symbol",
+      "title": "sfu",
+      "type": "topic",
+      "url": "/documentation/skywayroom/contextoptions/sfu"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/signaling": {
+      "abstract": [
+        {
+          "text": "内部向けオプション",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "signaling"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWContextOptionsSignaling",
+          "text": "ContextOptionsSignaling"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/signaling",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "signaling"
+        }
+      ],
+      "role": "symbol",
+      "title": "signaling",
+      "type": "topic",
+      "url": "/documentation/skywayroom/contextoptions/signaling"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/token": {
+      "abstract": [
+        {
+          "text": "SkyWayAuthTokenに関するオプション",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "token"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWContextOptionsToken",
+          "text": "ContextOptionsToken"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/token",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "token"
+        }
+      ],
+      "role": "symbol",
+      "title": "token",
+      "type": "topic",
+      "url": "/documentation/skywayroom/contextoptions/token"
+    },
+    "doc://com.ntt.skyway.room/objc(cs)NSObject": {
+      "identifier": "doc://com.ntt.skyway.room/objc(cs)NSObject",
+      "title": "NSObject",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/objc(pl)NSObject": {
+      "identifier": "doc://com.ntt.skyway.room/objc(pl)NSObject",
+      "title": "ObjectiveC.NSObjectProtocol",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/s23CustomStringConvertibleP": {
+      "identifier": "doc://com.ntt.skyway.room/s23CustomStringConvertibleP",
+      "title": "Swift.CustomStringConvertible",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP": {
+      "identifier": "doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP",
+      "title": "Swift.CustomDebugStringConvertible",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/s7CVarArgP": {
+      "identifier": "doc://com.ntt.skyway.room/s7CVarArgP",
+      "title": "Swift.CVarArg",
+      "type": "unresolvable"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "identifiers": [
+        "doc://com.ntt.skyway.room/objc(cs)NSObject"
+      ],
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom"
+    },
+    {
+      "identifiers": [
+        "doc://com.ntt.skyway.room/objc(pl)NSObject",
+        "doc://com.ntt.skyway.room/s7CVarArgP",
+        "doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP",
+        "doc://com.ntt.skyway.room/s23CustomStringConvertibleP",
+        "doc://com.ntt.skyway.room/SQ",
+        "doc://com.ntt.skyway.room/SH"
+      ],
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo"
+    }
+  ],
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "topicSections": [
+    {
+      "anchor": "Instance-Properties",
+      "generated": true,
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/analytics",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/iceParams",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/logLevel",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/rtcApi",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/rtcConfig",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/sfu",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/signaling",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/token"
+      ],
+      "title": "Instance Properties"
+    }
+  ],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Class"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "SKWContextOptions"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "class"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWContextOptions"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWContextOptions"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/topicSections",
+          "value": [
+            {
+              "anchor": "Instance-Properties",
+              "generated": true,
+              "identifiers": [
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/analytics",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/iceParams",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/logLevel",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/rtcApi",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/rtcConfig",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/sfu",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/signaling",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ContextOptions/token"
+              ],
+              "title": "Instance Properties"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/relationshipsSections",
+          "value": [
+            {
+              "identifiers": [
+                "doc://com.ntt.skyway.room/objc(cs)NSObject"
+              ],
+              "kind": "relationships",
+              "title": "Inherits From",
+              "type": "inheritsFrom"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "keyword",
+                    "text": "@interface"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "SKWContextOptions"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " : "
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:objc(cs)NSObject",
+                    "text": "NSObject"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1signaling/title",
+          "value": "signaling"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1signaling/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "signaling"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1token/title",
+          "value": "token"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1token/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "token"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1iceParams/title",
+          "value": "iceParams"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1iceParams/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "iceParams"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1logLevel/title",
+          "value": "logLevel"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1logLevel/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "logLevel"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1analytics/title",
+          "value": "analytics"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1analytics/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "analytics"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1rtcConfig/title",
+          "value": "rtcConfig"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1rtcConfig/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "rtcConfig"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1rtcApi/title",
+          "value": "rtcApi"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1rtcApi/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "rtcApi"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions/title",
+          "value": "SKWContextOptions"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWContextOptions"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWContextOptions"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1sfu/title",
+          "value": "sfu"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1sfu/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "sfu"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/contextoptions"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/contextoptions"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

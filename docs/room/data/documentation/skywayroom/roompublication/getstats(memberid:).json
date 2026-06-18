@@ -1,1 +1,581 @@
-{"kind":"symbol","sections":[],"variants":[{"traits":[{"interfaceLanguage":"swift"}],"paths":["\/documentation\/skywayroom\/roompublication\/getstats(memberid:)"]},{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/skywayroom\/roompublication\/getstats(memberid:)"]}],"primaryContentSections":[{"declarations":[{"tokens":[{"text":"@objc","kind":"attribute"},{"text":" ","kind":"text"},{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"getStats","kind":"identifier"},{"text":"(","kind":"text"},{"text":"memberId","kind":"externalParam"},{"text":": ","kind":"text"},{"text":"String","preciseIdentifier":"s:SS","kind":"typeIdentifier"},{"text":") -> ","kind":"text"},{"text":"WebRTCStats","preciseIdentifier":"c:objc(cs)SKWWebRTCStats","kind":"typeIdentifier","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/WebRTCStats"},{"text":"?","kind":"text"}],"languages":["swift"],"platforms":["iOS"]}],"kind":"declarations"},{"content":[{"text":"Discussion","anchor":"discussion","type":"heading","level":2},{"style":"warning","type":"aside","content":[{"inlineContent":[{"type":"text","text":"SkyWayRoom v2.0.0で非推奨となりました。"}],"type":"paragraph"}],"name":"Warning"}],"kind":"content"}],"deprecationSummary":[{"inlineContent":[{"type":"text","text":"SkyWayRoom v2.0.0で非推奨となりました。"}],"type":"paragraph"}],"schemaVersion":{"patch":0,"major":0,"minor":3},"metadata":{"modules":[{"name":"SkyWayRoom"}],"externalID":"c:@M@SkyWayRoom@objc(cs)RoomPublication(im)getStatsWithMemberId:","fragments":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"getStats","kind":"identifier"},{"text":"(","kind":"text"},{"text":"memberId","kind":"externalParam"},{"text":": ","kind":"text"},{"preciseIdentifier":"s:SS","text":"String","kind":"typeIdentifier"},{"text":") -> ","kind":"text"},{"preciseIdentifier":"c:objc(cs)SKWWebRTCStats","text":"WebRTCStats","kind":"typeIdentifier"},{"text":"?","kind":"text"}],"platforms":[{"deprecated":true,"beta":false,"message":"SkyWayRoom v2.0.0で非推奨となりました。","unavailable":false}],"role":"symbol","navigatorTitle":[{"text":"getStatsWithMemberId:","kind":"identifier"}],"roleHeading":"Instance Method","symbolKind":"method","title":"getStats(memberId:)"},"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomPublication"]]},"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomPublication\/getStats(memberId:)","interfaceLanguage":"swift"},"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom/WebRTCStats":{"url":"\/documentation\/skywayroom\/webrtcstats","navigatorTitle":[{"kind":"identifier","text":"WebRTCStats"}],"type":"topic","kind":"symbol","title":"WebRTCStats","abstract":[],"deprecated":true,"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/WebRTCStats","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"WebRTCStats"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomPublication/getStats(memberId:)":{"kind":"symbol","title":"getStats(memberId:)","abstract":[],"fragments":[{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"getStats"},{"kind":"text","text":"("},{"kind":"externalParam","text":"memberId"},{"kind":"text","text":": "},{"kind":"typeIdentifier","preciseIdentifier":"s:SS","text":"String"},{"kind":"text","text":") -> "},{"kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWWebRTCStats","text":"WebRTCStats"},{"kind":"text","text":"?"}],"identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomPublication\/getStats(memberId:)","navigatorTitle":[{"kind":"identifier","text":"getStatsWithMemberId:"}],"role":"symbol","type":"topic","url":"\/documentation\/skywayroom\/roompublication\/getstats(memberid:)","deprecated":true},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomPublication":{"url":"\/documentation\/skywayroom\/roompublication","type":"topic","abstract":[{"type":"text","text":"Room SDKにおけるPublication"}],"fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"RoomPublication"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomPublication","title":"RoomPublication","navigatorTitle":[{"kind":"identifier","text":"RoomPublication"}],"kind":"symbol"}},"variantOverrides":[{"patch":[{"value":"occ","path":"\/identifier\/interfaceLanguage","op":"replace"},{"value":[{"deprecated":true,"beta":false,"unavailable":false}],"path":"\/metadata\/platforms","op":"replace"},{"value":"Instance Method","path":"\/metadata\/roleHeading","op":"replace"},{"value":"getStatsWithMemberId:","path":"\/metadata\/title","op":"replace"},{"value":"method","path":"\/metadata\/symbolKind","op":"replace"},{"value":[{"kind":"text","text":"- "},{"kind":"identifier","text":"getStatsWithMemberId:"}],"path":"\/metadata\/fragments","op":"replace"},{"value":null,"path":"\/topicSections","op":"add"},{"value":null,"path":"\/relationshipsSections","op":"add"},{"value":null,"path":"\/seeAlsoSections","op":"add"},{"value":{"declarations":[{"languages":["occ"],"platforms":["iOS"],"tokens":[{"text":"- (","kind":"text"},{"text":"SKWWebRTCStats","kind":"typeIdentifier","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/WebRTCStats","preciseIdentifier":"c:objc(cs)SKWWebRTCStats"},{"kind":"text","text":" *) "},{"kind":"identifier","text":"getStatsWithMemberId:"},{"kind":"text","text":"("},{"kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)NSString","text":"NSString"},{"kind":"text","text":" *) "},{"text":"memberId","kind":"internalParam"},{"kind":"text","text":";"}]}],"kind":"declarations"},"path":"\/primaryContentSections\/0","op":"replace"},{"value":[{"type":"paragraph","inlineContent":[{"type":"text","text":"SkyWayRoom v2.0.0で非推奨となりました。"}]}],"path":"\/deprecationSummary","op":"replace"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats\/title","value":"SKWWebRTCStats"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats\/fragments","value":[{"text":"SKWWebRTCStats","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats\/navigatorTitle","value":[{"text":"SKWWebRTCStats","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublication~1getStats(memberId:)\/title","value":"getStatsWithMemberId:"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublication~1getStats(memberId:)\/fragments","value":[{"text":"- ","kind":"text"},{"text":"getStatsWithMemberId:","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublication\/title","value":"RoomPublication"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublication\/fragments","value":[{"text":"RoomPublication","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublication\/navigatorTitle","value":[{"text":"RoomPublication","kind":"identifier"}]}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "deprecationSummary": [
+    {
+      "inlineContent": [
+        {
+          "text": "SkyWayRoom v2.0.0で非推奨となりました。",
+          "type": "text"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomPublication"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomPublication/getStats(memberId:)"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:@M@SkyWayRoom@objc(cs)RoomPublication(im)getStatsWithMemberId:",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "func"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "getStats"
+      },
+      {
+        "kind": "text",
+        "text": "("
+      },
+      {
+        "kind": "externalParam",
+        "text": "memberId"
+      },
+      {
+        "kind": "text",
+        "text": ": "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:SS",
+        "text": "String"
+      },
+      {
+        "kind": "text",
+        "text": ") -> "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "c:objc(cs)SKWWebRTCStats",
+        "text": "WebRTCStats"
+      },
+      {
+        "kind": "text",
+        "text": "?"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "getStatsWithMemberId:"
+      }
+    ],
+    "platforms": [
+      {
+        "beta": false,
+        "deprecated": true,
+        "message": "SkyWayRoom v2.0.0で非推奨となりました。",
+        "unavailable": false
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "symbolKind": "method",
+    "title": "getStats(memberId:)"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "attribute",
+              "text": "@objc"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "getStats"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "externalParam",
+              "text": "memberId"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:SS",
+              "text": "String"
+            },
+            {
+              "kind": "text",
+              "text": ") -> "
+            },
+            {
+              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/WebRTCStats",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)SKWWebRTCStats",
+              "text": "WebRTCStats"
+            },
+            {
+              "kind": "text",
+              "text": "?"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "content": [
+            {
+              "inlineContent": [
+                {
+                  "text": "SkyWayRoom v2.0.0で非推奨となりました。",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "Warning",
+          "style": "warning",
+          "type": "aside"
+        }
+      ],
+      "kind": "content"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomPublication": {
+      "abstract": [
+        {
+          "text": "Room SDKにおけるPublication",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "RoomPublication"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomPublication",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "RoomPublication"
+        }
+      ],
+      "role": "symbol",
+      "title": "RoomPublication",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roompublication"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomPublication/getStats(memberId:)": {
+      "abstract": [],
+      "deprecated": true,
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "getStats"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "externalParam",
+          "text": "memberId"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:SS",
+          "text": "String"
+        },
+        {
+          "kind": "text",
+          "text": ") -> "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWWebRTCStats",
+          "text": "WebRTCStats"
+        },
+        {
+          "kind": "text",
+          "text": "?"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomPublication/getStats(memberId:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "getStatsWithMemberId:"
+        }
+      ],
+      "role": "symbol",
+      "title": "getStats(memberId:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roompublication/getstats(memberid:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/WebRTCStats": {
+      "abstract": [],
+      "deprecated": true,
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "WebRTCStats"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/WebRTCStats",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "WebRTCStats"
+        }
+      ],
+      "role": "symbol",
+      "title": "WebRTCStats",
+      "type": "topic",
+      "url": "/documentation/skywayroom/webrtcstats"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/platforms",
+          "value": [
+            {
+              "beta": false,
+              "deprecated": true,
+              "unavailable": false
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Instance Method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "getStatsWithMemberId:"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "getStatsWithMemberId:"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "text",
+                    "text": "- ("
+                  },
+                  {
+                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/WebRTCStats",
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:objc(cs)SKWWebRTCStats",
+                    "text": "SKWWebRTCStats"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " *) "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "getStatsWithMemberId:"
+                  },
+                  {
+                    "kind": "text",
+                    "text": "("
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:objc(cs)NSString",
+                    "text": "NSString"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " *) "
+                  },
+                  {
+                    "kind": "internalParam",
+                    "text": "memberId"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ";"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/deprecationSummary",
+          "value": [
+            {
+              "inlineContent": [
+                {
+                  "text": "SkyWayRoom v2.0.0で非推奨となりました。",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublication~1getStats(memberId:)/title",
+          "value": "getStatsWithMemberId:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublication~1getStats(memberId:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "getStatsWithMemberId:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublication/title",
+          "value": "RoomPublication"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublication/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomPublication"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublication/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomPublication"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats/title",
+          "value": "SKWWebRTCStats"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWWebRTCStats"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWWebRTCStats"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/roompublication/getstats(memberid:)"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/roompublication/getstats(memberid:)"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

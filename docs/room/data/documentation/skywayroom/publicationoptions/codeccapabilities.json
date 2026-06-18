@@ -1,1 +1,500 @@
-{"kind":"symbol","sections":[],"variants":[{"paths":["\/documentation\/skywayroom\/publicationoptions\/codeccapabilities"],"traits":[{"interfaceLanguage":"swift"}]},{"paths":["\/documentation\/skywayroom\/publicationoptions\/codeccapabilities"],"traits":[{"interfaceLanguage":"occ"}]}],"primaryContentSections":[{"kind":"declarations","declarations":[{"platforms":["iOS"],"languages":["swift"],"tokens":[{"text":"var","kind":"keyword"},{"text":" ","kind":"text"},{"text":"codecCapabilities","kind":"identifier"},{"text":": [","kind":"text"},{"identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Codec","text":"Codec","kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWCodec"},{"text":"] { ","kind":"text"},{"text":"get","kind":"keyword"},{"text":" ","kind":"text"},{"kind":"keyword","text":"set"},{"kind":"text","text":" }"}]}]},{"content":[{"type":"heading","text":"Discussion","anchor":"discussion","level":2},{"type":"paragraph","inlineContent":[{"type":"text","text":"SkyWayが対応していないコーデックが選択された場合はこのオプションは無視されます。"}]},{"type":"paragraph","inlineContent":[{"type":"text","text":"SFU Botは非対応です。 SFU RoomのPublishまたはSFU"},{"type":"text","text":" "},{"type":"text","text":"BotにおけるStartForwardingでこの値が設定されている場合は失敗します。"}]}],"kind":"content"}],"schemaVersion":{"major":0,"patch":0,"minor":3},"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/PublicationOptions"]]},"metadata":{"roleHeading":"Instance Property","navigatorTitle":[{"text":"codecCapabilities","kind":"identifier"}],"title":"codecCapabilities","externalID":"c:objc(cs)SKWPublicationOptions(py)codecCapabilities","symbolKind":"property","modules":[{"name":"SkyWayRoom"}],"role":"symbol","fragments":[{"text":"var","kind":"keyword"},{"text":" ","kind":"text"},{"text":"codecCapabilities","kind":"identifier"},{"text":": [","kind":"text"},{"text":"Codec","kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWCodec"},{"text":"]","kind":"text"}]},"identifier":{"interfaceLanguage":"swift","url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/PublicationOptions\/codecCapabilities"},"abstract":[{"type":"text","text":"指定コーデック"}],"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationOptions":{"url":"\/documentation\/skywayroom\/publicationoptions","navigatorTitle":[{"kind":"identifier","text":"PublicationOptions"}],"type":"topic","kind":"symbol","abstract":[{"type":"text","text":"Publishオプション"}],"title":"PublicationOptions","role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/PublicationOptions","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"PublicationOptions"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/Codec":{"url":"\/documentation\/skywayroom\/codec","navigatorTitle":[{"kind":"identifier","text":"Codec"}],"type":"topic","kind":"symbol","title":"Codec","abstract":[{"text":"コーデック設定","type":"text"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Codec","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"Codec"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationOptions/codecCapabilities":{"kind":"symbol","fragments":[{"kind":"keyword","text":"var"},{"kind":"text","text":" "},{"kind":"identifier","text":"codecCapabilities"},{"kind":"text","text":": ["},{"kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWCodec","text":"Codec"},{"kind":"text","text":"]"}],"url":"\/documentation\/skywayroom\/publicationoptions\/codeccapabilities","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"codecCapabilities"}],"type":"topic","title":"codecCapabilities","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/PublicationOptions\/codecCapabilities","abstract":[{"type":"text","text":"指定コーデック"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]}},"variantOverrides":[{"patch":[{"op":"replace","value":"occ","path":"\/identifier\/interfaceLanguage"},{"path":"\/metadata\/platforms","value":null,"op":"add"},{"path":"\/metadata\/roleHeading","value":"Instance Property","op":"replace"},{"op":"replace","value":"codecCapabilities","path":"\/metadata\/title"},{"path":"\/metadata\/symbolKind","op":"replace","value":"property"},{"path":"\/metadata\/fragments","op":"replace","value":[{"kind":"identifier","text":"codecCapabilities"}]},{"path":"\/topicSections","op":"add","value":null},{"path":"\/relationshipsSections","op":"add","value":null},{"path":"\/seeAlsoSections","op":"add","value":null},{"path":"\/primaryContentSections\/0","op":"replace","value":{"declarations":[{"platforms":["iOS"],"languages":["occ"],"tokens":[{"text":"@property","kind":"keyword"},{"text":" ","kind":"text"},{"text":"NSArray<SKWCodec *>","kind":"typeIdentifier","preciseIdentifier":"c:Q$objc(cs)NSArray"},{"text":" * ","kind":"text"},{"text":"codecCapabilities","kind":"identifier"},{"text":";","kind":"text"}]}],"kind":"declarations"}},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions\/title","op":"replace","value":"SKWPublicationOptions"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions\/fragments","op":"replace","value":[{"kind":"identifier","text":"SKWPublicationOptions"}]},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions\/navigatorTitle","op":"replace","value":[{"kind":"identifier","text":"SKWPublicationOptions"}]},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Codec\/title","op":"replace","value":"SKWCodec"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Codec\/fragments","op":"replace","value":[{"kind":"identifier","text":"SKWCodec"}]},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Codec\/navigatorTitle","op":"replace","value":[{"kind":"identifier","text":"SKWCodec"}]},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1codecCapabilities\/title","op":"replace","value":"codecCapabilities"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1codecCapabilities\/fragments","op":"replace","value":[{"kind":"identifier","text":"codecCapabilities"}]}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "abstract": [
+    {
+      "text": "指定コーデック",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationOptions"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationOptions/codecCapabilities"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:objc(cs)SKWPublicationOptions(py)codecCapabilities",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "var"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "codecCapabilities"
+      },
+      {
+        "kind": "text",
+        "text": ": ["
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "c:objc(cs)SKWCodec",
+        "text": "Codec"
+      },
+      {
+        "kind": "text",
+        "text": "]"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "codecCapabilities"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Instance Property",
+    "symbolKind": "property",
+    "title": "codecCapabilities"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "var"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "codecCapabilities"
+            },
+            {
+              "kind": "text",
+              "text": ": ["
+            },
+            {
+              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Codec",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)SKWCodec",
+              "text": "Codec"
+            },
+            {
+              "kind": "text",
+              "text": "] { "
+            },
+            {
+              "kind": "keyword",
+              "text": "get"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "set"
+            },
+            {
+              "kind": "text",
+              "text": " }"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "SkyWayが対応していないコーデックが選択された場合はこのオプションは無視されます。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "SFU Botは非対応です。 SFU RoomのPublishまたはSFU",
+              "type": "text"
+            },
+            {
+              "text": " ",
+              "type": "text"
+            },
+            {
+              "text": "BotにおけるStartForwardingでこの値が設定されている場合は失敗します。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "kind": "content"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Codec": {
+      "abstract": [
+        {
+          "text": "コーデック設定",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "Codec"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Codec",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "Codec"
+        }
+      ],
+      "role": "symbol",
+      "title": "Codec",
+      "type": "topic",
+      "url": "/documentation/skywayroom/codec"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationOptions": {
+      "abstract": [
+        {
+          "text": "Publishオプション",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "PublicationOptions"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationOptions",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "PublicationOptions"
+        }
+      ],
+      "role": "symbol",
+      "title": "PublicationOptions",
+      "type": "topic",
+      "url": "/documentation/skywayroom/publicationoptions"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationOptions/codecCapabilities": {
+      "abstract": [
+        {
+          "text": "指定コーデック",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "codecCapabilities"
+        },
+        {
+          "kind": "text",
+          "text": ": ["
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWCodec",
+          "text": "Codec"
+        },
+        {
+          "kind": "text",
+          "text": "]"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationOptions/codecCapabilities",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "codecCapabilities"
+        }
+      ],
+      "role": "symbol",
+      "title": "codecCapabilities",
+      "type": "topic",
+      "url": "/documentation/skywayroom/publicationoptions/codeccapabilities"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Instance Property"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "codecCapabilities"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "property"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "codecCapabilities"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "keyword",
+                    "text": "@property"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " "
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:Q$objc(cs)NSArray",
+                    "text": "NSArray<SKWCodec *>"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " * "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "codecCapabilities"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ";"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Codec/title",
+          "value": "SKWCodec"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Codec/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWCodec"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Codec/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWCodec"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1codecCapabilities/title",
+          "value": "codecCapabilities"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1codecCapabilities/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "codecCapabilities"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions/title",
+          "value": "SKWPublicationOptions"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPublicationOptions"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPublicationOptions"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/publicationoptions/codeccapabilities"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/publicationoptions/codeccapabilities"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

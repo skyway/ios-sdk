@@ -1,1 +1,327 @@
-{"primaryContentSections":[{"kind":"declarations","declarations":[{"platforms":["iOS"],"languages":["swift"],"tokens":[{"text":"case","kind":"keyword"},{"text":" ","kind":"text"},{"text":"canceled","kind":"identifier"}]}]}],"variants":[{"traits":[{"interfaceLanguage":"swift"}],"paths":["\/documentation\/skywayroom\/subscriptionstate\/canceled"]},{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/skywayroom\/subscriptionstate\/canceled"]}],"metadata":{"roleHeading":"Case","navigatorTitle":[{"text":"SKWSubscriptionStateCanceled","kind":"identifier"}],"title":"SubscriptionState.canceled","externalID":"c:@E@SKWSubscriptionState@SKWSubscriptionStateCanceled","symbolKind":"case","modules":[{"name":"SkyWayRoom"}],"role":"symbol","fragments":[{"text":"case","kind":"keyword"},{"text":" ","kind":"text"},{"text":"canceled","kind":"identifier"}]},"sections":[],"kind":"symbol","abstract":[{"type":"text","text":"Subscribe停止(unsubscribe)状態"}],"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SubscriptionState"]]},"schemaVersion":{"major":0,"patch":0,"minor":3},"identifier":{"interfaceLanguage":"swift","url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SubscriptionState\/canceled"},"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom/SubscriptionState":{"url":"\/documentation\/skywayroom\/subscriptionstate","navigatorTitle":[{"text":"SubscriptionState","kind":"identifier"}],"type":"topic","kind":"symbol","abstract":[{"type":"text","text":"Subscriptionの状態"}],"title":"SubscriptionState","role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SubscriptionState","fragments":[{"text":"enum","kind":"keyword"},{"text":" ","kind":"text"},{"text":"SubscriptionState","kind":"identifier"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/SubscriptionState/canceled":{"kind":"symbol","fragments":[{"text":"case","kind":"keyword"},{"text":" ","kind":"text"},{"text":"canceled","kind":"identifier"}],"url":"\/documentation\/skywayroom\/subscriptionstate\/canceled","role":"symbol","navigatorTitle":[{"text":"SKWSubscriptionStateCanceled","kind":"identifier"}],"type":"topic","title":"SubscriptionState.canceled","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SubscriptionState\/canceled","abstract":[{"type":"text","text":"Subscribe停止(unsubscribe)状態"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]}},"variantOverrides":[{"patch":[{"op":"replace","value":"occ","path":"\/identifier\/interfaceLanguage"},{"op":"add","path":"\/metadata\/platforms","value":null},{"value":"Enumeration Case","path":"\/metadata\/roleHeading","op":"replace"},{"value":"SKWSubscriptionStateCanceled","path":"\/metadata\/title","op":"replace"},{"value":"case","path":"\/metadata\/symbolKind","op":"replace"},{"value":[{"text":"SKWSubscriptionStateCanceled","kind":"identifier"}],"path":"\/metadata\/fragments","op":"replace"},{"value":null,"path":"\/topicSections","op":"add"},{"value":null,"path":"\/relationshipsSections","op":"add"},{"value":null,"path":"\/seeAlsoSections","op":"add"},{"value":{"declarations":[{"languages":["occ"],"platforms":["iOS"],"tokens":[{"text":"SKWSubscriptionStateCanceled","kind":"identifier"}]}],"kind":"declarations"},"path":"\/primaryContentSections\/0","op":"replace"},{"value":"SKWSubscriptionState","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState\/title","op":"replace"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState\/fragments","value":[{"text":"SKWSubscriptionState","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState\/navigatorTitle","value":[{"text":"SKWSubscriptionState","kind":"identifier"}]},{"value":"SKWSubscriptionStateCanceled","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState~1canceled\/title","op":"replace"},{"value":[{"kind":"identifier","text":"SKWSubscriptionStateCanceled"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState~1canceled\/fragments","op":"replace"}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "abstract": [
+    {
+      "text": "Subscribe停止(unsubscribe)状態",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SubscriptionState"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SubscriptionState/canceled"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:@E@SKWSubscriptionState@SKWSubscriptionStateCanceled",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "case"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "canceled"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "SKWSubscriptionStateCanceled"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Case",
+    "symbolKind": "case",
+    "title": "SubscriptionState.canceled"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "case"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "canceled"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SubscriptionState": {
+      "abstract": [
+        {
+          "text": "Subscriptionの状態",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "enum"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "SubscriptionState"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SubscriptionState",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SubscriptionState"
+        }
+      ],
+      "role": "symbol",
+      "title": "SubscriptionState",
+      "type": "topic",
+      "url": "/documentation/skywayroom/subscriptionstate"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SubscriptionState/canceled": {
+      "abstract": [
+        {
+          "text": "Subscribe停止(unsubscribe)状態",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "case"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "canceled"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SubscriptionState/canceled",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SKWSubscriptionStateCanceled"
+        }
+      ],
+      "role": "symbol",
+      "title": "SubscriptionState.canceled",
+      "type": "topic",
+      "url": "/documentation/skywayroom/subscriptionstate/canceled"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Enumeration Case"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "SKWSubscriptionStateCanceled"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "case"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSubscriptionStateCanceled"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "identifier",
+                    "text": "SKWSubscriptionStateCanceled"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState/title",
+          "value": "SKWSubscriptionState"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSubscriptionState"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSubscriptionState"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState~1canceled/title",
+          "value": "SKWSubscriptionStateCanceled"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState~1canceled/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSubscriptionStateCanceled"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/subscriptionstate/canceled"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/subscriptionstate/canceled"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

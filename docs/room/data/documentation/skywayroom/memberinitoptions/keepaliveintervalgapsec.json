@@ -1,1 +1,234 @@
-{"kind":"symbol","sections":[],"variants":[{"paths":["\/documentation\/skywayroom\/memberinitoptions\/keepaliveintervalgapsec"],"traits":[{"interfaceLanguage":"occ"}]}],"primaryContentSections":[{"declarations":[{"tokens":[{"text":"@property","kind":"keyword"},{"text":" (","kind":"text"},{"text":"nonatomic","kind":"keyword"},{"text":") ","kind":"text"},{"preciseIdentifier":"c:@T@int32_t","text":"int32_t","kind":"typeIdentifier"},{"text":" ","kind":"text"},{"text":"keepaliveIntervalGapSec","kind":"identifier"},{"text":";","kind":"text"}],"languages":["occ"],"platforms":["iOS"]}],"kind":"declarations"}],"schemaVersion":{"major":0,"minor":3,"patch":0},"metadata":{"roleHeading":"Instance Property","navigatorTitle":[{"text":"keepaliveIntervalGapSec","kind":"identifier"}],"title":"keepaliveIntervalGapSec","externalID":"c:@M@SkyWayRoom@objc(cs)MemberInitOptions(py)keepaliveIntervalGapSec","symbolKind":"property","modules":[{"name":"SkyWayRoom"}],"role":"symbol","fragments":[{"kind":"identifier","text":"keepaliveIntervalGapSec"}]},"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/MemberInitOptions"]]},"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/MemberInitOptions\/keepaliveIntervalGapSec","interfaceLanguage":"occ"},"abstract":[{"text":"MemberのKeepAliveの更新間隔時間を超えてRoomからMemberが削除されるまでの時間(秒)","type":"text"},{"text":" ","type":"text"},{"type":"text","text":"デフォルトは30秒です。"},{"type":"text","text":" "},{"type":"text","text":"keepaliveIntervalSec"},{"type":"text","text":"と同様に、SkyWayサーバにおけるMemberの存在情報の不整合を解消するまでの時間を設定できます。"},{"type":"text","text":" "},{"type":"text","text":"短すぎる設定では、正常な通信であってもRoomから退出させられてしまう恐れがあります。"}],"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom/MemberInitOptions/keepaliveIntervalGapSec":{"url":"\/documentation\/skywayroom\/memberinitoptions\/keepaliveintervalgapsec","type":"topic","kind":"symbol","title":"keepaliveIntervalGapSec","abstract":[{"type":"text","text":"MemberのKeepAliveの更新間隔時間を超えてRoomからMemberが削除されるまでの時間(秒)"},{"type":"text","text":" "},{"type":"text","text":"デフォルトは30秒です。"},{"type":"text","text":" "},{"type":"text","text":"keepaliveIntervalSec"},{"type":"text","text":"と同様に、SkyWayサーバにおけるMemberの存在情報の不整合を解消するまでの時間を設定できます。"},{"type":"text","text":" "},{"type":"text","text":"短すぎる設定では、正常な通信であってもRoomから退出させられてしまう恐れがあります。"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/MemberInitOptions\/keepaliveIntervalGapSec","fragments":[{"text":"keepaliveIntervalGapSec","kind":"identifier"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/MemberInitOptions":{"url":"\/documentation\/skywayroom\/memberinitoptions","type":"topic","kind":"symbol","title":"MemberInitOptions","abstract":[{"type":"text","text":"RoomMember初期化オプション"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/MemberInitOptions","fragments":[{"kind":"identifier","text":"MemberInitOptions"}]}}}
+{
+  "abstract": [
+    {
+      "text": "MemberのKeepAliveの更新間隔時間を超えてRoomからMemberが削除されるまでの時間(秒)",
+      "type": "text"
+    },
+    {
+      "text": " ",
+      "type": "text"
+    },
+    {
+      "text": "デフォルトは30秒です。",
+      "type": "text"
+    },
+    {
+      "text": " ",
+      "type": "text"
+    },
+    {
+      "text": "keepaliveIntervalSec",
+      "type": "text"
+    },
+    {
+      "text": "と同様に、SkyWayサーバにおけるMemberの存在情報の不整合を解消するまでの時間を設定できます。",
+      "type": "text"
+    },
+    {
+      "text": " ",
+      "type": "text"
+    },
+    {
+      "text": "短すぎる設定では、正常な通信であってもRoomから退出させられてしまう恐れがあります。",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MemberInitOptions"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "occ",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MemberInitOptions/keepaliveIntervalGapSec"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:@M@SkyWayRoom@objc(cs)MemberInitOptions(py)keepaliveIntervalGapSec",
+    "fragments": [
+      {
+        "kind": "identifier",
+        "text": "keepaliveIntervalGapSec"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "keepaliveIntervalGapSec"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Instance Property",
+    "symbolKind": "property",
+    "title": "keepaliveIntervalGapSec"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@property"
+            },
+            {
+              "kind": "text",
+              "text": " ("
+            },
+            {
+              "kind": "keyword",
+              "text": "nonatomic"
+            },
+            {
+              "kind": "text",
+              "text": ") "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@int32_t",
+              "text": "int32_t"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "keepaliveIntervalGapSec"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MemberInitOptions": {
+      "abstract": [
+        {
+          "text": "RoomMember初期化オプション",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "MemberInitOptions"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MemberInitOptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "MemberInitOptions",
+      "type": "topic",
+      "url": "/documentation/skywayroom/memberinitoptions"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MemberInitOptions/keepaliveIntervalGapSec": {
+      "abstract": [
+        {
+          "text": "MemberのKeepAliveの更新間隔時間を超えてRoomからMemberが削除されるまでの時間(秒)",
+          "type": "text"
+        },
+        {
+          "text": " ",
+          "type": "text"
+        },
+        {
+          "text": "デフォルトは30秒です。",
+          "type": "text"
+        },
+        {
+          "text": " ",
+          "type": "text"
+        },
+        {
+          "text": "keepaliveIntervalSec",
+          "type": "text"
+        },
+        {
+          "text": "と同様に、SkyWayサーバにおけるMemberの存在情報の不整合を解消するまでの時間を設定できます。",
+          "type": "text"
+        },
+        {
+          "text": " ",
+          "type": "text"
+        },
+        {
+          "text": "短すぎる設定では、正常な通信であってもRoomから退出させられてしまう恐れがあります。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "keepaliveIntervalGapSec"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MemberInitOptions/keepaliveIntervalGapSec",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "keepaliveIntervalGapSec",
+      "type": "topic",
+      "url": "/documentation/skywayroom/memberinitoptions/keepaliveintervalgapsec"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/memberinitoptions/keepaliveintervalgapsec"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

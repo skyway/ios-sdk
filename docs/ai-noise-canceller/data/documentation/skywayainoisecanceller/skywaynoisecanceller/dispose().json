@@ -1,1 +1,225 @@
-{"abstract":[{"type":"text","text":"ノイズ抑制を終了し、内部リソースを解放します。"}],"schemaVersion":{"major":0,"minor":3,"patch":0},"sections":[],"identifier":{"url":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/SkyWayNoiseCanceller\/dispose()","interfaceLanguage":"swift"},"metadata":{"roleHeading":"Instance Method","externalID":"s:22SkyWayAINoiseCanceller0ab5NoiseD0C7disposeyyF","fragments":[{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"dispose"},{"kind":"text","text":"()"}],"title":"dispose()","role":"symbol","modules":[{"name":"SkyWayAINoiseCanceller"}],"symbolKind":"method"},"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller","doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/SkyWayNoiseCanceller"]]},"kind":"symbol","variants":[{"traits":[{"interfaceLanguage":"swift"}],"paths":["\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/dispose()"]}],"primaryContentSections":[{"kind":"declarations","declarations":[{"platforms":["iOS"],"tokens":[{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"dispose"},{"kind":"text","text":"()"}],"languages":["swift"]}]},{"kind":"content","content":[{"type":"heading","level":2,"anchor":"discussion","text":"Discussion"},{"type":"paragraph","inlineContent":[{"code":"dispose()","type":"codeVoice"},{"type":"text","text":" を呼んだ後、再度使用するには "},{"code":"setup()","type":"codeVoice"},{"type":"text","text":" が必要です。"}]}]}],"references":{"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller":{"fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"SkyWayNoiseCanceller","kind":"identifier"}],"abstract":[{"type":"text","text":"ノイズ抑制クラス"}],"type":"topic","title":"SkyWayNoiseCanceller","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/SkyWayNoiseCanceller","kind":"symbol","navigatorTitle":[{"kind":"identifier","text":"SkyWayNoiseCanceller"}],"url":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller","role":"symbol"},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/dispose()":{"fragments":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"dispose","kind":"identifier"},{"text":"()","kind":"text"}],"url":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/dispose()","kind":"symbol","type":"topic","role":"symbol","abstract":[{"type":"text","text":"ノイズ抑制を終了し、内部リソースを解放します。"}],"title":"dispose()","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/SkyWayNoiseCanceller\/dispose()"},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller":{"title":"SkyWayAINoiseCanceller","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller","role":"collection","url":"\/documentation\/skywayainoisecanceller","abstract":[{"type":"strong","inlineContent":[{"text":"Version: 1.1.0","type":"text"}]},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}],"type":"topic","kind":"symbol"}}}
+{
+  "abstract": [
+    {
+      "text": "ノイズ抑制を終了し、内部リソースを解放します。",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller",
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/dispose()"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "s:22SkyWayAINoiseCanceller0ab5NoiseD0C7disposeyyF",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "func"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "dispose"
+      },
+      {
+        "kind": "text",
+        "text": "()"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayAINoiseCanceller"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "symbolKind": "method",
+    "title": "dispose()"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "dispose"
+            },
+            {
+              "kind": "text",
+              "text": "()"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "inlineContent": [
+            {
+              "code": "dispose()",
+              "type": "codeVoice"
+            },
+            {
+              "text": " を呼んだ後、再度使用するには ",
+              "type": "text"
+            },
+            {
+              "code": "setup()",
+              "type": "codeVoice"
+            },
+            {
+              "text": " が必要です。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "kind": "content"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 1.1.0",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayAINoiseCanceller",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller": {
+      "abstract": [
+        {
+          "text": "ノイズ抑制クラス",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "SkyWayNoiseCanceller"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SkyWayNoiseCanceller"
+        }
+      ],
+      "role": "symbol",
+      "title": "SkyWayNoiseCanceller",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/skywaynoisecanceller"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/dispose()": {
+      "abstract": [
+        {
+          "text": "ノイズ抑制を終了し、内部リソースを解放します。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "dispose"
+        },
+        {
+          "kind": "text",
+          "text": "()"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/dispose()",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "dispose()",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/skywaynoisecanceller/dispose()"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayainoisecanceller/skywaynoisecanceller/dispose()"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    }
+  ]
+}

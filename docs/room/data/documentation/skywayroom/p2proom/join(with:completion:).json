@@ -1,1 +1,819 @@
-{"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"text":"override","kind":"keyword"},{"text":" ","kind":"text"},{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"join","kind":"identifier"},{"text":"(","kind":"text"},{"text":"with","kind":"externalParam"},{"text":" ","kind":"text"},{"text":"options","kind":"internalParam"},{"text":": ","kind":"text"},{"preciseIdentifier":"s:10SkyWayRoom0C0C17MemberInitOptionsC","text":"MemberInitOptions","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Room\/MemberInitOptions","kind":"typeIdentifier"},{"text":"?, ","kind":"text"},{"text":"completion","kind":"externalParam"},{"text":": ((","kind":"text"},{"preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)LocalP2PRoomMember","text":"LocalP2PRoomMember","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/LocalP2PRoomMember","kind":"typeIdentifier"},{"text":"?, ","kind":"text"},{"preciseIdentifier":"s:s5ErrorP","text":"Error","kind":"typeIdentifier"},{"text":"?) -> ","kind":"text"},{"preciseIdentifier":"s:s4Voida","text":"Void","kind":"typeIdentifier"},{"text":")?)","kind":"text"}],"platforms":["iOS"],"languages":["swift"]}]},{"parameters":[{"content":[{"inlineContent":[{"text":"Member初期化オプション","type":"text"}],"type":"paragraph"}],"name":"options"},{"content":[{"inlineContent":[{"text":"完了コールバック","type":"text"}],"type":"paragraph"}],"name":"completion"}],"kind":"parameters"},{"kind":"content","content":[{"level":2,"anchor":"discussion","type":"heading","text":"Discussion"},{"type":"paragraph","inlineContent":[{"text":"1RoomインスタンスにJoinできるLocalRoomMemberは1人だけです。","type":"text"}]}]}],"variants":[{"traits":[{"interfaceLanguage":"swift"}],"paths":["\/documentation\/skywayroom\/p2proom\/join(with:completion:)"]},{"paths":["\/documentation\/skywayroom\/p2proom\/join(with:completion:)"],"traits":[{"interfaceLanguage":"occ"}]}],"metadata":{"roleHeading":"Instance Method","fragments":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"join","kind":"identifier"},{"text":"(","kind":"text"},{"text":"with","kind":"externalParam"},{"text":": ","kind":"text"},{"preciseIdentifier":"s:10SkyWayRoom0C0C17MemberInitOptionsC","text":"MemberInitOptions","kind":"typeIdentifier"},{"text":"?, ","kind":"text"},{"text":"completion","kind":"externalParam"},{"text":": ((","kind":"text"},{"preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)LocalP2PRoomMember","text":"LocalP2PRoomMember","kind":"typeIdentifier"},{"text":"?, ","kind":"text"},{"preciseIdentifier":"s:s5ErrorP","text":"Error","kind":"typeIdentifier"},{"text":"?) -> ","kind":"text"},{"preciseIdentifier":"s:s4Voida","text":"Void","kind":"typeIdentifier"},{"text":")?)","kind":"text"}],"externalID":"c:@M@SkyWayRoom@objc(cs)P2PRoom(im)joinWith:completion:","role":"symbol","modules":[{"name":"SkyWayRoom"}],"navigatorTitle":[{"text":"joinWith:completion:","kind":"identifier"}],"title":"join(with:completion:)","symbolKind":"method"},"kind":"symbol","sections":[],"abstract":[{"type":"text","text":"RoomにLocalRoomMemberを作成し、入室させます。"}],"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/P2PRoom"]]},"schemaVersion":{"minor":3,"patch":0,"major":0},"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/P2PRoom\/join(with:completion:)","interfaceLanguage":"swift"},"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom/MemberInitOptions":{"url":"\/documentation\/skywayroom\/memberinitoptions","type":"topic","kind":"symbol","title":"MemberInitOptions","abstract":[{"type":"text","text":"RoomMember初期化オプション"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/MemberInitOptions","fragments":[{"kind":"identifier","text":"MemberInitOptions"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/join(with:completion:)":{"url":"\/documentation\/skywayroom\/p2proom\/join(with:completion:)","navigatorTitle":[{"kind":"identifier","text":"joinWith:completion:"}],"type":"topic","kind":"symbol","abstract":[{"type":"text","text":"RoomにLocalRoomMemberを作成し、入室させます。"}],"title":"join(with:completion:)","role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/P2PRoom\/join(with:completion:)","fragments":[{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"join"},{"kind":"text","text":"("},{"kind":"externalParam","text":"with"},{"kind":"text","text":": "},{"kind":"typeIdentifier","preciseIdentifier":"s:10SkyWayRoom0C0C17MemberInitOptionsC","text":"MemberInitOptions"},{"kind":"text","text":"?, "},{"kind":"externalParam","text":"completion"},{"kind":"text","text":": (("},{"kind":"typeIdentifier","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)LocalP2PRoomMember","text":"LocalP2PRoomMember"},{"kind":"text","text":"?, "},{"kind":"typeIdentifier","preciseIdentifier":"s:s5ErrorP","text":"Error"},{"kind":"text","text":"?) -> "},{"kind":"typeIdentifier","preciseIdentifier":"s:s4Voida","text":"Void"},{"kind":"text","text":")?)"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom":{"url":"\/documentation\/skywayroom\/p2proom","navigatorTitle":[{"kind":"identifier","text":"P2PRoom"}],"type":"topic","kind":"symbol","abstract":[{"type":"text","text":"P2P通信を行うRoom"}],"title":"P2PRoom","role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/P2PRoom","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"P2PRoom"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/Room/MemberInitOptions":{"url":"\/documentation\/skywayroom\/room\/memberinitoptions","navigatorTitle":[{"kind":"identifier","text":"MemberInitOptions"}],"type":"topic","kind":"symbol","abstract":[{"type":"text","text":"RoomMember初期化オプション"}],"title":"Room.MemberInitOptions","role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Room\/MemberInitOptions","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"MemberInitOptions"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalP2PRoomMember":{"url":"\/documentation\/skywayroom\/localp2proommember","navigatorTitle":[{"text":"LocalP2PRoomMember","kind":"identifier"}],"type":"topic","kind":"symbol","abstract":[{"type":"text","text":"P2PRoomのLocalMember"}],"title":"LocalP2PRoomMember","role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/LocalP2PRoomMember","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"LocalP2PRoomMember"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]}},"variantOverrides":[{"patch":[{"path":"\/identifier\/interfaceLanguage","value":"occ","op":"replace"},{"path":"\/metadata\/platforms","value":null,"op":"add"},{"path":"\/metadata\/roleHeading","value":"Instance Method","op":"replace"},{"path":"\/metadata\/title","value":"joinWith:completion:","op":"replace"},{"path":"\/metadata\/symbolKind","value":"method","op":"replace"},{"path":"\/metadata\/fragments","value":[{"text":"- ","kind":"text"},{"text":"joinWith:completion:","kind":"identifier"}],"op":"replace"},{"op":"add","path":"\/topicSections","value":null},{"path":"\/relationshipsSections","value":null,"op":"add"},{"path":"\/seeAlsoSections","value":null,"op":"add"},{"path":"\/primaryContentSections\/0","value":{"kind":"declarations","declarations":[{"tokens":[{"text":"- (","kind":"text"},{"text":"void","kind":"typeIdentifier","preciseIdentifier":"c:v"},{"text":") ","kind":"text"},{"text":"joinWith:","kind":"identifier"},{"text":"(","kind":"text"},{"text":"MemberInitOptions","kind":"typeIdentifier","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/MemberInitOptions","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)MemberInitOptions"},{"text":" *) ","kind":"text"},{"text":"options","kind":"internalParam"},{"text":" ","kind":"text"},{"text":"completion:","kind":"identifier"},{"text":"(","kind":"text"},{"text":"void","kind":"typeIdentifier","preciseIdentifier":"c:v"},{"text":" (^)(","kind":"text"},{"text":"LocalP2PRoomMember","kind":"typeIdentifier","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/LocalP2PRoomMember","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)LocalP2PRoomMember"},{"text":" * ","kind":"text"},{"text":"","kind":"internalParam"},{"text":", ","kind":"text"},{"text":"NSError","kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)NSError"},{"text":" * ","kind":"text"},{"text":"","kind":"internalParam"},{"text":")) ","kind":"text"},{"text":"completion","kind":"internalParam"},{"text":";","kind":"text"}],"languages":["occ"],"platforms":["iOS"]}]},"op":"replace"},{"op":"replace","path":"\/primaryContentSections\/1","value":{"parameters":[{"content":[{"inlineContent":[{"type":"text","text":"Member初期化オプション"}],"type":"paragraph"}],"name":"options"},{"content":[{"inlineContent":[{"type":"text","text":"完了コールバック"}],"type":"paragraph"}],"name":"completion"}],"kind":"parameters"}},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1join(with:completion:)\/title","value":"joinWith:completion:","op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1join(with:completion:)\/fragments","value":[{"text":"- ","kind":"text"},{"text":"joinWith:completion:","kind":"identifier"}],"op":"replace"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom\/title","value":"P2PRoom"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom\/fragments","value":[{"text":"P2PRoom","kind":"identifier"}],"op":"replace"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom\/navigatorTitle","value":[{"kind":"identifier","text":"P2PRoom"}]},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalP2PRoomMember\/title","value":"LocalP2PRoomMember","op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalP2PRoomMember\/fragments","value":[{"text":"LocalP2PRoomMember","kind":"identifier"}],"op":"replace"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalP2PRoomMember\/navigatorTitle","value":[{"kind":"identifier","text":"LocalP2PRoomMember"}]}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "abstract": [
+    {
+      "text": "RoomにLocalRoomMemberを作成し、入室させます。",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/join(with:completion:)"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:@M@SkyWayRoom@objc(cs)P2PRoom(im)joinWith:completion:",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "func"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "join"
+      },
+      {
+        "kind": "text",
+        "text": "("
+      },
+      {
+        "kind": "externalParam",
+        "text": "with"
+      },
+      {
+        "kind": "text",
+        "text": ": "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:10SkyWayRoom0C0C17MemberInitOptionsC",
+        "text": "MemberInitOptions"
+      },
+      {
+        "kind": "text",
+        "text": "?, "
+      },
+      {
+        "kind": "externalParam",
+        "text": "completion"
+      },
+      {
+        "kind": "text",
+        "text": ": (("
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)LocalP2PRoomMember",
+        "text": "LocalP2PRoomMember"
+      },
+      {
+        "kind": "text",
+        "text": "?, "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:s5ErrorP",
+        "text": "Error"
+      },
+      {
+        "kind": "text",
+        "text": "?) -> "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:s4Voida",
+        "text": "Void"
+      },
+      {
+        "kind": "text",
+        "text": ")?)"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "joinWith:completion:"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "symbolKind": "method",
+    "title": "join(with:completion:)"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "override"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "join"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "externalParam",
+              "text": "with"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "options"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Room/MemberInitOptions",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10SkyWayRoom0C0C17MemberInitOptionsC",
+              "text": "MemberInitOptions"
+            },
+            {
+              "kind": "text",
+              "text": "?, "
+            },
+            {
+              "kind": "externalParam",
+              "text": "completion"
+            },
+            {
+              "kind": "text",
+              "text": ": (("
+            },
+            {
+              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalP2PRoomMember",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)LocalP2PRoomMember",
+              "text": "LocalP2PRoomMember"
+            },
+            {
+              "kind": "text",
+              "text": "?, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:s5ErrorP",
+              "text": "Error"
+            },
+            {
+              "kind": "text",
+              "text": "?) -> "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:s4Voida",
+              "text": "Void"
+            },
+            {
+              "kind": "text",
+              "text": ")?)"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "kind": "parameters",
+      "parameters": [
+        {
+          "content": [
+            {
+              "inlineContent": [
+                {
+                  "text": "Member初期化オプション",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "options"
+        },
+        {
+          "content": [
+            {
+              "inlineContent": [
+                {
+                  "text": "完了コールバック",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "completion"
+        }
+      ]
+    },
+    {
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "1RoomインスタンスにJoinできるLocalRoomMemberは1人だけです。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "kind": "content"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalP2PRoomMember": {
+      "abstract": [
+        {
+          "text": "P2PRoomのLocalMember",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "LocalP2PRoomMember"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalP2PRoomMember",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "LocalP2PRoomMember"
+        }
+      ],
+      "role": "symbol",
+      "title": "LocalP2PRoomMember",
+      "type": "topic",
+      "url": "/documentation/skywayroom/localp2proommember"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MemberInitOptions": {
+      "abstract": [
+        {
+          "text": "RoomMember初期化オプション",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "MemberInitOptions"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MemberInitOptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "MemberInitOptions",
+      "type": "topic",
+      "url": "/documentation/skywayroom/memberinitoptions"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom": {
+      "abstract": [
+        {
+          "text": "P2P通信を行うRoom",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "P2PRoom"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "P2PRoom"
+        }
+      ],
+      "role": "symbol",
+      "title": "P2PRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom/p2proom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/join(with:completion:)": {
+      "abstract": [
+        {
+          "text": "RoomにLocalRoomMemberを作成し、入室させます。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "join"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "externalParam",
+          "text": "with"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:10SkyWayRoom0C0C17MemberInitOptionsC",
+          "text": "MemberInitOptions"
+        },
+        {
+          "kind": "text",
+          "text": "?, "
+        },
+        {
+          "kind": "externalParam",
+          "text": "completion"
+        },
+        {
+          "kind": "text",
+          "text": ": (("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)LocalP2PRoomMember",
+          "text": "LocalP2PRoomMember"
+        },
+        {
+          "kind": "text",
+          "text": "?, "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:s5ErrorP",
+          "text": "Error"
+        },
+        {
+          "kind": "text",
+          "text": "?) -> "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:s4Voida",
+          "text": "Void"
+        },
+        {
+          "kind": "text",
+          "text": ")?)"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/join(with:completion:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "joinWith:completion:"
+        }
+      ],
+      "role": "symbol",
+      "title": "join(with:completion:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/p2proom/join(with:completion:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Room/MemberInitOptions": {
+      "abstract": [
+        {
+          "text": "RoomMember初期化オプション",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "MemberInitOptions"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Room/MemberInitOptions",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "MemberInitOptions"
+        }
+      ],
+      "role": "symbol",
+      "title": "Room.MemberInitOptions",
+      "type": "topic",
+      "url": "/documentation/skywayroom/room/memberinitoptions"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Instance Method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "joinWith:completion:"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "joinWith:completion:"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "text",
+                    "text": "- ("
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:v",
+                    "text": "void"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ") "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "joinWith:"
+                  },
+                  {
+                    "kind": "text",
+                    "text": "("
+                  },
+                  {
+                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MemberInitOptions",
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)MemberInitOptions",
+                    "text": "MemberInitOptions"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " *) "
+                  },
+                  {
+                    "kind": "internalParam",
+                    "text": "options"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "completion:"
+                  },
+                  {
+                    "kind": "text",
+                    "text": "("
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:v",
+                    "text": "void"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " (^)("
+                  },
+                  {
+                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalP2PRoomMember",
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)LocalP2PRoomMember",
+                    "text": "LocalP2PRoomMember"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " * "
+                  },
+                  {
+                    "kind": "internalParam",
+                    "text": ""
+                  },
+                  {
+                    "kind": "text",
+                    "text": ", "
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:objc(cs)NSError",
+                    "text": "NSError"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " * "
+                  },
+                  {
+                    "kind": "internalParam",
+                    "text": ""
+                  },
+                  {
+                    "kind": "text",
+                    "text": ")) "
+                  },
+                  {
+                    "kind": "internalParam",
+                    "text": "completion"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ";"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/1",
+          "value": {
+            "kind": "parameters",
+            "parameters": [
+              {
+                "content": [
+                  {
+                    "inlineContent": [
+                      {
+                        "text": "Member初期化オプション",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "name": "options"
+              },
+              {
+                "content": [
+                  {
+                    "inlineContent": [
+                      {
+                        "text": "完了コールバック",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "name": "completion"
+              }
+            ]
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom/title",
+          "value": "P2PRoom"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "P2PRoom"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "P2PRoom"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalP2PRoomMember/title",
+          "value": "LocalP2PRoomMember"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalP2PRoomMember/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "LocalP2PRoomMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalP2PRoomMember/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "LocalP2PRoomMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1join(with:completion:)/title",
+          "value": "joinWith:completion:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1join(with:completion:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "joinWith:completion:"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/p2proom/join(with:completion:)"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/p2proom/join(with:completion:)"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

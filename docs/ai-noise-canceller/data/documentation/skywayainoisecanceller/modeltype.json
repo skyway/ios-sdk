@@ -1,1 +1,372 @@
-{"topicSections":[{"generated":true,"title":"Enumeration Cases","identifiers":["doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ModelType\/large","doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ModelType\/medium","doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ModelType\/small"],"anchor":"Enumeration-Cases"},{"anchor":"Initializers","identifiers":["doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ModelType\/init(rawValue:)"],"generated":true,"title":"Initializers"},{"generated":true,"title":"Default Implementations","identifiers":["doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ModelType\/Equatable-Implementations","doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ModelType\/RawRepresentable-Implementations"],"anchor":"Default-Implementations"}],"variants":[{"traits":[{"interfaceLanguage":"swift"}],"paths":["\/documentation\/skywayainoisecanceller\/modeltype"]}],"kind":"symbol","primaryContentSections":[{"kind":"declarations","declarations":[{"platforms":["iOS"],"tokens":[{"kind":"keyword","text":"enum"},{"kind":"text","text":" "},{"kind":"identifier","text":"ModelType"}],"languages":["swift"]}]},{"kind":"content","content":[{"type":"heading","level":2,"anchor":"overview","text":"Overview"},{"type":"paragraph","inlineContent":[{"type":"text","text":"モデルによって処理速度・計算コスト・ノイズ抑制効果が異なります。"}]}]}],"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller"]]},"sections":[],"relationshipsSections":[{"kind":"relationships","identifiers":["doc:\/\/com.ntt.skyway.ai-noise-canceller\/SQ","doc:\/\/com.ntt.skyway.ai-noise-canceller\/SH","doc:\/\/com.ntt.skyway.ai-noise-canceller\/SY"],"type":"conformsTo","title":"Conforms To"}],"abstract":[{"type":"text","text":"使用するAIノイズキャンセルモデルの種類を表します。"}],"metadata":{"fragments":[{"kind":"keyword","text":"enum"},{"kind":"text","text":" "},{"kind":"identifier","text":"ModelType"}],"roleHeading":"Enumeration","symbolKind":"enum","modules":[{"name":"SkyWayAINoiseCanceller"}],"externalID":"s:22SkyWayAINoiseCanceller9ModelTypeO","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"ModelType"}],"title":"ModelType"},"schemaVersion":{"patch":0,"minor":3,"major":0},"identifier":{"url":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ModelType","interfaceLanguage":"swift"},"references":{"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/Equatable-Implementations":{"url":"\/documentation\/skywayainoisecanceller\/modeltype\/equatable-implementations","kind":"article","type":"topic","role":"collectionGroup","abstract":[],"title":"Equatable Implementations","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ModelType\/Equatable-Implementations"},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/RawRepresentable-Implementations":{"url":"\/documentation\/skywayainoisecanceller\/modeltype\/rawrepresentable-implementations","kind":"article","type":"topic","role":"collectionGroup","abstract":[],"title":"RawRepresentable Implementations","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ModelType\/RawRepresentable-Implementations"},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/small":{"fragments":[{"kind":"keyword","text":"case"},{"kind":"text","text":" "},{"kind":"identifier","text":"small"}],"abstract":[{"type":"text","text":"最も高速かつ軽量なモデル。"}],"url":"\/documentation\/skywayainoisecanceller\/modeltype\/small","kind":"symbol","role":"symbol","type":"topic","title":"ModelType.small","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ModelType\/small"},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/init(rawValue:)":{"abstract":[],"fragments":[{"kind":"identifier","text":"init"},{"kind":"text","text":"?("},{"text":"rawValue","kind":"externalParam"},{"text":": ","kind":"text"},{"preciseIdentifier":"s:SS","kind":"typeIdentifier","text":"String"},{"kind":"text","text":")"}],"identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ModelType\/init(rawValue:)","title":"init(rawValue:)","role":"symbol","kind":"symbol","url":"\/documentation\/skywayainoisecanceller\/modeltype\/init(rawvalue:)","type":"topic"},"doc://com.ntt.skyway.ai-noise-canceller/SQ":{"type":"unresolvable","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/SQ","title":"Swift.Equatable"},"doc://com.ntt.skyway.ai-noise-canceller/SY":{"type":"unresolvable","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/SY","title":"Swift.RawRepresentable"},"doc://com.ntt.skyway.ai-noise-canceller/SH":{"type":"unresolvable","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/SH","title":"Swift.Hashable"},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller":{"title":"SkyWayAINoiseCanceller","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller","role":"collection","url":"\/documentation\/skywayainoisecanceller","abstract":[{"type":"strong","inlineContent":[{"text":"Version: 1.1.0","type":"text"}]},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}],"type":"topic","kind":"symbol"},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/medium":{"fragments":[{"kind":"keyword","text":"case"},{"kind":"text","text":" "},{"kind":"identifier","text":"medium"}],"url":"\/documentation\/skywayainoisecanceller\/modeltype\/medium","kind":"symbol","type":"topic","role":"symbol","abstract":[{"type":"text","text":"処理速度、計算コスト、ノイズ抑制効果のバランスが取れたモデル。"}],"title":"ModelType.medium","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ModelType\/medium"},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/large":{"fragments":[{"text":"case","kind":"keyword"},{"kind":"text","text":" "},{"text":"large","kind":"identifier"}],"url":"\/documentation\/skywayainoisecanceller\/modeltype\/large","kind":"symbol","type":"topic","role":"symbol","abstract":[{"type":"text","text":"計算コストが比較的高いが、ノイズ抑制効果が最も高いモデル。"}],"title":"ModelType.large","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ModelType\/large"},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType":{"fragments":[{"kind":"keyword","text":"enum"},{"text":" ","kind":"text"},{"text":"ModelType","kind":"identifier"}],"abstract":[{"text":"使用するAIノイズキャンセルモデルの種類を表します。","type":"text"}],"url":"\/documentation\/skywayainoisecanceller\/modeltype","kind":"symbol","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"ModelType"}],"type":"topic","title":"ModelType","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ModelType"}}}
+{
+  "abstract": [
+    {
+      "text": "使用するAIノイズキャンセルモデルの種類を表します。",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "s:22SkyWayAINoiseCanceller9ModelTypeO",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "enum"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "ModelType"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayAINoiseCanceller"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "ModelType"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Enumeration",
+    "symbolKind": "enum",
+    "title": "ModelType"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "enum"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "ModelType"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "モデルによって処理速度・計算コスト・ノイズ抑制効果が異なります。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "kind": "content"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.ai-noise-canceller/SH": {
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/SH",
+      "title": "Swift.Hashable",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/SQ": {
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/SQ",
+      "title": "Swift.Equatable",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/SY": {
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/SY",
+      "title": "Swift.RawRepresentable",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 1.1.0",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayAINoiseCanceller",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType": {
+      "abstract": [
+        {
+          "text": "使用するAIノイズキャンセルモデルの種類を表します。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "enum"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "ModelType"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "ModelType"
+        }
+      ],
+      "role": "symbol",
+      "title": "ModelType",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/modeltype"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/Equatable-Implementations": {
+      "abstract": [],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/Equatable-Implementations",
+      "kind": "article",
+      "role": "collectionGroup",
+      "title": "Equatable Implementations",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/modeltype/equatable-implementations"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/RawRepresentable-Implementations": {
+      "abstract": [],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/RawRepresentable-Implementations",
+      "kind": "article",
+      "role": "collectionGroup",
+      "title": "RawRepresentable Implementations",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/modeltype/rawrepresentable-implementations"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/init(rawValue:)": {
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "?("
+        },
+        {
+          "kind": "externalParam",
+          "text": "rawValue"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:SS",
+          "text": "String"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/init(rawValue:)",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "init(rawValue:)",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/modeltype/init(rawvalue:)"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/large": {
+      "abstract": [
+        {
+          "text": "計算コストが比較的高いが、ノイズ抑制効果が最も高いモデル。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "case"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "large"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/large",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "ModelType.large",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/modeltype/large"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/medium": {
+      "abstract": [
+        {
+          "text": "処理速度、計算コスト、ノイズ抑制効果のバランスが取れたモデル。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "case"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "medium"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/medium",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "ModelType.medium",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/modeltype/medium"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/small": {
+      "abstract": [
+        {
+          "text": "最も高速かつ軽量なモデル。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "case"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "small"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/small",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "ModelType.small",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/modeltype/small"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "identifiers": [
+        "doc://com.ntt.skyway.ai-noise-canceller/SQ",
+        "doc://com.ntt.skyway.ai-noise-canceller/SH",
+        "doc://com.ntt.skyway.ai-noise-canceller/SY"
+      ],
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo"
+    }
+  ],
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "topicSections": [
+    {
+      "anchor": "Enumeration-Cases",
+      "generated": true,
+      "identifiers": [
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/large",
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/medium",
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/small"
+      ],
+      "title": "Enumeration Cases"
+    },
+    {
+      "anchor": "Initializers",
+      "generated": true,
+      "identifiers": [
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/init(rawValue:)"
+      ],
+      "title": "Initializers"
+    },
+    {
+      "anchor": "Default-Implementations",
+      "generated": true,
+      "identifiers": [
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/Equatable-Implementations",
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/RawRepresentable-Implementations"
+      ],
+      "title": "Default Implementations"
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayainoisecanceller/modeltype"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    }
+  ]
+}

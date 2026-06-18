@@ -1,1 +1,708 @@
-{"kind":"symbol","sections":[],"variants":[{"paths":["\/documentation\/skywayroom\/localdatastreamdelegate\/datastream(_:didbecomewritablefor:)"],"traits":[{"interfaceLanguage":"swift"}]},{"paths":["\/documentation\/skywayroom\/localdatastreamdelegate\/datastream(_:didbecomewritablefor:)"],"traits":[{"interfaceLanguage":"occ"}]}],"primaryContentSections":[{"kind":"declarations","declarations":[{"platforms":["iOS"],"languages":["swift"],"tokens":[{"text":"optional","kind":"keyword"},{"text":" ","kind":"text"},{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"dataStream","kind":"identifier"},{"text":"(","kind":"text"},{"text":"_","kind":"externalParam"},{"text":" ","kind":"text"},{"text":"dataStream","kind":"internalParam"},{"text":": ","kind":"text"},{"text":"LocalDataStream","kind":"typeIdentifier","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/LocalDataStream","preciseIdentifier":"c:objc(cs)SKWLocalDataStream"},{"text":", ","kind":"text"},{"text":"didBecomeWritableFor","kind":"externalParam"},{"text":" ","kind":"text"},{"text":"subscriber","kind":"internalParam"},{"text":": ","kind":"text"},{"preciseIdentifier":"c:objc(cs)SKWDataStreamSubscriber","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/DataStreamSubscriber","text":"DataStreamSubscriber","kind":"typeIdentifier"},{"text":")","kind":"text"}]}]},{"kind":"parameters","parameters":[{"content":[{"type":"paragraph","inlineContent":[{"text":"対象のDataStream","type":"text"}]}],"name":"dataStream"},{"content":[{"type":"paragraph","inlineContent":[{"text":"データ送信が可能になったサブスクライバー","type":"text"}]}],"name":"subscriber"}]}],"schemaVersion":{"patch":0,"major":0,"minor":3},"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/LocalDataStreamDelegate"]]},"metadata":{"roleHeading":"Instance Method","fragments":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"dataStream","kind":"identifier"},{"text":"(","kind":"text"},{"preciseIdentifier":"c:objc(cs)SKWLocalDataStream","text":"LocalDataStream","kind":"typeIdentifier"},{"text":", ","kind":"text"},{"text":"didBecomeWritableFor","kind":"externalParam"},{"text":": ","kind":"text"},{"text":"DataStreamSubscriber","preciseIdentifier":"c:objc(cs)SKWDataStreamSubscriber","kind":"typeIdentifier"},{"text":")","kind":"text"}],"externalID":"c:objc(pl)SKWLocalDataStreamDelegate(im)dataStream:didBecomeWritableForSubscriber:","role":"symbol","modules":[{"name":"SkyWayRoom"}],"navigatorTitle":[{"text":"dataStream:didBecomeWritableForSubscriber:","kind":"identifier"}],"title":"dataStream(_:didBecomeWritableFor:)","symbolKind":"method"},"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/LocalDataStreamDelegate\/dataStream(_:didBecomeWritableFor:)","interfaceLanguage":"swift"},"abstract":[{"text":"データ送信が可能になった時にコールされるイベント","type":"text"}],"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalDataStreamDelegate":{"url":"\/documentation\/skywayroom\/localdatastreamdelegate","type":"topic","abstract":[{"text":"LocalDataStreamイベントデリゲート","type":"text"}],"fragments":[{"text":"protocol","kind":"keyword"},{"text":" ","kind":"text"},{"text":"LocalDataStreamDelegate","kind":"identifier"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/LocalDataStreamDelegate","title":"LocalDataStreamDelegate","navigatorTitle":[{"text":"LocalDataStreamDelegate","kind":"identifier"}],"kind":"symbol"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalDataStreamDelegate/dataStream(_:didBecomeWritableFor:)":{"url":"\/documentation\/skywayroom\/localdatastreamdelegate\/datastream(_:didbecomewritablefor:)","navigatorTitle":[{"text":"dataStream:didBecomeWritableForSubscriber:","kind":"identifier"}],"type":"topic","kind":"symbol","title":"dataStream(_:didBecomeWritableFor:)","abstract":[{"text":"データ送信が可能になった時にコールされるイベント","type":"text"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/LocalDataStreamDelegate\/dataStream(_:didBecomeWritableFor:)","fragments":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"dataStream","kind":"identifier"},{"text":"(","kind":"text"},{"preciseIdentifier":"c:objc(cs)SKWLocalDataStream","text":"LocalDataStream","kind":"typeIdentifier"},{"text":", ","kind":"text"},{"text":"didBecomeWritableFor","kind":"externalParam"},{"text":": ","kind":"text"},{"text":"DataStreamSubscriber","kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWDataStreamSubscriber"},{"text":")","kind":"text"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/DataStreamSubscriber":{"url":"\/documentation\/skywayroom\/datastreamsubscriber","navigatorTitle":[{"kind":"identifier","text":"DataStreamSubscriber"}],"type":"topic","kind":"symbol","title":"DataStreamSubscriber","abstract":[{"type":"text","text":"DataStreamのサブスクライバー情報"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/DataStreamSubscriber","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"DataStreamSubscriber"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalDataStream":{"title":"LocalDataStream","abstract":[{"text":"LocalDataStreamクラス","type":"text"}],"kind":"symbol","fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"LocalDataStream","kind":"identifier"}],"identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/LocalDataStream","navigatorTitle":[{"text":"LocalDataStream","kind":"identifier"}],"role":"symbol","url":"\/documentation\/skywayroom\/localdatastream","type":"topic"}},"variantOverrides":[{"patch":[{"op":"replace","value":"occ","path":"\/identifier\/interfaceLanguage"},{"op":"add","value":null,"path":"\/metadata\/platforms"},{"op":"replace","value":"Instance Method","path":"\/metadata\/roleHeading"},{"op":"replace","value":"dataStream:didBecomeWritableForSubscriber:","path":"\/metadata\/title"},{"op":"replace","value":"method","path":"\/metadata\/symbolKind"},{"op":"replace","value":[{"text":"- ","kind":"text"},{"text":"dataStream:didBecomeWritableForSubscriber:","kind":"identifier"}],"path":"\/metadata\/fragments"},{"op":"add","value":null,"path":"\/topicSections"},{"op":"add","value":null,"path":"\/relationshipsSections"},{"op":"add","value":null,"path":"\/seeAlsoSections"},{"op":"replace","value":{"declarations":[{"platforms":["iOS"],"languages":["occ"],"tokens":[{"text":"- (","kind":"text"},{"text":"void","preciseIdentifier":"c:v","kind":"typeIdentifier"},{"text":") ","kind":"text"},{"text":"dataStream:","kind":"identifier"},{"text":"(","kind":"text"},{"identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/LocalDataStream","text":"SKWLocalDataStream","preciseIdentifier":"c:objc(cs)SKWLocalDataStream","kind":"typeIdentifier"},{"text":" *) ","kind":"text"},{"text":"dataStream","kind":"internalParam"},{"text":" ","kind":"text"},{"text":"didBecomeWritableForSubscriber:","kind":"identifier"},{"text":"(","kind":"text"},{"identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/DataStreamSubscriber","text":"SKWDataStreamSubscriber","preciseIdentifier":"c:objc(cs)SKWDataStreamSubscriber","kind":"typeIdentifier"},{"text":" *) ","kind":"text"},{"text":"subscriber","kind":"internalParam"},{"text":";","kind":"text"}]}],"kind":"declarations"},"path":"\/primaryContentSections\/0"},{"op":"replace","value":{"parameters":[{"name":"dataStream","content":[{"type":"paragraph","inlineContent":[{"type":"text","text":"対象のDataStream"}]}]},{"name":"subscriber","content":[{"type":"paragraph","inlineContent":[{"type":"text","text":"データ送信が可能になったサブスクライバー"}]}]}],"kind":"parameters"},"path":"\/primaryContentSections\/1"},{"op":"replace","value":"SKWLocalDataStreamDelegate","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate\/title"},{"op":"replace","value":[{"text":"SKWLocalDataStreamDelegate","kind":"identifier"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate\/fragments"},{"op":"replace","value":[{"text":"SKWLocalDataStreamDelegate","kind":"identifier"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate\/navigatorTitle"},{"op":"replace","value":"dataStream:didBecomeWritableForSubscriber:","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate~1dataStream(_:didBecomeWritableFor:)\/title"},{"op":"replace","value":[{"text":"- ","kind":"text"},{"text":"dataStream:didBecomeWritableForSubscriber:","kind":"identifier"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate~1dataStream(_:didBecomeWritableFor:)\/fragments"},{"op":"replace","value":"SKWDataStreamSubscriber","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1DataStreamSubscriber\/title"},{"op":"replace","value":[{"text":"SKWDataStreamSubscriber","kind":"identifier"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1DataStreamSubscriber\/fragments"},{"op":"replace","value":[{"text":"SKWDataStreamSubscriber","kind":"identifier"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1DataStreamSubscriber\/navigatorTitle"},{"op":"replace","value":"SKWLocalDataStream","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStream\/title"},{"op":"replace","value":[{"text":"SKWLocalDataStream","kind":"identifier"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStream\/fragments"},{"op":"replace","value":[{"text":"SKWLocalDataStream","kind":"identifier"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStream\/navigatorTitle"}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "abstract": [
+    {
+      "text": "データ送信が可能になった時にコールされるイベント",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalDataStreamDelegate"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalDataStreamDelegate/dataStream(_:didBecomeWritableFor:)"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:objc(pl)SKWLocalDataStreamDelegate(im)dataStream:didBecomeWritableForSubscriber:",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "func"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "dataStream"
+      },
+      {
+        "kind": "text",
+        "text": "("
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "c:objc(cs)SKWLocalDataStream",
+        "text": "LocalDataStream"
+      },
+      {
+        "kind": "text",
+        "text": ", "
+      },
+      {
+        "kind": "externalParam",
+        "text": "didBecomeWritableFor"
+      },
+      {
+        "kind": "text",
+        "text": ": "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "c:objc(cs)SKWDataStreamSubscriber",
+        "text": "DataStreamSubscriber"
+      },
+      {
+        "kind": "text",
+        "text": ")"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "dataStream:didBecomeWritableForSubscriber:"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "symbolKind": "method",
+    "title": "dataStream(_:didBecomeWritableFor:)"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "optional"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "dataStream"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "externalParam",
+              "text": "_"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "dataStream"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalDataStream",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)SKWLocalDataStream",
+              "text": "LocalDataStream"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "externalParam",
+              "text": "didBecomeWritableFor"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "subscriber"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/DataStreamSubscriber",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)SKWDataStreamSubscriber",
+              "text": "DataStreamSubscriber"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "kind": "parameters",
+      "parameters": [
+        {
+          "content": [
+            {
+              "inlineContent": [
+                {
+                  "text": "対象のDataStream",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "dataStream"
+        },
+        {
+          "content": [
+            {
+              "inlineContent": [
+                {
+                  "text": "データ送信が可能になったサブスクライバー",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "subscriber"
+        }
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/DataStreamSubscriber": {
+      "abstract": [
+        {
+          "text": "DataStreamのサブスクライバー情報",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "DataStreamSubscriber"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/DataStreamSubscriber",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "DataStreamSubscriber"
+        }
+      ],
+      "role": "symbol",
+      "title": "DataStreamSubscriber",
+      "type": "topic",
+      "url": "/documentation/skywayroom/datastreamsubscriber"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalDataStream": {
+      "abstract": [
+        {
+          "text": "LocalDataStreamクラス",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "LocalDataStream"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalDataStream",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "LocalDataStream"
+        }
+      ],
+      "role": "symbol",
+      "title": "LocalDataStream",
+      "type": "topic",
+      "url": "/documentation/skywayroom/localdatastream"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalDataStreamDelegate": {
+      "abstract": [
+        {
+          "text": "LocalDataStreamイベントデリゲート",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "protocol"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "LocalDataStreamDelegate"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalDataStreamDelegate",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "LocalDataStreamDelegate"
+        }
+      ],
+      "role": "symbol",
+      "title": "LocalDataStreamDelegate",
+      "type": "topic",
+      "url": "/documentation/skywayroom/localdatastreamdelegate"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalDataStreamDelegate/dataStream(_:didBecomeWritableFor:)": {
+      "abstract": [
+        {
+          "text": "データ送信が可能になった時にコールされるイベント",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "dataStream"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWLocalDataStream",
+          "text": "LocalDataStream"
+        },
+        {
+          "kind": "text",
+          "text": ", "
+        },
+        {
+          "kind": "externalParam",
+          "text": "didBecomeWritableFor"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWDataStreamSubscriber",
+          "text": "DataStreamSubscriber"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalDataStreamDelegate/dataStream(_:didBecomeWritableFor:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "dataStream:didBecomeWritableForSubscriber:"
+        }
+      ],
+      "role": "symbol",
+      "title": "dataStream(_:didBecomeWritableFor:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/localdatastreamdelegate/datastream(_:didbecomewritablefor:)"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Instance Method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "dataStream:didBecomeWritableForSubscriber:"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "dataStream:didBecomeWritableForSubscriber:"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "text",
+                    "text": "- ("
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:v",
+                    "text": "void"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ") "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "dataStream:"
+                  },
+                  {
+                    "kind": "text",
+                    "text": "("
+                  },
+                  {
+                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalDataStream",
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:objc(cs)SKWLocalDataStream",
+                    "text": "SKWLocalDataStream"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " *) "
+                  },
+                  {
+                    "kind": "internalParam",
+                    "text": "dataStream"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "didBecomeWritableForSubscriber:"
+                  },
+                  {
+                    "kind": "text",
+                    "text": "("
+                  },
+                  {
+                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/DataStreamSubscriber",
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:objc(cs)SKWDataStreamSubscriber",
+                    "text": "SKWDataStreamSubscriber"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " *) "
+                  },
+                  {
+                    "kind": "internalParam",
+                    "text": "subscriber"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ";"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/1",
+          "value": {
+            "kind": "parameters",
+            "parameters": [
+              {
+                "content": [
+                  {
+                    "inlineContent": [
+                      {
+                        "text": "対象のDataStream",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "name": "dataStream"
+              },
+              {
+                "content": [
+                  {
+                    "inlineContent": [
+                      {
+                        "text": "データ送信が可能になったサブスクライバー",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "name": "subscriber"
+              }
+            ]
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStream/title",
+          "value": "SKWLocalDataStream"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStream/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWLocalDataStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStream/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWLocalDataStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1DataStreamSubscriber/title",
+          "value": "SKWDataStreamSubscriber"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1DataStreamSubscriber/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWDataStreamSubscriber"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1DataStreamSubscriber/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWDataStreamSubscriber"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate/title",
+          "value": "SKWLocalDataStreamDelegate"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWLocalDataStreamDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWLocalDataStreamDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate~1dataStream(_:didBecomeWritableFor:)/title",
+          "value": "dataStream:didBecomeWritableForSubscriber:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate~1dataStream(_:didBecomeWritableFor:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "dataStream:didBecomeWritableForSubscriber:"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/localdatastreamdelegate/datastream(_:didbecomewritablefor:)"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/localdatastreamdelegate/datastream(_:didbecomewritablefor:)"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

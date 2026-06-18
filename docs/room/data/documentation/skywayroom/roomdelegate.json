@@ -1,1 +1,1597 @@
-{"kind":"symbol","topicSections":[{"generated":true,"anchor":"Instance-Methods","title":"Instance Methods","identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:didPublishStreamOf:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:didSubscribePublicationOf:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:didUnpublishStreamOf:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:didUnsubscribePublicationOf:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:didUpdateMetadata:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:member:metadataDidUpdate:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:memberDidJoin:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:memberDidLeave:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:publication:metadataDidUpdate:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:publicationDidChangeToDisabled:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:publicationDidChangeToEnabled:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/roomDidClose(_:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/roomMemberListDidChange(_:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/roomPublicationListDidChange(_:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/roomSubscriptionListDidChange(_:)"]}],"sections":[],"variants":[{"paths":["\/documentation\/skywayroom\/roomdelegate"],"traits":[{"interfaceLanguage":"swift"}]},{"paths":["\/documentation\/skywayroom\/roomdelegate"],"traits":[{"interfaceLanguage":"occ"}]}],"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"kind":"attribute","text":"@objc"},{"kind":"text","text":" "},{"kind":"keyword","text":"protocol"},{"text":" ","kind":"text"},{"text":"RoomDelegate","kind":"identifier"}],"languages":["swift"],"platforms":["iOS"]}]}],"schemaVersion":{"patch":0,"minor":3,"major":0},"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom"]]},"metadata":{"modules":[{"name":"SkyWayRoom"}],"externalID":"c:@M@SkyWayRoom@objc(pl)RoomDelegate","fragments":[{"text":"protocol","kind":"keyword"},{"text":" ","kind":"text"},{"kind":"identifier","text":"RoomDelegate"}],"role":"symbol","navigatorTitle":[{"text":"RoomDelegate","kind":"identifier"}],"roleHeading":"Protocol","symbolKind":"protocol","title":"RoomDelegate"},"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate","interfaceLanguage":"swift"},"abstract":[{"type":"text","text":"Roomイベントデリゲート"}],"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/roomDidClose(_:)":{"url":"\/documentation\/skywayroom\/roomdelegate\/roomdidclose(_:)","type":"topic","abstract":[{"type":"text","text":"このRoomが閉じられた後にコールされるイベント"}],"fragments":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"roomDidClose","kind":"identifier"},{"text":"(","kind":"text"},{"text":"Room","kind":"typeIdentifier","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)Room"},{"text":")","kind":"text"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/roomDidClose(_:)","title":"roomDidClose(_:)","navigatorTitle":[{"text":"roomDidClose:","kind":"identifier"}],"kind":"symbol"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/roomMemberListDidChange(_:)":{"url":"\/documentation\/skywayroom\/roomdelegate\/roommemberlistdidchange(_:)","navigatorTitle":[{"kind":"identifier","text":"roomMemberListDidChange:"}],"type":"topic","kind":"symbol","abstract":[{"type":"text","text":"このRoomに参加しているMemberの数が変化した後に発生するイベント"}],"title":"roomMemberListDidChange(_:)","role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/roomMemberListDidChange(_:)","fragments":[{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"roomMemberListDidChange"},{"kind":"text","text":"("},{"kind":"typeIdentifier","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)Room","text":"Room"},{"kind":"text","text":")"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didUnsubscribePublicationOf:)":{"kind":"symbol","fragments":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"room","kind":"identifier"},{"text":"(","kind":"text"},{"text":"Room","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)Room","kind":"typeIdentifier"},{"text":", ","kind":"text"},{"text":"didUnsubscribePublicationOf","kind":"externalParam"},{"text":": ","kind":"text"},{"text":"RoomSubscription","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)RoomSubscription","kind":"typeIdentifier"},{"text":")","kind":"text"}],"url":"\/documentation\/skywayroom\/roomdelegate\/room(_:didunsubscribepublicationof:)","role":"symbol","navigatorTitle":[{"text":"room:didUnsubscribePublicationOf:","kind":"identifier"}],"type":"topic","title":"room(_:didUnsubscribePublicationOf:)","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:didUnsubscribePublicationOf:)","abstract":[{"text":"PublicationがUnsubscribeされた後にコールされるイベント","type":"text"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/roomSubscriptionListDidChange(_:)":{"kind":"symbol","fragments":[{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"roomSubscriptionListDidChange"},{"kind":"text","text":"("},{"kind":"typeIdentifier","text":"Room","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)Room"},{"kind":"text","text":")"}],"url":"\/documentation\/skywayroom\/roomdelegate\/roomsubscriptionlistdidchange(_:)","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"roomSubscriptionListDidChange:"}],"type":"topic","title":"roomSubscriptionListDidChange(_:)","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/roomSubscriptionListDidChange(_:)","abstract":[{"type":"text","text":"PublicationがSubscribeまたはUnsubscribeされた後に発生するイベント"},{"type":"text","text":" "},{"type":"codeVoice","code":"room(_:didSubscribePublicationOf:)"},{"type":"text","text":"または"},{"type":"codeVoice","code":"room(_:UnsubscribePublicationOf:)"},{"type":"text","text":"がコールされた後にコールされます。"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:publicationDidChangeToDisabled:)":{"kind":"symbol","fragments":[{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"room"},{"kind":"text","text":"("},{"kind":"typeIdentifier","text":"Room","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)Room"},{"kind":"text","text":", "},{"kind":"externalParam","text":"publicationDidChangeToDisabled"},{"kind":"text","text":": "},{"kind":"typeIdentifier","text":"RoomPublication","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)RoomPublication"},{"kind":"text","text":")"}],"url":"\/documentation\/skywayroom\/roomdelegate\/room(_:publicationdidchangetodisabled:)","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"room:publicationDidChangeToDisabled:"}],"type":"topic","title":"room(_:publicationDidChangeToDisabled:)","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:publicationDidChangeToDisabled:)","abstract":[{"text":"このRoomのPublicationが","type":"text"},{"type":"codeVoice","code":"Disabled"},{"text":"状態に変更された後に発生するイベント","type":"text"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:memberDidLeave:)":{"kind":"symbol","fragments":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"room","kind":"identifier"},{"text":"(","kind":"text"},{"kind":"typeIdentifier","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)Room","text":"Room"},{"text":", ","kind":"text"},{"text":"memberDidLeave","kind":"externalParam"},{"text":": ","kind":"text"},{"preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)RoomMember","text":"RoomMember","kind":"typeIdentifier"},{"text":")","kind":"text"}],"url":"\/documentation\/skywayroom\/roomdelegate\/room(_:memberdidleave:)","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"room:memberDidLeave:"}],"type":"topic","title":"room(_:memberDidLeave:)","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:memberDidLeave:)","abstract":[{"text":"RoomからMemberが退出した後にコールされるイベント","type":"text"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:memberDidJoin:)":{"kind":"symbol","fragments":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"room","kind":"identifier"},{"text":"(","kind":"text"},{"text":"Room","kind":"typeIdentifier","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)Room"},{"text":", ","kind":"text"},{"text":"memberDidJoin","kind":"externalParam"},{"text":": ","kind":"text"},{"text":"RoomMember","kind":"typeIdentifier","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)RoomMember"},{"text":")","kind":"text"}],"url":"\/documentation\/skywayroom\/roomdelegate\/room(_:memberdidjoin:)","role":"symbol","navigatorTitle":[{"text":"room:memberDidJoin:","kind":"identifier"}],"type":"topic","title":"room(_:memberDidJoin:)","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:memberDidJoin:)","abstract":[{"text":"RoomにMemberが参加した後にコールされるイベント","type":"text"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didUpdateMetadata:)":{"kind":"symbol","fragments":[{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"room"},{"kind":"text","text":"("},{"kind":"typeIdentifier","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)Room","text":"Room"},{"kind":"text","text":", "},{"kind":"externalParam","text":"didUpdateMetadata"},{"kind":"text","text":": "},{"kind":"typeIdentifier","preciseIdentifier":"s:SS","text":"String"},{"kind":"text","text":")"}],"url":"\/documentation\/skywayroom\/roomdelegate\/room(_:didupdatemetadata:)","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"room:didUpdateMetadata:"}],"type":"topic","title":"room(_:didUpdateMetadata:)","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:didUpdateMetadata:)","abstract":[{"type":"text","text":"このRoomのMetadataが更新された後にコールされるイベント"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/roomPublicationListDidChange(_:)":{"url":"\/documentation\/skywayroom\/roomdelegate\/roompublicationlistdidchange(_:)","type":"topic","abstract":[{"text":"このRoomのPublicationの数が変化した後に発生するイベント","type":"text"}],"fragments":[{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"roomPublicationListDidChange"},{"kind":"text","text":"("},{"kind":"typeIdentifier","text":"Room","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)Room"},{"kind":"text","text":")"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/roomPublicationListDidChange(_:)","title":"roomPublicationListDidChange(_:)","navigatorTitle":[{"kind":"identifier","text":"roomPublicationListDidChange:"}],"kind":"symbol"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:publicationDidChangeToEnabled:)":{"url":"\/documentation\/skywayroom\/roomdelegate\/room(_:publicationdidchangetoenabled:)","type":"topic","abstract":[{"text":"このRoomのPublicationが","type":"text"},{"type":"codeVoice","code":"Enabled"},{"text":"状態に変更された後に発生するイベント","type":"text"}],"fragments":[{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"room"},{"kind":"text","text":"("},{"kind":"typeIdentifier","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)Room","text":"Room"},{"kind":"text","text":", "},{"kind":"externalParam","text":"publicationDidChangeToEnabled"},{"kind":"text","text":": "},{"kind":"typeIdentifier","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)RoomPublication","text":"RoomPublication"},{"kind":"text","text":")"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:publicationDidChangeToEnabled:)","title":"room(_:publicationDidChangeToEnabled:)","navigatorTitle":[{"text":"room:publicationDidChangeToEnabled:","kind":"identifier"}],"kind":"symbol"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didPublishStreamOf:)":{"url":"\/documentation\/skywayroom\/roomdelegate\/room(_:didpublishstreamof:)","navigatorTitle":[{"text":"room:didPublishStreamOf:","kind":"identifier"}],"type":"topic","kind":"symbol","title":"room(_:didPublishStreamOf:)","abstract":[{"type":"text","text":"StreamがPublishされた後にコールされるイベント"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:didPublishStreamOf:)","fragments":[{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"room"},{"kind":"text","text":"("},{"kind":"typeIdentifier","text":"Room","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)Room"},{"kind":"text","text":", "},{"kind":"externalParam","text":"didPublishStreamOf"},{"kind":"text","text":": "},{"kind":"typeIdentifier","text":"RoomPublication","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)RoomPublication"},{"text":")","kind":"text"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didSubscribePublicationOf:)":{"url":"\/documentation\/skywayroom\/roomdelegate\/room(_:didsubscribepublicationof:)","type":"topic","abstract":[{"type":"text","text":"PublicationがSubscribeされた後にコールされるイベント"}],"fragments":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"room","kind":"identifier"},{"kind":"text","text":"("},{"kind":"typeIdentifier","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)Room","text":"Room"},{"kind":"text","text":", "},{"text":"didSubscribePublicationOf","kind":"externalParam"},{"text":": ","kind":"text"},{"preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)RoomSubscription","text":"RoomSubscription","kind":"typeIdentifier"},{"kind":"text","text":")"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:didSubscribePublicationOf:)","title":"room(_:didSubscribePublicationOf:)","navigatorTitle":[{"kind":"identifier","text":"room:didSubscribePublicationOf:"}],"kind":"symbol"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:publication:metadataDidUpdate:)":{"url":"\/documentation\/skywayroom\/roomdelegate\/room(_:publication:metadatadidupdate:)","type":"topic","abstract":[{"type":"text","text":"PublicationのMetadataが更新された後にコールされるイベント"}],"fragments":[{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"room"},{"kind":"text","text":"("},{"kind":"typeIdentifier","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)Room","text":"Room"},{"kind":"text","text":", "},{"text":"publication","kind":"externalParam"},{"kind":"text","text":": "},{"kind":"typeIdentifier","text":"RoomPublication","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)RoomPublication"},{"kind":"text","text":", "},{"kind":"externalParam","text":"metadataDidUpdate"},{"text":": ","kind":"text"},{"kind":"typeIdentifier","text":"String","preciseIdentifier":"s:SS"},{"kind":"text","text":")"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:publication:metadataDidUpdate:)","title":"room(_:publication:metadataDidUpdate:)","navigatorTitle":[{"kind":"identifier","text":"room:publication:metadataDidUpdate:"}],"kind":"symbol"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:member:metadataDidUpdate:)":{"url":"\/documentation\/skywayroom\/roomdelegate\/room(_:member:metadatadidupdate:)","type":"topic","abstract":[{"type":"text","text":"MemberのMetadataが更新された後にコールされるイベント"}],"fragments":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"room","kind":"identifier"},{"text":"(","kind":"text"},{"text":"Room","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)Room","kind":"typeIdentifier"},{"text":", ","kind":"text"},{"text":"member","kind":"externalParam"},{"text":": ","kind":"text"},{"text":"RoomMember","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)RoomMember","kind":"typeIdentifier"},{"text":", ","kind":"text"},{"text":"metadataDidUpdate","kind":"externalParam"},{"text":": ","kind":"text"},{"text":"String","preciseIdentifier":"s:SS","kind":"typeIdentifier"},{"text":")","kind":"text"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:member:metadataDidUpdate:)","title":"room(_:member:metadataDidUpdate:)","navigatorTitle":[{"text":"room:member:metadataDidUpdate:","kind":"identifier"}],"kind":"symbol"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didUnpublishStreamOf:)":{"url":"\/documentation\/skywayroom\/roomdelegate\/room(_:didunpublishstreamof:)","type":"topic","abstract":[{"type":"text","text":"StreamがUnpublishされた後にコールされるイベント"}],"fragments":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"room","kind":"identifier"},{"text":"(","kind":"text"},{"text":"Room","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)Room","kind":"typeIdentifier"},{"text":", ","kind":"text"},{"text":"didUnpublishStreamOf","kind":"externalParam"},{"kind":"text","text":": "},{"kind":"typeIdentifier","preciseIdentifier":"c:@M@SkyWayRoom@objc(cs)RoomPublication","text":"RoomPublication"},{"kind":"text","text":")"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:didUnpublishStreamOf:)","title":"room(_:didUnpublishStreamOf:)","navigatorTitle":[{"text":"room:didUnpublishStreamOf:","kind":"identifier"}],"kind":"symbol"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate":{"url":"\/documentation\/skywayroom\/roomdelegate","navigatorTitle":[{"kind":"identifier","text":"RoomDelegate"}],"type":"topic","kind":"symbol","abstract":[{"type":"text","text":"Roomイベントデリゲート"}],"title":"RoomDelegate","role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate","fragments":[{"kind":"keyword","text":"protocol"},{"kind":"text","text":" "},{"kind":"identifier","text":"RoomDelegate"}]}},"variantOverrides":[{"traits":[{"interfaceLanguage":"occ"}],"patch":[{"op":"replace","path":"\/identifier\/interfaceLanguage","value":"occ"},{"op":"add","path":"\/metadata\/platforms","value":null},{"op":"replace","path":"\/metadata\/roleHeading","value":"Protocol"},{"op":"replace","path":"\/metadata\/title","value":"RoomDelegate"},{"op":"replace","path":"\/metadata\/symbolKind","value":"protocol"},{"op":"replace","path":"\/metadata\/fragments","value":[{"kind":"identifier","text":"RoomDelegate"}]},{"path":"\/metadata\/navigatorTitle","value":[{"kind":"identifier","text":"RoomDelegate"}],"op":"replace"},{"op":"replace","path":"\/topicSections","value":[{"generated":true,"anchor":"Instance-Methods","title":"Instance Methods","identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:didPublishStreamOf:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:didSubscribePublicationOf:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:didUnpublishStreamOf:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:didUnsubscribePublicationOf:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:didUpdateMetadata:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:member:metadataDidUpdate:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:memberDidJoin:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:memberDidLeave:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:publication:metadataDidUpdate:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:publicationDidChangeToDisabled:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/room(_:publicationDidChangeToEnabled:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/roomDidClose(_:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/roomMemberListDidChange(_:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/roomPublicationListDidChange(_:)","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/RoomDelegate\/roomSubscriptionListDidChange(_:)"]}]},{"op":"add","path":"\/relationshipsSections","value":null},{"path":"\/seeAlsoSections","value":null,"op":"add"},{"op":"replace","path":"\/primaryContentSections\/0","value":{"kind":"declarations","declarations":[{"tokens":[{"text":"@protocol","kind":"keyword"},{"text":" ","kind":"text"},{"text":"RoomDelegate","kind":"identifier"}],"languages":["occ"],"platforms":["iOS"]}]}},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1roomDidClose(_:)\/title","value":"roomDidClose:"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1roomDidClose(_:)\/fragments","value":[{"kind":"text","text":"- "},{"text":"roomDidClose:","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1roomMemberListDidChange(_:)\/title","value":"roomMemberListDidChange:"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1roomMemberListDidChange(_:)\/fragments","value":[{"text":"- ","kind":"text"},{"text":"roomMemberListDidChange:","kind":"identifier"}]},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:didUnsubscribePublicationOf:)\/title","value":"room:didUnsubscribePublicationOf:","op":"replace"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:didUnsubscribePublicationOf:)\/fragments","value":[{"text":"- ","kind":"text"},{"kind":"identifier","text":"room:didUnsubscribePublicationOf:"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1roomSubscriptionListDidChange(_:)\/title","value":"roomSubscriptionListDidChange:"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1roomSubscriptionListDidChange(_:)\/fragments","value":[{"kind":"text","text":"- "},{"kind":"identifier","text":"roomSubscriptionListDidChange:"}],"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:publicationDidChangeToDisabled:)\/title","value":"room:publicationDidChangeToDisabled:","op":"replace"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:publicationDidChangeToDisabled:)\/fragments","value":[{"text":"- ","kind":"text"},{"kind":"identifier","text":"room:publicationDidChangeToDisabled:"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:memberDidLeave:)\/title","value":"room:memberDidLeave:"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:memberDidLeave:)\/fragments","value":[{"text":"- ","kind":"text"},{"text":"room:memberDidLeave:","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:memberDidJoin:)\/title","value":"room:memberDidJoin:"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:memberDidJoin:)\/fragments","value":[{"text":"- ","kind":"text"},{"text":"room:memberDidJoin:","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:didUpdateMetadata:)\/title","value":"room:didUpdateMetadata:"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:didUpdateMetadata:)\/fragments","value":[{"text":"- ","kind":"text"},{"text":"room:didUpdateMetadata:","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1roomPublicationListDidChange(_:)\/title","value":"roomPublicationListDidChange:"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1roomPublicationListDidChange(_:)\/fragments","value":[{"text":"- ","kind":"text"},{"text":"roomPublicationListDidChange:","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:publicationDidChangeToEnabled:)\/title","value":"room:publicationDidChangeToEnabled:"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:publicationDidChangeToEnabled:)\/fragments","value":[{"text":"- ","kind":"text"},{"text":"room:publicationDidChangeToEnabled:","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:didPublishStreamOf:)\/title","value":"room:didPublishStreamOf:"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:didPublishStreamOf:)\/fragments","value":[{"text":"- ","kind":"text"},{"text":"room:didPublishStreamOf:","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:didSubscribePublicationOf:)\/title","value":"room:didSubscribePublicationOf:"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:didSubscribePublicationOf:)\/fragments","value":[{"text":"- ","kind":"text"},{"text":"room:didSubscribePublicationOf:","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:publication:metadataDidUpdate:)\/title","value":"room:publication:metadataDidUpdate:"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:publication:metadataDidUpdate:)\/fragments","value":[{"text":"- ","kind":"text"},{"text":"room:publication:metadataDidUpdate:","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:member:metadataDidUpdate:)\/title","value":"room:member:metadataDidUpdate:"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:member:metadataDidUpdate:)\/fragments","value":[{"text":"- ","kind":"text"},{"text":"room:member:metadataDidUpdate:","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:didUnpublishStreamOf:)\/title","value":"room:didUnpublishStreamOf:"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:didUnpublishStreamOf:)\/fragments","value":[{"text":"- ","kind":"text"},{"text":"room:didUnpublishStreamOf:","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate\/title","value":"RoomDelegate"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate\/fragments","value":[{"text":"RoomDelegate","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate\/navigatorTitle","value":[{"text":"RoomDelegate","kind":"identifier"}]}]}]}
+{
+  "abstract": [
+    {
+      "text": "Roomイベントデリゲート",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:@M@SkyWayRoom@objc(pl)RoomDelegate",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "protocol"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "RoomDelegate"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "RoomDelegate"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Protocol",
+    "symbolKind": "protocol",
+    "title": "RoomDelegate"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "attribute",
+              "text": "@objc"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "protocol"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "RoomDelegate"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate": {
+      "abstract": [
+        {
+          "text": "Roomイベントデリゲート",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "protocol"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "RoomDelegate"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "RoomDelegate"
+        }
+      ],
+      "role": "symbol",
+      "title": "RoomDelegate",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roomdelegate"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didPublishStreamOf:)": {
+      "abstract": [
+        {
+          "text": "StreamがPublishされた後にコールされるイベント",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "room"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)Room",
+          "text": "Room"
+        },
+        {
+          "kind": "text",
+          "text": ", "
+        },
+        {
+          "kind": "externalParam",
+          "text": "didPublishStreamOf"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)RoomPublication",
+          "text": "RoomPublication"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didPublishStreamOf:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "room:didPublishStreamOf:"
+        }
+      ],
+      "role": "symbol",
+      "title": "room(_:didPublishStreamOf:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roomdelegate/room(_:didpublishstreamof:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didSubscribePublicationOf:)": {
+      "abstract": [
+        {
+          "text": "PublicationがSubscribeされた後にコールされるイベント",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "room"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)Room",
+          "text": "Room"
+        },
+        {
+          "kind": "text",
+          "text": ", "
+        },
+        {
+          "kind": "externalParam",
+          "text": "didSubscribePublicationOf"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)RoomSubscription",
+          "text": "RoomSubscription"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didSubscribePublicationOf:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "room:didSubscribePublicationOf:"
+        }
+      ],
+      "role": "symbol",
+      "title": "room(_:didSubscribePublicationOf:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roomdelegate/room(_:didsubscribepublicationof:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didUnpublishStreamOf:)": {
+      "abstract": [
+        {
+          "text": "StreamがUnpublishされた後にコールされるイベント",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "room"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)Room",
+          "text": "Room"
+        },
+        {
+          "kind": "text",
+          "text": ", "
+        },
+        {
+          "kind": "externalParam",
+          "text": "didUnpublishStreamOf"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)RoomPublication",
+          "text": "RoomPublication"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didUnpublishStreamOf:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "room:didUnpublishStreamOf:"
+        }
+      ],
+      "role": "symbol",
+      "title": "room(_:didUnpublishStreamOf:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roomdelegate/room(_:didunpublishstreamof:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didUnsubscribePublicationOf:)": {
+      "abstract": [
+        {
+          "text": "PublicationがUnsubscribeされた後にコールされるイベント",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "room"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)Room",
+          "text": "Room"
+        },
+        {
+          "kind": "text",
+          "text": ", "
+        },
+        {
+          "kind": "externalParam",
+          "text": "didUnsubscribePublicationOf"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)RoomSubscription",
+          "text": "RoomSubscription"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didUnsubscribePublicationOf:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "room:didUnsubscribePublicationOf:"
+        }
+      ],
+      "role": "symbol",
+      "title": "room(_:didUnsubscribePublicationOf:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roomdelegate/room(_:didunsubscribepublicationof:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didUpdateMetadata:)": {
+      "abstract": [
+        {
+          "text": "このRoomのMetadataが更新された後にコールされるイベント",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "room"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)Room",
+          "text": "Room"
+        },
+        {
+          "kind": "text",
+          "text": ", "
+        },
+        {
+          "kind": "externalParam",
+          "text": "didUpdateMetadata"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:SS",
+          "text": "String"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didUpdateMetadata:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "room:didUpdateMetadata:"
+        }
+      ],
+      "role": "symbol",
+      "title": "room(_:didUpdateMetadata:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roomdelegate/room(_:didupdatemetadata:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:member:metadataDidUpdate:)": {
+      "abstract": [
+        {
+          "text": "MemberのMetadataが更新された後にコールされるイベント",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "room"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)Room",
+          "text": "Room"
+        },
+        {
+          "kind": "text",
+          "text": ", "
+        },
+        {
+          "kind": "externalParam",
+          "text": "member"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)RoomMember",
+          "text": "RoomMember"
+        },
+        {
+          "kind": "text",
+          "text": ", "
+        },
+        {
+          "kind": "externalParam",
+          "text": "metadataDidUpdate"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:SS",
+          "text": "String"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:member:metadataDidUpdate:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "room:member:metadataDidUpdate:"
+        }
+      ],
+      "role": "symbol",
+      "title": "room(_:member:metadataDidUpdate:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roomdelegate/room(_:member:metadatadidupdate:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:memberDidJoin:)": {
+      "abstract": [
+        {
+          "text": "RoomにMemberが参加した後にコールされるイベント",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "room"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)Room",
+          "text": "Room"
+        },
+        {
+          "kind": "text",
+          "text": ", "
+        },
+        {
+          "kind": "externalParam",
+          "text": "memberDidJoin"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)RoomMember",
+          "text": "RoomMember"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:memberDidJoin:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "room:memberDidJoin:"
+        }
+      ],
+      "role": "symbol",
+      "title": "room(_:memberDidJoin:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roomdelegate/room(_:memberdidjoin:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:memberDidLeave:)": {
+      "abstract": [
+        {
+          "text": "RoomからMemberが退出した後にコールされるイベント",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "room"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)Room",
+          "text": "Room"
+        },
+        {
+          "kind": "text",
+          "text": ", "
+        },
+        {
+          "kind": "externalParam",
+          "text": "memberDidLeave"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)RoomMember",
+          "text": "RoomMember"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:memberDidLeave:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "room:memberDidLeave:"
+        }
+      ],
+      "role": "symbol",
+      "title": "room(_:memberDidLeave:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roomdelegate/room(_:memberdidleave:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:publication:metadataDidUpdate:)": {
+      "abstract": [
+        {
+          "text": "PublicationのMetadataが更新された後にコールされるイベント",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "room"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)Room",
+          "text": "Room"
+        },
+        {
+          "kind": "text",
+          "text": ", "
+        },
+        {
+          "kind": "externalParam",
+          "text": "publication"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)RoomPublication",
+          "text": "RoomPublication"
+        },
+        {
+          "kind": "text",
+          "text": ", "
+        },
+        {
+          "kind": "externalParam",
+          "text": "metadataDidUpdate"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:SS",
+          "text": "String"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:publication:metadataDidUpdate:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "room:publication:metadataDidUpdate:"
+        }
+      ],
+      "role": "symbol",
+      "title": "room(_:publication:metadataDidUpdate:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roomdelegate/room(_:publication:metadatadidupdate:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:publicationDidChangeToDisabled:)": {
+      "abstract": [
+        {
+          "text": "このRoomのPublicationが",
+          "type": "text"
+        },
+        {
+          "code": "Disabled",
+          "type": "codeVoice"
+        },
+        {
+          "text": "状態に変更された後に発生するイベント",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "room"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)Room",
+          "text": "Room"
+        },
+        {
+          "kind": "text",
+          "text": ", "
+        },
+        {
+          "kind": "externalParam",
+          "text": "publicationDidChangeToDisabled"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)RoomPublication",
+          "text": "RoomPublication"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:publicationDidChangeToDisabled:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "room:publicationDidChangeToDisabled:"
+        }
+      ],
+      "role": "symbol",
+      "title": "room(_:publicationDidChangeToDisabled:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roomdelegate/room(_:publicationdidchangetodisabled:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:publicationDidChangeToEnabled:)": {
+      "abstract": [
+        {
+          "text": "このRoomのPublicationが",
+          "type": "text"
+        },
+        {
+          "code": "Enabled",
+          "type": "codeVoice"
+        },
+        {
+          "text": "状態に変更された後に発生するイベント",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "room"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)Room",
+          "text": "Room"
+        },
+        {
+          "kind": "text",
+          "text": ", "
+        },
+        {
+          "kind": "externalParam",
+          "text": "publicationDidChangeToEnabled"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)RoomPublication",
+          "text": "RoomPublication"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:publicationDidChangeToEnabled:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "room:publicationDidChangeToEnabled:"
+        }
+      ],
+      "role": "symbol",
+      "title": "room(_:publicationDidChangeToEnabled:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roomdelegate/room(_:publicationdidchangetoenabled:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/roomDidClose(_:)": {
+      "abstract": [
+        {
+          "text": "このRoomが閉じられた後にコールされるイベント",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "roomDidClose"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)Room",
+          "text": "Room"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/roomDidClose(_:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "roomDidClose:"
+        }
+      ],
+      "role": "symbol",
+      "title": "roomDidClose(_:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roomdelegate/roomdidclose(_:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/roomMemberListDidChange(_:)": {
+      "abstract": [
+        {
+          "text": "このRoomに参加しているMemberの数が変化した後に発生するイベント",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "roomMemberListDidChange"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)Room",
+          "text": "Room"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/roomMemberListDidChange(_:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "roomMemberListDidChange:"
+        }
+      ],
+      "role": "symbol",
+      "title": "roomMemberListDidChange(_:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roomdelegate/roommemberlistdidchange(_:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/roomPublicationListDidChange(_:)": {
+      "abstract": [
+        {
+          "text": "このRoomのPublicationの数が変化した後に発生するイベント",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "roomPublicationListDidChange"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)Room",
+          "text": "Room"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/roomPublicationListDidChange(_:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "roomPublicationListDidChange:"
+        }
+      ],
+      "role": "symbol",
+      "title": "roomPublicationListDidChange(_:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roomdelegate/roompublicationlistdidchange(_:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/roomSubscriptionListDidChange(_:)": {
+      "abstract": [
+        {
+          "text": "PublicationがSubscribeまたはUnsubscribeされた後に発生するイベント",
+          "type": "text"
+        },
+        {
+          "text": " ",
+          "type": "text"
+        },
+        {
+          "code": "room(_:didSubscribePublicationOf:)",
+          "type": "codeVoice"
+        },
+        {
+          "text": "または",
+          "type": "text"
+        },
+        {
+          "code": "room(_:UnsubscribePublicationOf:)",
+          "type": "codeVoice"
+        },
+        {
+          "text": "がコールされた後にコールされます。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "roomSubscriptionListDidChange"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)Room",
+          "text": "Room"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/roomSubscriptionListDidChange(_:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "roomSubscriptionListDidChange:"
+        }
+      ],
+      "role": "symbol",
+      "title": "roomSubscriptionListDidChange(_:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roomdelegate/roomsubscriptionlistdidchange(_:)"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "topicSections": [
+    {
+      "anchor": "Instance-Methods",
+      "generated": true,
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didPublishStreamOf:)",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didSubscribePublicationOf:)",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didUnpublishStreamOf:)",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didUnsubscribePublicationOf:)",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didUpdateMetadata:)",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:member:metadataDidUpdate:)",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:memberDidJoin:)",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:memberDidLeave:)",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:publication:metadataDidUpdate:)",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:publicationDidChangeToDisabled:)",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:publicationDidChangeToEnabled:)",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/roomDidClose(_:)",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/roomMemberListDidChange(_:)",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/roomPublicationListDidChange(_:)",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/roomSubscriptionListDidChange(_:)"
+      ],
+      "title": "Instance Methods"
+    }
+  ],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Protocol"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "RoomDelegate"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "protocol"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/topicSections",
+          "value": [
+            {
+              "anchor": "Instance-Methods",
+              "generated": true,
+              "identifiers": [
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didPublishStreamOf:)",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didSubscribePublicationOf:)",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didUnpublishStreamOf:)",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didUnsubscribePublicationOf:)",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:didUpdateMetadata:)",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:member:metadataDidUpdate:)",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:memberDidJoin:)",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:memberDidLeave:)",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:publication:metadataDidUpdate:)",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:publicationDidChangeToDisabled:)",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/room(_:publicationDidChangeToEnabled:)",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/roomDidClose(_:)",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/roomMemberListDidChange(_:)",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/roomPublicationListDidChange(_:)",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomDelegate/roomSubscriptionListDidChange(_:)"
+              ],
+              "title": "Instance Methods"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "keyword",
+                    "text": "@protocol"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "RoomDelegate"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:didPublishStreamOf:)/title",
+          "value": "room:didPublishStreamOf:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:didPublishStreamOf:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "room:didPublishStreamOf:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1roomMemberListDidChange(_:)/title",
+          "value": "roomMemberListDidChange:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1roomMemberListDidChange(_:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "roomMemberListDidChange:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:publicationDidChangeToDisabled:)/title",
+          "value": "room:publicationDidChangeToDisabled:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:publicationDidChangeToDisabled:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "room:publicationDidChangeToDisabled:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:didUnpublishStreamOf:)/title",
+          "value": "room:didUnpublishStreamOf:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:didUnpublishStreamOf:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "room:didUnpublishStreamOf:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate/title",
+          "value": "RoomDelegate"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:didSubscribePublicationOf:)/title",
+          "value": "room:didSubscribePublicationOf:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:didSubscribePublicationOf:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "room:didSubscribePublicationOf:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1roomDidClose(_:)/title",
+          "value": "roomDidClose:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1roomDidClose(_:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "roomDidClose:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:publicationDidChangeToEnabled:)/title",
+          "value": "room:publicationDidChangeToEnabled:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:publicationDidChangeToEnabled:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "room:publicationDidChangeToEnabled:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:didUnsubscribePublicationOf:)/title",
+          "value": "room:didUnsubscribePublicationOf:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:didUnsubscribePublicationOf:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "room:didUnsubscribePublicationOf:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:member:metadataDidUpdate:)/title",
+          "value": "room:member:metadataDidUpdate:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:member:metadataDidUpdate:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "room:member:metadataDidUpdate:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:publication:metadataDidUpdate:)/title",
+          "value": "room:publication:metadataDidUpdate:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:publication:metadataDidUpdate:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "room:publication:metadataDidUpdate:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:memberDidLeave:)/title",
+          "value": "room:memberDidLeave:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:memberDidLeave:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "room:memberDidLeave:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:memberDidJoin:)/title",
+          "value": "room:memberDidJoin:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:memberDidJoin:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "room:memberDidJoin:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:didUpdateMetadata:)/title",
+          "value": "room:didUpdateMetadata:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1room(_:didUpdateMetadata:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "room:didUpdateMetadata:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1roomPublicationListDidChange(_:)/title",
+          "value": "roomPublicationListDidChange:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1roomPublicationListDidChange(_:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "roomPublicationListDidChange:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1roomSubscriptionListDidChange(_:)/title",
+          "value": "roomSubscriptionListDidChange:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate~1roomSubscriptionListDidChange(_:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "roomSubscriptionListDidChange:"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/roomdelegate"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/roomdelegate"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

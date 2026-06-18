@@ -1,1 +1,181 @@
-{"abstract":[{"type":"text","text":"計算コストが比較的高いが、ノイズ抑制効果が最も高いモデル。"}],"schemaVersion":{"major":0,"patch":0,"minor":3},"sections":[],"identifier":{"url":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ModelType\/large","interfaceLanguage":"swift"},"metadata":{"externalID":"s:22SkyWayAINoiseCanceller9ModelTypeO5largeyA2CmF","title":"ModelType.large","symbolKind":"case","roleHeading":"Case","fragments":[{"kind":"keyword","text":"case"},{"kind":"text","text":" "},{"kind":"identifier","text":"large"}],"role":"symbol","modules":[{"name":"SkyWayAINoiseCanceller"}]},"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller","doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ModelType"]]},"kind":"symbol","variants":[{"paths":["\/documentation\/skywayainoisecanceller\/modeltype\/large"],"traits":[{"interfaceLanguage":"swift"}]}],"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"text":"case","kind":"keyword"},{"text":" ","kind":"text"},{"text":"large","kind":"identifier"}],"platforms":["iOS"],"languages":["swift"]}]}],"references":{"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/large":{"fragments":[{"text":"case","kind":"keyword"},{"kind":"text","text":" "},{"text":"large","kind":"identifier"}],"url":"\/documentation\/skywayainoisecanceller\/modeltype\/large","kind":"symbol","type":"topic","role":"symbol","abstract":[{"type":"text","text":"計算コストが比較的高いが、ノイズ抑制効果が最も高いモデル。"}],"title":"ModelType.large","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ModelType\/large"},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType":{"fragments":[{"kind":"keyword","text":"enum"},{"text":" ","kind":"text"},{"text":"ModelType","kind":"identifier"}],"abstract":[{"text":"使用するAIノイズキャンセルモデルの種類を表します。","type":"text"}],"url":"\/documentation\/skywayainoisecanceller\/modeltype","kind":"symbol","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"ModelType"}],"type":"topic","title":"ModelType","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ModelType"},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller":{"title":"SkyWayAINoiseCanceller","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller","role":"collection","url":"\/documentation\/skywayainoisecanceller","abstract":[{"type":"strong","inlineContent":[{"text":"Version: 1.1.0","type":"text"}]},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}],"type":"topic","kind":"symbol"}}}
+{
+  "abstract": [
+    {
+      "text": "計算コストが比較的高いが、ノイズ抑制効果が最も高いモデル。",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller",
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/large"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "s:22SkyWayAINoiseCanceller9ModelTypeO5largeyA2CmF",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "case"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "large"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayAINoiseCanceller"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Case",
+    "symbolKind": "case",
+    "title": "ModelType.large"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "case"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "large"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 1.1.0",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayAINoiseCanceller",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType": {
+      "abstract": [
+        {
+          "text": "使用するAIノイズキャンセルモデルの種類を表します。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "enum"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "ModelType"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "ModelType"
+        }
+      ],
+      "role": "symbol",
+      "title": "ModelType",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/modeltype"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/large": {
+      "abstract": [
+        {
+          "text": "計算コストが比較的高いが、ノイズ抑制効果が最も高いモデル。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "case"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "large"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ModelType/large",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "ModelType.large",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/modeltype/large"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayainoisecanceller/modeltype/large"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    }
+  ]
+}

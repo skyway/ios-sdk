@@ -1,1 +1,1094 @@
-{"variants":[{"paths":["\/documentation\/skywayroom\/sfubotmember\/startforwarding(_:configure:completion:)"],"traits":[{"interfaceLanguage":"swift"}]},{"paths":["\/documentation\/skywayroom\/sfubotmember\/startforwarding(_:configure:completion:)"],"traits":[{"interfaceLanguage":"occ"}]}],"schemaVersion":{"patch":0,"minor":3,"major":0},"abstract":[{"text":"Publicationをフォワードさせます。","type":"text"}],"sections":[],"primaryContentSections":[{"declarations":[{"platforms":["iOS"],"languages":["swift"],"tokens":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"startForwarding","kind":"identifier"},{"text":"(","kind":"text"},{"text":"_","kind":"externalParam"},{"text":" ","kind":"text"},{"text":"publication","kind":"internalParam"},{"text":": ","kind":"text"},{"text":"Publication","kind":"typeIdentifier","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Publication","preciseIdentifier":"c:objc(cs)SKWPublication"},{"text":", ","kind":"text"},{"text":"configure","kind":"externalParam"},{"text":": ","kind":"text"},{"text":"ForwardingConfigure","kind":"typeIdentifier","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ForwardingConfigure","preciseIdentifier":"c:objc(cs)SKWForwardingConfigure"},{"text":"?, ","kind":"text"},{"text":"completion","kind":"externalParam"},{"text":": ((","kind":"text"},{"text":"Forwarding","kind":"typeIdentifier","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Forwarding","preciseIdentifier":"c:objc(cs)SKWForwarding"},{"text":"?, (any ","kind":"text"},{"text":"Error","kind":"typeIdentifier","preciseIdentifier":"s:s5ErrorP"},{"text":")?) -> ","kind":"text"},{"text":"Void","kind":"typeIdentifier","preciseIdentifier":"s:s4Voida"},{"text":")? = nil)","kind":"text"}]},{"platforms":["iOS"],"languages":["swift"],"tokens":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"startForwarding","kind":"identifier"},{"text":"(","kind":"text"},{"text":"_","kind":"externalParam"},{"text":" ","kind":"text"},{"text":"publication","kind":"internalParam"},{"text":": ","kind":"text"},{"text":"Publication","kind":"typeIdentifier","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Publication","preciseIdentifier":"c:objc(cs)SKWPublication"},{"text":", ","kind":"text"},{"text":"configure","kind":"externalParam"},{"text":": ","kind":"text"},{"text":"ForwardingConfigure","kind":"typeIdentifier","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ForwardingConfigure","preciseIdentifier":"c:objc(cs)SKWForwardingConfigure"},{"text":"?) ","kind":"text"},{"text":"async","kind":"keyword"},{"text":" ","kind":"text"},{"text":"throws","kind":"keyword"},{"text":" -> ","kind":"text"},{"text":"Forwarding","kind":"typeIdentifier","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Forwarding","preciseIdentifier":"c:objc(cs)SKWForwarding"}]}],"kind":"declarations"},{"parameters":[{"content":[{"inlineContent":[{"text":"Publication","type":"text"}],"type":"paragraph"}],"name":"publication"},{"content":[{"inlineContent":[{"text":"コンフィグオプション","type":"text"}],"type":"paragraph"}],"name":"configure"},{"content":[{"inlineContent":[{"text":"完了コールバック","type":"text"}],"type":"paragraph"}],"name":"completion"}],"kind":"parameters"},{"kind":"content","content":[{"anchor":"discussion","type":"heading","level":2,"text":"Discussion"},{"type":"paragraph","inlineContent":[{"text":"コーデック指定(","type":"text"},{"code":"codecCapabilities","type":"codeVoice"},{"text":")のあるPublicationはサポートされていないので失敗します。","type":"text"}]},{"type":"paragraph","inlineContent":[{"text":"また、maxFramerateを複数設定したPublicationのForwarding(サイマルキャスト)は利用できません。","type":"text"}]}]}],"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SFUBotMember"]]},"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SFUBotMember\/startForwarding(_:configure:completion:)","interfaceLanguage":"swift"},"metadata":{"modules":[{"name":"SkyWayRoom"}],"externalID":"c:objc(cs)SKWSFUBotMember(im)startForwardingPublication:withConfigure:completion:","fragments":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"text":"startForwarding","kind":"identifier"},{"text":"(","kind":"text"},{"text":"Publication","preciseIdentifier":"c:objc(cs)SKWPublication","kind":"typeIdentifier"},{"text":", ","kind":"text"},{"text":"configure","kind":"externalParam"},{"text":": ","kind":"text"},{"text":"ForwardingConfigure","kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWForwardingConfigure"},{"text":"?, ","kind":"text"},{"text":"completion","kind":"externalParam"},{"text":": ((","kind":"text"},{"preciseIdentifier":"c:objc(cs)SKWForwarding","text":"Forwarding","kind":"typeIdentifier"},{"text":"?, (any ","kind":"text"},{"preciseIdentifier":"s:s5ErrorP","text":"Error","kind":"typeIdentifier"},{"text":")?) -> ","kind":"text"},{"preciseIdentifier":"s:s4Voida","text":"Void","kind":"typeIdentifier"},{"text":")?)","kind":"text"}],"role":"symbol","navigatorTitle":[{"text":"startForwardingPublication:withConfigure:completion:","kind":"identifier"}],"roleHeading":"Instance Method","symbolKind":"method","title":"startForwarding(_:configure:completion:)"},"kind":"symbol","references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingConfigure":{"url":"\/documentation\/skywayroom\/forwardingconfigure","navigatorTitle":[{"kind":"identifier","text":"ForwardingConfigure"}],"type":"topic","kind":"symbol","title":"ForwardingConfigure","abstract":[{"text":"フォワードコンフィグ","type":"text"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ForwardingConfigure","fragments":[{"text":"class","kind":"keyword"},{"kind":"text","text":" "},{"kind":"identifier","text":"ForwardingConfigure"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotMember/startForwarding(_:configure:completion:)":{"url":"\/documentation\/skywayroom\/sfubotmember\/startforwarding(_:configure:completion:)","type":"topic","abstract":[{"type":"text","text":"Publicationをフォワードさせます。"}],"fragments":[{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"startForwarding"},{"kind":"text","text":"("},{"kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWPublication","text":"Publication"},{"kind":"text","text":", "},{"kind":"externalParam","text":"configure"},{"kind":"text","text":": "},{"kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWForwardingConfigure","text":"ForwardingConfigure"},{"kind":"text","text":"?, "},{"kind":"externalParam","text":"completion"},{"kind":"text","text":": (("},{"kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWForwarding","text":"Forwarding"},{"kind":"text","text":"?, (any "},{"kind":"typeIdentifier","preciseIdentifier":"s:s5ErrorP","text":"Error"},{"kind":"text","text":")?) -> "},{"kind":"typeIdentifier","preciseIdentifier":"s:s4Voida","text":"Void"},{"kind":"text","text":")?)"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SFUBotMember\/startForwarding(_:configure:completion:)","title":"startForwarding(_:configure:completion:)","navigatorTitle":[{"kind":"identifier","text":"startForwardingPublication:withConfigure:completion:"}],"kind":"symbol"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/Publication":{"kind":"symbol","fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"Publication","kind":"identifier"}],"url":"\/documentation\/skywayroom\/publication","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"Publication"}],"type":"topic","title":"Publication","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Publication","abstract":[{"type":"text","text":"Publication"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWSFUBotMemberStartForwardingPublicationCompletion":{"url":"\/documentation\/skywayroom\/skwsfubotmemberstartforwardingpublicationcompletion","navigatorTitle":[{"text":"SKWSFUBotMemberStartForwardingPublicationCompletion","kind":"identifier"}],"type":"topic","kind":"symbol","title":"SKWSFUBotMemberStartForwardingPublicationCompletion","abstract":[],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SKWSFUBotMemberStartForwardingPublicationCompletion","fragments":[{"text":"typealias","kind":"keyword"},{"text":" ","kind":"text"},{"text":"SKWSFUBotMemberStartForwardingPublicationCompletion","kind":"identifier"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/Forwarding":{"kind":"symbol","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"Forwarding"}],"url":"\/documentation\/skywayroom\/forwarding","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"Forwarding"}],"type":"topic","title":"Forwarding","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Forwarding","abstract":[{"type":"text","text":"フォワーディング"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotMember":{"url":"\/documentation\/skywayroom\/sfubotmember","navigatorTitle":[{"kind":"identifier","text":"SFUBotMember"}],"type":"topic","kind":"symbol","title":"SFUBotMember","abstract":[{"type":"text","text":"SFU Bot"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SFUBotMember","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"SFUBotMember"}]}},"variantOverrides":[{"patch":[{"op":"replace","path":"\/identifier\/interfaceLanguage","value":"occ"},{"op":"add","path":"\/metadata\/platforms","value":null},{"op":"replace","path":"\/metadata\/roleHeading","value":"Instance Method"},{"op":"replace","path":"\/metadata\/title","value":"startForwardingPublication:withConfigure:completion:"},{"op":"replace","path":"\/metadata\/symbolKind","value":"method"},{"op":"replace","path":"\/metadata\/fragments","value":[{"text":"- ","kind":"text"},{"text":"startForwardingPublication:withConfigure:completion:","kind":"identifier"}]},{"op":"add","path":"\/topicSections","value":null},{"op":"add","path":"\/relationshipsSections","value":null},{"op":"add","path":"\/seeAlsoSections","value":null},{"op":"replace","path":"\/primaryContentSections\/0","value":{"kind":"declarations","declarations":[{"platforms":["iOS"],"languages":["occ"],"tokens":[{"text":"- (","kind":"text"},{"text":"void","kind":"typeIdentifier","preciseIdentifier":"c:v"},{"text":") ","kind":"text"},{"text":"startForwardingPublication:","kind":"identifier"},{"text":"(","kind":"text"},{"text":"SKWPublication","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Publication","kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWPublication"},{"text":" *) ","kind":"text"},{"text":"publication","kind":"internalParam"},{"text":" ","kind":"text"},{"text":"withConfigure:","kind":"identifier"},{"text":"(","kind":"text"},{"text":"SKWForwardingConfigure","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ForwardingConfigure","kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWForwardingConfigure"},{"text":" *) ","kind":"text"},{"text":"configure","kind":"internalParam"},{"text":" ","kind":"text"},{"text":"completion:","kind":"identifier"},{"text":"(","kind":"text"},{"text":"SKWSFUBotMemberStartForwardingPublicationCompletion","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/SKWSFUBotMemberStartForwardingPublicationCompletion","kind":"typeIdentifier","preciseIdentifier":"c:SKWSFUBotMember.h@T@SKWSFUBotMemberStartForwardingPublicationCompletion"},{"text":") ","kind":"text"},{"text":"completion","kind":"internalParam"},{"text":";","kind":"text"}]}]}},{"op":"replace","path":"\/primaryContentSections\/1","value":{"kind":"parameters","parameters":[{"content":[{"type":"paragraph","inlineContent":[{"type":"text","text":"Publication"}]}],"name":"publication"},{"content":[{"type":"paragraph","inlineContent":[{"type":"text","text":"コンフィグオプション"}]}],"name":"configure"},{"content":[{"type":"paragraph","inlineContent":[{"type":"text","text":"完了コールバック"}]}],"name":"completion"}]}},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingConfigure\/title","value":"SKWForwardingConfigure"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingConfigure\/fragments","value":[{"text":"SKWForwardingConfigure","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingConfigure\/navigatorTitle","value":[{"text":"SKWForwardingConfigure","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember~1startForwarding(_:configure:completion:)\/title","value":"startForwardingPublication:withConfigure:completion:"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember~1startForwarding(_:configure:completion:)\/fragments","value":[{"text":"- ","kind":"text"},{"text":"startForwardingPublication:withConfigure:completion:","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication\/title","value":"SKWPublication"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication\/fragments","value":[{"text":"SKWPublication","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication\/navigatorTitle","value":[{"text":"SKWPublication","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWSFUBotMemberStartForwardingPublicationCompletion\/title","value":"SKWSFUBotMemberStartForwardingPublicationCompletion"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWSFUBotMemberStartForwardingPublicationCompletion\/fragments","value":[{"text":"SKWSFUBotMemberStartForwardingPublicationCompletion","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWSFUBotMemberStartForwardingPublicationCompletion\/navigatorTitle","value":[{"text":"SKWSFUBotMemberStartForwardingPublicationCompletion","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Forwarding\/title","value":"SKWForwarding"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Forwarding\/fragments","value":[{"text":"SKWForwarding","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Forwarding\/navigatorTitle","value":[{"text":"SKWForwarding","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember\/title","value":"SKWSFUBotMember"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember\/fragments","value":[{"text":"SKWSFUBotMember","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember\/navigatorTitle","value":[{"text":"SKWSFUBotMember","kind":"identifier"}]}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "abstract": [
+    {
+      "text": "Publicationをフォワードさせます。",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotMember"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotMember/startForwarding(_:configure:completion:)"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:objc(cs)SKWSFUBotMember(im)startForwardingPublication:withConfigure:completion:",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "func"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "startForwarding"
+      },
+      {
+        "kind": "text",
+        "text": "("
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "c:objc(cs)SKWPublication",
+        "text": "Publication"
+      },
+      {
+        "kind": "text",
+        "text": ", "
+      },
+      {
+        "kind": "externalParam",
+        "text": "configure"
+      },
+      {
+        "kind": "text",
+        "text": ": "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "c:objc(cs)SKWForwardingConfigure",
+        "text": "ForwardingConfigure"
+      },
+      {
+        "kind": "text",
+        "text": "?, "
+      },
+      {
+        "kind": "externalParam",
+        "text": "completion"
+      },
+      {
+        "kind": "text",
+        "text": ": (("
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "c:objc(cs)SKWForwarding",
+        "text": "Forwarding"
+      },
+      {
+        "kind": "text",
+        "text": "?, (any "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:s5ErrorP",
+        "text": "Error"
+      },
+      {
+        "kind": "text",
+        "text": ")?) -> "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:s4Voida",
+        "text": "Void"
+      },
+      {
+        "kind": "text",
+        "text": ")?)"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "startForwardingPublication:withConfigure:completion:"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "symbolKind": "method",
+    "title": "startForwarding(_:configure:completion:)"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "startForwarding"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "externalParam",
+              "text": "_"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "publication"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Publication",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)SKWPublication",
+              "text": "Publication"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "externalParam",
+              "text": "configure"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingConfigure",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)SKWForwardingConfigure",
+              "text": "ForwardingConfigure"
+            },
+            {
+              "kind": "text",
+              "text": "?, "
+            },
+            {
+              "kind": "externalParam",
+              "text": "completion"
+            },
+            {
+              "kind": "text",
+              "text": ": (("
+            },
+            {
+              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Forwarding",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)SKWForwarding",
+              "text": "Forwarding"
+            },
+            {
+              "kind": "text",
+              "text": "?, (any "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:s5ErrorP",
+              "text": "Error"
+            },
+            {
+              "kind": "text",
+              "text": ")?) -> "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:s4Voida",
+              "text": "Void"
+            },
+            {
+              "kind": "text",
+              "text": ")? = nil)"
+            }
+          ]
+        },
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "startForwarding"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "externalParam",
+              "text": "_"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "publication"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Publication",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)SKWPublication",
+              "text": "Publication"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "externalParam",
+              "text": "configure"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingConfigure",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)SKWForwardingConfigure",
+              "text": "ForwardingConfigure"
+            },
+            {
+              "kind": "text",
+              "text": "?) "
+            },
+            {
+              "kind": "keyword",
+              "text": "async"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "throws"
+            },
+            {
+              "kind": "text",
+              "text": " -> "
+            },
+            {
+              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Forwarding",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)SKWForwarding",
+              "text": "Forwarding"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "kind": "parameters",
+      "parameters": [
+        {
+          "content": [
+            {
+              "inlineContent": [
+                {
+                  "text": "Publication",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "publication"
+        },
+        {
+          "content": [
+            {
+              "inlineContent": [
+                {
+                  "text": "コンフィグオプション",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "configure"
+        },
+        {
+          "content": [
+            {
+              "inlineContent": [
+                {
+                  "text": "完了コールバック",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "completion"
+        }
+      ]
+    },
+    {
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "コーデック指定(",
+              "type": "text"
+            },
+            {
+              "code": "codecCapabilities",
+              "type": "codeVoice"
+            },
+            {
+              "text": ")のあるPublicationはサポートされていないので失敗します。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "また、maxFramerateを複数設定したPublicationのForwarding(サイマルキャスト)は利用できません。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "kind": "content"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Forwarding": {
+      "abstract": [
+        {
+          "text": "フォワーディング",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "Forwarding"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Forwarding",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "Forwarding"
+        }
+      ],
+      "role": "symbol",
+      "title": "Forwarding",
+      "type": "topic",
+      "url": "/documentation/skywayroom/forwarding"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingConfigure": {
+      "abstract": [
+        {
+          "text": "フォワードコンフィグ",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "ForwardingConfigure"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingConfigure",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "ForwardingConfigure"
+        }
+      ],
+      "role": "symbol",
+      "title": "ForwardingConfigure",
+      "type": "topic",
+      "url": "/documentation/skywayroom/forwardingconfigure"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Publication": {
+      "abstract": [
+        {
+          "text": "Publication",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "Publication"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Publication",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "Publication"
+        }
+      ],
+      "role": "symbol",
+      "title": "Publication",
+      "type": "topic",
+      "url": "/documentation/skywayroom/publication"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotMember": {
+      "abstract": [
+        {
+          "text": "SFU Bot",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "SFUBotMember"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotMember",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SFUBotMember"
+        }
+      ],
+      "role": "symbol",
+      "title": "SFUBotMember",
+      "type": "topic",
+      "url": "/documentation/skywayroom/sfubotmember"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotMember/startForwarding(_:configure:completion:)": {
+      "abstract": [
+        {
+          "text": "Publicationをフォワードさせます。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "startForwarding"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWPublication",
+          "text": "Publication"
+        },
+        {
+          "kind": "text",
+          "text": ", "
+        },
+        {
+          "kind": "externalParam",
+          "text": "configure"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWForwardingConfigure",
+          "text": "ForwardingConfigure"
+        },
+        {
+          "kind": "text",
+          "text": "?, "
+        },
+        {
+          "kind": "externalParam",
+          "text": "completion"
+        },
+        {
+          "kind": "text",
+          "text": ": (("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWForwarding",
+          "text": "Forwarding"
+        },
+        {
+          "kind": "text",
+          "text": "?, (any "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:s5ErrorP",
+          "text": "Error"
+        },
+        {
+          "kind": "text",
+          "text": ")?) -> "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:s4Voida",
+          "text": "Void"
+        },
+        {
+          "kind": "text",
+          "text": ")?)"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotMember/startForwarding(_:configure:completion:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "startForwardingPublication:withConfigure:completion:"
+        }
+      ],
+      "role": "symbol",
+      "title": "startForwarding(_:configure:completion:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/sfubotmember/startforwarding(_:configure:completion:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWSFUBotMemberStartForwardingPublicationCompletion": {
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "typealias"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "SKWSFUBotMemberStartForwardingPublicationCompletion"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWSFUBotMemberStartForwardingPublicationCompletion",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SKWSFUBotMemberStartForwardingPublicationCompletion"
+        }
+      ],
+      "role": "symbol",
+      "title": "SKWSFUBotMemberStartForwardingPublicationCompletion",
+      "type": "topic",
+      "url": "/documentation/skywayroom/skwsfubotmemberstartforwardingpublicationcompletion"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Instance Method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "startForwardingPublication:withConfigure:completion:"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "startForwardingPublication:withConfigure:completion:"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "text",
+                    "text": "- ("
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:v",
+                    "text": "void"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ") "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "startForwardingPublication:"
+                  },
+                  {
+                    "kind": "text",
+                    "text": "("
+                  },
+                  {
+                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Publication",
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:objc(cs)SKWPublication",
+                    "text": "SKWPublication"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " *) "
+                  },
+                  {
+                    "kind": "internalParam",
+                    "text": "publication"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "withConfigure:"
+                  },
+                  {
+                    "kind": "text",
+                    "text": "("
+                  },
+                  {
+                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ForwardingConfigure",
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:objc(cs)SKWForwardingConfigure",
+                    "text": "SKWForwardingConfigure"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " *) "
+                  },
+                  {
+                    "kind": "internalParam",
+                    "text": "configure"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "completion:"
+                  },
+                  {
+                    "kind": "text",
+                    "text": "("
+                  },
+                  {
+                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SKWSFUBotMemberStartForwardingPublicationCompletion",
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:SKWSFUBotMember.h@T@SKWSFUBotMemberStartForwardingPublicationCompletion",
+                    "text": "SKWSFUBotMemberStartForwardingPublicationCompletion"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ") "
+                  },
+                  {
+                    "kind": "internalParam",
+                    "text": "completion"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ";"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/1",
+          "value": {
+            "kind": "parameters",
+            "parameters": [
+              {
+                "content": [
+                  {
+                    "inlineContent": [
+                      {
+                        "text": "Publication",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "name": "publication"
+              },
+              {
+                "content": [
+                  {
+                    "inlineContent": [
+                      {
+                        "text": "コンフィグオプション",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "name": "configure"
+              },
+              {
+                "content": [
+                  {
+                    "inlineContent": [
+                      {
+                        "text": "完了コールバック",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "name": "completion"
+              }
+            ]
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingConfigure/title",
+          "value": "SKWForwardingConfigure"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingConfigure/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWForwardingConfigure"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingConfigure/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWForwardingConfigure"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/title",
+          "value": "SKWSFUBotMember"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSFUBotMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSFUBotMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWSFUBotMemberStartForwardingPublicationCompletion/title",
+          "value": "SKWSFUBotMemberStartForwardingPublicationCompletion"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWSFUBotMemberStartForwardingPublicationCompletion/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSFUBotMemberStartForwardingPublicationCompletion"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWSFUBotMemberStartForwardingPublicationCompletion/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSFUBotMemberStartForwardingPublicationCompletion"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication/title",
+          "value": "SKWPublication"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPublication"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPublication"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Forwarding/title",
+          "value": "SKWForwarding"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Forwarding/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWForwarding"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Forwarding/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWForwarding"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember~1startForwarding(_:configure:completion:)/title",
+          "value": "startForwardingPublication:withConfigure:completion:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember~1startForwarding(_:configure:completion:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "startForwardingPublication:withConfigure:completion:"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/sfubotmember/startforwarding(_:configure:completion:)"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/sfubotmember/startforwarding(_:configure:completion:)"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

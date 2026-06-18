@@ -1,1 +1,331 @@
-{"includedArchiveIdentifiers":["com.ntt.skyway.ai-noise-canceller"],"interfaceLanguages":{"occ":[{"children":[{"title":"Variables","type":"groupMarker"},{"path":"\/documentation\/skywayainoisecanceller\/skywayainoisecancellerversionnumber","title":"SkyWayAINoiseCancellerVersionNumber","type":"var"},{"path":"\/documentation\/skywayainoisecanceller\/skywayainoisecancellerversionstring","title":"SkyWayAINoiseCancellerVersionString","type":"var"}],"path":"\/documentation\/skywayainoisecanceller","title":"SkyWayAINoiseCanceller","type":"module"}],"swift":[{"children":[{"title":"Classes","type":"groupMarker"},{"children":[{"title":"Structures","type":"groupMarker"},{"children":[{"title":"Initializers","type":"groupMarker"},{"path":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/options\/init(modeltype:strength:)","title":"init(modelType: ModelType, strength: Int)","type":"init"},{"title":"Instance Properties","type":"groupMarker"},{"path":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/options\/modeltype","title":"var modelType: ModelType","type":"property"},{"path":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/options\/strength","title":"var strength: Int","type":"property"}],"path":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/options","title":"SkyWayNoiseCanceller.Options","type":"struct"},{"title":"Instance Properties","type":"groupMarker"},{"path":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/fatalerrorhandler","title":"var fatalErrorHandler: ((ErrorCode) -> Void)?","type":"property"},{"path":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/isprocessing","title":"var isProcessing: Bool","type":"property"},{"path":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/issetup","title":"var isSetup: Bool","type":"property"},{"title":"Instance Methods","type":"groupMarker"},{"path":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/changestrength(_:)","title":"func changeStrength(Int) -> Bool","type":"method"},{"path":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/dispose()","title":"func dispose()","type":"method"},{"path":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/setup(options:)","title":"func setup(options: Options) async -> Bool","type":"method"},{"path":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/start()","title":"func start() -> Bool","type":"method"},{"path":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/stop()","title":"func stop() -> Bool","type":"method"},{"title":"Type Properties","type":"groupMarker"},{"path":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/shared","title":"static let shared: SkyWayNoiseCanceller","type":"property"}],"path":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller","title":"SkyWayNoiseCanceller","type":"class"},{"title":"Enumerations","type":"groupMarker"},{"children":[{"title":"Enumeration Cases","type":"groupMarker"},{"path":"\/documentation\/skywayainoisecanceller\/errorcode\/connectionlost","title":"case connectionLost","type":"case"},{"path":"\/documentation\/skywayainoisecanceller\/errorcode\/internalerror","title":"case internalError","type":"case"},{"path":"\/documentation\/skywayainoisecanceller\/errorcode\/quotaexceeded","title":"case quotaExceeded","type":"case"},{"path":"\/documentation\/skywayainoisecanceller\/errorcode\/unknown","title":"case unknown","type":"case"},{"title":"Initializers","type":"groupMarker"},{"path":"\/documentation\/skywayainoisecanceller\/errorcode\/init(rawvalue:)","title":"init?(rawValue: Int)","type":"init"},{"title":"Default Implementations","type":"groupMarker"},{"children":[{"title":"Operators","type":"groupMarker"},{"path":"\/documentation\/skywayainoisecanceller\/errorcode\/!=(_:_:)","title":"static func != (Self, Self) -> Bool","type":"op"}],"path":"\/documentation\/skywayainoisecanceller\/errorcode\/equatable-implementations","title":"Equatable Implementations","type":"symbol"},{"children":[{"title":"Instance Properties","type":"groupMarker"},{"path":"\/documentation\/skywayainoisecanceller\/errorcode\/localizeddescription","title":"var localizedDescription: String","type":"property"}],"path":"\/documentation\/skywayainoisecanceller\/errorcode\/error-implementations","title":"Error Implementations","type":"symbol"},{"children":[{"title":"Instance Properties","type":"groupMarker"},{"path":"\/documentation\/skywayainoisecanceller\/errorcode\/hashvalue","title":"var hashValue: Int","type":"property"},{"title":"Instance Methods","type":"groupMarker"},{"path":"\/documentation\/skywayainoisecanceller\/errorcode\/hash(into:)","title":"func hash(into: inout Hasher)","type":"method"}],"path":"\/documentation\/skywayainoisecanceller\/errorcode\/rawrepresentable-implementations","title":"RawRepresentable Implementations","type":"symbol"}],"path":"\/documentation\/skywayainoisecanceller\/errorcode","title":"ErrorCode","type":"enum"},{"children":[{"title":"Enumeration Cases","type":"groupMarker"},{"path":"\/documentation\/skywayainoisecanceller\/modeltype\/large","title":"case large","type":"case"},{"path":"\/documentation\/skywayainoisecanceller\/modeltype\/medium","title":"case medium","type":"case"},{"path":"\/documentation\/skywayainoisecanceller\/modeltype\/small","title":"case small","type":"case"},{"title":"Initializers","type":"groupMarker"},{"path":"\/documentation\/skywayainoisecanceller\/modeltype\/init(rawvalue:)","title":"init?(rawValue: String)","type":"init"},{"title":"Default Implementations","type":"groupMarker"},{"children":[{"title":"Operators","type":"groupMarker"},{"path":"\/documentation\/skywayainoisecanceller\/modeltype\/!=(_:_:)","title":"static func != (Self, Self) -> Bool","type":"op"}],"path":"\/documentation\/skywayainoisecanceller\/modeltype\/equatable-implementations","title":"Equatable Implementations","type":"symbol"},{"children":[{"title":"Instance Properties","type":"groupMarker"},{"path":"\/documentation\/skywayainoisecanceller\/modeltype\/hashvalue","title":"var hashValue: Int","type":"property"},{"title":"Instance Methods","type":"groupMarker"},{"path":"\/documentation\/skywayainoisecanceller\/modeltype\/hash(into:)","title":"func hash(into: inout Hasher)","type":"method"}],"path":"\/documentation\/skywayainoisecanceller\/modeltype\/rawrepresentable-implementations","title":"RawRepresentable Implementations","type":"symbol"}],"path":"\/documentation\/skywayainoisecanceller\/modeltype","title":"ModelType","type":"enum"}],"path":"\/documentation\/skywayainoisecanceller","title":"SkyWayAINoiseCanceller","type":"module"}]},"schemaVersion":{"major":0,"minor":1,"patch":2}}
+{
+  "includedArchiveIdentifiers": [
+    "com.ntt.skyway.ai-noise-canceller"
+  ],
+  "interfaceLanguages": {
+    "occ": [
+      {
+        "children": [
+          {
+            "title": "Variables",
+            "type": "groupMarker"
+          },
+          {
+            "path": "/documentation/skywayainoisecanceller/skywayainoisecancellerversionnumber",
+            "title": "SkyWayAINoiseCancellerVersionNumber",
+            "type": "var"
+          },
+          {
+            "path": "/documentation/skywayainoisecanceller/skywayainoisecancellerversionstring",
+            "title": "SkyWayAINoiseCancellerVersionString",
+            "type": "var"
+          }
+        ],
+        "path": "/documentation/skywayainoisecanceller",
+        "title": "SkyWayAINoiseCanceller",
+        "type": "module"
+      }
+    ],
+    "swift": [
+      {
+        "children": [
+          {
+            "title": "Classes",
+            "type": "groupMarker"
+          },
+          {
+            "children": [
+              {
+                "title": "Structures",
+                "type": "groupMarker"
+              },
+              {
+                "children": [
+                  {
+                    "title": "Initializers",
+                    "type": "groupMarker"
+                  },
+                  {
+                    "path": "/documentation/skywayainoisecanceller/skywaynoisecanceller/options/init(modeltype:strength:)",
+                    "title": "init(modelType: ModelType, strength: Int)",
+                    "type": "init"
+                  },
+                  {
+                    "title": "Instance Properties",
+                    "type": "groupMarker"
+                  },
+                  {
+                    "path": "/documentation/skywayainoisecanceller/skywaynoisecanceller/options/modeltype",
+                    "title": "var modelType: ModelType",
+                    "type": "property"
+                  },
+                  {
+                    "path": "/documentation/skywayainoisecanceller/skywaynoisecanceller/options/strength",
+                    "title": "var strength: Int",
+                    "type": "property"
+                  }
+                ],
+                "path": "/documentation/skywayainoisecanceller/skywaynoisecanceller/options",
+                "title": "SkyWayNoiseCanceller.Options",
+                "type": "struct"
+              },
+              {
+                "title": "Instance Properties",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayainoisecanceller/skywaynoisecanceller/fatalerrorhandler",
+                "title": "var fatalErrorHandler: ((ErrorCode) -> Void)?",
+                "type": "property"
+              },
+              {
+                "path": "/documentation/skywayainoisecanceller/skywaynoisecanceller/isprocessing",
+                "title": "var isProcessing: Bool",
+                "type": "property"
+              },
+              {
+                "path": "/documentation/skywayainoisecanceller/skywaynoisecanceller/issetup",
+                "title": "var isSetup: Bool",
+                "type": "property"
+              },
+              {
+                "title": "Instance Methods",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayainoisecanceller/skywaynoisecanceller/changestrength(_:)",
+                "title": "func changeStrength(Int) -> Bool",
+                "type": "method"
+              },
+              {
+                "path": "/documentation/skywayainoisecanceller/skywaynoisecanceller/dispose()",
+                "title": "func dispose()",
+                "type": "method"
+              },
+              {
+                "path": "/documentation/skywayainoisecanceller/skywaynoisecanceller/setup(options:)",
+                "title": "func setup(options: Options) async -> Bool",
+                "type": "method"
+              },
+              {
+                "path": "/documentation/skywayainoisecanceller/skywaynoisecanceller/start()",
+                "title": "func start() -> Bool",
+                "type": "method"
+              },
+              {
+                "path": "/documentation/skywayainoisecanceller/skywaynoisecanceller/stop()",
+                "title": "func stop() -> Bool",
+                "type": "method"
+              },
+              {
+                "title": "Type Properties",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayainoisecanceller/skywaynoisecanceller/shared",
+                "title": "static let shared: SkyWayNoiseCanceller",
+                "type": "property"
+              }
+            ],
+            "path": "/documentation/skywayainoisecanceller/skywaynoisecanceller",
+            "title": "SkyWayNoiseCanceller",
+            "type": "class"
+          },
+          {
+            "title": "Enumerations",
+            "type": "groupMarker"
+          },
+          {
+            "children": [
+              {
+                "title": "Enumeration Cases",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayainoisecanceller/errorcode/connectionlost",
+                "title": "case connectionLost",
+                "type": "case"
+              },
+              {
+                "path": "/documentation/skywayainoisecanceller/errorcode/internalerror",
+                "title": "case internalError",
+                "type": "case"
+              },
+              {
+                "path": "/documentation/skywayainoisecanceller/errorcode/quotaexceeded",
+                "title": "case quotaExceeded",
+                "type": "case"
+              },
+              {
+                "path": "/documentation/skywayainoisecanceller/errorcode/unknown",
+                "title": "case unknown",
+                "type": "case"
+              },
+              {
+                "title": "Initializers",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayainoisecanceller/errorcode/init(rawvalue:)",
+                "title": "init?(rawValue: Int)",
+                "type": "init"
+              },
+              {
+                "title": "Default Implementations",
+                "type": "groupMarker"
+              },
+              {
+                "children": [
+                  {
+                    "title": "Operators",
+                    "type": "groupMarker"
+                  },
+                  {
+                    "path": "/documentation/skywayainoisecanceller/errorcode/!=(_:_:)",
+                    "title": "static func != (Self, Self) -> Bool",
+                    "type": "op"
+                  }
+                ],
+                "path": "/documentation/skywayainoisecanceller/errorcode/equatable-implementations",
+                "title": "Equatable Implementations",
+                "type": "symbol"
+              },
+              {
+                "children": [
+                  {
+                    "title": "Instance Properties",
+                    "type": "groupMarker"
+                  },
+                  {
+                    "path": "/documentation/skywayainoisecanceller/errorcode/localizeddescription",
+                    "title": "var localizedDescription: String",
+                    "type": "property"
+                  }
+                ],
+                "path": "/documentation/skywayainoisecanceller/errorcode/error-implementations",
+                "title": "Error Implementations",
+                "type": "symbol"
+              },
+              {
+                "children": [
+                  {
+                    "title": "Instance Properties",
+                    "type": "groupMarker"
+                  },
+                  {
+                    "path": "/documentation/skywayainoisecanceller/errorcode/hashvalue",
+                    "title": "var hashValue: Int",
+                    "type": "property"
+                  },
+                  {
+                    "title": "Instance Methods",
+                    "type": "groupMarker"
+                  },
+                  {
+                    "path": "/documentation/skywayainoisecanceller/errorcode/hash(into:)",
+                    "title": "func hash(into: inout Hasher)",
+                    "type": "method"
+                  }
+                ],
+                "path": "/documentation/skywayainoisecanceller/errorcode/rawrepresentable-implementations",
+                "title": "RawRepresentable Implementations",
+                "type": "symbol"
+              }
+            ],
+            "path": "/documentation/skywayainoisecanceller/errorcode",
+            "title": "ErrorCode",
+            "type": "enum"
+          },
+          {
+            "children": [
+              {
+                "title": "Enumeration Cases",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayainoisecanceller/modeltype/large",
+                "title": "case large",
+                "type": "case"
+              },
+              {
+                "path": "/documentation/skywayainoisecanceller/modeltype/medium",
+                "title": "case medium",
+                "type": "case"
+              },
+              {
+                "path": "/documentation/skywayainoisecanceller/modeltype/small",
+                "title": "case small",
+                "type": "case"
+              },
+              {
+                "title": "Initializers",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayainoisecanceller/modeltype/init(rawvalue:)",
+                "title": "init?(rawValue: String)",
+                "type": "init"
+              },
+              {
+                "title": "Default Implementations",
+                "type": "groupMarker"
+              },
+              {
+                "children": [
+                  {
+                    "title": "Operators",
+                    "type": "groupMarker"
+                  },
+                  {
+                    "path": "/documentation/skywayainoisecanceller/modeltype/!=(_:_:)",
+                    "title": "static func != (Self, Self) -> Bool",
+                    "type": "op"
+                  }
+                ],
+                "path": "/documentation/skywayainoisecanceller/modeltype/equatable-implementations",
+                "title": "Equatable Implementations",
+                "type": "symbol"
+              },
+              {
+                "children": [
+                  {
+                    "title": "Instance Properties",
+                    "type": "groupMarker"
+                  },
+                  {
+                    "path": "/documentation/skywayainoisecanceller/modeltype/hashvalue",
+                    "title": "var hashValue: Int",
+                    "type": "property"
+                  },
+                  {
+                    "title": "Instance Methods",
+                    "type": "groupMarker"
+                  },
+                  {
+                    "path": "/documentation/skywayainoisecanceller/modeltype/hash(into:)",
+                    "title": "func hash(into: inout Hasher)",
+                    "type": "method"
+                  }
+                ],
+                "path": "/documentation/skywayainoisecanceller/modeltype/rawrepresentable-implementations",
+                "title": "RawRepresentable Implementations",
+                "type": "symbol"
+              }
+            ],
+            "path": "/documentation/skywayainoisecanceller/modeltype",
+            "title": "ModelType",
+            "type": "enum"
+          }
+        ],
+        "path": "/documentation/skywayainoisecanceller",
+        "title": "SkyWayAINoiseCanceller",
+        "type": "module"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 2
+  }
+}

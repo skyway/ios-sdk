@@ -1,1 +1,522 @@
-{"kind":"symbol","sections":[],"variants":[{"paths":["\/documentation\/skywayroom\/publicationoptions\/encodings"],"traits":[{"interfaceLanguage":"swift"}]},{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/skywayroom\/publicationoptions\/encodings"]}],"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"text":"var","kind":"keyword"},{"text":" ","kind":"text"},{"text":"encodings","kind":"identifier"},{"text":": [","kind":"text"},{"text":"Encoding","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Encoding","kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWEncoding"},{"text":"] { ","kind":"text"},{"text":"get","kind":"keyword"},{"text":" ","kind":"text"},{"text":"set","kind":"keyword"},{"text":" }","kind":"text"}],"platforms":["iOS"],"languages":["swift"]}]},{"kind":"content","content":[{"level":2,"type":"heading","text":"Discussion","anchor":"discussion"},{"type":"paragraph","inlineContent":[{"type":"text","text":"SFUを利用する場合、複数設定がある場合のみサイマルキャストが有効になります。"}]},{"type":"paragraph","inlineContent":[{"type":"text","text":"P2P通信において複数設定されている場合は最大ビットレートが低いまたはスケールダウン指数が高いエンコーディング設定が有効になります。"}]},{"type":"paragraph","inlineContent":[{"type":"text","text":"詳しい設定例については開発者ドキュメントの"},{"type":"reference","identifier":"https:\/\/skyway.ntt.com\/ja\/docs\/user-guide\/tips\/large-scale\/","isActive":true},{"type":"text","text":"をご覧ください。"}]}]}],"schemaVersion":{"patch":0,"minor":3,"major":0},"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/PublicationOptions"]]},"metadata":{"externalID":"c:objc(cs)SKWPublicationOptions(py)encodings","modules":[{"name":"SkyWayRoom"}],"fragments":[{"text":"var","kind":"keyword"},{"text":" ","kind":"text"},{"text":"encodings","kind":"identifier"},{"kind":"text","text":": ["},{"kind":"typeIdentifier","text":"Encoding","preciseIdentifier":"c:objc(cs)SKWEncoding"},{"kind":"text","text":"]"}],"role":"symbol","navigatorTitle":[{"text":"encodings","kind":"identifier"}],"roleHeading":"Instance Property","symbolKind":"property","title":"encodings"},"identifier":{"interfaceLanguage":"swift","url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/PublicationOptions\/encodings"},"abstract":[{"text":"エンコーディング設定","type":"text"}],"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationOptions":{"url":"\/documentation\/skywayroom\/publicationoptions","navigatorTitle":[{"kind":"identifier","text":"PublicationOptions"}],"type":"topic","kind":"symbol","abstract":[{"type":"text","text":"Publishオプション"}],"title":"PublicationOptions","role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/PublicationOptions","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"PublicationOptions"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/Encoding":{"kind":"symbol","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"Encoding"}],"url":"\/documentation\/skywayroom\/encoding","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"Encoding"}],"type":"topic","title":"Encoding","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/Encoding","abstract":[{"text":"エンコーディング設定","type":"text"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationOptions/encodings":{"kind":"symbol","fragments":[{"text":"var","kind":"keyword"},{"kind":"text","text":" "},{"kind":"identifier","text":"encodings"},{"kind":"text","text":": ["},{"kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWEncoding","text":"Encoding"},{"kind":"text","text":"]"}],"url":"\/documentation\/skywayroom\/publicationoptions\/encodings","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"encodings"}],"type":"topic","title":"encodings","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/PublicationOptions\/encodings","abstract":[{"text":"エンコーディング設定","type":"text"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"https://skyway.ntt.com/ja/docs/user-guide/tips/large-scale/":{"title":"大規模会議アプリを実装する上での注意点","titleInlineContent":[{"text":"大規模会議アプリを実装する上での注意点","type":"text"}],"url":"https:\/\/skyway.ntt.com\/ja\/docs\/user-guide\/tips\/large-scale\/","type":"link","identifier":"https:\/\/skyway.ntt.com\/ja\/docs\/user-guide\/tips\/large-scale\/"}},"variantOverrides":[{"patch":[{"path":"\/identifier\/interfaceLanguage","value":"occ","op":"replace"},{"path":"\/metadata\/platforms","value":null,"op":"add"},{"path":"\/metadata\/roleHeading","value":"Instance Property","op":"replace"},{"path":"\/metadata\/title","value":"encodings","op":"replace"},{"path":"\/metadata\/symbolKind","value":"property","op":"replace"},{"path":"\/metadata\/fragments","value":[{"text":"encodings","kind":"identifier"}],"op":"replace"},{"path":"\/topicSections","value":null,"op":"add"},{"path":"\/relationshipsSections","value":null,"op":"add"},{"path":"\/seeAlsoSections","value":null,"op":"add"},{"path":"\/primaryContentSections\/0","value":{"kind":"declarations","declarations":[{"platforms":["iOS"],"languages":["occ"],"tokens":[{"kind":"keyword","text":"@property"},{"kind":"text","text":" "},{"kind":"typeIdentifier","text":"NSArray<SKWEncoding *>","preciseIdentifier":"c:Q$objc(cs)NSArray"},{"kind":"text","text":" * "},{"kind":"identifier","text":"encodings"},{"kind":"text","text":";"}]}]},"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions\/title","value":"SKWPublicationOptions","op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions\/fragments","value":[{"text":"SKWPublicationOptions","kind":"identifier"}],"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions\/navigatorTitle","value":[{"text":"SKWPublicationOptions","kind":"identifier"}],"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Encoding\/title","value":"SKWEncoding","op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Encoding\/fragments","value":[{"text":"SKWEncoding","kind":"identifier"}],"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Encoding\/navigatorTitle","value":[{"text":"SKWEncoding","kind":"identifier"}],"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1encodings\/title","value":"encodings","op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1encodings\/fragments","value":[{"text":"encodings","kind":"identifier"}],"op":"replace"}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "abstract": [
+    {
+      "text": "エンコーディング設定",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationOptions"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationOptions/encodings"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:objc(cs)SKWPublicationOptions(py)encodings",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "var"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "encodings"
+      },
+      {
+        "kind": "text",
+        "text": ": ["
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "c:objc(cs)SKWEncoding",
+        "text": "Encoding"
+      },
+      {
+        "kind": "text",
+        "text": "]"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "encodings"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Instance Property",
+    "symbolKind": "property",
+    "title": "encodings"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "var"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "encodings"
+            },
+            {
+              "kind": "text",
+              "text": ": ["
+            },
+            {
+              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Encoding",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)SKWEncoding",
+              "text": "Encoding"
+            },
+            {
+              "kind": "text",
+              "text": "] { "
+            },
+            {
+              "kind": "keyword",
+              "text": "get"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "set"
+            },
+            {
+              "kind": "text",
+              "text": " }"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "SFUを利用する場合、複数設定がある場合のみサイマルキャストが有効になります。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "P2P通信において複数設定されている場合は最大ビットレートが低いまたはスケールダウン指数が高いエンコーディング設定が有効になります。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "詳しい設定例については開発者ドキュメントの",
+              "type": "text"
+            },
+            {
+              "identifier": "https://skyway.ntt.com/ja/docs/user-guide/tips/large-scale/",
+              "isActive": true,
+              "type": "reference"
+            },
+            {
+              "text": "をご覧ください。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "kind": "content"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Encoding": {
+      "abstract": [
+        {
+          "text": "エンコーディング設定",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "Encoding"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Encoding",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "Encoding"
+        }
+      ],
+      "role": "symbol",
+      "title": "Encoding",
+      "type": "topic",
+      "url": "/documentation/skywayroom/encoding"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationOptions": {
+      "abstract": [
+        {
+          "text": "Publishオプション",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "PublicationOptions"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationOptions",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "PublicationOptions"
+        }
+      ],
+      "role": "symbol",
+      "title": "PublicationOptions",
+      "type": "topic",
+      "url": "/documentation/skywayroom/publicationoptions"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationOptions/encodings": {
+      "abstract": [
+        {
+          "text": "エンコーディング設定",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "encodings"
+        },
+        {
+          "kind": "text",
+          "text": ": ["
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWEncoding",
+          "text": "Encoding"
+        },
+        {
+          "kind": "text",
+          "text": "]"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationOptions/encodings",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "encodings"
+        }
+      ],
+      "role": "symbol",
+      "title": "encodings",
+      "type": "topic",
+      "url": "/documentation/skywayroom/publicationoptions/encodings"
+    },
+    "https://skyway.ntt.com/ja/docs/user-guide/tips/large-scale/": {
+      "identifier": "https://skyway.ntt.com/ja/docs/user-guide/tips/large-scale/",
+      "title": "大規模会議アプリを実装する上での注意点",
+      "titleInlineContent": [
+        {
+          "text": "大規模会議アプリを実装する上での注意点",
+          "type": "text"
+        }
+      ],
+      "type": "link",
+      "url": "https://skyway.ntt.com/ja/docs/user-guide/tips/large-scale/"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Instance Property"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "encodings"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "property"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "encodings"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "keyword",
+                    "text": "@property"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " "
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:Q$objc(cs)NSArray",
+                    "text": "NSArray<SKWEncoding *>"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " * "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "encodings"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ";"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions/title",
+          "value": "SKWPublicationOptions"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPublicationOptions"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPublicationOptions"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1encodings/title",
+          "value": "encodings"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1encodings/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "encodings"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Encoding/title",
+          "value": "SKWEncoding"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Encoding/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWEncoding"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Encoding/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWEncoding"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/publicationoptions/encodings"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/publicationoptions/encodings"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

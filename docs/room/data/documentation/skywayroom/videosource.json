@@ -1,1 +1,649 @@
-{"primaryContentSections":[{"kind":"declarations","declarations":[{"languages":["swift"],"platforms":["iOS"],"tokens":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"VideoSource"}]}]}],"variants":[{"paths":["\/documentation\/skywayroom\/videosource"],"traits":[{"interfaceLanguage":"swift"}]},{"paths":["\/documentation\/skywayroom\/videosource"],"traits":[{"interfaceLanguage":"occ"}]}],"metadata":{"roleHeading":"Class","navigatorTitle":[{"kind":"identifier","text":"VideoSource"}],"title":"VideoSource","symbolKind":"class","externalID":"c:objc(cs)SKWVideoSource","modules":[{"name":"SkyWayRoom"}],"role":"symbol","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"VideoSource"}]},"kind":"symbol","sections":[],"abstract":[{"text":"映像入力ソースの抽象クラス","type":"text"}],"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom"]]},"schemaVersion":{"patch":0,"minor":3,"major":0},"topicSections":[{"title":"Instance Methods","generated":true,"identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/VideoSource\/createStream()"],"anchor":"Instance-Methods"}],"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/VideoSource","interfaceLanguage":"swift"},"relationshipsSections":[{"identifiers":["doc:\/\/com.ntt.skyway.room\/objc(cs)NSObject"],"type":"inheritsFrom","kind":"relationships","title":"Inherits From"},{"identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/CameraVideoSource","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/CustomFrameVideoSource","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/FileVideoSource"],"type":"inheritedBy","kind":"relationships","title":"Inherited By"},{"identifiers":["doc:\/\/com.ntt.skyway.room\/objc(pl)NSObject","doc:\/\/com.ntt.skyway.room\/s7CVarArgP","doc:\/\/com.ntt.skyway.room\/s28CustomDebugStringConvertibleP","doc:\/\/com.ntt.skyway.room\/s23CustomStringConvertibleP","doc:\/\/com.ntt.skyway.room\/SQ","doc:\/\/com.ntt.skyway.room\/SH"],"type":"conformsTo","kind":"relationships","title":"Conforms To"}],"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource/createStream()":{"kind":"symbol","fragments":[{"text":"func","kind":"keyword"},{"kind":"text","text":" "},{"kind":"identifier","text":"createStream"},{"kind":"text","text":"() -> "},{"kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWLocalVideoStream","text":"LocalVideoStream"}],"url":"\/documentation\/skywayroom\/videosource\/createstream()","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"createStream"}],"type":"topic","title":"createStream()","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/VideoSource\/createStream()","abstract":[{"text":"ストリームを作成します。","type":"text"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/CustomFrameVideoSource":{"url":"\/documentation\/skywayroom\/customframevideosource","type":"topic","abstract":[{"type":"text","text":"画像フレームの映像入力ソース"}],"fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"text":"CustomFrameVideoSource","kind":"identifier"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/CustomFrameVideoSource","title":"CustomFrameVideoSource","navigatorTitle":[{"text":"CustomFrameVideoSource","kind":"identifier"}],"kind":"symbol"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource":{"url":"\/documentation\/skywayroom\/videosource","type":"topic","abstract":[{"text":"映像入力ソースの抽象クラス","type":"text"}],"fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"VideoSource"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/VideoSource","title":"VideoSource","navigatorTitle":[{"kind":"identifier","text":"VideoSource"}],"kind":"symbol"},"doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP":{"identifier":"doc:\/\/com.ntt.skyway.room\/s28CustomDebugStringConvertibleP","type":"unresolvable","title":"Swift.CustomDebugStringConvertible"},"doc://com.ntt.skyway.room/s23CustomStringConvertibleP":{"identifier":"doc:\/\/com.ntt.skyway.room\/s23CustomStringConvertibleP","type":"unresolvable","title":"Swift.CustomStringConvertible"},"doc://com.ntt.skyway.room/SH":{"identifier":"doc:\/\/com.ntt.skyway.room\/SH","type":"unresolvable","title":"Swift.Hashable"},"doc://com.ntt.skyway.room/objc(cs)NSObject":{"identifier":"doc:\/\/com.ntt.skyway.room\/objc(cs)NSObject","type":"unresolvable","title":"NSObject"},"doc://com.ntt.skyway.room/objc(pl)NSObject":{"identifier":"doc:\/\/com.ntt.skyway.room\/objc(pl)NSObject","type":"unresolvable","title":"ObjectiveC.NSObjectProtocol"},"doc://com.ntt.skyway.room/s7CVarArgP":{"identifier":"doc:\/\/com.ntt.skyway.room\/s7CVarArgP","type":"unresolvable","title":"Swift.CVarArg"},"doc://com.ntt.skyway.room/SQ":{"identifier":"doc:\/\/com.ntt.skyway.room\/SQ","type":"unresolvable","title":"Swift.Equatable"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/CameraVideoSource":{"url":"\/documentation\/skywayroom\/cameravideosource","navigatorTitle":[{"text":"CameraVideoSource","kind":"identifier"}],"type":"topic","kind":"symbol","title":"CameraVideoSource","abstract":[{"type":"text","text":"カメラ映像入力ソース"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/CameraVideoSource","fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"CameraVideoSource","kind":"identifier"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/FileVideoSource":{"url":"\/documentation\/skywayroom\/filevideosource","navigatorTitle":[{"text":"FileVideoSource","kind":"identifier"}],"type":"topic","kind":"symbol","title":"FileVideoSource","abstract":[{"type":"text","text":"動画ファイル入力ソース"}],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/FileVideoSource","fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"FileVideoSource","kind":"identifier"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]}},"variantOverrides":[{"patch":[{"path":"\/identifier\/interfaceLanguage","value":"occ","op":"replace"},{"path":"\/metadata\/platforms","op":"add","value":null},{"path":"\/metadata\/roleHeading","value":"Class","op":"replace"},{"path":"\/metadata\/title","op":"replace","value":"SKWVideoSource"},{"path":"\/metadata\/symbolKind","op":"replace","value":"class"},{"path":"\/metadata\/fragments","op":"replace","value":[{"text":"SKWVideoSource","kind":"identifier"}]},{"op":"replace","value":[{"text":"SKWVideoSource","kind":"identifier"}],"path":"\/metadata\/navigatorTitle"},{"op":"replace","value":[{"identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/VideoSource\/createStream()"],"generated":true,"anchor":"Instance-Methods","title":"Instance Methods"}],"path":"\/topicSections"},{"op":"replace","path":"\/relationshipsSections","value":[{"identifiers":["doc:\/\/com.ntt.skyway.room\/objc(cs)NSObject"],"type":"inheritsFrom","title":"Inherits From","kind":"relationships"},{"type":"inheritedBy","identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/CameraVideoSource","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/CustomFrameVideoSource","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/FileVideoSource"],"kind":"relationships","title":"Inherited By"}]},{"op":"add","path":"\/seeAlsoSections","value":null},{"op":"replace","path":"\/primaryContentSections\/0","value":{"kind":"declarations","declarations":[{"tokens":[{"text":"@interface","kind":"keyword"},{"text":" ","kind":"text"},{"text":"SKWVideoSource","kind":"identifier"},{"text":" : ","kind":"text"},{"text":"NSObject","kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)NSObject"}],"platforms":["iOS"],"languages":["occ"]}]}},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource~1createStream()\/title","value":"createStream"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource~1createStream()\/fragments","value":[{"text":"- ","kind":"text"},{"text":"createStream","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource\/title","value":"SKWCustomFrameVideoSource"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource\/fragments","value":[{"kind":"identifier","text":"SKWCustomFrameVideoSource"}],"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource\/navigatorTitle","value":[{"text":"SKWCustomFrameVideoSource","kind":"identifier"}],"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource\/title","value":"SKWVideoSource","op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource\/fragments","value":[{"kind":"identifier","text":"SKWVideoSource"}],"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource\/navigatorTitle","value":[{"kind":"identifier","text":"SKWVideoSource"}],"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource\/title","value":"SKWCameraVideoSource","op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource\/fragments","value":[{"kind":"identifier","text":"SKWCameraVideoSource"}],"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource\/navigatorTitle","value":[{"kind":"identifier","text":"SKWCameraVideoSource"}],"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource\/title","value":"SKWFileVideoSource","op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource\/fragments","value":[{"kind":"identifier","text":"SKWFileVideoSource"}],"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource\/navigatorTitle","value":[{"kind":"identifier","text":"SKWFileVideoSource"}],"op":"replace"}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "abstract": [
+    {
+      "text": "映像入力ソースの抽象クラス",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:objc(cs)SKWVideoSource",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "class"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "VideoSource"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "VideoSource"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Class",
+    "symbolKind": "class",
+    "title": "VideoSource"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "class"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "VideoSource"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/SH": {
+      "identifier": "doc://com.ntt.skyway.room/SH",
+      "title": "Swift.Hashable",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/SQ": {
+      "identifier": "doc://com.ntt.skyway.room/SQ",
+      "title": "Swift.Equatable",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/CameraVideoSource": {
+      "abstract": [
+        {
+          "text": "カメラ映像入力ソース",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "CameraVideoSource"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/CameraVideoSource",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "CameraVideoSource"
+        }
+      ],
+      "role": "symbol",
+      "title": "CameraVideoSource",
+      "type": "topic",
+      "url": "/documentation/skywayroom/cameravideosource"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/CustomFrameVideoSource": {
+      "abstract": [
+        {
+          "text": "画像フレームの映像入力ソース",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "CustomFrameVideoSource"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/CustomFrameVideoSource",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "CustomFrameVideoSource"
+        }
+      ],
+      "role": "symbol",
+      "title": "CustomFrameVideoSource",
+      "type": "topic",
+      "url": "/documentation/skywayroom/customframevideosource"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/FileVideoSource": {
+      "abstract": [
+        {
+          "text": "動画ファイル入力ソース",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "FileVideoSource"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/FileVideoSource",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "FileVideoSource"
+        }
+      ],
+      "role": "symbol",
+      "title": "FileVideoSource",
+      "type": "topic",
+      "url": "/documentation/skywayroom/filevideosource"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource": {
+      "abstract": [
+        {
+          "text": "映像入力ソースの抽象クラス",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "VideoSource"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "VideoSource"
+        }
+      ],
+      "role": "symbol",
+      "title": "VideoSource",
+      "type": "topic",
+      "url": "/documentation/skywayroom/videosource"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource/createStream()": {
+      "abstract": [
+        {
+          "text": "ストリームを作成します。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "createStream"
+        },
+        {
+          "kind": "text",
+          "text": "() -> "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWLocalVideoStream",
+          "text": "LocalVideoStream"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource/createStream()",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "createStream"
+        }
+      ],
+      "role": "symbol",
+      "title": "createStream()",
+      "type": "topic",
+      "url": "/documentation/skywayroom/videosource/createstream()"
+    },
+    "doc://com.ntt.skyway.room/objc(cs)NSObject": {
+      "identifier": "doc://com.ntt.skyway.room/objc(cs)NSObject",
+      "title": "NSObject",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/objc(pl)NSObject": {
+      "identifier": "doc://com.ntt.skyway.room/objc(pl)NSObject",
+      "title": "ObjectiveC.NSObjectProtocol",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/s23CustomStringConvertibleP": {
+      "identifier": "doc://com.ntt.skyway.room/s23CustomStringConvertibleP",
+      "title": "Swift.CustomStringConvertible",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP": {
+      "identifier": "doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP",
+      "title": "Swift.CustomDebugStringConvertible",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/s7CVarArgP": {
+      "identifier": "doc://com.ntt.skyway.room/s7CVarArgP",
+      "title": "Swift.CVarArg",
+      "type": "unresolvable"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "identifiers": [
+        "doc://com.ntt.skyway.room/objc(cs)NSObject"
+      ],
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom"
+    },
+    {
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/CameraVideoSource",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/CustomFrameVideoSource",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/FileVideoSource"
+      ],
+      "kind": "relationships",
+      "title": "Inherited By",
+      "type": "inheritedBy"
+    },
+    {
+      "identifiers": [
+        "doc://com.ntt.skyway.room/objc(pl)NSObject",
+        "doc://com.ntt.skyway.room/s7CVarArgP",
+        "doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP",
+        "doc://com.ntt.skyway.room/s23CustomStringConvertibleP",
+        "doc://com.ntt.skyway.room/SQ",
+        "doc://com.ntt.skyway.room/SH"
+      ],
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo"
+    }
+  ],
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "topicSections": [
+    {
+      "anchor": "Instance-Methods",
+      "generated": true,
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource/createStream()"
+      ],
+      "title": "Instance Methods"
+    }
+  ],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Class"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "SKWVideoSource"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "class"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWVideoSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWVideoSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/topicSections",
+          "value": [
+            {
+              "anchor": "Instance-Methods",
+              "generated": true,
+              "identifiers": [
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource/createStream()"
+              ],
+              "title": "Instance Methods"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/relationshipsSections",
+          "value": [
+            {
+              "identifiers": [
+                "doc://com.ntt.skyway.room/objc(cs)NSObject"
+              ],
+              "kind": "relationships",
+              "title": "Inherits From",
+              "type": "inheritsFrom"
+            },
+            {
+              "identifiers": [
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/CameraVideoSource",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/CustomFrameVideoSource",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/FileVideoSource"
+              ],
+              "kind": "relationships",
+              "title": "Inherited By",
+              "type": "inheritedBy"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "keyword",
+                    "text": "@interface"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "SKWVideoSource"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " : "
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:objc(cs)NSObject",
+                    "text": "NSObject"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource/title",
+          "value": "SKWVideoSource"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWVideoSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWVideoSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource/title",
+          "value": "SKWCustomFrameVideoSource"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWCustomFrameVideoSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWCustomFrameVideoSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource~1createStream()/title",
+          "value": "createStream"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource~1createStream()/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "createStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource/title",
+          "value": "SKWFileVideoSource"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWFileVideoSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWFileVideoSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource/title",
+          "value": "SKWCameraVideoSource"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWCameraVideoSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWCameraVideoSource"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/videosource"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/videosource"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

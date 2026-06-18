@@ -1,1 +1,671 @@
-{"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"kind":"keyword","text":"enum"},{"kind":"text","text":" "},{"kind":"identifier","text":"ConnectionState"}],"platforms":["iOS"],"languages":["swift"]}]}],"variants":[{"traits":[{"interfaceLanguage":"swift"}],"paths":["\/documentation\/skywayroom\/connectionstate"]},{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/skywayroom\/connectionstate"]}],"metadata":{"roleHeading":"Enumeration","navigatorTitle":[{"text":"ConnectionState","kind":"identifier"}],"title":"ConnectionState","externalID":"c:@E@SKWConnectionState","symbolKind":"enum","modules":[{"name":"SkyWayRoom"}],"role":"symbol","fragments":[{"kind":"keyword","text":"enum"},{"kind":"text","text":" "},{"kind":"identifier","text":"ConnectionState"}]},"sections":[],"kind":"symbol","abstract":[{"text":"接続状態","type":"text"}],"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom"]]},"schemaVersion":{"patch":0,"minor":3,"major":0},"topicSections":[{"generated":true,"anchor":"Enumeration-Cases","title":"Enumeration Cases","identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ConnectionState\/connected","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ConnectionState\/connecting","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ConnectionState\/disconnected","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ConnectionState\/new","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ConnectionState\/reconnecting"]},{"title":"Initializers","generated":true,"identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ConnectionState\/init(rawValue:)"],"anchor":"Initializers"},{"title":"Default Implementations","generated":true,"identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ConnectionState\/Equatable-Implementations","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ConnectionState\/RawRepresentable-Implementations"],"anchor":"Default-Implementations"}],"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ConnectionState","interfaceLanguage":"swift"},"relationshipsSections":[{"kind":"relationships","title":"Conforms To","identifiers":["doc:\/\/com.ntt.skyway.room\/s15BitwiseCopyableP","doc:\/\/com.ntt.skyway.room\/SQ","doc:\/\/com.ntt.skyway.room\/SH","doc:\/\/com.ntt.skyway.room\/SY","doc:\/\/com.ntt.skyway.room\/s8SendableP","doc:\/\/com.ntt.skyway.room\/s16SendableMetatypeP"],"type":"conformsTo"}],"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/reconnecting":{"url":"\/documentation\/skywayroom\/connectionstate\/reconnecting","navigatorTitle":[{"kind":"identifier","text":"SKWReconnecting"}],"type":"topic","kind":"symbol","title":"ConnectionState.reconnecting","abstract":[],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ConnectionState\/reconnecting","fragments":[{"kind":"keyword","text":"case"},{"kind":"text","text":" "},{"kind":"identifier","text":"reconnecting"}]},"doc://com.ntt.skyway.room/SQ":{"identifier":"doc:\/\/com.ntt.skyway.room\/SQ","title":"Swift.Equatable","type":"unresolvable"},"doc://com.ntt.skyway.room/s15BitwiseCopyableP":{"identifier":"doc:\/\/com.ntt.skyway.room\/s15BitwiseCopyableP","title":"Swift.BitwiseCopyable","type":"unresolvable"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/connecting":{"url":"\/documentation\/skywayroom\/connectionstate\/connecting","navigatorTitle":[{"kind":"identifier","text":"SKWConnecting"}],"type":"topic","kind":"symbol","title":"ConnectionState.connecting","abstract":[],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ConnectionState\/connecting","fragments":[{"kind":"keyword","text":"case"},{"kind":"text","text":" "},{"kind":"identifier","text":"connecting"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/Equatable-Implementations":{"url":"\/documentation\/skywayroom\/connectionstate\/equatable-implementations","type":"topic","kind":"article","title":"Equatable Implementations","abstract":[],"role":"collectionGroup","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ConnectionState\/Equatable-Implementations"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/init(rawValue:)":{"url":"\/documentation\/skywayroom\/connectionstate\/init(rawvalue:)","type":"topic","kind":"symbol","title":"init(rawValue:)","abstract":[],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ConnectionState\/init(rawValue:)","fragments":[{"kind":"identifier","text":"init"},{"kind":"text","text":"?("},{"kind":"externalParam","text":"rawValue"},{"kind":"text","text":": "},{"kind":"typeIdentifier","preciseIdentifier":"s:Su","text":"UInt"},{"kind":"text","text":")"}]},"doc://com.ntt.skyway.room/SY":{"identifier":"doc:\/\/com.ntt.skyway.room\/SY","title":"Swift.RawRepresentable","type":"unresolvable"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/new":{"url":"\/documentation\/skywayroom\/connectionstate\/new","navigatorTitle":[{"kind":"identifier","text":"SKWNew"}],"type":"topic","kind":"symbol","title":"ConnectionState.new","abstract":[],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ConnectionState\/new","fragments":[{"kind":"keyword","text":"case"},{"kind":"text","text":" "},{"kind":"identifier","text":"new"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/connected":{"url":"\/documentation\/skywayroom\/connectionstate\/connected","navigatorTitle":[{"kind":"identifier","text":"SKWConnected"}],"type":"topic","kind":"symbol","title":"ConnectionState.connected","abstract":[],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ConnectionState\/connected","fragments":[{"kind":"keyword","text":"case"},{"kind":"text","text":" "},{"kind":"identifier","text":"connected"}]},"doc://com.ntt.skyway.room/s8SendableP":{"identifier":"doc:\/\/com.ntt.skyway.room\/s8SendableP","title":"Swift.Sendable","type":"unresolvable"},"doc://com.ntt.skyway.room/s16SendableMetatypeP":{"identifier":"doc:\/\/com.ntt.skyway.room\/s16SendableMetatypeP","title":"Swift.SendableMetatype","type":"unresolvable"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/disconnected":{"url":"\/documentation\/skywayroom\/connectionstate\/disconnected","navigatorTitle":[{"kind":"identifier","text":"SKWDisconnected"}],"type":"topic","kind":"symbol","title":"ConnectionState.disconnected","abstract":[],"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ConnectionState\/disconnected","fragments":[{"kind":"keyword","text":"case"},{"kind":"text","text":" "},{"kind":"identifier","text":"disconnected"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/RawRepresentable-Implementations":{"url":"\/documentation\/skywayroom\/connectionstate\/rawrepresentable-implementations","type":"topic","kind":"article","title":"RawRepresentable Implementations","abstract":[],"role":"collectionGroup","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ConnectionState\/RawRepresentable-Implementations"},"doc://com.ntt.skyway.room/SH":{"identifier":"doc:\/\/com.ntt.skyway.room\/SH","title":"Swift.Hashable","type":"unresolvable"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState":{"kind":"symbol","fragments":[{"text":"enum","kind":"keyword"},{"text":" ","kind":"text"},{"kind":"identifier","text":"ConnectionState"}],"url":"\/documentation\/skywayroom\/connectionstate","role":"symbol","navigatorTitle":[{"text":"ConnectionState","kind":"identifier"}],"type":"topic","title":"ConnectionState","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ConnectionState","abstract":[{"type":"text","text":"接続状態"}]}},"variantOverrides":[{"patch":[{"path":"\/identifier\/interfaceLanguage","value":"occ","op":"replace"},{"path":"\/metadata\/platforms","value":null,"op":"add"},{"path":"\/metadata\/roleHeading","value":"Enumeration","op":"replace"},{"path":"\/metadata\/title","value":"SKWConnectionState","op":"replace"},{"path":"\/metadata\/symbolKind","value":"enum","op":"replace"},{"path":"\/metadata\/fragments","value":[{"kind":"identifier","text":"SKWConnectionState"}],"op":"replace"},{"path":"\/metadata\/navigatorTitle","value":[{"kind":"identifier","text":"SKWConnectionState"}],"op":"replace"},{"path":"\/topicSections","value":[{"identifiers":["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ConnectionState\/connected","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ConnectionState\/connecting","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ConnectionState\/disconnected","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ConnectionState\/new","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/ConnectionState\/reconnecting"],"anchor":"Enumeration-Cases","title":"Enumeration Cases","generated":true}],"op":"replace"},{"path":"\/relationshipsSections","value":null,"op":"replace"},{"path":"\/seeAlsoSections","value":null,"op":"add"},{"path":"\/primaryContentSections\/0","value":{"kind":"declarations","declarations":[{"platforms":["iOS"],"languages":["occ"],"tokens":[{"text":"enum","kind":"keyword"},{"text":" ","kind":"text"},{"text":"SKWConnectionState","kind":"identifier"},{"text":" : ","kind":"text"},{"text":"NSUInteger","preciseIdentifier":"c:@T@NSUInteger","kind":"typeIdentifier"},{"text":";","kind":"text"}]}]},"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1reconnecting\/title","value":"SKWReconnecting","op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1reconnecting\/fragments","value":[{"kind":"identifier","text":"SKWReconnecting"}],"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1connecting\/title","value":"SKWConnecting","op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1connecting\/fragments","value":[{"kind":"identifier","text":"SKWConnecting"}],"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1new\/title","value":"SKWNew","op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1new\/fragments","value":[{"kind":"identifier","text":"SKWNew"}],"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1connected\/title","value":"SKWConnected","op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1connected\/fragments","value":[{"kind":"identifier","text":"SKWConnected"}],"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1disconnected\/title","value":"SKWDisconnected","op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1disconnected\/fragments","value":[{"kind":"identifier","text":"SKWDisconnected"}],"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState\/title","value":"SKWConnectionState","op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState\/fragments","value":[{"kind":"identifier","text":"SKWConnectionState"}],"op":"replace"},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState\/navigatorTitle","value":[{"kind":"identifier","text":"SKWConnectionState"}],"op":"replace"}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "abstract": [
+    {
+      "text": "接続状態",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:@E@SKWConnectionState",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "enum"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "ConnectionState"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "ConnectionState"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Enumeration",
+    "symbolKind": "enum",
+    "title": "ConnectionState"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "enum"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "ConnectionState"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/SH": {
+      "identifier": "doc://com.ntt.skyway.room/SH",
+      "title": "Swift.Hashable",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/SQ": {
+      "identifier": "doc://com.ntt.skyway.room/SQ",
+      "title": "Swift.Equatable",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/SY": {
+      "identifier": "doc://com.ntt.skyway.room/SY",
+      "title": "Swift.RawRepresentable",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState": {
+      "abstract": [
+        {
+          "text": "接続状態",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "enum"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "ConnectionState"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "ConnectionState"
+        }
+      ],
+      "role": "symbol",
+      "title": "ConnectionState",
+      "type": "topic",
+      "url": "/documentation/skywayroom/connectionstate"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/Equatable-Implementations": {
+      "abstract": [],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/Equatable-Implementations",
+      "kind": "article",
+      "role": "collectionGroup",
+      "title": "Equatable Implementations",
+      "type": "topic",
+      "url": "/documentation/skywayroom/connectionstate/equatable-implementations"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/RawRepresentable-Implementations": {
+      "abstract": [],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/RawRepresentable-Implementations",
+      "kind": "article",
+      "role": "collectionGroup",
+      "title": "RawRepresentable Implementations",
+      "type": "topic",
+      "url": "/documentation/skywayroom/connectionstate/rawrepresentable-implementations"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/connected": {
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "case"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "connected"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/connected",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SKWConnected"
+        }
+      ],
+      "role": "symbol",
+      "title": "ConnectionState.connected",
+      "type": "topic",
+      "url": "/documentation/skywayroom/connectionstate/connected"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/connecting": {
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "case"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "connecting"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/connecting",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SKWConnecting"
+        }
+      ],
+      "role": "symbol",
+      "title": "ConnectionState.connecting",
+      "type": "topic",
+      "url": "/documentation/skywayroom/connectionstate/connecting"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/disconnected": {
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "case"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "disconnected"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/disconnected",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SKWDisconnected"
+        }
+      ],
+      "role": "symbol",
+      "title": "ConnectionState.disconnected",
+      "type": "topic",
+      "url": "/documentation/skywayroom/connectionstate/disconnected"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/init(rawValue:)": {
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "?("
+        },
+        {
+          "kind": "externalParam",
+          "text": "rawValue"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:Su",
+          "text": "UInt"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/init(rawValue:)",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "init(rawValue:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/connectionstate/init(rawvalue:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/new": {
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "case"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "new"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/new",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SKWNew"
+        }
+      ],
+      "role": "symbol",
+      "title": "ConnectionState.new",
+      "type": "topic",
+      "url": "/documentation/skywayroom/connectionstate/new"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/reconnecting": {
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "case"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "reconnecting"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/reconnecting",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SKWReconnecting"
+        }
+      ],
+      "role": "symbol",
+      "title": "ConnectionState.reconnecting",
+      "type": "topic",
+      "url": "/documentation/skywayroom/connectionstate/reconnecting"
+    },
+    "doc://com.ntt.skyway.room/s15BitwiseCopyableP": {
+      "identifier": "doc://com.ntt.skyway.room/s15BitwiseCopyableP",
+      "title": "Swift.BitwiseCopyable",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/s16SendableMetatypeP": {
+      "identifier": "doc://com.ntt.skyway.room/s16SendableMetatypeP",
+      "title": "Swift.SendableMetatype",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/s8SendableP": {
+      "identifier": "doc://com.ntt.skyway.room/s8SendableP",
+      "title": "Swift.Sendable",
+      "type": "unresolvable"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "identifiers": [
+        "doc://com.ntt.skyway.room/s15BitwiseCopyableP",
+        "doc://com.ntt.skyway.room/SQ",
+        "doc://com.ntt.skyway.room/SH",
+        "doc://com.ntt.skyway.room/SY",
+        "doc://com.ntt.skyway.room/s8SendableP",
+        "doc://com.ntt.skyway.room/s16SendableMetatypeP"
+      ],
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo"
+    }
+  ],
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "topicSections": [
+    {
+      "anchor": "Enumeration-Cases",
+      "generated": true,
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/connected",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/connecting",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/disconnected",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/new",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/reconnecting"
+      ],
+      "title": "Enumeration Cases"
+    },
+    {
+      "anchor": "Initializers",
+      "generated": true,
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/init(rawValue:)"
+      ],
+      "title": "Initializers"
+    },
+    {
+      "anchor": "Default-Implementations",
+      "generated": true,
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/Equatable-Implementations",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/RawRepresentable-Implementations"
+      ],
+      "title": "Default Implementations"
+    }
+  ],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "add",
+          "path": "/metadata/platforms",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Enumeration"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "SKWConnectionState"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "enum"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWConnectionState"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWConnectionState"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/topicSections",
+          "value": [
+            {
+              "anchor": "Enumeration-Cases",
+              "generated": true,
+              "identifiers": [
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/connected",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/connecting",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/disconnected",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/new",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ConnectionState/reconnecting"
+              ],
+              "title": "Enumeration Cases"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "keyword",
+                    "text": "enum"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "SKWConnectionState"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " : "
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:@T@NSUInteger",
+                    "text": "NSUInteger"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ";"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1disconnected/title",
+          "value": "SKWDisconnected"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1disconnected/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWDisconnected"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1connecting/title",
+          "value": "SKWConnecting"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1connecting/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWConnecting"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState/title",
+          "value": "SKWConnectionState"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWConnectionState"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWConnectionState"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1new/title",
+          "value": "SKWNew"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1new/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWNew"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1reconnecting/title",
+          "value": "SKWReconnecting"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1reconnecting/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWReconnecting"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1connected/title",
+          "value": "SKWConnected"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1connected/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWConnected"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/connectionstate"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/connectionstate"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

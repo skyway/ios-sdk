@@ -1,1 +1,382 @@
-{"sections":[],"primaryContentSections":[{"kind":"declarations","declarations":[{"languages":["swift"],"platforms":["iOS"],"tokens":[{"kind":"keyword","text":"var"},{"kind":"text","text":" "},{"text":"fatalErrorHandler","kind":"identifier"},{"text":": ((","kind":"text"},{"kind":"typeIdentifier","preciseIdentifier":"s:22SkyWayAINoiseCanceller9ErrorCodeO","text":"ErrorCode","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ErrorCode"},{"kind":"text","text":") -> "},{"kind":"typeIdentifier","preciseIdentifier":"s:s4Voida","text":"Void"},{"kind":"text","text":")?"}]}]},{"content":[{"level":2,"anchor":"discussion","text":"Discussion","type":"heading"},{"inlineContent":[{"type":"text","text":"SkyWay の内部で致命的なエラーが発生すると、SkyWayNoiseCanceller は自動的に "},{"code":"stop()","type":"codeVoice"},{"text":" および ","type":"text"},{"type":"codeVoice","code":"dispose()"},{"type":"text","text":" を実行したあと、このハンドラが呼び出されます。"}],"type":"paragraph"},{"inlineContent":[{"text":"引数で渡される ","type":"text"},{"type":"codeVoice","code":"ErrorCode"},{"text":" に応じて、以下の対応を行ってください。","type":"text"}],"type":"paragraph"},{"type":"unorderedList","items":[{"content":[{"inlineContent":[{"type":"codeVoice","code":"ErrorCode.quotaExceeded"},{"type":"text","text":": 利用量の上限を超えています。ご利用中のプランの変更をご検討ください。"}],"type":"paragraph"}]},{"content":[{"inlineContent":[{"type":"text","text":"その他のエラー: 再度 "},{"type":"codeVoice","code":"setup(options:)"},{"text":" を呼び出すことで復旧できる可能性があります。","type":"text"}],"type":"paragraph"}]}]}],"kind":"content"}],"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller","doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/SkyWayNoiseCanceller"]]},"identifier":{"url":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/SkyWayNoiseCanceller\/fatalErrorHandler","interfaceLanguage":"swift"},"variants":[{"traits":[{"interfaceLanguage":"swift"}],"paths":["\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/fatalerrorhandler"]}],"schemaVersion":{"patch":0,"minor":3,"major":0},"metadata":{"symbolKind":"property","roleHeading":"Instance Property","fragments":[{"kind":"keyword","text":"var"},{"kind":"text","text":" "},{"kind":"identifier","text":"fatalErrorHandler"},{"kind":"text","text":": (("},{"kind":"typeIdentifier","preciseIdentifier":"s:22SkyWayAINoiseCanceller9ErrorCodeO","text":"ErrorCode"},{"kind":"text","text":") -> "},{"kind":"typeIdentifier","preciseIdentifier":"s:s4Voida","text":"Void"},{"kind":"text","text":")?"}],"externalID":"s:22SkyWayAINoiseCanceller0ab5NoiseD0C17fatalErrorHandleryAA0G4CodeOcSgvp","modules":[{"name":"SkyWayAINoiseCanceller"}],"title":"fatalErrorHandler","role":"symbol"},"kind":"symbol","abstract":[{"type":"text","text":"致命的なエラーが発生した際のハンドラ"}],"references":{"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ErrorCode":{"fragments":[{"kind":"keyword","text":"enum"},{"kind":"text","text":" "},{"kind":"identifier","text":"ErrorCode"}],"abstract":[{"type":"codeVoice","code":"SkyWayNoiseCanceller.fatalErrorHandler"},{"type":"text","text":" が呼ばれる際に渡されるエラーコード"}],"type":"topic","title":"ErrorCode","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/ErrorCode","kind":"symbol","navigatorTitle":[{"kind":"identifier","text":"ErrorCode"}],"url":"\/documentation\/skywayainoisecanceller\/errorcode","role":"symbol"},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller":{"title":"SkyWayAINoiseCanceller","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller","role":"collection","url":"\/documentation\/skywayainoisecanceller","abstract":[{"type":"strong","inlineContent":[{"text":"Version: 1.1.0","type":"text"}]},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}],"type":"topic","kind":"symbol"},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller":{"fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"SkyWayNoiseCanceller","kind":"identifier"}],"abstract":[{"type":"text","text":"ノイズ抑制クラス"}],"type":"topic","title":"SkyWayNoiseCanceller","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/SkyWayNoiseCanceller","kind":"symbol","navigatorTitle":[{"kind":"identifier","text":"SkyWayNoiseCanceller"}],"url":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller","role":"symbol"},"doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/fatalErrorHandler":{"url":"\/documentation\/skywayainoisecanceller\/skywaynoisecanceller\/fatalerrorhandler","fragments":[{"kind":"keyword","text":"var"},{"kind":"text","text":" "},{"kind":"identifier","text":"fatalErrorHandler"},{"kind":"text","text":": (("},{"kind":"typeIdentifier","preciseIdentifier":"s:22SkyWayAINoiseCanceller9ErrorCodeO","text":"ErrorCode"},{"kind":"text","text":") -> "},{"kind":"typeIdentifier","preciseIdentifier":"s:s4Voida","text":"Void"},{"kind":"text","text":")?"}],"type":"topic","identifier":"doc:\/\/com.ntt.skyway.ai-noise-canceller\/documentation\/SkyWayAINoiseCanceller\/SkyWayNoiseCanceller\/fatalErrorHandler","title":"fatalErrorHandler","abstract":[{"type":"text","text":"致命的なエラーが発生した際のハンドラ"}],"kind":"symbol","role":"symbol"}}}
+{
+  "abstract": [
+    {
+      "text": "致命的なエラーが発生した際のハンドラ",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller",
+        "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/fatalErrorHandler"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "s:22SkyWayAINoiseCanceller0ab5NoiseD0C17fatalErrorHandleryAA0G4CodeOcSgvp",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "var"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "fatalErrorHandler"
+      },
+      {
+        "kind": "text",
+        "text": ": (("
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:22SkyWayAINoiseCanceller9ErrorCodeO",
+        "text": "ErrorCode"
+      },
+      {
+        "kind": "text",
+        "text": ") -> "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:s4Voida",
+        "text": "Void"
+      },
+      {
+        "kind": "text",
+        "text": ")?"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayAINoiseCanceller"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Instance Property",
+    "symbolKind": "property",
+    "title": "fatalErrorHandler"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "var"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "fatalErrorHandler"
+            },
+            {
+              "kind": "text",
+              "text": ": (("
+            },
+            {
+              "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ErrorCode",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:22SkyWayAINoiseCanceller9ErrorCodeO",
+              "text": "ErrorCode"
+            },
+            {
+              "kind": "text",
+              "text": ") -> "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:s4Voida",
+              "text": "Void"
+            },
+            {
+              "kind": "text",
+              "text": ")?"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "SkyWay の内部で致命的なエラーが発生すると、SkyWayNoiseCanceller は自動的に ",
+              "type": "text"
+            },
+            {
+              "code": "stop()",
+              "type": "codeVoice"
+            },
+            {
+              "text": " および ",
+              "type": "text"
+            },
+            {
+              "code": "dispose()",
+              "type": "codeVoice"
+            },
+            {
+              "text": " を実行したあと、このハンドラが呼び出されます。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "引数で渡される ",
+              "type": "text"
+            },
+            {
+              "code": "ErrorCode",
+              "type": "codeVoice"
+            },
+            {
+              "text": " に応じて、以下の対応を行ってください。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "items": [
+            {
+              "content": [
+                {
+                  "inlineContent": [
+                    {
+                      "code": "ErrorCode.quotaExceeded",
+                      "type": "codeVoice"
+                    },
+                    {
+                      "text": ": 利用量の上限を超えています。ご利用中のプランの変更をご検討ください。",
+                      "type": "text"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "inlineContent": [
+                    {
+                      "text": "その他のエラー: 再度 ",
+                      "type": "text"
+                    },
+                    {
+                      "code": "setup(options:)",
+                      "type": "codeVoice"
+                    },
+                    {
+                      "text": " を呼び出すことで復旧できる可能性があります。",
+                      "type": "text"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            }
+          ],
+          "type": "unorderedList"
+        }
+      ],
+      "kind": "content"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 1.1.0",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayAINoiseCanceller",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ErrorCode": {
+      "abstract": [
+        {
+          "code": "SkyWayNoiseCanceller.fatalErrorHandler",
+          "type": "codeVoice"
+        },
+        {
+          "text": " が呼ばれる際に渡されるエラーコード",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "enum"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "ErrorCode"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/ErrorCode",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "ErrorCode"
+        }
+      ],
+      "role": "symbol",
+      "title": "ErrorCode",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/errorcode"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller": {
+      "abstract": [
+        {
+          "text": "ノイズ抑制クラス",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "SkyWayNoiseCanceller"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "SkyWayNoiseCanceller"
+        }
+      ],
+      "role": "symbol",
+      "title": "SkyWayNoiseCanceller",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/skywaynoisecanceller"
+    },
+    "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/fatalErrorHandler": {
+      "abstract": [
+        {
+          "text": "致命的なエラーが発生した際のハンドラ",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "fatalErrorHandler"
+        },
+        {
+          "kind": "text",
+          "text": ": (("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:22SkyWayAINoiseCanceller9ErrorCodeO",
+          "text": "ErrorCode"
+        },
+        {
+          "kind": "text",
+          "text": ") -> "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:s4Voida",
+          "text": "Void"
+        },
+        {
+          "kind": "text",
+          "text": ")?"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.ai-noise-canceller/documentation/SkyWayAINoiseCanceller/SkyWayNoiseCanceller/fatalErrorHandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "fatalErrorHandler",
+      "type": "topic",
+      "url": "/documentation/skywayainoisecanceller/skywaynoisecanceller/fatalerrorhandler"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayainoisecanceller/skywaynoisecanceller/fatalerrorhandler"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    }
+  ]
+}

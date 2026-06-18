@@ -1,1 +1,539 @@
-{"schemaVersion":{"minor":3,"patch":0,"major":0},"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/LocalDataStream"]]},"metadata":{"roleHeading":"Instance Method","modules":[{"name":"SkyWayRoom"}],"platforms":[{"message":"SkyWayRoom v3.0.0で非推奨となりました。`LocalDataStream.writeData(_:completion:)`をご利用ください。","unavailable":false,"deprecated":true,"beta":false}],"title":"write(_:)","role":"symbol","symbolKind":"method","fragments":[{"text":"func","kind":"keyword"},{"kind":"text","text":" "},{"kind":"identifier","text":"write"},{"kind":"text","text":"("},{"kind":"typeIdentifier","text":"Data","preciseIdentifier":"s:10Foundation4DataV"},{"text":")","kind":"text"}],"navigatorTitle":[{"text":"writeData:","kind":"identifier"}],"externalID":"c:objc(cs)SKWLocalDataStream(im)writeData:"},"sections":[],"kind":"symbol","abstract":[{"type":"text","text":"データを送信します。"}],"primaryContentSections":[{"kind":"declarations","declarations":[{"platforms":["iOS"],"languages":["swift"],"tokens":[{"text":"func","kind":"keyword"},{"text":" ","kind":"text"},{"kind":"identifier","text":"write"},{"text":"(","kind":"text"},{"text":"_","kind":"externalParam"},{"text":" ","kind":"text"},{"text":"data","kind":"internalParam"},{"text":": ","kind":"text"},{"text":"Data","kind":"typeIdentifier","preciseIdentifier":"s:10Foundation4DataV"},{"text":")","kind":"text"}]}]},{"kind":"parameters","parameters":[{"content":[{"type":"paragraph","inlineContent":[{"type":"text","text":"送信するデータ"}]}],"name":"data"}]},{"content":[{"anchor":"discussion","type":"heading","text":"Discussion","level":2},{"type":"paragraph","inlineContent":[{"type":"text","text":"Subscribe側で受け取ることができるのは、データ通信の接続完了以降に書き込まれたデータであることに注意してください。"},{"type":"text","text":" "},{"type":"text","text":"接続完了のタイミングを検知したい場合は以下のイベントをご利用ください。"}]},{"type":"paragraph","inlineContent":[{"type":"text","text":"Core SDKをご利用の場合:"},{"type":"text","text":" "},{"isActive":true,"identifier":"..\/Protocols\/SKWPublicationDelegate.html#\/c:objc(pl)SKWPublicationDelegate(im)publication:connectionStateDidChange:","type":"reference"}]},{"type":"paragraph","inlineContent":[{"type":"text","text":"Room SDKをご利用の場合:"},{"type":"text","text":" "},{"isActive":true,"identifier":"..\/..\/room\/Protocols\/RoomPublicationDelegate.html#\/c:@M@SkyWayRoom@objc(pl)RoomPublicationDelegate(im)publication:connectionStateDidChange:","type":"reference"}]}],"kind":"content"}],"variants":[{"paths":["\/documentation\/skywayroom\/localdatastream\/write(_:)-8bkq1"],"traits":[{"interfaceLanguage":"swift"}]},{"paths":["\/documentation\/skywayroom\/localdatastream\/write(_:)-8bkq1"],"traits":[{"interfaceLanguage":"occ"}]}],"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/LocalDataStream\/write(_:)-8bkq1","interfaceLanguage":"swift"},"deprecationSummary":[{"inlineContent":[{"text":"SkyWayRoom v3.0.0で非推奨となりました。`LocalDataStream.writeData(_:completion:)`をご利用ください。","type":"text"}],"type":"paragraph"}],"references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]},"../Protocols/SKWPublicationDelegate.html#/c:objc(pl)SKWPublicationDelegate(im)publication:connectionStateDidChange:":{"type":"link","identifier":"..\/Protocols\/SKWPublicationDelegate.html#\/c:objc(pl)SKWPublicationDelegate(im)publication:connectionStateDidChange:","titleInlineContent":[{"text":"SKWPublicationDelegate.publication:connectionStateDidChange:","type":"text"}],"title":"SKWPublicationDelegate.publication:connectionStateDidChange:","url":"..\/Protocols\/SKWPublicationDelegate.html#\/c:objc(pl)SKWPublicationDelegate(im)publication:connectionStateDidChange:"},"../../room/Protocols/RoomPublicationDelegate.html#/c:@M@SkyWayRoom@objc(pl)RoomPublicationDelegate(im)publication:connectionStateDidChange:":{"type":"link","identifier":"..\/..\/room\/Protocols\/RoomPublicationDelegate.html#\/c:@M@SkyWayRoom@objc(pl)RoomPublicationDelegate(im)publication:connectionStateDidChange:","titleInlineContent":[{"text":"RoomPublicationDelegate.publication(_:connectionStateDidChange:)","type":"text"}],"title":"RoomPublicationDelegate.publication(_:connectionStateDidChange:)","url":"..\/..\/room\/Protocols\/RoomPublicationDelegate.html#\/c:@M@SkyWayRoom@objc(pl)RoomPublicationDelegate(im)publication:connectionStateDidChange:"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalDataStream":{"title":"LocalDataStream","abstract":[{"text":"LocalDataStreamクラス","type":"text"}],"kind":"symbol","fragments":[{"text":"class","kind":"keyword"},{"text":" ","kind":"text"},{"text":"LocalDataStream","kind":"identifier"}],"identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/LocalDataStream","navigatorTitle":[{"text":"LocalDataStream","kind":"identifier"}],"role":"symbol","url":"\/documentation\/skywayroom\/localdatastream","type":"topic"},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalDataStream/write(_:)-8bkq1":{"url":"\/documentation\/skywayroom\/localdatastream\/write(_:)-8bkq1","deprecated":true,"title":"write(_:)","kind":"symbol","abstract":[{"text":"データを送信します。","type":"text"}],"role":"symbol","fragments":[{"kind":"keyword","text":"func"},{"kind":"text","text":" "},{"kind":"identifier","text":"write"},{"kind":"text","text":"("},{"kind":"typeIdentifier","text":"Data","preciseIdentifier":"s:10Foundation4DataV"},{"text":")","kind":"text"}],"identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/LocalDataStream\/write(_:)-8bkq1","type":"topic","navigatorTitle":[{"kind":"identifier","text":"writeData:"}]}},"variantOverrides":[{"patch":[{"op":"replace","path":"\/identifier\/interfaceLanguage","value":"occ"},{"op":"replace","path":"\/metadata\/platforms","value":[{"beta":false,"unavailable":false,"deprecated":true}]},{"op":"replace","path":"\/metadata\/roleHeading","value":"Instance Method"},{"op":"replace","path":"\/metadata\/title","value":"writeData:"},{"op":"replace","path":"\/metadata\/symbolKind","value":"method"},{"op":"replace","path":"\/metadata\/fragments","value":[{"text":"- ","kind":"text"},{"text":"writeData:","kind":"identifier"}]},{"op":"add","path":"\/topicSections","value":null},{"op":"add","path":"\/relationshipsSections","value":null},{"op":"add","path":"\/seeAlsoSections","value":null},{"op":"replace","path":"\/primaryContentSections\/0","value":{"kind":"declarations","declarations":[{"languages":["occ"],"tokens":[{"kind":"text","text":"- ("},{"kind":"typeIdentifier","text":"void","preciseIdentifier":"c:v"},{"kind":"text","text":") "},{"kind":"identifier","text":"writeData:"},{"kind":"text","text":"("},{"kind":"typeIdentifier","text":"NSData","preciseIdentifier":"c:objc(cs)NSData"},{"kind":"text","text":" *) "},{"kind":"internalParam","text":"data"},{"kind":"text","text":";"}],"platforms":["iOS"]}]}},{"op":"replace","path":"\/primaryContentSections\/1","value":{"kind":"parameters","parameters":[{"name":"data","content":[{"type":"paragraph","inlineContent":[{"text":"送信するデータ","type":"text"}]}]}]}},{"op":"replace","path":"\/deprecationSummary","value":[{"inlineContent":[{"text":"SkyWayRoom v3.0.0で非推奨となりました。`LocalDataStream.writeData(_:completion:)`をご利用ください。","type":"text"}],"type":"paragraph"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStream\/title","value":"SKWLocalDataStream"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStream\/fragments","value":[{"text":"SKWLocalDataStream","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStream\/navigatorTitle","value":[{"text":"SKWLocalDataStream","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStream~1write(_:)-8bkq1\/title","value":"writeData:"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStream~1write(_:)-8bkq1\/fragments","value":[{"text":"- ","kind":"text"},{"text":"writeData:","kind":"identifier"}]}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "abstract": [
+    {
+      "text": "データを送信します。",
+      "type": "text"
+    }
+  ],
+  "deprecationSummary": [
+    {
+      "inlineContent": [
+        {
+          "text": "SkyWayRoom v3.0.0で非推奨となりました。`LocalDataStream.writeData(_:completion:)`をご利用ください。",
+          "type": "text"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalDataStream"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalDataStream/write(_:)-8bkq1"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:objc(cs)SKWLocalDataStream(im)writeData:",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "func"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "write"
+      },
+      {
+        "kind": "text",
+        "text": "("
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:10Foundation4DataV",
+        "text": "Data"
+      },
+      {
+        "kind": "text",
+        "text": ")"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "writeData:"
+      }
+    ],
+    "platforms": [
+      {
+        "beta": false,
+        "deprecated": true,
+        "message": "SkyWayRoom v3.0.0で非推奨となりました。`LocalDataStream.writeData(_:completion:)`をご利用ください。",
+        "unavailable": false
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "symbolKind": "method",
+    "title": "write(_:)"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "write"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "externalParam",
+              "text": "_"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "data"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Foundation4DataV",
+              "text": "Data"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "kind": "parameters",
+      "parameters": [
+        {
+          "content": [
+            {
+              "inlineContent": [
+                {
+                  "text": "送信するデータ",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "data"
+        }
+      ]
+    },
+    {
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "subscribe側で受け取ることができるのは、",
+              "type": "text"
+            },
+            {
+              "code": "LocalDataStreamDelegate.dataStream(_:didBecomeWritableForSubscriber:)",
+              "type": "codeVoice"
+            },
+            {
+              "text": " ",
+              "type": "text"
+            },
+            {
+              "text": "が呼ばれた後に書き込まれたデータであることに注意してください。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "kind": "content"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalDataStream": {
+      "abstract": [
+        {
+          "text": "LocalDataStreamクラス",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "LocalDataStream"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalDataStream",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "LocalDataStream"
+        }
+      ],
+      "role": "symbol",
+      "title": "LocalDataStream",
+      "type": "topic",
+      "url": "/documentation/skywayroom/localdatastream"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalDataStream/write(_:)-8bkq1": {
+      "abstract": [
+        {
+          "text": "データを送信します。",
+          "type": "text"
+        }
+      ],
+      "deprecated": true,
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "write"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:10Foundation4DataV",
+          "text": "Data"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalDataStream/write(_:)-8bkq1",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "writeData:"
+        }
+      ],
+      "role": "symbol",
+      "title": "write(_:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/localdatastream/write(_:)-8bkq1"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/platforms",
+          "value": [
+            {
+              "beta": false,
+              "deprecated": true,
+              "unavailable": false
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Instance Method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "writeData:"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "method"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "writeData:"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "text",
+                    "text": "- ("
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:v",
+                    "text": "void"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ") "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "writeData:"
+                  },
+                  {
+                    "kind": "text",
+                    "text": "("
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:objc(cs)NSData",
+                    "text": "NSData"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " *) "
+                  },
+                  {
+                    "kind": "internalParam",
+                    "text": "data"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ";"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/1",
+          "value": {
+            "kind": "parameters",
+            "parameters": [
+              {
+                "content": [
+                  {
+                    "inlineContent": [
+                      {
+                        "text": "送信するデータ",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "name": "data"
+              }
+            ]
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/deprecationSummary",
+          "value": [
+            {
+              "inlineContent": [
+                {
+                  "text": "SkyWayRoom v3.0.0で非推奨となりました。`LocalDataStream.writeData(_:completion:)`をご利用ください。",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStream~1write(_:)-8bkq1/title",
+          "value": "writeData:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStream~1write(_:)-8bkq1/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "writeData:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStream/title",
+          "value": "SKWLocalDataStream"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStream/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWLocalDataStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStream/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWLocalDataStream"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/localdatastream/write(_:)-8bkq1"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/localdatastream/write(_:)-8bkq1"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

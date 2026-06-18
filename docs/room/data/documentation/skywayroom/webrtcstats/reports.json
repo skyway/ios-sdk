@@ -1,1 +1,504 @@
-{"variants":[{"paths":["\/documentation\/skywayroom\/webrtcstats\/reports"],"traits":[{"interfaceLanguage":"swift"}]},{"paths":["\/documentation\/skywayroom\/webrtcstats\/reports"],"traits":[{"interfaceLanguage":"occ"}]}],"schemaVersion":{"patch":0,"major":0,"minor":3},"abstract":[{"text":"WebRTC統計情報の一覧","type":"text"}],"deprecationSummary":[{"type":"paragraph","inlineContent":[{"text":"SkyWayCore v2.0.0で非推奨となりました。","type":"text"}]}],"sections":[],"primaryContentSections":[{"kind":"declarations","declarations":[{"platforms":["iOS"],"languages":["swift"],"tokens":[{"text":"var","kind":"keyword"},{"text":" ","kind":"text"},{"text":"reports","kind":"identifier"},{"text":": [","kind":"text"},{"identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/WebRTCStatsReport","text":"WebRTCStatsReport","kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)SKWWebRTCStatsReport"},{"text":"] { ","kind":"text"},{"text":"get","kind":"keyword"},{"text":" }","kind":"text"}]}]}],"hierarchy":{"paths":[["doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/WebRTCStats"]]},"identifier":{"url":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/WebRTCStats\/reports","interfaceLanguage":"swift"},"metadata":{"roleHeading":"Instance Property","platforms":[{"message":"SkyWayCore v2.0.0で非推奨となりました。","beta":false,"unavailable":false,"deprecated":true}],"fragments":[{"text":"var","kind":"keyword"},{"text":" ","kind":"text"},{"text":"reports","kind":"identifier"},{"text":": [","kind":"text"},{"text":"WebRTCStatsReport","preciseIdentifier":"c:objc(cs)SKWWebRTCStatsReport","kind":"typeIdentifier"},{"text":"]","kind":"text"}],"externalID":"c:objc(cs)SKWWebRTCStats(py)reports","role":"symbol","modules":[{"name":"SkyWayRoom"}],"navigatorTitle":[{"text":"reports","kind":"identifier"}],"title":"reports","symbolKind":"property"},"kind":"symbol","references":{"doc://com.ntt.skyway.room/documentation/SkyWayRoom/WebRTCStats":{"url":"\/documentation\/skywayroom\/webrtcstats","navigatorTitle":[{"kind":"identifier","text":"WebRTCStats"}],"type":"topic","kind":"symbol","title":"WebRTCStats","abstract":[],"deprecated":true,"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/WebRTCStats","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"WebRTCStats"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/WebRTCStatsReport":{"url":"\/documentation\/skywayroom\/webrtcstatsreport","navigatorTitle":[{"kind":"identifier","text":"WebRTCStatsReport"}],"type":"topic","kind":"symbol","abstract":[],"title":"WebRTCStatsReport","deprecated":true,"role":"symbol","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/WebRTCStatsReport","fragments":[{"kind":"keyword","text":"class"},{"kind":"text","text":" "},{"kind":"identifier","text":"WebRTCStatsReport"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom/WebRTCStats/reports":{"kind":"symbol","fragments":[{"text":"var","kind":"keyword"},{"text":" ","kind":"text"},{"text":"reports","kind":"identifier"},{"text":": [","kind":"text"},{"preciseIdentifier":"c:objc(cs)SKWWebRTCStatsReport","text":"WebRTCStatsReport","kind":"typeIdentifier"},{"text":"]","kind":"text"}],"url":"\/documentation\/skywayroom\/webrtcstats\/reports","role":"symbol","navigatorTitle":[{"text":"reports","kind":"identifier"}],"deprecated":true,"type":"topic","title":"reports","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom\/WebRTCStats\/reports","abstract":[{"text":"WebRTC統計情報の一覧","type":"text"}]},"doc://com.ntt.skyway.room/documentation/SkyWayRoom":{"kind":"symbol","url":"\/documentation\/skywayroom","role":"collection","type":"topic","title":"SkyWayRoom","identifier":"doc:\/\/com.ntt.skyway.room\/documentation\/SkyWayRoom","abstract":[{"inlineContent":[{"type":"text","text":"Version: 3.6.0"}],"type":"strong"},{"type":"text","text":" © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved."}]}},"variantOverrides":[{"patch":[{"op":"replace","value":"occ","path":"\/identifier\/interfaceLanguage"},{"op":"replace","value":[{"unavailable":false,"beta":false,"deprecated":true}],"path":"\/metadata\/platforms"},{"op":"replace","value":"Instance Property","path":"\/metadata\/roleHeading"},{"op":"replace","value":"reports","path":"\/metadata\/title"},{"op":"replace","value":"property","path":"\/metadata\/symbolKind"},{"op":"replace","value":[{"text":"reports","kind":"identifier"}],"path":"\/metadata\/fragments"},{"op":"add","path":"\/topicSections","value":null},{"op":"add","value":null,"path":"\/relationshipsSections"},{"op":"add","value":null,"path":"\/seeAlsoSections"},{"op":"replace","value":{"kind":"declarations","declarations":[{"platforms":["iOS"],"languages":["occ"],"tokens":[{"text":"@property","kind":"keyword"},{"text":" (","kind":"text"},{"text":"nonatomic","kind":"keyword"},{"text":", ","kind":"text"},{"text":"readonly","kind":"keyword"},{"text":") ","kind":"text"},{"text":"NSArray<SKWWebRTCStatsReport *>","preciseIdentifier":"c:Q$objc(cs)NSArray","kind":"typeIdentifier"},{"text":" * ","kind":"text"},{"text":"reports","kind":"identifier"},{"text":";","kind":"text"}]}]},"path":"\/primaryContentSections\/0"},{"op":"replace","path":"\/deprecationSummary","value":[{"inlineContent":[{"text":"SkyWayCore v2.0.0で非推奨となりました。","type":"text"}],"type":"paragraph"}]},{"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats\/title","op":"replace","value":"SKWWebRTCStats"},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats\/fragments","value":[{"text":"SKWWebRTCStats","kind":"identifier"}]},{"op":"replace","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats\/navigatorTitle","value":[{"kind":"identifier","text":"SKWWebRTCStats"}]},{"op":"replace","value":"SKWWebRTCStatsReport","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStatsReport\/title"},{"op":"replace","value":[{"kind":"identifier","text":"SKWWebRTCStatsReport"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStatsReport\/fragments"},{"op":"replace","value":[{"text":"SKWWebRTCStatsReport","kind":"identifier"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStatsReport\/navigatorTitle"},{"op":"replace","value":"reports","path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats~1reports\/title"},{"op":"replace","value":[{"text":"reports","kind":"identifier"}],"path":"\/references\/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats~1reports\/fragments"}],"traits":[{"interfaceLanguage":"occ"}]}]}
+{
+  "abstract": [
+    {
+      "text": "WebRTC統計情報の一覧",
+      "type": "text"
+    }
+  ],
+  "deprecationSummary": [
+    {
+      "inlineContent": [
+        {
+          "text": "SkyWayCore v2.0.0で非推奨となりました。",
+          "type": "text"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/WebRTCStats"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/WebRTCStats/reports"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:objc(cs)SKWWebRTCStats(py)reports",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "var"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "reports"
+      },
+      {
+        "kind": "text",
+        "text": ": ["
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "c:objc(cs)SKWWebRTCStatsReport",
+        "text": "WebRTCStatsReport"
+      },
+      {
+        "kind": "text",
+        "text": "]"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "reports"
+      }
+    ],
+    "platforms": [
+      {
+        "beta": false,
+        "deprecated": true,
+        "message": "SkyWayCore v2.0.0で非推奨となりました。",
+        "unavailable": false
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Instance Property",
+    "symbolKind": "property",
+    "title": "reports"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "var"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "reports"
+            },
+            {
+              "kind": "text",
+              "text": ": ["
+            },
+            {
+              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/WebRTCStatsReport",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)SKWWebRTCStatsReport",
+              "text": "WebRTCStatsReport"
+            },
+            {
+              "kind": "text",
+              "text": "] { "
+            },
+            {
+              "kind": "keyword",
+              "text": "get"
+            },
+            {
+              "kind": "text",
+              "text": " }"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.6.1",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/WebRTCStats": {
+      "abstract": [],
+      "deprecated": true,
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "WebRTCStats"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/WebRTCStats",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "WebRTCStats"
+        }
+      ],
+      "role": "symbol",
+      "title": "WebRTCStats",
+      "type": "topic",
+      "url": "/documentation/skywayroom/webrtcstats"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/WebRTCStats/reports": {
+      "abstract": [
+        {
+          "text": "WebRTC統計情報の一覧",
+          "type": "text"
+        }
+      ],
+      "deprecated": true,
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "reports"
+        },
+        {
+          "kind": "text",
+          "text": ": ["
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWWebRTCStatsReport",
+          "text": "WebRTCStatsReport"
+        },
+        {
+          "kind": "text",
+          "text": "]"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/WebRTCStats/reports",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "reports"
+        }
+      ],
+      "role": "symbol",
+      "title": "reports",
+      "type": "topic",
+      "url": "/documentation/skywayroom/webrtcstats/reports"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/WebRTCStatsReport": {
+      "abstract": [],
+      "deprecated": true,
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "WebRTCStatsReport"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/WebRTCStatsReport",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "WebRTCStatsReport"
+        }
+      ],
+      "role": "symbol",
+      "title": "WebRTCStatsReport",
+      "type": "topic",
+      "url": "/documentation/skywayroom/webrtcstatsreport"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/identifier/interfaceLanguage",
+          "value": "occ"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/platforms",
+          "value": [
+            {
+              "beta": false,
+              "deprecated": true,
+              "unavailable": false
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/roleHeading",
+          "value": "Instance Property"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/title",
+          "value": "reports"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/symbolKind",
+          "value": "property"
+        },
+        {
+          "op": "replace",
+          "path": "/metadata/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "reports"
+            }
+          ]
+        },
+        {
+          "op": "add",
+          "path": "/topicSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/relationshipsSections",
+          "value": null
+        },
+        {
+          "op": "add",
+          "path": "/seeAlsoSections",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/primaryContentSections/0",
+          "value": {
+            "declarations": [
+              {
+                "languages": [
+                  "occ"
+                ],
+                "platforms": [
+                  "iOS"
+                ],
+                "tokens": [
+                  {
+                    "kind": "keyword",
+                    "text": "@property"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " ("
+                  },
+                  {
+                    "kind": "keyword",
+                    "text": "nonatomic"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ", "
+                  },
+                  {
+                    "kind": "keyword",
+                    "text": "readonly"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ") "
+                  },
+                  {
+                    "kind": "typeIdentifier",
+                    "preciseIdentifier": "c:Q$objc(cs)NSArray",
+                    "text": "NSArray<SKWWebRTCStatsReport *>"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " * "
+                  },
+                  {
+                    "kind": "identifier",
+                    "text": "reports"
+                  },
+                  {
+                    "kind": "text",
+                    "text": ";"
+                  }
+                ]
+              }
+            ],
+            "kind": "declarations"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/deprecationSummary",
+          "value": [
+            {
+              "inlineContent": [
+                {
+                  "text": "SkyWayCore v2.0.0で非推奨となりました。",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStatsReport/title",
+          "value": "SKWWebRTCStatsReport"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStatsReport/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWWebRTCStatsReport"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStatsReport/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWWebRTCStatsReport"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats/title",
+          "value": "SKWWebRTCStats"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWWebRTCStats"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWWebRTCStats"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats~1reports/title",
+          "value": "reports"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats~1reports/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "reports"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/webrtcstats/reports"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    },
+    {
+      "paths": [
+        "/documentation/skywayroom/webrtcstats/reports"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}
