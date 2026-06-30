@@ -12,10 +12,17 @@ settings:
   base:
     IPHONEOS_DEPLOYMENT_TARGET: '16.0'
 
+packages:
+  SkyWayRoom:
+    url: https://github.com/skyway/ios-sdk
+    from: "3.6.0"
+
 targetTemplates:
   ExampleApp:
     type: application
     platform: iOS
+    dependencies:
+      - package: SkyWayRoom
     settings:
       base:
         GENERATE_INFOPLIST_FILE: 'YES'
@@ -85,6 +92,9 @@ targets:
     templates:
       - ExampleApp
     sources:
+      - name: Common
+        group: Sources
+        path: Sources/Common
       - name: VideoProcessorExample
         group: Sources
         path: Sources/VideoProcessorExample

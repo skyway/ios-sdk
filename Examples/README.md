@@ -20,20 +20,15 @@
 $ brew install xcodegen
 ```
 
-CocoaPods にて SDK をインストールします。
+以下のコマンドでプロジェクトを生成してください。
 
 ```
 $ cd ios-sdk/Examples
 $ xcodegen    # project.yml から SkyWayExample.xcodeproj を生成
-$ pod install # CocoaPods の依存をインストールし、SkyWayExample.xcworkspace を生成
 ```
 
-生成された `SkyWayExample.xcworkspace` を開き、`SkyWayViewModel` の `setup` 関数内の `token` 変数を生成した JWT に変更してください。
+生成された `SkyWayExample.xcodeproj` を開くと、Xcode が自動的に Swift Package Manager の依存関係を解決し、Room SDK を取得します。
 
-https://github.com/skyway/ios-sdk/blob/5668bf1946da57c8ce10ca31e247976ad070557e/Examples/Sources/Common/SkyWayViewModel.swift#L30-L32
-
-JWT の生成はクイックスタートを参考にしてください。
-
-https://skyway.ntt.com/ja/docs/user-guide/ios-sdk/quickstart/#31
+[SkyWayCredentials.swift](https://github.com/skyway/ios-sdk/blob/main/Examples/Sources/Common/SkyWayCredentials.swift) にて、`appId` と `secretKey` を記入してください。
 
 実行したいアプリケーションの target を選択して、実機で RUN してください。

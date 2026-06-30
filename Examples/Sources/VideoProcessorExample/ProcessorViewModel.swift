@@ -74,8 +74,8 @@ class ProcessorViewModel: NSObject, ObservableObject, RoomDelegate {
     func setup() async throws {
         isBusy = true
         defer { isBusy = false }
-        let appId = "アプリケーションIDを入力してください"
-        let secretKey = "シークレットキーを入力してください"
+        let appId = SkyWayCredentials.appId
+        let secretKey = SkyWayCredentials.secretKey
         let opt: ContextOptions = .init()
         opt.logLevel = .trace
         try await Context.setupForDev(withAppId: appId, secretKey: secretKey, options: opt)
