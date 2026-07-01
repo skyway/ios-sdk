@@ -1,30 +1,34 @@
 # SkyWay Examples
 
-サンプルアプリを公開しています。
+以下のサンプルアプリを公開しています。
 
-- Room ライブラリの P2PRoom による 映像・音声・データの PubSub(P2PRoom)
-- Room ライブラリの SFURoom による 映像・音声の PubSub(SFURoom)
-- Room ライブラリ による Web 会議のサンプル(AutoSubscribingRoom)
+- Room ライブラリの P2PRoom を使った映像・音声・データの PubSub（P2PRoom）
+- Room ライブラリの SFURoom を使った映像・音声の PubSub（SFURoom）
+- Room ライブラリを使った Web 会議のサンプル（AutoSubscribingRoom）
+- Room ライブラリの DefaultRoom を使った映像・音声の PubSub（DefaultRoom）
+- Room ライブラリの VideoProcessor を使った背景ぼかし・バーチャル背景の配信（VideoProcessorExample）
 
-それぞれProjectのtargetsで管理しています。
+それぞれプロジェクトの targets で管理しています。
 
-実行環境はiPhone実機のみでSimulatorは対応していません。
+実行環境は iPhone 実機のみです。Simulator には対応していません。
 
 ## 利用方法
 
-CocoaPodsにてSDKをインストールします。
+`xcodegen` を使って `project.yml` から `SkyWayExample.xcodeproj` を生成する必要があります。`xcodegen` がインストールされていない場合は、以下のコマンドでインストールしてください。
+
+```
+$ brew install xcodegen
+```
+
+以下のコマンドでプロジェクトを生成してください。
 
 ```
 $ cd ios-sdk/Examples
-$ pod install
+$ xcodegen    # project.yml から SkyWayExample.xcodeproj を生成
 ```
 
-生成された`SkyWayExample.xcworkspace`を開き、SkyWayViewModelの`setup`関数内のtoken変数を生成したJWTに変更してください。
+生成された `SkyWayExample.xcodeproj` を開くと、Xcode が自動的に Swift Package Manager の依存関係を解決し、Room SDK を取得します。
 
-https://github.com/skyway/ios-sdk/blob/5668bf1946da57c8ce10ca31e247976ad070557e/Examples/Sources/Common/SkyWayViewModel.swift#L30-L32
+[SkyWayCredentials.swift](https://github.com/skyway/ios-sdk/blob/main/Examples/Sources/Common/SkyWayCredentials.swift) にて、`appId` と `secretKey` を記入してください。
 
-JWTの生成はクイックスタートを参考に利用してください
-
-https://skyway.ntt.com/ja/docs/user-guide/ios-sdk/quickstart/#31
-
-実行したいアプリケーションのtargetを選択して実機でRUNしてください。
+実行したいアプリケーションの target を選択して、実機で RUN してください。

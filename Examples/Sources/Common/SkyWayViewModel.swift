@@ -29,8 +29,8 @@ class SkyWayViewModel: NSObject, ObservableObject, RoomDelegate, RemoteDataStrea
     }
     
     func setup() async throws {
-        let appId = "アプリケーションIDを入力してください"
-        let secretKey = "シークレットキーを入力してください"
+        let appId = SkyWayCredentials.appId
+        let secretKey = SkyWayCredentials.secretKey
         let opt: ContextOptions = .init()
         opt.logLevel = .trace
         try await Context.setupForDev(withAppId: appId, secretKey: secretKey, options: opt)
