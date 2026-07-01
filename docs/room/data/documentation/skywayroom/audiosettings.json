@@ -94,7 +94,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -588,12 +588,12 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSettings~1setCategoryOptions(_:)/title",
-          "value": "setCategoryOptions:"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSettings~1setPreferredSampleRate(_:)/title",
+          "value": "setPreferredSampleRate:"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSettings~1setCategoryOptions(_:)/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSettings~1setPreferredSampleRate(_:)/fragments",
           "value": [
             {
               "kind": "text",
@@ -601,7 +601,7 @@
             },
             {
               "kind": "identifier",
-              "text": "setCategoryOptions:"
+              "text": "setPreferredSampleRate:"
             }
           ]
         },
@@ -632,6 +632,25 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSettings~1setCategoryOptions(_:)/title",
+          "value": "setCategoryOptions:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSettings~1setCategoryOptions(_:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "+ "
+            },
+            {
+              "kind": "identifier",
+              "text": "setCategoryOptions:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSettings~1currentCategoryOptions()/title",
           "value": "currentCategoryOptions"
         },
@@ -646,25 +665,6 @@
             {
               "kind": "identifier",
               "text": "currentCategoryOptions"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSettings~1setPreferredSampleRate(_:)/title",
-          "value": "setPreferredSampleRate:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSettings~1setPreferredSampleRate(_:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "+ "
-            },
-            {
-              "kind": "identifier",
-              "text": "setPreferredSampleRate:"
             }
           ]
         },

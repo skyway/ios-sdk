@@ -94,7 +94,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -1081,31 +1081,39 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1isTokenSfuEnabled/title",
-          "value": "isTokenSfuEnabled"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1setup(withToken:options:completion:)/title",
+          "value": "setupWithToken:options:completion:"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1isTokenSfuEnabled/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1setup(withToken:options:completion:)/fragments",
           "value": [
             {
+              "kind": "text",
+              "text": "+ "
+            },
+            {
               "kind": "identifier",
-              "text": "isTokenSfuEnabled"
+              "text": "setupWithToken:options:completion:"
             }
           ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1delegate/title",
-          "value": "delegate"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1registerPlugin(_:)/title",
+          "value": "registerPlugin:"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1delegate/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1registerPlugin(_:)/fragments",
           "value": [
             {
+              "kind": "text",
+              "text": "+ "
+            },
+            {
               "kind": "identifier",
-              "text": "delegate"
+              "text": "registerPlugin:"
             }
           ]
         },
@@ -1136,25 +1144,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1registerPlugin(_:)/title",
-          "value": "registerPlugin:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1registerPlugin(_:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "+ "
-            },
-            {
-              "kind": "identifier",
-              "text": "registerPlugin:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1dispose(completion:)/title",
           "value": "disposeWithCompletion:"
         },
@@ -1169,89 +1158,6 @@
             {
               "kind": "identifier",
               "text": "disposeWithCompletion:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1plugins/title",
-          "value": "plugins"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1plugins/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "plugins"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1appID/title",
-          "value": "appID"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1appID/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "appID"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1isSetup/title",
-          "value": "isSetup"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1isSetup/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "isSetup"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1setupForDev(withAppId:secretKey:options:completion:)/title",
-          "value": "setupForDevWithAppId:secretKey:options:completion:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1setupForDev(withAppId:secretKey:options:completion:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "+ "
-            },
-            {
-              "kind": "identifier",
-              "text": "setupForDevWithAppId:secretKey:options:completion:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1setup(withToken:options:completion:)/title",
-          "value": "setupWithToken:options:completion:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1setup(withToken:options:completion:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "+ "
-            },
-            {
-              "kind": "identifier",
-              "text": "setupWithToken:options:completion:"
             }
           ]
         },
@@ -1276,6 +1182,36 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1isSetup/title",
+          "value": "isSetup"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1isSetup/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "isSetup"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1plugins/title",
+          "value": "plugins"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1plugins/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "plugins"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1authToken/title",
           "value": "authToken"
         },
@@ -1286,6 +1222,70 @@
             {
               "kind": "identifier",
               "text": "authToken"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1delegate/title",
+          "value": "delegate"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1delegate/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "delegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1setupForDev(withAppId:secretKey:options:completion:)/title",
+          "value": "setupForDevWithAppId:secretKey:options:completion:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1setupForDev(withAppId:secretKey:options:completion:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "+ "
+            },
+            {
+              "kind": "identifier",
+              "text": "setupForDevWithAppId:secretKey:options:completion:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1appID/title",
+          "value": "appID"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1appID/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "appID"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1isTokenSfuEnabled/title",
+          "value": "isTokenSfuEnabled"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1isTokenSfuEnabled/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "isTokenSfuEnabled"
             }
           ]
         }

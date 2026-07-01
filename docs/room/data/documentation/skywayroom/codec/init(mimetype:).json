@@ -105,7 +105,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -321,25 +321,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Codec~1init(mimeType:)/title",
-          "value": "initWithMimeType:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Codec~1init(mimeType:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "initWithMimeType:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Codec/title",
           "value": "SKWCodec"
         },
@@ -360,6 +341,25 @@
             {
               "kind": "identifier",
               "text": "SKWCodec"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Codec~1init(mimeType:)/title",
+          "value": "initWithMimeType:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Codec~1init(mimeType:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "initWithMimeType:"
             }
           ]
         }

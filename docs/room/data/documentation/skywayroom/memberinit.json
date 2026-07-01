@@ -94,7 +94,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -520,51 +520,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberInit~1metadata/title",
-          "value": "metadata"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberInit~1metadata/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "metadata"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberInit~1name/title",
-          "value": "name"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberInit~1name/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "name"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberInit~1keepaliveIntervalGapSec/title",
-          "value": "keepaliveIntervalGapSec"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberInit~1keepaliveIntervalGapSec/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "keepaliveIntervalGapSec"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberInit/title",
           "value": "SKWMemberInit"
         },
@@ -590,6 +545,21 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberInit~1metadata/title",
+          "value": "metadata"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberInit~1metadata/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "metadata"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberInit~1keepaliveIntervalSec/title",
           "value": "keepaliveIntervalSec"
         },
@@ -600,6 +570,36 @@
             {
               "kind": "identifier",
               "text": "keepaliveIntervalSec"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberInit~1keepaliveIntervalGapSec/title",
+          "value": "keepaliveIntervalGapSec"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberInit~1keepaliveIntervalGapSec/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "keepaliveIntervalGapSec"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberInit~1name/title",
+          "value": "name"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberInit~1name/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "name"
             }
           ]
         }

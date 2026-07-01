@@ -106,7 +106,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -303,31 +303,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWChannelJoinCompletion/title",
-          "value": "SKWChannelJoinCompletion"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWChannelJoinCompletion/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWChannelJoinCompletion"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWChannelJoinCompletion/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWChannelJoinCompletion"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalPerson/title",
           "value": "SKWLocalPerson"
         },
@@ -348,6 +323,31 @@
             {
               "kind": "identifier",
               "text": "SKWLocalPerson"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWChannelJoinCompletion/title",
+          "value": "SKWChannelJoinCompletion"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWChannelJoinCompletion/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWChannelJoinCompletion"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWChannelJoinCompletion/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWChannelJoinCompletion"
             }
           ]
         }

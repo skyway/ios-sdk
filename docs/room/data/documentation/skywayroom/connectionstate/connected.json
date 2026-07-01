@@ -79,7 +79,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -245,6 +245,21 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1connected/title",
+          "value": "SKWConnected"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1connected/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWConnected"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState/title",
           "value": "SKWConnectionState"
         },
@@ -265,21 +280,6 @@
             {
               "kind": "identifier",
               "text": "SKWConnectionState"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1connected/title",
-          "value": "SKWConnected"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1connected/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWConnected"
             }
           ]
         }

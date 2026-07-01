@@ -175,7 +175,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -406,6 +406,21 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsToken~1remindTimeInSec/title",
+          "value": "remindTimeInSec"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsToken~1remindTimeInSec/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "remindTimeInSec"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsToken/title",
           "value": "SKWContextOptionsToken"
         },
@@ -426,21 +441,6 @@
             {
               "kind": "identifier",
               "text": "SKWContextOptionsToken"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsToken~1remindTimeInSec/title",
-          "value": "remindTimeInSec"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsToken~1remindTimeInSec/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "remindTimeInSec"
             }
           ]
         }

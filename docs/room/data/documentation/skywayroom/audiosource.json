@@ -94,7 +94,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -427,26 +427,20 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource/title",
-          "value": "SKWAudioSource"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource~1createStream()/title",
+          "value": "createStream"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource~1createStream()/fragments",
           "value": [
             {
-              "kind": "identifier",
-              "text": "SKWAudioSource"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource/navigatorTitle",
-          "value": [
+              "kind": "text",
+              "text": "- "
+            },
             {
               "kind": "identifier",
-              "text": "SKWAudioSource"
+              "text": "createStream"
             }
           ]
         },
@@ -477,20 +471,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource~1createStream()/title",
-          "value": "createStream"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource/title",
+          "value": "SKWAudioSource"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource~1createStream()/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource/fragments",
           "value": [
             {
-              "kind": "text",
-              "text": "- "
-            },
+              "kind": "identifier",
+              "text": "SKWAudioSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource/navigatorTitle",
+          "value": [
             {
               "kind": "identifier",
-              "text": "createStream"
+              "text": "SKWAudioSource"
             }
           ]
         }

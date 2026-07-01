@@ -94,7 +94,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -517,6 +517,40 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPluginOptions~1secure/title",
+          "value": "secure"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPluginOptions~1secure/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "secure"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPluginOptions~1init()/title",
+          "value": "init"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPluginOptions~1init()/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "init"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPluginOptions/title",
           "value": "SKWSFUBotPluginOptions"
         },
@@ -542,40 +576,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPluginOptions~1init()/title",
-          "value": "init"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPluginOptions~1init()/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "init"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPluginOptions~1version/title",
-          "value": "version"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPluginOptions~1version/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "version"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPluginOptions~1domain/title",
           "value": "domain"
         },
@@ -591,16 +591,16 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPluginOptions~1secure/title",
-          "value": "secure"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPluginOptions~1version/title",
+          "value": "version"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPluginOptions~1secure/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPluginOptions~1version/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "secure"
+              "text": "version"
             }
           ]
         }

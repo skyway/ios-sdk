@@ -124,7 +124,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -376,31 +376,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType/title",
-          "value": "SKWPublicationType"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWPublicationType"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWPublicationType"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublication/title",
           "value": "RoomPublication"
         },
@@ -436,6 +411,31 @@
             {
               "kind": "identifier",
               "text": "type"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType/title",
+          "value": "SKWPublicationType"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPublicationType"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPublicationType"
             }
           ]
         }

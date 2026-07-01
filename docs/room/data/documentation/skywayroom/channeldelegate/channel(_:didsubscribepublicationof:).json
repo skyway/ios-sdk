@@ -220,7 +220,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -618,31 +618,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelDelegate/title",
-          "value": "SKWChannelDelegate"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelDelegate/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWChannelDelegate"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelDelegate/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWChannelDelegate"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel/title",
           "value": "SKWChannel"
         },
@@ -688,6 +663,31 @@
             {
               "kind": "identifier",
               "text": "SKWSubscription"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelDelegate/title",
+          "value": "SKWChannelDelegate"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelDelegate/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWChannelDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelDelegate/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWChannelDelegate"
             }
           ]
         }

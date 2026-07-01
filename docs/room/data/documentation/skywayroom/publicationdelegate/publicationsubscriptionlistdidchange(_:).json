@@ -155,7 +155,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -435,6 +435,31 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate/title",
+          "value": "SKWPublicationDelegate"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPublicationDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPublicationDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate~1publicationSubscriptionListDidChange(_:)/title",
           "value": "publicationSubscriptionListDidChange:"
         },
@@ -474,31 +499,6 @@
             {
               "kind": "identifier",
               "text": "SKWPublication"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate/title",
-          "value": "SKWPublicationDelegate"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWPublicationDelegate"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWPublicationDelegate"
             }
           ]
         }

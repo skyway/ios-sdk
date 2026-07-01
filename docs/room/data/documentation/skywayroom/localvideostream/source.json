@@ -116,7 +116,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -368,31 +368,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource/title",
-          "value": "SKWVideoSource"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWVideoSource"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWVideoSource"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalVideoStream~1source/title",
           "value": "source"
         },
@@ -428,6 +403,31 @@
             {
               "kind": "identifier",
               "text": "SKWLocalVideoStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource/title",
+          "value": "SKWVideoSource"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWVideoSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWVideoSource"
             }
           ]
         }

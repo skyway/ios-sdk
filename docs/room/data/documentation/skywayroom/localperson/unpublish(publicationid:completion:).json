@@ -267,7 +267,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -634,31 +634,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWLocalPersonUnpublishCompletion/title",
-          "value": "SKWLocalPersonUnpublishCompletion"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWLocalPersonUnpublishCompletion/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWLocalPersonUnpublishCompletion"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWLocalPersonUnpublishCompletion/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWLocalPersonUnpublishCompletion"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalPerson/title",
           "value": "SKWLocalPerson"
         },
@@ -679,6 +654,31 @@
             {
               "kind": "identifier",
               "text": "SKWLocalPerson"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWLocalPersonUnpublishCompletion/title",
+          "value": "SKWLocalPersonUnpublishCompletion"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWLocalPersonUnpublishCompletion/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWLocalPersonUnpublishCompletion"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWLocalPersonUnpublishCompletion/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWLocalPersonUnpublishCompletion"
             }
           ]
         }

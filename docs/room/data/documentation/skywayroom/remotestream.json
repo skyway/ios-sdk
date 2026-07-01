@@ -94,7 +94,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -462,56 +462,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream/title",
-          "value": "SKWRemoteAudioStream"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWRemoteAudioStream"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWRemoteAudioStream"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteDataStream/title",
-          "value": "SKWRemoteDataStream"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteDataStream/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWRemoteDataStream"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteDataStream/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWRemoteDataStream"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteVideoStream/title",
           "value": "SKWRemoteVideoStream"
         },
@@ -582,6 +532,56 @@
             {
               "kind": "identifier",
               "text": "SKWRemoteStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteDataStream/title",
+          "value": "SKWRemoteDataStream"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteDataStream/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemoteDataStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteDataStream/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemoteDataStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream/title",
+          "value": "SKWRemoteAudioStream"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemoteAudioStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteAudioStream/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemoteAudioStream"
             }
           ]
         }

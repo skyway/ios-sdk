@@ -101,7 +101,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -297,25 +297,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextDelegate~1reconnectingSucceeded()/title",
-          "value": "reconnectingSucceeded"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextDelegate~1reconnectingSucceeded()/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "reconnectingSucceeded"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextDelegate/title",
           "value": "SKWContextDelegate"
         },
@@ -336,6 +317,25 @@
             {
               "kind": "identifier",
               "text": "SKWContextDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextDelegate~1reconnectingSucceeded()/title",
+          "value": "reconnectingSucceeded"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextDelegate~1reconnectingSucceeded()/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "reconnectingSucceeded"
             }
           ]
         }

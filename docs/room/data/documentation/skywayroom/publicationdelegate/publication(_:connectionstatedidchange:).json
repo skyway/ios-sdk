@@ -212,7 +212,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -608,31 +608,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState/title",
-          "value": "SKWConnectionState"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWConnectionState"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWConnectionState"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate/title",
           "value": "SKWPublicationDelegate"
         },
@@ -672,6 +647,31 @@
             {
               "kind": "identifier",
               "text": "publication:connectionStateDidChange:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState/title",
+          "value": "SKWConnectionState"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWConnectionState"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWConnectionState"
             }
           ]
         }

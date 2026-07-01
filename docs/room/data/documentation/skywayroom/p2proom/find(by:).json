@@ -262,7 +262,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -698,26 +698,20 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/title",
-          "value": "Room"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1find(by:)/title",
+          "value": "findBy:completionHandler:"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1find(by:)/fragments",
           "value": [
             {
-              "kind": "identifier",
-              "text": "Room"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/navigatorTitle",
-          "value": [
+              "kind": "text",
+              "text": "+ "
+            },
             {
               "kind": "identifier",
-              "text": "Room"
+              "text": "findBy:completionHandler:"
             }
           ]
         },
@@ -748,20 +742,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1find(by:)/title",
-          "value": "findBy:completionHandler:"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/title",
+          "value": "Room"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1find(by:)/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/fragments",
           "value": [
             {
-              "kind": "text",
-              "text": "+ "
-            },
+              "kind": "identifier",
+              "text": "Room"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/navigatorTitle",
+          "value": [
             {
               "kind": "identifier",
-              "text": "findBy:completionHandler:"
+              "text": "Room"
             }
           ]
         }

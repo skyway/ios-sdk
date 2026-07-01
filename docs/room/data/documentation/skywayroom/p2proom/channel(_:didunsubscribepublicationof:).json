@@ -174,7 +174,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -503,26 +503,45 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Subscription/title",
-          "value": "SKWSubscription"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel/title",
+          "value": "SKWChannel"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Subscription/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWSubscription"
+              "text": "SKWChannel"
             }
           ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Subscription/navigatorTitle",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel/navigatorTitle",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWSubscription"
+              "text": "SKWChannel"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1channel(_:didUnsubscribePublicationOf:)/title",
+          "value": "channel:didUnsubscribePublicationOfSubscription:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1channel(_:didUnsubscribePublicationOf:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "channel:didUnsubscribePublicationOfSubscription:"
             }
           ]
         },
@@ -553,45 +572,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1channel(_:didUnsubscribePublicationOf:)/title",
-          "value": "channel:didUnsubscribePublicationOfSubscription:"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Subscription/title",
+          "value": "SKWSubscription"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1channel(_:didUnsubscribePublicationOf:)/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Subscription/fragments",
           "value": [
             {
-              "kind": "text",
-              "text": "- "
-            },
-            {
               "kind": "identifier",
-              "text": "channel:didUnsubscribePublicationOfSubscription:"
+              "text": "SKWSubscription"
             }
           ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel/title",
-          "value": "SKWChannel"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Subscription/navigatorTitle",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWChannel"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWChannel"
+              "text": "SKWSubscription"
             }
           ]
         }

@@ -94,7 +94,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -456,21 +456,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsICEParams~1version/title",
-          "value": "version"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsICEParams~1version/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "version"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsICEParams~1domain/title",
           "value": "domain"
         },
@@ -481,6 +466,36 @@
             {
               "kind": "identifier",
               "text": "domain"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsICEParams~1secure/title",
+          "value": "secure"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsICEParams~1secure/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "secure"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsICEParams~1version/title",
+          "value": "version"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsICEParams~1version/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "version"
             }
           ]
         },
@@ -506,21 +521,6 @@
             {
               "kind": "identifier",
               "text": "SKWContextOptionsICEParams"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsICEParams~1secure/title",
-          "value": "secure"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsICEParams~1secure/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "secure"
             }
           ]
         }

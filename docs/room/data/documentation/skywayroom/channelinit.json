@@ -94,7 +94,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -455,21 +455,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelInit~1metadata/title",
-          "value": "metadata"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelInit~1metadata/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "metadata"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelInit~1name/title",
           "value": "name"
         },
@@ -480,6 +465,21 @@
             {
               "kind": "identifier",
               "text": "name"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelInit~1metadata/title",
+          "value": "metadata"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelInit~1metadata/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "metadata"
             }
           ]
         }

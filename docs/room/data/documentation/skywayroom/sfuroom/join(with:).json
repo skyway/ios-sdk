@@ -265,7 +265,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -770,20 +770,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFURoom~1join(with:)/title",
-          "value": "joinWith:completionHandler:"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalSFURoomMember/title",
+          "value": "LocalSFURoomMember"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFURoom~1join(with:)/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalSFURoomMember/fragments",
           "value": [
             {
-              "kind": "text",
-              "text": "- "
-            },
+              "kind": "identifier",
+              "text": "LocalSFURoomMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalSFURoomMember/navigatorTitle",
+          "value": [
             {
               "kind": "identifier",
-              "text": "joinWith:completionHandler:"
+              "text": "LocalSFURoomMember"
             }
           ]
         },
@@ -814,31 +820,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/title",
-          "value": "Room"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "Room"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "Room"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFURoom/title",
           "value": "SFURoom"
         },
@@ -864,26 +845,45 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalSFURoomMember/title",
-          "value": "LocalSFURoomMember"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/title",
+          "value": "Room"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalSFURoomMember/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "LocalSFURoomMember"
+              "text": "Room"
             }
           ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalSFURoomMember/navigatorTitle",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/navigatorTitle",
           "value": [
             {
               "kind": "identifier",
-              "text": "LocalSFURoomMember"
+              "text": "Room"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFURoom~1join(with:)/title",
+          "value": "joinWith:completionHandler:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFURoom~1join(with:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "joinWith:completionHandler:"
             }
           ]
         }

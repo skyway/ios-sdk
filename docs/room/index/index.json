@@ -64,6 +64,31 @@
                 "type": "groupMarker"
               },
               {
+                "path": "/documentation/skywayroom/blurprocessor/isactive",
+                "title": "isActive",
+                "type": "property"
+              },
+              {
+                "title": "Instance Methods",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/blurprocessor/processfor:",
+                "title": "processFor:",
+                "type": "method"
+              }
+            ],
+            "path": "/documentation/skywayroom/blurprocessor",
+            "title": "BlurProcessor",
+            "type": "class"
+          },
+          {
+            "children": [
+              {
+                "title": "Instance Properties",
+                "type": "groupMarker"
+              },
+              {
                 "path": "/documentation/skywayroom/cameracaptureoptions/preferredmaxframerate",
                 "title": "preferredMaxFrameRate",
                 "type": "property"
@@ -755,6 +780,11 @@
               {
                 "title": "Instance Methods",
                 "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/filevideosource/createstream()",
+                "title": "createStream",
+                "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/filevideosource/init(filename:)",
@@ -2972,8 +3002,23 @@
                 "type": "groupMarker"
               },
               {
+                "path": "/documentation/skywayroom/videosource/add(_:)",
+                "title": "add:",
+                "type": "method"
+              },
+              {
                 "path": "/documentation/skywayroom/videosource/createstream()",
                 "title": "createStream",
+                "type": "method"
+              },
+              {
+                "path": "/documentation/skywayroom/videosource/remove(_:)",
+                "title": "remove:",
+                "type": "method"
+              },
+              {
+                "path": "/documentation/skywayroom/videosource/removeallprocessors()",
+                "title": "removeAllProcessors",
                 "type": "method"
               }
             ],
@@ -3000,6 +3045,31 @@
             ],
             "path": "/documentation/skywayroom/videoview",
             "title": "SKWVideoView",
+            "type": "class"
+          },
+          {
+            "children": [
+              {
+                "title": "Instance Properties",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/virtualbackgroundprocessor/isactive",
+                "title": "isActive",
+                "type": "property"
+              },
+              {
+                "title": "Instance Methods",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/virtualbackgroundprocessor/processfor:",
+                "title": "processFor:",
+                "type": "method"
+              }
+            ],
+            "path": "/documentation/skywayroom/virtualbackgroundprocessor",
+            "title": "VirtualBackgroundProcessor",
             "type": "class"
           },
           {
@@ -3643,6 +3713,31 @@
             ],
             "path": "/documentation/skywayroom/subscriptiondelegate",
             "title": "SKWSubscriptionDelegate",
+            "type": "protocol"
+          },
+          {
+            "children": [
+              {
+                "title": "Instance Properties",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/videoprocessor/isactive",
+                "title": "isActive",
+                "type": "property"
+              },
+              {
+                "title": "Instance Methods",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/videoprocessor/process(for:)",
+                "title": "processFor:",
+                "type": "method"
+              }
+            ],
+            "path": "/documentation/skywayroom/videoprocessor",
+            "title": "SKWVideoProcessor",
             "type": "protocol"
           },
           {
@@ -4426,6 +4521,46 @@
           {
             "children": [
               {
+                "title": "Initializers",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/blurprocessor/init(blurradius:inferenceinterval:)",
+                "title": "init(blurRadius: Float, inferenceInterval: UInt8)",
+                "type": "init"
+              },
+              {
+                "title": "Instance Properties",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/blurprocessor/blurradius",
+                "title": "var blurRadius: Float",
+                "type": "property"
+              },
+              {
+                "path": "/documentation/skywayroom/blurprocessor/inferenceinterval",
+                "title": "var inferenceInterval: UInt8",
+                "type": "property"
+              },
+              {
+                "path": "/documentation/skywayroom/blurprocessor/isactive",
+                "title": "var isActive: Bool",
+                "type": "property"
+              },
+              {
+                "path": "/documentation/skywayroom/blurprocessor/qualitylevel",
+                "title": "var qualityLevel: VNGeneratePersonSegmentationRequest.QualityLevel",
+                "type": "property"
+              }
+            ],
+            "path": "/documentation/skywayroom/blurprocessor",
+            "title": "BlurProcessor",
+            "type": "class"
+          },
+          {
+            "children": [
+              {
                 "title": "Instance Properties",
                 "type": "groupMarker"
               },
@@ -5134,6 +5269,11 @@
               {
                 "title": "Instance Methods",
                 "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/filevideosource/createstream()",
+                "title": "func createStream() -> LocalVideoStream",
+                "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/filevideosource/startcapturing(onerror:)",
@@ -7332,8 +7472,23 @@
                 "type": "groupMarker"
               },
               {
+                "path": "/documentation/skywayroom/videosource/add(_:)",
+                "title": "func add(any VideoProcessor)",
+                "type": "method"
+              },
+              {
                 "path": "/documentation/skywayroom/videosource/createstream()",
                 "title": "func createStream() -> LocalVideoStream",
+                "type": "method"
+              },
+              {
+                "path": "/documentation/skywayroom/videosource/remove(_:)",
+                "title": "func remove(any VideoProcessor)",
+                "type": "method"
+              },
+              {
+                "path": "/documentation/skywayroom/videosource/removeallprocessors()",
+                "title": "func removeAllProcessors()",
                 "type": "method"
               }
             ],
@@ -7360,6 +7515,46 @@
             ],
             "path": "/documentation/skywayroom/videoview",
             "title": "VideoView",
+            "type": "class"
+          },
+          {
+            "children": [
+              {
+                "title": "Initializers",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/virtualbackgroundprocessor/init(backgroundimage:inferenceinterval:)",
+                "title": "init(backgroundImage: UIImage?, inferenceInterval: UInt8)",
+                "type": "init"
+              },
+              {
+                "title": "Instance Properties",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/virtualbackgroundprocessor/backgroundimage",
+                "title": "var backgroundImage: UIImage?",
+                "type": "property"
+              },
+              {
+                "path": "/documentation/skywayroom/virtualbackgroundprocessor/inferenceinterval",
+                "title": "var inferenceInterval: UInt8",
+                "type": "property"
+              },
+              {
+                "path": "/documentation/skywayroom/virtualbackgroundprocessor/isactive",
+                "title": "var isActive: Bool",
+                "type": "property"
+              },
+              {
+                "path": "/documentation/skywayroom/virtualbackgroundprocessor/qualitylevel",
+                "title": "var qualityLevel: VNGeneratePersonSegmentationRequest.QualityLevel",
+                "type": "property"
+              }
+            ],
+            "path": "/documentation/skywayroom/virtualbackgroundprocessor",
+            "title": "VirtualBackgroundProcessor",
             "type": "class"
           },
           {
@@ -8003,6 +8198,31 @@
             ],
             "path": "/documentation/skywayroom/subscriptiondelegate",
             "title": "SubscriptionDelegate",
+            "type": "protocol"
+          },
+          {
+            "children": [
+              {
+                "title": "Instance Properties",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/videoprocessor/isactive",
+                "title": "var isActive: Bool",
+                "type": "property"
+              },
+              {
+                "title": "Instance Methods",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/videoprocessor/process(for:)",
+                "title": "func process(for: CVPixelBuffer!)",
+                "type": "method"
+              }
+            ],
+            "path": "/documentation/skywayroom/videoprocessor",
+            "title": "VideoProcessor",
             "type": "protocol"
           },
           {

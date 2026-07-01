@@ -338,7 +338,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -738,31 +738,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelInit/title",
-          "value": "SKWChannelInit"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelInit/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWChannelInit"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelInit/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWChannelInit"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel~1findOrCreate(with:completion:)/title",
           "value": "findOrCreateWithInit:completion:"
         },
@@ -777,31 +752,6 @@
             {
               "kind": "identifier",
               "text": "findOrCreateWithInit:completion:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWChannelCompletion/title",
-          "value": "SKWChannelCompletion"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWChannelCompletion/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWChannelCompletion"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWChannelCompletion/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWChannelCompletion"
             }
           ]
         },
@@ -827,6 +777,56 @@
             {
               "kind": "identifier",
               "text": "SKWChannel"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelInit/title",
+          "value": "SKWChannelInit"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelInit/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWChannelInit"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelInit/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWChannelInit"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWChannelCompletion/title",
+          "value": "SKWChannelCompletion"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWChannelCompletion/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWChannelCompletion"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWChannelCompletion/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWChannelCompletion"
             }
           ]
         }

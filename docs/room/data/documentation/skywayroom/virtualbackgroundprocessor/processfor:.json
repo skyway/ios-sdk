@@ -1,0 +1,322 @@
+{
+  "abstract": [
+    {
+      "text": "カメラから渡される生のピクセルバッファを毎フレーム受け取り、",
+      "type": "text"
+    },
+    {
+      "text": " ",
+      "type": "text"
+    },
+    {
+      "text": "人物背景を差し替えた結果を ",
+      "type": "text"
+    },
+    {
+      "text": "同じ",
+      "type": "text"
+    },
+    {
+      "text": " pixelBuffer に書き戻すことで映像を加工します。",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VirtualBackgroundProcessor"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "occ",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VirtualBackgroundProcessor/processFor:"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "c:@M@SkyWayRoom@objc(cs)VirtualBackgroundProcessor(im)processFor:",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "- "
+      },
+      {
+        "kind": "identifier",
+        "text": "processFor:"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "processFor:"
+      }
+    ],
+    "platforms": [
+      {
+        "beta": false,
+        "deprecated": false,
+        "introducedAt": "15.0",
+        "name": "iOS",
+        "unavailable": false
+      },
+      {
+        "beta": false,
+        "deprecated": false,
+        "introducedAt": "15.0",
+        "name": "iPadOS",
+        "unavailable": false
+      },
+      {
+        "beta": false,
+        "deprecated": false,
+        "introducedAt": "15.0",
+        "name": "Mac Catalyst",
+        "unavailable": false
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "symbolKind": "method",
+    "title": "processFor:"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "text",
+              "text": "- ("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:v",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": ") "
+            },
+            {
+              "kind": "identifier",
+              "text": "processFor:"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CVPixelBufferRef",
+              "text": "CVPixelBufferRef"
+            },
+            {
+              "kind": "text",
+              "text": ") "
+            },
+            {
+              "kind": "internalParam",
+              "text": "pixelBuffer"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "\\Endcode",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "kind": "content"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.7.0",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VirtualBackgroundProcessor": {
+      "abstract": [
+        {
+          "text": "仮想背景プロセッサ。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "VirtualBackgroundProcessor"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VirtualBackgroundProcessor",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "VirtualBackgroundProcessor"
+        }
+      ],
+      "role": "symbol",
+      "title": "VirtualBackgroundProcessor",
+      "type": "topic",
+      "url": "/documentation/skywayroom/virtualbackgroundprocessor"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VirtualBackgroundProcessor/processFor:": {
+      "abstract": [
+        {
+          "text": "カメラから渡される生のピクセルバッファを毎フレーム受け取り、",
+          "type": "text"
+        },
+        {
+          "text": " ",
+          "type": "text"
+        },
+        {
+          "text": "人物背景を差し替えた結果を ",
+          "type": "text"
+        },
+        {
+          "text": "同じ",
+          "type": "text"
+        },
+        {
+          "text": " pixelBuffer に書き戻すことで映像を加工します。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "processFor:"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VirtualBackgroundProcessor/processFor:",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "processFor:"
+        }
+      ],
+      "role": "symbol",
+      "title": "processFor:",
+      "type": "topic",
+      "url": "/documentation/skywayroom/virtualbackgroundprocessor/processfor:"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VirtualBackgroundProcessor/title",
+          "value": "VirtualBackgroundProcessor"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VirtualBackgroundProcessor/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "VirtualBackgroundProcessor"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VirtualBackgroundProcessor/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "VirtualBackgroundProcessor"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/virtualbackgroundprocessor/processfor:"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ]
+}

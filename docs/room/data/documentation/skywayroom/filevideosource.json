@@ -114,7 +114,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -165,6 +165,49 @@
       "title": "FileVideoSource",
       "type": "topic",
       "url": "/documentation/skywayroom/filevideosource"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/FileVideoSource/createStream()": {
+      "abstract": [
+        {
+          "text": "Streamを作成します。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "createStream"
+        },
+        {
+          "kind": "text",
+          "text": "() -> "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWLocalVideoStream",
+          "text": "LocalVideoStream"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/FileVideoSource/createStream()",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "createStream"
+        }
+      ],
+      "role": "symbol",
+      "title": "createStream()",
+      "type": "topic",
+      "url": "/documentation/skywayroom/filevideosource/createstream()"
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/FileVideoSource/filename": {
       "abstract": [],
@@ -383,6 +426,11 @@
       "title": "ObjectiveC.NSObjectProtocol",
       "type": "unresolvable"
     },
+    "doc://com.ntt.skyway.room/objc(pl)RTCVideoCapturerDelegate": {
+      "identifier": "doc://com.ntt.skyway.room/objc(pl)RTCVideoCapturerDelegate",
+      "title": "RTCVideoCapturerDelegate",
+      "type": "unresolvable"
+    },
     "doc://com.ntt.skyway.room/s23CustomStringConvertibleP": {
       "identifier": "doc://com.ntt.skyway.room/s23CustomStringConvertibleP",
       "title": "Swift.CustomStringConvertible",
@@ -415,7 +463,8 @@
         "doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP",
         "doc://com.ntt.skyway.room/s23CustomStringConvertibleP",
         "doc://com.ntt.skyway.room/SQ",
-        "doc://com.ntt.skyway.room/SH"
+        "doc://com.ntt.skyway.room/SH",
+        "doc://com.ntt.skyway.room/objc(pl)RTCVideoCapturerDelegate"
       ],
       "kind": "relationships",
       "title": "Conforms To",
@@ -449,6 +498,7 @@
       "anchor": "Instance-Methods",
       "generated": true,
       "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/FileVideoSource/createStream()",
         "doc://com.ntt.skyway.room/documentation/SkyWayRoom/FileVideoSource/startCapturing(onError:)",
         "doc://com.ntt.skyway.room/documentation/SkyWayRoom/FileVideoSource/stopCapturing()"
       ],
@@ -519,6 +569,7 @@
               "anchor": "Instance-Methods",
               "generated": true,
               "identifiers": [
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/FileVideoSource/createStream()",
                 "doc://com.ntt.skyway.room/documentation/SkyWayRoom/FileVideoSource/init(filename:)",
                 "doc://com.ntt.skyway.room/documentation/SkyWayRoom/FileVideoSource/startCapturing(onError:)",
                 "doc://com.ntt.skyway.room/documentation/SkyWayRoom/FileVideoSource/stopCapturing()"
@@ -538,6 +589,14 @@
               "kind": "relationships",
               "title": "Inherits From",
               "type": "inheritsFrom"
+            },
+            {
+              "identifiers": [
+                "doc://com.ntt.skyway.room/objc(pl)RTCVideoCapturerDelegate"
+              ],
+              "kind": "relationships",
+              "title": "Conforms To",
+              "type": "conformsTo"
             }
           ]
         },
@@ -589,12 +648,12 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource~1init(filename:)/title",
-          "value": "initWithFilename:"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource~1stopCapturing()/title",
+          "value": "stopCapturing"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource~1init(filename:)/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource~1stopCapturing()/fragments",
           "value": [
             {
               "kind": "text",
@@ -602,7 +661,32 @@
             },
             {
               "kind": "identifier",
-              "text": "initWithFilename:"
+              "text": "stopCapturing"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource/title",
+          "value": "SKWFileVideoSource"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWFileVideoSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWFileVideoSource"
             }
           ]
         },
@@ -628,6 +712,44 @@
             {
               "kind": "identifier",
               "text": "SKWVideoSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource~1createStream()/title",
+          "value": "createStream"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource~1createStream()/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "createStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource~1init(filename:)/title",
+          "value": "initWithFilename:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource~1init(filename:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "initWithFilename:"
             }
           ]
         },
@@ -662,50 +784,6 @@
             {
               "kind": "identifier",
               "text": "filename"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource/title",
-          "value": "SKWFileVideoSource"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWFileVideoSource"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWFileVideoSource"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource~1stopCapturing()/title",
-          "value": "stopCapturing"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource~1stopCapturing()/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "stopCapturing"
             }
           ]
         }

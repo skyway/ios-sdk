@@ -212,7 +212,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -583,26 +583,20 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate/title",
-          "value": "SKWLocalDataStreamDelegate"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate~1dataStream(_:didBecomeUnwritableFor:)/title",
+          "value": "dataStream:didBecomeUnwritableForSubscriber:"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate~1dataStream(_:didBecomeUnwritableFor:)/fragments",
           "value": [
             {
-              "kind": "identifier",
-              "text": "SKWLocalDataStreamDelegate"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate/navigatorTitle",
-          "value": [
+              "kind": "text",
+              "text": "- "
+            },
             {
               "kind": "identifier",
-              "text": "SKWLocalDataStreamDelegate"
+              "text": "dataStream:didBecomeUnwritableForSubscriber:"
             }
           ]
         },
@@ -633,6 +627,31 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate/title",
+          "value": "SKWLocalDataStreamDelegate"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWLocalDataStreamDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWLocalDataStreamDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStream/title",
           "value": "SKWLocalDataStream"
         },
@@ -653,25 +672,6 @@
             {
               "kind": "identifier",
               "text": "SKWLocalDataStream"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate~1dataStream(_:didBecomeUnwritableFor:)/title",
-          "value": "dataStream:didBecomeUnwritableForSubscriber:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate~1dataStream(_:didBecomeUnwritableFor:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "dataStream:didBecomeUnwritableForSubscriber:"
             }
           ]
         }

@@ -93,7 +93,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -434,25 +434,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate~1dataStream(_:didBecomeWritableFor:)/title",
-          "value": "dataStream:didBecomeWritableForSubscriber:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate~1dataStream(_:didBecomeWritableFor:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "dataStream:didBecomeWritableForSubscriber:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate/title",
           "value": "SKWLocalDataStreamDelegate"
         },
@@ -473,6 +454,25 @@
             {
               "kind": "identifier",
               "text": "SKWLocalDataStreamDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate~1dataStream(_:didBecomeWritableFor:)/title",
+          "value": "dataStream:didBecomeWritableForSubscriber:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate~1dataStream(_:didBecomeWritableFor:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "dataStream:didBecomeWritableForSubscriber:"
             }
           ]
         },

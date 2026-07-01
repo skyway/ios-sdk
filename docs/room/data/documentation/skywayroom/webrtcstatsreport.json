@@ -107,7 +107,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -513,21 +513,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStatsReport~1params/title",
-          "value": "params"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStatsReport~1params/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "params"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStatsReport~1type/title",
           "value": "type"
         },
@@ -538,6 +523,21 @@
             {
               "kind": "identifier",
               "text": "type"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStatsReport~1id/title",
+          "value": "id"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStatsReport~1id/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "id"
             }
           ]
         },
@@ -568,16 +568,16 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStatsReport~1id/title",
-          "value": "id"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStatsReport~1params/title",
+          "value": "params"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStatsReport~1id/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStatsReport~1params/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "id"
+              "text": "params"
             }
           ]
         }

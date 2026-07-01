@@ -247,7 +247,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -606,25 +606,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Logger~1traceLog(withMessage:filename:function:line:)/title",
-          "value": "traceLogWithMessage:filename:function:line:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Logger~1traceLog(withMessage:filename:function:line:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "+ "
-            },
-            {
-              "kind": "identifier",
-              "text": "traceLogWithMessage:filename:function:line:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Logger/title",
           "value": "SKWLogger"
         },
@@ -645,6 +626,25 @@
             {
               "kind": "identifier",
               "text": "SKWLogger"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Logger~1traceLog(withMessage:filename:function:line:)/title",
+          "value": "traceLogWithMessage:filename:function:line:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Logger~1traceLog(withMessage:filename:function:line:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "+ "
+            },
+            {
+              "kind": "identifier",
+              "text": "traceLogWithMessage:filename:function:line:"
             }
           ]
         }

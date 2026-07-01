@@ -120,7 +120,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -375,6 +375,31 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Forwarding/title",
+          "value": "SKWForwarding"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Forwarding/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWForwarding"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Forwarding/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWForwarding"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/title",
           "value": "SKWSFUBotMember"
         },
@@ -410,31 +435,6 @@
             {
               "kind": "identifier",
               "text": "forwardings"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Forwarding/title",
-          "value": "SKWForwarding"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Forwarding/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWForwarding"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Forwarding/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWForwarding"
             }
           ]
         }

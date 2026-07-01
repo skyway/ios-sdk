@@ -94,7 +94,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -619,21 +619,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1encodings/title",
-          "value": "encodings"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1encodings/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "encodings"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions/title",
           "value": "SKWPublicationOptions"
         },
@@ -659,16 +644,16 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1type/title",
-          "value": "type"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1metadata/title",
+          "value": "metadata"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1type/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1metadata/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "type"
+              "text": "metadata"
             }
           ]
         },
@@ -699,21 +684,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1codecCapabilities/title",
-          "value": "codecCapabilities"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1codecCapabilities/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "codecCapabilities"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1isEnabled/title",
           "value": "isEnabled"
         },
@@ -729,16 +699,46 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1metadata/title",
-          "value": "metadata"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1type/title",
+          "value": "type"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1metadata/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1type/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "metadata"
+              "text": "type"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1encodings/title",
+          "value": "encodings"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1encodings/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "encodings"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1codecCapabilities/title",
+          "value": "codecCapabilities"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions~1codecCapabilities/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "codecCapabilities"
             }
           ]
         }

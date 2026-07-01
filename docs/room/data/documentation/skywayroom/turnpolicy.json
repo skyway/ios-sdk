@@ -128,7 +128,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -522,16 +522,16 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy~1disable/title",
-          "value": "SKWTurnPolicyDisable"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy~1turnOnly/title",
+          "value": "SKWTurnPolicyTurnOnly"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy~1disable/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy~1turnOnly/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWTurnPolicyDisable"
+              "text": "SKWTurnPolicyTurnOnly"
             }
           ]
         },
@@ -547,21 +547,6 @@
             {
               "kind": "identifier",
               "text": "SKWTurnPolicyEnable"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy~1turnOnly/title",
-          "value": "SKWTurnPolicyTurnOnly"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy~1turnOnly/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWTurnPolicyTurnOnly"
             }
           ]
         },
@@ -587,6 +572,21 @@
             {
               "kind": "identifier",
               "text": "SKWTurnPolicy"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy~1disable/title",
+          "value": "SKWTurnPolicyDisable"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy~1disable/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWTurnPolicyDisable"
             }
           ]
         }

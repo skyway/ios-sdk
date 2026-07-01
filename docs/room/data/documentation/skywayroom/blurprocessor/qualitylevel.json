@@ -1,0 +1,350 @@
+{
+  "abstract": [
+    {
+      "text": "Vision の人物セグメンテーションマスクの品質レベル。",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/BlurProcessor"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/BlurProcessor/qualityLevel"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "s:10SkyWayRoom13BlurProcessorC12qualityLevelSo042VNGeneratePersonSegmentationRequestQualityG0Vvp",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "var"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "qualityLevel"
+      },
+      {
+        "kind": "text",
+        "text": ": "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "c:objc(cs)VNGeneratePersonSegmentationRequest",
+        "text": "VNGeneratePersonSegmentationRequest"
+      },
+      {
+        "kind": "text",
+        "text": "."
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "c:@E@VNGeneratePersonSegmentationRequestQualityLevel",
+        "text": "QualityLevel"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "platforms": [
+      {
+        "beta": false,
+        "deprecated": false,
+        "introducedAt": "15.0",
+        "name": "iOS",
+        "unavailable": false
+      },
+      {
+        "beta": false,
+        "deprecated": false,
+        "introducedAt": "15.0",
+        "name": "iPadOS",
+        "unavailable": false
+      },
+      {
+        "beta": false,
+        "deprecated": false,
+        "introducedAt": "15.0",
+        "name": "Mac Catalyst",
+        "unavailable": false
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Instance Property",
+    "symbolKind": "property",
+    "title": "qualityLevel"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "var"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "qualityLevel"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)VNGeneratePersonSegmentationRequest",
+              "text": "VNGeneratePersonSegmentationRequest"
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@E@VNGeneratePersonSegmentationRequestQualityLevel",
+              "text": "QualityLevel"
+            },
+            {
+              "kind": "text",
+              "text": " { "
+            },
+            {
+              "kind": "keyword",
+              "text": "get"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "set"
+            },
+            {
+              "kind": "text",
+              "text": " }"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "品質レベルが高いほどセグメンテーション精度が向上しますが、処理負荷も増加します。",
+              "type": "text"
+            },
+            {
+              "text": " ",
+              "type": "text"
+            },
+            {
+              "text": "デフォルトは ",
+              "type": "text"
+            },
+            {
+              "code": ".balanced",
+              "type": "codeVoice"
+            },
+            {
+              "text": " です。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "kind": "content"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.7.0",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/BlurProcessor": {
+      "abstract": [
+        {
+          "text": "背景ぼかしプロセッサ。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "BlurProcessor"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/BlurProcessor",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "BlurProcessor"
+        }
+      ],
+      "role": "symbol",
+      "title": "BlurProcessor",
+      "type": "topic",
+      "url": "/documentation/skywayroom/blurprocessor"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/BlurProcessor/qualityLevel": {
+      "abstract": [
+        {
+          "text": "Vision の人物セグメンテーションマスクの品質レベル。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "qualityLevel"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)VNGeneratePersonSegmentationRequest",
+          "text": "VNGeneratePersonSegmentationRequest"
+        },
+        {
+          "kind": "text",
+          "text": "."
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@E@VNGeneratePersonSegmentationRequestQualityLevel",
+          "text": "QualityLevel"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/BlurProcessor/qualityLevel",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "qualityLevel",
+      "type": "topic",
+      "url": "/documentation/skywayroom/blurprocessor/qualitylevel"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1BlurProcessor/title",
+          "value": "BlurProcessor"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1BlurProcessor/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "BlurProcessor"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1BlurProcessor/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "BlurProcessor"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/blurprocessor/qualitylevel"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    }
+  ]
+}

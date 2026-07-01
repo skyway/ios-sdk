@@ -220,7 +220,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -591,31 +591,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate/title",
-          "value": "RemoteRoomMemberDelegate"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "RemoteRoomMemberDelegate"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "RemoteRoomMemberDelegate"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate~1remoteRoomMember(_:didSubscribePublicationOf:)/title",
           "value": "remoteRoomMember:didSubscribePublicationOf:"
         },
@@ -630,31 +605,6 @@
             {
               "kind": "identifier",
               "text": "remoteRoomMember:didSubscribePublicationOf:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomSubscription/title",
-          "value": "RoomSubscription"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomSubscription/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "RoomSubscription"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomSubscription/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "RoomSubscription"
             }
           ]
         },
@@ -680,6 +630,56 @@
             {
               "kind": "identifier",
               "text": "RemoteRoomMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate/title",
+          "value": "RemoteRoomMemberDelegate"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RemoteRoomMemberDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RemoteRoomMemberDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomSubscription/title",
+          "value": "RoomSubscription"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomSubscription/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomSubscription"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomSubscription/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomSubscription"
             }
           ]
         }

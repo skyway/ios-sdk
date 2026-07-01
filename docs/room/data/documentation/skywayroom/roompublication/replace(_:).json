@@ -184,7 +184,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -464,26 +464,20 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalStream/title",
-          "value": "SKWLocalStream"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublication~1replace(_:)/title",
+          "value": "replace:"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalStream/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublication~1replace(_:)/fragments",
           "value": [
             {
-              "kind": "identifier",
-              "text": "SKWLocalStream"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalStream/navigatorTitle",
-          "value": [
+              "kind": "text",
+              "text": "- "
+            },
             {
               "kind": "identifier",
-              "text": "SKWLocalStream"
+              "text": "replace:"
             }
           ]
         },
@@ -514,20 +508,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublication~1replace(_:)/title",
-          "value": "replace:"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalStream/title",
+          "value": "SKWLocalStream"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublication~1replace(_:)/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalStream/fragments",
           "value": [
             {
-              "kind": "text",
-              "text": "- "
-            },
+              "kind": "identifier",
+              "text": "SKWLocalStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalStream/navigatorTitle",
+          "value": [
             {
               "kind": "identifier",
-              "text": "replace:"
+              "text": "SKWLocalStream"
             }
           ]
         }

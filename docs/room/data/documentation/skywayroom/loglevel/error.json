@@ -85,7 +85,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -256,21 +256,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LogLevel~1error/title",
-          "value": "SKWLogLevelError"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LogLevel~1error/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWLogLevelError"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LogLevel/title",
           "value": "SKWLogLevel"
         },
@@ -291,6 +276,21 @@
             {
               "kind": "identifier",
               "text": "SKWLogLevel"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LogLevel~1error/title",
+          "value": "SKWLogLevelError"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LogLevel~1error/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWLogLevelError"
             }
           ]
         }

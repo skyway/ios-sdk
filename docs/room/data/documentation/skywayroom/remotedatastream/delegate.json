@@ -136,7 +136,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -386,26 +386,16 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteDataStream/title",
-          "value": "SKWRemoteDataStream"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteDataStream~1delegate/title",
+          "value": "delegate"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteDataStream/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteDataStream~1delegate/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWRemoteDataStream"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteDataStream/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWRemoteDataStream"
+              "text": "delegate"
             }
           ]
         },
@@ -436,16 +426,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteDataStream~1delegate/title",
-          "value": "delegate"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteDataStream/title",
+          "value": "SKWRemoteDataStream"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteDataStream~1delegate/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteDataStream/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "delegate"
+              "text": "SKWRemoteDataStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteDataStream/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemoteDataStream"
             }
           ]
         }

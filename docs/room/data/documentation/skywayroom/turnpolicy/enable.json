@@ -105,7 +105,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -276,21 +276,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy~1enable/title",
-          "value": "SKWTurnPolicyEnable"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy~1enable/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWTurnPolicyEnable"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy/title",
           "value": "SKWTurnPolicy"
         },
@@ -311,6 +296,21 @@
             {
               "kind": "identifier",
               "text": "SKWTurnPolicy"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy~1enable/title",
+          "value": "SKWTurnPolicyEnable"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy~1enable/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWTurnPolicyEnable"
             }
           ]
         }

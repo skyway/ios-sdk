@@ -28,7 +28,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -229,26 +229,20 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMember/title",
-          "value": "RemoteRoomMember"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMember~1member(_:didUpdateMetadata:)/title",
+          "value": "member:didUpdateMetadata:"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMember/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMember~1member(_:didUpdateMetadata:)/fragments",
           "value": [
             {
-              "kind": "identifier",
-              "text": "RemoteRoomMember"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMember/navigatorTitle",
-          "value": [
+              "kind": "text",
+              "text": "- "
+            },
             {
               "kind": "identifier",
-              "text": "RemoteRoomMember"
+              "text": "member:didUpdateMetadata:"
             }
           ]
         },
@@ -273,20 +267,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMember~1member(_:didUpdateMetadata:)/title",
-          "value": "member:didUpdateMetadata:"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMember/title",
+          "value": "RemoteRoomMember"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMember~1member(_:didUpdateMetadata:)/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMember/fragments",
           "value": [
             {
-              "kind": "text",
-              "text": "- "
-            },
+              "kind": "identifier",
+              "text": "RemoteRoomMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMember/navigatorTitle",
+          "value": [
             {
               "kind": "identifier",
-              "text": "member:didUpdateMetadata:"
+              "text": "RemoteRoomMember"
             }
           ]
         }

@@ -99,7 +99,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -447,26 +447,16 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType/title",
-          "value": "SKWPublicationType"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType~1SFU/title",
+          "value": "SKWPublicationTypeSFU"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType~1SFU/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWPublicationType"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWPublicationType"
+              "text": "SKWPublicationTypeSFU"
             }
           ]
         },
@@ -487,16 +477,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType~1SFU/title",
-          "value": "SKWPublicationTypeSFU"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType/title",
+          "value": "SKWPublicationType"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType~1SFU/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWPublicationTypeSFU"
+              "text": "SKWPublicationType"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPublicationType"
             }
           ]
         }

@@ -156,7 +156,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -753,6 +753,11 @@
       "title": "ObjectiveC.NSObjectProtocol",
       "type": "unresolvable"
     },
+    "doc://com.ntt.skyway.room/objc(pl)RTCVideoCapturerDelegate": {
+      "identifier": "doc://com.ntt.skyway.room/objc(pl)RTCVideoCapturerDelegate",
+      "title": "RTCVideoCapturerDelegate",
+      "type": "unresolvable"
+    },
     "doc://com.ntt.skyway.room/s23CustomStringConvertibleP": {
       "identifier": "doc://com.ntt.skyway.room/s23CustomStringConvertibleP",
       "title": "Swift.CustomStringConvertible",
@@ -785,7 +790,8 @@
         "doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP",
         "doc://com.ntt.skyway.room/s23CustomStringConvertibleP",
         "doc://com.ntt.skyway.room/SQ",
-        "doc://com.ntt.skyway.room/SH"
+        "doc://com.ntt.skyway.room/SH",
+        "doc://com.ntt.skyway.room/objc(pl)RTCVideoCapturerDelegate"
       ],
       "kind": "relationships",
       "title": "Conforms To",
@@ -925,6 +931,14 @@
               "kind": "relationships",
               "title": "Inherits From",
               "type": "inheritsFrom"
+            },
+            {
+              "identifiers": [
+                "doc://com.ntt.skyway.room/objc(pl)RTCVideoCapturerDelegate"
+              ],
+              "kind": "relationships",
+              "title": "Conforms To",
+              "type": "conformsTo"
             }
           ]
         },
@@ -976,88 +990,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1shared()/title",
-          "value": "shared"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1shared()/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "+ "
-            },
-            {
-              "kind": "identifier",
-              "text": "shared"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1supportedCameras()/title",
-          "value": "supportedCameras"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1supportedCameras()/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "+ "
-            },
-            {
-              "kind": "identifier",
-              "text": "supportedCameras"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource/title",
-          "value": "SKWVideoSource"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWVideoSource"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWVideoSource"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1detach(_:)/title",
-          "value": "detachView:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1detach(_:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "detachView:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1createStream()/title",
           "value": "createStream"
         },
@@ -1072,78 +1004,6 @@
             {
               "kind": "identifier",
               "text": "createStream"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1camera/title",
-          "value": "camera"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1camera/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "camera"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1startCapturing(with:options:completion:)/title",
-          "value": "startCapturingWithDevice:options:completion:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1startCapturing(with:options:completion:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "startCapturingWithDevice:options:completion:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1change(_:completion:)/title",
-          "value": "changeDevice:completion:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1change(_:completion:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "changeDevice:completion:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1stopCapturing()/title",
-          "value": "stopCapturing"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1stopCapturing()/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "stopCapturing"
             }
           ]
         },
@@ -1188,6 +1048,160 @@
             {
               "kind": "identifier",
               "text": "SKWCameraVideoSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource/title",
+          "value": "SKWVideoSource"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWVideoSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWVideoSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1startCapturing(with:options:completion:)/title",
+          "value": "startCapturingWithDevice:options:completion:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1startCapturing(with:options:completion:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "startCapturingWithDevice:options:completion:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1shared()/title",
+          "value": "shared"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1shared()/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "+ "
+            },
+            {
+              "kind": "identifier",
+              "text": "shared"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1stopCapturing()/title",
+          "value": "stopCapturing"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1stopCapturing()/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "stopCapturing"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1camera/title",
+          "value": "camera"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1camera/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "camera"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1supportedCameras()/title",
+          "value": "supportedCameras"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1supportedCameras()/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "+ "
+            },
+            {
+              "kind": "identifier",
+              "text": "supportedCameras"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1change(_:completion:)/title",
+          "value": "changeDevice:completion:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1change(_:completion:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "changeDevice:completion:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1detach(_:)/title",
+          "value": "detachView:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource~1detach(_:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "detachView:"
             }
           ]
         }

@@ -268,7 +268,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -695,6 +695,31 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/title",
+          "value": "Room"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "Room"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "Room"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomDelegate/title",
           "value": "RoomDelegate"
         },
@@ -734,31 +759,6 @@
             {
               "kind": "identifier",
               "text": "room:member:metadataDidUpdate:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/title",
-          "value": "Room"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "Room"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "Room"
             }
           ]
         },

@@ -244,7 +244,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -640,6 +640,31 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteStream/title",
+          "value": "SKWRemoteStream"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteStream/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemoteStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteStream/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemoteStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomSubscriptionDelegate/title",
           "value": "RoomSubscriptionDelegate"
         },
@@ -679,31 +704,6 @@
             {
               "kind": "identifier",
               "text": "subscription:didAttach:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteStream/title",
-          "value": "SKWRemoteStream"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteStream/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWRemoteStream"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteStream/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWRemoteStream"
             }
           ]
         }

@@ -93,7 +93,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -434,6 +434,25 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteDataStreamDelegate~1dataStream(_:didReceive:)-7f2zw/title",
+          "value": "dataStream:didReceiveString:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteDataStreamDelegate~1dataStream(_:didReceive:)-7f2zw/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "dataStream:didReceiveString:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteDataStreamDelegate/title",
           "value": "SKWRemoteDataStreamDelegate"
         },
@@ -454,25 +473,6 @@
             {
               "kind": "identifier",
               "text": "SKWRemoteDataStreamDelegate"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteDataStreamDelegate~1dataStream(_:didReceive:)-7f2zw/title",
-          "value": "dataStream:didReceiveString:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteDataStreamDelegate~1dataStream(_:didReceive:)-7f2zw/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "dataStream:didReceiveString:"
             }
           ]
         },

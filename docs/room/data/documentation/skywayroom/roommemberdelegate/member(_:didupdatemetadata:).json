@@ -205,7 +205,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -527,26 +527,20 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberDelegate/title",
-          "value": "RoomMemberDelegate"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberDelegate~1member(_:didUpdateMetadata:)/title",
+          "value": "member:didUpdateMetadata:"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberDelegate/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberDelegate~1member(_:didUpdateMetadata:)/fragments",
           "value": [
             {
-              "kind": "identifier",
-              "text": "RoomMemberDelegate"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberDelegate/navigatorTitle",
-          "value": [
+              "kind": "text",
+              "text": "- "
+            },
             {
               "kind": "identifier",
-              "text": "RoomMemberDelegate"
+              "text": "member:didUpdateMetadata:"
             }
           ]
         },
@@ -577,20 +571,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberDelegate~1member(_:didUpdateMetadata:)/title",
-          "value": "member:didUpdateMetadata:"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberDelegate/title",
+          "value": "RoomMemberDelegate"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberDelegate~1member(_:didUpdateMetadata:)/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberDelegate/fragments",
           "value": [
             {
-              "kind": "text",
-              "text": "- "
-            },
+              "kind": "identifier",
+              "text": "RoomMemberDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberDelegate/navigatorTitle",
+          "value": [
             {
               "kind": "identifier",
-              "text": "member:didUpdateMetadata:"
+              "text": "RoomMemberDelegate"
             }
           ]
         }

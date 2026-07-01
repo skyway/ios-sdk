@@ -142,7 +142,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -546,39 +546,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource~1createStream()/title",
-          "value": "createStream"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource/title",
+          "value": "SKWCustomFrameVideoSource"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource~1createStream()/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource/fragments",
           "value": [
             {
-              "kind": "text",
-              "text": "- "
-            },
-            {
               "kind": "identifier",
-              "text": "createStream"
+              "text": "SKWCustomFrameVideoSource"
             }
           ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource~1init()/title",
-          "value": "init"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource~1init()/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource/navigatorTitle",
           "value": [
             {
-              "kind": "text",
-              "text": "- "
-            },
-            {
               "kind": "identifier",
-              "text": "init"
+              "text": "SKWCustomFrameVideoSource"
             }
           ]
         },
@@ -603,26 +590,39 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource/title",
-          "value": "SKWCustomFrameVideoSource"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource~1init()/title",
+          "value": "init"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource~1init()/fragments",
           "value": [
             {
+              "kind": "text",
+              "text": "- "
+            },
+            {
               "kind": "identifier",
-              "text": "SKWCustomFrameVideoSource"
+              "text": "init"
             }
           ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource/navigatorTitle",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource~1createStream()/title",
+          "value": "createStream"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource~1createStream()/fragments",
           "value": [
             {
+              "kind": "text",
+              "text": "- "
+            },
+            {
               "kind": "identifier",
-              "text": "SKWCustomFrameVideoSource"
+              "text": "createStream"
             }
           ]
         },

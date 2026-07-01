@@ -180,7 +180,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -504,6 +504,31 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson/title",
+          "value": "SKWRemotePerson"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemotePerson"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemotePerson"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Subscription/title",
           "value": "SKWSubscription"
         },
@@ -568,31 +593,6 @@
             {
               "kind": "identifier",
               "text": "remotePerson:didUnsubscribePublicationOfSubscription:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson/title",
-          "value": "SKWRemotePerson"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWRemotePerson"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWRemotePerson"
             }
           ]
         }

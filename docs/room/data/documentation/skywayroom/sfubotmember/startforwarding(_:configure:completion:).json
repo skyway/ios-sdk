@@ -410,7 +410,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -919,51 +919,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingConfigure/title",
-          "value": "SKWForwardingConfigure"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication/title",
+          "value": "SKWPublication"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingConfigure/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWForwardingConfigure"
+              "text": "SKWPublication"
             }
           ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingConfigure/navigatorTitle",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication/navigatorTitle",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWForwardingConfigure"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/title",
-          "value": "SKWSFUBotMember"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWSFUBotMember"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWSFUBotMember"
+              "text": "SKWPublication"
             }
           ]
         },
@@ -994,31 +969,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication/title",
-          "value": "SKWPublication"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWPublication"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWPublication"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Forwarding/title",
           "value": "SKWForwarding"
         },
@@ -1039,6 +989,56 @@
             {
               "kind": "identifier",
               "text": "SKWForwarding"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/title",
+          "value": "SKWSFUBotMember"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSFUBotMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSFUBotMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingConfigure/title",
+          "value": "SKWForwardingConfigure"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingConfigure/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWForwardingConfigure"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingConfigure/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWForwardingConfigure"
             }
           ]
         },

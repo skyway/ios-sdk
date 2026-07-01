@@ -94,7 +94,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -248,6 +248,53 @@
       "type": "topic",
       "url": "/documentation/skywayroom/videosource"
     },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource/add(_:)": {
+      "abstract": [
+        {
+          "text": "プロセッサを追加します。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "add"
+        },
+        {
+          "kind": "text",
+          "text": "(any "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(pl)SKWVideoProcessor",
+          "text": "VideoProcessor"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource/add(_:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "add:"
+        }
+      ],
+      "role": "symbol",
+      "title": "add(_:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/videosource/add(_:)"
+    },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource/createStream()": {
       "abstract": [
         {
@@ -290,6 +337,91 @@
       "title": "createStream()",
       "type": "topic",
       "url": "/documentation/skywayroom/videosource/createstream()"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource/remove(_:)": {
+      "abstract": [
+        {
+          "text": "プロセッサを削除します。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "remove"
+        },
+        {
+          "kind": "text",
+          "text": "(any "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(pl)SKWVideoProcessor",
+          "text": "VideoProcessor"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource/remove(_:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "remove:"
+        }
+      ],
+      "role": "symbol",
+      "title": "remove(_:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/videosource/remove(_:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource/removeAllProcessors()": {
+      "abstract": [
+        {
+          "text": "全てのプロセッサを削除します。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeAllProcessors"
+        },
+        {
+          "kind": "text",
+          "text": "()"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource/removeAllProcessors()",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "removeAllProcessors"
+        }
+      ],
+      "role": "symbol",
+      "title": "removeAllProcessors()",
+      "type": "topic",
+      "url": "/documentation/skywayroom/videosource/removeallprocessors()"
     },
     "doc://com.ntt.skyway.room/objc(cs)NSObject": {
       "identifier": "doc://com.ntt.skyway.room/objc(cs)NSObject",
@@ -361,7 +493,10 @@
       "anchor": "Instance-Methods",
       "generated": true,
       "identifiers": [
-        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource/createStream()"
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource/add(_:)",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource/createStream()",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource/remove(_:)",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource/removeAllProcessors()"
       ],
       "title": "Instance Methods"
     }
@@ -422,7 +557,10 @@
               "anchor": "Instance-Methods",
               "generated": true,
               "identifiers": [
-                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource/createStream()"
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource/add(_:)",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource/createStream()",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource/remove(_:)",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoSource/removeAllProcessors()"
               ],
               "title": "Instance Methods"
             }
@@ -499,70 +637,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource/title",
-          "value": "SKWVideoSource"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource/title",
+          "value": "SKWCameraVideoSource"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWVideoSource"
+              "text": "SKWCameraVideoSource"
             }
           ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource/navigatorTitle",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource/navigatorTitle",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWVideoSource"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource/title",
-          "value": "SKWCustomFrameVideoSource"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWCustomFrameVideoSource"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWCustomFrameVideoSource"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource~1createStream()/title",
-          "value": "createStream"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource~1createStream()/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "createStream"
+              "text": "SKWCameraVideoSource"
             }
           ]
         },
@@ -593,26 +687,127 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource/title",
-          "value": "SKWCameraVideoSource"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource/title",
+          "value": "SKWVideoSource"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWCameraVideoSource"
+              "text": "SKWVideoSource"
             }
           ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource/navigatorTitle",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource/navigatorTitle",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWCameraVideoSource"
+              "text": "SKWVideoSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource~1add(_:)/title",
+          "value": "add:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource~1add(_:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "add:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource/title",
+          "value": "SKWCustomFrameVideoSource"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWCustomFrameVideoSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CustomFrameVideoSource/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWCustomFrameVideoSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource~1remove(_:)/title",
+          "value": "remove:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource~1remove(_:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "remove:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource~1createStream()/title",
+          "value": "createStream"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource~1createStream()/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "createStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource~1removeAllProcessors()/title",
+          "value": "removeAllProcessors"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoSource~1removeAllProcessors()/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "removeAllProcessors"
             }
           ]
         }

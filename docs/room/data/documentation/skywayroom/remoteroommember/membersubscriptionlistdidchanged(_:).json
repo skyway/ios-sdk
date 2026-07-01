@@ -117,7 +117,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -251,31 +251,6 @@
       "patch": [
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Member/title",
-          "value": "SKWMember"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Member/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWMember"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Member/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWMember"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMember/title",
           "value": "RemoteRoomMember"
         },
@@ -296,6 +271,31 @@
             {
               "kind": "identifier",
               "text": "RemoteRoomMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Member/title",
+          "value": "SKWMember"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Member/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Member/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWMember"
             }
           ]
         }

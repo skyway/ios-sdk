@@ -266,7 +266,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -702,26 +702,20 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/title",
-          "value": "Room"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1create(with:)/title",
+          "value": "createWith:completionHandler:"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1create(with:)/fragments",
           "value": [
             {
-              "kind": "identifier",
-              "text": "Room"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/navigatorTitle",
-          "value": [
+              "kind": "text",
+              "text": "+ "
+            },
             {
               "kind": "identifier",
-              "text": "Room"
+              "text": "createWith:completionHandler:"
             }
           ]
         },
@@ -752,20 +746,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1create(with:)/title",
-          "value": "createWith:completionHandler:"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/title",
+          "value": "Room"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1create(with:)/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/fragments",
           "value": [
             {
-              "kind": "text",
-              "text": "+ "
-            },
+              "kind": "identifier",
+              "text": "Room"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/navigatorTitle",
+          "value": [
             {
               "kind": "identifier",
-              "text": "createWith:completionHandler:"
+              "text": "Room"
             }
           ]
         }

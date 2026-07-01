@@ -79,7 +79,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -245,21 +245,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1reconnecting/title",
-          "value": "SKWReconnecting"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1reconnecting/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWReconnecting"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState/title",
           "value": "SKWConnectionState"
         },
@@ -280,6 +265,21 @@
             {
               "kind": "identifier",
               "text": "SKWConnectionState"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1reconnecting/title",
+          "value": "SKWReconnecting"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1reconnecting/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWReconnecting"
             }
           ]
         }

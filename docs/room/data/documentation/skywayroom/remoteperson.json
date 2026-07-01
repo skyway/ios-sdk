@@ -88,7 +88,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -613,26 +613,20 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteMember/title",
-          "value": "SKWRemoteMember"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson~1subscribePublication(publicationID:completion:)/title",
+          "value": "subscribePublicationWithPublicationID:completion:"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteMember/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson~1subscribePublication(publicationID:completion:)/fragments",
           "value": [
             {
-              "kind": "identifier",
-              "text": "SKWRemoteMember"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteMember/navigatorTitle",
-          "value": [
+              "kind": "text",
+              "text": "- "
+            },
             {
               "kind": "identifier",
-              "text": "SKWRemoteMember"
+              "text": "subscribePublicationWithPublicationID:completion:"
             }
           ]
         },
@@ -653,20 +647,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson~1subscribePublication(publicationID:completion:)/title",
-          "value": "subscribePublicationWithPublicationID:completion:"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteMember/title",
+          "value": "SKWRemoteMember"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson~1subscribePublication(publicationID:completion:)/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteMember/fragments",
           "value": [
             {
-              "kind": "text",
-              "text": "- "
-            },
+              "kind": "identifier",
+              "text": "SKWRemoteMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteMember/navigatorTitle",
+          "value": [
             {
               "kind": "identifier",
-              "text": "subscribePublicationWithPublicationID:completion:"
+              "text": "SKWRemoteMember"
             }
           ]
         }

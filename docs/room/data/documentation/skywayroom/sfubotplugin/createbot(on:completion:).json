@@ -314,7 +314,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -740,6 +740,31 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWSFUBotPluginCreateBotOnChannelCompletion/title",
+          "value": "SKWSFUBotPluginCreateBotOnChannelCompletion"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWSFUBotPluginCreateBotOnChannelCompletion/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSFUBotPluginCreateBotOnChannelCompletion"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWSFUBotPluginCreateBotOnChannelCompletion/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSFUBotPluginCreateBotOnChannelCompletion"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPlugin/title",
           "value": "SKWSFUBotPlugin"
         },
@@ -760,50 +785,6 @@
             {
               "kind": "identifier",
               "text": "SKWSFUBotPlugin"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPlugin~1createBot(on:completion:)/title",
-          "value": "createBotOnChannel:completion:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPlugin~1createBot(on:completion:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "createBotOnChannel:completion:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/title",
-          "value": "SKWSFUBotMember"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWSFUBotMember"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWSFUBotMember"
             }
           ]
         },
@@ -834,26 +815,45 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWSFUBotPluginCreateBotOnChannelCompletion/title",
-          "value": "SKWSFUBotPluginCreateBotOnChannelCompletion"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/title",
+          "value": "SKWSFUBotMember"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWSFUBotPluginCreateBotOnChannelCompletion/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWSFUBotPluginCreateBotOnChannelCompletion"
+              "text": "SKWSFUBotMember"
             }
           ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWSFUBotPluginCreateBotOnChannelCompletion/navigatorTitle",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/navigatorTitle",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWSFUBotPluginCreateBotOnChannelCompletion"
+              "text": "SKWSFUBotMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPlugin~1createBot(on:completion:)/title",
+          "value": "createBotOnChannel:completion:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPlugin~1createBot(on:completion:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "createBotOnChannel:completion:"
             }
           ]
         }

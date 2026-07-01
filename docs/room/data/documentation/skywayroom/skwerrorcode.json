@@ -99,7 +99,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -1191,81 +1191,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1contextSetupError/title",
-          "value": "SKWContextSetupError"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1contextSetupError/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWContextSetupError"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1channelCloseError/title",
-          "value": "SKWChannelCloseError"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1channelCloseError/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWChannelCloseError"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1publicationEnableError/title",
-          "value": "SKWPublicationEnableError"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1publicationEnableError/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWPublicationEnableError"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1channelLeaveError/title",
-          "value": "SKWChannelLeaveError"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1channelLeaveError/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWChannelLeaveError"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1publicationDisableError/title",
-          "value": "SKWPublicationDisableError"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1publicationDisableError/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWPublicationDisableError"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1channelFindOrCreateError/title",
           "value": "SKWChannelFindOrCreateError"
         },
@@ -1281,31 +1206,31 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1channelFindError/title",
-          "value": "SKWChannelFindError"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1channelUpdateMetadataError/title",
+          "value": "SKWChannelUpdateMetadataError"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1channelFindError/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1channelUpdateMetadataError/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWChannelFindError"
+              "text": "SKWChannelUpdateMetadataError"
             }
           ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1localPersonUnsubscribeError/title",
-          "value": "SKWLocalPersonUnsubscribeError"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1contextSetupError/title",
+          "value": "SKWContextSetupError"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1localPersonUnsubscribeError/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1contextSetupError/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWLocalPersonUnsubscribeError"
+              "text": "SKWContextSetupError"
             }
           ]
         },
@@ -1326,31 +1251,196 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1remotePersonSubscribeError/title",
-          "value": "SKWRemotePersonSubscribeError"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1localPersonUnpublishError/title",
+          "value": "SKWLocalPersonUnpublishError"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1remotePersonSubscribeError/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1localPersonUnpublishError/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWRemotePersonSubscribeError"
+              "text": "SKWLocalPersonUnpublishError"
             }
           ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1memberLeaveError/title",
-          "value": "SKWMemberLeaveError"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1localPersonUnsubscribeError/title",
+          "value": "SKWLocalPersonUnsubscribeError"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1memberLeaveError/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1localPersonUnsubscribeError/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWMemberLeaveError"
+              "text": "SKWLocalPersonUnsubscribeError"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1memberUpdateMetadataError/title",
+          "value": "SKWMemberUpdateMetadataError"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1memberUpdateMetadataError/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWMemberUpdateMetadataError"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1availableCameraIsMissing/title",
+          "value": "SKWAvailableCameraIsMissing"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1availableCameraIsMissing/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWAvailableCameraIsMissing"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1publicationDisableError/title",
+          "value": "SKWPublicationDisableError"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1publicationDisableError/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPublicationDisableError"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1channelFindError/title",
+          "value": "SKWChannelFindError"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1channelFindError/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWChannelFindError"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1contextDisposeError/title",
+          "value": "SKWContextDisposeError"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1contextDisposeError/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWContextDisposeError"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1subscriptionCancelError/title",
+          "value": "SKWSubscriptionCancelError"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1subscriptionCancelError/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSubscriptionCancelError"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1localPersonSubscribeError/title",
+          "value": "SKWLocalPersonSubscribeError"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1localPersonSubscribeError/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWLocalPersonSubscribeError"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1fatalErrorRAPIReconnectFailed/title",
+          "value": "SKWFatalErrorRAPIReconnectFailed"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1fatalErrorRAPIReconnectFailed/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWFatalErrorRAPIReconnectFailed"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1cameraIsNotSet/title",
+          "value": "SKWCameraIsNotSet"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1cameraIsNotSet/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWCameraIsNotSet"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1channelCloseError/title",
+          "value": "SKWChannelCloseError"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1channelCloseError/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWChannelCloseError"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1localDataStreamWriteError/title",
+          "value": "SKWLocalDataStreamWriteError"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1localDataStreamWriteError/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWLocalDataStreamWriteError"
             }
           ]
         },
@@ -1366,6 +1456,111 @@
             {
               "kind": "identifier",
               "text": "SKWChannelJoinError"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1channelCreateError/title",
+          "value": "SKWChannelCreateError"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1channelCreateError/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWChannelCreateError"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1remotePersonUnsubscribeError/title",
+          "value": "SKWRemotePersonUnsubscribeError"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1remotePersonUnsubscribeError/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemotePersonUnsubscribeError"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1channelLeaveError/title",
+          "value": "SKWChannelLeaveError"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1channelLeaveError/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWChannelLeaveError"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1remotePersonSubscribeError/title",
+          "value": "SKWRemotePersonSubscribeError"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1remotePersonSubscribeError/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemotePersonSubscribeError"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1publicationCancelError/title",
+          "value": "SKWPublicationCancelError"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1publicationCancelError/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPublicationCancelError"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1localPersonPublishError/title",
+          "value": "SKWLocalPersonPublishError"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1localPersonPublishError/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWLocalPersonPublishError"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1memberLeaveError/title",
+          "value": "SKWMemberLeaveError"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1memberLeaveError/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWMemberLeaveError"
             }
           ]
         },
@@ -1396,211 +1591,16 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1remotePersonUnsubscribeError/title",
-          "value": "SKWRemotePersonUnsubscribeError"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1publicationEnableError/title",
+          "value": "SKWPublicationEnableError"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1remotePersonUnsubscribeError/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1publicationEnableError/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWRemotePersonUnsubscribeError"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1channelCreateError/title",
-          "value": "SKWChannelCreateError"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1channelCreateError/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWChannelCreateError"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1localPersonSubscribeError/title",
-          "value": "SKWLocalPersonSubscribeError"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1localPersonSubscribeError/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWLocalPersonSubscribeError"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1cameraIsNotSet/title",
-          "value": "SKWCameraIsNotSet"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1cameraIsNotSet/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWCameraIsNotSet"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1subscriptionCancelError/title",
-          "value": "SKWSubscriptionCancelError"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1subscriptionCancelError/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWSubscriptionCancelError"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1localPersonPublishError/title",
-          "value": "SKWLocalPersonPublishError"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1localPersonPublishError/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWLocalPersonPublishError"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1channelUpdateMetadataError/title",
-          "value": "SKWChannelUpdateMetadataError"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1channelUpdateMetadataError/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWChannelUpdateMetadataError"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1contextDisposeError/title",
-          "value": "SKWContextDisposeError"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1contextDisposeError/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWContextDisposeError"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1localPersonUnpublishError/title",
-          "value": "SKWLocalPersonUnpublishError"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1localPersonUnpublishError/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWLocalPersonUnpublishError"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1fatalErrorRAPIReconnectFailed/title",
-          "value": "SKWFatalErrorRAPIReconnectFailed"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1fatalErrorRAPIReconnectFailed/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWFatalErrorRAPIReconnectFailed"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1memberUpdateMetadataError/title",
-          "value": "SKWMemberUpdateMetadataError"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1memberUpdateMetadataError/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWMemberUpdateMetadataError"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1publicationCancelError/title",
-          "value": "SKWPublicationCancelError"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1publicationCancelError/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWPublicationCancelError"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1availableCameraIsMissing/title",
-          "value": "SKWAvailableCameraIsMissing"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1availableCameraIsMissing/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWAvailableCameraIsMissing"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1localDataStreamWriteError/title",
-          "value": "SKWLocalDataStreamWriteError"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1localDataStreamWriteError/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWLocalDataStreamWriteError"
+              "text": "SKWPublicationEnableError"
             }
           ]
         }

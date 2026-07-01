@@ -98,7 +98,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -329,31 +329,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MicrophoneAudioSource/title",
-          "value": "SKWMicrophoneAudioSource"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MicrophoneAudioSource/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWMicrophoneAudioSource"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MicrophoneAudioSource/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWMicrophoneAudioSource"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalAudioStream/title",
           "value": "SKWLocalAudioStream"
         },
@@ -374,6 +349,31 @@
             {
               "kind": "identifier",
               "text": "SKWLocalAudioStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MicrophoneAudioSource/title",
+          "value": "SKWMicrophoneAudioSource"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MicrophoneAudioSource/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWMicrophoneAudioSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MicrophoneAudioSource/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWMicrophoneAudioSource"
             }
           ]
         },

@@ -115,7 +115,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -332,21 +332,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Plugin~1subtype/title",
-          "value": "subtype"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Plugin~1subtype/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "subtype"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Plugin/title",
           "value": "SKWPlugin"
         },
@@ -367,6 +352,21 @@
             {
               "kind": "identifier",
               "text": "SKWPlugin"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Plugin~1subtype/title",
+          "value": "subtype"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Plugin~1subtype/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "subtype"
             }
           ]
         }

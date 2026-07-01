@@ -147,7 +147,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -449,31 +449,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource/title",
-          "value": "SKWFileVideoSource"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWFileVideoSource"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWFileVideoSource"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWFileVideoSourceStartCapturingOnError/title",
           "value": "SKWFileVideoSourceStartCapturingOnError"
         },
@@ -494,6 +469,31 @@
             {
               "kind": "identifier",
               "text": "SKWFileVideoSourceStartCapturingOnError"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource/title",
+          "value": "SKWFileVideoSource"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWFileVideoSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1FileVideoSource/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWFileVideoSource"
             }
           ]
         }

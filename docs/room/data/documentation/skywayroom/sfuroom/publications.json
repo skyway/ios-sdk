@@ -128,7 +128,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -391,6 +391,31 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFURoom/title",
+          "value": "SFURoom"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFURoom/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SFURoom"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFURoom/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SFURoom"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFURoom~1publications/title",
           "value": "publications"
         },
@@ -426,31 +451,6 @@
             {
               "kind": "identifier",
               "text": "RoomPublication"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFURoom/title",
-          "value": "SFURoom"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFURoom/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SFURoom"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFURoom/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SFURoom"
             }
           ]
         }

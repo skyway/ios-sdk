@@ -116,7 +116,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -368,26 +368,16 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Side/title",
-          "value": "SKWSide"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Stream~1side/title",
+          "value": "side"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Side/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Stream~1side/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWSide"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Side/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWSide"
+              "text": "side"
             }
           ]
         },
@@ -418,16 +408,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Stream~1side/title",
-          "value": "side"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Side/title",
+          "value": "SKWSide"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Stream~1side/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Side/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "side"
+              "text": "SKWSide"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Side/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSide"
             }
           ]
         }

@@ -102,7 +102,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -448,6 +448,31 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublicationOptions/title",
+          "value": "RoomPublicationOptions"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublicationOptions/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomPublicationOptions"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublicationOptions/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomPublicationOptions"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions/title",
           "value": "SKWPublicationOptions"
         },
@@ -483,31 +508,6 @@
             {
               "kind": "identifier",
               "text": "maxSubscribers"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublicationOptions/title",
-          "value": "RoomPublicationOptions"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublicationOptions/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "RoomPublicationOptions"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublicationOptions/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "RoomPublicationOptions"
             }
           ]
         }

@@ -102,7 +102,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -624,6 +624,44 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalRoomMemberDelegate~1localRoomMember(_:didPublishStreamOf:)/title",
+          "value": "localRoomMember:didPublishStreamOf:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalRoomMemberDelegate~1localRoomMember(_:didPublishStreamOf:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "localRoomMember:didPublishStreamOf:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalRoomMemberDelegate~1localRoomMember(_:didUnpublishStreamOf:)/title",
+          "value": "localRoomMember:didUnpublishStreamOf:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalRoomMemberDelegate~1localRoomMember(_:didUnpublishStreamOf:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "localRoomMember:didUnpublishStreamOf:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberDelegate/title",
           "value": "RoomMemberDelegate"
         },
@@ -663,44 +701,6 @@
             {
               "kind": "identifier",
               "text": "localRoomMember:didSubscribePublicationOf:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalRoomMemberDelegate~1localRoomMember(_:didPublishStreamOf:)/title",
-          "value": "localRoomMember:didPublishStreamOf:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalRoomMemberDelegate~1localRoomMember(_:didPublishStreamOf:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "localRoomMember:didPublishStreamOf:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalRoomMemberDelegate~1localRoomMember(_:didUnpublishStreamOf:)/title",
-          "value": "localRoomMember:didUnpublishStreamOf:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalRoomMemberDelegate~1localRoomMember(_:didUnpublishStreamOf:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "localRoomMember:didUnpublishStreamOf:"
             }
           ]
         },

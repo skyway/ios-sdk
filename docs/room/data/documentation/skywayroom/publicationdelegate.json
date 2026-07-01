@@ -93,7 +93,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -831,12 +831,12 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate~1publicationEnabled(_:)/title",
-          "value": "publicationEnabled:"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate~1publicationDisabled(_:)/title",
+          "value": "publicationDisabled:"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate~1publicationEnabled(_:)/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate~1publicationDisabled(_:)/fragments",
           "value": [
             {
               "kind": "text",
@@ -844,70 +844,7 @@
             },
             {
               "kind": "identifier",
-              "text": "publicationEnabled:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate~1publicationSubscriptionListDidChange(_:)/title",
-          "value": "publicationSubscriptionListDidChange:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate~1publicationSubscriptionListDidChange(_:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "publicationSubscriptionListDidChange:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate~1publication(_:connectionStateDidChange:)/title",
-          "value": "publication:connectionStateDidChange:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate~1publication(_:connectionStateDidChange:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "publication:connectionStateDidChange:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate/title",
-          "value": "SKWPublicationDelegate"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWPublicationDelegate"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWPublicationDelegate"
+              "text": "publicationDisabled:"
             }
           ]
         },
@@ -927,6 +864,25 @@
             {
               "kind": "identifier",
               "text": "publication:didUpdateMetadata:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate~1publicationStateDidChange(_:)/title",
+          "value": "publicationStateDidChange:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate~1publicationStateDidChange(_:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "publicationStateDidChange:"
             }
           ]
         },
@@ -976,31 +932,37 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate~1publicationStateDidChange(_:)/title",
-          "value": "publicationStateDidChange:"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate/title",
+          "value": "SKWPublicationDelegate"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate~1publicationStateDidChange(_:)/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate/fragments",
           "value": [
             {
-              "kind": "text",
-              "text": "- "
-            },
-            {
               "kind": "identifier",
-              "text": "publicationStateDidChange:"
+              "text": "SKWPublicationDelegate"
             }
           ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate~1publicationDisabled(_:)/title",
-          "value": "publicationDisabled:"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPublicationDelegate"
+            }
+          ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate~1publicationDisabled(_:)/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate~1publicationSubscriptionListDidChange(_:)/title",
+          "value": "publicationSubscriptionListDidChange:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate~1publicationSubscriptionListDidChange(_:)/fragments",
           "value": [
             {
               "kind": "text",
@@ -1008,7 +970,45 @@
             },
             {
               "kind": "identifier",
-              "text": "publicationDisabled:"
+              "text": "publicationSubscriptionListDidChange:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate~1publication(_:connectionStateDidChange:)/title",
+          "value": "publication:connectionStateDidChange:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate~1publication(_:connectionStateDidChange:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "publication:connectionStateDidChange:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate~1publicationEnabled(_:)/title",
+          "value": "publicationEnabled:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate~1publicationEnabled(_:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "publicationEnabled:"
             }
           ]
         }

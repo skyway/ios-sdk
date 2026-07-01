@@ -125,7 +125,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -361,21 +361,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1isSetup/title",
-          "value": "isSetup"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1isSetup/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "isSetup"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context/title",
           "value": "SKWContext"
         },
@@ -396,6 +381,21 @@
             {
               "kind": "identifier",
               "text": "SKWContext"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1isSetup/title",
+          "value": "isSetup"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1isSetup/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "isSetup"
             }
           ]
         }

@@ -169,7 +169,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -390,21 +390,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraPreviewView~1rendererView/title",
-          "value": "rendererView"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraPreviewView~1rendererView/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "rendererView"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraPreviewView/title",
           "value": "SKWCameraPreviewView"
         },
@@ -425,6 +410,21 @@
             {
               "kind": "identifier",
               "text": "SKWCameraPreviewView"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraPreviewView~1rendererView/title",
+          "value": "rendererView"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraPreviewView~1rendererView/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "rendererView"
             }
           ]
         }

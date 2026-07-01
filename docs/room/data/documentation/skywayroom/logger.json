@@ -94,7 +94,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -977,16 +977,39 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Logger~1delegate/title",
-          "value": "delegate"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Logger~1warnLog(withMessage:filename:function:line:)/title",
+          "value": "warnLogWithMessage:filename:function:line:"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Logger~1delegate/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Logger~1warnLog(withMessage:filename:function:line:)/fragments",
           "value": [
             {
+              "kind": "text",
+              "text": "+ "
+            },
+            {
               "kind": "identifier",
-              "text": "delegate"
+              "text": "warnLogWithMessage:filename:function:line:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Logger~1infoLog(withMessage:filename:function:line:)/title",
+          "value": "infoLogWithMessage:filename:function:line:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Logger~1infoLog(withMessage:filename:function:line:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "+ "
+            },
+            {
+              "kind": "identifier",
+              "text": "infoLogWithMessage:filename:function:line:"
             }
           ]
         },
@@ -1017,6 +1040,21 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Logger~1delegate/title",
+          "value": "delegate"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Logger~1delegate/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "delegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Logger~1errorLog(withMessage:filename:function:line:)/title",
           "value": "errorLogWithMessage:filename:function:line:"
         },
@@ -1036,25 +1074,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Logger~1warnLog(withMessage:filename:function:line:)/title",
-          "value": "warnLogWithMessage:filename:function:line:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Logger~1warnLog(withMessage:filename:function:line:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "+ "
-            },
-            {
-              "kind": "identifier",
-              "text": "warnLogWithMessage:filename:function:line:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Logger~1debugLog(withMessage:filename:function:line:)/title",
           "value": "debugLogWithMessage:filename:function:line:"
         },
@@ -1069,25 +1088,6 @@
             {
               "kind": "identifier",
               "text": "debugLogWithMessage:filename:function:line:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Logger~1infoLog(withMessage:filename:function:line:)/title",
-          "value": "infoLogWithMessage:filename:function:line:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Logger~1infoLog(withMessage:filename:function:line:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "+ "
-            },
-            {
-              "kind": "identifier",
-              "text": "infoLogWithMessage:filename:function:line:"
             }
           ]
         }

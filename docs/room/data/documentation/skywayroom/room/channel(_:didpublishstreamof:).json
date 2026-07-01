@@ -180,7 +180,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.6.1",
+              "text": "Version: 3.7.0",
               "type": "text"
             }
           ],
@@ -509,6 +509,31 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel/title",
+          "value": "SKWChannel"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWChannel"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWChannel"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room~1channel(_:didPublishStreamOf:)/title",
           "value": "channel:didPublishStreamOfPublication:"
         },
@@ -573,31 +598,6 @@
             {
               "kind": "identifier",
               "text": "Room"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel/title",
-          "value": "SKWChannel"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWChannel"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWChannel"
             }
           ]
         }

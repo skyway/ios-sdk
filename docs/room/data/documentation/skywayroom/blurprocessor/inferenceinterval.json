@@ -1,0 +1,339 @@
+{
+  "abstract": [
+    {
+      "text": "Vision を実行する間隔（フレーム数）。",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/BlurProcessor"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/BlurProcessor/inferenceInterval"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "s:10SkyWayRoom13BlurProcessorC17inferenceIntervals5UInt8Vvp",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "var"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "inferenceInterval"
+      },
+      {
+        "kind": "text",
+        "text": ": "
+      },
+      {
+        "kind": "typeIdentifier",
+        "preciseIdentifier": "s:s5UInt8V",
+        "text": "UInt8"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "platforms": [
+      {
+        "beta": false,
+        "deprecated": false,
+        "introducedAt": "15.0",
+        "name": "iOS",
+        "unavailable": false
+      },
+      {
+        "beta": false,
+        "deprecated": false,
+        "introducedAt": "15.0",
+        "name": "iPadOS",
+        "unavailable": false
+      },
+      {
+        "beta": false,
+        "deprecated": false,
+        "introducedAt": "15.0",
+        "name": "Mac Catalyst",
+        "unavailable": false
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Instance Property",
+    "symbolKind": "property",
+    "title": "inferenceInterval"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "var"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "inferenceInterval"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:s5UInt8V",
+              "text": "UInt8"
+            },
+            {
+              "kind": "text",
+              "text": " { "
+            },
+            {
+              "kind": "keyword",
+              "text": "get"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "set"
+            },
+            {
+              "kind": "text",
+              "text": " }"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "CPU 使用率を抑えるため、このフレーム間隔ごとに 1 回だけセグメンテーションマスクを更新します。",
+              "type": "text"
+            },
+            {
+              "text": " ",
+              "type": "text"
+            },
+            {
+              "text": "値が大きいほど処理負荷が低下しますが、マスク更新の反応が遅くなります。",
+              "type": "text"
+            },
+            {
+              "text": " ",
+              "type": "text"
+            },
+            {
+              "text": "範囲: ",
+              "type": "text"
+            },
+            {
+              "code": "1...10",
+              "type": "codeVoice"
+            },
+            {
+              "text": "、デフォルト: ",
+              "type": "text"
+            },
+            {
+              "code": "2",
+              "type": "codeVoice"
+            },
+            {
+              "text": "。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "kind": "content"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 3.7.0",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/BlurProcessor": {
+      "abstract": [
+        {
+          "text": "背景ぼかしプロセッサ。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "BlurProcessor"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/BlurProcessor",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "BlurProcessor"
+        }
+      ],
+      "role": "symbol",
+      "title": "BlurProcessor",
+      "type": "topic",
+      "url": "/documentation/skywayroom/blurprocessor"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/BlurProcessor/inferenceInterval": {
+      "abstract": [
+        {
+          "text": "Vision を実行する間隔（フレーム数）。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "inferenceInterval"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:s5UInt8V",
+          "text": "UInt8"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/BlurProcessor/inferenceInterval",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "inferenceInterval",
+      "type": "topic",
+      "url": "/documentation/skywayroom/blurprocessor/inferenceinterval"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1BlurProcessor/title",
+          "value": "BlurProcessor"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1BlurProcessor/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "BlurProcessor"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1BlurProcessor/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "BlurProcessor"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/blurprocessor/inferenceinterval"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    }
+  ]
+}
