@@ -1,6 +1,6 @@
 # SkyWay iOS-SDK
 
-このリポジトリは、2023 年 1 月 31 日にリリースされた SkyWay の iOS SDK です。旧 SkyWay の iOS SDK とは互換性がありません。
+このリポジトリは、2023 年 1 月 31 日にリリースされた SkyWay の iOS SDK です。
 
 ## ドキュメント
 
