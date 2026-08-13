@@ -104,7 +104,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -340,31 +340,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource/title",
-          "value": "SKWAudioSource"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWAudioSource"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWAudioSource"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource~1createStream()/title",
           "value": "createStream"
         },
@@ -404,6 +379,31 @@
             {
               "kind": "identifier",
               "text": "SKWLocalAudioStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource/title",
+          "value": "SKWAudioSource"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWAudioSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWAudioSource"
             }
           ]
         }

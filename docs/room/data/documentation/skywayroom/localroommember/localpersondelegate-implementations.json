@@ -28,7 +28,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -368,12 +368,12 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalRoomMember~1localPerson(_:didPublishStreamOf:)/title",
-          "value": "localPerson:didPublishStreamOfPublication:"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalRoomMember~1localPerson(_:didSubscribePublicationOf:)/title",
+          "value": "localPerson:didSubscribePublicationOfSubscription:"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalRoomMember~1localPerson(_:didPublishStreamOf:)/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalRoomMember~1localPerson(_:didSubscribePublicationOf:)/fragments",
           "value": [
             {
               "kind": "text",
@@ -381,7 +381,7 @@
             },
             {
               "kind": "identifier",
-              "text": "localPerson:didPublishStreamOfPublication:"
+              "text": "localPerson:didSubscribePublicationOfSubscription:"
             }
           ]
         },
@@ -412,12 +412,12 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalRoomMember~1localPerson(_:didSubscribePublicationOf:)/title",
-          "value": "localPerson:didSubscribePublicationOfSubscription:"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalRoomMember~1localPerson(_:didUnpublishStreamOf:)/title",
+          "value": "localPerson:didUnpublishStreamOfPublication:"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalRoomMember~1localPerson(_:didSubscribePublicationOf:)/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalRoomMember~1localPerson(_:didUnpublishStreamOf:)/fragments",
           "value": [
             {
               "kind": "text",
@@ -425,7 +425,26 @@
             },
             {
               "kind": "identifier",
-              "text": "localPerson:didSubscribePublicationOfSubscription:"
+              "text": "localPerson:didUnpublishStreamOfPublication:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalRoomMember~1localPerson(_:didPublishStreamOf:)/title",
+          "value": "localPerson:didPublishStreamOfPublication:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalRoomMember~1localPerson(_:didPublishStreamOf:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "localPerson:didPublishStreamOfPublication:"
             }
           ]
         },
@@ -445,25 +464,6 @@
             {
               "kind": "identifier",
               "text": "localPerson:didUnsubscribePublicationOfSubscription:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalRoomMember~1localPerson(_:didUnpublishStreamOf:)/title",
-          "value": "localPerson:didUnpublishStreamOfPublication:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalRoomMember~1localPerson(_:didUnpublishStreamOf:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "localPerson:didUnpublishStreamOfPublication:"
             }
           ]
         }

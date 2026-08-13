@@ -94,7 +94,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -423,6 +423,21 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingConfigure~1maxSubscribers/title",
+          "value": "maxSubscribers"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingConfigure~1maxSubscribers/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "maxSubscribers"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingConfigure~1init()/title",
           "value": "init"
         },
@@ -462,21 +477,6 @@
             {
               "kind": "identifier",
               "text": "SKWForwardingConfigure"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingConfigure~1maxSubscribers/title",
-          "value": "maxSubscribers"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ForwardingConfigure~1maxSubscribers/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "maxSubscribers"
             }
           ]
         }

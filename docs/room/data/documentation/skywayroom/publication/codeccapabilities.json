@@ -120,7 +120,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -375,6 +375,21 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication~1codecCapabilities/title",
+          "value": "codecCapabilities"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication~1codecCapabilities/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "codecCapabilities"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication/title",
           "value": "SKWPublication"
         },
@@ -395,21 +410,6 @@
             {
               "kind": "identifier",
               "text": "SKWPublication"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication~1codecCapabilities/title",
-          "value": "codecCapabilities"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Publication~1codecCapabilities/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "codecCapabilities"
             }
           ]
         },

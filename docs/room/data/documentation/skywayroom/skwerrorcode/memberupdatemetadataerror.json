@@ -79,7 +79,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -245,21 +245,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1memberUpdateMetadataError/title",
-          "value": "SKWMemberUpdateMetadataError"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1memberUpdateMetadataError/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWMemberUpdateMetadataError"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode/title",
           "value": "SKWErrorCode"
         },
@@ -280,6 +265,21 @@
             {
               "kind": "identifier",
               "text": "SKWErrorCode"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1memberUpdateMetadataError/title",
+          "value": "SKWMemberUpdateMetadataError"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWErrorCode~1memberUpdateMetadataError/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWMemberUpdateMetadataError"
             }
           ]
         }

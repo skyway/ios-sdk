@@ -124,7 +124,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -368,16 +368,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1iceParams/title",
-          "value": "iceParams"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions/title",
+          "value": "SKWContextOptions"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1iceParams/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "iceParams"
+              "text": "SKWContextOptions"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWContextOptions"
             }
           ]
         },
@@ -408,26 +418,16 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions/title",
-          "value": "SKWContextOptions"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1iceParams/title",
+          "value": "iceParams"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1iceParams/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWContextOptions"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWContextOptions"
+              "text": "iceParams"
             }
           ]
         }

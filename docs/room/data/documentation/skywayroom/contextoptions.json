@@ -94,7 +94,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -692,6 +692,96 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1logLevel/title",
+          "value": "logLevel"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1logLevel/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "logLevel"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1iceParams/title",
+          "value": "iceParams"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1iceParams/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "iceParams"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1signaling/title",
+          "value": "signaling"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1signaling/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "signaling"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1token/title",
+          "value": "token"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1token/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "token"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1sfu/title",
+          "value": "sfu"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1sfu/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "sfu"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1rtcConfig/title",
+          "value": "rtcConfig"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1rtcConfig/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "rtcConfig"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions/title",
           "value": "SKWContextOptions"
         },
@@ -717,96 +807,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1rtcApi/title",
-          "value": "rtcApi"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1rtcApi/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "rtcApi"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1sfu/title",
-          "value": "sfu"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1sfu/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "sfu"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1token/title",
-          "value": "token"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1token/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "token"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1iceParams/title",
-          "value": "iceParams"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1iceParams/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "iceParams"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1rtcConfig/title",
-          "value": "rtcConfig"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1rtcConfig/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "rtcConfig"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1logLevel/title",
-          "value": "logLevel"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1logLevel/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "logLevel"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1analytics/title",
           "value": "analytics"
         },
@@ -822,16 +822,16 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1signaling/title",
-          "value": "signaling"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1rtcApi/title",
+          "value": "rtcApi"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1signaling/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions~1rtcApi/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "signaling"
+              "text": "rtcApi"
             }
           ]
         }

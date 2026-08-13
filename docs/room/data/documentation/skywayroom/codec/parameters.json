@@ -124,7 +124,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -385,21 +385,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Codec~1parameters/title",
-          "value": "parameters"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Codec~1parameters/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "parameters"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CodecParameters/title",
           "value": "SKWCodecParameters"
         },
@@ -420,6 +405,21 @@
             {
               "kind": "identifier",
               "text": "SKWCodecParameters"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Codec~1parameters/title",
+          "value": "parameters"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Codec~1parameters/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "parameters"
             }
           ]
         }

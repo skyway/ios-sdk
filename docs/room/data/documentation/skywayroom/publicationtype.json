@@ -99,7 +99,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -462,21 +462,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType~1P2P/title",
-          "value": "SKWPublicationTypeP2P"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType~1P2P/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWPublicationTypeP2P"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType/title",
           "value": "SKWPublicationType"
         },
@@ -497,6 +482,21 @@
             {
               "kind": "identifier",
               "text": "SKWPublicationType"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType~1P2P/title",
+          "value": "SKWPublicationTypeP2P"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType~1P2P/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPublicationTypeP2P"
             }
           ]
         }

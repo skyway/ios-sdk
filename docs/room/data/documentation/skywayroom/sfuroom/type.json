@@ -124,7 +124,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -376,31 +376,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomType/title",
-          "value": "SKWRoomType"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomType/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWRoomType"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomType/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWRoomType"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFURoom/title",
           "value": "SFURoom"
         },
@@ -421,6 +396,31 @@
             {
               "kind": "identifier",
               "text": "SFURoom"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomType/title",
+          "value": "SKWRoomType"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomType/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRoomType"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomType/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRoomType"
             }
           ]
         },

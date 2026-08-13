@@ -99,7 +99,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -447,16 +447,16 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberState~1joined/title",
-          "value": "SKWMemberStateJoined"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberState~1left/title",
+          "value": "SKWMemberStateLeft"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberState~1joined/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberState~1left/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWMemberStateJoined"
+              "text": "SKWMemberStateLeft"
             }
           ]
         },
@@ -487,16 +487,16 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberState~1left/title",
-          "value": "SKWMemberStateLeft"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberState~1joined/title",
+          "value": "SKWMemberStateJoined"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberState~1left/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberState~1joined/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWMemberStateLeft"
+              "text": "SKWMemberStateJoined"
             }
           ]
         }

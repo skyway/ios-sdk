@@ -128,7 +128,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -522,6 +522,31 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy/title",
+          "value": "SKWTurnPolicy"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWTurnPolicy"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWTurnPolicy"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy~1turnOnly/title",
           "value": "SKWTurnPolicyTurnOnly"
         },
@@ -547,31 +572,6 @@
             {
               "kind": "identifier",
               "text": "SKWTurnPolicyEnable"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy/title",
-          "value": "SKWTurnPolicy"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWTurnPolicy"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1TurnPolicy/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWTurnPolicy"
             }
           ]
         },

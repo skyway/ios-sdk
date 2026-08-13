@@ -166,7 +166,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -397,6 +397,21 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1BlurProcessor~1isActive/title",
+          "value": "isActive"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1BlurProcessor~1isActive/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "isActive"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1BlurProcessor/title",
           "value": "BlurProcessor"
         },
@@ -417,21 +432,6 @@
             {
               "kind": "identifier",
               "text": "BlurProcessor"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1BlurProcessor~1isActive/title",
-          "value": "isActive"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1BlurProcessor~1isActive/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "isActive"
             }
           ]
         }

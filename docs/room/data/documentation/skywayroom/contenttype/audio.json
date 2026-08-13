@@ -79,7 +79,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -245,6 +245,21 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContentType~1audio/title",
+          "value": "SKWContentTypeAudio"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContentType~1audio/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWContentTypeAudio"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContentType/title",
           "value": "SKWContentType"
         },
@@ -265,21 +280,6 @@
             {
               "kind": "identifier",
               "text": "SKWContentType"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContentType~1audio/title",
-          "value": "SKWContentTypeAudio"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContentType~1audio/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWContentTypeAudio"
             }
           ]
         }

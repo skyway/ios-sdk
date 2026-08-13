@@ -114,7 +114,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -615,16 +615,20 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember~1forwardings/title",
-          "value": "forwardings"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember~1startForwarding(_:configure:completion:)/title",
+          "value": "startForwardingPublication:withConfigure:completion:"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember~1forwardings/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember~1startForwarding(_:configure:completion:)/fragments",
           "value": [
             {
+              "kind": "text",
+              "text": "- "
+            },
+            {
               "kind": "identifier",
-              "text": "forwardings"
+              "text": "startForwardingPublication:withConfigure:completion:"
             }
           ]
         },
@@ -640,6 +644,21 @@
             {
               "kind": "identifier",
               "text": "delegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember~1forwardings/title",
+          "value": "forwardings"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember~1forwardings/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "forwardings"
             }
           ]
         },
@@ -665,25 +684,6 @@
             {
               "kind": "identifier",
               "text": "SKWRemoteMember"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember~1startForwarding(_:configure:completion:)/title",
-          "value": "startForwardingPublication:withConfigure:completion:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember~1startForwarding(_:configure:completion:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "startForwardingPublication:withConfigure:completion:"
             }
           ]
         }

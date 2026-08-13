@@ -99,7 +99,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -457,6 +457,31 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState/title",
+          "value": "SKWSubscriptionState"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSubscriptionState"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSubscriptionState"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState~1enabled/title",
           "value": "SKWSubscriptionStateEnabled"
         },
@@ -482,31 +507,6 @@
             {
               "kind": "identifier",
               "text": "SKWSubscriptionStateCanceled"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState/title",
-          "value": "SKWSubscriptionState"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWSubscriptionState"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SubscriptionState/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWSubscriptionState"
             }
           ]
         }

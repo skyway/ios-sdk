@@ -160,7 +160,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -413,6 +413,31 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats/title",
+          "value": "SKWWebRTCStats"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWWebRTCStats"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWWebRTCStats"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomSubscription~1getStats()/title",
           "value": "getStats"
         },
@@ -452,31 +477,6 @@
             {
               "kind": "identifier",
               "text": "RoomSubscription"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats/title",
-          "value": "SKWWebRTCStats"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWWebRTCStats"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWWebRTCStats"
             }
           ]
         }

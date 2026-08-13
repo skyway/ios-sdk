@@ -228,7 +228,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -529,6 +529,31 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWRemotePersonUnsubscribeCompletion/title",
+          "value": "SKWRemotePersonUnsubscribeCompletion"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWRemotePersonUnsubscribeCompletion/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemotePersonUnsubscribeCompletion"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWRemotePersonUnsubscribeCompletion/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemotePersonUnsubscribeCompletion"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson/title",
           "value": "SKWRemotePerson"
         },
@@ -568,31 +593,6 @@
             {
               "kind": "identifier",
               "text": "unsubscribeWithSubscriptionID:completion:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWRemotePersonUnsubscribeCompletion/title",
-          "value": "SKWRemotePersonUnsubscribeCompletion"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWRemotePersonUnsubscribeCompletion/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWRemotePersonUnsubscribeCompletion"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SKWRemotePersonUnsubscribeCompletion/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWRemotePersonUnsubscribeCompletion"
             }
           ]
         }

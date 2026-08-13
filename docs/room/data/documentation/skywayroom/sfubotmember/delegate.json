@@ -136,7 +136,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -391,31 +391,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/title",
-          "value": "SKWSFUBotMember"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWSFUBotMember"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWSFUBotMember"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember~1delegate/title",
           "value": "delegate"
         },
@@ -451,6 +426,31 @@
             {
               "kind": "identifier",
               "text": "SKWSFUBotMemberDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/title",
+          "value": "SKWSFUBotMember"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSFUBotMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSFUBotMember"
             }
           ]
         }

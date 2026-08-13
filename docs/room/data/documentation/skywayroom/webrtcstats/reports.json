@@ -139,7 +139,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -408,6 +408,21 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats~1reports/title",
+          "value": "reports"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats~1reports/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "reports"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStatsReport/title",
           "value": "SKWWebRTCStatsReport"
         },
@@ -453,21 +468,6 @@
             {
               "kind": "identifier",
               "text": "SKWWebRTCStats"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats~1reports/title",
-          "value": "reports"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats~1reports/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "reports"
             }
           ]
         }

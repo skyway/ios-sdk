@@ -94,7 +94,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -516,21 +516,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Encoding~1maxBitrate/title",
-          "value": "maxBitrate"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Encoding~1maxBitrate/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "maxBitrate"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Encoding~1id/title",
           "value": "id"
         },
@@ -546,16 +531,16 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Encoding~1scaleResolutionDownBy/title",
-          "value": "scaleResolutionDownBy"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Encoding~1maxFramerate/title",
+          "value": "maxFramerate"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Encoding~1scaleResolutionDownBy/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Encoding~1maxFramerate/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "scaleResolutionDownBy"
+              "text": "maxFramerate"
             }
           ]
         },
@@ -586,16 +571,31 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Encoding~1maxFramerate/title",
-          "value": "maxFramerate"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Encoding~1scaleResolutionDownBy/title",
+          "value": "scaleResolutionDownBy"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Encoding~1maxFramerate/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Encoding~1scaleResolutionDownBy/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "maxFramerate"
+              "text": "scaleResolutionDownBy"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Encoding~1maxBitrate/title",
+          "value": "maxBitrate"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Encoding~1maxBitrate/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "maxBitrate"
             }
           ]
         }

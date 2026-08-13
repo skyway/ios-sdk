@@ -165,7 +165,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -419,31 +419,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Codec/title",
-          "value": "SKWCodec"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Codec/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWCodec"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Codec/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWCodec"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationOptions/title",
           "value": "SKWPublicationOptions"
         },
@@ -464,6 +439,31 @@
             {
               "kind": "identifier",
               "text": "SKWPublicationOptions"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Codec/title",
+          "value": "SKWCodec"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Codec/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWCodec"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Codec/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWCodec"
             }
           ]
         }

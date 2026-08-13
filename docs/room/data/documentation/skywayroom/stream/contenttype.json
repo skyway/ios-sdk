@@ -116,7 +116,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -368,31 +368,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Stream/title",
-          "value": "SKWStream"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Stream/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWStream"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Stream/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWStream"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContentType/title",
           "value": "SKWContentType"
         },
@@ -428,6 +403,31 @@
             {
               "kind": "identifier",
               "text": "contentType"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Stream/title",
+          "value": "SKWStream"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Stream/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Stream/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWStream"
             }
           ]
         }

@@ -130,7 +130,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.7.0",
+              "text": "Version: 3.8.0",
               "type": "text"
             }
           ],
@@ -396,6 +396,31 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context/title",
+          "value": "SKWContext"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWContext"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWContext"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context~1plugins/title",
           "value": "plugins"
         },
@@ -431,31 +456,6 @@
             {
               "kind": "identifier",
               "text": "SKWPlugin"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context/title",
-          "value": "SKWContext"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWContext"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Context/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWContext"
             }
           ]
         }
