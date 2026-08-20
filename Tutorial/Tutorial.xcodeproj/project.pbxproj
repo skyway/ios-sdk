@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6F94F8AB2FD1446600A14D3C /* TutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F94F8AA2FD1446600A14D3C /* TutorialApp.swift */; };
 		6F94F8AD2FD1447900A14D3C /* RoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F94F8AC2FD1447900A14D3C /* RoomViewModel.swift */; };
-		6F94F8AF2FD1448400A14D3C /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F94F8AE2FD1448400A14D3C /* CameraPreview.swift */; };
+		6F94F8AF2FD1448400A14D3C /* LocalVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F94F8AE2FD1448400A14D3C /* LocalVideoView.swift */; };
 		6F94F8B12FD1448E00A14D3C /* RemoteVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F94F8B02FD1448E00A14D3C /* RemoteVideoView.swift */; };
 		6F94F8B32FD1449B00A14D3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F94F8B22FD1449B00A14D3C /* ContentView.swift */; };
 		A065A22D28D46A6600F332C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A065A22C28D46A6600F332C3 /* Assets.xcassets */; };
@@ -32,7 +32,7 @@
 /* Begin PBXFileReference section */
 		6F94F8AA2FD1446600A14D3C /* TutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialApp.swift; sourceTree = "<group>"; };
 		6F94F8AC2FD1447900A14D3C /* RoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewModel.swift; sourceTree = "<group>"; };
-		6F94F8AE2FD1448400A14D3C /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		6F94F8AE2FD1448400A14D3C /* LocalVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalVideoView.swift; sourceTree = "<group>"; };
 		6F94F8B02FD1448E00A14D3C /* RemoteVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteVideoView.swift; sourceTree = "<group>"; };
 		6F94F8B22FD1449B00A14D3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A065A22028D46A6600F332C3 /* Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,7 +76,7 @@
 				A065A23128D46A6600F332C3 /* Info.plist */,
 				6F94F8AA2FD1446600A14D3C /* TutorialApp.swift */,
 				6F94F8AC2FD1447900A14D3C /* RoomViewModel.swift */,
-				6F94F8AE2FD1448400A14D3C /* CameraPreview.swift */,
+				6F94F8AE2FD1448400A14D3C /* LocalVideoView.swift */,
 				6F94F8B02FD1448E00A14D3C /* RemoteVideoView.swift */,
 				6F94F8B22FD1449B00A14D3C /* ContentView.swift */,
 			);
@@ -170,7 +170,7 @@
 				6F94F8B32FD1449B00A14D3C /* ContentView.swift in Sources */,
 				6F94F8AB2FD1446600A14D3C /* TutorialApp.swift in Sources */,
 				6F94F8B12FD1448E00A14D3C /* RemoteVideoView.swift in Sources */,
-				6F94F8AF2FD1448400A14D3C /* CameraPreview.swift in Sources */,
+				6F94F8AF2FD1448400A14D3C /* LocalVideoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
