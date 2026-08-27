@@ -50,6 +50,10 @@
     ],
     "navigatorTitle": [
       {
+        "kind": "text",
+        "text": "- "
+      },
+      {
         "kind": "identifier",
         "text": "createStream"
       }
@@ -67,7 +71,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -124,7 +130,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -209,6 +215,10 @@
       "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/CameraVideoSource/createStream()",
       "kind": "symbol",
       "navigatorTitle": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
         {
           "kind": "identifier",
           "text": "createStream"
@@ -327,7 +337,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -360,26 +372,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalVideoStream/title",
-          "value": "SKWLocalVideoStream"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource/title",
+          "value": "SKWCameraVideoSource"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalVideoStream/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWLocalVideoStream"
+              "text": "SKWCameraVideoSource"
             }
           ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalVideoStream/navigatorTitle",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource/navigatorTitle",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWLocalVideoStream"
+              "text": "SKWCameraVideoSource"
             }
           ]
         },
@@ -404,26 +416,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource/title",
-          "value": "SKWCameraVideoSource"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalVideoStream/title",
+          "value": "SKWLocalVideoStream"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalVideoStream/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWCameraVideoSource"
+              "text": "SKWLocalVideoStream"
             }
           ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraVideoSource/navigatorTitle",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalVideoStream/navigatorTitle",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWCameraVideoSource"
+              "text": "SKWLocalVideoStream"
             }
           ]
         }

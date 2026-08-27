@@ -80,6 +80,10 @@
     ],
     "navigatorTitle": [
       {
+        "kind": "text",
+        "text": "- "
+      },
+      {
         "kind": "identifier",
         "text": "leave:completion:"
       }
@@ -97,7 +101,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -241,7 +247,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -356,6 +362,10 @@
       "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Room/leave(_:completion:)",
       "kind": "symbol",
       "navigatorTitle": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
         {
           "kind": "identifier",
           "text": "leave:completion:"
@@ -474,7 +484,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -540,7 +552,7 @@
                   },
                   {
                     "kind": "text",
-                    "text": " * "
+                    "text": " *"
                   },
                   {
                     "kind": "internalParam",
@@ -603,26 +615,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMember/title",
-          "value": "RoomMember"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/title",
+          "value": "Room"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMember/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "RoomMember"
+              "text": "Room"
             }
           ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMember/navigatorTitle",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/navigatorTitle",
           "value": [
             {
               "kind": "identifier",
-              "text": "RoomMember"
+              "text": "Room"
             }
           ]
         },
@@ -647,26 +659,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/title",
-          "value": "Room"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMember/title",
+          "value": "RoomMember"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMember/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "Room"
+              "text": "RoomMember"
             }
           ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/navigatorTitle",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMember/navigatorTitle",
           "value": [
             {
               "kind": "identifier",
-              "text": "Room"
+              "text": "RoomMember"
             }
           ]
         }

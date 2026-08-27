@@ -57,7 +57,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -94,7 +96,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -238,6 +240,10 @@
       "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/DataStreamSubscriber/init(id:name:)",
       "kind": "symbol",
       "navigatorTitle": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
         {
           "kind": "identifier",
           "text": "initWithId:name:"
@@ -469,7 +475,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -541,21 +549,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1DataStreamSubscriber~1name/title",
-          "value": "name"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1DataStreamSubscriber~1name/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "name"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1DataStreamSubscriber~1init(id:name:)/title",
           "value": "initWithId:name:"
         },
@@ -570,6 +563,21 @@
             {
               "kind": "identifier",
               "text": "initWithId:name:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1DataStreamSubscriber~1name/title",
+          "value": "name"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1DataStreamSubscriber~1name/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "name"
             }
           ]
         }

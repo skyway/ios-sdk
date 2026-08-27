@@ -105,6 +105,10 @@
     ],
     "navigatorTitle": [
       {
+        "kind": "text",
+        "text": "+ "
+      },
+      {
         "kind": "identifier",
         "text": "createWith:completion:"
       }
@@ -122,7 +126,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -288,7 +294,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -449,6 +455,10 @@
       "kind": "symbol",
       "navigatorTitle": [
         {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
           "kind": "identifier",
           "text": "createWith:completion:"
         }
@@ -566,7 +576,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -633,7 +645,7 @@
                   },
                   {
                     "kind": "text",
-                    "text": " * "
+                    "text": " *"
                   },
                   {
                     "kind": "internalParam",
@@ -650,7 +662,7 @@
                   },
                   {
                     "kind": "text",
-                    "text": " * "
+                    "text": " *"
                   },
                   {
                     "kind": "internalParam",

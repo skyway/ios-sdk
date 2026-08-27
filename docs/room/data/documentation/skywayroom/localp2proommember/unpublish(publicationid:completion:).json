@@ -1,7 +1,15 @@
 {
   "abstract": [
     {
-      "text": "Publishを停止します。",
+      "text": "Inherited from ",
+      "type": "text"
+    },
+    {
+      "code": "LocalRoomMember.unpublish(publicationId:completion:)",
+      "type": "codeVoice"
+    },
+    {
+      "text": ".",
       "type": "text"
     }
   ],
@@ -96,6 +104,10 @@
     ],
     "navigatorTitle": [
       {
+        "kind": "text",
+        "text": "- "
+      },
+      {
         "kind": "identifier",
         "text": "unpublishWithPublicationId:completion:"
       }
@@ -113,7 +125,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -195,39 +209,6 @@
         }
       ],
       "kind": "declarations"
-    },
-    {
-      "kind": "parameters",
-      "parameters": [
-        {
-          "content": [
-            {
-              "inlineContent": [
-                {
-                  "text": "停止するPublicationのID",
-                  "type": "text"
-                }
-              ],
-              "type": "paragraph"
-            }
-          ],
-          "name": "publicationId"
-        },
-        {
-          "content": [
-            {
-              "inlineContent": [
-                {
-                  "text": "完了コールバック",
-                  "type": "text"
-                }
-              ],
-              "type": "paragraph"
-            }
-          ],
-          "name": "completion"
-        }
-      ]
     }
   ],
   "references": {
@@ -236,7 +217,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -289,12 +270,7 @@
       "url": "/documentation/skywayroom/localp2proommember"
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalP2PRoomMember/unpublish(publicationId:completion:)": {
-      "abstract": [
-        {
-          "text": "Publishを停止します。",
-          "type": "text"
-        }
-      ],
+      "abstract": [],
       "fragments": [
         {
           "kind": "keyword",
@@ -367,6 +343,10 @@
       "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalP2PRoomMember/unpublish(publicationId:completion:)",
       "kind": "symbol",
       "navigatorTitle": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
         {
           "kind": "identifier",
           "text": "unpublishWithPublicationId:completion:"
@@ -451,7 +431,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -516,7 +498,7 @@
                   },
                   {
                     "kind": "text",
-                    "text": " * "
+                    "text": " *"
                   },
                   {
                     "kind": "internalParam",
@@ -538,43 +520,6 @@
               }
             ],
             "kind": "declarations"
-          }
-        },
-        {
-          "op": "replace",
-          "path": "/primaryContentSections/1",
-          "value": {
-            "kind": "parameters",
-            "parameters": [
-              {
-                "content": [
-                  {
-                    "inlineContent": [
-                      {
-                        "text": "停止するPublicationのID",
-                        "type": "text"
-                      }
-                    ],
-                    "type": "paragraph"
-                  }
-                ],
-                "name": "publicationId"
-              },
-              {
-                "content": [
-                  {
-                    "inlineContent": [
-                      {
-                        "text": "完了コールバック",
-                        "type": "text"
-                      }
-                    ],
-                    "type": "paragraph"
-                  }
-                ],
-                "name": "completion"
-              }
-            ]
           }
         },
         {

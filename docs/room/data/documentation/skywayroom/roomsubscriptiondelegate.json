@@ -57,7 +57,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -92,7 +94,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -199,6 +201,10 @@
       "kind": "symbol",
       "navigatorTitle": [
         {
+          "kind": "text",
+          "text": "- "
+        },
+        {
           "kind": "identifier",
           "text": "subscription:connectionStateDidChange:"
         }
@@ -262,6 +268,10 @@
       "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomSubscriptionDelegate/subscription(_:didAttach:)",
       "kind": "symbol",
       "navigatorTitle": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
         {
           "kind": "identifier",
           "text": "subscription:didAttach:"
@@ -373,7 +383,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -396,20 +408,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomSubscriptionDelegate~1subscription(_:didAttach:)/title",
-          "value": "subscription:didAttach:"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomSubscriptionDelegate/title",
+          "value": "RoomSubscriptionDelegate"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomSubscriptionDelegate~1subscription(_:didAttach:)/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomSubscriptionDelegate/fragments",
           "value": [
             {
-              "kind": "text",
-              "text": "- "
-            },
+              "kind": "identifier",
+              "text": "RoomSubscriptionDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomSubscriptionDelegate/navigatorTitle",
+          "value": [
             {
               "kind": "identifier",
-              "text": "subscription:didAttach:"
+              "text": "RoomSubscriptionDelegate"
             }
           ]
         },
@@ -434,26 +452,20 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomSubscriptionDelegate/title",
-          "value": "RoomSubscriptionDelegate"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomSubscriptionDelegate~1subscription(_:didAttach:)/title",
+          "value": "subscription:didAttach:"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomSubscriptionDelegate/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomSubscriptionDelegate~1subscription(_:didAttach:)/fragments",
           "value": [
             {
-              "kind": "identifier",
-              "text": "RoomSubscriptionDelegate"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomSubscriptionDelegate/navigatorTitle",
-          "value": [
+              "kind": "text",
+              "text": "- "
+            },
             {
               "kind": "identifier",
-              "text": "RoomSubscriptionDelegate"
+              "text": "subscription:didAttach:"
             }
           ]
         }

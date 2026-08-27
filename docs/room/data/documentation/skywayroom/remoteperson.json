@@ -1,4 +1,15 @@
 {
+  "deprecationSummary": [
+    {
+      "inlineContent": [
+        {
+          "text": "SkyWayRoom v4.0.0で非推奨となりました。代わりにRemoteRoomMemberをご利用ください。",
+          "type": "text"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
   "hierarchy": {
     "paths": [
       [
@@ -38,6 +49,7 @@
         "text": "RemotePerson"
       }
     ],
+    "platforms": [],
     "role": "symbol",
     "roleHeading": "Class",
     "symbolKind": "class",
@@ -51,7 +63,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -88,7 +102,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -108,6 +122,7 @@
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteMember": {
       "abstract": [],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -137,6 +152,7 @@
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePerson": {
       "abstract": [],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -166,6 +182,7 @@
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePerson/delegate": {
       "abstract": [],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -206,8 +223,9 @@
       "type": "topic",
       "url": "/documentation/skywayroom/remoteperson/delegate"
     },
-    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePerson/subscribePublication(publicationID:completion:)": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePerson/subscribePublication(publicationID:)": {
       "abstract": [],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -240,59 +258,50 @@
         },
         {
           "kind": "text",
-          "text": ", "
+          "text": ") "
         },
         {
-          "kind": "externalParam",
-          "text": "completion"
+          "kind": "keyword",
+          "text": "async"
         },
         {
           "kind": "text",
-          "text": ": (("
+          "text": " "
+        },
+        {
+          "kind": "keyword",
+          "text": "throws"
+        },
+        {
+          "kind": "text",
+          "text": " -> "
         },
         {
           "kind": "typeIdentifier",
           "preciseIdentifier": "c:objc(cs)SKWSubscription",
           "text": "Subscription"
-        },
-        {
-          "kind": "text",
-          "text": "?, (any "
-        },
-        {
-          "kind": "typeIdentifier",
-          "preciseIdentifier": "s:s5ErrorP",
-          "text": "Error"
-        },
-        {
-          "kind": "text",
-          "text": ")?) -> "
-        },
-        {
-          "kind": "typeIdentifier",
-          "preciseIdentifier": "s:s4Voida",
-          "text": "Void"
-        },
-        {
-          "kind": "text",
-          "text": ")?)"
         }
       ],
-      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePerson/subscribePublication(publicationID:completion:)",
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePerson/subscribePublication(publicationID:)",
       "kind": "symbol",
       "navigatorTitle": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
         {
           "kind": "identifier",
           "text": "subscribePublicationWithPublicationID:completion:"
         }
       ],
       "role": "symbol",
-      "title": "subscribePublication(publicationID:completion:)",
+      "title": "subscribePublication(publicationID:)",
       "type": "topic",
-      "url": "/documentation/skywayroom/remoteperson/subscribepublication(publicationid:completion:)"
+      "url": "/documentation/skywayroom/remoteperson/subscribepublication(publicationid:)"
     },
-    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePerson/unsubscribe(subscriptionID:completion:)": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePerson/unsubscribe(subscriptionID:)": {
       "abstract": [],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -325,47 +334,37 @@
         },
         {
           "kind": "text",
-          "text": ", "
+          "text": ") "
         },
         {
-          "kind": "externalParam",
-          "text": "completion"
-        },
-        {
-          "kind": "text",
-          "text": ": (((any "
-        },
-        {
-          "kind": "typeIdentifier",
-          "preciseIdentifier": "s:s5ErrorP",
-          "text": "Error"
+          "kind": "keyword",
+          "text": "async"
         },
         {
           "kind": "text",
-          "text": ")?) -> "
+          "text": " "
         },
         {
-          "kind": "typeIdentifier",
-          "preciseIdentifier": "s:s4Voida",
-          "text": "Void"
-        },
-        {
-          "kind": "text",
-          "text": ")?)"
+          "kind": "keyword",
+          "text": "throws"
         }
       ],
-      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePerson/unsubscribe(subscriptionID:completion:)",
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePerson/unsubscribe(subscriptionID:)",
       "kind": "symbol",
       "navigatorTitle": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
         {
           "kind": "identifier",
           "text": "unsubscribeWithSubscriptionID:completion:"
         }
       ],
       "role": "symbol",
-      "title": "unsubscribe(subscriptionID:completion:)",
+      "title": "unsubscribe(subscriptionID:)",
       "type": "topic",
-      "url": "/documentation/skywayroom/remoteperson/unsubscribe(subscriptionid:completion:)"
+      "url": "/documentation/skywayroom/remoteperson/unsubscribe(subscriptionid:)"
     },
     "doc://com.ntt.skyway.room/objc(pl)NSObject": {
       "identifier": "doc://com.ntt.skyway.room/objc(pl)NSObject",
@@ -430,8 +429,8 @@
       "anchor": "Instance-Methods",
       "generated": true,
       "identifiers": [
-        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePerson/subscribePublication(publicationID:completion:)",
-        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePerson/unsubscribe(subscriptionID:completion:)"
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePerson/subscribePublication(publicationID:)",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePerson/unsubscribe(subscriptionID:)"
       ],
       "title": "Instance Methods"
     }
@@ -445,7 +444,7 @@
           "value": "occ"
         },
         {
-          "op": "add",
+          "op": "replace",
           "path": "/metadata/platforms",
           "value": null
         },
@@ -500,8 +499,8 @@
               "anchor": "Instance-Methods",
               "generated": true,
               "identifiers": [
-                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePerson/subscribePublication(publicationID:completion:)",
-                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePerson/unsubscribe(subscriptionID:completion:)"
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePerson/subscribePublication(publicationID:)",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePerson/unsubscribe(subscriptionID:)"
               ],
               "title": "Instance Methods"
             }
@@ -536,7 +535,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -569,56 +570,8 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson~1unsubscribe(subscriptionID:completion:)/title",
-          "value": "unsubscribeWithSubscriptionID:completion:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson~1unsubscribe(subscriptionID:completion:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "unsubscribeWithSubscriptionID:completion:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson~1delegate/title",
-          "value": "delegate"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson~1delegate/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "delegate"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson~1subscribePublication(publicationID:completion:)/title",
-          "value": "subscribePublicationWithPublicationID:completion:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson~1subscribePublication(publicationID:completion:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "subscribePublicationWithPublicationID:completion:"
-            }
-          ]
+          "path": "/deprecationSummary",
+          "value": []
         },
         {
           "op": "replace",
@@ -667,6 +620,59 @@
             {
               "kind": "identifier",
               "text": "SKWRemotePerson"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson~1delegate/title",
+          "value": "delegate"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson~1delegate/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "delegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson~1subscribePublication(publicationID:)/title",
+          "value": "subscribePublicationWithPublicationID:completion:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson~1subscribePublication(publicationID:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "subscribePublicationWithPublicationID:completion:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson~1unsubscribe(subscriptionID:)/title",
+          "value": "unsubscribeWithSubscriptionID:completion:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePerson~1unsubscribe(subscriptionID:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "unsubscribeWithSubscriptionID:completion:"
             }
           ]
         }

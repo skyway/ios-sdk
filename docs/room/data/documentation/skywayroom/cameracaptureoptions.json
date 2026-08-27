@@ -57,7 +57,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -122,7 +124,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -463,7 +465,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -520,16 +524,16 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraCaptureOptions~1preferredMaxWidth/title",
-          "value": "preferredMaxWidth"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraCaptureOptions~1preferredMaxFrameRate/title",
+          "value": "preferredMaxFrameRate"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraCaptureOptions~1preferredMaxWidth/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraCaptureOptions~1preferredMaxFrameRate/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "preferredMaxWidth"
+              "text": "preferredMaxFrameRate"
             }
           ]
         },
@@ -550,16 +554,16 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraCaptureOptions~1preferredMaxFrameRate/title",
-          "value": "preferredMaxFrameRate"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraCaptureOptions~1preferredMaxWidth/title",
+          "value": "preferredMaxWidth"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraCaptureOptions~1preferredMaxFrameRate/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraCaptureOptions~1preferredMaxWidth/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "preferredMaxFrameRate"
+              "text": "preferredMaxWidth"
             }
           ]
         }

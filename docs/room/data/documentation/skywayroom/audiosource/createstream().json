@@ -50,6 +50,10 @@
     ],
     "navigatorTitle": [
       {
+        "kind": "text",
+        "text": "- "
+      },
+      {
         "kind": "identifier",
         "text": "createStream"
       }
@@ -67,7 +71,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -104,7 +110,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -189,6 +195,10 @@
       "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/AudioSource/createStream()",
       "kind": "symbol",
       "navigatorTitle": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
         {
           "kind": "identifier",
           "text": "createStream"
@@ -307,7 +317,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -337,6 +349,31 @@
             ],
             "kind": "declarations"
           }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource/title",
+          "value": "SKWAudioSource"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWAudioSource"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWAudioSource"
+            }
+          ]
         },
         {
           "op": "replace",
@@ -379,31 +416,6 @@
             {
               "kind": "identifier",
               "text": "SKWLocalAudioStream"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource/title",
-          "value": "SKWAudioSource"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWAudioSource"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1AudioSource/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWAudioSource"
             }
           ]
         }

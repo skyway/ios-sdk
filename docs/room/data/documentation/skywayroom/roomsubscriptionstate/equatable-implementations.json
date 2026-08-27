@@ -1,0 +1,208 @@
+{
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomSubscriptionState"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomSubscriptionState/Equatable-Implementations"
+  },
+  "kind": "article",
+  "metadata": {
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "role": "collectionGroup",
+    "roleHeading": "API Collection",
+    "title": "Equatable Implementations"
+  },
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 4.0.0",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomSubscriptionState": {
+      "abstract": [
+        {
+          "text": "RoomSubscriptionのステート",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "enum"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "RoomSubscriptionState"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomSubscriptionState",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "RoomSubscriptionState"
+        }
+      ],
+      "role": "symbol",
+      "title": "RoomSubscriptionState",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roomsubscriptionstate"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomSubscriptionState/!=(_:_:)": {
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "static"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "!="
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "text": "Self"
+        },
+        {
+          "kind": "text",
+          "text": ", "
+        },
+        {
+          "kind": "typeIdentifier",
+          "text": "Self"
+        },
+        {
+          "kind": "text",
+          "text": ") -> "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:Sb",
+          "text": "Bool"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomSubscriptionState/!=(_:_:)",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "!=(_:_:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roomsubscriptionstate/!=(_:_:)"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "topicSections": [
+    {
+      "anchor": "Operators",
+      "generated": true,
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomSubscriptionState/!=(_:_:)"
+      ],
+      "title": "Operators"
+    }
+  ],
+  "variantOverrides": [
+    {
+      "patch": [
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomSubscriptionState/title",
+          "value": "RoomSubscriptionState"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomSubscriptionState/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomSubscriptionState"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomSubscriptionState/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomSubscriptionState"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/roomsubscriptionstate/equatable-implementations"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    }
+  ]
+}

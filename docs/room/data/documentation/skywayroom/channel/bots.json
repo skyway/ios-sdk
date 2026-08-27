@@ -5,6 +5,17 @@
       "type": "text"
     }
   ],
+  "deprecationSummary": [
+    {
+      "inlineContent": [
+        {
+          "text": "SkyWayRoom v4.0.0で非推奨となりました。代わりにRoomをご利用ください。",
+          "type": "text"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
   "hierarchy": {
     "paths": [
       [
@@ -58,6 +69,7 @@
         "text": "bots"
       }
     ],
+    "platforms": [],
     "role": "symbol",
     "roleHeading": "Instance Property",
     "symbolKind": "property",
@@ -71,7 +83,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -120,7 +134,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -145,6 +159,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -179,6 +194,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -221,6 +237,7 @@
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteMember": {
       "abstract": [],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -264,7 +281,7 @@
           "value": "occ"
         },
         {
-          "op": "add",
+          "op": "replace",
           "path": "/metadata/platforms",
           "value": null
         },
@@ -318,7 +335,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -370,6 +389,36 @@
         },
         {
           "op": "replace",
+          "path": "/deprecationSummary",
+          "value": []
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel/title",
+          "value": "SKWChannel"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWChannel"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWChannel"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel~1bots/title",
           "value": "bots"
         },
@@ -405,31 +454,6 @@
             {
               "kind": "identifier",
               "text": "SKWRemoteMember"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel/title",
-          "value": "SKWChannel"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWChannel"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Channel/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWChannel"
             }
           ]
         }

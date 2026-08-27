@@ -5,6 +5,17 @@
       "type": "text"
     }
   ],
+  "deprecationSummary": [
+    {
+      "inlineContent": [
+        {
+          "text": "SkyWayRoom v4.0.0で非推奨となりました。代わりにRoomMemberStateをご利用ください。",
+          "type": "text"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
   "hierarchy": {
     "paths": [
       [
@@ -44,6 +55,7 @@
         "text": "MemberState"
       }
     ],
+    "platforms": [],
     "role": "symbol",
     "roleHeading": "Enumeration",
     "symbolKind": "enum",
@@ -57,7 +69,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -99,7 +113,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -124,6 +138,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -171,6 +186,7 @@
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MemberState/init(rawValue:)": {
       "abstract": [],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "identifier",
@@ -207,6 +223,7 @@
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MemberState/joined": {
       "abstract": [],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -236,6 +253,7 @@
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MemberState/left": {
       "abstract": [],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -337,7 +355,7 @@
           "value": "occ"
         },
         {
-          "op": "add",
+          "op": "replace",
           "path": "/metadata/platforms",
           "value": null
         },
@@ -411,7 +429,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -447,18 +467,8 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberState~1left/title",
-          "value": "SKWMemberStateLeft"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberState~1left/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWMemberStateLeft"
-            }
-          ]
+          "path": "/deprecationSummary",
+          "value": []
         },
         {
           "op": "replace",
@@ -497,6 +507,21 @@
             {
               "kind": "identifier",
               "text": "SKWMemberStateJoined"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberState~1left/title",
+          "value": "SKWMemberStateLeft"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberState~1left/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWMemberStateLeft"
             }
           ]
         }

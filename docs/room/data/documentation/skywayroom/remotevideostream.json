@@ -57,7 +57,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -94,7 +96,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -218,6 +220,10 @@
       "kind": "symbol",
       "navigatorTitle": [
         {
+          "kind": "text",
+          "text": "- "
+        },
+        {
           "kind": "identifier",
           "text": "attachView:"
         }
@@ -264,6 +270,10 @@
       "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteVideoStream/detach(_:)",
       "kind": "symbol",
       "navigatorTitle": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
         {
           "kind": "identifier",
           "text": "detachView:"
@@ -470,7 +480,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -503,31 +515,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteVideoStream/title",
-          "value": "SKWRemoteVideoStream"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteVideoStream/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWRemoteVideoStream"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteVideoStream/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWRemoteVideoStream"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteStream/title",
           "value": "SKWRemoteStream"
         },
@@ -548,6 +535,31 @@
             {
               "kind": "identifier",
               "text": "SKWRemoteStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteVideoStream/title",
+          "value": "SKWRemoteVideoStream"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteVideoStream/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemoteVideoStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteVideoStream/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemoteVideoStream"
             }
           ]
         },

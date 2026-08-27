@@ -76,18 +76,15 @@
     ],
     "navigatorTitle": [
       {
+        "kind": "text",
+        "text": "- "
+      },
+      {
         "kind": "identifier",
         "text": "getStatsWithMemberId:"
       }
     ],
-    "platforms": [
-      {
-        "beta": false,
-        "deprecated": true,
-        "message": "SkyWayRoom v2.0.0で非推奨となりました。",
-        "unavailable": false
-      }
-    ],
+    "platforms": [],
     "role": "symbol",
     "roleHeading": "Instance Method",
     "symbolKind": "method",
@@ -101,7 +98,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -194,7 +193,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -297,6 +296,10 @@
       "kind": "symbol",
       "navigatorTitle": [
         {
+          "kind": "text",
+          "text": "- "
+        },
+        {
           "kind": "identifier",
           "text": "getStatsWithMemberId:"
         }
@@ -354,13 +357,7 @@
         {
           "op": "replace",
           "path": "/metadata/platforms",
-          "value": [
-            {
-              "beta": false,
-              "deprecated": true,
-              "unavailable": false
-            }
-          ]
+          "value": []
         },
         {
           "op": "replace",
@@ -416,7 +413,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -481,25 +480,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublication~1getStats(memberId:)/title",
-          "value": "getStatsWithMemberId:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublication~1getStats(memberId:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "getStatsWithMemberId:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublication/title",
           "value": "RoomPublication"
         },
@@ -520,6 +500,25 @@
             {
               "kind": "identifier",
               "text": "RoomPublication"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublication~1getStats(memberId:)/title",
+          "value": "getStatsWithMemberId:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublication~1getStats(memberId:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "getStatsWithMemberId:"
             }
           ]
         },

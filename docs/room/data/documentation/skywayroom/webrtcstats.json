@@ -49,14 +49,7 @@
         "text": "WebRTCStats"
       }
     ],
-    "platforms": [
-      {
-        "beta": false,
-        "deprecated": true,
-        "message": "SkyWayCore v2.0.0で非推奨となりました。",
-        "unavailable": false
-      }
-    ],
+    "platforms": [],
     "role": "symbol",
     "roleHeading": "Class",
     "symbolKind": "class",
@@ -70,7 +63,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -107,7 +102,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -279,13 +274,7 @@
         {
           "op": "replace",
           "path": "/metadata/platforms",
-          "value": [
-            {
-              "beta": false,
-              "deprecated": true,
-              "unavailable": false
-            }
-          ]
+          "value": []
         },
         {
           "op": "replace",
@@ -365,7 +354,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {

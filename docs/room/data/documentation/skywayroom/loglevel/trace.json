@@ -58,7 +58,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -85,7 +87,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -241,7 +243,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -253,21 +257,6 @@
             ],
             "kind": "declarations"
           }
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LogLevel~1trace/title",
-          "value": "SKWLogLevelTrace"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LogLevel~1trace/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWLogLevelTrace"
-            }
-          ]
         },
         {
           "op": "replace",
@@ -291,6 +280,21 @@
             {
               "kind": "identifier",
               "text": "SKWLogLevel"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LogLevel~1trace/title",
+          "value": "SKWLogLevelTrace"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LogLevel~1trace/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWLogLevelTrace"
             }
           ]
         }

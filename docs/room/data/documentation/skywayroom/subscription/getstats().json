@@ -59,18 +59,15 @@
     ],
     "navigatorTitle": [
       {
+        "kind": "text",
+        "text": "- "
+      },
+      {
         "kind": "identifier",
         "text": "getStats"
       }
     ],
-    "platforms": [
-      {
-        "beta": false,
-        "deprecated": true,
-        "message": "SkyWayCore v2.0.0で非推奨となりました。",
-        "unavailable": false
-      }
-    ],
+    "platforms": [],
     "role": "symbol",
     "roleHeading": "Instance Method",
     "symbolKind": "method",
@@ -84,7 +81,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -125,7 +124,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -150,6 +149,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -211,6 +211,10 @@
       "kind": "symbol",
       "navigatorTitle": [
         {
+          "kind": "text",
+          "text": "- "
+        },
+        {
           "kind": "identifier",
           "text": "getStats"
         }
@@ -268,13 +272,7 @@
         {
           "op": "replace",
           "path": "/metadata/platforms",
-          "value": [
-            {
-              "beta": false,
-              "deprecated": true,
-              "unavailable": false
-            }
-          ]
+          "value": []
         },
         {
           "op": "replace",
@@ -330,7 +328,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -378,26 +378,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats/title",
-          "value": "SKWWebRTCStats"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Subscription/title",
+          "value": "SKWSubscription"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Subscription/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWWebRTCStats"
+              "text": "SKWSubscription"
             }
           ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats/navigatorTitle",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Subscription/navigatorTitle",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWWebRTCStats"
+              "text": "SKWSubscription"
             }
           ]
         },
@@ -422,26 +422,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Subscription/title",
-          "value": "SKWSubscription"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats/title",
+          "value": "SKWWebRTCStats"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Subscription/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWSubscription"
+              "text": "SKWWebRTCStats"
             }
           ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Subscription/navigatorTitle",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1WebRTCStats/navigatorTitle",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWSubscription"
+              "text": "SKWWebRTCStats"
             }
           ]
         }

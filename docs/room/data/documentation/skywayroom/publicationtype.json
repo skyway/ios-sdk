@@ -57,7 +57,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -99,7 +101,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -411,7 +413,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -444,21 +448,6 @@
             ],
             "kind": "declarations"
           }
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType~1SFU/title",
-          "value": "SKWPublicationTypeSFU"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType~1SFU/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWPublicationTypeSFU"
-            }
-          ]
         },
         {
           "op": "replace",
@@ -497,6 +486,21 @@
             {
               "kind": "identifier",
               "text": "SKWPublicationTypeP2P"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType~1SFU/title",
+          "value": "SKWPublicationTypeSFU"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationType~1SFU/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPublicationTypeSFU"
             }
           ]
         }

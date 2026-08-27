@@ -48,6 +48,10 @@
     ],
     "navigatorTitle": [
       {
+        "kind": "text",
+        "text": "- "
+      },
+      {
         "kind": "identifier",
         "text": "attachView:"
       }
@@ -66,7 +70,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -123,7 +129,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -207,6 +213,10 @@
       "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoStreamProtocol/attach(_:)",
       "kind": "symbol",
       "navigatorTitle": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
         {
           "kind": "identifier",
           "text": "attachView:"
@@ -326,7 +336,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -376,26 +388,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoView/title",
-          "value": "SKWVideoView"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoStreamProtocol/title",
+          "value": "SKWVideoStreamProtocol"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoView/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoStreamProtocol/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWVideoView"
+              "text": "SKWVideoStreamProtocol"
             }
           ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoView/navigatorTitle",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoStreamProtocol/navigatorTitle",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWVideoView"
+              "text": "SKWVideoStreamProtocol"
             }
           ]
         },
@@ -420,26 +432,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoStreamProtocol/title",
-          "value": "SKWVideoStreamProtocol"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoView/title",
+          "value": "SKWVideoView"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoStreamProtocol/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoView/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWVideoStreamProtocol"
+              "text": "SKWVideoView"
             }
           ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoStreamProtocol/navigatorTitle",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoView/navigatorTitle",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWVideoStreamProtocol"
+              "text": "SKWVideoView"
             }
           ]
         }

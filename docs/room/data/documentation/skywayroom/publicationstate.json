@@ -5,6 +5,17 @@
       "type": "text"
     }
   ],
+  "deprecationSummary": [
+    {
+      "inlineContent": [
+        {
+          "text": "SkyWayRoom v4.0.0で非推奨となりました。代わりにRoomPublicationStateをご利用ください。",
+          "type": "text"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
   "hierarchy": {
     "paths": [
       [
@@ -44,6 +55,7 @@
         "text": "PublicationState"
       }
     ],
+    "platforms": [],
     "role": "symbol",
     "roleHeading": "Enumeration",
     "symbolKind": "enum",
@@ -57,7 +69,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -99,7 +113,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -124,6 +138,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -171,6 +186,7 @@
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationState/canceled": {
       "abstract": [],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -200,6 +216,7 @@
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationState/disabled": {
       "abstract": [],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -229,6 +246,7 @@
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationState/enabled": {
       "abstract": [],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -258,6 +276,7 @@
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationState/init(rawValue:)": {
       "abstract": [],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "identifier",
@@ -367,7 +386,7 @@
           "value": "occ"
         },
         {
-          "op": "add",
+          "op": "replace",
           "path": "/metadata/platforms",
           "value": null
         },
@@ -442,7 +461,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -478,18 +499,8 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationState~1disabled/title",
-          "value": "SKWPublicationStateDisabled"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationState~1disabled/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWPublicationStateDisabled"
-            }
-          ]
+          "path": "/deprecationSummary",
+          "value": []
         },
         {
           "op": "replace",
@@ -528,6 +539,21 @@
             {
               "kind": "identifier",
               "text": "SKWPublicationStateCanceled"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationState~1disabled/title",
+          "value": "SKWPublicationStateDisabled"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationState~1disabled/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPublicationStateDisabled"
             }
           ]
         },

@@ -113,18 +113,15 @@
     ],
     "navigatorTitle": [
       {
+        "kind": "text",
+        "text": "+ "
+      },
+      {
         "kind": "identifier",
         "text": "createWith:sfuOptions:completionHandler:"
       }
     ],
-    "platforms": [
-      {
-        "beta": false,
-        "deprecated": true,
-        "message": "SkyWayRoom v3.1.0で非推奨となりました。",
-        "unavailable": false
-      }
-    ],
+    "platforms": [],
     "role": "symbol",
     "roleHeading": "Type Method",
     "symbolKind": "method",
@@ -138,7 +135,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -278,7 +277,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -357,6 +356,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -506,6 +506,10 @@
       "kind": "symbol",
       "navigatorTitle": [
         {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
           "kind": "identifier",
           "text": "createWith:sfuOptions:completionHandler:"
         }
@@ -533,13 +537,7 @@
         {
           "op": "replace",
           "path": "/metadata/platforms",
-          "value": [
-            {
-              "beta": false,
-              "deprecated": true,
-              "unavailable": false
-            }
-          ]
+          "value": []
         },
         {
           "op": "replace",
@@ -595,7 +593,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -688,7 +688,7 @@
                   },
                   {
                     "kind": "text",
-                    "text": " * "
+                    "text": " *"
                   },
                   {
                     "kind": "internalParam",
@@ -705,7 +705,7 @@
                   },
                   {
                     "kind": "text",
-                    "text": " * "
+                    "text": " *"
                   },
                   {
                     "kind": "internalParam",
@@ -746,31 +746,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFURoom/title",
-          "value": "SFURoom"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFURoom/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SFURoom"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFURoom/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SFURoom"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPluginOptions/title",
           "value": "SKWSFUBotPluginOptions"
         },
@@ -791,6 +766,31 @@
             {
               "kind": "identifier",
               "text": "SKWSFUBotPluginOptions"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFURoom/title",
+          "value": "SFURoom"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFURoom/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SFURoom"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFURoom/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SFURoom"
             }
           ]
         },

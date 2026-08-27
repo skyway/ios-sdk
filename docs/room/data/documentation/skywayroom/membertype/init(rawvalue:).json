@@ -1,4 +1,15 @@
 {
+  "deprecationSummary": [
+    {
+      "inlineContent": [
+        {
+          "text": "SkyWayRoom v4.0.0で非推奨となりました。",
+          "type": "text"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
   "hierarchy": {
     "paths": [
       [
@@ -46,6 +57,7 @@
         "name": "SkyWayRoom"
       }
     ],
+    "platforms": [],
     "role": "symbol",
     "roleHeading": "Initializer",
     "symbolKind": "init",
@@ -59,7 +71,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -99,7 +113,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -124,6 +138,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -153,6 +168,7 @@
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MemberType/init(rawValue:)": {
       "abstract": [],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "identifier",

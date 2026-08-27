@@ -57,22 +57,11 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
-            {
-              "kind": "attribute",
-              "text": "@"
-            },
-            {
-              "kind": "attribute",
-              "preciseIdentifier": "s:ScM",
-              "text": "MainActor"
-            },
-            {
-              "kind": "text",
-              "text": " "
-            },
             {
               "kind": "keyword",
               "text": "class"
@@ -181,7 +170,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -418,6 +407,11 @@
       "title": "UIKit.UIUserActivityRestoring",
       "type": "unresolvable"
     },
+    "doc://com.ntt.skyway.room/s16SendableMetatypeP": {
+      "identifier": "doc://com.ntt.skyway.room/s16SendableMetatypeP",
+      "title": "Swift.SendableMetatype",
+      "type": "unresolvable"
+    },
     "doc://com.ntt.skyway.room/s23CustomStringConvertibleP": {
       "identifier": "doc://com.ntt.skyway.room/s23CustomStringConvertibleP",
       "title": "Swift.CustomStringConvertible",
@@ -431,6 +425,11 @@
     "doc://com.ntt.skyway.room/s7CVarArgP": {
       "identifier": "doc://com.ntt.skyway.room/s7CVarArgP",
       "title": "Swift.CVarArg",
+      "type": "unresolvable"
+    },
+    "doc://com.ntt.skyway.room/s8SendableP": {
+      "identifier": "doc://com.ntt.skyway.room/s8SendableP",
+      "title": "Swift.Sendable",
       "type": "unresolvable"
     }
   },
@@ -453,6 +452,8 @@
         "doc://com.ntt.skyway.room/s23CustomStringConvertibleP",
         "doc://com.ntt.skyway.room/SQ",
         "doc://com.ntt.skyway.room/SH",
+        "doc://com.ntt.skyway.room/s8SendableP",
+        "doc://com.ntt.skyway.room/s16SendableMetatypeP",
         "doc://com.ntt.skyway.room/objc(pl)UIAccessibilityIdentification",
         "doc://com.ntt.skyway.room/objc(pl)UIActivityItemsConfigurationProviding",
         "doc://com.ntt.skyway.room/objc(pl)UIAppearance",
@@ -584,7 +585,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -613,21 +616,6 @@
             ],
             "kind": "declarations"
           }
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraPreviewView~1videoGravity/title",
-          "value": "videoGravity"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraPreviewView~1videoGravity/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "videoGravity"
-            }
-          ]
         },
         {
           "op": "replace",
@@ -666,6 +654,21 @@
             {
               "kind": "identifier",
               "text": "rendererView"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraPreviewView~1videoGravity/title",
+          "value": "videoGravity"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CameraPreviewView~1videoGravity/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "videoGravity"
             }
           ]
         }

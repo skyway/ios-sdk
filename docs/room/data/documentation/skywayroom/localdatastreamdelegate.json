@@ -57,7 +57,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -93,7 +95,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -200,6 +202,10 @@
       "kind": "symbol",
       "navigatorTitle": [
         {
+          "kind": "text",
+          "text": "- "
+        },
+        {
           "kind": "identifier",
           "text": "dataStream:didBecomeUnwritableForSubscriber:"
         }
@@ -263,6 +269,10 @@
       "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalDataStreamDelegate/dataStream(_:didBecomeWritableFor:)",
       "kind": "symbol",
       "navigatorTitle": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
         {
           "kind": "identifier",
           "text": "dataStream:didBecomeWritableForSubscriber:"
@@ -398,7 +408,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -431,25 +443,6 @@
             ],
             "kind": "declarations"
           }
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate~1dataStream(_:didBecomeWritableFor:)/title",
-          "value": "dataStream:didBecomeWritableForSubscriber:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate~1dataStream(_:didBecomeWritableFor:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "dataStream:didBecomeWritableForSubscriber:"
-            }
-          ]
         },
         {
           "op": "replace",
@@ -492,6 +485,25 @@
             {
               "kind": "identifier",
               "text": "dataStream:didBecomeUnwritableForSubscriber:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate~1dataStream(_:didBecomeWritableFor:)/title",
+          "value": "dataStream:didBecomeWritableForSubscriber:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalDataStreamDelegate~1dataStream(_:didBecomeWritableFor:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "dataStream:didBecomeWritableForSubscriber:"
             }
           ]
         }

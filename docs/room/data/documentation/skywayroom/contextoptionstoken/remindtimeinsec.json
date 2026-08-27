@@ -65,14 +65,7 @@
         "text": "remindTimeInSec"
       }
     ],
-    "platforms": [
-      {
-        "beta": false,
-        "deprecated": true,
-        "message": "SkyWayCore v3.0.0で非推奨となりました。",
-        "unavailable": false
-      }
-    ],
+    "platforms": [],
     "role": "symbol",
     "roleHeading": "Instance Property",
     "symbolKind": "property",
@@ -86,7 +79,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -175,7 +170,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -289,13 +284,7 @@
         {
           "op": "replace",
           "path": "/metadata/platforms",
-          "value": [
-            {
-              "beta": false,
-              "deprecated": true,
-              "unavailable": false
-            }
-          ]
+          "value": []
         },
         {
           "op": "replace",
@@ -347,7 +336,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -406,21 +397,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsToken~1remindTimeInSec/title",
-          "value": "remindTimeInSec"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsToken~1remindTimeInSec/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "remindTimeInSec"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsToken/title",
           "value": "SKWContextOptionsToken"
         },
@@ -441,6 +417,21 @@
             {
               "kind": "identifier",
               "text": "SKWContextOptionsToken"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsToken~1remindTimeInSec/title",
+          "value": "remindTimeInSec"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsToken~1remindTimeInSec/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "remindTimeInSec"
             }
           ]
         }

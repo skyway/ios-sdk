@@ -67,7 +67,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -170,7 +172,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -335,7 +337,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -371,21 +375,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CodecParameters~1useDTX/title",
-          "value": "useDTX"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CodecParameters~1useDTX/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "useDTX"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CodecParameters/title",
           "value": "SKWCodecParameters"
         },
@@ -406,6 +395,21 @@
             {
               "kind": "identifier",
               "text": "SKWCodecParameters"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CodecParameters~1useDTX/title",
+          "value": "useDTX"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1CodecParameters~1useDTX/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "useDTX"
             }
           ]
         }

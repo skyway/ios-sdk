@@ -5,6 +5,17 @@
       "type": "text"
     }
   ],
+  "deprecationSummary": [
+    {
+      "inlineContent": [
+        {
+          "text": "SkyWayRoom v4.0.0で非推奨となりました。代わりにRemoteRoomMemberDelegateをご利用ください。",
+          "type": "text"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
   "hierarchy": {
     "paths": [
       [
@@ -44,6 +55,7 @@
         "text": "RemotePersonDelegate"
       }
     ],
+    "platforms": [],
     "role": "symbol",
     "roleHeading": "Protocol",
     "symbolKind": "protocol",
@@ -57,7 +69,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -94,7 +108,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -119,6 +133,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -153,6 +168,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -182,6 +198,7 @@
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePersonDelegate/remotePerson(_:didSubscribePublicationOf:)": {
       "abstract": [],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -230,6 +247,10 @@
       "kind": "symbol",
       "navigatorTitle": [
         {
+          "kind": "text",
+          "text": "- "
+        },
+        {
           "kind": "identifier",
           "text": "remotePerson:didSubscribePublicationOfSubscription:"
         }
@@ -241,6 +262,7 @@
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemotePersonDelegate/remotePerson(_:didUnsubscribePublicationOf:)": {
       "abstract": [],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -289,6 +311,10 @@
       "kind": "symbol",
       "navigatorTitle": [
         {
+          "kind": "text",
+          "text": "- "
+        },
+        {
           "kind": "identifier",
           "text": "remotePerson:didUnsubscribePublicationOfSubscription:"
         }
@@ -297,40 +323,6 @@
       "title": "remotePerson(_:didUnsubscribePublicationOf:)",
       "type": "topic",
       "url": "/documentation/skywayroom/remotepersondelegate/remoteperson(_:didunsubscribepublicationof:)"
-    },
-    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteRoomMember": {
-      "abstract": [
-        {
-          "text": "他のSDKで生成されたRoomMember",
-          "type": "text"
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "keyword",
-          "text": "class"
-        },
-        {
-          "kind": "text",
-          "text": " "
-        },
-        {
-          "kind": "identifier",
-          "text": "RemoteRoomMember"
-        }
-      ],
-      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteRoomMember",
-      "kind": "symbol",
-      "navigatorTitle": [
-        {
-          "kind": "identifier",
-          "text": "RemoteRoomMember"
-        }
-      ],
-      "role": "symbol",
-      "title": "RemoteRoomMember",
-      "type": "topic",
-      "url": "/documentation/skywayroom/remoteroommember"
     },
     "doc://com.ntt.skyway.room/objc(pl)NSObject": {
       "identifier": "doc://com.ntt.skyway.room/objc(pl)NSObject",
@@ -347,14 +339,6 @@
       "kind": "relationships",
       "title": "Inherits From",
       "type": "inheritsFrom"
-    },
-    {
-      "identifiers": [
-        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteRoomMember"
-      ],
-      "kind": "relationships",
-      "title": "Conforming Types",
-      "type": "conformingTypes"
     }
   ],
   "schemaVersion": {
@@ -383,7 +367,7 @@
           "value": "occ"
         },
         {
-          "op": "add",
+          "op": "replace",
           "path": "/metadata/platforms",
           "value": null
         },
@@ -448,14 +432,6 @@
               "kind": "relationships",
               "title": "Inherits From",
               "type": "inheritsFrom"
-            },
-            {
-              "identifiers": [
-                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteRoomMember"
-              ],
-              "kind": "relationships",
-              "title": "Conforming Types",
-              "type": "conformingTypes"
             }
           ]
         },
@@ -474,7 +450,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -511,39 +489,31 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePersonDelegate~1remotePerson(_:didUnsubscribePublicationOf:)/title",
-          "value": "remotePerson:didUnsubscribePublicationOfSubscription:"
+          "path": "/deprecationSummary",
+          "value": []
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePersonDelegate~1remotePerson(_:didUnsubscribePublicationOf:)/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberDelegate/title",
+          "value": "SKWMemberDelegate"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberDelegate/fragments",
           "value": [
             {
-              "kind": "text",
-              "text": "- "
-            },
-            {
               "kind": "identifier",
-              "text": "remotePerson:didUnsubscribePublicationOfSubscription:"
+              "text": "SKWMemberDelegate"
             }
           ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePersonDelegate~1remotePerson(_:didSubscribePublicationOf:)/title",
-          "value": "remotePerson:didSubscribePublicationOfSubscription:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePersonDelegate~1remotePerson(_:didSubscribePublicationOf:)/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberDelegate/navigatorTitle",
           "value": [
             {
-              "kind": "text",
-              "text": "- "
-            },
-            {
               "kind": "identifier",
-              "text": "remotePerson:didSubscribePublicationOfSubscription:"
+              "text": "SKWMemberDelegate"
             }
           ]
         },
@@ -574,51 +544,39 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberDelegate/title",
-          "value": "SKWMemberDelegate"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePersonDelegate~1remotePerson(_:didSubscribePublicationOf:)/title",
+          "value": "remotePerson:didSubscribePublicationOfSubscription:"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberDelegate/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePersonDelegate~1remotePerson(_:didSubscribePublicationOf:)/fragments",
           "value": [
             {
+              "kind": "text",
+              "text": "- "
+            },
+            {
               "kind": "identifier",
-              "text": "SKWMemberDelegate"
+              "text": "remotePerson:didSubscribePublicationOfSubscription:"
             }
           ]
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1MemberDelegate/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWMemberDelegate"
-            }
-          ]
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePersonDelegate~1remotePerson(_:didUnsubscribePublicationOf:)/title",
+          "value": "remotePerson:didUnsubscribePublicationOfSubscription:"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMember/title",
-          "value": "RemoteRoomMember"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMember/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemotePersonDelegate~1remotePerson(_:didUnsubscribePublicationOf:)/fragments",
           "value": [
             {
-              "kind": "identifier",
-              "text": "RemoteRoomMember"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMember/navigatorTitle",
-          "value": [
+              "kind": "text",
+              "text": "- "
+            },
             {
               "kind": "identifier",
-              "text": "RemoteRoomMember"
+              "text": "remotePerson:didUnsubscribePublicationOfSubscription:"
             }
           ]
         }

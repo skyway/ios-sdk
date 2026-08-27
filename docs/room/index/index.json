@@ -18,22 +18,22 @@
               },
               {
                 "path": "/documentation/skywayroom/audiosettings/currentcategoryoptions()",
-                "title": "currentCategoryOptions",
+                "title": "+ currentCategoryOptions",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/audiosettings/currentpreferredsamplerate()",
-                "title": "currentPreferredSampleRate",
+                "title": "+ currentPreferredSampleRate",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/audiosettings/setcategoryoptions(_:)",
-                "title": "setCategoryOptions:",
+                "title": "+ setCategoryOptions:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/audiosettings/setpreferredsamplerate(_:)",
-                "title": "setPreferredSampleRate:",
+                "title": "+ setPreferredSampleRate:",
                 "type": "method"
               }
             ],
@@ -49,7 +49,7 @@
               },
               {
                 "path": "/documentation/skywayroom/audiosource/createstream()",
-                "title": "createStream",
+                "title": "- createStream",
                 "type": "method"
               }
             ],
@@ -74,7 +74,7 @@
               },
               {
                 "path": "/documentation/skywayroom/blurprocessor/processfor:",
-                "title": "processFor:",
+                "title": "- processFor:",
                 "type": "method"
               }
             ],
@@ -146,32 +146,32 @@
               },
               {
                 "path": "/documentation/skywayroom/cameravideosource/attach(_:)",
-                "title": "attachView:",
+                "title": "- attachView:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/cameravideosource/change(_:completion:)",
-                "title": "changeDevice:completion:",
+                "title": "- changeDevice:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/cameravideosource/createstream()",
-                "title": "createStream",
+                "title": "- createStream",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/cameravideosource/detach(_:)",
-                "title": "detachView:",
+                "title": "- detachView:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/cameravideosource/startcapturing(with:options:completion:)",
-                "title": "startCapturingWithDevice:options:completion:",
+                "title": "- startCapturingWithDevice:options:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/cameravideosource/stopcapturing()",
-                "title": "stopCapturing",
+                "title": "- stopCapturing",
                 "type": "method"
               },
               {
@@ -180,12 +180,12 @@
               },
               {
                 "path": "/documentation/skywayroom/cameravideosource/shared()",
-                "title": "shared",
+                "title": "+ shared",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/cameravideosource/supportedcameras()",
-                "title": "supportedCameras",
+                "title": "+ supportedCameras",
                 "type": "method"
               }
             ],
@@ -254,28 +254,28 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/channel/close(completion:)",
-                "title": "closeWithCompletion:",
+                "path": "/documentation/skywayroom/channel/close()",
+                "title": "- closeWithCompletion:",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/channel/dispose(completion:)",
-                "title": "disposeWithCompletion:",
+                "path": "/documentation/skywayroom/channel/dispose()",
+                "title": "- disposeWithCompletion:",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/channel/join(with:completion:)",
-                "title": "joinWithInit:completion:",
+                "path": "/documentation/skywayroom/channel/join(with:)",
+                "title": "- joinWithInit:completion:",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/channel/leavemember(_:completion:)",
-                "title": "leaveMember:completion:",
+                "path": "/documentation/skywayroom/channel/leavemember(_:)",
+                "title": "- leaveMember:completion:",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/channel/updatemetadata(_:completion:)",
-                "title": "updateMetadata:completion:",
+                "path": "/documentation/skywayroom/channel/updatemetadata(_:)",
+                "title": "- updateMetadata:completion:",
                 "type": "method"
               },
               {
@@ -283,18 +283,18 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/channel/create(with:completion:)",
-                "title": "createWithInit:completion:",
+                "path": "/documentation/skywayroom/channel/create(with:)",
+                "title": "+ createWithInit:completion:",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/channel/find(with:completion:)",
-                "title": "findWithQuery:completion:",
+                "path": "/documentation/skywayroom/channel/find(with:)",
+                "title": "+ findWithQuery:completion:",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/channel/findorcreate(with:completion:)",
-                "title": "findOrCreateWithInit:completion:",
+                "path": "/documentation/skywayroom/channel/findorcreate(with:)",
+                "title": "+ findOrCreateWithInit:completion:",
                 "type": "method"
               }
             ],
@@ -366,7 +366,7 @@
               },
               {
                 "path": "/documentation/skywayroom/codec/init(mimetype:)",
-                "title": "initWithMimeType:",
+                "title": "- initWithMimeType:",
                 "type": "method"
               }
             ],
@@ -432,27 +432,27 @@
               },
               {
                 "path": "/documentation/skywayroom/context/dispose(completion:)",
-                "title": "disposeWithCompletion:",
+                "title": "+ disposeWithCompletion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/context/registerplugin(_:)",
-                "title": "registerPlugin:",
+                "title": "+ registerPlugin:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/context/setup(withtoken:options:completion:)",
-                "title": "setupWithToken:options:completion:",
+                "title": "+ setupWithToken:options:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/context/setupfordev(withappid:secretkey:options:completion:)",
-                "title": "setupForDevWithAppId:secretKey:options:completion:",
+                "title": "+ setupForDevWithAppId:secretKey:options:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/context/updatetoken(_:)",
-                "title": "updateToken:",
+                "title": "+ updateToken:",
                 "type": "method"
               }
             ],
@@ -671,17 +671,17 @@
               },
               {
                 "path": "/documentation/skywayroom/customframevideosource/createstream()",
-                "title": "createStream",
+                "title": "- createStream",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/customframevideosource/init()",
-                "title": "init",
+                "title": "- init",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/customframevideosource/updateframe(with:)",
-                "title": "updateFrameWithSampleBuffer:",
+                "title": "- updateFrameWithSampleBuffer:",
                 "type": "method"
               }
             ],
@@ -697,7 +697,7 @@
               },
               {
                 "path": "/documentation/skywayroom/datasource/createstream()",
-                "title": "createStream",
+                "title": "- createStream",
                 "type": "method"
               }
             ],
@@ -727,7 +727,7 @@
               },
               {
                 "path": "/documentation/skywayroom/datastreamsubscriber/init(id:name:)",
-                "title": "initWithId:name:",
+                "title": "- initWithId:name:",
                 "type": "method"
               }
             ],
@@ -783,22 +783,22 @@
               },
               {
                 "path": "/documentation/skywayroom/filevideosource/createstream()",
-                "title": "createStream",
+                "title": "- createStream",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/filevideosource/init(filename:)",
-                "title": "initWithFilename:",
+                "title": "- initWithFilename:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/filevideosource/startcapturing(onerror:)",
-                "title": "startCapturingOnError:",
+                "title": "- startCapturingOnError:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/filevideosource/stopcapturing()",
-                "title": "stopCapturing",
+                "title": "- stopCapturing",
                 "type": "method"
               }
             ],
@@ -864,7 +864,7 @@
               },
               {
                 "path": "/documentation/skywayroom/forwardingconfigure/init()",
-                "title": "init",
+                "title": "- init",
                 "type": "method"
               }
             ],
@@ -894,7 +894,7 @@
               },
               {
                 "path": "/documentation/skywayroom/initoptions/init",
-                "title": "init",
+                "title": "- init",
                 "type": "method"
               }
             ],
@@ -910,7 +910,7 @@
               },
               {
                 "path": "/documentation/skywayroom/localaudiostream/getaudiolevel()",
-                "title": "getAudioLevel",
+                "title": "- getAudioLevel",
                 "type": "method"
               }
             ],
@@ -935,22 +935,22 @@
               },
               {
                 "path": "/documentation/skywayroom/localdatastream/write(_:)-8bkq1",
-                "title": "writeData:",
+                "title": "- writeData:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/localdatastream/write(_:)-9i6sd",
-                "title": "writeString:",
+                "title": "- writeString:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/localdatastream/write(_:completion:)-5mw7b",
-                "title": "writeString:completion:",
+                "title": "- writeString:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/localdatastream/write(_:completion:)-7xzhd",
-                "title": "writeData:completion:",
+                "title": "- writeData:completion:",
                 "type": "method"
               }
             ],
@@ -966,12 +966,12 @@
               },
               {
                 "path": "/documentation/skywayroom/localp2proommember/publish(_:options:completion:)",
-                "title": "publish:options:completion:",
+                "title": "- publish:options:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/localp2proommember/unpublish(publicationid:completion:)",
-                "title": "unpublishWithPublicationId:completion:",
+                "title": "- unpublishWithPublicationId:completion:",
                 "type": "method"
               }
             ],
@@ -995,23 +995,23 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/localperson/publish(_:options:completion:)",
-                "title": "publishStream:options:completion:",
+                "path": "/documentation/skywayroom/localperson/publish(_:options:)",
+                "title": "- publishStream:options:completion:",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/localperson/subscribepublication(publicationid:options:completion:)",
-                "title": "subscribePublicationWithPublicationID:options:completion:",
+                "path": "/documentation/skywayroom/localperson/subscribepublication(publicationid:options:)",
+                "title": "- subscribePublicationWithPublicationID:options:completion:",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/localperson/unpublish(publicationid:completion:)",
-                "title": "unpublishWithPublicationID:completion:",
+                "path": "/documentation/skywayroom/localperson/unpublish(publicationid:)",
+                "title": "- unpublishWithPublicationID:completion:",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/localperson/unsubscribe(subscriptionid:completion:)",
-                "title": "unsubscribeWithSubscriptionID:completion:",
+                "path": "/documentation/skywayroom/localperson/unsubscribe(subscriptionid:)",
+                "title": "- unsubscribeWithSubscriptionID:completion:",
                 "type": "method"
               }
             ],
@@ -1036,109 +1036,43 @@
               },
               {
                 "path": "/documentation/skywayroom/localroommember/publish(_:options:)",
-                "title": "publish:options:completionHandler:",
+                "title": "- publish:options:completionHandler:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/localroommember/publish(_:options:completion:)",
-                "title": "publish:options:completion:",
+                "title": "- publish:options:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/localroommember/subscribe(publicationid:options:)",
-                "title": "subscribeWithPublicationId:options:completionHandler:",
+                "title": "- subscribeWithPublicationId:options:completionHandler:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/localroommember/subscribe(publicationid:options:completion:)",
-                "title": "subscribeWithPublicationId:options:completion:",
+                "title": "- subscribeWithPublicationId:options:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/localroommember/unpublish(publicationid:)",
-                "title": "unpublishWithPublicationId:completionHandler:",
+                "title": "- unpublishWithPublicationId:completionHandler:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/localroommember/unpublish(publicationid:completion:)",
-                "title": "unpublishWithPublicationId:completion:",
+                "title": "- unpublishWithPublicationId:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/localroommember/unsubscribe(subscriptionid:)",
-                "title": "unsubscribeWithSubscriptionId:completionHandler:",
+                "title": "- unsubscribeWithSubscriptionId:completionHandler:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/localroommember/unsubscribe(subscriptionid:completion:)",
-                "title": "unsubscribeWithSubscriptionId:completion:",
+                "title": "- unsubscribeWithSubscriptionId:completion:",
                 "type": "method"
-              },
-              {
-                "title": "Default Implementations",
-                "type": "groupMarker"
-              },
-              {
-                "children": [
-                  {
-                    "title": "Instance Methods",
-                    "type": "groupMarker"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/localroommember/localperson(_:didpublishstreamof:)",
-                    "title": "localPerson:didPublishStreamOfPublication:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/localroommember/localperson(_:didsubscribepublicationof:)",
-                    "title": "localPerson:didSubscribePublicationOfSubscription:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/localroommember/localperson(_:didunpublishstreamof:)",
-                    "title": "localPerson:didUnpublishStreamOfPublication:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/localroommember/localperson(_:didunsubscribepublicationof:)",
-                    "title": "localPerson:didUnsubscribePublicationOfSubscription:",
-                    "type": "method"
-                  }
-                ],
-                "path": "/documentation/skywayroom/localroommember/localpersondelegate-implementations",
-                "title": "LocalPersonDelegate Implementations",
-                "type": "symbol"
-              },
-              {
-                "children": [
-                  {
-                    "title": "Instance Methods",
-                    "type": "groupMarker"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/localroommember/member(_:didupdatemetadata:)",
-                    "title": "member:didUpdateMetadata:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/localroommember/memberdidleave(_:)",
-                    "title": "memberDidLeave:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/localroommember/memberpublicationlistdidchange(_:)",
-                    "title": "memberPublicationListDidChange:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/localroommember/membersubscriptionlistdidchange(_:)",
-                    "title": "memberSubscriptionListDidChange:",
-                    "type": "method"
-                  }
-                ],
-                "path": "/documentation/skywayroom/localroommember/memberdelegate-implementations",
-                "title": "MemberDelegate Implementations",
-                "type": "symbol"
               }
             ],
             "path": "/documentation/skywayroom/localroommember",
@@ -1153,12 +1087,12 @@
               },
               {
                 "path": "/documentation/skywayroom/localsfuroommember/publish(_:options:completion:)",
-                "title": "publish:options:completion:",
+                "title": "- publish:options:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/localsfuroommember/unpublish(publicationid:completion:)",
-                "title": "unpublishWithPublicationId:completion:",
+                "title": "- unpublishWithPublicationId:completion:",
                 "type": "method"
               }
             ],
@@ -1188,12 +1122,12 @@
               },
               {
                 "path": "/documentation/skywayroom/localvideostream/attach(_:)",
-                "title": "attachView:",
+                "title": "- attachView:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/localvideostream/detach(_:)",
-                "title": "detachView:",
+                "title": "- detachView:",
                 "type": "method"
               }
             ],
@@ -1218,27 +1152,27 @@
               },
               {
                 "path": "/documentation/skywayroom/logger/debuglog(withmessage:filename:function:line:)",
-                "title": "debugLogWithMessage:filename:function:line:",
+                "title": "+ debugLogWithMessage:filename:function:line:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/logger/errorlog(withmessage:filename:function:line:)",
-                "title": "errorLogWithMessage:filename:function:line:",
+                "title": "+ errorLogWithMessage:filename:function:line:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/logger/infolog(withmessage:filename:function:line:)",
-                "title": "infoLogWithMessage:filename:function:line:",
+                "title": "+ infoLogWithMessage:filename:function:line:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/logger/tracelog(withmessage:filename:function:line:)",
-                "title": "traceLogWithMessage:filename:function:line:",
+                "title": "+ traceLogWithMessage:filename:function:line:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/logger/warnlog(withmessage:filename:function:line:)",
-                "title": "warnLogWithMessage:filename:function:line:",
+                "title": "+ warnLogWithMessage:filename:function:line:",
                 "type": "method"
               }
             ],
@@ -1302,13 +1236,13 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/member/leave(completion:)",
-                "title": "leaveWithCompletion:",
+                "path": "/documentation/skywayroom/member/leave()",
+                "title": "- leaveWithCompletion:",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/member/updatemetadata(_:completion:)",
-                "title": "updateMetadata:completion:",
+                "path": "/documentation/skywayroom/member/updatemetadata(_:)",
+                "title": "- updateMetadata:completion:",
                 "type": "method"
               }
             ],
@@ -1379,7 +1313,7 @@
               },
               {
                 "path": "/documentation/skywayroom/memberinitoptions/init",
-                "title": "init",
+                "title": "- init",
                 "type": "method"
               }
             ],
@@ -1395,12 +1329,12 @@
               },
               {
                 "path": "/documentation/skywayroom/microphoneaudiosource/createstream()",
-                "title": "createStream",
+                "title": "- createStream",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/microphoneaudiosource/init()",
-                "title": "init",
+                "title": "- init",
                 "type": "method"
               }
             ],
@@ -1429,48 +1363,8 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/p2proom/channel(_:didpublishstreamof:)",
-                "title": "channel:didPublishStreamOfPublication:",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/p2proom/channel(_:didsubscribepublicationof:)",
-                "title": "channel:didSubscribePublicationOfSubscription:",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/p2proom/channel(_:didunpublishstreamof:)",
-                "title": "channel:didUnpublishStreamOfPublication:",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/p2proom/channel(_:didunsubscribepublicationof:)",
-                "title": "channel:didUnsubscribePublicationOfSubscription:",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/p2proom/channel(_:publication:metadatadidupdate:)",
-                "title": "channel:publication:metadataDidUpdate:",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/p2proom/channel(_:publicationdidchangetodisabled:)",
-                "title": "channel:publicationDidChangeToDisabled:",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/p2proom/channel(_:publicationdidchangetoenabled:)",
-                "title": "channel:publicationDidChangeToEnabled:",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/p2proom/join(with:)",
-                "title": "joinWith:completionHandler:",
-                "type": "method"
-              },
-              {
                 "path": "/documentation/skywayroom/p2proom/join(with:completion:)",
-                "title": "joinWith:completion:",
+                "title": "- joinWith:completion:",
                 "type": "method"
               },
               {
@@ -1478,33 +1372,23 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/p2proom/create(with:)",
-                "title": "createWith:completionHandler:",
-                "type": "method"
-              },
-              {
                 "path": "/documentation/skywayroom/p2proom/create(with:completion:)",
-                "title": "createWith:completion:",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/p2proom/find(by:)",
-                "title": "findBy:completionHandler:",
+                "title": "+ createWith:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/p2proom/find(by:completion:)",
-                "title": "findBy:completion:",
+                "title": "+ findBy:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/p2proom/findorcreate(options:completion:)",
-                "title": "findOrCreateWithOptions:completion:",
+                "title": "+ findOrCreateWithOptions:completion:",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/p2proom/findorcreate(with:)",
-                "title": "findOrCreateWith:completionHandler:",
+                "path": "/documentation/skywayroom/p2proom/findorcreate(with:completion:)",
+                "title": "+ findOrCreateWith:completion:",
                 "type": "method"
               }
             ],
@@ -1599,33 +1483,33 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/publication/disable(completion:)",
-                "title": "disableWithCompletion:",
+                "path": "/documentation/skywayroom/publication/disable()",
+                "title": "- disableWithCompletion:",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/publication/enable(completion:)",
-                "title": "enableWithCompletion:",
+                "path": "/documentation/skywayroom/publication/enable()",
+                "title": "- enableWithCompletion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/publication/getstats(withmemberid:)",
-                "title": "getStatsWithMemberId:",
+                "title": "- getStatsWithMemberId:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/publication/replacestream(_:)",
-                "title": "replaceStream:",
+                "title": "- replaceStream:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/publication/updateencodings(_:)",
-                "title": "updateEncodings:",
+                "title": "- updateEncodings:",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/publication/updatemetadata(_:completion:)",
-                "title": "updateMetadata:completion:",
+                "path": "/documentation/skywayroom/publication/updatemetadata(_:)",
+                "title": "- updateMetadata:completion:",
                 "type": "method"
               }
             ],
@@ -1691,7 +1575,7 @@
               },
               {
                 "path": "/documentation/skywayroom/query/init",
-                "title": "init",
+                "title": "- init",
                 "type": "method"
               }
             ],
@@ -1707,12 +1591,12 @@
               },
               {
                 "path": "/documentation/skywayroom/remoteaudiostream/getaudiolevel()",
-                "title": "getAudioLevel",
+                "title": "- getAudioLevel",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/remoteaudiostream/setvolume(_:)",
-                "title": "setVolume:",
+                "title": "- setVolume:",
                 "type": "method"
               }
             ],
@@ -1757,13 +1641,13 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/remoteperson/subscribepublication(publicationid:completion:)",
-                "title": "subscribePublicationWithPublicationID:completion:",
+                "path": "/documentation/skywayroom/remoteperson/subscribepublication(publicationid:)",
+                "title": "- subscribePublicationWithPublicationID:completion:",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/remoteperson/unsubscribe(subscriptionid:completion:)",
-                "title": "unsubscribeWithSubscriptionID:completion:",
+                "path": "/documentation/skywayroom/remoteperson/unsubscribe(subscriptionid:)",
+                "title": "- unsubscribeWithSubscriptionID:completion:",
                 "type": "method"
               }
             ],
@@ -1788,69 +1672,23 @@
               },
               {
                 "path": "/documentation/skywayroom/remoteroommember/subscribe(publicationid:)",
-                "title": "subscribeWithPublicationId:completionHandler:",
+                "title": "- subscribeWithPublicationId:completionHandler:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/remoteroommember/subscribe(publicationid:completion:)",
-                "title": "subscribeWithPublicationId:completion:",
+                "title": "- subscribeWithPublicationId:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/remoteroommember/unsubscribe(subscriptionid:)",
-                "title": "unsubscribeWithSubscriptionId:completionHandler:",
+                "title": "- unsubscribeWithSubscriptionId:completionHandler:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/remoteroommember/unsubscribe(subscriptionid:completion:)",
-                "title": "unsubscribeWithSubscriptionId:completion:",
+                "title": "- unsubscribeWithSubscriptionId:completion:",
                 "type": "method"
-              },
-              {
-                "title": "Default Implementations",
-                "type": "groupMarker"
-              },
-              {
-                "children": [
-                  {
-                    "title": "Instance Methods",
-                    "type": "groupMarker"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/remoteroommember/member(_:didupdatemetadata:)",
-                    "title": "member:didUpdateMetadata:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/remoteroommember/memberdidleave(_:)",
-                    "title": "memberDidLeave:",
-                    "type": "method"
-                  }
-                ],
-                "path": "/documentation/skywayroom/remoteroommember/memberdelegate-implementations",
-                "title": "MemberDelegate Implementations",
-                "type": "symbol"
-              },
-              {
-                "children": [
-                  {
-                    "title": "Instance Methods",
-                    "type": "groupMarker"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/remoteroommember/remoteperson(_:didsubscribepublicationof:)",
-                    "title": "remotePerson:didSubscribePublicationOfSubscription:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/remoteroommember/remoteperson(_:didunsubscribepublicationof:)",
-                    "title": "remotePerson:didUnsubscribePublicationOfSubscription:",
-                    "type": "method"
-                  }
-                ],
-                "path": "/documentation/skywayroom/remoteroommember/remotepersondelegate-implementations",
-                "title": "RemotePersonDelegate Implementations",
-                "type": "symbol"
               }
             ],
             "path": "/documentation/skywayroom/remoteroommember",
@@ -1870,12 +1708,12 @@
               },
               {
                 "path": "/documentation/skywayroom/remotevideostream/attach(_:)",
-                "title": "attachView:",
+                "title": "- attachView:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/remotevideostream/detach(_:)",
-                "title": "detachView:",
+                "title": "- detachView:",
                 "type": "method"
               }
             ],
@@ -1945,57 +1783,57 @@
               },
               {
                 "path": "/documentation/skywayroom/room/close()",
-                "title": "closeWithCompletionHandler:",
+                "title": "- closeWithCompletionHandler:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/room/close(completion:)",
-                "title": "closeWithCompletion:",
+                "title": "- closeWithCompletion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/room/dispose()",
-                "title": "disposeWithCompletionHandler:",
+                "title": "- disposeWithCompletionHandler:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/room/dispose(completion:)",
-                "title": "disposeWithCompletion:",
+                "title": "- disposeWithCompletion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/room/isequal(_:)",
-                "title": "isEqual:",
+                "title": "- isEqual:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/room/join(with:)",
-                "title": "joinWith:completionHandler:",
+                "title": "- joinWith:completionHandler:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/room/join(with:completion:)",
-                "title": "joinWith:completion:",
+                "title": "- joinWith:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/room/leave(_:)",
-                "title": "leave:completionHandler:",
+                "title": "- leave:completionHandler:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/room/leave(_:completion:)",
-                "title": "leave:completion:",
+                "title": "- leave:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/room/updatemetadata(_:)",
-                "title": "updateMetadata:completionHandler:",
+                "title": "- updateMetadata:completionHandler:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/room/updatemetadata(_:completion:)",
-                "title": "updateMetadata:completion:",
+                "title": "- updateMetadata:completion:",
                 "type": "method"
               },
               {
@@ -2004,128 +1842,38 @@
               },
               {
                 "path": "/documentation/skywayroom/room/create(with:)",
-                "title": "createWith:completionHandler:",
+                "title": "+ createWith:completionHandler:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/room/create(with:completion:)",
-                "title": "createWith:completion:",
+                "title": "+ createWith:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/room/find(by:)",
-                "title": "findBy:completionHandler:",
+                "title": "+ findBy:completionHandler:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/room/find(by:completion:)",
-                "title": "findBy:completion:",
+                "title": "+ findBy:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/room/findorcreate(with:)",
-                "title": "findOrCreateWith:completionHandler:",
+                "title": "+ findOrCreateWith:completionHandler:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/room/findorcreate(with:completion:)",
-                "title": "findOrCreateWith:completion:",
+                "title": "+ findOrCreateWith:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/room/getsdkversion()",
-                "title": "getSDKVersion",
+                "title": "+ getSDKVersion",
                 "type": "method"
-              },
-              {
-                "title": "Default Implementations",
-                "type": "groupMarker"
-              },
-              {
-                "children": [
-                  {
-                    "title": "Instance Methods",
-                    "type": "groupMarker"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channel(_:didpublishstreamof:)",
-                    "title": "channel:didPublishStreamOfPublication:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channel(_:didsubscribepublicationof:)",
-                    "title": "channel:didSubscribePublicationOfSubscription:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channel(_:didunpublishstreamof:)",
-                    "title": "channel:didUnpublishStreamOfPublication:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channel(_:didunsubscribepublicationof:)",
-                    "title": "channel:didUnsubscribePublicationOfSubscription:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channel(_:didupdatemetadata:)",
-                    "title": "channel:didUpdateMetadata:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channel(_:member:metadatadidupdate:)",
-                    "title": "channel:member:metadataDidUpdate:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channel(_:memberdidjoin:)",
-                    "title": "channel:memberDidJoin:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channel(_:memberdidleave:)",
-                    "title": "channel:memberDidLeave:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channel(_:publication:metadatadidupdate:)",
-                    "title": "channel:publication:metadataDidUpdate:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channel(_:publicationdidchangetodisabled:)",
-                    "title": "channel:publicationDidChangeToDisabled:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channel(_:publicationdidchangetoenabled:)",
-                    "title": "channel:publicationDidChangeToEnabled:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channeldidclose(_:)",
-                    "title": "channelDidClose:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channelmemberlistdidchange(_:)",
-                    "title": "channelMemberListDidChange:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channelpublicationlistdidchange(_:)",
-                    "title": "channelPublicationListDidChange:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channelsubscriptionlistdidchange(_:)",
-                    "title": "channelSubscriptionListDidChange:",
-                    "type": "method"
-                  }
-                ],
-                "path": "/documentation/skywayroom/room/channeldelegate-implementations",
-                "title": "ChannelDelegate Implementations",
-                "type": "symbol"
               }
             ],
             "path": "/documentation/skywayroom/room",
@@ -2199,27 +1947,27 @@
               },
               {
                 "path": "/documentation/skywayroom/roommember/isequal(_:)",
-                "title": "isEqual:",
+                "title": "- isEqual:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roommember/leave()",
-                "title": "leaveWithCompletionHandler:",
+                "title": "- leaveWithCompletionHandler:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roommember/leave(completion:)",
-                "title": "leaveWithCompletion:",
+                "title": "- leaveWithCompletion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roommember/updatemetadata(_:)",
-                "title": "updateMetadata:completionHandler:",
+                "title": "- updateMetadata:completionHandler:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roommember/updatemetadata(_:completion:)",
-                "title": "updateMetadata:completion:",
+                "title": "- updateMetadata:completion:",
                 "type": "method"
               }
             ],
@@ -2299,108 +2047,53 @@
               },
               {
                 "path": "/documentation/skywayroom/roompublication/disable()",
-                "title": "disableWithCompletionHandler:",
+                "title": "- disableWithCompletionHandler:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roompublication/disable(completion:)",
-                "title": "disableWithCompletion:",
+                "title": "- disableWithCompletion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roompublication/enable()",
-                "title": "enableWithCompletionHandler:",
+                "title": "- enableWithCompletionHandler:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roompublication/enable(completion:)",
-                "title": "enableWithCompletion:",
+                "title": "- enableWithCompletion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roompublication/getstats(memberid:)",
-                "title": "getStatsWithMemberId:",
+                "title": "- getStatsWithMemberId:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roompublication/isequal(_:)",
-                "title": "isEqual:",
+                "title": "- isEqual:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roompublication/replace(_:)",
-                "title": "replace:",
+                "title": "- replace:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roompublication/update(_:)",
-                "title": "update:",
+                "title": "- update:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roompublication/updatemetadata(_:)",
-                "title": "updateMetadata:completionHandler:",
+                "title": "- updateMetadata:completionHandler:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roompublication/updatemetadata(_:completion:)",
-                "title": "updateMetadata:completion:",
+                "title": "- updateMetadata:completion:",
                 "type": "method"
-              },
-              {
-                "title": "Default Implementations",
-                "type": "groupMarker"
-              },
-              {
-                "children": [
-                  {
-                    "title": "Instance Methods",
-                    "type": "groupMarker"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/roompublication/publication(_:connectionstatedidchange:)",
-                    "title": "publication:connectionStateDidChange:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/roompublication/publication(_:didupdatemetadata:)",
-                    "title": "publication:didUpdateMetadata:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/roompublication/publication(_:subscribed:)",
-                    "title": "publication:subscribed:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/roompublication/publication(_:unsubscribed:)",
-                    "title": "publication:unsubscribed:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/roompublication/publicationdisabled(_:)",
-                    "title": "publicationDisabled:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/roompublication/publicationenabled(_:)",
-                    "title": "publicationEnabled:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/roompublication/publicationstatedidchange(_:)",
-                    "title": "publicationStateDidChange:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/roompublication/publicationsubscriptionlistdidchange(_:)",
-                    "title": "publicationSubscriptionListDidChange:",
-                    "type": "method"
-                  }
-                ],
-                "path": "/documentation/skywayroom/roompublication/publicationdelegate-implementations",
-                "title": "PublicationDelegate Implementations",
-                "type": "symbol"
               }
             ],
             "path": "/documentation/skywayroom/roompublication",
@@ -2414,8 +2107,33 @@
                 "type": "groupMarker"
               },
               {
+                "path": "/documentation/skywayroom/roompublicationoptions/codeccapabilities",
+                "title": "codecCapabilities",
+                "type": "property"
+              },
+              {
+                "path": "/documentation/skywayroom/roompublicationoptions/encodings",
+                "title": "encodings",
+                "type": "property"
+              },
+              {
+                "path": "/documentation/skywayroom/roompublicationoptions/isenabled",
+                "title": "isEnabled",
+                "type": "property"
+              },
+              {
                 "path": "/documentation/skywayroom/roompublicationoptions/maxsubscribers",
                 "title": "maxSubscribers",
+                "type": "property"
+              },
+              {
+                "path": "/documentation/skywayroom/roompublicationoptions/metadata",
+                "title": "metadata",
+                "type": "property"
+              },
+              {
+                "path": "/documentation/skywayroom/roompublicationoptions/type",
+                "title": "type",
                 "type": "property"
               },
               {
@@ -2424,7 +2142,7 @@
               },
               {
                 "path": "/documentation/skywayroom/roompublicationoptions/init",
-                "title": "init",
+                "title": "- init",
                 "type": "method"
               }
             ],
@@ -2489,47 +2207,47 @@
               },
               {
                 "path": "/documentation/skywayroom/roomsubscription/changepreferredencoding(encodingid:)",
-                "title": "changePreferredEncodingWithEncodingId:",
+                "title": "- changePreferredEncodingWithEncodingId:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roomsubscription/getstats()",
-                "title": "getStats",
+                "title": "- getStats",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roomsubscription/isequal(_:)",
-                "title": "isEqual:",
+                "title": "- isEqual:",
                 "type": "method"
-              },
-              {
-                "title": "Default Implementations",
-                "type": "groupMarker"
-              },
-              {
-                "children": [
-                  {
-                    "title": "Instance Methods",
-                    "type": "groupMarker"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/roomsubscription/subscription(_:connectionstatedidchange:)",
-                    "title": "subscription:connectionStateDidChange:",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/roomsubscription/subscription(_:didattach:)",
-                    "title": "subscription:didAttach:",
-                    "type": "method"
-                  }
-                ],
-                "path": "/documentation/skywayroom/roomsubscription/subscriptiondelegate-implementations",
-                "title": "SubscriptionDelegate Implementations",
-                "type": "symbol"
               }
             ],
             "path": "/documentation/skywayroom/roomsubscription",
             "title": "RoomSubscription",
+            "type": "class"
+          },
+          {
+            "children": [
+              {
+                "title": "Instance Properties",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/roomsubscriptionoptions/preferredencodingid",
+                "title": "preferredEncodingId",
+                "type": "property"
+              },
+              {
+                "title": "Instance Methods",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/roomsubscriptionoptions/init",
+                "title": "- init",
+                "type": "method"
+              }
+            ],
+            "path": "/documentation/skywayroom/roomsubscriptionoptions",
+            "title": "RoomSubscriptionOptions",
             "type": "class"
           },
           {
@@ -2553,8 +2271,8 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/sfubotmember/startforwarding(_:configure:completion:)",
-                "title": "startForwardingPublication:withConfigure:completion:",
+                "path": "/documentation/skywayroom/sfubotmember/startforwarding(_:configure:)",
+                "title": "- startForwardingPublication:withConfigure:completion:",
                 "type": "method"
               }
             ],
@@ -2569,13 +2287,13 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/sfubotplugin/createbot(on:completion:)",
-                "title": "createBotOnChannel:completion:",
+                "path": "/documentation/skywayroom/sfubotplugin/createbot(on:)",
+                "title": "- createBotOnChannel:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/sfubotplugin/init(options:)",
-                "title": "initWithOptions:",
+                "title": "- initWithOptions:",
                 "type": "method"
               }
             ],
@@ -2610,7 +2328,7 @@
               },
               {
                 "path": "/documentation/skywayroom/sfubotpluginoptions/init()",
-                "title": "init",
+                "title": "- init",
                 "type": "method"
               }
             ],
@@ -2639,38 +2357,8 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/sfuroom/channel(_:didpublishstreamof:)",
-                "title": "channel:didPublishStreamOfPublication:",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/sfuroom/channel(_:didunpublishstreamof:)",
-                "title": "channel:didUnpublishStreamOfPublication:",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/sfuroom/channel(_:publication:metadatadidupdate:)",
-                "title": "channel:publication:metadataDidUpdate:",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/sfuroom/channel(_:publicationdidchangetodisabled:)",
-                "title": "channel:publicationDidChangeToDisabled:",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/sfuroom/channel(_:publicationdidchangetoenabled:)",
-                "title": "channel:publicationDidChangeToEnabled:",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/sfuroom/join(with:)",
-                "title": "joinWith:completionHandler:",
-                "type": "method"
-              },
-              {
                 "path": "/documentation/skywayroom/sfuroom/join(with:completion:)",
-                "title": "joinWith:completion:",
+                "title": "- joinWith:completion:",
                 "type": "method"
               },
               {
@@ -2678,63 +2366,48 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/sfuroom/create(with:)",
-                "title": "createWith:completionHandler:",
-                "type": "method"
-              },
-              {
                 "path": "/documentation/skywayroom/sfuroom/create(with:completion:)",
-                "title": "createWith:completion:",
+                "title": "+ createWith:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/sfuroom/create(with:sfuoptions:)",
-                "title": "createWith:sfuOptions:completionHandler:",
+                "title": "+ createWith:sfuOptions:completionHandler:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/sfuroom/create(with:sfuoptions:completion:)",
-                "title": "createWith:sfuOptions:completion:",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/sfuroom/find(by:)",
-                "title": "findBy:completionHandler:",
+                "title": "+ createWith:sfuOptions:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/sfuroom/find(by:completion:)",
-                "title": "findBy:completion:",
+                "title": "+ findBy:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/sfuroom/find(by:sfuoption:)",
-                "title": "findBy:sfuOption:completionHandler:",
+                "title": "+ findBy:sfuOption:completionHandler:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/sfuroom/find(by:sfuoptions:completion:)",
-                "title": "findBy:sfuOptions:completion:",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/sfuroom/findorcreate(with:)",
-                "title": "findOrCreateWith:completionHandler:",
+                "title": "+ findBy:sfuOptions:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/sfuroom/findorcreate(with:completion:)",
-                "title": "findOrCreateWith:completion:",
+                "title": "+ findOrCreateWith:completion:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/sfuroom/findorcreate(with:sfuoptions:)",
-                "title": "findOrCreateWith:sfuOptions:completionHandler:",
+                "title": "+ findOrCreateWith:sfuOptions:completionHandler:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/sfuroom/findorcreate(with:sfuoptions:completion:)",
-                "title": "findOrCreateWith:sfuOptions:completion:",
+                "title": "+ findOrCreateWith:sfuOptions:completion:",
                 "type": "method"
               }
             ],
@@ -2750,132 +2423,132 @@
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/availablecameraismissing()",
-                "title": "availableCameraIsMissing",
+                "title": "+ availableCameraIsMissing",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/cameraisnotset()",
-                "title": "cameraIsNotSet",
+                "title": "+ cameraIsNotSet",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/channelcloseerror()",
-                "title": "channelCloseError",
+                "title": "+ channelCloseError",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/channelcreateerror()",
-                "title": "channelCreateError",
+                "title": "+ channelCreateError",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/channelfinderror()",
-                "title": "channelFindError",
+                "title": "+ channelFindError",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/channelfindorcreateerror()",
-                "title": "channelFindOrCreateError",
+                "title": "+ channelFindOrCreateError",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/channeljoinerror()",
-                "title": "channelJoinError",
+                "title": "+ channelJoinError",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/channelleaveerror()",
-                "title": "channelLeaveError",
+                "title": "+ channelLeaveError",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/channelupdatemetadataerror()",
-                "title": "channelUpdateMetadataError",
+                "title": "+ channelUpdateMetadataError",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/contextdisposeerror()",
-                "title": "contextDisposeError",
+                "title": "+ contextDisposeError",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/contextsetuperror()",
-                "title": "contextSetupError",
+                "title": "+ contextSetupError",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/fatalerrorrapireconnectfailederror()",
-                "title": "fatalErrorRAPIReconnectFailedError",
+                "title": "+ fatalErrorRAPIReconnectFailedError",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/localdatastreamwriteerror()",
-                "title": "localDataStreamWriteError",
+                "title": "+ localDataStreamWriteError",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/localpersonpublisherror()",
-                "title": "localPersonPublishError",
+                "title": "+ localPersonPublishError",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/localpersonsubscribeerror()",
-                "title": "localPersonSubscribeError",
+                "title": "+ localPersonSubscribeError",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/localpersonunpublisherror()",
-                "title": "localPersonUnpublishError",
+                "title": "+ localPersonUnpublishError",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/localpersonunsubscribeerror()",
-                "title": "localPersonUnsubscribeError",
+                "title": "+ localPersonUnsubscribeError",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/memberleaveerror()",
-                "title": "memberLeaveError",
+                "title": "+ memberLeaveError",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/memberupdatemetadataerror()",
-                "title": "memberUpdateMetadataError",
+                "title": "+ memberUpdateMetadataError",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/publicationcancelerror()",
-                "title": "publicationCancelError",
+                "title": "+ publicationCancelError",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/publicationdisableerror()",
-                "title": "publicationDisableError",
+                "title": "+ publicationDisableError",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/publicationenableerror()",
-                "title": "publicationEnableError",
+                "title": "+ publicationEnableError",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/publicationupdatemetadataerror()",
-                "title": "publicationUpdateMetadataError",
+                "title": "+ publicationUpdateMetadataError",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/remotepersonsubscribeerror()",
-                "title": "remotePersonSubscribeError",
+                "title": "+ remotePersonSubscribeError",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/remotepersonunsubscribeerror()",
-                "title": "remotePersonUnsubscribeError",
+                "title": "+ remotePersonUnsubscribeError",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/skwerrorfactory/subscriptioncancelerror()",
-                "title": "subscriptionCancelError",
+                "title": "+ subscriptionCancelError",
                 "type": "method"
               }
             ],
@@ -2961,12 +2634,12 @@
               },
               {
                 "path": "/documentation/skywayroom/subscription/changepreferredencoding(withencodingid:)",
-                "title": "changePreferredEncodingWithEncodingId:",
+                "title": "- changePreferredEncodingWithEncodingId:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/subscription/getstats()",
-                "title": "getStats",
+                "title": "- getStats",
                 "type": "method"
               }
             ],
@@ -3003,22 +2676,22 @@
               },
               {
                 "path": "/documentation/skywayroom/videosource/add(_:)",
-                "title": "add:",
+                "title": "- add:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/videosource/createstream()",
-                "title": "createStream",
+                "title": "- createStream",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/videosource/remove(_:)",
-                "title": "remove:",
+                "title": "- remove:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/videosource/removeallprocessors()",
-                "title": "removeAllProcessors",
+                "title": "- removeAllProcessors",
                 "type": "method"
               }
             ],
@@ -3064,7 +2737,7 @@
               },
               {
                 "path": "/documentation/skywayroom/virtualbackgroundprocessor/processfor:",
-                "title": "processFor:",
+                "title": "- processFor:",
                 "type": "method"
               }
             ],
@@ -3126,77 +2799,77 @@
               },
               {
                 "path": "/documentation/skywayroom/channeldelegate/channel(_:didpublishstreamof:)",
-                "title": "channel:didPublishStreamOfPublication:",
+                "title": "- channel:didPublishStreamOfPublication:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/channeldelegate/channel(_:didsubscribepublicationof:)",
-                "title": "channel:didSubscribePublicationOfSubscription:",
+                "title": "- channel:didSubscribePublicationOfSubscription:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/channeldelegate/channel(_:didunpublishstreamof:)",
-                "title": "channel:didUnpublishStreamOfPublication:",
+                "title": "- channel:didUnpublishStreamOfPublication:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/channeldelegate/channel(_:didunsubscribepublicationof:)",
-                "title": "channel:didUnsubscribePublicationOfSubscription:",
+                "title": "- channel:didUnsubscribePublicationOfSubscription:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/channeldelegate/channel(_:didupdatemetadata:)",
-                "title": "channel:didUpdateMetadata:",
+                "title": "- channel:didUpdateMetadata:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/channeldelegate/channel(_:member:metadatadidupdate:)",
-                "title": "channel:member:metadataDidUpdate:",
+                "title": "- channel:member:metadataDidUpdate:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/channeldelegate/channel(_:memberdidjoin:)",
-                "title": "channel:memberDidJoin:",
+                "title": "- channel:memberDidJoin:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/channeldelegate/channel(_:memberdidleave:)",
-                "title": "channel:memberDidLeave:",
+                "title": "- channel:memberDidLeave:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/channeldelegate/channel(_:publication:metadatadidupdate:)",
-                "title": "channel:publication:metadataDidUpdate:",
+                "title": "- channel:publication:metadataDidUpdate:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/channeldelegate/channel(_:publicationdidchangetodisabled:)",
-                "title": "channel:publicationDidChangeToDisabled:",
+                "title": "- channel:publicationDidChangeToDisabled:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/channeldelegate/channel(_:publicationdidchangetoenabled:)",
-                "title": "channel:publicationDidChangeToEnabled:",
+                "title": "- channel:publicationDidChangeToEnabled:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/channeldelegate/channeldidclose(_:)",
-                "title": "channelDidClose:",
+                "title": "- channelDidClose:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/channeldelegate/channelmemberlistdidchange(_:)",
-                "title": "channelMemberListDidChange:",
+                "title": "- channelMemberListDidChange:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/channeldelegate/channelpublicationlistdidchange(_:)",
-                "title": "channelPublicationListDidChange:",
+                "title": "- channelPublicationListDidChange:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/channeldelegate/channelsubscriptionlistdidchange(_:)",
-                "title": "channelSubscriptionListDidChange:",
+                "title": "- channelSubscriptionListDidChange:",
                 "type": "method"
               }
             ],
@@ -3212,27 +2885,27 @@
               },
               {
                 "path": "/documentation/skywayroom/contextdelegate/fatalerroroccurred(_:)",
-                "title": "fatalErrorOccurred:",
+                "title": "- fatalErrorOccurred:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/contextdelegate/reconnectingsucceeded()",
-                "title": "reconnectingSucceeded",
+                "title": "- reconnectingSucceeded",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/contextdelegate/shouldupdatetoken()",
-                "title": "shouldUpdateToken",
+                "title": "- shouldUpdateToken",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/contextdelegate/startreconnecting()",
-                "title": "startReconnecting",
+                "title": "- startReconnecting",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/contextdelegate/tokenexpired()",
-                "title": "tokenExpired",
+                "title": "- tokenExpired",
                 "type": "method"
               }
             ],
@@ -3248,7 +2921,7 @@
               },
               {
                 "path": "/documentation/skywayroom/forwardingdelegate/forwardingdidstop(_:)",
-                "title": "forwardingDidStop:",
+                "title": "- forwardingDidStop:",
                 "type": "method"
               }
             ],
@@ -3264,12 +2937,12 @@
               },
               {
                 "path": "/documentation/skywayroom/localdatastreamdelegate/datastream(_:didbecomeunwritablefor:)",
-                "title": "dataStream:didBecomeUnwritableForSubscriber:",
+                "title": "- dataStream:didBecomeUnwritableForSubscriber:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/localdatastreamdelegate/datastream(_:didbecomewritablefor:)",
-                "title": "dataStream:didBecomeWritableForSubscriber:",
+                "title": "- dataStream:didBecomeWritableForSubscriber:",
                 "type": "method"
               }
             ],
@@ -3285,22 +2958,22 @@
               },
               {
                 "path": "/documentation/skywayroom/localpersondelegate/localperson(_:didpublishstreamof:)",
-                "title": "localPerson:didPublishStreamOfPublication:",
+                "title": "- localPerson:didPublishStreamOfPublication:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/localpersondelegate/localperson(_:didsubscribepublicationof:)",
-                "title": "localPerson:didSubscribePublicationOfSubscription:",
+                "title": "- localPerson:didSubscribePublicationOfSubscription:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/localpersondelegate/localperson(_:didunpublishstreamof:)",
-                "title": "localPerson:didUnpublishStreamOfPublication:",
+                "title": "- localPerson:didUnpublishStreamOfPublication:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/localpersondelegate/localperson(_:didunsubscribepublicationof:)",
-                "title": "localPerson:didUnsubscribePublicationOfSubscription:",
+                "title": "- localPerson:didUnsubscribePublicationOfSubscription:",
                 "type": "method"
               }
             ],
@@ -3316,22 +2989,22 @@
               },
               {
                 "path": "/documentation/skywayroom/localroommemberdelegate/localroommember(_:didpublishstreamof:)",
-                "title": "localRoomMember:didPublishStreamOf:",
+                "title": "- localRoomMember:didPublishStreamOf:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/localroommemberdelegate/localroommember(_:didsubscribepublicationof:)",
-                "title": "localRoomMember:didSubscribePublicationOf:",
+                "title": "- localRoomMember:didSubscribePublicationOf:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/localroommemberdelegate/localroommember(_:didunpublishstreamof:)",
-                "title": "localRoomMember:didUnpublishStreamOf:",
+                "title": "- localRoomMember:didUnpublishStreamOf:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/localroommemberdelegate/localroommember(_:didunsubscribepublicationof:)",
-                "title": "localRoomMember:didUnsubscribePublicationOf:",
+                "title": "- localRoomMember:didUnsubscribePublicationOf:",
                 "type": "method"
               }
             ],
@@ -3347,7 +3020,7 @@
               },
               {
                 "path": "/documentation/skywayroom/loggerdelegate/didreceivelog(_:at:)",
-                "title": "didReceiveLog:atLevel:",
+                "title": "- didReceiveLog:atLevel:",
                 "type": "method"
               }
             ],
@@ -3363,22 +3036,22 @@
               },
               {
                 "path": "/documentation/skywayroom/memberdelegate/member(_:didupdatemetadata:)",
-                "title": "member:didUpdateMetadata:",
+                "title": "- member:didUpdateMetadata:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/memberdelegate/memberdidleave(_:)",
-                "title": "memberDidLeave:",
+                "title": "- memberDidLeave:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/memberdelegate/memberpublicationlistdidchange(_:)",
-                "title": "memberPublicationListDidChange:",
+                "title": "- memberPublicationListDidChange:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/memberdelegate/membersubscriptionlistdidchange(_:)",
-                "title": "memberSubscriptionListDidChange:",
+                "title": "- memberSubscriptionListDidChange:",
                 "type": "method"
               }
             ],
@@ -3394,42 +3067,42 @@
               },
               {
                 "path": "/documentation/skywayroom/publicationdelegate/publication(_:connectionstatedidchange:)",
-                "title": "publication:connectionStateDidChange:",
+                "title": "- publication:connectionStateDidChange:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/publicationdelegate/publication(_:didupdatemetadata:)",
-                "title": "publication:didUpdateMetadata:",
+                "title": "- publication:didUpdateMetadata:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/publicationdelegate/publication(_:subscribed:)",
-                "title": "publication:subscribed:",
+                "title": "- publication:subscribed:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/publicationdelegate/publication(_:unsubscribed:)",
-                "title": "publication:unsubscribed:",
+                "title": "- publication:unsubscribed:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/publicationdelegate/publicationdisabled(_:)",
-                "title": "publicationDisabled:",
+                "title": "- publicationDisabled:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/publicationdelegate/publicationenabled(_:)",
-                "title": "publicationEnabled:",
+                "title": "- publicationEnabled:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/publicationdelegate/publicationstatedidchange(_:)",
-                "title": "publicationStateDidChange:",
+                "title": "- publicationStateDidChange:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/publicationdelegate/publicationsubscriptionlistdidchange(_:)",
-                "title": "publicationSubscriptionListDidChange:",
+                "title": "- publicationSubscriptionListDidChange:",
                 "type": "method"
               }
             ],
@@ -3445,12 +3118,12 @@
               },
               {
                 "path": "/documentation/skywayroom/remotedatastreamdelegate/datastream(_:didreceive:)-6un1e",
-                "title": "dataStream:didReceiveData:",
+                "title": "- dataStream:didReceiveData:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/remotedatastreamdelegate/datastream(_:didreceive:)-7f2zw",
-                "title": "dataStream:didReceiveString:",
+                "title": "- dataStream:didReceiveString:",
                 "type": "method"
               }
             ],
@@ -3466,12 +3139,12 @@
               },
               {
                 "path": "/documentation/skywayroom/remotepersondelegate/remoteperson(_:didsubscribepublicationof:)",
-                "title": "remotePerson:didSubscribePublicationOfSubscription:",
+                "title": "- remotePerson:didSubscribePublicationOfSubscription:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/remotepersondelegate/remoteperson(_:didunsubscribepublicationof:)",
-                "title": "remotePerson:didUnsubscribePublicationOfSubscription:",
+                "title": "- remotePerson:didUnsubscribePublicationOfSubscription:",
                 "type": "method"
               }
             ],
@@ -3487,12 +3160,12 @@
               },
               {
                 "path": "/documentation/skywayroom/remoteroommemberdelegate/remoteroommember(_:didsubscribepublicationof:)",
-                "title": "remoteRoomMember:didSubscribePublicationOf:",
+                "title": "- remoteRoomMember:didSubscribePublicationOf:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/remoteroommemberdelegate/remoteroommember(_:didunsubscribepublicationof:)",
-                "title": "remoteRoomMember:didUnsubscribePublicationOf:",
+                "title": "- remoteRoomMember:didUnsubscribePublicationOf:",
                 "type": "method"
               }
             ],
@@ -3508,77 +3181,77 @@
               },
               {
                 "path": "/documentation/skywayroom/roomdelegate/room(_:didpublishstreamof:)",
-                "title": "room:didPublishStreamOf:",
+                "title": "- room:didPublishStreamOf:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roomdelegate/room(_:didsubscribepublicationof:)",
-                "title": "room:didSubscribePublicationOf:",
+                "title": "- room:didSubscribePublicationOf:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roomdelegate/room(_:didunpublishstreamof:)",
-                "title": "room:didUnpublishStreamOf:",
+                "title": "- room:didUnpublishStreamOf:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roomdelegate/room(_:didunsubscribepublicationof:)",
-                "title": "room:didUnsubscribePublicationOf:",
+                "title": "- room:didUnsubscribePublicationOf:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roomdelegate/room(_:didupdatemetadata:)",
-                "title": "room:didUpdateMetadata:",
+                "title": "- room:didUpdateMetadata:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roomdelegate/room(_:member:metadatadidupdate:)",
-                "title": "room:member:metadataDidUpdate:",
+                "title": "- room:member:metadataDidUpdate:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roomdelegate/room(_:memberdidjoin:)",
-                "title": "room:memberDidJoin:",
+                "title": "- room:memberDidJoin:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roomdelegate/room(_:memberdidleave:)",
-                "title": "room:memberDidLeave:",
+                "title": "- room:memberDidLeave:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roomdelegate/room(_:publication:metadatadidupdate:)",
-                "title": "room:publication:metadataDidUpdate:",
+                "title": "- room:publication:metadataDidUpdate:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roomdelegate/room(_:publicationdidchangetodisabled:)",
-                "title": "room:publicationDidChangeToDisabled:",
+                "title": "- room:publicationDidChangeToDisabled:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roomdelegate/room(_:publicationdidchangetoenabled:)",
-                "title": "room:publicationDidChangeToEnabled:",
+                "title": "- room:publicationDidChangeToEnabled:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roomdelegate/roomdidclose(_:)",
-                "title": "roomDidClose:",
+                "title": "- roomDidClose:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roomdelegate/roommemberlistdidchange(_:)",
-                "title": "roomMemberListDidChange:",
+                "title": "- roomMemberListDidChange:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roomdelegate/roompublicationlistdidchange(_:)",
-                "title": "roomPublicationListDidChange:",
+                "title": "- roomPublicationListDidChange:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roomdelegate/roomsubscriptionlistdidchange(_:)",
-                "title": "roomSubscriptionListDidChange:",
+                "title": "- roomSubscriptionListDidChange:",
                 "type": "method"
               }
             ],
@@ -3594,22 +3267,22 @@
               },
               {
                 "path": "/documentation/skywayroom/roommemberdelegate/member(_:didupdatemetadata:)",
-                "title": "member:didUpdateMetadata:",
+                "title": "- member:didUpdateMetadata:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roommemberdelegate/memberdidleave(_:)",
-                "title": "memberDidLeave:",
+                "title": "- memberDidLeave:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roommemberdelegate/memberpublicationlistdidchange(_:)",
-                "title": "memberPublicationListDidChange:",
+                "title": "- memberPublicationListDidChange:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roommemberdelegate/membersubscriptionlistdidchange(_:)",
-                "title": "memberSubscriptionListDidChange:",
+                "title": "- memberSubscriptionListDidChange:",
                 "type": "method"
               }
             ],
@@ -3625,42 +3298,42 @@
               },
               {
                 "path": "/documentation/skywayroom/roompublicationdelegate/publication(_:connectionstatedidchange:)",
-                "title": "publication:connectionStateDidChange:",
+                "title": "- publication:connectionStateDidChange:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roompublicationdelegate/publication(_:didupdatemetadata:)",
-                "title": "publication:didUpdateMetadata:",
+                "title": "- publication:didUpdateMetadata:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roompublicationdelegate/publication(_:subscribed:)",
-                "title": "publication:subscribed:",
+                "title": "- publication:subscribed:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roompublicationdelegate/publication(_:unsubscribed:)",
-                "title": "publication:unsubscribed:",
+                "title": "- publication:unsubscribed:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roompublicationdelegate/publicationdisabled(_:)",
-                "title": "publicationDisabled:",
+                "title": "- publicationDisabled:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roompublicationdelegate/publicationenabled(_:)",
-                "title": "publicationEnabled:",
+                "title": "- publicationEnabled:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roompublicationdelegate/publicationstatedidchange(_:)",
-                "title": "publicationStateDidChange:",
+                "title": "- publicationStateDidChange:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roompublicationdelegate/publicationsubscriptionlistdidchange(_:)",
-                "title": "publicationSubscriptionListDidChange:",
+                "title": "- publicationSubscriptionListDidChange:",
                 "type": "method"
               }
             ],
@@ -3676,12 +3349,12 @@
               },
               {
                 "path": "/documentation/skywayroom/roomsubscriptiondelegate/subscription(_:connectionstatedidchange:)",
-                "title": "subscription:connectionStateDidChange:",
+                "title": "- subscription:connectionStateDidChange:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/roomsubscriptiondelegate/subscription(_:didattach:)",
-                "title": "subscription:didAttach:",
+                "title": "- subscription:didAttach:",
                 "type": "method"
               }
             ],
@@ -3702,12 +3375,12 @@
               },
               {
                 "path": "/documentation/skywayroom/subscriptiondelegate/subscription(_:connectionstatedidchange:)",
-                "title": "subscription:connectionStateDidChange:",
+                "title": "- subscription:connectionStateDidChange:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/subscriptiondelegate/subscription(_:didattach:)",
-                "title": "subscription:didAttach:",
+                "title": "- subscription:didAttach:",
                 "type": "method"
               }
             ],
@@ -3732,7 +3405,7 @@
               },
               {
                 "path": "/documentation/skywayroom/videoprocessor/process(for:)",
-                "title": "processFor:",
+                "title": "- processFor:",
                 "type": "method"
               }
             ],
@@ -3748,12 +3421,12 @@
               },
               {
                 "path": "/documentation/skywayroom/videostreamprotocol/attach(_:)",
-                "title": "attachView:",
+                "title": "- attachView:",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/videostreamprotocol/detach(_:)",
-                "title": "detachView:",
+                "title": "- detachView:",
                 "type": "method"
               }
             ],
@@ -3778,6 +3451,11 @@
           {
             "title": "Macros",
             "type": "groupMarker"
+          },
+          {
+            "path": "/documentation/skywayroom/skw_deprecated",
+            "title": "SKW_DEPRECATED",
+            "type": "macro"
           },
           {
             "path": "/documentation/skywayroom/skyway_room",
@@ -4188,6 +3866,74 @@
                 "type": "groupMarker"
               },
               {
+                "path": "/documentation/skywayroom/roommemberside/local",
+                "title": "RoomMemberSideLocal",
+                "type": "case"
+              },
+              {
+                "path": "/documentation/skywayroom/roommemberside/remote",
+                "title": "RoomMemberSideRemote",
+                "type": "case"
+              }
+            ],
+            "path": "/documentation/skywayroom/roommemberside",
+            "title": "RoomMemberSide",
+            "type": "enum"
+          },
+          {
+            "children": [
+              {
+                "title": "Enumeration Cases",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/roommemberstate/joined",
+                "title": "RoomMemberStateJoined",
+                "type": "case"
+              },
+              {
+                "path": "/documentation/skywayroom/roommemberstate/left",
+                "title": "RoomMemberStateLeft",
+                "type": "case"
+              }
+            ],
+            "path": "/documentation/skywayroom/roommemberstate",
+            "title": "RoomMemberState",
+            "type": "enum"
+          },
+          {
+            "children": [
+              {
+                "title": "Enumeration Cases",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/roompublicationstate/canceled",
+                "title": "RoomPublicationStateCanceled",
+                "type": "case"
+              },
+              {
+                "path": "/documentation/skywayroom/roompublicationstate/disabled",
+                "title": "RoomPublicationStateDisabled",
+                "type": "case"
+              },
+              {
+                "path": "/documentation/skywayroom/roompublicationstate/enabled",
+                "title": "RoomPublicationStateEnabled",
+                "type": "case"
+              }
+            ],
+            "path": "/documentation/skywayroom/roompublicationstate",
+            "title": "RoomPublicationState",
+            "type": "enum"
+          },
+          {
+            "children": [
+              {
+                "title": "Enumeration Cases",
+                "type": "groupMarker"
+              },
+              {
                 "path": "/documentation/skywayroom/roomstate-26agr/closed",
                 "title": "RoomStateClosed",
                 "type": "case"
@@ -4221,6 +3967,27 @@
             ],
             "path": "/documentation/skywayroom/roomstate-377on",
             "title": "SKWRoomState",
+            "type": "enum"
+          },
+          {
+            "children": [
+              {
+                "title": "Enumeration Cases",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/roomsubscriptionstate/canceled",
+                "title": "RoomSubscriptionStateCanceled",
+                "type": "case"
+              },
+              {
+                "path": "/documentation/skywayroom/roomsubscriptionstate/enabled",
+                "title": "RoomSubscriptionStateEnabled",
+                "type": "case"
+              }
+            ],
+            "path": "/documentation/skywayroom/roomsubscriptionstate",
+            "title": "RoomSubscriptionState",
             "type": "enum"
           },
           {
@@ -4730,28 +4497,28 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/channel/close(completion:)",
-                "title": "func close(completion: (((any Error)?) -> Void)?)",
+                "path": "/documentation/skywayroom/channel/close()",
+                "title": "func close() async throws",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/channel/dispose(completion:)",
-                "title": "func dispose(completion: (((any Error)?) -> Void)?)",
+                "path": "/documentation/skywayroom/channel/dispose()",
+                "title": "func dispose() async throws",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/channel/join(with:completion:)",
-                "title": "func join(with: MemberInit?, completion: ((LocalPerson?, (any Error)?) -> Void)?)",
+                "path": "/documentation/skywayroom/channel/join(with:)",
+                "title": "func join(with: MemberInit?) async throws -> LocalPerson",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/channel/leavemember(_:completion:)",
-                "title": "func leaveMember(Member, completion: (((any Error)?) -> Void)?)",
+                "path": "/documentation/skywayroom/channel/leavemember(_:)",
+                "title": "func leaveMember(Member) async throws",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/channel/updatemetadata(_:completion:)",
-                "title": "func updateMetadata(String, completion: (((any Error)?) -> Void)?)",
+                "path": "/documentation/skywayroom/channel/updatemetadata(_:)",
+                "title": "func updateMetadata(String) async throws",
                 "type": "method"
               },
               {
@@ -4759,18 +4526,18 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/channel/create(with:completion:)",
-                "title": "class func create(with: ChannelInit?, completion: ((Channel?, (any Error)?) -> Void)?)",
+                "path": "/documentation/skywayroom/channel/create(with:)",
+                "title": "class func create(with: ChannelInit?) async throws -> Channel",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/channel/find(with:completion:)",
-                "title": "class func find(with: ChannelQuery, completion: ((Channel?, (any Error)?) -> Void)?)",
+                "path": "/documentation/skywayroom/channel/find(with:)",
+                "title": "class func find(with: ChannelQuery) async throws -> Channel",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/channel/findorcreate(with:completion:)",
-                "title": "class func findOrCreate(with: ChannelInit, completion: ((Channel?, (any Error)?) -> Void)?)",
+                "path": "/documentation/skywayroom/channel/findorcreate(with:)",
+                "title": "class func findOrCreate(with: ChannelInit) async throws -> Channel",
                 "type": "method"
               }
             ],
@@ -5449,23 +5216,23 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/localperson/publish(_:options:completion:)",
-                "title": "func publish(LocalStream, options: PublicationOptions?, completion: ((Publication?, (any Error)?) -> Void)?)",
+                "path": "/documentation/skywayroom/localperson/publish(_:options:)",
+                "title": "func publish(LocalStream, options: PublicationOptions?) async throws -> Publication",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/localperson/subscribepublication(publicationid:options:completion:)",
-                "title": "func subscribePublication(publicationID: String, options: SubscriptionOptions?, completion: ((Subscription?, (any Error)?) -> Void)?)",
+                "path": "/documentation/skywayroom/localperson/subscribepublication(publicationid:options:)",
+                "title": "func subscribePublication(publicationID: String, options: SubscriptionOptions?) async throws -> Subscription",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/localperson/unpublish(publicationid:completion:)",
-                "title": "func unpublish(publicationID: String, completion: (((any Error)?) -> Void)?)",
+                "path": "/documentation/skywayroom/localperson/unpublish(publicationid:)",
+                "title": "func unpublish(publicationID: String) async throws",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/localperson/unsubscribe(subscriptionid:completion:)",
-                "title": "func unsubscribe(subscriptionID: String, completion: (((any Error)?) -> Void)?)",
+                "path": "/documentation/skywayroom/localperson/unsubscribe(subscriptionid:)",
+                "title": "func unsubscribe(subscriptionID: String) async throws",
                 "type": "method"
               }
             ],
@@ -5500,12 +5267,12 @@
               },
               {
                 "path": "/documentation/skywayroom/localroommember/subscribe(publicationid:options:)",
-                "title": "func subscribe(publicationId: String, options: SubscriptionOptions?) async throws -> RoomSubscription",
+                "title": "func subscribe(publicationId: String, options: RoomSubscriptionOptions?) async throws -> RoomSubscription",
                 "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/localroommember/subscribe(publicationid:options:completion:)",
-                "title": "func subscribe(publicationId: String, options: SubscriptionOptions?, completion: ((RoomSubscription?, Error?) -> Void)?)",
+                "title": "func subscribe(publicationId: String, options: RoomSubscriptionOptions?, completion: ((RoomSubscription?, Error?) -> Void)?)",
                 "type": "method"
               },
               {
@@ -5527,72 +5294,6 @@
                 "path": "/documentation/skywayroom/localroommember/unsubscribe(subscriptionid:completion:)",
                 "title": "func unsubscribe(subscriptionId: String, completion: ((Error?) -> Void)?)",
                 "type": "method"
-              },
-              {
-                "title": "Default Implementations",
-                "type": "groupMarker"
-              },
-              {
-                "children": [
-                  {
-                    "title": "Instance Methods",
-                    "type": "groupMarker"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/localroommember/localperson(_:didpublishstreamof:)",
-                    "title": "func localPerson(LocalPerson, didPublishStreamOf: Publication)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/localroommember/localperson(_:didsubscribepublicationof:)",
-                    "title": "func localPerson(LocalPerson, didSubscribePublicationOf: Subscription)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/localroommember/localperson(_:didunpublishstreamof:)",
-                    "title": "func localPerson(LocalPerson, didUnpublishStreamOf: Publication)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/localroommember/localperson(_:didunsubscribepublicationof:)",
-                    "title": "func localPerson(LocalPerson, didUnsubscribePublicationOf: Subscription)",
-                    "type": "method"
-                  }
-                ],
-                "path": "/documentation/skywayroom/localroommember/localpersondelegate-implementations",
-                "title": "LocalPersonDelegate Implementations",
-                "type": "symbol"
-              },
-              {
-                "children": [
-                  {
-                    "title": "Instance Methods",
-                    "type": "groupMarker"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/localroommember/member(_:didupdatemetadata:)",
-                    "title": "func member(Member, didUpdateMetadata: String)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/localroommember/memberdidleave(_:)",
-                    "title": "func memberDidLeave(Member)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/localroommember/memberpublicationlistdidchange(_:)",
-                    "title": "func memberPublicationListDidChange(Member)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/localroommember/membersubscriptionlistdidchange(_:)",
-                    "title": "func memberSubscriptionListDidChange(Member)",
-                    "type": "method"
-                  }
-                ],
-                "path": "/documentation/skywayroom/localroommember/memberdelegate-implementations",
-                "title": "MemberDelegate Implementations",
-                "type": "symbol"
               }
             ],
             "path": "/documentation/skywayroom/localroommember",
@@ -5756,13 +5457,13 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/member/leave(completion:)",
-                "title": "func leave(completion: (((any Error)?) -> Void)?)",
+                "path": "/documentation/skywayroom/member/leave()",
+                "title": "func leave() async throws",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/member/updatemetadata(_:completion:)",
-                "title": "func updateMetadata(String, completion: (((any Error)?) -> Void)?)",
+                "path": "/documentation/skywayroom/member/updatemetadata(_:)",
+                "title": "func updateMetadata(String) async throws",
                 "type": "method"
               }
             ],
@@ -5847,41 +5548,6 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/p2proom/channel(_:didpublishstreamof:)",
-                "title": "func channel(Channel, didPublishStreamOf: Publication)",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/p2proom/channel(_:didsubscribepublicationof:)",
-                "title": "func channel(Channel, didSubscribePublicationOf: Subscription)",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/p2proom/channel(_:didunpublishstreamof:)",
-                "title": "func channel(Channel, didUnpublishStreamOf: Publication)",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/p2proom/channel(_:didunsubscribepublicationof:)",
-                "title": "func channel(Channel, didUnsubscribePublicationOf: Subscription)",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/p2proom/channel(_:publication:metadatadidupdate:)",
-                "title": "func channel(Channel, publication: Publication, metadataDidUpdate: String)",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/p2proom/channel(_:publicationdidchangetodisabled:)",
-                "title": "func channel(Channel, publicationDidChangeToDisabled: Publication)",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/p2proom/channel(_:publicationdidchangetoenabled:)",
-                "title": "func channel(Channel, publicationDidChangeToEnabled: Publication)",
-                "type": "method"
-              },
-              {
                 "path": "/documentation/skywayroom/p2proom/join(with:)",
                 "title": "func join(with: Room.MemberInitOptions?) async throws -> LocalP2PRoomMember",
                 "type": "method"
@@ -5923,6 +5589,11 @@
               {
                 "path": "/documentation/skywayroom/p2proom/findorcreate(with:)",
                 "title": "class func findOrCreate(with: InitOptions) async throws -> P2PRoom",
+                "type": "method"
+              },
+              {
+                "path": "/documentation/skywayroom/p2proom/findorcreate(with:completion:)",
+                "title": "class func findOrCreate(with: InitOptions, completion: ((P2PRoom?, Error?) -> Void)?)",
                 "type": "method"
               }
             ],
@@ -6017,13 +5688,13 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/publication/disable(completion:)",
-                "title": "func disable(completion: (((any Error)?) -> Void)?)",
+                "path": "/documentation/skywayroom/publication/disable()",
+                "title": "func disable() async throws",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/publication/enable(completion:)",
-                "title": "func enable(completion: (((any Error)?) -> Void)?)",
+                "path": "/documentation/skywayroom/publication/enable()",
+                "title": "func enable() async throws",
                 "type": "method"
               },
               {
@@ -6042,8 +5713,8 @@
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/publication/updatemetadata(_:completion:)",
-                "title": "func updateMetadata(String, completion: (((any Error)?) -> Void)?)",
+                "path": "/documentation/skywayroom/publication/updatemetadata(_:)",
+                "title": "func updateMetadata(String) async throws",
                 "type": "method"
               }
             ],
@@ -6145,13 +5816,13 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/remoteperson/subscribepublication(publicationid:completion:)",
-                "title": "func subscribePublication(publicationID: String, completion: ((Subscription?, (any Error)?) -> Void)?)",
+                "path": "/documentation/skywayroom/remoteperson/subscribepublication(publicationid:)",
+                "title": "func subscribePublication(publicationID: String) async throws -> Subscription",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/remoteperson/unsubscribe(subscriptionid:completion:)",
-                "title": "func unsubscribe(subscriptionID: String, completion: (((any Error)?) -> Void)?)",
+                "path": "/documentation/skywayroom/remoteperson/unsubscribe(subscriptionid:)",
+                "title": "func unsubscribe(subscriptionID: String) async throws",
                 "type": "method"
               }
             ],
@@ -6175,16 +5846,6 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/remoteroommember/memberpublicationlistdidchanged(_:)",
-                "title": "func memberPublicationListDidChanged(Member)",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/remoteroommember/membersubscriptionlistdidchanged(_:)",
-                "title": "func memberSubscriptionListDidChanged(Member)",
-                "type": "method"
-              },
-              {
                 "path": "/documentation/skywayroom/remoteroommember/subscribe(publicationid:)",
                 "title": "func subscribe(publicationId: String) async throws -> RoomSubscription",
                 "type": "method"
@@ -6203,52 +5864,6 @@
                 "path": "/documentation/skywayroom/remoteroommember/unsubscribe(subscriptionid:completion:)",
                 "title": "func unsubscribe(subscriptionId: String, completion: ((Error?) -> Void)?)",
                 "type": "method"
-              },
-              {
-                "title": "Default Implementations",
-                "type": "groupMarker"
-              },
-              {
-                "children": [
-                  {
-                    "title": "Instance Methods",
-                    "type": "groupMarker"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/remoteroommember/member(_:didupdatemetadata:)",
-                    "title": "func member(Member, didUpdateMetadata: String)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/remoteroommember/memberdidleave(_:)",
-                    "title": "func memberDidLeave(Member)",
-                    "type": "method"
-                  }
-                ],
-                "path": "/documentation/skywayroom/remoteroommember/memberdelegate-implementations",
-                "title": "MemberDelegate Implementations",
-                "type": "symbol"
-              },
-              {
-                "children": [
-                  {
-                    "title": "Instance Methods",
-                    "type": "groupMarker"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/remoteroommember/remoteperson(_:didsubscribepublicationof:)",
-                    "title": "func remotePerson(RemotePerson, didSubscribePublicationOf: Subscription)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/remoteroommember/remoteperson(_:didunsubscribepublicationof:)",
-                    "title": "func remotePerson(RemotePerson, didUnsubscribePublicationOf: Subscription)",
-                    "type": "method"
-                  }
-                ],
-                "path": "/documentation/skywayroom/remoteroommember/remotepersondelegate-implementations",
-                "title": "RemotePersonDelegate Implementations",
-                "type": "symbol"
               }
             ],
             "path": "/documentation/skywayroom/remoteroommember",
@@ -6511,96 +6126,6 @@
                 "path": "/documentation/skywayroom/room/getsdkversion()",
                 "title": "static func getSDKVersion() -> String",
                 "type": "method"
-              },
-              {
-                "title": "Default Implementations",
-                "type": "groupMarker"
-              },
-              {
-                "children": [
-                  {
-                    "title": "Instance Methods",
-                    "type": "groupMarker"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channel(_:didpublishstreamof:)",
-                    "title": "func channel(Channel, didPublishStreamOf: Publication)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channel(_:didsubscribepublicationof:)",
-                    "title": "func channel(Channel, didSubscribePublicationOf: Subscription)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channel(_:didunpublishstreamof:)",
-                    "title": "func channel(Channel, didUnpublishStreamOf: Publication)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channel(_:didunsubscribepublicationof:)",
-                    "title": "func channel(Channel, didUnsubscribePublicationOf: Subscription)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channel(_:didupdatemetadata:)",
-                    "title": "func channel(Channel, didUpdateMetadata: String)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channel(_:member:metadatadidupdate:)",
-                    "title": "func channel(Channel, member: Member, metadataDidUpdate: String)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channel(_:memberdidjoin:)",
-                    "title": "func channel(Channel, memberDidJoin: Member)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channel(_:memberdidleave:)",
-                    "title": "func channel(Channel, memberDidLeave: Member)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channel(_:publication:metadatadidupdate:)",
-                    "title": "func channel(Channel, publication: Publication, metadataDidUpdate: String)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channel(_:publicationdidchangetodisabled:)",
-                    "title": "func channel(Channel, publicationDidChangeToDisabled: Publication)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channel(_:publicationdidchangetoenabled:)",
-                    "title": "func channel(Channel, publicationDidChangeToEnabled: Publication)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channeldidclose(_:)",
-                    "title": "func channelDidClose(Channel)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channelmemberlistdidchange(_:)",
-                    "title": "func channelMemberListDidChange(Channel)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channelpublicationlistdidchange(_:)",
-                    "title": "func channelPublicationListDidChange(Channel)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/room/channelsubscriptionlistdidchange(_:)",
-                    "title": "func channelSubscriptionListDidChange(Channel)",
-                    "type": "method"
-                  }
-                ],
-                "path": "/documentation/skywayroom/room/channeldelegate-implementations",
-                "title": "ChannelDelegate Implementations",
-                "type": "symbol"
               }
             ],
             "path": "/documentation/skywayroom/room",
@@ -6655,12 +6180,12 @@
               },
               {
                 "path": "/documentation/skywayroom/roommember/side",
-                "title": "var side: Side",
+                "title": "var side: RoomMemberSide",
                 "type": "property"
               },
               {
                 "path": "/documentation/skywayroom/roommember/state",
-                "title": "var state: MemberState",
+                "title": "var state: RoomMemberState",
                 "type": "property"
               },
               {
@@ -6750,7 +6275,7 @@
               },
               {
                 "path": "/documentation/skywayroom/roompublication/state",
-                "title": "var state: PublicationState",
+                "title": "var state: RoomPublicationState",
                 "type": "property"
               },
               {
@@ -6821,61 +6346,6 @@
                 "path": "/documentation/skywayroom/roompublication/updatemetadata(_:completion:)",
                 "title": "func updateMetadata(String, completion: ((Error?) -> Void)?)",
                 "type": "method"
-              },
-              {
-                "title": "Default Implementations",
-                "type": "groupMarker"
-              },
-              {
-                "children": [
-                  {
-                    "title": "Instance Methods",
-                    "type": "groupMarker"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/roompublication/publication(_:connectionstatedidchange:)",
-                    "title": "func publication(Publication, connectionStateDidChange: ConnectionState)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/roompublication/publication(_:didupdatemetadata:)",
-                    "title": "func publication(Publication, didUpdateMetadata: String)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/roompublication/publication(_:subscribed:)",
-                    "title": "func publication(Publication, subscribed: Subscription)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/roompublication/publication(_:unsubscribed:)",
-                    "title": "func publication(Publication, unsubscribed: Subscription)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/roompublication/publicationdisabled(_:)",
-                    "title": "func publicationDisabled(Publication)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/roompublication/publicationenabled(_:)",
-                    "title": "func publicationEnabled(Publication)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/roompublication/publicationstatedidchange(_:)",
-                    "title": "func publicationStateDidChange(Publication)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/roompublication/publicationsubscriptionlistdidchange(_:)",
-                    "title": "func publicationSubscriptionListDidChange(Publication)",
-                    "type": "method"
-                  }
-                ],
-                "path": "/documentation/skywayroom/roompublication/publicationdelegate-implementations",
-                "title": "PublicationDelegate Implementations",
-                "type": "symbol"
               }
             ],
             "path": "/documentation/skywayroom/roompublication",
@@ -6889,8 +6359,33 @@
                 "type": "groupMarker"
               },
               {
+                "path": "/documentation/skywayroom/roompublicationoptions/codeccapabilities",
+                "title": "var codecCapabilities: [Codec]",
+                "type": "property"
+              },
+              {
+                "path": "/documentation/skywayroom/roompublicationoptions/encodings",
+                "title": "var encodings: [Encoding]",
+                "type": "property"
+              },
+              {
+                "path": "/documentation/skywayroom/roompublicationoptions/isenabled",
+                "title": "var isEnabled: Bool",
+                "type": "property"
+              },
+              {
                 "path": "/documentation/skywayroom/roompublicationoptions/maxsubscribers",
                 "title": "var maxSubscribers: Int32",
+                "type": "property"
+              },
+              {
+                "path": "/documentation/skywayroom/roompublicationoptions/metadata",
+                "title": "var metadata: String?",
+                "type": "property"
+              },
+              {
+                "path": "/documentation/skywayroom/roompublicationoptions/type",
+                "title": "var type: PublicationType",
                 "type": "property"
               }
             ],
@@ -6936,7 +6431,7 @@
               },
               {
                 "path": "/documentation/skywayroom/roomsubscription/state",
-                "title": "var state: SubscriptionState",
+                "title": "var state: RoomSubscriptionState",
                 "type": "property"
               },
               {
@@ -6967,35 +6462,26 @@
                 "path": "/documentation/skywayroom/roomsubscription/isequal(_:)",
                 "title": "func isEqual(Any?) -> Bool",
                 "type": "method"
-              },
-              {
-                "title": "Default Implementations",
-                "type": "groupMarker"
-              },
-              {
-                "children": [
-                  {
-                    "title": "Instance Methods",
-                    "type": "groupMarker"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/roomsubscription/subscription(_:connectionstatedidchange:)",
-                    "title": "func subscription(Subscription, connectionStateDidChange: ConnectionState)",
-                    "type": "method"
-                  },
-                  {
-                    "path": "/documentation/skywayroom/roomsubscription/subscription(_:didattach:)",
-                    "title": "func subscription(Subscription, didAttach: RemoteStream)",
-                    "type": "method"
-                  }
-                ],
-                "path": "/documentation/skywayroom/roomsubscription/subscriptiondelegate-implementations",
-                "title": "SubscriptionDelegate Implementations",
-                "type": "symbol"
               }
             ],
             "path": "/documentation/skywayroom/roomsubscription",
             "title": "RoomSubscription",
+            "type": "class"
+          },
+          {
+            "children": [
+              {
+                "title": "Instance Properties",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/roomsubscriptionoptions/preferredencodingid",
+                "title": "var preferredEncodingId: String?",
+                "type": "property"
+              }
+            ],
+            "path": "/documentation/skywayroom/roomsubscriptionoptions",
+            "title": "RoomSubscriptionOptions",
             "type": "class"
           },
           {
@@ -7019,8 +6505,8 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/sfubotmember/startforwarding(_:configure:completion:)",
-                "title": "func startForwarding(Publication, configure: ForwardingConfigure?, completion: ((Forwarding?, (any Error)?) -> Void)?)",
+                "path": "/documentation/skywayroom/sfubotmember/startforwarding(_:configure:)",
+                "title": "func startForwarding(Publication, configure: ForwardingConfigure?) async throws -> Forwarding",
                 "type": "method"
               }
             ],
@@ -7044,8 +6530,8 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/sfubotplugin/createbot(on:completion:)",
-                "title": "func createBot(on: Channel, completion: ((SFUBotMember?, (any Error)?) -> Void)?)",
+                "path": "/documentation/skywayroom/sfubotplugin/createbot(on:)",
+                "title": "func createBot(on: Channel) async throws -> SFUBotMember",
                 "type": "method"
               }
             ],
@@ -7107,31 +6593,6 @@
               {
                 "title": "Instance Methods",
                 "type": "groupMarker"
-              },
-              {
-                "path": "/documentation/skywayroom/sfuroom/channel(_:didpublishstreamof:)",
-                "title": "func channel(Channel, didPublishStreamOf: Publication)",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/sfuroom/channel(_:didunpublishstreamof:)",
-                "title": "func channel(Channel, didUnpublishStreamOf: Publication)",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/sfuroom/channel(_:publication:metadatadidupdate:)",
-                "title": "func channel(Channel, publication: Publication, metadataDidUpdate: String)",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/sfuroom/channel(_:publicationdidchangetodisabled:)",
-                "title": "func channel(Channel, publicationDidChangeToDisabled: Publication)",
-                "type": "method"
-              },
-              {
-                "path": "/documentation/skywayroom/sfuroom/channel(_:publicationdidchangetoenabled:)",
-                "title": "func channel(Channel, publicationDidChangeToEnabled: Publication)",
-                "type": "method"
               },
               {
                 "path": "/documentation/skywayroom/sfuroom/join(with:)",
@@ -9136,6 +8597,236 @@
                 "type": "groupMarker"
               },
               {
+                "path": "/documentation/skywayroom/roommemberside/local",
+                "title": "case local",
+                "type": "case"
+              },
+              {
+                "path": "/documentation/skywayroom/roommemberside/remote",
+                "title": "case remote",
+                "type": "case"
+              },
+              {
+                "title": "Initializers",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/roommemberside/init(rawvalue:)",
+                "title": "init?(rawValue: Int)",
+                "type": "init"
+              },
+              {
+                "title": "Default Implementations",
+                "type": "groupMarker"
+              },
+              {
+                "children": [
+                  {
+                    "title": "Operators",
+                    "type": "groupMarker"
+                  },
+                  {
+                    "path": "/documentation/skywayroom/roommemberside/!=(_:_:)",
+                    "title": "static func != (Self, Self) -> Bool",
+                    "type": "op"
+                  }
+                ],
+                "path": "/documentation/skywayroom/roommemberside/equatable-implementations",
+                "title": "Equatable Implementations",
+                "type": "symbol"
+              },
+              {
+                "children": [
+                  {
+                    "title": "Instance Properties",
+                    "type": "groupMarker"
+                  },
+                  {
+                    "path": "/documentation/skywayroom/roommemberside/hashvalue",
+                    "title": "var hashValue: Int",
+                    "type": "property"
+                  },
+                  {
+                    "title": "Instance Methods",
+                    "type": "groupMarker"
+                  },
+                  {
+                    "path": "/documentation/skywayroom/roommemberside/hash(into:)",
+                    "title": "func hash(into: inout Hasher)",
+                    "type": "method"
+                  }
+                ],
+                "path": "/documentation/skywayroom/roommemberside/rawrepresentable-implementations",
+                "title": "RawRepresentable Implementations",
+                "type": "symbol"
+              }
+            ],
+            "path": "/documentation/skywayroom/roommemberside",
+            "title": "RoomMemberSide",
+            "type": "enum"
+          },
+          {
+            "children": [
+              {
+                "title": "Enumeration Cases",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/roommemberstate/joined",
+                "title": "case joined",
+                "type": "case"
+              },
+              {
+                "path": "/documentation/skywayroom/roommemberstate/left",
+                "title": "case left",
+                "type": "case"
+              },
+              {
+                "title": "Initializers",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/roommemberstate/init(rawvalue:)",
+                "title": "init?(rawValue: Int)",
+                "type": "init"
+              },
+              {
+                "title": "Default Implementations",
+                "type": "groupMarker"
+              },
+              {
+                "children": [
+                  {
+                    "title": "Operators",
+                    "type": "groupMarker"
+                  },
+                  {
+                    "path": "/documentation/skywayroom/roommemberstate/!=(_:_:)",
+                    "title": "static func != (Self, Self) -> Bool",
+                    "type": "op"
+                  }
+                ],
+                "path": "/documentation/skywayroom/roommemberstate/equatable-implementations",
+                "title": "Equatable Implementations",
+                "type": "symbol"
+              },
+              {
+                "children": [
+                  {
+                    "title": "Instance Properties",
+                    "type": "groupMarker"
+                  },
+                  {
+                    "path": "/documentation/skywayroom/roommemberstate/hashvalue",
+                    "title": "var hashValue: Int",
+                    "type": "property"
+                  },
+                  {
+                    "title": "Instance Methods",
+                    "type": "groupMarker"
+                  },
+                  {
+                    "path": "/documentation/skywayroom/roommemberstate/hash(into:)",
+                    "title": "func hash(into: inout Hasher)",
+                    "type": "method"
+                  }
+                ],
+                "path": "/documentation/skywayroom/roommemberstate/rawrepresentable-implementations",
+                "title": "RawRepresentable Implementations",
+                "type": "symbol"
+              }
+            ],
+            "path": "/documentation/skywayroom/roommemberstate",
+            "title": "RoomMemberState",
+            "type": "enum"
+          },
+          {
+            "children": [
+              {
+                "title": "Enumeration Cases",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/roompublicationstate/canceled",
+                "title": "case canceled",
+                "type": "case"
+              },
+              {
+                "path": "/documentation/skywayroom/roompublicationstate/disabled",
+                "title": "case disabled",
+                "type": "case"
+              },
+              {
+                "path": "/documentation/skywayroom/roompublicationstate/enabled",
+                "title": "case enabled",
+                "type": "case"
+              },
+              {
+                "title": "Initializers",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/roompublicationstate/init(rawvalue:)",
+                "title": "init?(rawValue: Int)",
+                "type": "init"
+              },
+              {
+                "title": "Default Implementations",
+                "type": "groupMarker"
+              },
+              {
+                "children": [
+                  {
+                    "title": "Operators",
+                    "type": "groupMarker"
+                  },
+                  {
+                    "path": "/documentation/skywayroom/roompublicationstate/!=(_:_:)",
+                    "title": "static func != (Self, Self) -> Bool",
+                    "type": "op"
+                  }
+                ],
+                "path": "/documentation/skywayroom/roompublicationstate/equatable-implementations",
+                "title": "Equatable Implementations",
+                "type": "symbol"
+              },
+              {
+                "children": [
+                  {
+                    "title": "Instance Properties",
+                    "type": "groupMarker"
+                  },
+                  {
+                    "path": "/documentation/skywayroom/roompublicationstate/hashvalue",
+                    "title": "var hashValue: Int",
+                    "type": "property"
+                  },
+                  {
+                    "title": "Instance Methods",
+                    "type": "groupMarker"
+                  },
+                  {
+                    "path": "/documentation/skywayroom/roompublicationstate/hash(into:)",
+                    "title": "func hash(into: inout Hasher)",
+                    "type": "method"
+                  }
+                ],
+                "path": "/documentation/skywayroom/roompublicationstate/rawrepresentable-implementations",
+                "title": "RawRepresentable Implementations",
+                "type": "symbol"
+              }
+            ],
+            "path": "/documentation/skywayroom/roompublicationstate",
+            "title": "RoomPublicationState",
+            "type": "enum"
+          },
+          {
+            "children": [
+              {
+                "title": "Enumeration Cases",
+                "type": "groupMarker"
+              },
+              {
                 "path": "/documentation/skywayroom/roomstate-26agr/closed",
                 "title": "case closed",
                 "type": "case"
@@ -9277,6 +8968,81 @@
             ],
             "path": "/documentation/skywayroom/roomstate-377on",
             "title": "RoomState",
+            "type": "enum"
+          },
+          {
+            "children": [
+              {
+                "title": "Enumeration Cases",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/roomsubscriptionstate/canceled",
+                "title": "case canceled",
+                "type": "case"
+              },
+              {
+                "path": "/documentation/skywayroom/roomsubscriptionstate/enabled",
+                "title": "case enabled",
+                "type": "case"
+              },
+              {
+                "title": "Initializers",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/roomsubscriptionstate/init(rawvalue:)",
+                "title": "init?(rawValue: Int)",
+                "type": "init"
+              },
+              {
+                "title": "Default Implementations",
+                "type": "groupMarker"
+              },
+              {
+                "children": [
+                  {
+                    "title": "Operators",
+                    "type": "groupMarker"
+                  },
+                  {
+                    "path": "/documentation/skywayroom/roomsubscriptionstate/!=(_:_:)",
+                    "title": "static func != (Self, Self) -> Bool",
+                    "type": "op"
+                  }
+                ],
+                "path": "/documentation/skywayroom/roomsubscriptionstate/equatable-implementations",
+                "title": "Equatable Implementations",
+                "type": "symbol"
+              },
+              {
+                "children": [
+                  {
+                    "title": "Instance Properties",
+                    "type": "groupMarker"
+                  },
+                  {
+                    "path": "/documentation/skywayroom/roomsubscriptionstate/hashvalue",
+                    "title": "var hashValue: Int",
+                    "type": "property"
+                  },
+                  {
+                    "title": "Instance Methods",
+                    "type": "groupMarker"
+                  },
+                  {
+                    "path": "/documentation/skywayroom/roomsubscriptionstate/hash(into:)",
+                    "title": "func hash(into: inout Hasher)",
+                    "type": "method"
+                  }
+                ],
+                "path": "/documentation/skywayroom/roomsubscriptionstate/rawrepresentable-implementations",
+                "title": "RawRepresentable Implementations",
+                "type": "symbol"
+              }
+            ],
+            "path": "/documentation/skywayroom/roomsubscriptionstate",
+            "title": "RoomSubscriptionState",
             "type": "enum"
           },
           {

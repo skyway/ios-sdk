@@ -1,7 +1,15 @@
 {
   "abstract": [
     {
-      "text": "入室しているRoomにStreamをPublishします。",
+      "text": "Inherited from ",
+      "type": "text"
+    },
+    {
+      "code": "LocalRoomMember.publish(_:options:completion:)",
+      "type": "codeVoice"
+    },
+    {
+      "text": ".",
       "type": "text"
     }
   ],
@@ -106,6 +114,10 @@
     ],
     "navigatorTitle": [
       {
+        "kind": "text",
+        "text": "- "
+      },
+      {
         "kind": "identifier",
         "text": "publish:options:completion:"
       }
@@ -123,7 +135,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -234,100 +248,6 @@
         }
       ],
       "kind": "declarations"
-    },
-    {
-      "kind": "parameters",
-      "parameters": [
-        {
-          "content": [
-            {
-              "inlineContent": [
-                {
-                  "text": "PublishするStream",
-                  "type": "text"
-                }
-              ],
-              "type": "paragraph"
-            }
-          ],
-          "name": "stream"
-        },
-        {
-          "content": [
-            {
-              "inlineContent": [
-                {
-                  "text": "Publishオプション",
-                  "type": "text"
-                }
-              ],
-              "type": "paragraph"
-            }
-          ],
-          "name": "options"
-        },
-        {
-          "content": [
-            {
-              "inlineContent": [
-                {
-                  "text": "完了コールバック",
-                  "type": "text"
-                }
-              ],
-              "type": "paragraph"
-            }
-          ],
-          "name": "completion"
-        }
-      ]
-    },
-    {
-      "content": [
-        {
-          "anchor": "discussion",
-          "level": 2,
-          "text": "Discussion",
-          "type": "heading"
-        },
-        {
-          "inlineContent": [
-            {
-              "text": "Streamは各種Sourceから作成できます。",
-              "type": "text"
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "inlineContent": [
-            {
-              "text": "同じインスタンスのStreamを複数回Publishすることはできません。必要ならば各種Sourceから再度作成してPublishしてください。",
-              "type": "text"
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "inlineContent": [
-            {
-              "text": "詳しいオプションの設定例については開発者ドキュメントの",
-              "type": "text"
-            },
-            {
-              "identifier": "https://skyway.ntt.com/ja/docs/user-guide/tips/large-scale/",
-              "isActive": true,
-              "type": "reference"
-            },
-            {
-              "text": "をご覧ください。",
-              "type": "text"
-            }
-          ],
-          "type": "paragraph"
-        }
-      ],
-      "kind": "content"
     }
   ],
   "references": {
@@ -336,7 +256,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -389,12 +309,7 @@
       "url": "/documentation/skywayroom/localp2proommember"
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalP2PRoomMember/publish(_:options:completion:)": {
-      "abstract": [
-        {
-          "text": "入室しているRoomにStreamをPublishします。",
-          "type": "text"
-        }
-      ],
+      "abstract": [],
       "fragments": [
         {
           "kind": "keyword",
@@ -477,6 +392,10 @@
       "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/LocalP2PRoomMember/publish(_:options:completion:)",
       "kind": "symbol",
       "navigatorTitle": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
         {
           "kind": "identifier",
           "text": "publish:options:completion:"
@@ -588,18 +507,6 @@
       "title": "RoomPublicationOptions",
       "type": "topic",
       "url": "/documentation/skywayroom/roompublicationoptions"
-    },
-    "https://skyway.ntt.com/ja/docs/user-guide/tips/large-scale/": {
-      "identifier": "https://skyway.ntt.com/ja/docs/user-guide/tips/large-scale/",
-      "title": "大規模会議アプリを実装する上での注意点",
-      "titleInlineContent": [
-        {
-          "text": "大規模会議アプリを実装する上での注意点",
-          "type": "text"
-        }
-      ],
-      "type": "link",
-      "url": "https://skyway.ntt.com/ja/docs/user-guide/tips/large-scale/"
     }
   },
   "schemaVersion": {
@@ -675,7 +582,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -768,7 +677,7 @@
                   },
                   {
                     "kind": "text",
-                    "text": " * "
+                    "text": " *"
                   },
                   {
                     "kind": "internalParam",
@@ -785,7 +694,7 @@
                   },
                   {
                     "kind": "text",
-                    "text": " * "
+                    "text": " *"
                   },
                   {
                     "kind": "internalParam",
@@ -808,126 +717,6 @@
             ],
             "kind": "declarations"
           }
-        },
-        {
-          "op": "replace",
-          "path": "/primaryContentSections/1",
-          "value": {
-            "kind": "parameters",
-            "parameters": [
-              {
-                "content": [
-                  {
-                    "inlineContent": [
-                      {
-                        "text": "PublishするStream",
-                        "type": "text"
-                      }
-                    ],
-                    "type": "paragraph"
-                  }
-                ],
-                "name": "stream"
-              },
-              {
-                "content": [
-                  {
-                    "inlineContent": [
-                      {
-                        "text": "Publishオプション",
-                        "type": "text"
-                      }
-                    ],
-                    "type": "paragraph"
-                  }
-                ],
-                "name": "options"
-              },
-              {
-                "content": [
-                  {
-                    "inlineContent": [
-                      {
-                        "text": "完了コールバック",
-                        "type": "text"
-                      }
-                    ],
-                    "type": "paragraph"
-                  }
-                ],
-                "name": "completion"
-              }
-            ]
-          }
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalStream/title",
-          "value": "SKWLocalStream"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalStream/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWLocalStream"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalStream/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWLocalStream"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalP2PRoomMember~1publish(_:options:completion:)/title",
-          "value": "publish:options:completion:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalP2PRoomMember~1publish(_:options:completion:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "publish:options:completion:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublicationOptions/title",
-          "value": "RoomPublicationOptions"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublicationOptions/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "RoomPublicationOptions"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublicationOptions/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "RoomPublicationOptions"
-            }
-          ]
         },
         {
           "op": "replace",
@@ -956,6 +745,50 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalP2PRoomMember~1publish(_:options:completion:)/title",
+          "value": "publish:options:completion:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalP2PRoomMember~1publish(_:options:completion:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "publish:options:completion:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalStream/title",
+          "value": "SKWLocalStream"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalStream/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWLocalStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1LocalStream/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWLocalStream"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublication/title",
           "value": "RoomPublication"
         },
@@ -976,6 +809,31 @@
             {
               "kind": "identifier",
               "text": "RoomPublication"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublicationOptions/title",
+          "value": "RoomPublicationOptions"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublicationOptions/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomPublicationOptions"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublicationOptions/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomPublicationOptions"
             }
           ]
         }

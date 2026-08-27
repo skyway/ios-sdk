@@ -57,7 +57,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -122,7 +124,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -139,40 +141,6 @@
       "title": "SkyWayRoom",
       "type": "topic",
       "url": "/documentation/skywayroom"
-    },
-    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ChannelDelegate": {
-      "abstract": [
-        {
-          "text": "Channelイベントデリゲート",
-          "type": "text"
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "keyword",
-          "text": "protocol"
-        },
-        {
-          "kind": "text",
-          "text": " "
-        },
-        {
-          "kind": "identifier",
-          "text": "ChannelDelegate"
-        }
-      ],
-      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ChannelDelegate",
-      "kind": "symbol",
-      "navigatorTitle": [
-        {
-          "kind": "identifier",
-          "text": "ChannelDelegate"
-        }
-      ],
-      "role": "symbol",
-      "title": "ChannelDelegate",
-      "type": "topic",
-      "url": "/documentation/skywayroom/channeldelegate"
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom": {
       "abstract": [
@@ -207,436 +175,6 @@
       "title": "P2PRoom",
       "type": "topic",
       "url": "/documentation/skywayroom/p2proom"
-    },
-    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:didPublishStreamOf:)": {
-      "abstract": [],
-      "fragments": [
-        {
-          "kind": "keyword",
-          "text": "func"
-        },
-        {
-          "kind": "text",
-          "text": " "
-        },
-        {
-          "kind": "identifier",
-          "text": "channel"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "typeIdentifier",
-          "preciseIdentifier": "c:objc(cs)SKWChannel",
-          "text": "Channel"
-        },
-        {
-          "kind": "text",
-          "text": ", "
-        },
-        {
-          "kind": "externalParam",
-          "text": "didPublishStreamOf"
-        },
-        {
-          "kind": "text",
-          "text": ": "
-        },
-        {
-          "kind": "typeIdentifier",
-          "preciseIdentifier": "c:objc(cs)SKWPublication",
-          "text": "Publication"
-        },
-        {
-          "kind": "text",
-          "text": ")"
-        }
-      ],
-      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:didPublishStreamOf:)",
-      "kind": "symbol",
-      "navigatorTitle": [
-        {
-          "kind": "identifier",
-          "text": "channel:didPublishStreamOfPublication:"
-        }
-      ],
-      "role": "symbol",
-      "title": "channel(_:didPublishStreamOf:)",
-      "type": "topic",
-      "url": "/documentation/skywayroom/p2proom/channel(_:didpublishstreamof:)"
-    },
-    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:didSubscribePublicationOf:)": {
-      "abstract": [],
-      "fragments": [
-        {
-          "kind": "keyword",
-          "text": "func"
-        },
-        {
-          "kind": "text",
-          "text": " "
-        },
-        {
-          "kind": "identifier",
-          "text": "channel"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "typeIdentifier",
-          "preciseIdentifier": "c:objc(cs)SKWChannel",
-          "text": "Channel"
-        },
-        {
-          "kind": "text",
-          "text": ", "
-        },
-        {
-          "kind": "externalParam",
-          "text": "didSubscribePublicationOf"
-        },
-        {
-          "kind": "text",
-          "text": ": "
-        },
-        {
-          "kind": "typeIdentifier",
-          "preciseIdentifier": "c:objc(cs)SKWSubscription",
-          "text": "Subscription"
-        },
-        {
-          "kind": "text",
-          "text": ")"
-        }
-      ],
-      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:didSubscribePublicationOf:)",
-      "kind": "symbol",
-      "navigatorTitle": [
-        {
-          "kind": "identifier",
-          "text": "channel:didSubscribePublicationOfSubscription:"
-        }
-      ],
-      "role": "symbol",
-      "title": "channel(_:didSubscribePublicationOf:)",
-      "type": "topic",
-      "url": "/documentation/skywayroom/p2proom/channel(_:didsubscribepublicationof:)"
-    },
-    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:didUnpublishStreamOf:)": {
-      "abstract": [],
-      "fragments": [
-        {
-          "kind": "keyword",
-          "text": "func"
-        },
-        {
-          "kind": "text",
-          "text": " "
-        },
-        {
-          "kind": "identifier",
-          "text": "channel"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "typeIdentifier",
-          "preciseIdentifier": "c:objc(cs)SKWChannel",
-          "text": "Channel"
-        },
-        {
-          "kind": "text",
-          "text": ", "
-        },
-        {
-          "kind": "externalParam",
-          "text": "didUnpublishStreamOf"
-        },
-        {
-          "kind": "text",
-          "text": ": "
-        },
-        {
-          "kind": "typeIdentifier",
-          "preciseIdentifier": "c:objc(cs)SKWPublication",
-          "text": "Publication"
-        },
-        {
-          "kind": "text",
-          "text": ")"
-        }
-      ],
-      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:didUnpublishStreamOf:)",
-      "kind": "symbol",
-      "navigatorTitle": [
-        {
-          "kind": "identifier",
-          "text": "channel:didUnpublishStreamOfPublication:"
-        }
-      ],
-      "role": "symbol",
-      "title": "channel(_:didUnpublishStreamOf:)",
-      "type": "topic",
-      "url": "/documentation/skywayroom/p2proom/channel(_:didunpublishstreamof:)"
-    },
-    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:didUnsubscribePublicationOf:)": {
-      "abstract": [],
-      "fragments": [
-        {
-          "kind": "keyword",
-          "text": "func"
-        },
-        {
-          "kind": "text",
-          "text": " "
-        },
-        {
-          "kind": "identifier",
-          "text": "channel"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "typeIdentifier",
-          "preciseIdentifier": "c:objc(cs)SKWChannel",
-          "text": "Channel"
-        },
-        {
-          "kind": "text",
-          "text": ", "
-        },
-        {
-          "kind": "externalParam",
-          "text": "didUnsubscribePublicationOf"
-        },
-        {
-          "kind": "text",
-          "text": ": "
-        },
-        {
-          "kind": "typeIdentifier",
-          "preciseIdentifier": "c:objc(cs)SKWSubscription",
-          "text": "Subscription"
-        },
-        {
-          "kind": "text",
-          "text": ")"
-        }
-      ],
-      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:didUnsubscribePublicationOf:)",
-      "kind": "symbol",
-      "navigatorTitle": [
-        {
-          "kind": "identifier",
-          "text": "channel:didUnsubscribePublicationOfSubscription:"
-        }
-      ],
-      "role": "symbol",
-      "title": "channel(_:didUnsubscribePublicationOf:)",
-      "type": "topic",
-      "url": "/documentation/skywayroom/p2proom/channel(_:didunsubscribepublicationof:)"
-    },
-    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:publication:metadataDidUpdate:)": {
-      "abstract": [],
-      "fragments": [
-        {
-          "kind": "keyword",
-          "text": "func"
-        },
-        {
-          "kind": "text",
-          "text": " "
-        },
-        {
-          "kind": "identifier",
-          "text": "channel"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "typeIdentifier",
-          "preciseIdentifier": "c:objc(cs)SKWChannel",
-          "text": "Channel"
-        },
-        {
-          "kind": "text",
-          "text": ", "
-        },
-        {
-          "kind": "externalParam",
-          "text": "publication"
-        },
-        {
-          "kind": "text",
-          "text": ": "
-        },
-        {
-          "kind": "typeIdentifier",
-          "preciseIdentifier": "c:objc(cs)SKWPublication",
-          "text": "Publication"
-        },
-        {
-          "kind": "text",
-          "text": ", "
-        },
-        {
-          "kind": "externalParam",
-          "text": "metadataDidUpdate"
-        },
-        {
-          "kind": "text",
-          "text": ": "
-        },
-        {
-          "kind": "typeIdentifier",
-          "preciseIdentifier": "s:SS",
-          "text": "String"
-        },
-        {
-          "kind": "text",
-          "text": ")"
-        }
-      ],
-      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:publication:metadataDidUpdate:)",
-      "kind": "symbol",
-      "navigatorTitle": [
-        {
-          "kind": "identifier",
-          "text": "channel:publication:metadataDidUpdate:"
-        }
-      ],
-      "role": "symbol",
-      "title": "channel(_:publication:metadataDidUpdate:)",
-      "type": "topic",
-      "url": "/documentation/skywayroom/p2proom/channel(_:publication:metadatadidupdate:)"
-    },
-    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:publicationDidChangeToDisabled:)": {
-      "abstract": [],
-      "fragments": [
-        {
-          "kind": "keyword",
-          "text": "func"
-        },
-        {
-          "kind": "text",
-          "text": " "
-        },
-        {
-          "kind": "identifier",
-          "text": "channel"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "typeIdentifier",
-          "preciseIdentifier": "c:objc(cs)SKWChannel",
-          "text": "Channel"
-        },
-        {
-          "kind": "text",
-          "text": ", "
-        },
-        {
-          "kind": "externalParam",
-          "text": "publicationDidChangeToDisabled"
-        },
-        {
-          "kind": "text",
-          "text": ": "
-        },
-        {
-          "kind": "typeIdentifier",
-          "preciseIdentifier": "c:objc(cs)SKWPublication",
-          "text": "Publication"
-        },
-        {
-          "kind": "text",
-          "text": ")"
-        }
-      ],
-      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:publicationDidChangeToDisabled:)",
-      "kind": "symbol",
-      "navigatorTitle": [
-        {
-          "kind": "identifier",
-          "text": "channel:publicationDidChangeToDisabled:"
-        }
-      ],
-      "role": "symbol",
-      "title": "channel(_:publicationDidChangeToDisabled:)",
-      "type": "topic",
-      "url": "/documentation/skywayroom/p2proom/channel(_:publicationdidchangetodisabled:)"
-    },
-    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:publicationDidChangeToEnabled:)": {
-      "abstract": [],
-      "fragments": [
-        {
-          "kind": "keyword",
-          "text": "func"
-        },
-        {
-          "kind": "text",
-          "text": " "
-        },
-        {
-          "kind": "identifier",
-          "text": "channel"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "typeIdentifier",
-          "preciseIdentifier": "c:objc(cs)SKWChannel",
-          "text": "Channel"
-        },
-        {
-          "kind": "text",
-          "text": ", "
-        },
-        {
-          "kind": "externalParam",
-          "text": "publicationDidChangeToEnabled"
-        },
-        {
-          "kind": "text",
-          "text": ": "
-        },
-        {
-          "kind": "typeIdentifier",
-          "preciseIdentifier": "c:objc(cs)SKWPublication",
-          "text": "Publication"
-        },
-        {
-          "kind": "text",
-          "text": ")"
-        }
-      ],
-      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:publicationDidChangeToEnabled:)",
-      "kind": "symbol",
-      "navigatorTitle": [
-        {
-          "kind": "identifier",
-          "text": "channel:publicationDidChangeToEnabled:"
-        }
-      ],
-      "role": "symbol",
-      "title": "channel(_:publicationDidChangeToEnabled:)",
-      "type": "topic",
-      "url": "/documentation/skywayroom/p2proom/channel(_:publicationdidchangetoenabled:)"
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/create(with:)": {
       "abstract": [
@@ -711,12 +249,6 @@
       ],
       "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/create(with:)",
       "kind": "symbol",
-      "navigatorTitle": [
-        {
-          "kind": "identifier",
-          "text": "createWith:completionHandler:"
-        }
-      ],
       "role": "symbol",
       "title": "create(with:)",
       "type": "topic",
@@ -811,6 +343,10 @@
       "kind": "symbol",
       "navigatorTitle": [
         {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
           "kind": "identifier",
           "text": "createWith:completion:"
         }
@@ -893,12 +429,6 @@
       ],
       "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/find(by:)",
       "kind": "symbol",
-      "navigatorTitle": [
-        {
-          "kind": "identifier",
-          "text": "findBy:completionHandler:"
-        }
-      ],
       "role": "symbol",
       "title": "find(by:)",
       "type": "topic",
@@ -992,6 +522,10 @@
       "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/find(by:completion:)",
       "kind": "symbol",
       "navigatorTitle": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
         {
           "kind": "identifier",
           "text": "findBy:completion:"
@@ -1091,6 +625,10 @@
       "kind": "symbol",
       "navigatorTitle": [
         {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
           "kind": "identifier",
           "text": "findOrCreateWithOptions:completion:"
         }
@@ -1173,16 +711,112 @@
       ],
       "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/findOrCreate(with:)",
       "kind": "symbol",
-      "navigatorTitle": [
-        {
-          "kind": "identifier",
-          "text": "findOrCreateWith:completionHandler:"
-        }
-      ],
       "role": "symbol",
       "title": "findOrCreate(with:)",
       "type": "topic",
       "url": "/documentation/skywayroom/p2proom/findorcreate(with:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/findOrCreate(with:completion:)": {
+      "abstract": [
+        {
+          "text": "Roomを名前から検索し、存在しない場合は作成します。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "findOrCreate"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "externalParam",
+          "text": "with"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:10SkyWayRoom0C0C11InitOptionsC",
+          "text": "InitOptions"
+        },
+        {
+          "kind": "text",
+          "text": ", "
+        },
+        {
+          "kind": "externalParam",
+          "text": "completion"
+        },
+        {
+          "kind": "text",
+          "text": ": (("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)P2PRoom",
+          "text": "P2PRoom"
+        },
+        {
+          "kind": "text",
+          "text": "?, "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:s5ErrorP",
+          "text": "Error"
+        },
+        {
+          "kind": "text",
+          "text": "?) -> "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:s4Voida",
+          "text": "Void"
+        },
+        {
+          "kind": "text",
+          "text": ")?)"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/findOrCreate(with:completion:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "findOrCreateWith:completion:"
+        }
+      ],
+      "role": "symbol",
+      "title": "findOrCreate(with:completion:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/p2proom/findorcreate(with:completion:)"
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/join(with:)": {
       "abstract": [
@@ -1258,12 +892,6 @@
       ],
       "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/join(with:)",
       "kind": "symbol",
-      "navigatorTitle": [
-        {
-          "kind": "identifier",
-          "text": "joinWith:completionHandler:"
-        }
-      ],
       "role": "symbol",
       "title": "join(with:)",
       "type": "topic",
@@ -1350,6 +978,10 @@
       "kind": "symbol",
       "navigatorTitle": [
         {
+          "kind": "text",
+          "text": "- "
+        },
+        {
           "kind": "identifier",
           "text": "joinWith:completion:"
         }
@@ -1407,12 +1039,7 @@
       "url": "/documentation/skywayroom/p2proom/publications"
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/type": {
-      "abstract": [
-        {
-          "text": "Roomのタイプ",
-          "type": "text"
-        }
-      ],
+      "abstract": [],
       "fragments": [
         {
           "kind": "keyword",
@@ -1520,7 +1147,6 @@
     },
     {
       "identifiers": [
-        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/ChannelDelegate",
         "doc://com.ntt.skyway.room/objc(pl)NSObject",
         "doc://com.ntt.skyway.room/s7CVarArgP",
         "doc://com.ntt.skyway.room/s28CustomDebugStringConvertibleP",
@@ -1554,13 +1180,6 @@
       "anchor": "Instance-Methods",
       "generated": true,
       "identifiers": [
-        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:didPublishStreamOf:)",
-        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:didSubscribePublicationOf:)",
-        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:didUnpublishStreamOf:)",
-        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:didUnsubscribePublicationOf:)",
-        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:publication:metadataDidUpdate:)",
-        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:publicationDidChangeToDisabled:)",
-        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:publicationDidChangeToEnabled:)",
         "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/join(with:)",
         "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/join(with:completion:)"
       ],
@@ -1575,7 +1194,8 @@
         "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/find(by:)",
         "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/find(by:completion:)",
         "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/findOrCreate(options:completion:)",
-        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/findOrCreate(with:)"
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/findOrCreate(with:)",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/findOrCreate(with:completion:)"
       ],
       "title": "Type Methods"
     }
@@ -1645,14 +1265,6 @@
               "anchor": "Instance-Methods",
               "generated": true,
               "identifiers": [
-                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:didPublishStreamOf:)",
-                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:didSubscribePublicationOf:)",
-                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:didUnpublishStreamOf:)",
-                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:didUnsubscribePublicationOf:)",
-                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:publication:metadataDidUpdate:)",
-                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:publicationDidChangeToDisabled:)",
-                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/channel(_:publicationDidChangeToEnabled:)",
-                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/join(with:)",
                 "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/join(with:completion:)"
               ],
               "title": "Instance Methods"
@@ -1661,12 +1273,10 @@
               "anchor": "Type-Methods",
               "generated": true,
               "identifiers": [
-                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/create(with:)",
                 "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/create(with:completion:)",
-                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/find(by:)",
                 "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/find(by:completion:)",
                 "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/findOrCreate(options:completion:)",
-                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/findOrCreate(with:)"
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/findOrCreate(with:completion:)"
               ],
               "title": "Type Methods"
             }
@@ -1701,7 +1311,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -1759,6 +1371,25 @@
         },
         {
           "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1create(with:completion:)/title",
+          "value": "createWith:completion:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1create(with:completion:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "+ "
+            },
+            {
+              "kind": "identifier",
+              "text": "createWith:completion:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1find(by:completion:)/title",
           "value": "findBy:completion:"
         },
@@ -1773,6 +1404,93 @@
             {
               "kind": "identifier",
               "text": "findBy:completion:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1findOrCreate(options:completion:)/title",
+          "value": "findOrCreateWithOptions:completion:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1findOrCreate(options:completion:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "+ "
+            },
+            {
+              "kind": "identifier",
+              "text": "findOrCreateWithOptions:completion:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1findOrCreate(with:completion:)/title",
+          "value": "findOrCreateWith:completion:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1findOrCreate(with:completion:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "+ "
+            },
+            {
+              "kind": "identifier",
+              "text": "findOrCreateWith:completion:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1join(with:completion:)/title",
+          "value": "joinWith:completion:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1join(with:completion:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "joinWith:completion:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1publications/title",
+          "value": "publications"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1publications/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "publications"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1type/title",
+          "value": "type"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1type/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "type"
             }
           ]
         },
@@ -1798,327 +1516,6 @@
             {
               "kind": "identifier",
               "text": "Room"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1channel(_:didSubscribePublicationOf:)/title",
-          "value": "channel:didSubscribePublicationOfSubscription:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1channel(_:didSubscribePublicationOf:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "channel:didSubscribePublicationOfSubscription:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1join(with:completion:)/title",
-          "value": "joinWith:completion:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1join(with:completion:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "joinWith:completion:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1create(with:completion:)/title",
-          "value": "createWith:completion:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1create(with:completion:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "+ "
-            },
-            {
-              "kind": "identifier",
-              "text": "createWith:completion:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1channel(_:didPublishStreamOf:)/title",
-          "value": "channel:didPublishStreamOfPublication:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1channel(_:didPublishStreamOf:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "channel:didPublishStreamOfPublication:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelDelegate/title",
-          "value": "SKWChannelDelegate"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelDelegate/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWChannelDelegate"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ChannelDelegate/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWChannelDelegate"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1channel(_:publicationDidChangeToDisabled:)/title",
-          "value": "channel:publicationDidChangeToDisabled:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1channel(_:publicationDidChangeToDisabled:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "channel:publicationDidChangeToDisabled:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1join(with:)/title",
-          "value": "joinWith:completionHandler:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1join(with:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "joinWith:completionHandler:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1channel(_:publication:metadataDidUpdate:)/title",
-          "value": "channel:publication:metadataDidUpdate:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1channel(_:publication:metadataDidUpdate:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "channel:publication:metadataDidUpdate:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1findOrCreate(options:completion:)/title",
-          "value": "findOrCreateWithOptions:completion:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1findOrCreate(options:completion:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "+ "
-            },
-            {
-              "kind": "identifier",
-              "text": "findOrCreateWithOptions:completion:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1publications/title",
-          "value": "publications"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1publications/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "publications"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1create(with:)/title",
-          "value": "createWith:completionHandler:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1create(with:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "+ "
-            },
-            {
-              "kind": "identifier",
-              "text": "createWith:completionHandler:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1type/title",
-          "value": "type"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1type/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "type"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1channel(_:publicationDidChangeToEnabled:)/title",
-          "value": "channel:publicationDidChangeToEnabled:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1channel(_:publicationDidChangeToEnabled:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "channel:publicationDidChangeToEnabled:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1findOrCreate(with:)/title",
-          "value": "findOrCreateWith:completionHandler:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1findOrCreate(with:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "+ "
-            },
-            {
-              "kind": "identifier",
-              "text": "findOrCreateWith:completionHandler:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1channel(_:didUnsubscribePublicationOf:)/title",
-          "value": "channel:didUnsubscribePublicationOfSubscription:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1channel(_:didUnsubscribePublicationOf:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "channel:didUnsubscribePublicationOfSubscription:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1channel(_:didUnpublishStreamOf:)/title",
-          "value": "channel:didUnpublishStreamOfPublication:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1channel(_:didUnpublishStreamOf:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "channel:didUnpublishStreamOfPublication:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1find(by:)/title",
-          "value": "findBy:completionHandler:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1P2PRoom~1find(by:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "+ "
-            },
-            {
-              "kind": "identifier",
-              "text": "findBy:completionHandler:"
             }
           ]
         }

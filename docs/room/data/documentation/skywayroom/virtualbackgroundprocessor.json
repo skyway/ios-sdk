@@ -80,7 +80,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -137,7 +139,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -432,12 +434,6 @@
       ],
       "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VirtualBackgroundProcessor/processFor:",
       "kind": "symbol",
-      "navigatorTitle": [
-        {
-          "kind": "identifier",
-          "text": "processFor:"
-        }
-      ],
       "role": "symbol",
       "title": "processFor:",
       "type": "topic",
@@ -695,7 +691,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {

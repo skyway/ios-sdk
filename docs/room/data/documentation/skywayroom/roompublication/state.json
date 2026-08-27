@@ -39,8 +39,8 @@
       },
       {
         "kind": "typeIdentifier",
-        "preciseIdentifier": "c:@E@SKWPublicationState",
-        "text": "PublicationState"
+        "preciseIdentifier": "c:@M@SkyWayRoom@E@RoomPublicationState",
+        "text": "RoomPublicationState"
       }
     ],
     "modules": [
@@ -67,7 +67,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -95,10 +97,10 @@
               "text": ": "
             },
             {
-              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationState",
+              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomPublicationState",
               "kind": "typeIdentifier",
-              "preciseIdentifier": "c:@E@SKWPublicationState",
-              "text": "PublicationState"
+              "preciseIdentifier": "c:@M@SkyWayRoom@E@RoomPublicationState",
+              "text": "RoomPublicationState"
             },
             {
               "kind": "text",
@@ -144,7 +146,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -161,40 +163,6 @@
       "title": "SkyWayRoom",
       "type": "topic",
       "url": "/documentation/skywayroom"
-    },
-    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationState": {
-      "abstract": [
-        {
-          "text": "Publicationの状態",
-          "type": "text"
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "keyword",
-          "text": "enum"
-        },
-        {
-          "kind": "text",
-          "text": " "
-        },
-        {
-          "kind": "identifier",
-          "text": "PublicationState"
-        }
-      ],
-      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationState",
-      "kind": "symbol",
-      "navigatorTitle": [
-        {
-          "kind": "identifier",
-          "text": "PublicationState"
-        }
-      ],
-      "role": "symbol",
-      "title": "PublicationState",
-      "type": "topic",
-      "url": "/documentation/skywayroom/publicationstate"
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomPublication": {
       "abstract": [
@@ -256,8 +224,8 @@
         },
         {
           "kind": "typeIdentifier",
-          "preciseIdentifier": "c:@E@SKWPublicationState",
-          "text": "PublicationState"
+          "preciseIdentifier": "c:@M@SkyWayRoom@E@RoomPublicationState",
+          "text": "RoomPublicationState"
         }
       ],
       "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomPublication/state",
@@ -272,6 +240,40 @@
       "title": "state",
       "type": "topic",
       "url": "/documentation/skywayroom/roompublication/state"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomPublicationState": {
+      "abstract": [
+        {
+          "text": "RoomPublicationのステート",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "enum"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "RoomPublicationState"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomPublicationState",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "RoomPublicationState"
+        }
+      ],
+      "role": "symbol",
+      "title": "RoomPublicationState",
+      "type": "topic",
+      "url": "/documentation/skywayroom/roompublicationstate"
     }
   },
   "schemaVersion": {
@@ -343,7 +345,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -371,10 +375,18 @@
                     "text": ") "
                   },
                   {
-                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationState",
+                    "kind": "keyword",
+                    "text": "enum"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " "
+                  },
+                  {
+                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomPublicationState",
                     "kind": "typeIdentifier",
-                    "preciseIdentifier": "c:@E@SKWPublicationState",
-                    "text": "SKWPublicationState"
+                    "preciseIdentifier": "c:@M@SkyWayRoom@E@RoomPublicationState",
+                    "text": "RoomPublicationState"
                   },
                   {
                     "kind": "text",
@@ -393,31 +405,6 @@
             ],
             "kind": "declarations"
           }
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationState/title",
-          "value": "SKWPublicationState"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationState/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWPublicationState"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationState/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWPublicationState"
-            }
-          ]
         },
         {
           "op": "replace",
@@ -456,6 +443,31 @@
             {
               "kind": "identifier",
               "text": "state"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublicationState/title",
+          "value": "RoomPublicationState"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublicationState/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomPublicationState"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomPublicationState/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomPublicationState"
             }
           ]
         }

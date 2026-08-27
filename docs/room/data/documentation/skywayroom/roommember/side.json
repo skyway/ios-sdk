@@ -39,8 +39,8 @@
       },
       {
         "kind": "typeIdentifier",
-        "preciseIdentifier": "c:@E@SKWSide",
-        "text": "Side"
+        "preciseIdentifier": "c:@M@SkyWayRoom@E@RoomMemberSide",
+        "text": "RoomMemberSide"
       }
     ],
     "modules": [
@@ -67,7 +67,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -95,10 +97,10 @@
               "text": ": "
             },
             {
-              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Side",
+              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomMemberSide",
               "kind": "typeIdentifier",
-              "preciseIdentifier": "c:@E@SKWSide",
-              "text": "Side"
+              "preciseIdentifier": "c:@M@SkyWayRoom@E@RoomMemberSide",
+              "text": "RoomMemberSide"
             },
             {
               "kind": "text",
@@ -144,7 +146,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -222,8 +224,8 @@
         },
         {
           "kind": "typeIdentifier",
-          "preciseIdentifier": "c:@E@SKWSide",
-          "text": "Side"
+          "preciseIdentifier": "c:@M@SkyWayRoom@E@RoomMemberSide",
+          "text": "RoomMemberSide"
         }
       ],
       "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomMember/side",
@@ -239,10 +241,10 @@
       "type": "topic",
       "url": "/documentation/skywayroom/roommember/side"
     },
-    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Side": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomMemberSide": {
       "abstract": [
         {
-          "text": "サイド",
+          "text": "RoomMemberのサイド",
           "type": "text"
         }
       ],
@@ -257,21 +259,21 @@
         },
         {
           "kind": "identifier",
-          "text": "Side"
+          "text": "RoomMemberSide"
         }
       ],
-      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Side",
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomMemberSide",
       "kind": "symbol",
       "navigatorTitle": [
         {
           "kind": "identifier",
-          "text": "Side"
+          "text": "RoomMemberSide"
         }
       ],
       "role": "symbol",
-      "title": "Side",
+      "title": "RoomMemberSide",
       "type": "topic",
-      "url": "/documentation/skywayroom/side"
+      "url": "/documentation/skywayroom/roommemberside"
     }
   },
   "schemaVersion": {
@@ -343,7 +345,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -371,10 +375,18 @@
                     "text": ") "
                   },
                   {
-                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Side",
+                    "kind": "keyword",
+                    "text": "enum"
+                  },
+                  {
+                    "kind": "text",
+                    "text": " "
+                  },
+                  {
+                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RoomMemberSide",
                     "kind": "typeIdentifier",
-                    "preciseIdentifier": "c:@E@SKWSide",
-                    "text": "SKWSide"
+                    "preciseIdentifier": "c:@M@SkyWayRoom@E@RoomMemberSide",
+                    "text": "RoomMemberSide"
                   },
                   {
                     "kind": "text",
@@ -421,31 +433,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Side/title",
-          "value": "SKWSide"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Side/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWSide"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Side/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWSide"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMember~1side/title",
           "value": "side"
         },
@@ -456,6 +443,31 @@
             {
               "kind": "identifier",
               "text": "side"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberSide/title",
+          "value": "RoomMemberSide"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberSide/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomMemberSide"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberSide/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "RoomMemberSide"
             }
           ]
         }

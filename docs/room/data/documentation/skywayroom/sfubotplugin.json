@@ -5,6 +5,17 @@
       "type": "text"
     }
   ],
+  "deprecationSummary": [
+    {
+      "inlineContent": [
+        {
+          "text": "SkyWayRoom v4.0.0で非推奨となりました。代わりにSFURoomをご利用ください。",
+          "type": "text"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
   "hierarchy": {
     "paths": [
       [
@@ -44,6 +55,7 @@
         "text": "SFUBotPlugin"
       }
     ],
+    "platforms": [],
     "role": "symbol",
     "roleHeading": "Class",
     "symbolKind": "class",
@@ -57,7 +69,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -131,7 +145,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -156,6 +170,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -190,6 +205,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -217,13 +233,14 @@
       "type": "topic",
       "url": "/documentation/skywayroom/sfubotplugin"
     },
-    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotPlugin/createBot(on:completion:)": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotPlugin/createBot(on:)": {
       "abstract": [
         {
           "text": "SFUBotを作成し、Channelに入室させます。",
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -256,56 +273,46 @@
         },
         {
           "kind": "text",
-          "text": ", "
+          "text": ") "
         },
         {
-          "kind": "externalParam",
-          "text": "completion"
+          "kind": "keyword",
+          "text": "async"
         },
         {
           "kind": "text",
-          "text": ": (("
+          "text": " "
+        },
+        {
+          "kind": "keyword",
+          "text": "throws"
+        },
+        {
+          "kind": "text",
+          "text": " -> "
         },
         {
           "kind": "typeIdentifier",
           "preciseIdentifier": "c:objc(cs)SKWSFUBotMember",
           "text": "SFUBotMember"
-        },
-        {
-          "kind": "text",
-          "text": "?, (any "
-        },
-        {
-          "kind": "typeIdentifier",
-          "preciseIdentifier": "s:s5ErrorP",
-          "text": "Error"
-        },
-        {
-          "kind": "text",
-          "text": ")?) -> "
-        },
-        {
-          "kind": "typeIdentifier",
-          "preciseIdentifier": "s:s4Voida",
-          "text": "Void"
-        },
-        {
-          "kind": "text",
-          "text": ")?)"
         }
       ],
-      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotPlugin/createBot(on:completion:)",
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotPlugin/createBot(on:)",
       "kind": "symbol",
       "navigatorTitle": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
         {
           "kind": "identifier",
           "text": "createBotOnChannel:completion:"
         }
       ],
       "role": "symbol",
-      "title": "createBot(on:completion:)",
+      "title": "createBot(on:)",
       "type": "topic",
-      "url": "/documentation/skywayroom/sfubotplugin/createbot(on:completion:)"
+      "url": "/documentation/skywayroom/sfubotplugin/createbot(on:)"
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotPlugin/init(options:)": {
       "abstract": [
@@ -314,6 +321,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "identifier",
@@ -344,6 +352,10 @@
       "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotPlugin/init(options:)",
       "kind": "symbol",
       "navigatorTitle": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
         {
           "kind": "identifier",
           "text": "initWithOptions:"
@@ -417,7 +429,7 @@
       "anchor": "Instance-Methods",
       "generated": true,
       "identifiers": [
-        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotPlugin/createBot(on:completion:)"
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotPlugin/createBot(on:)"
       ],
       "title": "Instance Methods"
     }
@@ -431,7 +443,7 @@
           "value": "occ"
         },
         {
-          "op": "add",
+          "op": "replace",
           "path": "/metadata/platforms",
           "value": null
         },
@@ -478,7 +490,7 @@
               "anchor": "Instance-Methods",
               "generated": true,
               "identifiers": [
-                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotPlugin/createBot(on:completion:)",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotPlugin/createBot(on:)",
                 "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotPlugin/init(options:)"
               ],
               "title": "Instance Methods"
@@ -514,7 +526,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -547,41 +561,8 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPlugin~1createBot(on:completion:)/title",
-          "value": "createBotOnChannel:completion:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPlugin~1createBot(on:completion:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "createBotOnChannel:completion:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPlugin~1init(options:)/title",
-          "value": "initWithOptions:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPlugin~1init(options:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "initWithOptions:"
-            }
-          ]
+          "path": "/deprecationSummary",
+          "value": []
         },
         {
           "op": "replace",
@@ -630,6 +611,44 @@
             {
               "kind": "identifier",
               "text": "SKWSFUBotPlugin"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPlugin~1createBot(on:)/title",
+          "value": "createBotOnChannel:completion:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPlugin~1createBot(on:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "createBotOnChannel:completion:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPlugin~1init(options:)/title",
+          "value": "initWithOptions:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotPlugin~1init(options:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "initWithOptions:"
             }
           ]
         }

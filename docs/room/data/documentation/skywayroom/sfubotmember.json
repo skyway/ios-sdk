@@ -5,6 +5,17 @@
       "type": "text"
     }
   ],
+  "deprecationSummary": [
+    {
+      "inlineContent": [
+        {
+          "text": "SkyWayRoom v4.0.0で非推奨となりました。代わりにSFURoomをご利用ください。",
+          "type": "text"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
   "hierarchy": {
     "paths": [
       [
@@ -44,6 +55,7 @@
         "text": "SFUBotMember"
       }
     ],
+    "platforms": [],
     "role": "symbol",
     "roleHeading": "Class",
     "symbolKind": "class",
@@ -57,7 +69,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -114,7 +128,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -134,6 +148,7 @@
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteMember": {
       "abstract": [],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -168,6 +183,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -202,6 +218,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -249,6 +266,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -289,13 +307,14 @@
       "type": "topic",
       "url": "/documentation/skywayroom/sfubotmember/forwardings"
     },
-    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotMember/startForwarding(_:configure:completion:)": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotMember/startForwarding(_:configure:)": {
       "abstract": [
         {
           "text": "Publicationをフォワードさせます。",
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -337,56 +356,46 @@
         },
         {
           "kind": "text",
-          "text": "?, "
+          "text": "?) "
         },
         {
-          "kind": "externalParam",
-          "text": "completion"
+          "kind": "keyword",
+          "text": "async"
         },
         {
           "kind": "text",
-          "text": ": (("
+          "text": " "
+        },
+        {
+          "kind": "keyword",
+          "text": "throws"
+        },
+        {
+          "kind": "text",
+          "text": " -> "
         },
         {
           "kind": "typeIdentifier",
           "preciseIdentifier": "c:objc(cs)SKWForwarding",
           "text": "Forwarding"
-        },
-        {
-          "kind": "text",
-          "text": "?, (any "
-        },
-        {
-          "kind": "typeIdentifier",
-          "preciseIdentifier": "s:s5ErrorP",
-          "text": "Error"
-        },
-        {
-          "kind": "text",
-          "text": ")?) -> "
-        },
-        {
-          "kind": "typeIdentifier",
-          "preciseIdentifier": "s:s4Voida",
-          "text": "Void"
-        },
-        {
-          "kind": "text",
-          "text": ")?)"
         }
       ],
-      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotMember/startForwarding(_:configure:completion:)",
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotMember/startForwarding(_:configure:)",
       "kind": "symbol",
       "navigatorTitle": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
         {
           "kind": "identifier",
           "text": "startForwardingPublication:withConfigure:completion:"
         }
       ],
       "role": "symbol",
-      "title": "startForwarding(_:configure:completion:)",
+      "title": "startForwarding(_:configure:)",
       "type": "topic",
-      "url": "/documentation/skywayroom/sfubotmember/startforwarding(_:configure:completion:)"
+      "url": "/documentation/skywayroom/sfubotmember/startforwarding(_:configure:)"
     },
     "doc://com.ntt.skyway.room/objc(pl)NSObject": {
       "identifier": "doc://com.ntt.skyway.room/objc(pl)NSObject",
@@ -452,7 +461,7 @@
       "anchor": "Instance-Methods",
       "generated": true,
       "identifiers": [
-        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotMember/startForwarding(_:configure:completion:)"
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotMember/startForwarding(_:configure:)"
       ],
       "title": "Instance Methods"
     }
@@ -466,7 +475,7 @@
           "value": "occ"
         },
         {
-          "op": "add",
+          "op": "replace",
           "path": "/metadata/platforms",
           "value": null
         },
@@ -522,7 +531,7 @@
               "anchor": "Instance-Methods",
               "generated": true,
               "identifiers": [
-                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotMember/startForwarding(_:configure:completion:)"
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFUBotMember/startForwarding(_:configure:)"
               ],
               "title": "Instance Methods"
             }
@@ -557,7 +566,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -590,6 +601,36 @@
         },
         {
           "op": "replace",
+          "path": "/deprecationSummary",
+          "value": []
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteMember/title",
+          "value": "SKWRemoteMember"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteMember/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemoteMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteMember/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWRemoteMember"
+            }
+          ]
+        },
+        {
+          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember/title",
           "value": "SKWSFUBotMember"
         },
@@ -610,25 +651,6 @@
             {
               "kind": "identifier",
               "text": "SKWSFUBotMember"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember~1startForwarding(_:configure:completion:)/title",
-          "value": "startForwardingPublication:withConfigure:completion:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember~1startForwarding(_:configure:completion:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "startForwardingPublication:withConfigure:completion:"
             }
           ]
         },
@@ -664,26 +686,20 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteMember/title",
-          "value": "SKWRemoteMember"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember~1startForwarding(_:configure:)/title",
+          "value": "startForwardingPublication:withConfigure:completion:"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteMember/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFUBotMember~1startForwarding(_:configure:)/fragments",
           "value": [
             {
-              "kind": "identifier",
-              "text": "SKWRemoteMember"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteMember/navigatorTitle",
-          "value": [
+              "kind": "text",
+              "text": "- "
+            },
             {
               "kind": "identifier",
-              "text": "SKWRemoteMember"
+              "text": "startForwardingPublication:withConfigure:completion:"
             }
           ]
         }

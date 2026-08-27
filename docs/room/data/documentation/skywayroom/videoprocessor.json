@@ -51,7 +51,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -87,7 +89,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -257,6 +259,10 @@
       "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoProcessor/process(for:)",
       "kind": "symbol",
       "navigatorTitle": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
         {
           "kind": "identifier",
           "text": "processFor:"
@@ -459,7 +465,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -492,65 +500,6 @@
             ],
             "kind": "declarations"
           }
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoProcessor~1process(for:)/title",
-          "value": "processFor:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoProcessor~1process(for:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "- "
-            },
-            {
-              "kind": "identifier",
-              "text": "processFor:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VirtualBackgroundProcessor/title",
-          "value": "VirtualBackgroundProcessor"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VirtualBackgroundProcessor/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "VirtualBackgroundProcessor"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VirtualBackgroundProcessor/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "VirtualBackgroundProcessor"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoProcessor~1isActive/title",
-          "value": "isActive"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoProcessor~1isActive/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "isActive"
-            }
-          ]
         },
         {
           "op": "replace",
@@ -599,6 +548,65 @@
             {
               "kind": "identifier",
               "text": "SKWVideoProcessor"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoProcessor~1isActive/title",
+          "value": "isActive"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoProcessor~1isActive/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "isActive"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoProcessor~1process(for:)/title",
+          "value": "processFor:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoProcessor~1process(for:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "processFor:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VirtualBackgroundProcessor/title",
+          "value": "VirtualBackgroundProcessor"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VirtualBackgroundProcessor/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "VirtualBackgroundProcessor"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VirtualBackgroundProcessor/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "VirtualBackgroundProcessor"
             }
           ]
         }

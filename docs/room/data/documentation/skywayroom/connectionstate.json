@@ -57,7 +57,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -99,7 +101,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -504,7 +506,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -540,51 +544,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1connected/title",
-          "value": "SKWConnected"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1connected/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWConnected"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1new/title",
-          "value": "SKWNew"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1new/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWNew"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1disconnected/title",
-          "value": "SKWDisconnected"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1disconnected/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWDisconnected"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState/title",
           "value": "SKWConnectionState"
         },
@@ -610,16 +569,16 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1reconnecting/title",
-          "value": "SKWReconnecting"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1connected/title",
+          "value": "SKWConnected"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1reconnecting/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1connected/fragments",
           "value": [
             {
               "kind": "identifier",
-              "text": "SKWReconnecting"
+              "text": "SKWConnected"
             }
           ]
         },
@@ -635,6 +594,51 @@
             {
               "kind": "identifier",
               "text": "SKWConnecting"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1disconnected/title",
+          "value": "SKWDisconnected"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1disconnected/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWDisconnected"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1new/title",
+          "value": "SKWNew"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1new/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWNew"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1reconnecting/title",
+          "value": "SKWReconnecting"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ConnectionState~1reconnecting/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWReconnecting"
             }
           ]
         }

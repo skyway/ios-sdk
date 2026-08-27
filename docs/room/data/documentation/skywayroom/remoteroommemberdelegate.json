@@ -57,7 +57,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -102,7 +104,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -209,6 +211,10 @@
       "kind": "symbol",
       "navigatorTitle": [
         {
+          "kind": "text",
+          "text": "- "
+        },
+        {
           "kind": "identifier",
           "text": "remoteRoomMember:didSubscribePublicationOf:"
         }
@@ -272,6 +278,10 @@
       "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteRoomMemberDelegate/remoteRoomMember(_:didUnsubscribePublicationOf:)",
       "kind": "symbol",
       "navigatorTitle": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
         {
           "kind": "identifier",
           "text": "remoteRoomMember:didUnsubscribePublicationOf:"
@@ -436,7 +446,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -498,26 +510,20 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberDelegate/title",
-          "value": "RoomMemberDelegate"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate~1remoteRoomMember(_:didSubscribePublicationOf:)/title",
+          "value": "remoteRoomMember:didSubscribePublicationOf:"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberDelegate/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate~1remoteRoomMember(_:didSubscribePublicationOf:)/fragments",
           "value": [
             {
-              "kind": "identifier",
-              "text": "RoomMemberDelegate"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberDelegate/navigatorTitle",
-          "value": [
+              "kind": "text",
+              "text": "- "
+            },
             {
               "kind": "identifier",
-              "text": "RoomMemberDelegate"
+              "text": "remoteRoomMember:didSubscribePublicationOf:"
             }
           ]
         },
@@ -542,20 +548,26 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate~1remoteRoomMember(_:didSubscribePublicationOf:)/title",
-          "value": "remoteRoomMember:didSubscribePublicationOf:"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberDelegate/title",
+          "value": "RoomMemberDelegate"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteRoomMemberDelegate~1remoteRoomMember(_:didSubscribePublicationOf:)/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberDelegate/fragments",
           "value": [
             {
-              "kind": "text",
-              "text": "- "
-            },
+              "kind": "identifier",
+              "text": "RoomMemberDelegate"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RoomMemberDelegate/navigatorTitle",
+          "value": [
             {
               "kind": "identifier",
-              "text": "remoteRoomMember:didSubscribePublicationOf:"
+              "text": "RoomMemberDelegate"
             }
           ]
         }

@@ -67,7 +67,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -124,7 +126,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -323,7 +325,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -368,31 +372,6 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsRTCConfig/title",
-          "value": "SKWContextOptionsRTCConfig"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsRTCConfig/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWContextOptionsRTCConfig"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsRTCConfig/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWContextOptionsRTCConfig"
-            }
-          ]
-        },
-        {
-          "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptions/title",
           "value": "SKWContextOptions"
         },
@@ -428,6 +407,31 @@
             {
               "kind": "identifier",
               "text": "rtcConfig"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsRTCConfig/title",
+          "value": "SKWContextOptionsRTCConfig"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsRTCConfig/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWContextOptionsRTCConfig"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1ContextOptionsRTCConfig/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWContextOptionsRTCConfig"
             }
           ]
         }

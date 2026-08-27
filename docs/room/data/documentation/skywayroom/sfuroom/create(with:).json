@@ -19,7 +19,7 @@
   },
   "kind": "symbol",
   "metadata": {
-    "externalID": "c:@M@SkyWayRoom@objc(cs)SFURoom(cm)createWith:completionHandler:",
+    "externalID": "s:10SkyWayRoom7SFURoomC6create4withAcA0C0C11InitOptionsCSg_tYaKFZ",
     "fragments": [
       {
         "kind": "keyword",
@@ -89,12 +89,6 @@
         "name": "SkyWayRoom"
       }
     ],
-    "navigatorTitle": [
-      {
-        "kind": "identifier",
-        "text": "createWith:completionHandler:"
-      }
-    ],
     "role": "symbol",
     "roleHeading": "Type Method",
     "symbolKind": "method",
@@ -108,9 +102,19 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
+            {
+              "kind": "attribute",
+              "text": "@nonobjc"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
             {
               "kind": "keyword",
               "text": "override"
@@ -250,7 +254,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -267,60 +271,6 @@
       "title": "SkyWayRoom",
       "type": "topic",
       "url": "/documentation/skywayroom"
-    },
-    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/InitOptions": {
-      "abstract": [
-        {
-          "text": "Room初期化オプション",
-          "type": "text"
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "identifier",
-          "text": "InitOptions"
-        }
-      ],
-      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/InitOptions",
-      "kind": "symbol",
-      "role": "symbol",
-      "title": "InitOptions",
-      "type": "topic",
-      "url": "/documentation/skywayroom/initoptions"
-    },
-    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Room": {
-      "abstract": [
-        {
-          "text": "Roomクラス",
-          "type": "text"
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "keyword",
-          "text": "class"
-        },
-        {
-          "kind": "text",
-          "text": " "
-        },
-        {
-          "kind": "identifier",
-          "text": "Room"
-        }
-      ],
-      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Room",
-      "kind": "symbol",
-      "navigatorTitle": [
-        {
-          "kind": "identifier",
-          "text": "Room"
-        }
-      ],
-      "role": "symbol",
-      "title": "Room",
-      "type": "topic",
-      "url": "/documentation/skywayroom/room"
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Room/InitOptions": {
       "abstract": [
@@ -463,12 +413,6 @@
       ],
       "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/SFURoom/create(with:)",
       "kind": "symbol",
-      "navigatorTitle": [
-        {
-          "kind": "identifier",
-          "text": "createWith:completionHandler:"
-        }
-      ],
       "role": "symbol",
       "title": "create(with:)",
       "type": "topic",
@@ -484,239 +428,6 @@
   "variantOverrides": [
     {
       "patch": [
-        {
-          "op": "replace",
-          "path": "/identifier/interfaceLanguage",
-          "value": "occ"
-        },
-        {
-          "op": "add",
-          "path": "/metadata/platforms",
-          "value": null
-        },
-        {
-          "op": "replace",
-          "path": "/metadata/roleHeading",
-          "value": "Type Method"
-        },
-        {
-          "op": "replace",
-          "path": "/metadata/title",
-          "value": "createWith:completionHandler:"
-        },
-        {
-          "op": "replace",
-          "path": "/metadata/symbolKind",
-          "value": "method"
-        },
-        {
-          "op": "replace",
-          "path": "/metadata/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "+ "
-            },
-            {
-              "kind": "identifier",
-              "text": "createWith:completionHandler:"
-            }
-          ]
-        },
-        {
-          "op": "add",
-          "path": "/topicSections",
-          "value": null
-        },
-        {
-          "op": "add",
-          "path": "/relationshipsSections",
-          "value": null
-        },
-        {
-          "op": "add",
-          "path": "/seeAlsoSections",
-          "value": null
-        },
-        {
-          "op": "replace",
-          "path": "/primaryContentSections/0",
-          "value": {
-            "declarations": [
-              {
-                "languages": [
-                  "occ"
-                ],
-                "platforms": [
-                  "iOS"
-                ],
-                "tokens": [
-                  {
-                    "kind": "text",
-                    "text": "+ ("
-                  },
-                  {
-                    "kind": "typeIdentifier",
-                    "preciseIdentifier": "c:v",
-                    "text": "void"
-                  },
-                  {
-                    "kind": "text",
-                    "text": ") "
-                  },
-                  {
-                    "kind": "identifier",
-                    "text": "createWith:"
-                  },
-                  {
-                    "kind": "text",
-                    "text": "("
-                  },
-                  {
-                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/InitOptions",
-                    "kind": "typeIdentifier",
-                    "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)InitOptions",
-                    "text": "InitOptions"
-                  },
-                  {
-                    "kind": "text",
-                    "text": " *) "
-                  },
-                  {
-                    "kind": "internalParam",
-                    "text": "options"
-                  },
-                  {
-                    "kind": "text",
-                    "text": " "
-                  },
-                  {
-                    "kind": "identifier",
-                    "text": "completionHandler:"
-                  },
-                  {
-                    "kind": "text",
-                    "text": "("
-                  },
-                  {
-                    "kind": "typeIdentifier",
-                    "preciseIdentifier": "c:v",
-                    "text": "void"
-                  },
-                  {
-                    "kind": "text",
-                    "text": " (^)("
-                  },
-                  {
-                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Room",
-                    "kind": "typeIdentifier",
-                    "preciseIdentifier": "c:@M@SkyWayRoom@objc(cs)Room",
-                    "text": "Room"
-                  },
-                  {
-                    "kind": "text",
-                    "text": " * "
-                  },
-                  {
-                    "kind": "internalParam",
-                    "text": ""
-                  },
-                  {
-                    "kind": "text",
-                    "text": ", "
-                  },
-                  {
-                    "kind": "typeIdentifier",
-                    "preciseIdentifier": "c:objc(cs)NSError",
-                    "text": "NSError"
-                  },
-                  {
-                    "kind": "text",
-                    "text": " * "
-                  },
-                  {
-                    "kind": "internalParam",
-                    "text": ""
-                  },
-                  {
-                    "kind": "text",
-                    "text": ")) "
-                  },
-                  {
-                    "kind": "internalParam",
-                    "text": "completionHandler"
-                  },
-                  {
-                    "kind": "text",
-                    "text": ";"
-                  }
-                ]
-              }
-            ],
-            "kind": "declarations"
-          }
-        },
-        {
-          "op": "replace",
-          "path": "/primaryContentSections/1",
-          "value": {
-            "kind": "parameters",
-            "parameters": [
-              {
-                "content": [
-                  {
-                    "inlineContent": [
-                      {
-                        "text": "",
-                        "type": "text"
-                      },
-                      {
-                        "code": "options",
-                        "type": "codeVoice"
-                      },
-                      {
-                        "text": "でRoomの名前を指定して作成できますが、同じ名前のRoomは作成することができません。",
-                        "type": "text"
-                      }
-                    ],
-                    "type": "paragraph"
-                  }
-                ],
-                "name": "options"
-              }
-            ]
-          }
-        },
-        {
-          "op": "replace",
-          "path": "/primaryContentSections/2",
-          "value": null
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/title",
-          "value": "Room"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "Room"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Room/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "Room"
-            }
-          ]
-        },
         {
           "op": "replace",
           "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFURoom/title",
@@ -741,25 +452,6 @@
               "text": "SFURoom"
             }
           ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFURoom~1create(with:)/title",
-          "value": "createWith:completionHandler:"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1SFURoom~1create(with:)/fragments",
-          "value": [
-            {
-              "kind": "text",
-              "text": "+ "
-            },
-            {
-              "kind": "identifier",
-              "text": "createWith:completionHandler:"
-            }
-          ]
         }
       ],
       "traits": [
@@ -777,16 +469,6 @@
       "traits": [
         {
           "interfaceLanguage": "swift"
-        }
-      ]
-    },
-    {
-      "paths": [
-        "/documentation/skywayroom/sfuroom/create(with:)"
-      ],
-      "traits": [
-        {
-          "interfaceLanguage": "occ"
         }
       ]
     }

@@ -52,7 +52,9 @@
             "swift"
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
           ],
           "tokens": [
             {
@@ -79,7 +81,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 3.8.0",
+              "text": "Version: 4.0.0",
               "type": "text"
             }
           ],
@@ -230,7 +232,9 @@
                   "occ"
                 ],
                 "platforms": [
-                  "iOS"
+                  "iOS",
+                  "iPadOS",
+                  "Mac Catalyst"
                 ],
                 "tokens": [
                   {
@@ -242,21 +246,6 @@
             ],
             "kind": "declarations"
           }
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Side~1remote/title",
-          "value": "SKWSideRemote"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Side~1remote/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWSideRemote"
-            }
-          ]
         },
         {
           "op": "replace",
@@ -280,6 +269,21 @@
             {
               "kind": "identifier",
               "text": "SKWSide"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Side~1remote/title",
+          "value": "SKWSideRemote"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1Side~1remote/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWSideRemote"
             }
           ]
         }
