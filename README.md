@@ -13,7 +13,8 @@ https://skyway.ntt.com/ja/docs/user-guide/ios-sdk/
 - [Room ライブラリ](https://ios-sdk.api-reference.skyway.ntt.com/room)
 
 ### 対応OS
-iOS14+, iPadOS14+
+
+iOS 15+, iPadOS 15+
 
 ## License
 
