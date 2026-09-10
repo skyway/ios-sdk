@@ -5,6 +5,17 @@
       "type": "text"
     }
   ],
+  "deprecationSummary": [
+    {
+      "inlineContent": [
+        {
+          "text": "SkyWayRoom v4.1.0で非推奨となりました。`Room` をご利用ください。",
+          "type": "text"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
   "hierarchy": {
     "paths": [
       [
@@ -113,6 +124,7 @@
         "text": "findOrCreateWith:completion:"
       }
     ],
+    "platforms": [],
     "role": "symbol",
     "roleHeading": "Type Method",
     "symbolKind": "method",
@@ -270,7 +282,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 4.0.0",
+              "text": "Version: 4.1.0",
               "type": "text"
             }
           ],
@@ -349,6 +361,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -383,6 +396,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -494,9 +508,9 @@
           "value": "occ"
         },
         {
-          "op": "add",
+          "op": "replace",
           "path": "/metadata/platforms",
-          "value": null
+          "value": []
         },
         {
           "op": "replace",
@@ -698,6 +712,21 @@
               }
             ]
           }
+        },
+        {
+          "op": "replace",
+          "path": "/deprecationSummary",
+          "value": [
+            {
+              "inlineContent": [
+                {
+                  "text": "SkyWayRoom v4.1.0で非推奨となりました。`Room` をご利用ください。",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
         },
         {
           "op": "replace",

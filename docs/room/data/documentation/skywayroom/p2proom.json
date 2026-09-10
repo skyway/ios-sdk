@@ -5,6 +5,17 @@
       "type": "text"
     }
   ],
+  "deprecationSummary": [
+    {
+      "inlineContent": [
+        {
+          "text": "SkyWayRoom v4.1.0で非推奨となりました。`Room` をご利用ください。",
+          "type": "text"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
   "hierarchy": {
     "paths": [
       [
@@ -44,6 +55,7 @@
         "text": "P2PRoom"
       }
     ],
+    "platforms": [],
     "role": "symbol",
     "roleHeading": "Class",
     "symbolKind": "class",
@@ -124,7 +136,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 4.0.0",
+              "text": "Version: 4.1.0",
               "type": "text"
             }
           ],
@@ -149,6 +161,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -183,6 +196,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -261,6 +275,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -363,6 +378,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -441,6 +457,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -543,6 +560,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -645,6 +663,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -723,6 +742,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -825,6 +845,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -904,6 +925,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -998,6 +1020,7 @@
           "type": "text"
         }
       ],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -1040,6 +1063,7 @@
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom/type": {
       "abstract": [],
+      "deprecated": true,
       "fragments": [
         {
           "kind": "keyword",
@@ -1209,9 +1233,9 @@
           "value": "occ"
         },
         {
-          "op": "add",
+          "op": "replace",
           "path": "/metadata/platforms",
-          "value": null
+          "value": []
         },
         {
           "op": "replace",
@@ -1343,6 +1367,21 @@
             ],
             "kind": "declarations"
           }
+        },
+        {
+          "op": "replace",
+          "path": "/deprecationSummary",
+          "value": [
+            {
+              "inlineContent": [
+                {
+                  "text": "SkyWayRoom v4.1.0で非推奨となりました。`Room` をご利用ください。",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
         },
         {
           "op": "replace",
