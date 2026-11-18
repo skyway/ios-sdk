@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "SkyWayRoom",
     platforms: [
-        .iOS(.v14)
+        .iOS(.v15)
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
@@ -27,8 +27,8 @@ let package = Package(
             checksum: "e076685d52d113bc0924ca75eeebcc1da112f0033c9e0baec818a13dd079fd13"),
         .binaryTarget(
             name: "WebRTC",
-            url: "https://github.com/skyway/skyway-ios-webrtc-specs/releases/download/120.1.0/WebRTC.xcframework.zip",
-            checksum: "c2085bf5c51121c6cfec204aaa42ff21a9f3b7f0253cf2b6bb32efa56efbff4e"),
+            url: "https://github.com/skyway/skyway-ios-webrtc-specs/releases/download/136.0.0/WebRTC.xcframework.zip",
+            checksum: "490be6d4d30464195c9024258ae82775e68cee8538016894c0bbd9c7e7700b02"),
 
     ],
     swiftLanguageVersions: [.v5]
