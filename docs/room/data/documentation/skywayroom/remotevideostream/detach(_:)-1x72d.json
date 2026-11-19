@@ -1,7 +1,7 @@
 {
   "abstract": [
     {
-      "text": "Viewへの描画を中止します。",
+      "text": "PictureInPictureViewへの描画を中止します。",
       "type": "text"
     }
   ],
@@ -15,11 +15,11 @@
   },
   "identifier": {
     "interfaceLanguage": "swift",
-    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteVideoStream/detach(_:)"
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteVideoStream/detach(_:)-1x72d"
   },
   "kind": "symbol",
   "metadata": {
-    "externalID": "c:objc(cs)SKWRemoteVideoStream(im)detachView:",
+    "externalID": "c:objc(cs)SKWRemoteVideoStream(im)detachPictureInPictureView:",
     "fragments": [
       {
         "kind": "keyword",
@@ -39,8 +39,8 @@
       },
       {
         "kind": "typeIdentifier",
-        "preciseIdentifier": "c:objc(cs)SKWVideoView",
-        "text": "VideoView"
+        "preciseIdentifier": "c:objc(cs)SKWPictureInPictureView",
+        "text": "PictureInPictureView"
       },
       {
         "kind": "text",
@@ -59,7 +59,7 @@
       },
       {
         "kind": "identifier",
-        "text": "detachView:"
+        "text": "detachPictureInPictureView:"
       }
     ],
     "role": "symbol",
@@ -113,10 +113,10 @@
               "text": ": "
             },
             {
-              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoView",
+              "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureView",
               "kind": "typeIdentifier",
-              "preciseIdentifier": "c:objc(cs)SKWVideoView",
-              "text": "VideoView"
+              "preciseIdentifier": "c:objc(cs)SKWPictureInPictureView",
+              "text": "PictureInPictureView"
             },
             {
               "kind": "text",
@@ -135,7 +135,7 @@
             {
               "inlineContent": [
                 {
-                  "text": "中止する描画中のView",
+                  "text": "中止する描画中のPictureInPictureView",
                   "type": "text"
                 }
               ],
@@ -145,6 +145,54 @@
           "name": "view"
         }
       ]
+    },
+    {
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "inlineContent": [
+            {
+              "code": "PictureInPictureController",
+              "type": "codeVoice"
+            },
+            {
+              "text": "の内部で利用するためのAPIです。",
+              "type": "text"
+            },
+            {
+              "text": " ",
+              "type": "text"
+            },
+            {
+              "text": "アプリから直接呼び出すことは想定していません。",
+              "type": "text"
+            },
+            {
+              "text": " ",
+              "type": "text"
+            },
+            {
+              "text": "Picture in Pictureを利用する場合は",
+              "type": "text"
+            },
+            {
+              "code": "PictureInPictureController",
+              "type": "codeVoice"
+            },
+            {
+              "text": "を利用してください。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "kind": "content"
     }
   ],
   "references": {
@@ -153,7 +201,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 4.1.0",
+              "text": "Version: 4.2.0",
               "type": "text"
             }
           ],
@@ -170,6 +218,40 @@
       "title": "SkyWayRoom",
       "type": "topic",
       "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureView": {
+      "abstract": [
+        {
+          "text": "Picture in Pictureのウィンドウに映像を描画するView",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "PictureInPictureView"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureView",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "PictureInPictureView"
+        }
+      ],
+      "role": "symbol",
+      "title": "PictureInPictureView",
+      "type": "topic",
+      "url": "/documentation/skywayroom/pictureinpictureview"
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteVideoStream": {
       "abstract": [
@@ -205,10 +287,10 @@
       "type": "topic",
       "url": "/documentation/skywayroom/remotevideostream"
     },
-    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteVideoStream/detach(_:)": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteVideoStream/detach(_:)-1x72d": {
       "abstract": [
         {
-          "text": "Viewへの描画を中止します。",
+          "text": "PictureInPictureViewへの描画を中止します。",
           "type": "text"
         }
       ],
@@ -231,15 +313,15 @@
         },
         {
           "kind": "typeIdentifier",
-          "preciseIdentifier": "c:objc(cs)SKWVideoView",
-          "text": "VideoView"
+          "preciseIdentifier": "c:objc(cs)SKWPictureInPictureView",
+          "text": "PictureInPictureView"
         },
         {
           "kind": "text",
           "text": ")"
         }
       ],
-      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteVideoStream/detach(_:)",
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/RemoteVideoStream/detach(_:)-1x72d",
       "kind": "symbol",
       "navigatorTitle": [
         {
@@ -248,47 +330,13 @@
         },
         {
           "kind": "identifier",
-          "text": "detachView:"
+          "text": "detachPictureInPictureView:"
         }
       ],
       "role": "symbol",
       "title": "detach(_:)",
       "type": "topic",
-      "url": "/documentation/skywayroom/remotevideostream/detach(_:)"
-    },
-    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoView": {
-      "abstract": [
-        {
-          "text": "Videoを描画するView",
-          "type": "text"
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "keyword",
-          "text": "class"
-        },
-        {
-          "kind": "text",
-          "text": " "
-        },
-        {
-          "kind": "identifier",
-          "text": "VideoView"
-        }
-      ],
-      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoView",
-      "kind": "symbol",
-      "navigatorTitle": [
-        {
-          "kind": "identifier",
-          "text": "VideoView"
-        }
-      ],
-      "role": "symbol",
-      "title": "VideoView",
-      "type": "topic",
-      "url": "/documentation/skywayroom/videoview"
+      "url": "/documentation/skywayroom/remotevideostream/detach(_:)-1x72d"
     }
   },
   "schemaVersion": {
@@ -318,7 +366,7 @@
         {
           "op": "replace",
           "path": "/metadata/title",
-          "value": "detachView:"
+          "value": "detachPictureInPictureView:"
         },
         {
           "op": "replace",
@@ -335,7 +383,7 @@
             },
             {
               "kind": "identifier",
-              "text": "detachView:"
+              "text": "detachPictureInPictureView:"
             }
           ]
         },
@@ -384,17 +432,17 @@
                   },
                   {
                     "kind": "identifier",
-                    "text": "detachView:"
+                    "text": "detachPictureInPictureView:"
                   },
                   {
                     "kind": "text",
                     "text": "("
                   },
                   {
-                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/VideoView",
+                    "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureView",
                     "kind": "typeIdentifier",
-                    "preciseIdentifier": "c:objc(cs)SKWVideoView",
-                    "text": "SKWVideoView"
+                    "preciseIdentifier": "c:objc(cs)SKWPictureInPictureView",
+                    "text": "SKWPictureInPictureView"
                   },
                   {
                     "kind": "text",
@@ -425,7 +473,7 @@
                   {
                     "inlineContent": [
                       {
-                        "text": "中止する描画中のView",
+                        "text": "中止する描画中のPictureInPictureView",
                         "type": "text"
                       }
                     ],
@@ -436,6 +484,31 @@
               }
             ]
           }
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PictureInPictureView/title",
+          "value": "SKWPictureInPictureView"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PictureInPictureView/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPictureInPictureView"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PictureInPictureView/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPictureInPictureView"
+            }
+          ]
         },
         {
           "op": "replace",
@@ -464,12 +537,12 @@
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteVideoStream~1detach(_:)/title",
-          "value": "detachView:"
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteVideoStream~1detach(_:)-1x72d/title",
+          "value": "detachPictureInPictureView:"
         },
         {
           "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteVideoStream~1detach(_:)/fragments",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1RemoteVideoStream~1detach(_:)-1x72d/fragments",
           "value": [
             {
               "kind": "text",
@@ -477,32 +550,7 @@
             },
             {
               "kind": "identifier",
-              "text": "detachView:"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoView/title",
-          "value": "SKWVideoView"
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoView/fragments",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWVideoView"
-            }
-          ]
-        },
-        {
-          "op": "replace",
-          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1VideoView/navigatorTitle",
-          "value": [
-            {
-              "kind": "identifier",
-              "text": "SKWVideoView"
+              "text": "detachPictureInPictureView:"
             }
           ]
         }
@@ -517,7 +565,7 @@
   "variants": [
     {
       "paths": [
-        "/documentation/skywayroom/remotevideostream/detach(_:)"
+        "/documentation/skywayroom/remotevideostream/detach(_:)-1x72d"
       ],
       "traits": [
         {
@@ -527,7 +575,7 @@
     },
     {
       "paths": [
-        "/documentation/skywayroom/remotevideostream/detach(_:)"
+        "/documentation/skywayroom/remotevideostream/detach(_:)-1x72d"
       ],
       "traits": [
         {

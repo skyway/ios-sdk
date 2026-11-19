@@ -1403,6 +1403,22 @@
                 "type": "groupMarker"
               },
               {
+                "path": "/documentation/skywayroom/pictureinpictureview/videosize",
+                "title": "videoSize",
+                "type": "property"
+              }
+            ],
+            "path": "/documentation/skywayroom/pictureinpictureview",
+            "title": "SKWPictureInPictureView",
+            "type": "class"
+          },
+          {
+            "children": [
+              {
+                "title": "Instance Properties",
+                "type": "groupMarker"
+              },
+              {
                 "path": "/documentation/skywayroom/plugin/subtype",
                 "title": "subtype",
                 "type": "property"
@@ -1707,12 +1723,22 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/remotevideostream/attach(_:)",
+                "path": "/documentation/skywayroom/remotevideostream/attach(_:)-67h2w",
                 "title": "- attachView:",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/remotevideostream/detach(_:)",
+                "path": "/documentation/skywayroom/remotevideostream/attach(_:)-b5xn",
+                "title": "- attachPictureInPictureView:",
+                "type": "method"
+              },
+              {
+                "path": "/documentation/skywayroom/remotevideostream/detach(_:)-1x72d",
+                "title": "- detachPictureInPictureView:",
+                "type": "method"
+              },
+              {
+                "path": "/documentation/skywayroom/remotevideostream/detach(_:)-8su71",
                 "title": "- detachView:",
                 "type": "method"
               }
@@ -3076,6 +3102,11 @@
                 "type": "method"
               },
               {
+                "path": "/documentation/skywayroom/publicationdelegate/publication(_:remotemember:connectionstatedidchange:)",
+                "title": "- publication:remoteMember:connectionStateDidChange:",
+                "type": "method"
+              },
+              {
                 "path": "/documentation/skywayroom/publicationdelegate/publication(_:subscribed:)",
                 "title": "- publication:subscribed:",
                 "type": "method"
@@ -3304,6 +3335,11 @@
               {
                 "path": "/documentation/skywayroom/roompublicationdelegate/publication(_:didupdatemetadata:)",
                 "title": "- publication:didUpdateMetadata:",
+                "type": "method"
+              },
+              {
+                "path": "/documentation/skywayroom/roompublicationdelegate/publication(_:remotemember:connectionstatedidchange:)",
+                "title": "- publication:remoteMember:connectionStateDidChange:",
                 "type": "method"
               },
               {
@@ -5604,6 +5640,90 @@
           {
             "children": [
               {
+                "title": "Initializers",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/pictureinpicturecontroller/init(sourceview:stream:)",
+                "title": "init(sourceView: UIView, stream: RemoteVideoStream)",
+                "type": "init"
+              },
+              {
+                "title": "Instance Properties",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/pictureinpicturecontroller/avpictureinpicturecontroller",
+                "title": "var avPictureInPictureController: AVPictureInPictureController?",
+                "type": "property"
+              },
+              {
+                "path": "/documentation/skywayroom/pictureinpicturecontroller/canstartpictureinpictureautomaticallyfrominline",
+                "title": "var canStartPictureInPictureAutomaticallyFromInline: Bool",
+                "type": "property"
+              },
+              {
+                "path": "/documentation/skywayroom/pictureinpicturecontroller/delegate",
+                "title": "var delegate: AVPictureInPictureControllerDelegate?",
+                "type": "property"
+              },
+              {
+                "path": "/documentation/skywayroom/pictureinpicturecontroller/ispictureinpictureactive",
+                "title": "var isPictureInPictureActive: Bool",
+                "type": "property"
+              },
+              {
+                "path": "/documentation/skywayroom/pictureinpicturecontroller/ispictureinpicturepossible",
+                "title": "var isPictureInPicturePossible: Bool",
+                "type": "property"
+              },
+              {
+                "title": "Instance Methods",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/pictureinpicturecontroller/startpictureinpicture()",
+                "title": "func startPictureInPicture()",
+                "type": "method"
+              },
+              {
+                "path": "/documentation/skywayroom/pictureinpicturecontroller/stoppictureinpicture()",
+                "title": "func stopPictureInPicture()",
+                "type": "method"
+              },
+              {
+                "title": "Type Properties",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/pictureinpicturecontroller/ispictureinpicturesupported",
+                "title": "static var isPictureInPictureSupported: Bool",
+                "type": "property"
+              }
+            ],
+            "path": "/documentation/skywayroom/pictureinpicturecontroller",
+            "title": "PictureInPictureController",
+            "type": "class"
+          },
+          {
+            "children": [
+              {
+                "title": "Instance Properties",
+                "type": "groupMarker"
+              },
+              {
+                "path": "/documentation/skywayroom/pictureinpictureview/videosize",
+                "title": "var videoSize: CGSize",
+                "type": "property"
+              }
+            ],
+            "path": "/documentation/skywayroom/pictureinpictureview",
+            "title": "PictureInPictureView",
+            "type": "class"
+          },
+          {
+            "children": [
+              {
                 "title": "Instance Properties",
                 "type": "groupMarker"
               },
@@ -5882,12 +6002,22 @@
                 "type": "groupMarker"
               },
               {
-                "path": "/documentation/skywayroom/remotevideostream/attach(_:)",
+                "path": "/documentation/skywayroom/remotevideostream/attach(_:)-67h2w",
                 "title": "func attach(VideoView)",
                 "type": "method"
               },
               {
-                "path": "/documentation/skywayroom/remotevideostream/detach(_:)",
+                "path": "/documentation/skywayroom/remotevideostream/attach(_:)-b5xn",
+                "title": "func attach(PictureInPictureView)",
+                "type": "method"
+              },
+              {
+                "path": "/documentation/skywayroom/remotevideostream/detach(_:)-1x72d",
+                "title": "func detach(PictureInPictureView)",
+                "type": "method"
+              },
+              {
+                "path": "/documentation/skywayroom/remotevideostream/detach(_:)-8su71",
                 "title": "func detach(VideoView)",
                 "type": "method"
               }
@@ -7349,6 +7479,11 @@
                 "type": "method"
               },
               {
+                "path": "/documentation/skywayroom/publicationdelegate/publication(_:remotemember:connectionstatedidchange:)",
+                "title": "func publication(Publication, remoteMember: RemoteMember, connectionStateDidChange: ConnectionState)",
+                "type": "method"
+              },
+              {
                 "path": "/documentation/skywayroom/publicationdelegate/publication(_:subscribed:)",
                 "title": "func publication(Publication, subscribed: Subscription)",
                 "type": "method"
@@ -7577,6 +7712,11 @@
               {
                 "path": "/documentation/skywayroom/roompublicationdelegate/publication(_:didupdatemetadata:)",
                 "title": "func publication(RoomPublication, didUpdateMetadata: String)",
+                "type": "method"
+              },
+              {
+                "path": "/documentation/skywayroom/roompublicationdelegate/publication(_:remotemember:connectionstatedidchange:)",
+                "title": "func publication(RoomPublication, remoteMember: RemoteRoomMember?, connectionStateDidChange: ConnectionState)",
                 "type": "method"
               },
               {

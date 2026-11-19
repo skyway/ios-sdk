@@ -3,7 +3,7 @@
     {
       "inlineContent": [
         {
-          "text": "Version: 4.1.0",
+          "text": "Version: 4.2.0",
           "type": "text"
         }
       ],
@@ -1662,7 +1662,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 4.1.0",
+              "text": "Version: 4.2.0",
               "type": "text"
             }
           ],
@@ -3608,6 +3608,74 @@
       "title": "P2PRoom",
       "type": "topic",
       "url": "/documentation/skywayroom/p2proom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController": {
+      "abstract": [
+        {
+          "text": "リモートの映像をPicture in Pictureで表示するためのController",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "PictureInPictureController"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "PictureInPictureController"
+        }
+      ],
+      "role": "symbol",
+      "title": "PictureInPictureController",
+      "type": "topic",
+      "url": "/documentation/skywayroom/pictureinpicturecontroller"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureView": {
+      "abstract": [
+        {
+          "text": "Picture in Pictureのウィンドウに映像を描画するView",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "PictureInPictureView"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureView",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "PictureInPictureView"
+        }
+      ],
+      "role": "symbol",
+      "title": "PictureInPictureView",
+      "type": "topic",
+      "url": "/documentation/skywayroom/pictureinpictureview"
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Plugin": {
       "abstract": [
@@ -6595,6 +6663,8 @@
         "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MemberInit",
         "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MicrophoneAudioSource",
         "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureView",
         "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Plugin",
         "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Publication",
         "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationOptions",
@@ -6779,6 +6849,7 @@
                 "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MemberInitOptions",
                 "doc://com.ntt.skyway.room/documentation/SkyWayRoom/MicrophoneAudioSource",
                 "doc://com.ntt.skyway.room/documentation/SkyWayRoom/P2PRoom",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureView",
                 "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Plugin",
                 "doc://com.ntt.skyway.room/documentation/SkyWayRoom/Publication",
                 "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationOptions",
@@ -8307,6 +8378,31 @@
             {
               "kind": "identifier",
               "text": "P2PRoom"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PictureInPictureView/title",
+          "value": "SKWPictureInPictureView"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PictureInPictureView/fragments",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPictureInPictureView"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PictureInPictureView/navigatorTitle",
+          "value": [
+            {
+              "kind": "identifier",
+              "text": "SKWPictureInPictureView"
             }
           ]
         },

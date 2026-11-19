@@ -9,7 +9,7 @@
     {
       "inlineContent": [
         {
-          "text": "SkyWayRoom v4.0.0で非推奨となりました。代わりにRoomPublicationDelegateをご利用ください。",
+          "text": "SkyWayRoom v4.2.0で非推奨となりました。代わりにpublication:remoteMember:connectionStateDidChange:をご利用ください。",
           "type": "text"
         }
       ],
@@ -222,6 +222,34 @@
           "name": "connectionState"
         }
       ]
+    },
+    {
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "接続先のRemoteMemberごとに発生しますが、どのRemoteMemberとの接続かは判別できません。",
+              "type": "text"
+            },
+            {
+              "text": " ",
+              "type": "text"
+            },
+            {
+              "text": "判別が必要な場合はpublication:remoteMember:connectionStateDidChange:をご利用ください。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "kind": "content"
     }
   ],
   "references": {
@@ -230,7 +258,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 4.1.0",
+              "text": "Version: 4.2.0",
               "type": "text"
             }
           ],

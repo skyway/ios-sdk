@@ -107,7 +107,7 @@
         {
           "inlineContent": [
             {
-              "text": "Version: 4.1.0",
+              "text": "Version: 4.2.0",
               "type": "text"
             }
           ],
@@ -297,6 +297,92 @@
       "title": "publication(_:didUpdateMetadata:)",
       "type": "topic",
       "url": "/documentation/skywayroom/publicationdelegate/publication(_:didupdatemetadata:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationDelegate/publication(_:remoteMember:connectionStateDidChange:)": {
+      "abstract": [
+        {
+          "text": "このPublicationの接続状態が変化したときに発生するイベント",
+          "type": "text"
+        }
+      ],
+      "deprecated": true,
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "publication"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWPublication",
+          "text": "Publication"
+        },
+        {
+          "kind": "text",
+          "text": ", "
+        },
+        {
+          "kind": "externalParam",
+          "text": "remoteMember"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWRemoteMember",
+          "text": "RemoteMember"
+        },
+        {
+          "kind": "text",
+          "text": ", "
+        },
+        {
+          "kind": "externalParam",
+          "text": "connectionStateDidChange"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:@E@SKWConnectionState",
+          "text": "ConnectionState"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationDelegate/publication(_:remoteMember:connectionStateDidChange:)",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "publication:remoteMember:connectionStateDidChange:"
+        }
+      ],
+      "role": "symbol",
+      "title": "publication(_:remoteMember:connectionStateDidChange:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/publicationdelegate/publication(_:remotemember:connectionstatedidchange:)"
     },
     "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationDelegate/publication(_:subscribed:)": {
       "abstract": [
@@ -673,6 +759,7 @@
       "identifiers": [
         "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationDelegate/publication(_:connectionStateDidChange:)",
         "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationDelegate/publication(_:didUpdateMetadata:)",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationDelegate/publication(_:remoteMember:connectionStateDidChange:)",
         "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationDelegate/publication(_:subscribed:)",
         "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationDelegate/publication(_:unsubscribed:)",
         "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationDelegate/publicationDisabled(_:)",
@@ -741,6 +828,7 @@
               "identifiers": [
                 "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationDelegate/publication(_:connectionStateDidChange:)",
                 "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationDelegate/publication(_:didUpdateMetadata:)",
+                "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationDelegate/publication(_:remoteMember:connectionStateDidChange:)",
                 "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationDelegate/publication(_:subscribed:)",
                 "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationDelegate/publication(_:unsubscribed:)",
                 "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PublicationDelegate/publicationDisabled(_:)",
@@ -882,6 +970,25 @@
             {
               "kind": "identifier",
               "text": "publication:didUpdateMetadata:"
+            }
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate~1publication(_:remoteMember:connectionStateDidChange:)/title",
+          "value": "publication:remoteMember:connectionStateDidChange:"
+        },
+        {
+          "op": "replace",
+          "path": "/references/doc:~1~1com.ntt.skyway.room~1documentation~1SkyWayRoom~1PublicationDelegate~1publication(_:remoteMember:connectionStateDidChange:)/fragments",
+          "value": [
+            {
+              "kind": "text",
+              "text": "- "
+            },
+            {
+              "kind": "identifier",
+              "text": "publication:remoteMember:connectionStateDidChange:"
             }
           ]
         },

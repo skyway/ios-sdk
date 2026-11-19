@@ -1,0 +1,795 @@
+{
+  "abstract": [
+    {
+      "text": "リモートの映像をPicture in Pictureで表示するためのController",
+      "type": "text"
+    }
+  ],
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom"
+      ]
+    ]
+  },
+  "identifier": {
+    "interfaceLanguage": "swift",
+    "url": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController"
+  },
+  "kind": "symbol",
+  "metadata": {
+    "externalID": "s:10SkyWayRoom09PictureInD10ControllerC",
+    "fragments": [
+      {
+        "kind": "keyword",
+        "text": "class"
+      },
+      {
+        "kind": "text",
+        "text": " "
+      },
+      {
+        "kind": "identifier",
+        "text": "PictureInPictureController"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SkyWayRoom"
+      }
+    ],
+    "navigatorTitle": [
+      {
+        "kind": "identifier",
+        "text": "PictureInPictureController"
+      }
+    ],
+    "role": "symbol",
+    "roleHeading": "Class",
+    "symbolKind": "class",
+    "title": "PictureInPictureController"
+  },
+  "primaryContentSections": [
+    {
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "platforms": [
+            "iOS",
+            "iPadOS",
+            "Mac Catalyst"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "final"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "class"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "PictureInPictureController"
+            }
+          ]
+        }
+      ],
+      "kind": "declarations"
+    },
+    {
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "ビデオ通話用のPicture in Picture(",
+              "type": "text"
+            },
+            {
+              "code": "AVPictureInPictureVideoCallViewController",
+              "type": "codeVoice"
+            },
+            {
+              "text": ")を利用します。",
+              "type": "text"
+            },
+            {
+              "text": " ",
+              "type": "text"
+            },
+            {
+              "text": "Picture in Pictureのウィンドウに表示する映像はSDKが描画するため、",
+              "type": "text"
+            },
+            {
+              "text": " ",
+              "type": "text"
+            },
+            {
+              "text": "アプリは画面上の表示領域(",
+              "type": "text"
+            },
+            {
+              "code": "sourceView",
+              "type": "codeVoice"
+            },
+            {
+              "text": ")と表示する",
+              "type": "text"
+            },
+            {
+              "code": "RemoteVideoStream",
+              "type": "codeVoice"
+            },
+            {
+              "text": "を指定してください。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "code": [
+            "remoteVideoStream.attach(videoView)  // 画面上の表示",
+            "let pip = PictureInPictureController(sourceView: videoView, stream: remoteVideoStream)",
+            "pip.canStartPictureInPictureAutomaticallyFromInline = true"
+          ],
+          "syntax": "swift",
+          "type": "codeListing"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "Picture in Pictureのウィンドウは映像の縦横比に合わせて表示され、映像のサイズが変わった場合も追従します。",
+              "type": "text"
+            },
+            {
+              "text": " ",
+              "type": "text"
+            },
+            {
+              "text": "Picture in Pictureを表示していない間は、ウィンドウ向けの描画処理は行われません。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "inlineContent": [
+            {
+              "text": "ライフサイクルイベントはAVKitの",
+              "type": "text"
+            },
+            {
+              "code": "AVPictureInPictureControllerDelegate",
+              "type": "codeVoice"
+            },
+            {
+              "text": "を",
+              "type": "text"
+            },
+            {
+              "code": "delegate",
+              "type": "codeVoice"
+            },
+            {
+              "text": "に設定して受け取ります。",
+              "type": "text"
+            },
+            {
+              "text": " ",
+              "type": "text"
+            },
+            {
+              "text": "Picture in Pictureの表示中は画面上の",
+              "type": "text"
+            },
+            {
+              "code": "sourceView",
+              "type": "codeVoice"
+            },
+            {
+              "text": "を非表示にし、終了時に戻すと、",
+              "type": "text"
+            },
+            {
+              "text": " ",
+              "type": "text"
+            },
+            {
+              "text": "開始・終了時のアニメーションが自然になります。",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "content": [
+            {
+              "inlineContent": [
+                {
+                  "text": "Picture in Pictureを利用するには、Background Modesの",
+                  "type": "text"
+                },
+                {
+                  "text": " ",
+                  "type": "text"
+                },
+                {
+                  "code": "Audio, AirPlay, and Picture in Picture",
+                  "type": "codeVoice"
+                },
+                {
+                  "text": "が有効になっている必要があります。",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "inlineContent": [
+                {
+                  "text": "Picture in Pictureの表示中も",
+                  "type": "text"
+                },
+                {
+                  "code": "CameraVideoSource",
+                  "type": "codeVoice"
+                },
+                {
+                  "text": "のカメラ映像を送信し続けるには、",
+                  "type": "text"
+                },
+                {
+                  "text": " ",
+                  "type": "text"
+                },
+                {
+                  "text": "Background Modesの",
+                  "type": "text"
+                },
+                {
+                  "code": "Voice over IP",
+                  "type": "codeVoice"
+                },
+                {
+                  "text": "も有効にしてください。",
+                  "type": "text"
+                },
+                {
+                  "text": " ",
+                  "type": "text"
+                },
+                {
+                  "text": "有効にすると、SDKはカメラの開始時にマルチタスク中のカメラ利用",
+                  "type": "text"
+                },
+                {
+                  "text": " ",
+                  "type": "text"
+                },
+                {
+                  "text": "(",
+                  "type": "text"
+                },
+                {
+                  "code": "AVCaptureSession.isMultitaskingCameraAccessEnabled",
+                  "type": "codeVoice"
+                },
+                {
+                  "text": ")を有効にします。",
+                  "type": "text"
+                },
+                {
+                  "text": " ",
+                  "type": "text"
+                },
+                {
+                  "text": "有効にしない場合、Picture in Pictureの表示中はカメラが中断され、相手側で映像が止まります。",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "Important",
+          "style": "important",
+          "type": "aside"
+        }
+      ],
+      "kind": "content"
+    }
+  ],
+  "references": {
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom": {
+      "abstract": [
+        {
+          "inlineContent": [
+            {
+              "text": "Version: 4.2.0",
+              "type": "text"
+            }
+          ],
+          "type": "strong"
+        },
+        {
+          "text": " © 2026 NTT DOCOMO BUSINESS, Inc. All rights reserved.",
+          "type": "text"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom",
+      "kind": "symbol",
+      "role": "collection",
+      "title": "SkyWayRoom",
+      "type": "topic",
+      "url": "/documentation/skywayroom"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController": {
+      "abstract": [
+        {
+          "text": "リモートの映像をPicture in Pictureで表示するためのController",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "class"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "PictureInPictureController"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController",
+      "kind": "symbol",
+      "navigatorTitle": [
+        {
+          "kind": "identifier",
+          "text": "PictureInPictureController"
+        }
+      ],
+      "role": "symbol",
+      "title": "PictureInPictureController",
+      "type": "topic",
+      "url": "/documentation/skywayroom/pictureinpicturecontroller"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/avPictureInPictureController": {
+      "abstract": [
+        {
+          "text": "内包しているAVPictureInPictureController",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "avPictureInPictureController"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)AVPictureInPictureController",
+          "text": "AVPictureInPictureController"
+        },
+        {
+          "kind": "text",
+          "text": "?"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/avPictureInPictureController",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "avPictureInPictureController",
+      "type": "topic",
+      "url": "/documentation/skywayroom/pictureinpicturecontroller/avpictureinpicturecontroller"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/canStartPictureInPictureAutomaticallyFromInline": {
+      "abstract": [
+        {
+          "text": "インライン表示からバックグラウンド遷移時に自動でPicture in Pictureを開始するかどうか",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "canStartPictureInPictureAutomaticallyFromInline"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:Sb",
+          "text": "Bool"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/canStartPictureInPictureAutomaticallyFromInline",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "canStartPictureInPictureAutomaticallyFromInline",
+      "type": "topic",
+      "url": "/documentation/skywayroom/pictureinpicturecontroller/canstartpictureinpictureautomaticallyfrominline"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/delegate": {
+      "abstract": [
+        {
+          "text": "ライフサイクルイベントデリゲート",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "delegate"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(pl)AVPictureInPictureControllerDelegate",
+          "text": "AVPictureInPictureControllerDelegate"
+        },
+        {
+          "kind": "text",
+          "text": "?"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/delegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "delegate",
+      "type": "topic",
+      "url": "/documentation/skywayroom/pictureinpicturecontroller/delegate"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/init(sourceView:stream:)": {
+      "abstract": [
+        {
+          "text": "PictureInPictureControllerを生成します。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "externalParam",
+          "text": "sourceView"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)UIView",
+          "text": "UIView"
+        },
+        {
+          "kind": "text",
+          "text": ", "
+        },
+        {
+          "kind": "externalParam",
+          "text": "stream"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "c:objc(cs)SKWRemoteVideoStream",
+          "text": "RemoteVideoStream"
+        },
+        {
+          "kind": "text",
+          "text": ")"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/init(sourceView:stream:)",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "init(sourceView:stream:)",
+      "type": "topic",
+      "url": "/documentation/skywayroom/pictureinpicturecontroller/init(sourceview:stream:)"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/isPictureInPictureActive": {
+      "abstract": [
+        {
+          "text": "現在Picture in Pictureが表示中かどうか",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "isPictureInPictureActive"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:Sb",
+          "text": "Bool"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/isPictureInPictureActive",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "isPictureInPictureActive",
+      "type": "topic",
+      "url": "/documentation/skywayroom/pictureinpicturecontroller/ispictureinpictureactive"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/isPictureInPicturePossible": {
+      "abstract": [
+        {
+          "text": "現在Picture in Pictureが開始可能かどうか",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "isPictureInPicturePossible"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:Sb",
+          "text": "Bool"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/isPictureInPicturePossible",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "isPictureInPicturePossible",
+      "type": "topic",
+      "url": "/documentation/skywayroom/pictureinpicturecontroller/ispictureinpicturepossible"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/isPictureInPictureSupported": {
+      "abstract": [
+        {
+          "text": "この端末でPicture in Pictureが利用可能かどうか",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "static"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "keyword",
+          "text": "var"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "isPictureInPictureSupported"
+        },
+        {
+          "kind": "text",
+          "text": ": "
+        },
+        {
+          "kind": "typeIdentifier",
+          "preciseIdentifier": "s:Sb",
+          "text": "Bool"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/isPictureInPictureSupported",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "isPictureInPictureSupported",
+      "type": "topic",
+      "url": "/documentation/skywayroom/pictureinpicturecontroller/ispictureinpicturesupported"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/startPictureInPicture()": {
+      "abstract": [
+        {
+          "text": "Picture in Pictureを開始します。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "startPictureInPicture"
+        },
+        {
+          "kind": "text",
+          "text": "()"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/startPictureInPicture()",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "startPictureInPicture()",
+      "type": "topic",
+      "url": "/documentation/skywayroom/pictureinpicturecontroller/startpictureinpicture()"
+    },
+    "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/stopPictureInPicture()": {
+      "abstract": [
+        {
+          "text": "Picture in Pictureを終了します。",
+          "type": "text"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "keyword",
+          "text": "func"
+        },
+        {
+          "kind": "text",
+          "text": " "
+        },
+        {
+          "kind": "identifier",
+          "text": "stopPictureInPicture"
+        },
+        {
+          "kind": "text",
+          "text": "()"
+        }
+      ],
+      "identifier": "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/stopPictureInPicture()",
+      "kind": "symbol",
+      "role": "symbol",
+      "title": "stopPictureInPicture()",
+      "type": "topic",
+      "url": "/documentation/skywayroom/pictureinpicturecontroller/stoppictureinpicture()"
+    }
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "sections": [],
+  "topicSections": [
+    {
+      "anchor": "Initializers",
+      "generated": true,
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/init(sourceView:stream:)"
+      ],
+      "title": "Initializers"
+    },
+    {
+      "anchor": "Instance-Properties",
+      "generated": true,
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/avPictureInPictureController",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/canStartPictureInPictureAutomaticallyFromInline",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/delegate",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/isPictureInPictureActive",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/isPictureInPicturePossible"
+      ],
+      "title": "Instance Properties"
+    },
+    {
+      "anchor": "Instance-Methods",
+      "generated": true,
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/startPictureInPicture()",
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/stopPictureInPicture()"
+      ],
+      "title": "Instance Methods"
+    },
+    {
+      "anchor": "Type-Properties",
+      "generated": true,
+      "identifiers": [
+        "doc://com.ntt.skyway.room/documentation/SkyWayRoom/PictureInPictureController/isPictureInPictureSupported"
+      ],
+      "title": "Type Properties"
+    }
+  ],
+  "variants": [
+    {
+      "paths": [
+        "/documentation/skywayroom/pictureinpicturecontroller"
+      ],
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ]
+    }
+  ]
+}
